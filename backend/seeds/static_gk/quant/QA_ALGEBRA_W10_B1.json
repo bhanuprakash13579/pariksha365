@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_ALGEBRA_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Algebra — Identities, Expressions and Equations (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00001",
+      "stem": "If x + y = 5 and x − y = 3, find xy.",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Adding: 2x = 8 → x = 4. Subtracting: 2y = 2 → y = 1. xy = 4×1 = 4. Alternatively: (x+y)²−(x−y)² = 4xy → 25−9 = 4xy → xy = 4. Trap: 2 = x−y (answers the difference, not the product); 6 = x+y−y=x (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00002",
+      "stem": "Simplify: (x + 2)² − (x − 2)²",
+      "options": [
+        {"option_text": "4x", "is_correct": false},
+        {"option_text": "8x", "is_correct": true},
+        {"option_text": "4x²", "is_correct": false},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Using the identity a²−b² = (a+b)(a−b): [(x+2)+(x−2)]×[(x+2)−(x−2)] = (2x)×(4) = 8x. Alternatively: expand both → (x²+4x+4)−(x²−4x+4) = 8x. Trap: 4x uses only (a−b)÷2; 4x² confuses the result with a quadratic; 16 substitutes x=2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00003",
+      "stem": "If a + b + c = 6 and a² + b² + c² = 14, find ab + bc + ca.",
+      "options": [
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "11", "is_correct": true},
+        {"option_text": "12", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Identity: (a+b+c)² = a²+b²+c² + 2(ab+bc+ca). 6² = 14 + 2(ab+bc+ca). 36 = 14 + 2(ab+bc+ca). ab+bc+ca = (36−14)/2 = 11. This is a standard SSC algebra identity. Trap: 9 = 6/2×3 (wrong approach); 12 = (36−12)/2 uses wrong value.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00004",
+      "stem": "If 2x + 3 = 7, find the value of (2x − 3)².",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 2x + 3 = 7 → 2x = 4 → x = 2. Therefore 2x − 3 = 4 − 3 = 1. (2x−3)² = 1² = 1. Trap: 0 assumes 2x=3 (from x=1.5); 4 uses (2x−3) without squaring; 9 evaluates 2x−3 as −3 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00005",
+      "stem": "If x = 2 + √3, find x + 1/x.",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "2√3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 1/x = 1/(2+√3). Rationalize: multiply by (2−√3)/(2−√3). 1/x = (2−√3)/[(2+√3)(2−√3)] = (2−√3)/(4−3) = 2−√3. x + 1/x = (2+√3) + (2−√3) = 4. Short Trick: if x = a+√b, then 1/x = a−√b (when a²−b=1). Here a=2, b=3: 4−3=1 ✓. Trap: 2 forgets to add the full expression; 3 keeps only the integer parts.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00006",
+      "stem": "The sum of two numbers is 45 and their product is 500. Find the sum of their squares.",
+      "options": [
+        {"option_text": "975", "is_correct": false},
+        {"option_text": "1000", "is_correct": false},
+        {"option_text": "1025", "is_correct": true},
+        {"option_text": "1075", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. (x+y)² = x²+y² + 2xy. 45² = x²+y² + 2×500. 2025 = x²+y² + 1000. x²+y² = 1025. Trap: 1000 = 2×500 (only the product term); 975 = 2025−1050 (wrong subtraction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00007",
+      "stem": "If x − 1/x = 4, find x² + 1/x².",
+      "options": [
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "18", "is_correct": true},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. (x − 1/x)² = x² − 2 + 1/x². 16 = x² + 1/x² − 2. x² + 1/x² = 18. Key identity: (x − 1/x)² = x² + 1/x² − 2. Trap: 16 forggets to add 2; 14 subtracts 2 (wrong direction); 20 adds 4 instead of 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00008",
+      "stem": "If a + b = 3 and a³ + b³ = 9, find ab.",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Identity: a³+b³ = (a+b)(a²−ab+b²) = (a+b)[(a+b)²−3ab]. 9 = 3×[9−3ab] = 27−9ab. 9ab = 18. ab = 2. Trap: 1 uses a²+b² instead of ab; 3 confuses ab with a+b.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00009",
+      "stem": "Find the value of (101)² − (99)² without direct squaring.",
+      "options": [
+        {"option_text": "200", "is_correct": false},
+        {"option_text": "300", "is_correct": false},
+        {"option_text": "400", "is_correct": true},
+        {"option_text": "500", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Using a²−b² = (a+b)(a−b): (101+99)(101−99) = 200×2 = 400. This is the most efficient SSC method — avoid squaring 101 and 99 directly. Trap: 200 = 101+99 (forgot to multiply by the difference); 300 = 200+100 (error); 500 uses wrong values.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W10_00010",
+      "stem": "If a² + b² = 53 and a − b = 5, find ab.",
+      "options": [
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "14", "is_correct": true},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. (a−b)² = a²+b²−2ab. 25 = 53−2ab. 2ab = 28. ab = 14. Verify: a−b=5 and ab=14 → a and b are roots of t²−(a+b)t+14=0. (a+b)² = (a−b)²+4ab = 25+56 = 81 → a+b=9. a=(9+5)/2=7, b=(9−5)/2=2. 7²+2²=53 ✓; 7×2=14 ✓. Trap: 10 = (53−25)/2 = wrong denominator; 12 = (53−29)/2 uses wrong (a−b)²=29.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

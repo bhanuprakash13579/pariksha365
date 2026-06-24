@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PROBABILITY_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Probability — Coins, Dice, Cards and Combinatorics (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00001",
+      "stem": "A fair coin is tossed once. What is the probability of getting a tail?",
+      "options": [
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "1/3", "is_correct": false},
+        {"option_text": "1/2", "is_correct": true},
+        {"option_text": "2/3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Sample space = {H, T}, each equally likely. P(Tail) = 1/2. Trap: 1/4 assumes two coins; 1/3 is a common misconception treating H, T, and edge as outcomes.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00002",
+      "stem": "A fair die is rolled once. What is the probability of getting a prime number?",
+      "options": [
+        {"option_text": "1/3", "is_correct": false},
+        {"option_text": "1/2", "is_correct": true},
+        {"option_text": "2/3", "is_correct": false},
+        {"option_text": "5/6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Prime numbers on a die (1–6): 2, 3, 5 — that's 3 primes out of 6 outcomes. P(prime) = 3/6 = 1/2. Note: 1 is NOT a prime number. Trap: 1/3 counts only one prime (common if students count 1 as prime, leaving 2 and 3 as the 'small' primes and miscount); 5/6 counts composite + prime incorrectly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00003",
+      "stem": "Two fair coins are tossed simultaneously. What is the probability of getting exactly one head?",
+      "options": [
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "1/3", "is_correct": false},
+        {"option_text": "1/2", "is_correct": true},
+        {"option_text": "3/4", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Sample space = {HH, HT, TH, TT} — 4 outcomes. Exactly one head: {HT, TH} — 2 outcomes. P = 2/4 = 1/2. Trap: 1/4 counts only one of the two favorable outcomes; 3/4 is P(at least one head), not exactly one.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00004",
+      "stem": "A card is drawn at random from a well-shuffled pack of 52 cards. What is the probability of drawing an Ace?",
+      "options": [
+        {"option_text": "1/52", "is_correct": false},
+        {"option_text": "1/26", "is_correct": false},
+        {"option_text": "1/13", "is_correct": true},
+        {"option_text": "4/26", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. There are 4 Aces in a 52-card pack. P(Ace) = 4/52 = 1/13. Trap: 1/52 (probability of one specific card); 4/26 = 2/13 is wrong (reduces incorrectly). A standard pack has 4 suits × 13 cards = 52 cards total; each denomination (Ace through King) appears 4 times.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00005",
+      "stem": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers shown is 7?",
+      "options": [
+        {"option_text": "1/9", "is_correct": false},
+        {"option_text": "1/7", "is_correct": false},
+        {"option_text": "1/6", "is_correct": true},
+        {"option_text": "7/36", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total outcomes = 6×6 = 36. Pairs summing to 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 pairs. P = 6/36 = 1/6. Sum of 7 is the most likely sum with two dice. Trap: 7/36 is wrong (overcounts); 1/7 mistakenly uses the target sum as denominator.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00006",
+      "stem": "A bag contains 3 red balls and 4 blue balls. One ball is drawn at random. What is the probability it is red?",
+      "options": [
+        {"option_text": "3/4", "is_correct": false},
+        {"option_text": "4/7", "is_correct": false},
+        {"option_text": "3/7", "is_correct": true},
+        {"option_text": "1/3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total balls = 3+4 = 7. P(red) = 3/7. Trap: 3/4 uses only the blue ball count as denominator; 4/7 gives P(blue) instead; 1/3 divides by only the red count.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00007",
+      "stem": "A bag contains 3 red and 4 blue balls. Two balls are drawn one after another WITHOUT replacement. What is the probability that both are red?",
+      "options": [
+        {"option_text": "9/49", "is_correct": false},
+        {"option_text": "3/21", "is_correct": false},
+        {"option_text": "1/7", "is_correct": true},
+        {"option_text": "2/7", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P(1st red) = 3/7. After removing one red, P(2nd red | 1st red) = 2/6 = 1/3. P(both red) = (3/7)×(1/3) = 3/21 = 1/7. Alternatively: C(3,2)/C(7,2) = 3/21 = 1/7. Trap: 9/49 = (3/7)² applies WITH replacement; 2/7 makes an arithmetic error in the conditional.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00008",
+      "stem": "A fair coin is tossed 3 times. What is the probability of getting at least one head?",
+      "options": [
+        {"option_text": "3/8", "is_correct": false},
+        {"option_text": "5/8", "is_correct": false},
+        {"option_text": "7/8", "is_correct": true},
+        {"option_text": "1/8", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P(at least one head) = 1 − P(no head) = 1 − P(all tails) = 1 − (1/2)³ = 1 − 1/8 = 7/8. Complementary counting is the fastest approach for 'at least one' problems. Trap: 3/8 = P(exactly one head); 5/8 = P(exactly two or three heads) via wrong counting; 1/8 = P(all tails) — the complement.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00009",
+      "stem": "Person A speaks the truth 3/4 of the time and person B speaks the truth 4/5 of the time. What is the probability that they contradict each other when asked about an event?",
+      "options": [
+        {"option_text": "3/20", "is_correct": false},
+        {"option_text": "4/20", "is_correct": false},
+        {"option_text": "7/20", "is_correct": true},
+        {"option_text": "12/20", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. They contradict when one tells truth and other lies. P(A true, B lies) = (3/4)×(1/5) = 3/20. P(A lies, B true) = (1/4)×(4/5) = 4/20. P(contradict) = 3/20 + 4/20 = 7/20. Trap: 12/20 = (3/4)×(4/5) = P(both tell truth, i.e., they agree); 3/20 is only one case.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W10_00010",
+      "stem": "Two cards are drawn at random from a well-shuffled pack of 52 cards. What is the probability that both are Kings?",
+      "options": [
+        {"option_text": "1/169", "is_correct": false},
+        {"option_text": "1/221", "is_correct": true},
+        {"option_text": "4/52", "is_correct": false},
+        {"option_text": "1/26", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. P = C(4,2)/C(52,2) = 6/1326 = 1/221. C(4,2)=6 (ways to choose 2 kings from 4), C(52,2)=1326 (ways to choose any 2 from 52). Alternatively: (4/52)×(3/51) = 12/2652 = 1/221. Trap: 1/169 = (1/13)² — applies WITH replacement; 4/52 = P(one king in one draw).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

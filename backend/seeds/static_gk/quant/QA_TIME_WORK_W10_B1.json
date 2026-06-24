@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_TIME_WORK_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Time and Work — Rates, Combined Work and Efficiency (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00001",
+      "stem": "A can complete a piece of work in 10 days and B can complete it in 15 days. How many days will they take if they work together?",
+      "options": [
+        {"option_text": "4 days", "is_correct": false},
+        {"option_text": "5 days", "is_correct": false},
+        {"option_text": "6 days", "is_correct": true},
+        {"option_text": "8 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Combined rate = 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6. Together they finish in 6 days. Short Trick: (10×15)/(10+15) = 150/25 = 6. Trap: 5 days uses (10+15)/5 = 5 (no valid formula); 8 days averages 10 and 6.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00002",
+      "stem": "A and B together complete work in 12 days. A alone can do it in 20 days. How many days does B alone take?",
+      "options": [
+        {"option_text": "24 days", "is_correct": false},
+        {"option_text": "28 days", "is_correct": false},
+        {"option_text": "30 days", "is_correct": true},
+        {"option_text": "36 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. B's rate = 1/12 − 1/20 = 5/60 − 3/60 = 2/60 = 1/30. B alone = 30 days. Trap: 24 uses 12×2 (doubles combined time); 36 uses 12×3. Short Trick: B = (12×20)/(20−12) = 240/8 = 30.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00003",
+      "stem": "A can do a job in 18 days and B in 24 days. They start together but A leaves after 6 days. How many more days does B alone take to finish the remaining work?",
+      "options": [
+        {"option_text": "7 days", "is_correct": false},
+        {"option_text": "9 days", "is_correct": false},
+        {"option_text": "10 days", "is_correct": true},
+        {"option_text": "12 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. In 6 days together: (1/18+1/24)×6 = (4+3)/72 × 6 = 7/72 × 6 = 7/12. Remaining = 5/12. B alone: (5/12)÷(1/24) = (5/12)×24 = 10 days. Trap: 12 days applies B's full rate to the wrong fraction; 7 days uses only the work done amount (7/12) × 12 by mistake.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00004",
+      "stem": "A is twice as efficient as B. Together they can complete a piece of work in 12 days. How many days does B alone take?",
+      "options": [
+        {"option_text": "18 days", "is_correct": false},
+        {"option_text": "24 days", "is_correct": false},
+        {"option_text": "30 days", "is_correct": false},
+        {"option_text": "36 days", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Let B's rate = 1/x. A's rate = 2/x (twice as fast). Together: 1/x + 2/x = 3/x = 1/12 → x = 36. B alone = 36 days; A alone = 18 days. Trap: 18 gives A's time; 24 applies combined÷ratio incorrectly as 12×2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00005",
+      "stem": "A can do a piece of work in 6 days and B in 4 days. They work together for 1 day, after which B leaves. How many more days does A need to complete the remaining work?",
+      "options": [
+        {"option_text": "2.5 days", "is_correct": false},
+        {"option_text": "3 days", "is_correct": false},
+        {"option_text": "3.5 days", "is_correct": true},
+        {"option_text": "4 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. In 1 day together: 1/6+1/4 = 5/12. Remaining = 7/12. A's rate = 1/6. Days for A = (7/12)/(1/6) = 7/2 = 3.5 days. Trap: 3 days uses only 6/12 remaining (applying 1/6 to wrong fraction); 4 days is A's original time remaining if he worked alone from the start.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00006",
+      "stem": "6 workers can build a wall in 10 days. How many workers are needed to build the same wall in 5 days?",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total work = 6×10 = 60 worker-days. For 5 days: workers needed = 60/5 = 12. The relationship is inverse — fewer days require more workers. Trap: 8 workers adds 2 (wrong linear thinking); 15 applies 10/5 ratio to 6+3=9 wrong computation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00007",
+      "stem": "A, B, C together complete work in 4 days. A and B together take 6 days; A and C together take 8 days. How many days does A alone take?",
+      "options": [
+        {"option_text": "16 days", "is_correct": false},
+        {"option_text": "20 days", "is_correct": false},
+        {"option_text": "24 days", "is_correct": true},
+        {"option_text": "32 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let total=1. A+B+C = 1/4. A+B = 1/6 → C = 1/4−1/6 = 1/12. A+C = 1/8 → B = 1/4−1/8 = 1/8. A = 1/4−B−C = 1/4−1/8−1/12. LCM=24: A = 6/24−3/24−2/24 = 1/24. A alone = 24 days. Trap: 16 days miscomputes C as 1/8; 32 days doubles the answer incorrectly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00008",
+      "stem": "A and B can do a work in 12 and 18 days respectively. They work on alternate days starting with A. In how many days will the work be completed?",
+      "options": [
+        {"option_text": "13 days", "is_correct": false},
+        {"option_text": "14 days", "is_correct": false},
+        {"option_text": "14⅓ days", "is_correct": true},
+        {"option_text": "15 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. In every 2 days: A+B = 1/12+1/18 = 5/36. In 14 days (7 pairs): 7×5/36 = 35/36. Remaining = 1/36. Day 15 is A's turn. A does 1/12 per day. Time for 1/36 = (1/36)/(1/12) = 1/3 day. Total = 14 + 1/3 = 14⅓ days. Trap: 14 days misses the final fraction; 15 days over-counts by one full day.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00009",
+      "stem": "Pipe A fills a tank in 6 hours, Pipe B fills it in 4 hours, and a drain Pipe C empties it in 12 hours. If all three are open simultaneously, in how many hours will the tank be filled?",
+      "options": [
+        {"option_text": "2 hours", "is_correct": false},
+        {"option_text": "3 hours", "is_correct": true},
+        {"option_text": "4 hours", "is_correct": false},
+        {"option_text": "6 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Net rate = 1/6+1/4−1/12 = 2/12+3/12−1/12 = 4/12 = 1/3. Tank fills in 3 hours. Trap: 2 hours = 1/(1/4+1/4) ignores C; 4 hours uses only one of the filling pipes; 6 hours = only A's rate.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W10_00010",
+      "stem": "20 workers complete a job in 30 days working 8 hours a day. How many workers are needed to complete the same job in 25 days working 12 hours a day?",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "16", "is_correct": true},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total work = 20×30×8 = 4,800 worker-hours. New workers × 25 × 12 = 4,800 → workers = 4,800/300 = 16. Short Trick: W₂ = W₁×(D₁/D₂)×(H₁/H₂) = 20×(30/25)×(8/12) = 20×(6/5)×(2/3) = 20×4/5 = 16. Trap: 20 (unchanged) ignores the hour change; 18 misapplies one ratio.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

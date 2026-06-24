@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_CLOCKS_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Clocks — Angle, Coincidence and Gain/Loss (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_CLOCKS_W10_00001",
+      "stem": "Find the angle between the hour and minute hands of a clock at 3:15.",
+      "options": [
+        {"option_text": "0°", "is_correct": false},
+        {"option_text": "7.5°", "is_correct": true},
+        {"option_text": "15°", "is_correct": false},
+        {"option_text": "22.5°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Minute hand at 15 min = 15×6° = 90°. Hour hand at 3:15 = 3×30° + 15×0.5° = 90° + 7.5° = 97.5°. Angle = |97.5 − 90| = 7.5°. Short Trick: angle = |30H − 5.5M| = |30×3 − 5.5×15| = |90 − 82.5| = 7.5°. Trap: 0° assumes both hands are at 90° (ignoring the hour hand's 7.5° advance).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00002",
+      "stem": "At what time between 5 and 6 o'clock do the hour and minute hands of a clock coincide?",
+      "options": [
+        {"option_text": "5 hr 25 min", "is_correct": false},
+        {"option_text": "5 hr 27 3/11 min", "is_correct": true},
+        {"option_text": "5 hr 30 min", "is_correct": false},
+        {"option_text": "5 hr 32 min", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. At 5:00 the hour hand is at 150° (= 5×30°). The minute hand must travel to catch up. Minutes past 5 for coincidence = 5×60/11 = 300/11 = 27 3/11 minutes. Short Trick: coincidence between H and (H+1) o'clock occurs at H×60/11 minutes past H. For H=5: 300/11 = 27 3/11 min. Trap: 5:30 is when hands are 15° apart, not coincident.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00003",
+      "stem": "How many times do the hour and minute hands of a clock coincide in a 12-hour period?",
+      "options": [
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "11", "is_correct": true},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "22", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. The minute hand gains one full revolution (360°) on the hour hand every 65 5/11 minutes. In 12 hours = 720 minutes, they coincide 720 ÷ (720/11) = 11 times. Classic trap: students assume 12 coincidences (one per hour), but the 12th coincidence would land exactly at 12:00:00 — the start of the next 12-hour cycle, so it's counted only once.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00004",
+      "stem": "Find the angle between the hour and minute hands at 7:20.",
+      "options": [
+        {"option_text": "80°", "is_correct": false},
+        {"option_text": "90°", "is_correct": false},
+        {"option_text": "100°", "is_correct": true},
+        {"option_text": "110°", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Angle = |30H − 5.5M| = |30×7 − 5.5×20| = |210 − 110| = 100°. Verify: minute hand at 120°; hour hand at 7×30° + 20×0.5° = 210° + 10° = 220°. |220 − 120| = 100°. Trap: 80° comes from using just 200 − 120 (forgetting 10° advance of hour hand); 90° is a common guess at 7:20 due to near-right angles on the clock face.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00005",
+      "stem": "What is the angle between the minute and hour hands of a clock at 5:30?",
+      "options": [
+        {"option_text": "5°", "is_correct": false},
+        {"option_text": "10°", "is_correct": false},
+        {"option_text": "15°", "is_correct": true},
+        {"option_text": "20°", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Angle = |30×5 − 5.5×30| = |150 − 165| = 15°. At 5:30, the minute hand is at 180° (pointing at 6) and the hour hand is at 5×30° + 30×0.5° = 165°. |180 − 165| = 15°. Classic trap: 5° comes from assuming the hour hand is at exactly 150° (forgetting the 30-minute advancement); 0° would require the hands to be together which happens at 5:27 3/11.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00006",
+      "stem": "At what time between 6 and 7 o'clock are the hands of a clock first at right angles (90°)?",
+      "options": [
+        {"option_text": "6 hr 14 min", "is_correct": false},
+        {"option_text": "6 hr 16 4/11 min", "is_correct": true},
+        {"option_text": "6 hr 18 min", "is_correct": false},
+        {"option_text": "6 hr 22 min", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. At 6:00 the hands are 180° apart. The minute hand gains 5.5°/min on the hour hand. To reduce from 180° to 90° (decrease of 90°), time = 90/5.5 = 180/11 = 16 4/11 min. So first right angle is at 6:16 4/11. Short Trick: minutes past H = (30H ± 90)/5.5. First right angle past 6 = (180 − 90)/5.5 = 16 4/11 min. Trap: 6:14 misapplies the formula; 6:22 gives the second right angle between 6 and 7.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00007",
+      "stem": "A wall clock gains 3 minutes every 4 hours. If it shows the correct time at 8:00 AM, what time will it display at actual 8:00 PM that day?",
+      "options": [
+        {"option_text": "8:06 PM", "is_correct": false},
+        {"option_text": "8:07 PM", "is_correct": false},
+        {"option_text": "8:09 PM", "is_correct": true},
+        {"option_text": "8:12 PM", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 8 AM to 8 PM = 12 actual hours. Gain per 4 hours = 3 min, so gain per 12 hours = 3 × (12/4) = 9 minutes. The clock displays 8:00 PM + 9 minutes = 8:09 PM. Trap: 8:06 PM applies a gain of 2 min/4 hr; 8:12 PM uses gain = 4 min per 4 hours (confusing minutes gained with the 4-hour interval).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00008",
+      "stem": "Find the angle between the hands of a clock at 4:48.",
+      "options": [
+        {"option_text": "96°", "is_correct": false},
+        {"option_text": "120°", "is_correct": false},
+        {"option_text": "144°", "is_correct": true},
+        {"option_text": "156°", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Angle = |30H − 5.5M| = |30×4 − 5.5×48| = |120 − 264| = 144°. Since 144 < 180, no reflex adjustment needed. Verify: minute hand at 288°; hour hand = 4×30° + 48×0.5° = 120° + 24° = 144°. |288 − 144| = 144°. Trap: 96° comes from |288 − 192| using a wrong hour-hand position of 4×48 instead of 4×30 + 0.5×48.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00009",
+      "stem": "At what time between 1 and 2 o'clock are the minute and hour hands of a clock pointing in exactly opposite directions (180° apart)?",
+      "options": [
+        {"option_text": "1 hr 35 min", "is_correct": false},
+        {"option_text": "1 hr 38 2/11 min", "is_correct": true},
+        {"option_text": "1 hr 40 min", "is_correct": false},
+        {"option_text": "1 hr 43 7/11 min", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Hands are 180° apart when: 30H + 180 = 5.5M × (taking the positive case). For H=1: M = (30 + 180)/5.5 = 210/5.5 = 420/11 = 38 2/11 min past 1. Verify: at 1:38 2/11 — minute hand = 6 × 420/11 = 2520/11 ≈ 229.1°; hour hand = 30 + 0.5×420/11 = 30 + 210/11 ≈ 49.1°. Difference ≈ 180° ✓. Trap: 1:35 rounds the fraction too aggressively; 1:43 7/11 is where the hands are coincident.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_CLOCKS_W10_00010",
+      "stem": "Clock A gains 2 minutes per actual hour. Clock B loses 2 minutes per actual hour. Both show the correct time at 12:00 noon. After how many actual hours will Clock A be exactly 1 hour ahead of Clock B?",
+      "options": [
+        {"option_text": "12 hours", "is_correct": false},
+        {"option_text": "15 hours", "is_correct": true},
+        {"option_text": "18 hours", "is_correct": false},
+        {"option_text": "20 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. In t actual hours, Clock A shows t × 62 min (gains 2 min/hr). Clock B shows t × 58 min (loses 2 min/hr). Difference = 4t minutes. For a 60-minute gap: 4t = 60 → t = 15 hours. Short Trick: combined gain/loss rate = 2+2 = 4 min/hr. Time to diverge by 60 min = 60/4 = 15 hours. Trap: 12 hours uses rate = 5 min/hr; 20 hours uses rate = 3 min/hr.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

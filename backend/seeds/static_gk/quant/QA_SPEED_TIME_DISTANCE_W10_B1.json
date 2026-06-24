@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SPEED_TIME_DISTANCE_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Speed, Time and Distance — Trains, Averages and Meeting Problems (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00001",
+      "stem": "A car travels 240 km in 4 hours. What is its speed in km/h?",
+      "options": [
+        {"option_text": "50 km/h", "is_correct": false},
+        {"option_text": "55 km/h", "is_correct": false},
+        {"option_text": "60 km/h", "is_correct": true},
+        {"option_text": "64 km/h", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Speed = Distance/Time = 240/4 = 60 km/h. Trap: 50 km/h implies 4×50=200 km (not 240); 64 km/h from rounding 240/3.75 (wrong time).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00002",
+      "stem": "A train 150 m long crosses a stationary pole in 10 seconds. What is the train's speed in km/h?",
+      "options": [
+        {"option_text": "45 km/h", "is_correct": false},
+        {"option_text": "54 km/h", "is_correct": true},
+        {"option_text": "60 km/h", "is_correct": false},
+        {"option_text": "72 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. When crossing a pole, the train travels its own length. Speed = 150/10 = 15 m/s. Convert to km/h: 15 × 18/5 = 54 km/h. Trap: 45 km/h = 12.5 m/s (wrong); 60 km/h = 150/9 s (wrong); 72 km/h = 20 m/s (wrong ratio). Short Trick: m/s → km/h: multiply by 3.6 or 18/5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00003",
+      "stem": "Two trains travel towards each other on parallel tracks. Train A travels at 60 km/h and Train B at 90 km/h. They are initially 300 km apart. In how many hours do they meet?",
+      "options": [
+        {"option_text": "1 hour", "is_correct": false},
+        {"option_text": "1.5 hours", "is_correct": false},
+        {"option_text": "2 hours", "is_correct": true},
+        {"option_text": "2.5 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. When moving towards each other, relative speed = 60+90 = 150 km/h. Time to meet = 300/150 = 2 hours. Trap: 1.5 hours uses speed of only one train (300/200); 2.5 hours misadds speeds (300/120).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00004",
+      "stem": "A person covers half his journey at 60 km/h and the other half at 40 km/h. Find his average speed for the entire journey.",
+      "options": [
+        {"option_text": "46 km/h", "is_correct": false},
+        {"option_text": "48 km/h", "is_correct": true},
+        {"option_text": "50 km/h", "is_correct": false},
+        {"option_text": "52 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For equal distances: Average speed = 2v₁v₂/(v₁+v₂) = 2×60×40/(60+40) = 4800/100 = 48 km/h. Trap: 50 km/h = simple arithmetic mean (only valid if equal time, not equal distance); 46 and 52 come from incorrect formula applications. Key insight: when equal distances are covered at different speeds, the harmonic mean (not arithmetic mean) gives the average speed.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00005",
+      "stem": "A train 200 m long crosses a bridge 800 m long in 50 seconds. What is the train's speed in km/h?",
+      "options": [
+        {"option_text": "60 km/h", "is_correct": false},
+        {"option_text": "66 km/h", "is_correct": false},
+        {"option_text": "72 km/h", "is_correct": true},
+        {"option_text": "80 km/h", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Distance to cross bridge = length of train + length of bridge = 200+800 = 1000 m. Speed = 1000/50 = 20 m/s = 20×18/5 = 72 km/h. Trap: 60 km/h ignores the train's length (uses only 800 m); 80 km/h uses wrong conversion factor.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00006",
+      "stem": "A train 300 m long meets a man walking at 10 km/h in the opposite direction. The train passes the man in 12 seconds. What is the train's speed in km/h?",
+      "options": [
+        {"option_text": "70 km/h", "is_correct": false},
+        {"option_text": "80 km/h", "is_correct": true},
+        {"option_text": "85 km/h", "is_correct": false},
+        {"option_text": "90 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Moving in opposite directions: relative speed = (v+10) km/h. Distance = 300 m = 0.3 km. Time = 12 s = 12/3600 hr = 1/300 hr. (v+10) = 0.3 ÷ (1/300) = 90 km/h. v = 80 km/h. Alternatively: relative speed = 300/12 = 25 m/s = 90 km/h → v = 90−10 = 80. Trap: 90 km/h is the relative speed, not the train's speed.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00007",
+      "stem": "Rahul travels from city A to city B at 50 km/h and returns at 30 km/h. What is his average speed for the whole journey?",
+      "options": [
+        {"option_text": "35 km/h", "is_correct": false},
+        {"option_text": "37.5 km/h", "is_correct": true},
+        {"option_text": "40 km/h", "is_correct": false},
+        {"option_text": "42.5 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Average speed for round trip (equal distances) = 2×50×30/(50+30) = 3000/80 = 37.5 km/h. Trap: 40 km/h is the arithmetic mean (50+30)/2, valid only for equal time, not equal distance; 35 km/h misapplies the harmonic formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00008",
+      "stem": "Two trains P and Q start simultaneously from stations X and Y, which are 500 km apart, and travel towards each other. Train P's speed is 80 km/h and Train Q's is 120 km/h. At what distance from station X do they meet?",
+      "options": [
+        {"option_text": "160 km", "is_correct": false},
+        {"option_text": "180 km", "is_correct": false},
+        {"option_text": "200 km", "is_correct": true},
+        {"option_text": "250 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Time to meet = 500/(80+120) = 500/200 = 2.5 hours. Distance covered by P (from X) = 80×2.5 = 200 km. Trap: 250 km assumes equal speeds (meeting at midpoint); 180 km uses P's proportion of total speed incorrectly as 80/180.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00009",
+      "stem": "A thief runs at 8 km/h. A policeman, 1 km behind him, chases at 10 km/h. In how many minutes does the policeman catch the thief?",
+      "options": [
+        {"option_text": "20 min", "is_correct": false},
+        {"option_text": "25 min", "is_correct": false},
+        {"option_text": "30 min", "is_correct": true},
+        {"option_text": "40 min", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Relative speed (policeman gaining on thief) = 10−8 = 2 km/h. Gap = 1 km. Time = 1/2 hours = 30 minutes. Trap: 20 min assumes relative speed = 3 km/h; 40 min assumes relative speed of 1.5 km/h. The key is to use the closing speed, not individual speeds.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_00010",
+      "stem": "A man rows 15 km downstream in 2 hours and returns 15 km upstream in 3 hours. What is the speed of the current in km/h?",
+      "options": [
+        {"option_text": "1 km/h", "is_correct": false},
+        {"option_text": "1.25 km/h", "is_correct": true},
+        {"option_text": "1.5 km/h", "is_correct": false},
+        {"option_text": "2 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Downstream speed = 15/2 = 7.5 km/h. Upstream speed = 15/3 = 5 km/h. Speed of current = (Downstream − Upstream)/2 = (7.5−5)/2 = 2.5/2 = 1.25 km/h. Speed of boat in still water = (7.5+5)/2 = 6.25 km/h. Trap: 1.5 km/h uses (7.5−5)/1 (forgets the ÷2); 2 km/h from (7.5−5.5)/1 using wrong upstream speed.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

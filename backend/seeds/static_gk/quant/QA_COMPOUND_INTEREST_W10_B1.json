@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_COMPOUND_INTEREST_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Compound Interest — Annual Compounding, Rate Finding and Comparisons (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00001",
+      "stem": "Find the compound interest on ₹1,000 at 10% per annum for 2 years, compounded annually.",
+      "options": [
+        {"option_text": "₹200", "is_correct": false},
+        {"option_text": "₹205", "is_correct": false},
+        {"option_text": "₹210", "is_correct": true},
+        {"option_text": "₹220", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. A = 1000×(1.10)² = 1000×1.21 = ₹1,210. CI = 1210−1000 = ₹210. SI for same period = 1000×10/100×2 = ₹200. CI > SI because of interest on interest. Trap: ₹200 is the SI; ₹220 wrongly applies 10%+10%=20% on ₹1,000 directly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00002",
+      "stem": "Find the difference between compound interest and simple interest on ₹10,000 at 10% per annum for 2 years.",
+      "options": [
+        {"option_text": "₹50", "is_correct": false},
+        {"option_text": "₹75", "is_correct": false},
+        {"option_text": "₹100", "is_correct": true},
+        {"option_text": "₹150", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. SI = 10000×10/100×2 = ₹2,000. CI = 10000×(1.10)²−10000 = 12100−10000 = ₹2,100. Difference = 100. Short Trick: for 2 years, CI−SI = P×(R/100)² = 10000×(0.10)² = 10000×0.01 = ₹100. Trap: ₹50 uses half the principal; ₹150 adds an extra year's interest.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00003",
+      "stem": "Find the compound interest on ₹8,000 at 15% per annum for 2 years.",
+      "options": [
+        {"option_text": "₹2,400", "is_correct": false},
+        {"option_text": "₹2,520", "is_correct": false},
+        {"option_text": "₹2,580", "is_correct": true},
+        {"option_text": "₹2,640", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A = 8000×(1.15)² = 8000×1.3225 = ₹10,580. CI = 10580−8000 = ₹2,580. Step-by-step: Year 1: CI = 8000×15/100 = ₹1200, A₁ = ₹9200. Year 2: CI = 9200×15/100 = ₹1380, A₂ = ₹10580. Total CI = 1200+1380 = ₹2580. Trap: ₹2400 = SI for 2 years (8000×15/100×2); ₹2520 uses (1.14)² by mistake.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00004",
+      "stem": "What principal will yield a compound interest of ₹1,261 at 5% per annum for 3 years?",
+      "options": [
+        {"option_text": "₹6,000", "is_correct": false},
+        {"option_text": "₹7,000", "is_correct": false},
+        {"option_text": "₹8,000", "is_correct": true},
+        {"option_text": "₹9,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. CI = P[(1.05)³−1] = P×0.157625 = 1261. P = 1261/0.157625 = ₹8,000. Verify: A = 8000×1.157625 = ₹9261; CI = ₹1261 ✓. Trap: ₹7000 gives CI = 7000×0.157625 ≈ ₹1103 (not 1261); ₹9000 gives CI ≈ ₹1419.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00005",
+      "stem": "Find the compound interest on ₹20,000 at 5% per annum for 2 years.",
+      "options": [
+        {"option_text": "₹1,900", "is_correct": false},
+        {"option_text": "₹2,000", "is_correct": false},
+        {"option_text": "₹2,050", "is_correct": true},
+        {"option_text": "₹2,100", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A = 20000×(1.05)² = 20000×1.1025 = ₹22,050. CI = ₹2,050. Year 1: 20000×5% = ₹1000, A₁=21000. Year 2: 21000×5% = ₹1050, A₂=22050. Total CI = 1000+1050 = ₹2050. Trap: ₹2000 is the SI (20000×5%×2); ₹2100 = 20000×(10.5%) wrongly treating both years together.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00006",
+      "stem": "₹6,250 amounts to ₹6,760 in 2 years at compound interest. Find the rate of interest per annum.",
+      "options": [
+        {"option_text": "3%", "is_correct": false},
+        {"option_text": "4%", "is_correct": true},
+        {"option_text": "5%", "is_correct": false},
+        {"option_text": "6%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. (1+R/100)² = 6760/6250 = 1.0816. (1+R/100) = √1.0816 = 1.04. R = 4%. Verify: 6250×(1.04)² = 6250×1.0816 = ₹6760 ✓. Short Trick: 6760/6250 = 676/625 = (26/25)² → R/100 = 1/25 → R = 4%. Trap: 5% gives (1.05)² = 1.1025, A = 6890 ≠ 6760.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00007",
+      "stem": "A sum of money at compound interest doubles in 4 years. In how many years will it become 4 times the original amount?",
+      "options": [
+        {"option_text": "6 years", "is_correct": false},
+        {"option_text": "8 years", "is_correct": true},
+        {"option_text": "12 years", "is_correct": false},
+        {"option_text": "16 years", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. If P doubles in 4 years: P(1+R)⁴ = 2P → (1+R)⁴ = 2. For 4P: (1+R)ⁿ = 4 = 2² = [(1+R)⁴]² → (1+R)^8 = 4 → n = 8 years. Rule: if a sum n-tuples in t years, it becomes n²-tuples in 2t years. Since it doubles in 4 years (n=2, t=4), it becomes 4 times in 8 years. Trap: 12 = 4×3 (wrong — not linear at CI); 16 = 4×4 (wrong reasoning).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00008",
+      "stem": "The CI on a certain sum at 20% per annum compounded annually for 2 years is ₹4,400. Find the principal.",
+      "options": [
+        {"option_text": "₹8,000", "is_correct": false},
+        {"option_text": "₹9,000", "is_correct": false},
+        {"option_text": "₹10,000", "is_correct": true},
+        {"option_text": "₹11,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. CI = P[(1.20)²−1] = P[1.44−1] = 0.44P = 4400 → P = 10,000. Verify: A = 10000×1.44 = ₹14,400; CI = ₹4,400 ✓. Trap: ₹8000 gives CI = 8000×0.44 = ₹3520 (not 4400); ₹11000 over-estimates.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00009",
+      "stem": "₹12,000 is invested. Part is invested at 10% SI and the rest at 15% CI for 1 year. The total interest earned is ₹1,550. Find the amount invested at 15%.",
+      "options": [
+        {"option_text": "₹5,000", "is_correct": false},
+        {"option_text": "₹6,000", "is_correct": false},
+        {"option_text": "₹7,000", "is_correct": true},
+        {"option_text": "₹8,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. At 1 year, CI = SI. Let x = amount at 15%. Amount at 10% = 12000−x. Interest: 0.15x + 0.10(12000−x) = 1550. 0.15x + 1200 − 0.10x = 1550. 0.05x = 350. x = ₹7,000. Verify: 7000×15% + 5000×10% = 1050+500 = ₹1,550 ✓. Trap: ₹6,000 gives 900+600=1500 (not 1550); ₹8,000 gives 1200+400=1600.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W10_00010",
+      "stem": "At what rate of compound interest will ₹15,000 amount to ₹18,150 in 2 years?",
+      "options": [
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "9%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "12%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. (1+R/100)² = 18150/15000 = 1.21. 1+R/100 = √1.21 = 1.10. R = 10%. Verify: 15000×1.21 = ₹18,150 ✓. Short Trick: 18150/15000 = 1815/1500 = 121/100 = (11/10)² → R = 10%. Trap: 8% gives (1.08)² = 1.1664, A = 17496 ≠ 18150; 12% gives (1.12)² = 1.2544, A = 18816.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

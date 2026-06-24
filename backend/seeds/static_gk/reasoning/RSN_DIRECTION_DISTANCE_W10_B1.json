@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_DIRECTION_DISTANCE_W10",
+  "subject": "Reasoning",
+  "topic": "Direction and Distance — Navigation Problems (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00001",
+      "stem": "A man walks 6 km north, then 8 km east. How far is he from his starting point?",
+      "options": [
+        {"option_text": "7 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": true},
+        {"option_text": "12 km", "is_correct": false},
+        {"option_text": "14 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. North and East are perpendicular. Distance = √(6²+8²) = √(36+64) = √100 = 10 km. This is a 3-4-5 Pythagorean triple scaled by 2. Trap: 7 km = (6+8)/2 (wrong average); 12 km adds the two distances linearly (only valid if same direction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00002",
+      "stem": "Starting from point P, Anu walks 3 km north, then 4 km east. What is the straight-line distance from P to her current position?",
+      "options": [
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "5 km", "is_correct": true},
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "7 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Distance = √(3²+4²) = √(9+16) = √25 = 5 km. This is the classic 3-4-5 Pythagorean triple — the most frequently tested in SSC direction problems. Trap: 6 km uses √(3+4)² = 7 (wrong), or adds linearly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00003",
+      "stem": "Sita starts from a point, walks 20 m south, turns right and walks 15 m, then turns right again and walks 20 m. What is her distance from the starting point?",
+      "options": [
+        {"option_text": "5 m", "is_correct": false},
+        {"option_text": "10 m", "is_correct": false},
+        {"option_text": "15 m", "is_correct": true},
+        {"option_text": "20 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Step 1: 20 m south (facing south). Turn right from south = face west. Step 2: 15 m west. Turn right from west = face north. Step 3: 20 m north → cancels the 20 m south. Net position: 15 m west of start. Distance = 15 m. Trap: 20 m forgets the third leg; 5 m subtracts legs incorrectly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00004",
+      "stem": "From his office, Rahul walks 5 km north, 3 km east, 5 km south, and then 3 km west. Where is Rahul now?",
+      "options": [
+        {"option_text": "6 km north of office", "is_correct": false},
+        {"option_text": "Back at his office", "is_correct": true},
+        {"option_text": "3 km east of office", "is_correct": false},
+        {"option_text": "5 km north of office", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. North 5 km and South 5 km cancel out. East 3 km and West 3 km cancel out. Net displacement = 0. Rahul is back at his starting point (office). Trap: Students may stop tracking after two legs and think he is displaced east or north.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00005",
+      "stem": "Raju starts from home, walks 5 km north, then 4 km east, then 2 km south. How far and in which direction is he from home?",
+      "options": [
+        {"option_text": "3 km, north-east", "is_correct": false},
+        {"option_text": "5 km, north-east", "is_correct": true},
+        {"option_text": "5 km, east", "is_correct": false},
+        {"option_text": "6 km, north-east", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Net north = 5−2 = 3 km north. Net east = 4 km east. Distance = √(3²+4²) = 5 km. Direction: he is north-east of home (both north and east components are positive). Trap: 3 km takes only the north component; 6 km adds all three distances linearly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00006",
+      "stem": "A man faces North. He turns 90° clockwise, then 90° anti-clockwise, then 180° clockwise. What direction does he now face?",
+      "options": [
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South", "is_correct": true},
+        {"option_text": "West", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Start: North. +90° clockwise: North→East. −90° anti-clockwise is same as +90° clockwise: East→South. +180° clockwise: South→North... wait. Correcting: −90° anti-clockwise means turning 90° in the anti-clockwise direction: from East, anti-clockwise 90° → East→North. Then +180° clockwise: North→South. Final direction: South. Trap: each turn must be applied sequentially using compass directions — not summed algebraically.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00007",
+      "stem": "A person walks 3 km north, then 4 km east, then 3 km south, then 2 km west. How far is she from the starting point, and in what direction?",
+      "options": [
+        {"option_text": "1 km, east", "is_correct": false},
+        {"option_text": "2 km, east", "is_correct": true},
+        {"option_text": "2 km, west", "is_correct": false},
+        {"option_text": "5 km, north-east", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. North 3 − South 3 = 0 (cancels). East 4 − West 2 = 2 km east. Net position: 2 km directly east of start. Trap: 5 km (north-east) applies Pythagoras to raw legs without cancelling opposite directions; 1 km east subtracts only one km east instead of two west from four.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00008",
+      "stem": "From point P, Q is 8 km due west. From Q, R is 6 km due north. What is the direction of R from P, and the straight-line distance PR?",
+      "options": [
+        {"option_text": "North-east, 10 km", "is_correct": false},
+        {"option_text": "North-west, 10 km", "is_correct": true},
+        {"option_text": "South-west, 10 km", "is_correct": false},
+        {"option_text": "North-west, 14 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. P=(0,0), Q=(−8,0) (8 km west), R=(−8,6) (6 km north of Q). Distance PR = √(8²+6²) = √(64+36) = √100 = 10 km. Direction: R is to the north-west of P (it is west due to Q, and north due to R's position above Q). Trap: North-east confuses the compass: since Q is west of P, R (north of Q) is NW of P, not NE.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00009",
+      "stem": "A is 40 m to the south of B. C is 30 m to the east of A. What is the straight-line distance from B to C?",
+      "options": [
+        {"option_text": "40 m", "is_correct": false},
+        {"option_text": "45 m", "is_correct": false},
+        {"option_text": "50 m", "is_correct": true},
+        {"option_text": "60 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. B=(0,0). A is 40 m south of B → A=(0,−40). C is 30 m east of A → C=(30,−40). Distance BC = √(30²+40²) = √(900+1600) = √2500 = 50 m (another 3-4-5 triple scaled by 10). Trap: 40 m is the vertical leg only; 60 m = 30+40−10 is wrong linear addition.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_00010",
+      "stem": "Meena starts facing East. She turns 45° clockwise, then 90° anti-clockwise, then 135° clockwise. Which direction is she now facing?",
+      "options": [
+        {"option_text": "North", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "West", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Using compass bearings (N=0°, E=90°, SE=135°, S=180°, SW=225°, W=270°, NW=315°): Start=East=90°. +45° CW → 90+45=135° (SE). −90° anti-CW = +90° CW → 135+90=225° (SW). +135° CW → 225+135=360°=0° (North). Trap: Students must track cumulative bearing, not apply turns independently; applying all turns algebraically to 90° gives 90+45−90+135=180° (South) — wrong because anti-clockwise means SUBTRACT in bearing terms (−90° for anti-clockwise).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

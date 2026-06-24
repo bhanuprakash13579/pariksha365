@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_MATRIX_CODING_W10",
+  "subject": "Reasoning",
+  "topic": "Matrix Coding — Letter-Grid Row-Column Encoding (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00001",
+      "stem": "A matrix is given below. Each letter is coded by its (Row, Column) position.\n\n         Col-0  Col-1  Col-2  Col-3  Col-4\nRow-0:     E      A      M      K      O\nRow-1:     N      D      B      L      S\nRow-2:     T      G      H      R      I\nRow-3:     F      U      P      C      J\nRow-4:     W      V      Q      X      Y\n\nWhat is the code for the letter 'A'?",
+      "options": [
+        {"option_text": "00", "is_correct": false},
+        {"option_text": "01", "is_correct": true},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 'A' is at Row-0, Col-1 → code = 01. 'E' is at 00; 'N' is at 10; 'D' is at 11. In matrix coding, always read Row first, then Column.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00002",
+      "stem": "(Same matrix as Q1)\n\nWhat is the code for the letter 'T'?",
+      "options": [
+        {"option_text": "02", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 'T' is at Row-2, Col-0 → code = 20. Trap: 02 is 'M' (Row-0, Col-2); 22 is 'H'; 30 is 'F'. Always check row first.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00003",
+      "stem": "(Same matrix as Q1)\n\nWhat word is coded by: 30  10  24  00?",
+      "options": [
+        {"option_text": "FINE", "is_correct": true},
+        {"option_text": "MINE", "is_correct": false},
+        {"option_text": "LINE", "is_correct": false},
+        {"option_text": "DINE", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Decode each: 30=F (Row3,Col0), 10=N (Row1,Col0), 24=I (Row2,Col4), 00=E (Row0,Col0) → F-N-I-E = FINE. Trap: MINE would require M=02 at position 1; LINE needs L=13; DINE needs D=11.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00004",
+      "stem": "(Same matrix as Q1)\n\nWhat is the code for the word 'MAN'?",
+      "options": [
+        {"option_text": "02-00-10", "is_correct": false},
+        {"option_text": "02-01-10", "is_correct": true},
+        {"option_text": "02-01-01", "is_correct": false},
+        {"option_text": "12-01-10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. M=02 (Row0,Col2), A=01 (Row0,Col1), N=10 (Row1,Col0) → 02-01-10. Trap: 02-00-10 codes for M-E-N (MEn); 12-01-10 codes B-A-N (BAN).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00005",
+      "stem": "(Same matrix as Q1)\n\nWhat is the code for the word 'BORN'?",
+      "options": [
+        {"option_text": "12-04-23-10", "is_correct": true},
+        {"option_text": "12-04-23-00", "is_correct": false},
+        {"option_text": "12-40-23-10", "is_correct": false},
+        {"option_text": "21-04-23-10", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. B=12 (Row1,Col2), O=04 (Row0,Col4), R=23 (Row2,Col3), N=10 (Row1,Col0) → 12-04-23-10. Trap: 12-04-23-00 ends in E (not N); 12-40-23-10 uses 40=W (not O); 21-04-23-10 starts with G (not B).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00006",
+      "stem": "(Same matrix as Q1)\n\nDecode: 04-23-12-24-20",
+      "options": [
+        {"option_text": "ORBIT", "is_correct": true},
+        {"option_text": "ORBIN", "is_correct": false},
+        {"option_text": "OKBIT", "is_correct": false},
+        {"option_text": "ORBIG", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. 04=O, 23=R, 12=B, 24=I, 20=T → ORBIT. Verify: O=Row0,Col4 ✓; R=Row2,Col3 ✓; B=Row1,Col2 ✓; I=Row2,Col4 ✓; T=Row2,Col0 ✓. Trap: ORBIN would need N=10 at the end; OKBIT would need K=03 at position 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00007",
+      "stem": "(Same matrix as Q1)\n\nWhat is the code for the word 'CAMP'?",
+      "options": [
+        {"option_text": "33-01-02-32", "is_correct": true},
+        {"option_text": "33-01-02-23", "is_correct": false},
+        {"option_text": "33-00-02-32", "is_correct": false},
+        {"option_text": "23-01-02-32", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. C=33 (Row3,Col3), A=01 (Row0,Col1), M=02 (Row0,Col2), P=32 (Row3,Col2) → 33-01-02-32. Trap: 33-01-02-23 ends in R (not P); 33-00-02-32 uses 00=E (not A); 23-01-02-32 starts with R (not C).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00008",
+      "stem": "(Same matrix as Q1)\n\nIf 'BIRD' is coded as 12-24-23-11, what is the code for 'BILL'?",
+      "options": [
+        {"option_text": "12-24-13-13", "is_correct": true},
+        {"option_text": "12-24-11-11", "is_correct": false},
+        {"option_text": "12-24-13-14", "is_correct": false},
+        {"option_text": "12-21-13-13", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Verify BIRD: B=12, I=24, R=23, D=11 ✓. BILL: B=12, I=24, L=13 (Row1,Col3), L=13 → 12-24-13-13. Trap: 12-24-11-11 codes BIDD; 12-24-13-14 codes BILS (14=S); 12-21-13-13 codes BGLL.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00009",
+      "stem": "(Same matrix as Q1)\n\nDecode: 31-14-22-00-23-14",
+      "options": [
+        {"option_text": "URGERS", "is_correct": false},
+        {"option_text": "USHERS", "is_correct": true},
+        {"option_text": "UTTERS", "is_correct": false},
+        {"option_text": "USHELS", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 31=U (Row3,Col1), 14=S (Row1,Col4), 22=H (Row2,Col2), 00=E (Row0,Col0), 23=R (Row2,Col3), 14=S → USHERS. Trap: URGERS would need G (21) at position 3 instead of H (22); UTTERS needs T (20) repeatedly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_CODING_W10_00010",
+      "stem": "(Same matrix as Q1)\n\nWhat is the code for the word 'GHOST'?",
+      "options": [
+        {"option_text": "21-22-04-14-20", "is_correct": true},
+        {"option_text": "21-22-04-14-02", "is_correct": false},
+        {"option_text": "21-22-40-14-20", "is_correct": false},
+        {"option_text": "21-22-04-24-20", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. G=21 (Row2,Col1), H=22 (Row2,Col2), O=04 (Row0,Col4), S=14 (Row1,Col4), T=20 (Row2,Col0) → 21-22-04-14-20. Trap: option B ends in 02=M (not T); option C uses 40=W (not O); option D uses 24=I instead of S.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

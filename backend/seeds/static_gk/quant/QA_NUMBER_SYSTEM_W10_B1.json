@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System — HCF, LCM, Remainders and Digit Problems (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00001",
+      "stem": "Find the HCF of 36 and 48.",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 36 = 2²×3² and 48 = 2⁴×3. HCF = product of lowest powers of common factors = 2²×3 = 12. Alternatively: 48−36=12, and 36÷12=3 ✓. Trap: 6 = 2×3 (misses one power of 2); 18 = 2×3² (uses highest power of 3 instead of lowest).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00002",
+      "stem": "Find the LCM of 4, 6, and 12.",
+      "options": [
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "48", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. 4=2², 6=2×3, 12=2²×3. LCM = highest powers: 2²×3 = 12. Since 12 is itself a multiple of 4 (4×3=12) and 6 (6×2=12), LCM=12. Trap: 24 = 4×6 (product without finding LCM); 36 applies an incorrect formula; 48 = 4×12.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00003",
+      "stem": "Find the smallest number that, when divided by 3, 4, and 5, leaves a remainder of 2 in each case.",
+      "options": [
+        {"option_text": "58", "is_correct": false},
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "62", "is_correct": true},
+        {"option_text": "66", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. The required number = LCM(3,4,5) + 2 = 60 + 2 = 62. Verify: 62÷3 = 20 remainder 2 ✓; 62÷4 = 15 remainder 2 ✓; 62÷5 = 12 remainder 2 ✓. Trap: 60 itself is divisible by all three (remainder 0, not 2); 58 = 60−2 (wrong direction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00004",
+      "stem": "A number when divided by 56 gives a remainder of 29. What remainder does the same number give when divided by 8?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "7", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let the number = 56k + 29. Since 56 = 8×7, rewrite: 56k + 29 = 8(7k+3) + 5. So the number divided by 8 gives remainder 5. Short Trick: since 56 is divisible by 8, the remainder when dividing by 8 equals (29 mod 8) = 29 − 3×8 = 29 − 24 = 5. Trap: 7 is the remainder of 56÷8 (not the original number).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00005",
+      "stem": "Find the smallest 3-digit number that is divisible by both 8 and 15.",
+      "options": [
+        {"option_text": "80", "is_correct": false},
+        {"option_text": "100", "is_correct": false},
+        {"option_text": "120", "is_correct": true},
+        {"option_text": "160", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. LCM(8,15) = 120 (since gcd(8,15) = 1, LCM = 8×15 = 120). 120 is already a 3-digit number and is the smallest such. Verify: 120÷8 = 15 ✓; 120÷15 = 8 ✓. Trap: 80 is divisible by 8 but not 15; 160 = 2×LCM (the next multiple).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00006",
+      "stem": "The sum of the digits of a two-digit number is 9. When 27 is subtracted from the number, the digits are reversed. Find the number.",
+      "options": [
+        {"option_text": "54", "is_correct": false},
+        {"option_text": "63", "is_correct": true},
+        {"option_text": "72", "is_correct": false},
+        {"option_text": "81", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let the number = 10a+b. Conditions: a+b=9 and (10a+b)−27=10b+a → 9a−9b=27 → a−b=3. Solving: a=6, b=3. Number=63. Verify: 63−27=36 (digits reversed ✓). Trap: 72 has digit sum 9 but 72−27=45 (not a reversal of 72); 54 has digit sum 9 but 54−27=27 (not a reversal).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00007",
+      "stem": "Find the HCF of 2²×3³×5 and 2⁴×3×5².",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "90", "is_correct": false},
+        {"option_text": "120", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. HCF = product of minimum powers of each common prime: min(2²,2⁴)=2², min(3³,3¹)=3¹, min(5¹,5²)=5¹. HCF = 4×3×5 = 60. Trap: 30 = 2×3×5 (takes first power of each instead of minimum); 90 = 2×3²×5 (misidentifies the minimum power of 3); 120 is the LCM, not HCF.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00008",
+      "stem": "How many trailing zeros does 25! have?",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "7", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Trailing zeros come from pairs of 2 and 5 — 5s are the limiting factor. Count of 5 in 25!: ⌊25/5⌋ + ⌊25/25⌋ = 5 + 1 = 6. (5, 10, 15, 20, 25 contribute one each; 25 contributes an extra 5²). So 25! has 6 trailing zeros. Trap: 5 forgets the extra factor from 25=5²; 7 overcounts; 4 misses the multiples of 25.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00009",
+      "stem": "Find the smallest number that when divided by 3, 5, or 7 leaves remainder 1 in each case.",
+      "options": [
+        {"option_text": "101", "is_correct": false},
+        {"option_text": "104", "is_correct": false},
+        {"option_text": "106", "is_correct": true},
+        {"option_text": "110", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Required number = LCM(3,5,7) + 1 = 105 + 1 = 106. Verify: 106÷3 = 35 r 1 ✓; 106÷5 = 21 r 1 ✓; 106÷7 = 15 r 1 ✓. Trap: 101 is prime but not of the form LCM+1 for these divisors; 110 = 105+5 (wrong addition).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_00010",
+      "stem": "Which of the following numbers is NOT a perfect square?",
+      "options": [
+        {"option_text": "1225", "is_correct": false},
+        {"option_text": "1444", "is_correct": false},
+        {"option_text": "1450", "is_correct": true},
+        {"option_text": "1521", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Check: 1225 = 35² ✓; 1444 = 38² ✓; 1521 = 39² ✓; 1450: √1450 ≈ 38.08 — not a whole number (38²=1444, 39²=1521, so 1450 falls between). 1450 is NOT a perfect square. Short Trick: a perfect square never ends in 2, 3, 7, or 8. 1450 ends in 0 (permissible), but checking by squaring nearest integers confirms it's not a perfect square.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

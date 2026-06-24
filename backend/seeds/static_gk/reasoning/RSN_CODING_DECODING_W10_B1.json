@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_CODING_DECODING_W10",
+  "subject": "Reasoning",
+  "topic": "Coding-Decoding — Letter Shift, Position and Number Codes (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00001",
+      "stem": "In a code language, EASY is written as 5-1-19-25. Using the same code (each letter = its position in the alphabet), what will HARD be written as?",
+      "options": [
+        {"option_text": "7-1-18-3", "is_correct": false},
+        {"option_text": "8-1-18-4", "is_correct": true},
+        {"option_text": "8-2-19-4", "is_correct": false},
+        {"option_text": "9-1-18-5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rule: each letter → its alphabetical position. E=5, A=1, S=19, Y=25 ✓. H=8, A=1, R=18, D=4 → 8-1-18-4. Trap: option A uses H=7 (off by 1); option D shifts every value up by 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00002",
+      "stem": "In a code, CAT = 3-1-20. What will DOG be written as?",
+      "options": [
+        {"option_text": "3-15-7", "is_correct": false},
+        {"option_text": "4-14-7", "is_correct": false},
+        {"option_text": "4-15-7", "is_correct": true},
+        {"option_text": "5-15-8", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: each letter → its alphabetical position. C=3, A=1, T=20 ✓. D=4, O=15, G=7 → 4-15-7. Trap: option B uses O=14 (confusing O with N); option D adds 1 to each value.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00003",
+      "stem": "If SPRING is coded as TQSJOH (each letter shifted +1 ahead in the alphabet), how will WINTER be coded?",
+      "options": [
+        {"option_text": "XJOUFS", "is_correct": true},
+        {"option_text": "XIOVFS", "is_correct": false},
+        {"option_text": "WJOUFS", "is_correct": false},
+        {"option_text": "XJOUFR", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Verify: S→T, P→Q, R→S, I→J, N→O, G→H = TQSJOH ✓. Apply +1 to WINTER: W→X, I→J, N→O, T→U, E→F, R→S → XJOUFS. Trap: XIOVFS shifts I and N incorrectly; WJOUFS keeps W unchanged; XJOUFR shifts R to R (no shift on last letter).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00004",
+      "stem": "In a code, CHAIR = 3-8-1-9-18 and BRAIN = 2-18-1-9-14. What word does the code 19-20-1-18 represent?",
+      "options": [
+        {"option_text": "STAR", "is_correct": true},
+        {"option_text": "STOP", "is_correct": false},
+        {"option_text": "STIR", "is_correct": false},
+        {"option_text": "STAY", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Rule: each number = alphabetical position of that letter. S=19, T=20, A=1, R=18 → STAR. Trap: STOP would require S=19, T=20, O=15, P=16 (doesn't match 19-20-1-18 since 1≠15); STIR requires I=9 not 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00005",
+      "stem": "Each letter is coded by the letter that is 3 positions after it (A→D, B→E, …, X→A, Y→B, Z→C). What is the code for QUIZ?",
+      "options": [
+        {"option_text": "TXLB", "is_correct": false},
+        {"option_text": "TXLC", "is_correct": true},
+        {"option_text": "SXLC", "is_correct": false},
+        {"option_text": "TYMC", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Q(17)+3=T(20), U(21)+3=X(24), I(9)+3=L(12), Z(26)+3=C(3) [wraps: 26→27→28→29 → position 3=C] → TXLC. Trap: TXLB uses Z→B (only +2); SXLC shifts Q to S (+2); TYMC shifts U to Y (+4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00006",
+      "stem": "In a code, each letter is replaced by its complementary alphabet (A↔Z, B↔Y, C↔X, and so on, so that position + complement = 27). What is the code for LION?",
+      "options": [
+        {"option_text": "ORLM", "is_correct": true},
+        {"option_text": "ORLN", "is_correct": false},
+        {"option_text": "OIPM", "is_correct": false},
+        {"option_text": "ORML", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Complementary coding: position + code-position = 27. L(12)→O(15), I(9)→R(18), O(15)→L(12), N(14)→M(13) → ORLM. Trap: ORLN substitutes N→N (no change, 14+14≠27); OIPM leaves I unchanged; ORML swaps M and L at the end.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00007",
+      "stem": "If SUNDAY is coded as VXQGDB (each letter +3 in the alphabet), what is the code for MONDAY?",
+      "options": [
+        {"option_text": "PRQGDB", "is_correct": true},
+        {"option_text": "QSRHEC", "is_correct": false},
+        {"option_text": "PQQGDB", "is_correct": false},
+        {"option_text": "NSQGDB", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Verify SUNDAY+3: S→V, U→X, N→Q, D→G, A→D, Y→B = VXQGDB ✓. Apply to MONDAY: M→P, O→R, N→Q, D→G, A→D, Y→B = PRQGDB. Trap: QSRHEC shifts by +4; PQQGDB changes O→Q (skipping +3 for one letter).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00008",
+      "stem": "In a code, FACE = 6+1+3+5 = 15 (sum of alphabetical position values). What is the code for GOLD?",
+      "options": [
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "35", "is_correct": false},
+        {"option_text": "38", "is_correct": true},
+        {"option_text": "41", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Rule: sum of alphabetical position values. Verify FACE: F=6, A=1, C=3, E=5 → 6+1+3+5=15 ✓. GOLD: G=7, O=15, L=12, D=4 → 7+15+12+4=38. Trap: 32 uses G=5 (incorrect position); 35 drops one letter; 41 adds an extra 3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00009",
+      "stem": "In a code: ROSE = 18+15+19+5 = 57. What is the code for BLUE?",
+      "options": [
+        {"option_text": "37", "is_correct": false},
+        {"option_text": "40", "is_correct": true},
+        {"option_text": "43", "is_correct": false},
+        {"option_text": "45", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Rule: sum of alphabetical positions. Verify ROSE: R=18, O=15, S=19, E=5 → 57 ✓. BLUE: B=2, L=12, U=21, E=5 → 2+12+21+5=40. Trap: 43 adds 3 extra (confuses U=24 with X=24 or applies a shift); 37 uses U=18 (confusing U with R).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W10_00010",
+      "stem": "In a code, each odd-positioned letter in a word (1st, 3rd, 5th…) is shifted by +2 and each even-positioned letter (2nd, 4th…) is shifted by −2. What is the code for PLAIN?",
+      "options": [
+        {"option_text": "RJCGP", "is_correct": true},
+        {"option_text": "RJCJP", "is_correct": false},
+        {"option_text": "RKCGP", "is_correct": false},
+        {"option_text": "RJCGQ", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Apply rule to PLAIN: P(1st, odd)+2=R; L(2nd, even)−2=J; A(3rd, odd)+2=C; I(4th, even)=9−2=G(7); N(5th, odd)+2=P → RJCGP. Trap B: RJCJP applies +2 (not −2) to I, giving J(10) instead of G(7). Trap C: RKCGP applies −2 to L correctly but uses +3 on P giving R+1=S? No — K=L−2+1 error. Trap D: RJCGQ shifts N by +3 instead of +2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

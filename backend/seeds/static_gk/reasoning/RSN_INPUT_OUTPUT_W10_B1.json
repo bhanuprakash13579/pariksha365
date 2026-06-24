@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_INPUT_OUTPUT_W10",
+  "subject": "Reasoning",
+  "topic": "Input-Output — Number and Word Machines (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00001",
+      "stem": "A machine follows this rule at every step: ODD numbers are increased by 1; EVEN numbers are halved.\nInput: 8  3  6  5  10  9\nWhat is the output at Step 1?",
+      "options": [
+        {"option_text": "4  4  3  6  5  10", "is_correct": true},
+        {"option_text": "4  3  3  6  5  10", "is_correct": false},
+        {"option_text": "4  4  3  6  4  10", "is_correct": false},
+        {"option_text": "4  4  3  5  5  10", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Apply rule: 8÷2=4, 3+1=4, 6÷2=3, 5+1=6, 10÷2=5, 9+1=10 → 4 4 3 6 5 10. Trap: option B applies +1 to 8 (treating it as odd) for the second element.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00002",
+      "stem": "Machine rule: ODD numbers +1; EVEN numbers ÷2.\nInput: 8  3  6  5  10  9\nStep 1 output: 4  4  3  6  5  10\nWhat is the sum of all numbers in the Step 2 output?",
+      "options": [
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "22", "is_correct": true},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Step 1: 4 4 3 6 5 10. Step 2: 4÷2=2, 4÷2=2, 3+1=4, 6÷2=3, 5+1=6, 10÷2=5 → 2 2 4 3 6 5. Sum = 2+2+4+3+6+5 = 22.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00003",
+      "stem": "Machine rule: ODD numbers +1; EVEN numbers ÷2.\nInput: 8  3  6  5  10  9\nStep 1: 4 4 3 6 5 10  |  Step 2: 2 2 4 3 6 5\nHow many ODD numbers appear in the Step 3 output?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Step 2: 2 2 4 3 6 5. Step 3: 2÷2=1, 2÷2=1, 4÷2=2, 3+1=4, 6÷2=3, 5+1=6 → 1 1 2 4 3 6. Odd numbers: 1, 1, 3 → three odd numbers.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00004",
+      "stem": "Machine rule: ODD numbers +1; EVEN numbers ÷2.\nInput: 8  3  6  5  10  9\nSteps 1–3 give: 4 4 3 6 5 10 → 2 2 4 3 6 5 → 1 1 2 4 3 6\nWhat is the product of the first and last numbers in the Step 4 output?",
+      "options": [
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Step 3: 1 1 2 4 3 6. Step 4: 1+1=2, 1+1=2, 2÷2=1, 4÷2=2, 3+1=4, 6÷2=3 → 2 2 1 2 4 3. First number = 2, Last number = 3. Product = 2×3 = 6. Trap: 12 comes from multiplying the last two numbers (4×3=12); 18 from multiplying positions 3 and 6 (1 and... students lose track and multiply wrong pair).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00005",
+      "stem": "The same machine (ODD+1, EVEN÷2) is given a different input: 4  7  10  3\nWhat is the complete output after 2 steps?",
+      "options": [
+        {"option_text": "1  4  6  2", "is_correct": true},
+        {"option_text": "1  4  3  2", "is_correct": false},
+        {"option_text": "2  4  6  2", "is_correct": false},
+        {"option_text": "1  8  6  2", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Step 1: 4÷2=2, 7+1=8, 10÷2=5, 3+1=4 → 2 8 5 4. Step 2: 2÷2=1, 8÷2=4, 5+1=6, 4÷2=2 → 1 4 6 2. Trap B: treating 5 (odd) as even gives 5÷2≈3 in Step 2. Trap C: not halving 2 in Step 2, leaving it as 2. Trap D: forgetting to halve 8 in Step 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00006",
+      "stem": "A word-arrangement machine moves the word with the FEWEST letters to the next available leftmost position in each step. Ties in length are broken alphabetically (A before B, etc.).\nInput: STATION  TRAIN  AIRPORT  BUS  CAR  BOAT\n(Letter counts: STATION=7, TRAIN=5, AIRPORT=7, BUS=3, CAR=3, BOAT=4)\nWhat is the arrangement after Step 2?",
+      "options": [
+        {"option_text": "BUS  CAR  STATION  TRAIN  AIRPORT  BOAT", "is_correct": true},
+        {"option_text": "BUS  CAR  BOAT  STATION  TRAIN  AIRPORT", "is_correct": false},
+        {"option_text": "BUS  CAR  TRAIN  STATION  AIRPORT  BOAT", "is_correct": false},
+        {"option_text": "BUS  STATION  TRAIN  AIRPORT  CAR  BOAT", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Step 1: From all words, fewest letters = 3 (BUS and CAR). BUS comes first alphabetically → BUS placed at position 1: BUS STATION TRAIN AIRPORT CAR BOAT. Step 2: Next fewest = 3 (CAR) → placed at position 2: BUS CAR STATION TRAIN AIRPORT BOAT.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00007",
+      "stem": "Machine: fewest letters → leftmost available position; ties broken alphabetically.\nInput: STATION  TRAIN  AIRPORT  BUS  CAR  BOAT\nSteps 1–2 give: BUS CAR STATION TRAIN AIRPORT BOAT\nWhat is the arrangement after Step 3?",
+      "options": [
+        {"option_text": "BUS  CAR  BOAT  STATION  TRAIN  AIRPORT", "is_correct": true},
+        {"option_text": "BUS  CAR  BOAT  TRAIN  STATION  AIRPORT", "is_correct": false},
+        {"option_text": "BUS  CAR  STATION  BOAT  TRAIN  AIRPORT", "is_correct": false},
+        {"option_text": "BUS  CAR  BOAT  AIRPORT  TRAIN  STATION", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. After Step 2 (BUS CAR placed), remaining unplaced: STATION TRAIN AIRPORT BOAT. Fewest letters = 4 (BOAT). BOAT goes to position 3: BUS CAR BOAT STATION TRAIN AIRPORT.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00008",
+      "stem": "Machine: fewest letters → leftmost available; ties alphabetical.\nInput: STATION  TRAIN  AIRPORT  BUS  CAR  BOAT\nFull sequence: Step1→BUS placed; Step2→CAR; Step3→BOAT; Step4→TRAIN; Step5→AIRPORT; Step6→STATION.\nWhat is the word at position 5 after Step 4?",
+      "options": [
+        {"option_text": "TRAIN", "is_correct": false},
+        {"option_text": "AIRPORT", "is_correct": false},
+        {"option_text": "STATION", "is_correct": true},
+        {"option_text": "BOAT", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. After Step 4 (TRAIN placed at position 4): arrangement = BUS CAR BOAT TRAIN [remaining: STATION AIRPORT]. STATION is the only word not yet placed that appears between TRAIN and the end → it holds position 5. Full Step 4 arrangement: BUS CAR BOAT TRAIN STATION AIRPORT.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00009",
+      "stem": "Machine: fewest letters → leftmost available; ties alphabetical.\nInput: STATION  TRAIN  AIRPORT  BUS  CAR  BOAT\nHow many steps does the machine take to reach the final sorted arrangement?",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The machine places one word per step. With 6 words, the last word fills by default when 5 are placed. So 5 steps complete the arrangement: BUS(S1) → CAR(S2) → BOAT(S3) → TRAIN(S4) → AIRPORT(S5) → STATION fills position 6 automatically.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W10_00010",
+      "stem": "Machine: fewest letters → leftmost available; ties alphabetical.\nIf the word PLAN (4 letters) is added to the original input — STATION TRAIN AIRPORT BUS CAR BOAT PLAN — in which step will PLAN be placed?",
+      "options": [
+        {"option_text": "Step 3", "is_correct": false},
+        {"option_text": "Step 4", "is_correct": true},
+        {"option_text": "Step 5", "is_correct": false},
+        {"option_text": "Step 6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. With PLAN added, sorted order by length+alpha: BUS(3)→CAR(3)→BOAT(4)→PLAN(4)→TRAIN(5)→AIRPORT(7)→STATION(7). Among 4-letter words, BOAT (B) comes before PLAN (P) alphabetically. So BOAT is placed at Step 3 and PLAN at Step 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

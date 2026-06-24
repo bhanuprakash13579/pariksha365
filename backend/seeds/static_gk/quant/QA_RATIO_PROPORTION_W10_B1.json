@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_RATIO_PROPORTION_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Ratio and Proportion — Applications and Compound Ratios (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00001",
+      "stem": "If A : B = 3 : 5 and B : C = 4 : 7, find A : C.",
+      "options": [
+        {"option_text": "3 : 7", "is_correct": false},
+        {"option_text": "12 : 35", "is_correct": true},
+        {"option_text": "4 : 15", "is_correct": false},
+        {"option_text": "15 : 28", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. To combine: make B's value uniform. A:B = 3:5 → multiply by 4: A:B = 12:20. B:C = 4:7 → multiply by 5: B:C = 20:35. So A:B:C = 12:20:35. A:C = 12:35. Short Trick: A:C = (A/B) × (B/C) = (3/5) × (4/7) = 12/35. Trap: 3:7 ignores the B link; 4:15 misapplies the ratio.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00002",
+      "stem": "Two numbers are in the ratio 3 : 4. Their sum is 84. Find the larger number.",
+      "options": [
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "42", "is_correct": false},
+        {"option_text": "48", "is_correct": true},
+        {"option_text": "56", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Total parts = 7. Each part = 84/7 = 12. Larger number = 4 × 12 = 48. Smaller = 3 × 12 = 36. Check: 36 + 48 = 84 ✓. Trap: 42 is half of 84, applied when ratio is treated as 1:1; 56 = 4/3 × 42 misapplies the ratio to half the sum.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00003",
+      "stem": "The ratio of boys to girls in a class is 7 : 5. There are 12 more boys than girls. How many students are in the class?",
+      "options": [
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "72", "is_correct": true},
+        {"option_text": "84", "is_correct": false},
+        {"option_text": "96", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Difference in ratio = 7 − 5 = 2 parts = 12 students. 1 part = 6. Total parts = 12. Total students = 12 × 6 = 72 (boys = 42, girls = 30). Check: 42 − 30 = 12 ✓. Trap: 60 uses 10 parts for total (skipping the part-value calculation); 84 gives 14 parts at 6 each.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00004",
+      "stem": "If P : Q = 2 : 3 and Q : R = 5 : 4, then P : Q : R = ?",
+      "options": [
+        {"option_text": "2 : 3 : 4", "is_correct": false},
+        {"option_text": "8 : 12 : 15", "is_correct": false},
+        {"option_text": "10 : 15 : 12", "is_correct": true},
+        {"option_text": "6 : 9 : 12", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. LCM of Q values (3 and 5) = 15. Adjust: P:Q = 2:3 = 10:15; Q:R = 5:4 = 15:12. Combined: P:Q:R = 10:15:12. Trap: 2:3:4 ignores the need to harmonize Q; 8:12:15 reverses R and P adjustments.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00005",
+      "stem": "2 men and 6 women can complete a task in 5 days. 4 men and 2 women can complete the same task in 4 days. What is the ratio of the daily work rate of one man to one woman?",
+      "options": [
+        {"option_text": "3 : 1", "is_correct": false},
+        {"option_text": "5 : 3", "is_correct": false},
+        {"option_text": "11 : 3", "is_correct": true},
+        {"option_text": "7 : 2", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let M = man's daily rate, W = woman's. Total work: (2M+6W)×5 = (4M+2W)×4 → 10M+30W = 16M+8W → 22W = 6M → M:W = 22:6 = 11:3. Verify: (2×11+6×3)×5 = 40×5=200; (4×11+2×3)×4 = 50×4=200 ✓. Trap: 3:1 uses only one equation; 7:2 arises from arithmetic error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00006",
+      "stem": "If a : b = 3 : 4 and b : c = 6 : 7, then (a + b) : (b + c) = ?",
+      "options": [
+        {"option_text": "7 : 11", "is_correct": false},
+        {"option_text": "9 : 13", "is_correct": false},
+        {"option_text": "21 : 26", "is_correct": true},
+        {"option_text": "18 : 21", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Make b common: a:b = 3:4 = 9:12; b:c = 6:7 = 12:14. So a=9, b=12, c=14. (a+b):(b+c) = 21:26. Trap: 7:11 uses the raw ratio values without harmonizing b; 9:13 adds a+b=21 but miscounts b+c.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00007",
+      "stem": "The incomes of A and B are in ratio 5 : 3 and their expenditures are in ratio 9 : 5. If each saves ₹1,200 per month, find A's monthly income.",
+      "options": [
+        {"option_text": "₹8,000", "is_correct": false},
+        {"option_text": "₹10,000", "is_correct": false},
+        {"option_text": "₹12,000", "is_correct": true},
+        {"option_text": "₹15,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let income = 5k, 3k; expenditure = 9m, 5m. Savings: 5k−9m = 1200 and 3k−5m = 1200. Subtracting: 2k−4m = 0 → k = 2m. Then 5(2m)−9m = 1200 → m = 1200. k = 2400. A's income = 5k = ₹12,000. Trap: ₹10,000 sets up k=2000 from only one equation; ₹15,000 uses ratio 5 directly with 3000 per part.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00008",
+      "stem": "Divide ₹3,600 among A, B, C such that A's share is 4/5 of B's share and B's share is 5/6 of C's share. Find C's share.",
+      "options": [
+        {"option_text": "₹960", "is_correct": false},
+        {"option_text": "₹1,200", "is_correct": false},
+        {"option_text": "₹1,440", "is_correct": true},
+        {"option_text": "₹1,800", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let C = 6k. B = (5/6)×6k = 5k. A = (4/5)×5k = 4k. Total: 15k = 3600 → k = 240. C = 6×240 = ₹1,440. A = ₹960, B = ₹1,200. Check: 960+1200+1440 = 3600 ✓. Trap: ₹1,200 is B's share (students confuse B and C); ₹1,800 assumes C gets half.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00009",
+      "stem": "If x : y = 2 : 3, find the value of (3x² − y²) / (3x² + y²).",
+      "options": [
+        {"option_text": "1/7", "is_correct": true},
+        {"option_text": "3/7", "is_correct": false},
+        {"option_text": "1/5", "is_correct": false},
+        {"option_text": "3/13", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Substitute x=2, y=3: Numerator = 3×4−9 = 12−9 = 3. Denominator = 3×4+9 = 12+9 = 21. Ratio = 3/21 = 1/7. Alternatively: dividing top and bottom by y²: (3(x/y)² − 1)/(3(x/y)² + 1) = (3×4/9 − 1)/(3×4/9 + 1) = (4/3 − 1)/(4/3 + 1) = (1/3)/(7/3) = 1/7. Trap: 3/7 uses x=1, y=√3 by mistake.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RATIO_PROPORTION_W10_00010",
+      "stem": "Gold and silver are mixed in ratio 3 : 2 to form alloy A, and in ratio 2 : 3 to form alloy B. Alloys A and B are then mixed in ratio 2 : 3. What is the ratio of gold to silver in the final mixture?",
+      "options": [
+        {"option_text": "11 : 14", "is_correct": false},
+        {"option_text": "12 : 13", "is_correct": true},
+        {"option_text": "7 : 8", "is_correct": false},
+        {"option_text": "3 : 4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Alloy A: gold fraction = 3/5, silver = 2/5. Alloy B: gold = 2/5, silver = 3/5. Mix 2 parts A and 3 parts B (total 5 parts). Gold = 2×(3/5) + 3×(2/5) = 6/5 + 6/5 = 12/5. Silver = 2×(2/5) + 3×(3/5) = 4/5 + 9/5 = 13/5. Gold:Silver = 12:13. Trap: 11:14 applies wrong weighting; 3:4 ignores the B contribution entirely.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

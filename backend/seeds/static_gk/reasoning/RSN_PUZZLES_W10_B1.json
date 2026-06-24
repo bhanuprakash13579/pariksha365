@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_PUZZLES_W10",
+  "subject": "Reasoning",
+  "topic": "Puzzles — Seating Arrangement and Ranking (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00001",
+      "stem": "Six persons A, B, C, D, E and F sit in a straight row facing North.\n• D sits at the extreme left end.\n• A is 3rd from the left.\n• E sits immediately to the left of A.\n• B sits immediately to the right of A.\n• C sits at the extreme right end.\n(F occupies the remaining seat.)\n\nWho is 2nd from the right end?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "F", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Arrangement (left to right): D(1) E(2) A(3) B(4) F(5) C(6). 2nd from right = position 5 = F. Trap: B is at position 4 (3rd from right), so students who count from the right might pick B.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00002",
+      "stem": "Six persons A, B, C, D, E and F sit in a straight row facing North.\nArrangement: D  E  A  B  F  C  (left to right)\n\nHow many persons sit between D and B?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. D is at position 1 and B is at position 4. Between them are E(2) and A(3) = 2 persons. Trap: students sometimes count D and B themselves, giving 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00003",
+      "stem": "Six persons A, B, C, D, E and F sit in a straight row facing North.\nArrangement: D  E  A  B  F  C  (left to right)\n\nWho sits immediately to the left of C?",
+      "options": [
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "F", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. C is at position 6 (extreme right). The person at position 5 = F sits immediately to C's left. Trap: B is at position 4, two seats from C — students confuse 'immediate' with 'nearby'.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00004",
+      "stem": "Six persons A, B, C, D, E and F sit in a straight row facing North.\nOriginal arrangement: D  E  A  B  F  C  (left to right)\n\nE and B exchange seats; A and F also exchange seats. Who is now at position 4 from the left?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Original: D(1) E(2) A(3) B(4) F(5) C(6). After E↔B: D(1) B(2) A(3) E(4) F(5) C(6). After A↔F: D(1) B(2) F(3) E(4) A(5) C(6). Position 4 = E. Trap: applying only one swap gives B or A at position 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00005",
+      "stem": "Six persons A, B, C, D, E and F sit in a straight row facing North.\nOriginal arrangement: D  E  A  B  F  C  (positions 1–6, left to right)\n\nAll persons shift one position to the right; the person at the extreme right (C) moves to the extreme left. Who is now at position 4?",
+      "options": [
+        {"option_text": "A", "is_correct": true},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. After the circular right-shift: C moves to position 1, and everyone else shifts right by 1: C(1) D(2) E(3) A(4) B(5) F(6). Position 4 = A. Trap: B ends up at position 5 (not 4); students who shift only some persons may pick E or D.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00006",
+      "stem": "Five students P, Q, R, S, T are ranked by marks scored in a test.\n• P scored more than Q but less than R.\n• T scored the highest among all five.\n• S scored less than Q.\n• R did not score the highest.\n\nWho is ranked 4th from the top?",
+      "options": [
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": true},
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "S", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. From the clues: S < Q < P < R < T (T highest, S lowest). Ranking top-to-bottom: T(1st), R(2nd), P(3rd), Q(4th), S(5th). 4th from top = Q. Trap: S is 5th (not 4th), and P is 3rd (not 4th).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00007",
+      "stem": "Five students P, Q, R, S, T scored in a test. Their order from lowest to highest is: S < Q < P < R < T.\n\nHow many students scored fewer marks than P?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Order: S < Q < P < R < T. Students below P: Q and S — exactly 2. Trap: 3 students (adding R or T by mistake) is a common over-count.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00008",
+      "stem": "Five students are ranked S < Q < P < R < T (lowest to highest). Each successive student from the bottom scored exactly 8 marks more than the one below. If S scored 45 marks, what did T score?",
+      "options": [
+        {"option_text": "73", "is_correct": false},
+        {"option_text": "75", "is_correct": false},
+        {"option_text": "77", "is_correct": true},
+        {"option_text": "79", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. S=45, Q=53, P=61, R=69, T=77. Each step adds 8: 45+8=53+8=61+8=69+8=77. Trap: 73 adds only 7 per step; 75 computes T=S+4×8−3 erroneously.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00009",
+      "stem": "Five students are ranked S < Q < P < R < T (lowest to highest). P is exactly between which two students in terms of rank?",
+      "options": [
+        {"option_text": "T and Q", "is_correct": false},
+        {"option_text": "R and Q", "is_correct": true},
+        {"option_text": "R and S", "is_correct": false},
+        {"option_text": "T and P", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Ranking top-to-bottom: T(1) R(2) P(3) Q(4) S(5). P is at rank 3, flanked by R(rank 2) above and Q(rank 4) below. Trap: 'T and Q' skips R; 'R and S' skips Q.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLES_W10_00010",
+      "stem": "Original ranking (lowest to highest): S < Q < P < R < T.\nIn a second test:\n• R scores more than T.\n• Q scores more than P.\n• P scores more than T.\n• S still has the lowest score.\nWhich of the following is a valid ranking (highest to lowest) for the second test?",
+      "options": [
+        {"option_text": "R > Q > P > T > S", "is_correct": true},
+        {"option_text": "T > R > Q > P > S", "is_correct": false},
+        {"option_text": "Q > P > T > R > S", "is_correct": false},
+        {"option_text": "Q > R > S > T > P", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Constraints: R>T, Q>P, P>T, S=lowest. Check A: R>Q>P>T>S. R>T ✓; Q>P ✓; P>T ✓; S lowest ✓. Check B: T>R violates R>T. Check C: T>R violates R>T. Check D: S is not lowest (S>T>P). Only A satisfies all conditions.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

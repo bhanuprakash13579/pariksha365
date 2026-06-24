@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SYLLOGISM_W10",
+  "subject": "Reasoning",
+  "topic": "Syllogism — Venn Diagram Logic (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00001",
+      "stem": "Statements:\n1. All cats are animals.\n2. All animals are living beings.\nConclusions:\nI. All cats are living beings.\nII. Some living beings are cats.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. From 'All A are B' and 'All B are C', it follows that 'All A are C' (universal chain). So I — All cats are living beings — follows. Since all cats are living beings, we can convert: Some living beings are cats (II also follows by conversion of a universal affirmative). Both conclusions are valid.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00002",
+      "stem": "Statements:\n1. No book is a pen.\n2. All pens are stationery.\nConclusions:\nI. No book is stationery.\nII. Some stationery are not books.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. II follows: All pens are stationery, and no pen is a book → the pens (which are stationery) are not books → Some stationery are not books ✓. I does NOT follow: stationery may include other items (e.g., erasers) that could be books; we can only conclude that pen-type stationery is not books, not ALL stationery. I would require 'All stationery are pens', which isn't stated.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00003",
+      "stem": "Statements:\n1. Some doctors are engineers.\n2. All engineers are scientists.\nConclusions:\nI. Some doctors are scientists.\nII. All scientists are engineers.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. I: Some doctors are engineers (from S1), and all engineers are scientists (S2) → those doctors who are engineers are also scientists → Some doctors are scientists ✓. II: We know engineers ⊆ scientists, but scientists may include non-engineers (physicists, etc.). 'All scientists are engineers' cannot be concluded — it reverses the universal statement improperly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00004",
+      "stem": "Statements:\n1. All flowers are trees.\n2. Some trees are plants.\nConclusions:\nI. Some plants are flowers.\nII. Some trees are flowers.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. II: 'All flowers are trees' can be converted to 'Some trees are flowers' (valid conversion of universal affirmative) ✓. I: While all flowers are trees, the 'some trees that are plants' may not include any flowers (flowers could be in the non-plant portion of trees). Therefore 'Some plants are flowers' does NOT definitely follow — it's a possible but not certain conclusion.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00005",
+      "stem": "Statements:\n1. No elephant is a lion.\n2. Some lions are tigers.\nConclusions:\nI. Some tigers are not elephants.\nII. No tiger is an elephant.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. I: Some lions are tigers (S2) and no elephant is a lion (S1). Those lions that are also tigers are certainly not elephants → Some tigers (the lion-tigers) are not elephants ✓. II: We cannot conclude that NO tiger is an elephant, because tigers that are not lions could still be elephants — S1 only tells us about lions and elephants, not about all tigers and elephants.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00006",
+      "stem": "Statements:\n1. All chairs are tables.\n2. Some tables are desks.\nConclusions:\nI. Some desks are chairs.\nII. All chairs are desks.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. The chairs are a subset of tables. Some tables are desks — but those desks might be in the non-chair portion of tables. We cannot conclude any chairs are desks (I might be false) and certainly cannot conclude ALL chairs are desks (II is stronger still). Neither conclusion definitely follows from the given statements.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00007",
+      "stem": "Statements:\n1. Some rivers are mountains.\n2. Some mountains are valleys.\nConclusions:\nI. Some rivers are valleys.\nII. No river is a valley.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Either I or II follows", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Both S1 and S2 are 'some' type — no definite conclusion can be drawn about rivers and valleys (the overlaps may or may not intersect). Since I (Some rivers are valleys) and II (No river is a valley) are complementary (one must be true if the other is false and they cover all possibilities), and we cannot determine which, 'Either I or II follows' is the correct answer — a key SSC syllogism rule for complementary conclusions.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00008",
+      "stem": "Statements:\n1. All stars are planets.\n2. No planet is a moon.\nConclusions:\nI. No star is a moon.\nII. All planets are stars.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. I: Stars ⊆ planets (S1) and planets ∩ moons = ∅ (S2) → stars ∩ moons = ∅ → No star is a moon ✓. II: S1 says All stars are planets, meaning stars ⊆ planets — this does NOT mean all planets are stars (planets may include non-star bodies). Conclusion II reverses the universal statement improperly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00009",
+      "stem": "Statements:\n1. Some books are copies.\n2. All copies are papers.\nConclusions:\nI. Some books are papers.\nII. Some papers are books.\nIII. All papers are copies.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only I and II follow", "is_correct": true},
+        {"option_text": "Only II and III follow", "is_correct": false},
+        {"option_text": "All three follow", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. I: Some books are copies (S1) and all copies are papers (S2) → those books that are copies are papers → Some books are papers ✓. II: Since some books are papers (from I), converting: Some papers are books ✓. III: S2 says all copies are papers, but papers may include non-copies (e.g., notebooks). 'All papers are copies' cannot be concluded — it reverses the universal without justification.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W10_00010",
+      "stem": "Statements:\n1. No fruit is a vegetable.\n2. Some vegetables are roots.\n3. All roots are food.\nConclusions:\nI. Some food is not fruit.\nII. Some roots are not fruits.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. II: S2 → some vegetables are roots; S1 → no fruit is a vegetable. Those roots that are vegetables are not fruits → Some roots are not fruits ✓. I: From II, some roots are not fruits; S3 → all roots are food. Therefore those roots (which are food but not fruits) → Some food is not fruit ✓. Both conclusions follow through a valid chain.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

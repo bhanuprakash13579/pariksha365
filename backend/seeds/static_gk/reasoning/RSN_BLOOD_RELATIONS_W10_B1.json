@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_BLOOD_RELATIONS_W10",
+  "subject": "Reasoning",
+  "topic": "Blood Relations — Family Deductions (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00001",
+      "stem": "A woman introduces a man by saying, 'He is the son of the woman who is the mother of my husband.' How is the man related to the woman?",
+      "options": [
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Brother-in-law", "is_correct": true},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Father-in-law", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Mother of my husband = my mother-in-law. Son of my mother-in-law = my husband's brother = my brother-in-law. Trap: 'Son' would require the man to be her own child, not her husband's sibling; 'Uncle' would require a generational gap not present here.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00002",
+      "stem": "Pointing to a photograph, a man says, 'She is the daughter of my grandfather's only son.' How is the woman in the photograph related to the man?",
+      "options": [
+        {"option_text": "Daughter", "is_correct": false},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. My grandfather's only son = my father (assuming the man himself is from this lineage). Daughter of my father = my sister. Trap: 'Cousin' would apply if grandfather had multiple sons; 'Niece' would require the man to be one generation above; 'Daughter' would require the woman to be his child.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00003",
+      "stem": "P is the father of Q. Q is the brother of R. R is the mother of S. What is P's relationship to S?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Great-grandfather", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. P → Q (father). Q and R are siblings (Q = brother of R). Therefore P is also R's father. R → S (mother). So P is the father of R (who is S's mother) → P is S's maternal grandfather. Trap: 'Uncle' confuses the step where P is deduced to be R's father; 'Father' skips a generation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00004",
+      "stem": "Introducing a woman to a guest, a man says, 'She is the wife of the only son of my mother.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Wife", "is_correct": true},
+        {"option_text": "Sister-in-law", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Only son of my mother = me (the man himself, assuming he is the only son). Wife of me = my wife. Trap: 'Sister-in-law' would apply if his mother had more than one son; 'Sister' is incorrect since the woman is a wife, not a sibling.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00005",
+      "stem": "A says to B, 'Your father's sister is my mother.' How is A related to B?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": true},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. B's father's sister = B's aunt. A's mother is B's father's sister. So A's mother is B's aunt → A is B's aunt's child = B's cousin. Trap: 'Brother' would require A and B to share the same parents; 'Nephew' reverses the generational relationship.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00006",
+      "stem": "In a code: A × B means 'A is the mother of B'; A + B means 'A is the father of B'; A − B means 'A is the brother of B'. In the expression P × Q + R, what is P's relationship to R?",
+      "options": [
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": true},
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Sister", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. P × Q: P is the mother of Q. Q + R: Q is the father of R. So P is Q's mother and Q is R's father. Therefore P is R's paternal grandmother. Trap: 'Mother' skips a generation; 'Aunt' would require P to be a sibling of R's parent, not a parent herself.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00007",
+      "stem": "M is the son of N. N is the daughter of O. O is the father of P. How is P related to M?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Uncle or Aunt", "is_correct": true},
+        {"option_text": "Grandfather", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. N is O's daughter and M is N's son. O is also P's father (O is the father of P). So N and P are both O's children → N and P are siblings. Since N is M's mother, P is M's maternal uncle (if P is male) or maternal aunt (if P is female). The relationship is Uncle or Aunt. Trap: 'Grandfather' would require O to be M's grandfather, but O is P's father (one generation above P, and P is M's uncle/aunt — so O is M's grandfather ✓). Wait — rechecking: O is N's father (so O is M's maternal grandfather ✓) and O is P's father (so P is N's sibling = M's uncle/aunt ✓). Answer: C (Uncle or Aunt) is correct for P's relationship to M.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00008",
+      "stem": "Pointing to a man in a photograph, a woman says, 'His mother is the only daughter of my mother.' How is the man related to the woman?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Son", "is_correct": true},
+        {"option_text": "Father", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Only daughter of my mother = myself (the woman is the only daughter of her mother). So the man's mother is the woman herself. The man is the woman's son. Trap: 'Nephew' would apply if the woman's only daughter is her sister's daughter; 'Brother' misidentifies the gender/generation relationship.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00009",
+      "stem": "In a code: A ÷ B means 'A is the father of B'; A − B means 'A is the wife of B'; A × B means 'A is the brother of B'. In the expression P ÷ R − Q, how is Q related to P?",
+      "options": [
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Daughter-in-law", "is_correct": false},
+        {"option_text": "Son-in-law", "is_correct": true},
+        {"option_text": "Brother-in-law", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P ÷ R: P is the father of R. R − Q: R is the wife of Q. So P is R's father, and R is Q's wife. Therefore P is Q's father-in-law, and Q is P's son-in-law. Trap: 'Daughter-in-law' confuses who married whom — Q is male (R is Q's wife), so Q is P's son-in-law, not daughter-in-law.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_00010",
+      "stem": "X has two children — Y (son) and Z (daughter). Y is married to W and has a son V. Z is married to U and has a daughter T. How is T related to V?",
+      "options": [
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": true},
+        {"option_text": "Aunt", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. V is Y's son → V is X's grandson. T is Z's daughter → T is X's granddaughter. Y and Z are siblings (both children of X). Since V's father (Y) and T's mother (Z) are siblings, V and T are cousins. Trap: 'Sister' would require same parents; 'Niece' would require V to be one generation above T's parent (he is not — V and T are the same generation).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

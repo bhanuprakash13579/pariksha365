@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SEATING_ARRANGEMENT_W10",
+  "subject": "Reasoning",
+  "topic": "Seating Arrangement — Circular Table (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00001",
+      "stem": "Six persons P, Q, R, S, T, U sit around a circular table, all facing the centre.\n• P and S are directly opposite each other.\n• Q sits to the immediate right of P.\n• R sits between Q and S (going clockwise: Q–R–S).\n• T sits to the immediate right of S.\n• U sits between T and P (going clockwise: T–U–P).\n\nClockwise order: P–Q–R–S–T–U–P\n\nWho sits to the immediate left of P?",
+      "options": [
+        {"option_text": "Q", "is_correct": false},
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "T", "is_correct": false},
+        {"option_text": "U", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. In the clockwise arrangement P–Q–R–S–T–U–P, the person immediately to P's left (anticlockwise neighbour) is U. P's right neighbour = Q; P's left neighbour = U. Trap: Q is to P's right; confusing right and left in a circular arrangement is the most common error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00002",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P (all facing centre).\n\nWho is sitting directly opposite Q?",
+      "options": [
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "S", "is_correct": false},
+        {"option_text": "T", "is_correct": true},
+        {"option_text": "U", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. With 6 people around a circular table, each person's direct opposite is the person 3 seats away. Q is at position 2; T is at position 5 (2+3=5). So Q and T are directly opposite each other. Trap: R (position 3) is next to Q, not opposite; S (position 4) is opposite P (position 1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00003",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P.\n\nHow many persons are seated between P and T, going clockwise from P?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Going clockwise from P: P → Q(1) → R(2) → S(3) → T. Between P and T (not counting P or T): Q, R, S = 3 persons. Trap: 2 counts only Q and R; 4 includes T itself.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00004",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P.\n\nWho sits between R and T in the clockwise direction?",
+      "options": [
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": false},
+        {"option_text": "S", "is_correct": true},
+        {"option_text": "U", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Clockwise from R: R → S → T. So S sits between R and T going clockwise. Trap: U sits between T and P (going clockwise), not between R and T; Q is between P and R.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00005",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P.\n\nIf P and S exchange seats, who is now directly opposite R?",
+      "options": [
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": false},
+        {"option_text": "T", "is_correct": false},
+        {"option_text": "U", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Original positions (1–6 clockwise): P(1)–Q(2)–R(3)–S(4)–T(5)–U(6). After P↔S swap: S(1)–Q(2)–R(3)–P(4)–T(5)–U(6). R is still at position 3. Directly opposite position 3 = position 3+3=6 = U. Trap: After the swap, P is at position 4 (which was S's), not opposite R; T is at position 5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00006",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P.\n\nWho is Q's immediate neighbour to the left (anticlockwise direction)?",
+      "options": [
+        {"option_text": "P", "is_correct": true},
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "S", "is_correct": false},
+        {"option_text": "T", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. In a clockwise arrangement P–Q–R–S–T–U, Q's right neighbour (clockwise) = R; Q's left neighbour (anticlockwise) = P. 'Left' when facing the centre from Q's seat corresponds to the anticlockwise direction. Trap: R is Q's right neighbour, not left; confusing clockwise with left/right is the key challenge.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00007",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P.\n\nIf everyone shifts one seat clockwise, who now occupies the seat that R originally held?",
+      "options": [
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": true},
+        {"option_text": "S", "is_correct": false},
+        {"option_text": "U", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. When everyone shifts one seat clockwise, the person who moves INTO a seat is the one who was one seat anti-clockwise (to the left) of that seat. R's seat (position 3) will be occupied by whoever was at position 2 — which is Q. New arrangement: U(1)–P(2)–Q(3)–R(4)–S(5)–T(6). Q is now at R's original seat. Trap: P (originally at position 1) moves to position 2, not 3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00008",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P.\n\nHow many persons are between T and U going ANTI-CLOCKWISE from T to U?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Going anticlockwise from T: T → S → R → Q → P → U. Between T and U (anticlockwise): S, R, Q, P = 4 persons. Trap: going clockwise from T to U gives only 1 person between them (U is immediately after T clockwise, with 0 between in that direction — actually T is at position 5 and U at 6, so 0 between going clockwise). The anticlockwise route gives 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00009",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P.\n\nIf T and Q swap seats AND R and U swap seats, who is now to the immediate right of P?",
+      "options": [
+        {"option_text": "T", "is_correct": true},
+        {"option_text": "U", "is_correct": false},
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "Q", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Original positions: P(1)–Q(2)–R(3)–S(4)–T(5)–U(6). After T↔Q: P(1)–T(2)–R(3)–S(4)–Q(5)–U(6). After R↔U: P(1)–T(2)–U(3)–S(4)–Q(5)–R(6). P is at position 1; the person at position 2 (clockwise/right of P) = T. Trap: Q was originally to P's right; after the swap, Q moves to position 5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_W10_00010",
+      "stem": "Circular table. Clockwise order: P–Q–R–S–T–U–P.\n\nStarting from P and moving clockwise (not counting P), who is the 4th person you encounter?",
+      "options": [
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "S", "is_correct": false},
+        {"option_text": "T", "is_correct": true},
+        {"option_text": "U", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Clockwise from P: 1st=Q, 2nd=R, 3rd=S, 4th=T. Trap: students who count P as the 1st person will get U (the 4th if counting from P); the question says 'not counting P', so Q is 1st.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

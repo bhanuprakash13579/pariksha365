@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_NUMBER_SERIES_W10",
+  "subject": "Reasoning",
+  "topic": "Number Series — Patterns, Sequences and Missing Terms (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00001",
+      "stem": "Find the next term: 2, 4, 8, 16, 32, ?",
+      "options": [
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "56", "is_correct": false},
+        {"option_text": "64", "is_correct": true},
+        {"option_text": "72", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: each term is double the previous (×2). 2→4→8→16→32→64. These are powers of 2: 2¹, 2², 2³, 2⁴, 2⁵, 2⁶. Trap: 48 adds 16 (wrong); 56 adds 24 (wrong). Verify: 32×2 = 64.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00002",
+      "stem": "Find the next term: 1, 4, 9, 16, 25, ?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "49", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: perfect squares — n². 1=1², 4=2², 9=3², 16=4², 25=5², next = 6²=36. Trap: 49=7² (skips 6²); 30 is not a perfect square; 32 is a power of 2 (wrong pattern). Differences: 3, 5, 7, 9, 11 (consecutive odd numbers — also identifies the pattern).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00003",
+      "stem": "Find the next term: 2, 3, 5, 8, 13, 21, ?",
+      "options": [
+        {"option_text": "29", "is_correct": false},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "34", "is_correct": true},
+        {"option_text": "37", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. This is the Fibonacci sequence: each term = sum of the two preceding terms. 2+3=5, 3+5=8, 5+8=13, 8+13=21, 13+21=34. Trap: 29=21+8 (skips one step); 32 adds 11 (wrong); 37=21+16 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00004",
+      "stem": "Find the next term: 5, 11, 23, 47, 95, ?",
+      "options": [
+        {"option_text": "143", "is_correct": false},
+        {"option_text": "185", "is_correct": false},
+        {"option_text": "191", "is_correct": true},
+        {"option_text": "201", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: each term = 2×(previous term) + 1. 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95, 95×2+1=191. Trap: 143 adds 48 (wrong); 185 computes 95×2−5 (wrong); 201 adds 106 (wrong). This is a common SSC pattern — look for 2n+1 relationships.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00005",
+      "stem": "Find the next term: 7, 10, 14, 19, 25, ?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "32", "is_correct": true},
+        {"option_text": "33", "is_correct": false},
+        {"option_text": "35", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Differences: 10−7=3, 14−10=4, 19−14=5, 25−19=6 → differences increase by 1 each time. Next difference = 7. 25+7=32. Trap: 30=25+5 (repeats a previous difference); 33=25+8 (skips a step); 35 adds 10 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00006",
+      "stem": "Find the missing term: 4, 7, 12, 19, ?, 39",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "28", "is_correct": true},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Differences: 3, 5, 7, ?, 11 — the differences are consecutive odd numbers. Missing difference = 9. 19+9 = 28. Verify: 28+11=39 ✓. Trap: 26=19+7 (repeats the previous difference); 30=19+11 (skips a step and uses next difference).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00007",
+      "stem": "Find the next term: 1, 8, 27, 64, 125, ?",
+      "options": [
+        {"option_text": "180", "is_correct": false},
+        {"option_text": "196", "is_correct": false},
+        {"option_text": "216", "is_correct": true},
+        {"option_text": "225", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Rule: perfect cubes — n³. 1=1³, 8=2³, 27=3³, 64=4³, 125=5³, next = 6³=216. Trap: 196=14² (perfect square, not cube); 225=15² (wrong); 180 is neither. Verify: 6×6×6 = 216.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00008",
+      "stem": "Find the next term: 3, 7, 15, 31, 63, ?",
+      "options": [
+        {"option_text": "95", "is_correct": false},
+        {"option_text": "121", "is_correct": false},
+        {"option_text": "127", "is_correct": true},
+        {"option_text": "131", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Rule: each term = 2×(previous)+1. 3×2+1=7, 7×2+1=15, 15×2+1=31, 31×2+1=63, 63×2+1=127. Alternative view: 3=4−1, 7=8−1, 15=16−1, 31=32−1, 63=64−1, 127=128−1. These are 2ⁿ−1. Trap: 95=63+32 (wrong pattern); 131=63+68 (no rule).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00009",
+      "stem": "Find the next term: 2, 6, 12, 20, 30, 42, ?",
+      "options": [
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "54", "is_correct": false},
+        {"option_text": "56", "is_correct": true},
+        {"option_text": "60", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Rule: n(n+1) — product of consecutive integers. 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42, 7×8=56. Alternative: differences are 4, 6, 8, 10, 12, 14 (even numbers). 42+14=56. Trap: 48=42+6 (repeats second difference); 54=42+12 (repeats previous difference); 60 adds 18 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_NUMBER_SERIES_W10_00010",
+      "stem": "Find the WRONG term in the series: 2, 5, 10, 17, 26, 37, 50, 64",
+      "options": [
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "37", "is_correct": false},
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "64", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. The pattern: differences should be 3, 5, 7, 9, 11, 13, 15 (odd numbers). 2, 5(+3), 10(+5), 17(+7), 26(+9), 37(+11), 50(+13), next should be 50+15=65, not 64. The correct term at position 8 is 65. Trap: students may check the rule only up to 37 or 50 and assume 64 is correct; or they may find the series n²+1 (1²+1=2, 2²+1=5, 3²+1=10... 8²+1=65), confirming 64 is wrong.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

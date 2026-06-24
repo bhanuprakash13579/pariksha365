@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_MENSURATION_2D_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mensuration 2D — Areas and Perimeters (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00001",
+      "stem": "Find the area of a rectangle with length 12 m and breadth 8 m.",
+      "options": [
+        {"option_text": "80 m²", "is_correct": false},
+        {"option_text": "88 m²", "is_correct": false},
+        {"option_text": "96 m²", "is_correct": true},
+        {"option_text": "108 m²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Area = length × breadth = 12 × 8 = 96 m². Perimeter = 2(12+8) = 40 m. Trap: 80 m² = 10×8 (wrong length); 88 = 11×8; 108 = 12×9.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00002",
+      "stem": "Find the area of a circle with radius 7 m. (Use π = 22/7)",
+      "options": [
+        {"option_text": "132 m²", "is_correct": false},
+        {"option_text": "144 m²", "is_correct": false},
+        {"option_text": "154 m²", "is_correct": true},
+        {"option_text": "176 m²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Area = πr² = (22/7)×7² = (22/7)×49 = 22×7 = 154 m². Circumference = 2×(22/7)×7 = 44 m. Trap: 132 = 22/7×6² = 22×6 (uses r=6); 176 = 22/7×8² (uses r=8).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00003",
+      "stem": "A triangle has a base of 10 m and a height of 8 m. Find its area.",
+      "options": [
+        {"option_text": "32 m²", "is_correct": false},
+        {"option_text": "40 m²", "is_correct": true},
+        {"option_text": "48 m²", "is_correct": false},
+        {"option_text": "80 m²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Area = (1/2) × base × height = (1/2) × 10 × 8 = 40 m². Trap: 80 m² forgets the (1/2) factor; 32 uses (1/2)×8×8; 48 uses (1/2)×12×8.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00004",
+      "stem": "A rectangle (12 m × 8 m) and a square have the same perimeter. By how much does the square's area exceed the rectangle's area?",
+      "options": [
+        {"option_text": "2 m²", "is_correct": false},
+        {"option_text": "4 m²", "is_correct": true},
+        {"option_text": "6 m²", "is_correct": false},
+        {"option_text": "8 m²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Perimeter of rectangle = 2(12+8) = 40 m. Square's side = 40/4 = 10 m. Square area = 100 m². Rectangle area = 96 m². Difference = 4 m². Key insight: for the same perimeter, a square always has a greater area than any rectangle — this is a classic SSC concept.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00005",
+      "stem": "Find the area of a trapezium with parallel sides of 8 m and 12 m and a height of 6 m.",
+      "options": [
+        {"option_text": "54 m²", "is_correct": false},
+        {"option_text": "60 m²", "is_correct": true},
+        {"option_text": "72 m²", "is_correct": false},
+        {"option_text": "80 m²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Area = (1/2) × (sum of parallel sides) × height = (1/2) × (8+12) × 6 = (1/2) × 20 × 6 = 60 m². Trap: 72 = (8+12)/2×(6+1.2) applies wrong height; 80 uses 8×10 (wrong formula); 54 uses (1/2)×(8×12)/2 × 6 (incorrect).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00006",
+      "stem": "The perimeter of a rectangle is 60 m and its length is 18 m. Find its area.",
+      "options": [
+        {"option_text": "180 m²", "is_correct": false},
+        {"option_text": "200 m²", "is_correct": false},
+        {"option_text": "216 m²", "is_correct": true},
+        {"option_text": "240 m²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 2(l+b) = 60 → l+b = 30. b = 30−18 = 12 m. Area = 18×12 = 216 m². Trap: 180 = 18×10 (uses b=10, wrong calculation); 240 = 18×(60/4.5) (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00007",
+      "stem": "A 2 m wide path runs all around a rectangular garden 50 m long and 30 m wide. Find the area of the path.",
+      "options": [
+        {"option_text": "320 m²", "is_correct": false},
+        {"option_text": "336 m²", "is_correct": true},
+        {"option_text": "352 m²", "is_correct": false},
+        {"option_text": "400 m²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Outer dimensions = (50+4) × (30+4) = 54×34 = 1836 m². Inner area = 50×30 = 1500 m². Path area = 1836−1500 = 336 m². Short Trick: area of path = 2×width×(l+b+2×width) = 2×2×(50+30+4) = 4×84 = 336. Trap: 320 = 4×80 (omits the corner adjustment); 400 = 4×(50+30+2×2) = wrong formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00008",
+      "stem": "A ring-shaped region has an outer radius of 7 m and an inner radius of 3.5 m. Find its area. (Use π = 22/7)",
+      "options": [
+        {"option_text": "96.25 m²", "is_correct": false},
+        {"option_text": "108.5 m²", "is_correct": false},
+        {"option_text": "115.5 m²", "is_correct": true},
+        {"option_text": "121 m²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Area = π(R²−r²) = (22/7)×(7²−3.5²) = (22/7)×(49−12.25) = (22/7)×36.75 = 22×5.25 = 115.5 m². Trap: 96.25 uses only the inner ring area; 121 = π×7² − π×3.5² computed with approximation error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00009",
+      "stem": "Find the area of a triangle whose three sides are 13 cm, 14 cm, and 15 cm.",
+      "options": [
+        {"option_text": "72 cm²", "is_correct": false},
+        {"option_text": "78 cm²", "is_correct": false},
+        {"option_text": "84 cm²", "is_correct": true},
+        {"option_text": "90 cm²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Using Heron's formula: s = (13+14+15)/2 = 21. Area = √[s(s−a)(s−b)(s−c)] = √[21×8×7×6] = √7056 = 84 cm². Verify: 21×8=168; 168×7=1176; 1176×6=7056; √7056=84 ✓. This is a 13-14-15 triangle — a classic SSC Heron's formula set. Trap: 78 is the area of a 12-13-14 triangle (similar numbers).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W10_00010",
+      "stem": "The area of a circle equals the area of a rectangle with length 11 m and breadth 14 m. Find the radius of the circle. (Use π = 22/7)",
+      "options": [
+        {"option_text": "5 m", "is_correct": false},
+        {"option_text": "6 m", "is_correct": false},
+        {"option_text": "7 m", "is_correct": true},
+        {"option_text": "8 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Rectangle area = 11×14 = 154 m². πr² = 154 → (22/7)×r² = 154 → r² = 154×7/22 = 1078/22 = 49 → r = 7 m. Trap: r=6 gives area = (22/7)×36 ≈ 113 (not 154); r=8 gives (22/7)×64 ≈ 201.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

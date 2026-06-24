@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_QUADRATIC_EQUATIONS_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Quadratic Equations — Roots, Nature and Identities (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00001",
+      "stem": "Find the roots of x² − 5x + 6 = 0.",
+      "options": [
+        {"option_text": "x = 1 and x = 6", "is_correct": false},
+        {"option_text": "x = 2 and x = 3", "is_correct": true},
+        {"option_text": "x = −2 and x = −3", "is_correct": false},
+        {"option_text": "x = 1 and x = 5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Factorize: x²−5x+6 = (x−2)(x−3) = 0 → x=2 or x=3. Check: sum of roots = 5 ✓, product = 6 ✓. Trap: −2 and −3 have correct sum (5) but wrong product (6 vs product of (−2)(−3)=6 and sum=−5 ≠ 5); roots of x²+5x+6 would be −2 and −3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00002",
+      "stem": "What is the sum of the roots of the equation 2x² − 8x + 6 = 0?",
+      "options": [
+        {"option_text": "−4", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. For ax²+bx+c=0: Sum of roots = −b/a = −(−8)/2 = 4. Product of roots = c/a = 6/2 = 3. Verify: roots of 2x²−8x+6=0 are x=1 and x=3 (divide by 2: x²−4x+3=0 → (x−1)(x−3)=0). Sum = 1+3=4 ✓. Trap: 8 is −b without dividing by a; 3 is the product of roots, not the sum.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00003",
+      "stem": "What is the nature of roots of x² − 4x + 4 = 0?",
+      "options": [
+        {"option_text": "Two distinct real roots", "is_correct": false},
+        {"option_text": "Two equal real roots", "is_correct": true},
+        {"option_text": "No real roots", "is_correct": false},
+        {"option_text": "One real and one imaginary root", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Discriminant D = b²−4ac = 16−16 = 0. When D=0: two equal (repeated) real roots. Root: x = (4±0)/2 = 2. So x=2 (double root). Verify: (x−2)² = x²−4x+4 ✓. Trap: D>0 gives two distinct real roots; D<0 gives no real roots (complex roots); D=0 uniquely gives equal roots.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00004",
+      "stem": "If α and β are roots of x² − 3x + 2 = 0, find α² + β².",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. α+β = 3 (sum of roots = −b/a = 3), αβ = 2 (product = c/a = 2). α²+β² = (α+β)²−2αβ = 9−4 = 5. Verify: roots are 1 and 2. 1²+2² = 1+4 = 5 ✓. Trap: 9 = (α+β)² without subtracting 2αβ; 4 = only 2αβ.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00005",
+      "stem": "If one root of x² − 5x + k = 0 is 2, find the value of k.",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "7", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. If x=2 is a root, substitute: 4−10+k=0 → k=6. Other root: by Vieta's formula, product of roots = k = 6. Sum of roots = 5. Other root = 5−2 = 3. Check: 3×2 = 6 = k ✓. Trap: 4 substitutes k as the root; 5 confuses with sum of roots.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00006",
+      "stem": "Form the quadratic equation whose roots are 3 and −4.",
+      "options": [
+        {"option_text": "x² − x − 12 = 0", "is_correct": false},
+        {"option_text": "x² + x − 12 = 0", "is_correct": true},
+        {"option_text": "x² − x + 12 = 0", "is_correct": false},
+        {"option_text": "x² + x + 12 = 0", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Sum of roots = 3+(−4) = −1. Product = 3×(−4) = −12. Equation: x²−(sum)x+product = 0 → x²−(−1)x+(−12) = x²+x−12 = 0. Verify: (x−3)(x+4) = x²+x−12 ✓. Trap: x²−x−12 has roots that sum to 1 (not −1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00007",
+      "stem": "For the equation ax² + bx + c = 0 to have equal roots, which condition must hold?",
+      "options": [
+        {"option_text": "b² > 4ac", "is_correct": false},
+        {"option_text": "b² < 4ac", "is_correct": false},
+        {"option_text": "b² = 4ac", "is_correct": true},
+        {"option_text": "b = 4ac", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Discriminant D = b²−4ac. Equal roots when D=0 → b²=4ac. Summary: D>0: two distinct real roots; D=0: two equal real roots; D<0: no real roots (complex). Trap: b²>4ac gives distinct roots; b²<4ac gives complex roots; b=4ac is an irrelevant linear condition.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00008",
+      "stem": "Find the roots of 3x² − 10x + 3 = 0.",
+      "options": [
+        {"option_text": "x = 1 and x = 3", "is_correct": false},
+        {"option_text": "x = 3 and x = 1/3", "is_correct": true},
+        {"option_text": "x = −3 and x = −1/3", "is_correct": false},
+        {"option_text": "x = 2 and x = 1/2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. D = 100−36 = 64. x = (10±8)/6. x₁ = 18/6 = 3; x₂ = 2/6 = 1/3. Verify: sum = 3+1/3 = 10/3 = −(−10)/3 ✓; product = 3×1/3 = 1 = 3/3 ✓. Factorize: 3x²−10x+3 = (3x−1)(x−3) = 0 → x=1/3 or x=3. Trap: x=1 and x=3 would give 3x²−12x+9=0 (different equation).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00009",
+      "stem": "If α and β are roots of 2x² − 7x + 3 = 0, find the equation whose roots are α/β and β/α.",
+      "options": [
+        {"option_text": "6x² − 37x + 6 = 0", "is_correct": true},
+        {"option_text": "6x² + 37x + 6 = 0", "is_correct": false},
+        {"option_text": "3x² − 37x + 3 = 0", "is_correct": false},
+        {"option_text": "x² − 37x + 1 = 0", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. α+β=7/2, αβ=3/2. New roots: α/β + β/α = (α²+β²)/(αβ) = [(7/2)²−2(3/2)]/(3/2) = [49/4−3]/(3/2) = (37/4)/(3/2) = 37/6. Product of new roots: (α/β)(β/α)=1. New equation: x²−(37/6)x+1=0 → 6x²−37x+6=0. Trap: sign error gives +37; omitting the product=1 condition changes the equation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W10_00010",
+      "stem": "How many real roots does the equation x² + x + 1 = 0 have?",
+      "options": [
+        {"option_text": "0", "is_correct": true},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. D = b²−4ac = 1−4 = −3 < 0. When D<0, the equation has no real roots (only complex/imaginary roots). x²+x+1=0 is a cyclotomic polynomial whose roots are complex cube roots of unity. Trap: students sometimes assume every quadratic has 2 roots — true for complex numbers, but 0 real roots when D<0.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

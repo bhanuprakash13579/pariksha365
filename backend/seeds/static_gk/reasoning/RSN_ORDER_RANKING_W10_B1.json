@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_ORDER_RANKING_W10",
+  "subject": "Reasoning",
+  "topic": "Order and Ranking — Position Problems in Rows and Classes (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00001",
+      "stem": "In a class of 30 students, Ravi ranks 8th from the top. What is his rank from the bottom?",
+      "options": [
+        {"option_text": "21", "is_correct": false},
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "23", "is_correct": true},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rank from bottom = Total + 1 − Rank from top = 30 + 1 − 8 = 23. Trap: 22 = 30−8 (forgets the +1); 21 = 30−8−1 (double-subtracts).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00002",
+      "stem": "Seema ranks 15th from the top and 10th from the bottom in her class. How many students are in the class?",
+      "options": [
+        {"option_text": "23", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "26", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Total = Rank from top + Rank from bottom − 1 = 15 + 10 − 1 = 24. The formula removes the double-counting of Seema herself. Trap: 25 = 15+10 (forgets the −1); 23 = 15+10−2 (subtracts twice).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00003",
+      "stem": "In a row of 25 students, Priya is 11th from the left. What is her position from the right?",
+      "options": [
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "17", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Position from right = Total + 1 − Position from left = 25 + 1 − 11 = 15. Trap: 14 = 25−11 (forgets +1); 16 = 25−11+2 (adds extra).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00004",
+      "stem": "In a row of 20 students, P is at the 7th position from the left and Q is at the 9th position from the right. How many students sit between P and Q?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. P is at position 7 from left. Q is at position 20−9+1 = 12 from left. P(7) and Q(12): students between them are at positions 8, 9, 10, 11 = 4 students. Trap: 5 = Q's position from left (12) minus P's (7) (counts P or Q); 3 = 12−7−2 (subtracts both endpoints).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00005",
+      "stem": "In a class, Ravi's rank from the top is 12th and his rank from the bottom is 8th. How many students are in the class?",
+      "options": [
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "19", "is_correct": true},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "21", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total = 12 + 8 − 1 = 19. Trap: 20 = 12+8 (forgets the −1); 18 = 12+8−2 (double subtracts).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00006",
+      "stem": "Meera's rank in a class is 13th from the top and 18th from the bottom. Sita ranks 11th from the top in the same class. What is Sita's rank from the bottom?",
+      "options": [
+        {"option_text": "19", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "21", "is_correct": false},
+        {"option_text": "22", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total students = 13+18−1 = 30. Sita's rank from bottom = 30+1−11 = 20. Trap: 21 = 30−11+2 (adds instead of subtracts); 19 = 30−11 (forgets +1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00007",
+      "stem": "In a row, A is 5th from the front and 8th from the back. B stands 3 places ahead of A. C stands 2 places behind A. What are B's and C's positions from the front?",
+      "options": [
+        {"option_text": "B=2nd, C=7th", "is_correct": true},
+        {"option_text": "B=3rd, C=8th", "is_correct": false},
+        {"option_text": "B=2nd, C=8th", "is_correct": false},
+        {"option_text": "B=3rd, C=7th", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Total = 5+8−1 = 12. A is at position 5. B is 3 places ahead (closer to front): 5−3 = 2nd from front. C is 2 places behind (closer to back): 5+2 = 7th from front. Both are within the row (positions 2 and 7 out of 12). Trap: 'Ahead' means closer to the front → smaller position number; 'behind' means farther from front → larger position number.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00008",
+      "stem": "In a row of 40 boys, Rahul shifts 3 places to the right and becomes 18th from the left. Ajay shifts 3 places to the left and becomes 24th from the right. How many boys are between their ORIGINAL positions?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Rahul now = 18th from left → original = 18−3 = 15th from left. Ajay now = 24th from right = 40−24+1 = 17th from left → original = 17+3 = 20th from left. Between positions 15 and 20: 16th, 17th, 18th, 19th = 4 boys. Trap: 5 counts the endpoints; 3 miscomputes Ajay's original position.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00009",
+      "stem": "In a class of 40 students, 5 students scored more than Arjun and 8 students scored less than him. How many students scored the same marks as Arjun?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "26", "is_correct": true},
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total = 40. Students who scored differently from Arjun = 5 (more) + 1 (Arjun himself) + 8 (less) = 14. Students with same score = 40−14 = 26. Trap: 28 = 40−5−8+1 (miscounts Arjun); 24 = 40−5−8−3 (subtracts extra).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_00010",
+      "stem": "In a class, Arun ranks 7th from the top and Bala ranks 7th from the bottom. If there are 3 students between them, how many students are in the class?",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "17", "is_correct": true},
+        {"option_text": "19", "is_correct": false},
+        {"option_text": "21", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Arun is 7th from top; Bala is 7th from bottom. There are 3 students between them. Total = (Arun's rank from top) + (students between) + (Bala's rank from bottom) = 7 + 3 + 7 = 17. Verify: Arun at position 7 from top, Bala at position 17−7+1=11 from top, students between: positions 8,9,10 = 3 ✓. Trap: 15 = 7+1+7 (forgets students between); 19 = 7+5+7 (counts too many between).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

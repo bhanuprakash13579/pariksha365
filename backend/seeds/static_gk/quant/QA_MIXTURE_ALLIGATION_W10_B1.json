@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_MIXTURE_ALLIGATION_W10",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mixture and Alligation — Blending, Dilution and Ratios (W10)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00001",
+      "stem": "Rice costing ₹20/kg and ₹30/kg are mixed to produce a mixture costing ₹25/kg. What is the ratio of the two types of rice?",
+      "options": [
+        {"option_text": "1 : 2", "is_correct": false},
+        {"option_text": "1 : 1", "is_correct": true},
+        {"option_text": "2 : 1", "is_correct": false},
+        {"option_text": "3 : 2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Alligation rule: cheaper:dearer = (dearer−mean):(mean−cheaper) = (30−25):(25−20) = 5:5 = 1:1. The mean price of ₹25 is exactly the midpoint of ₹20 and ₹30, so equal quantities are needed. Trap: 2:1 confuses which way the ratio runs; 3:2 misapplies the formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00002",
+      "stem": "Milk at ₹15/litre is mixed with water (cost ₹0) to get a mixture priced at ₹10/litre. In what ratio should milk and water be mixed?",
+      "options": [
+        {"option_text": "1 : 2", "is_correct": false},
+        {"option_text": "2 : 1", "is_correct": true},
+        {"option_text": "3 : 1", "is_correct": false},
+        {"option_text": "1 : 3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Milk:Water = (mean−water price):(milk−mean) = (10−0):(15−10) = 10:5 = 2:1. For every 2 litres of milk, 1 litre of water is added. Trap: 1:2 reverses milk and water; 3:1 incorrectly applies the formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00003",
+      "stem": "Tea at ₹200/kg and ₹300/kg are mixed in the ratio 2:3. Find the price of the mixture per kg.",
+      "options": [
+        {"option_text": "₹240/kg", "is_correct": false},
+        {"option_text": "₹250/kg", "is_correct": false},
+        {"option_text": "₹260/kg", "is_correct": true},
+        {"option_text": "₹280/kg", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Weighted average = (2×200 + 3×300)/(2+3) = (400+900)/5 = 1300/5 = ₹260/kg. Trap: ₹250 is the simple arithmetic mean (250), which applies only when the ratio is 1:1; ₹240 uses wrong weight coefficients.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00004",
+      "stem": "10 litres of water is added to 40 litres of milk solution that contains 25% milk. What is the percentage of milk in the final mixture?",
+      "options": [
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "30%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Milk in original 40L solution = 25% × 40 = 10L. After adding 10L water: total = 50L, milk = 10L. % milk = 10/50 × 100 = 20%. Trap: 25% assumes the percentage stays unchanged (ignoring the dilution from added water); 15% over-dilutes incorrectly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00005",
+      "stem": "A solution of alcohol and water contains 40% alcohol. How much pure alcohol must be added to 60 litres of this solution to make it 50% alcohol?",
+      "options": [
+        {"option_text": "8 litres", "is_correct": false},
+        {"option_text": "10 litres", "is_correct": false},
+        {"option_text": "12 litres", "is_correct": true},
+        {"option_text": "15 litres", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Initial alcohol = 40% of 60 = 24L. Let x litres of pure alcohol be added. (24+x)/(60+x) = 50/100 = 1/2. 2(24+x) = 60+x. 48+2x = 60+x. x = 12 litres. Verify: (24+12)/(60+12) = 36/72 = 50% ✓. Trap: 10L gives 34/70 ≈ 48.6% (not 50%); 15L gives 39/75 = 52%.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00006",
+      "stem": "A mixture of milk and water has milk and water in the ratio 7:3. After 21 litres of water is added, the ratio becomes 7:6. Find the original quantity of the mixture.",
+      "options": [
+        {"option_text": "50 litres", "is_correct": false},
+        {"option_text": "60 litres", "is_correct": false},
+        {"option_text": "70 litres", "is_correct": true},
+        {"option_text": "80 litres", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let original = 10k. Milk = 7k, water = 3k. After adding 10L water: 7k/(3k+10) = 7/6 → 6×7k = 7(3k+10) → 42k = 21k+70 → 21k = 70 → k = 10/3... Wait: let me use ratio 7:3 directly. 7k/(3k+10)=7/6 → 42k=21k+70 → k=10/3? That's not clean. Let me re-check: 7:6 means milk/water = 7/6, and milk = 7k, so 7k/(3k+10) = 7/6 → 6(7k) = 7(3k+10) → 42k = 21k+70 → 21k = 70 → k = 10/3. Total = 10×(10/3) = 100/3 ≈ 33.3. That's not clean.\n\nLet me use a corrected version: ratio becomes 7:4 after adding 10L. 7k/(3k+10)=7/4 → 4×7k=7(3k+10) → 28k=21k+70 → 7k=70 → k=10. Total=100L.\n\nActually I'll fix this to: original ratio 5:2, after adding 14L water becomes 5:4.\n5k/(2k+14)=5/4 → 20k=10k+70 → k=7. Original=7k+2k=... wait 5x vs 2x: 7k=49? Let me keep the original question but correct the math.\n\nLet me use: ratio 7:3, after adding 21L water becomes 7:6. 7x/(3x+21)=7/6. 42x=21x+147. 21x=147. x=7. Total=10×7=70. ✓",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00007",
+      "stem": "A container holds 40 litres of pure milk. 10 litres is removed and replaced with water. The operation is repeated once more. What percentage of milk remains in the container?",
+      "options": [
+        {"option_text": "50%", "is_correct": false},
+        {"option_text": "56.25%", "is_correct": true},
+        {"option_text": "60%", "is_correct": false},
+        {"option_text": "62.5%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Formula: milk remaining after n replacements = V×(1 − r/V)ⁿ. After 2 replacements: 40×(1−10/40)² = 40×(3/4)² = 40×(9/16) = 22.5L. % = 22.5/40×100 = 56.25%. Trap: 60% applies the fraction once only (single replacement); 50% assumes equal milk and water after two draws (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00008",
+      "stem": "How much water must be added to 50 litres of milk (cost ₹20/L) to obtain a mixture worth ₹16/L?",
+      "options": [
+        {"option_text": "10 litres", "is_correct": false},
+        {"option_text": "12.5 litres", "is_correct": true},
+        {"option_text": "15 litres", "is_correct": false},
+        {"option_text": "20 litres", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Alligation: water (₹0) and milk (₹20), mean = ₹16. Water:Milk = (20−16):(16−0) = 4:16 = 1:4. For 50L of milk, water needed = 50/4 = 12.5L. Verify: 50L milk (₹20) + 12.5L water (₹0) = 62.5L mixture. Cost = 50×20/62.5 = ₹16/L ✓. Trap: 10L gives (50×20/60) = ₹16.67/L (not ₹16); 15L gives ₹15.38/L.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00009",
+      "stem": "Vessel A has milk and water in ratio 3:1. Vessel B has them in ratio 5:3. In what ratio should the contents be mixed to get a mixture with milk and water in ratio 2:1?",
+      "options": [
+        {"option_text": "1:1", "is_correct": false},
+        {"option_text": "1:2", "is_correct": true},
+        {"option_text": "2:1", "is_correct": false},
+        {"option_text": "3:2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Milk fraction in A = 3/4; in B = 5/8; required = 2/3. Alligation: A:B = (required − B fraction):(A fraction − required) = (2/3 − 5/8):(3/4 − 2/3) = (16/24 − 15/24):(18/24 − 16/24) = (1/24):(2/24) = 1:2. Trap: 2:1 reverses A and B; 1:1 ignores the required concentration.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W10_00010",
+      "stem": "A 40% alcohol solution is mixed with a 10% alcohol solution to produce a 20% alcohol solution. In what ratio (40% : 10%) should they be mixed?",
+      "options": [
+        {"option_text": "2 : 1", "is_correct": false},
+        {"option_text": "1 : 2", "is_correct": true},
+        {"option_text": "1 : 3", "is_correct": false},
+        {"option_text": "3 : 2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Alligation: (40%):(10%) to get 20%. Ratio = (20−10):(40−20) = 10:20 = 1:2. So the 40% solution and 10% solution are mixed in ratio 1:2. Verify: 1 part ×40% + 2 parts ×10% = 40+20=60 units of alcohol in 3 parts = 60/3 = 20% ✓. Trap: 2:1 reverses the ratio; 3:2 misapplies the formula using the wrong differences.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}
