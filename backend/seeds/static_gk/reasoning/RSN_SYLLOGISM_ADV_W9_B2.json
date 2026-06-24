@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SYLLOGISM_ADV_W9",
+  "subject": "Reasoning",
+  "topic": "Syllogism — Advanced (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00001",
+      "stem": "Statements: All cats are animals. All animals are living things.\nConclusions: I. All cats are living things.  II. Some living things are animals.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. All cats→animals→living things, so All cats are living things (I ✓). All animals are living things → some living things are animals (II ✓, conversion of universal affirmative). Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00002",
+      "stem": "Statements: No man is a tree. All birds are trees.\nConclusions: I. No man is a bird.  II. No bird is a man.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. All birds are trees + No man is a tree → No man is a bird (I ✓). I and II express the same relationship, so II also follows ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00003",
+      "stem": "Statements: Some pens are books. Some books are pencils.\nConclusions: I. Some pens are pencils.  II. No pen is a pencil.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Both premises are particular affirmatives sharing 'books' (middle term undistributed). No definite conclusion can be drawn. I and II cannot both be certain — neither is definite.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00004",
+      "stem": "Statements: All flowers are trees. Some trees are plants.\nConclusions: I. Some flowers are plants.  II. All trees are flowers.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. I: Flowers ⊆ trees, plants ∩ trees ≠ ∅ — but the overlapping trees may not be flowers, so I is not certain. II: Converse of a universal affirmative is particular ('Some trees are flowers'), not 'All trees are flowers'. Neither follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00005",
+      "stem": "Statements: All tables are chairs. No chair is a bed.\nConclusions: I. No table is a bed.  II. Some beds are tables.\nWhich conclusion follows?",
+      "options": [
+        {"option_text": "Only I", "is_correct": true},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. All tables are chairs + No chair is a bed → No table is a bed (I ✓). II contradicts I and cannot follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00006",
+      "stem": "Statements: Some boys are girls. All girls are smart.\nConclusions: I. Some boys are smart.  II. All smart are girls.\nWhich conclusion follows?",
+      "options": [
+        {"option_text": "Only I", "is_correct": true},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Some boys are girls + All girls are smart → Some boys are smart (I ✓). II inverts All girls are smart to All smart are girls — converse of universal affirmative is only particular. II doesn't follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00007",
+      "stem": "Statements: No ring is a chain. Some chains are bangles.\nConclusions: I. No ring is a bangle.  II. Some bangles are not rings.\nWhich conclusion follows?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": true},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Some chains are bangles + No ring is a chain → those chain-bangles are definitely not rings → Some bangles are not rings (II ✓). I says NO ring is bangle — we can only conclude those particular chain-bangles aren't rings; there could be non-chain bangles that are rings. I is too strong.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00008",
+      "stem": "Statements: All planets are stars. Some stars are moons.\nConclusions: I. Some planets are moons.  II. All stars are planets.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. I: Planets ⊆ stars, moons ∩ stars ≠ ∅ — but the moon-stars might not overlap with the planet-stars. I is uncertain. II: Converse of 'All planets are stars' is 'Some stars are planets', not 'All stars are planets'. Neither follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00009",
+      "stem": "Statements: Some A are B. All B are C. No C is D.\nConclusions: I. Some A are C.  II. No B is D.  III. Some A are not D.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I and II", "is_correct": false},
+        {"option_text": "Only II and III", "is_correct": false},
+        {"option_text": "Only I and III", "is_correct": false},
+        {"option_text": "All three — I, II and III", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. I: Some A are B + All B are C → Some A are C ✓. II: All B are C + No C is D → No B is D ✓. III: From I (Some A are C) + No C is D → Some A are not D ✓. All three follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W9_00010",
+      "stem": "Statements: All A are B. All B are C. Some D are A. No D is E.\nConclusions: I. Some C are D.  II. Some B are D.  III. No A is E.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only I and II", "is_correct": true},
+        {"option_text": "Only II and III", "is_correct": false},
+        {"option_text": "All three", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. I: Some D are A + All A→B→C → Some D are C → Some C are D ✓. II: Some D are A + All A are B → Some D are B → Some B are D ✓. III: No D is E + Some D are A → only 'Some A are not E'; we cannot say NO A is E (other A that are not D could still be E). III doesn't follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

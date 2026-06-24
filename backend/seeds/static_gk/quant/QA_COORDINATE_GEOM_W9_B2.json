@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_COORDINATE_GEOM_W9",
+  "subject": "Quantitative Aptitude",
+  "topic": "Coordinate Geometry — Lines, Distance and Circles (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00001",
+      "stem": "What is the distance between points (3, 4) and the origin (0, 0)?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "7", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Distance = √(3²+4²) = √(9+16) = √25 = 5. Recognise the 3-4-5 right triangle.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00002",
+      "stem": "What is the midpoint of the line segment joining (2, 4) and (6, 8)?",
+      "options": [
+        {"option_text": "(3, 5)", "is_correct": false},
+        {"option_text": "(4, 6)", "is_correct": true},
+        {"option_text": "(4, 5)", "is_correct": false},
+        {"option_text": "(3, 6)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Midpoint = ((2+6)/2, (4+8)/2) = (4, 6).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00003",
+      "stem": "What is the slope of the line joining points (2, 3) and (5, 9)?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Slope m = (y₂−y₁)/(x₂−x₁) = (9−3)/(5−2) = 6/3 = 2. Option D (6) is the rise, not the slope.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00004",
+      "stem": "The equation of the line passing through (1, 2) with slope 3 is:",
+      "options": [
+        {"option_text": "y = 3x + 2", "is_correct": false},
+        {"option_text": "y = 3x − 1", "is_correct": true},
+        {"option_text": "y = x + 3", "is_correct": false},
+        {"option_text": "3x + y = 5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. y − 2 = 3(x − 1) → y = 3x − 3 + 2 → y = 3x − 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00005",
+      "stem": "Find the area of a triangle with vertices at (0, 0), (4, 0) and (0, 3).",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "7", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Area = ½ × base × height = ½ × 4 × 3 = 6. This is a right-angled triangle with legs 4 and 3 along the axes. Using the shoelace formula: ½|0(0−3)+4(3−0)+0(0−0)| = ½|12| = 6.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00006",
+      "stem": "The distance from point (3, 5) to the line 4x + 3y + 2 = 0 is:",
+      "options": [
+        {"option_text": "4.8", "is_correct": false},
+        {"option_text": "5.0", "is_correct": false},
+        {"option_text": "5.8", "is_correct": true},
+        {"option_text": "6.2", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Distance = |4(3)+3(5)+2| / √(4²+3²) = |12+15+2| / √25 = 29/5 = 5.8.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00007",
+      "stem": "The centroid of a triangle with vertices (1, 2), (3, 4) and (5, 6) is:",
+      "options": [
+        {"option_text": "(2, 3)", "is_correct": false},
+        {"option_text": "(3, 3)", "is_correct": false},
+        {"option_text": "(3, 4)", "is_correct": true},
+        {"option_text": "(4, 4)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Centroid = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3) = ((1+3+5)/3, (2+4+6)/3) = (3, 4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00008",
+      "stem": "The circle x² + y² = 25 has radius:",
+      "options": [
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "√5", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Standard form x²+y² = r², so r² = 25 → r = 5. (25 is the square of the radius, not the radius itself.)",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00009",
+      "stem": "The equation of the perpendicular bisector of the segment joining (1, 3) and (5, 7) is:",
+      "options": [
+        {"option_text": "x + y = 6", "is_correct": false},
+        {"option_text": "x + y = 7", "is_correct": false},
+        {"option_text": "x + y = 8", "is_correct": true},
+        {"option_text": "x − y = 2", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Midpoint = (3, 5). Slope of segment = (7−3)/(5−1) = 1. Slope of perpendicular bisector = −1. Equation: y−5 = −1(x−3) → y = −x+8 → x+y = 8.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOM_W9_00010",
+      "stem": "Two lines 2x + 3y = 6 and 4x + 6y = k are coincident (the same line). Find k.",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Multiply 2x+3y=6 by 2: 4x+6y=12. For the two lines to be identical, k must equal 12. When k ≠ 12, the lines are parallel but distinct (no solution).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

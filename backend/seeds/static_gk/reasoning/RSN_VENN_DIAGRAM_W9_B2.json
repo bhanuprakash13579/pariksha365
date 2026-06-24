@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_VENN_DIAGRAM_W9",
+  "subject": "Reasoning",
+  "topic": "Venn Diagrams (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00001",
+      "stem": "In a group of 50 people: 30 like cricket, 25 like football, and 10 like both. How many like neither?",
+      "options": [
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. |C∪F| = 30+25−10 = 45. Neither = 50−45 = 5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00002",
+      "stem": "Which Venn diagram best represents the relationship: India, Maharashtra, Mumbai?",
+      "options": [
+        {"option_text": "Three concentric circles (Mumbai innermost, Maharashtra middle, India outermost)", "is_correct": true},
+        {"option_text": "Three overlapping but separate circles", "is_correct": false},
+        {"option_text": "Two separate circles inside a bigger circle", "is_correct": false},
+        {"option_text": "Three completely separate circles", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Mumbai ⊂ Maharashtra ⊂ India — each is fully contained within the next. Three concentric circles (nested) represent this perfectly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00003",
+      "stem": "Which Venn diagram best represents: Triangles, Quadrilaterals, Polygons?",
+      "options": [
+        {"option_text": "Two overlapping circles inside a bigger circle", "is_correct": false},
+        {"option_text": "Three concentric circles", "is_correct": false},
+        {"option_text": "Two separate non-overlapping circles both inside a bigger circle", "is_correct": true},
+        {"option_text": "Three completely separate circles", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Triangles ⊂ Polygons and Quadrilaterals ⊂ Polygons, but Triangles and Quadrilaterals are mutually exclusive (no figure is both). So: two separate circles inside a larger Polygons circle.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00004",
+      "stem": "In a class of 40 students: 25 play cricket, 20 play football, 15 play both. How many play only cricket?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Only cricket = total cricket − both = 25−15 = 10.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00005",
+      "stem": "In a class of 60: 35 like Math, 45 like Science. All students like at least one subject. How many like both?",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. |M∪S| = total = 60 (everyone likes at least one). |M∪S| = |M|+|S|−|M∩S| → 60 = 35+45−|M∩S| → |M∩S| = 20.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00006",
+      "stem": "Circle A has 12 elements, Circle B has 15 elements, and their intersection has 5 elements. What is |A∪B|?",
+      "options": [
+        {"option_text": "17", "is_correct": false},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "22", "is_correct": true},
+        {"option_text": "27", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. |A∪B| = |A|+|B|−|A∩B| = 12+15−5 = 22.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00007",
+      "stem": "In a group of 60 people: 35 like tea, 40 like coffee, 25 like both. How many like neither?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. |T∪C| = 35+40−25 = 50. Neither = 60−50 = 10.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00008",
+      "stem": "In a survey of 60 people who like Math, Science or English: 35 like Math, 40 like Science. If 15 like all three and 20 like exactly two, how many like only one subject?",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total = only-one + exactly-two + all-three → 60 = only-one + 20 + 15 → only-one = 25.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00009",
+      "stem": "100 students: 60 like History, 55 like Geography, 50 like Civics. 30 like History & Geography, 25 like History & Civics, 20 like Geography & Civics, 10 like all three. How many like exactly two subjects?",
+      "options": [
+        {"option_text": "35", "is_correct": false},
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "45", "is_correct": true},
+        {"option_text": "50", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Exactly two (excluding those who like all three): (H∩G only)=30−10=20, (H∩C only)=25−10=15, (G∩C only)=20−10=10. Total exactly two = 20+15+10 = 45.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAM_W9_00010",
+      "stem": "From the same survey (100 students, Q9 data), how many like at least one of the three subjects?",
+      "options": [
+        {"option_text": "90", "is_correct": false},
+        {"option_text": "95", "is_correct": false},
+        {"option_text": "100", "is_correct": true},
+        {"option_text": "85", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. |H∪G∪C| = 60+55+50−30−25−20+10 = 165−75+10 = 100. All 100 students like at least one subject — nobody likes none.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

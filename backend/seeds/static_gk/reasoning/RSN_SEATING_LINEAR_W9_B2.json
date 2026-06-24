@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SEATING_LINEAR_W9",
+  "subject": "Reasoning",
+  "topic": "Seating Arrangement — Linear (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00001",
+      "stem": "Five people P,Q,R,S,T sit in a row. P is at extreme left. R is immediately right of P. Q is between R and S. S is at extreme right. T sits between R and Q. What is T's position from the left?",
+      "options": [
+        {"option_text": "2nd", "is_correct": false},
+        {"option_text": "3rd", "is_correct": true},
+        {"option_text": "4th", "is_correct": false},
+        {"option_text": "5th", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. P=1, R=2 (immediately right of P), S=5 (extreme right), Q between R and S with T between R and Q. Arrangement: P,R,T,Q,S. T is at position 3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00002",
+      "stem": "Five friends sit in a row. Arun is between Karan and Mohan. Karan is immediately right of Ravi. Sohan is at the extreme right. Ravi is at the extreme left. Mohan is at position 4. What position is Arun?",
+      "options": [
+        {"option_text": "2nd", "is_correct": false},
+        {"option_text": "3rd", "is_correct": true},
+        {"option_text": "4th", "is_correct": false},
+        {"option_text": "1st", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Ravi=1, Karan=2 (immediately right of Ravi), Mohan=4, Sohan=5. Arun between Karan(2) and Mohan(4) → Arun=3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00003",
+      "stem": "Six people A,B,C,D,E,F sit in a row. D is at extreme left. A is 3rd from left. B is 5th from left (2nd from right). C is between A and B. E and F fill remaining spots. How many people are to the right of C?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. D=1, A=3, B=5. C between A(3) and B(5) → C=4. People to the right of C(4): positions 5 and 6 = 2 people (B and one of E/F).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00004",
+      "stem": "Five people A,B,C,D,E sit in a row. A=2nd from left. C is immediately right of A. E is at extreme right. D is immediately left of E. B fills the remaining spot. What is B's position?",
+      "options": [
+        {"option_text": "1st from left", "is_correct": true},
+        {"option_text": "2nd from left", "is_correct": false},
+        {"option_text": "3rd from left", "is_correct": false},
+        {"option_text": "4th from left", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. A=2, C=3 (immediately right of A), E=5 (extreme right), D=4 (immediately left of E). Only position remaining = 1 → B=1 (1st from left).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00005",
+      "stem": "Six friends P,Q,R,S,T,U sit in a row. P=2nd from left. Q is 3rd from right (4th from left). R is between P and Q. S=extreme right. T is between R and S. U fills the remaining spot. Who sits at position 4?",
+      "options": [
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": true},
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "T", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. P=2, Q=4 (3rd from right in row of 6 = position 4), R=3 (between P and Q), S=6 (extreme right), T=5 (between R and Q... wait R=3,Q=4 adjacent so T between R(3) and S(6) = 5). Arrangement: U,P,R,Q,T,S. Position 4 = Q.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00006",
+      "stem": "From the same arrangement in Q5 (U,P,R,Q,T,S), who are the immediate neighbours of R?",
+      "options": [
+        {"option_text": "U and P", "is_correct": false},
+        {"option_text": "P and Q", "is_correct": true},
+        {"option_text": "Q and T", "is_correct": false},
+        {"option_text": "U and Q", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Arrangement: U(1),P(2),R(3),Q(4),T(5),S(6). R is at position 3; immediate neighbours are P (position 2) and Q (position 4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00007",
+      "stem": "From the same arrangement (U,P,R,Q,T,S), how many people sit between U and T?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. U=1, T=5. Between them: P(2), R(3), Q(4) = 3 people.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00008",
+      "stem": "Eight students sit in a row. The 4th student from the left is Ram. Ram is 5th from the right. How many students are in the row?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total = Rank from left + Rank from right − 1 = 4+5−1 = 8.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00009",
+      "stem": "Five friends A,B,C,D,E sit in a row. A is at an extreme end (left). D is between A and C. B is immediately right of C. E sits at position 3. Who is at the immediate left of E?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "D", "is_correct": true},
+        {"option_text": "C", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A=1 (extreme left). D is between A and C; E=3. If D=2 and C=4, B=5 (immediately right of C). Arrangement: A,D,E,C,B. Check: D between A(1) and C(4) ✓, B immediately right of C(4) ✓, E=3 ✓. Immediate left of E(3) is D(2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_LINEAR_W9_00010",
+      "stem": "From the arrangement in Q9 (A,D,E,C,B), who is 4th from the right?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "D", "is_correct": true},
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "C", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Arrangement: A(1),D(2),E(3),C(4),B(5). 4th from right: B=1st from right, C=2nd, E=3rd, D=4th. D is 4th from the right.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

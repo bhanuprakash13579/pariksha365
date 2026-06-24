@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PERMUTATION_W9",
+  "subject": "Quantitative Aptitude",
+  "topic": "Permutation and Combination (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00001",
+      "stem": "The value of ⁵P₂ is:",
+      "options": [
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "60", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. ⁵P₂ = 5!/(5−2)! = 5!/3! = 5×4 = 20. Remember: ⁿPr is the number of arrangements; ⁿCr = ⁿPr/r! is the number of selections.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00002",
+      "stem": "The value of ⁶C₂ is:",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. ⁶C₂ = 6!/(2! × 4!) = (6×5)/(2×1) = 15.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00003",
+      "stem": "In how many ways can 4 people be arranged in a row?",
+      "options": [
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "36", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Number of arrangements of n distinct objects in a row = n! = 4! = 4×3×2×1 = 24.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00004",
+      "stem": "In how many ways can the letters of the word MASTER be arranged?",
+      "options": [
+        {"option_text": "360", "is_correct": false},
+        {"option_text": "480", "is_correct": false},
+        {"option_text": "600", "is_correct": false},
+        {"option_text": "720", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. MASTER has 6 distinct letters (M,A,S,T,E,R). Total arrangements = 6! = 720.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00005",
+      "stem": "How many 3-digit numbers can be formed using the digits 1, 2, 3, 4, 5 without repetition?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "120", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. ⁵P₃ = 5×4×3 = 60. (Hundreds digit: 5 choices; tens: 4 remaining; units: 3 remaining.)",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00006",
+      "stem": "In how many ways can a committee of 3 be chosen from 8 people?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "56", "is_correct": true},
+        {"option_text": "84", "is_correct": false},
+        {"option_text": "168", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. ⁸C₃ = 8!/(3! × 5!) = (8×7×6)/(3×2×1) = 336/6 = 56. Order doesn't matter for committees — use C, not P.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00007",
+      "stem": "5 boys and 3 girls are to be seated in a row such that all 3 girls sit together. In how many ways can this be done?",
+      "options": [
+        {"option_text": "2160", "is_correct": false},
+        {"option_text": "3600", "is_correct": false},
+        {"option_text": "4320", "is_correct": true},
+        {"option_text": "5040", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Treat 3 girls as one block → 6 units (5 boys + 1 block). Arrange 6 units: 6! = 720. The 3 girls can arrange within their block in 3! = 6 ways. Total = 720×6 = 4320.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00008",
+      "stem": "From 7 men and 4 women, how many committees of 5 can be formed with at least 2 women?",
+      "options": [
+        {"option_text": "281", "is_correct": false},
+        {"option_text": "291", "is_correct": false},
+        {"option_text": "301", "is_correct": true},
+        {"option_text": "311", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. At least 2 women: exactly 2 women = ⁴C₂ × ⁷C₃ = 6×35 = 210; exactly 3 women = ⁴C₃ × ⁷C₂ = 4×21 = 84; exactly 4 women = ⁴C₄ × ⁷C₁ = 1×7 = 7. Total = 210+84+7 = 301.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00009",
+      "stem": "In how many ways can the letters of ARRANGE be arranged?",
+      "options": [
+        {"option_text": "840", "is_correct": false},
+        {"option_text": "1080", "is_correct": false},
+        {"option_text": "1260", "is_correct": true},
+        {"option_text": "2520", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. ARRANGE: 7 letters with A(×2) and R(×2). Arrangements = 7!/(2! × 2!) = 5040/4 = 1260.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_W9_00010",
+      "stem": "A box has 6 red and 4 blue balls. In how many ways can 3 balls be selected with at least 1 red?",
+      "options": [
+        {"option_text": "104", "is_correct": false},
+        {"option_text": "108", "is_correct": false},
+        {"option_text": "112", "is_correct": false},
+        {"option_text": "116", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Total ways = ¹⁰C₃ = 120. Ways with no red (all blue) = ⁴C₃ = 4. At least 1 red = 120−4 = 116. This complementary counting approach is faster than adding individual cases.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

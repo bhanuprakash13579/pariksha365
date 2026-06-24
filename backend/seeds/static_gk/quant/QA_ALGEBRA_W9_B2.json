@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_ALGEBRA_W9",
+  "subject": "Quantitative Aptitude",
+  "topic": "Algebra — Expressions, Surds and Equations (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00001",
+      "stem": "If x + 1/x = 3, find the value of x² + 1/x².",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": true},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Square both sides: (x+1/x)² = 9 → x² + 2 + 1/x² = 9 → x² + 1/x² = 7. Short Trick: (x+1/x)² − 2 gives x²+1/x².",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00002",
+      "stem": "If a + b = 5 and ab = 6, find a² + b².",
+      "options": [
+        {"option_text": "11", "is_correct": false},
+        {"option_text": "13", "is_correct": true},
+        {"option_text": "17", "is_correct": false},
+        {"option_text": "25", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. a²+b² = (a+b)² − 2ab = 25 − 12 = 13. Common error: not subtracting 2ab, giving 25.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00003",
+      "stem": "Simplify: (a − b)² + 2ab.",
+      "options": [
+        {"option_text": "a² + b²", "is_correct": true},
+        {"option_text": "(a + b)²", "is_correct": false},
+        {"option_text": "a² − b²", "is_correct": false},
+        {"option_text": "2ab", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. (a−b)² = a²−2ab+b². Adding 2ab gives a²+b².",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00004",
+      "stem": "If x + y + z = 6 and xy + yz + zx = 11, find x² + y² + z².",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "13", "is_correct": false},
+        {"option_text": "14", "is_correct": true},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. x²+y²+z² = (x+y+z)² − 2(xy+yz+zx) = 36 − 22 = 14.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00005",
+      "stem": "If x − 1/x = 3, find the value of x³ − 1/x³.",
+      "options": [
+        {"option_text": "27", "is_correct": false},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "42", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. x²+1/x² = (x−1/x)²+2 = 9+2 = 11. x³−1/x³ = (x−1/x)(x²+1+1/x²) = 3×(11+1) = 36. Short Trick: a³−b³ = (a−b)(a²+ab+b²); here ab = −(x)(1/x) = −(−1) = 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00006",
+      "stem": "For what value of k is (x − 2) a factor of x³ − 3x² + kx − 4?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. By Factor Theorem, substitute x = 2: 8 − 12 + 2k − 4 = 0 → 2k = 8 → k = 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00007",
+      "stem": "If x = √5 + 2, find the value of x − 1/x.",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "√5", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "2√5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 1/x = 1/(√5+2) = (√5−2)/((√5)²−4) = (√5−2)/1 = √5−2. So x−1/x = (√5+2)−(√5−2) = 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00008",
+      "stem": "Solve the system: 2x + 3y = 12 and 3x − 2y = 5. What is x?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Multiply eq1 by 2: 4x+6y=24. Multiply eq2 by 3: 9x−6y=15. Add: 13x=39 → x=3. Verify: 6+3y=12 → y=2; check 9−4=5 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00009",
+      "stem": "If a/b + b/a = 1, find a³ + b³.",
+      "options": [
+        {"option_text": "−1", "is_correct": false},
+        {"option_text": "0", "is_correct": true},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "a + b", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. a/b + b/a = (a²+b²)/ab = 1 → a²+b² = ab. a³+b³ = (a+b)(a²−ab+b²) = (a+b)(ab−ab) = (a+b)×0 = 0.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_W9_00010",
+      "stem": "If x = 2 + √3, find the value of x² − 4x + 1.",
+      "options": [
+        {"option_text": "−1", "is_correct": false},
+        {"option_text": "0", "is_correct": true},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. x−2 = √3 → (x−2)² = 3 → x²−4x+4 = 3 → x²−4x+1 = 0. The expression equals 0. This is a classic SSC surd substitution where noticing x−2=√3 eliminates the radical instantly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

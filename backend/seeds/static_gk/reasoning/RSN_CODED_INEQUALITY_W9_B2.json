@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_CODED_INEQUALITY_W9",
+  "subject": "Reasoning",
+  "topic": "Coded Inequalities (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00001",
+      "stem": "Statements: M > N, N > O, O > P.\nConclusions: I. M > P    II. N > P\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. From M>N>O>P: transitivity gives M>P (I ✓) and N>P (II ✓). Both conclusions follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00002",
+      "stem": "Statements: A = B, B > C.\nConclusions: I. A > C    II. A = C\nWhich conclusion follows?",
+      "options": [
+        {"option_text": "Only I", "is_correct": true},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. A=B and B>C → A>C. Only I follows. II (A=C) contradicts what we derived.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00003",
+      "stem": "Statements: P > Q > R = S.\nConclusions: I. P > S    II. Q > S\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. P>Q>R=S → P>S (I ✓) and Q>R=S → Q>S (II ✓). Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00004",
+      "stem": "Statements: J ≥ K, K > L, L ≥ M.\nConclusions: I. J > M    II. K > M\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. K>L≥M → K>M (II ✓). J≥K>M → J>M (I ✓). Both follow. The ≥ for J≥K doesn't prevent J>M because K>M is certain.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00005",
+      "stem": "Statements: X > Y, Z < Y.\nConclusions: I. X > Z    II. Z < X\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. X>Y and Z<Y → X>Y>Z, so X>Z. Both I and II state the same relationship (X>Z and Z<X are identical), and both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00006",
+      "stem": "Statements: A ≤ B, B < C, D > C.\nConclusions: I. D > A    II. C > A\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. D>C>B≥A → D>A (I ✓) and C>B≥A → C>A (II ✓). Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00007",
+      "stem": "Statements: P > Q = R, R < S, T ≤ S.\nConclusions: I. P > S    II. T > Q\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. P>Q=R<S: we know P>R but can't compare P and S (S is larger than R, and P is also larger than R — we don't know which is bigger). I doesn't necessarily follow. T≤S and Q=R<S: Q<S but T≤S, so T could be greater or less than Q. II doesn't necessarily follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00008",
+      "stem": "Statements: V ≥ W > X, X = Y.\nConclusions: I. V > Y    II. W > Y\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. W>X=Y → W>Y (II ✓). V≥W>Y → V>Y (I ✓ — even if V=W, still V>Y since W>Y). Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00009",
+      "stem": "Statements: A ≥ B, B = C, C ≤ D, D < E.\nConclusions: I. E > A    II. E > B    III. A ≥ C\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Only III", "is_correct": false},
+        {"option_text": "Only II and III", "is_correct": true},
+        {"option_text": "All three", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A≥B=C≤D<E. II: B=C≤D<E → B<E ✓. III: A≥B=C → A≥C ✓. I: A≥C≤D<E — A could be very large (much greater than E), so E>A is NOT necessarily true. Only II and III follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_INEQUALITY_W9_00010",
+      "stem": "Statements: P < Q = R ≥ S > T.\nConclusions: I. R > T    II. Q ≥ S    III. P < S\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only I and II", "is_correct": true},
+        {"option_text": "Only II and III", "is_correct": false},
+        {"option_text": "All three", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. I: R≥S>T → R>T ✓. II: Q=R≥S → Q≥S ✓. III: P<Q=R≥S — since S≤R and P<R, we can't directly compare P and S (S could be smaller than P). III does not necessarily follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

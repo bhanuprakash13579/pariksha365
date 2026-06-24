@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_MATRIX_W9",
+  "subject": "Reasoning",
+  "topic": "Matrix — Missing Element (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_MATRIX_W9_00001",
+      "stem": "Find the missing value (?) in the matrix:\n4   8   2\n6   12  3\n8   16  ?\nRule: col₂ = col₁×2, col₃ = col₁÷2",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. col₂ = col₁×2 (8=4×2, 12=6×2, 16=8×2 ✓). col₃ = col₁÷2 (2=4÷2, 3=6÷2, ? = 8÷2 = 4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00002",
+      "stem": "Find the missing value (?) in the matrix:\n3   5   8\n4   7   11\n6   8   ?\nRule: col₃ = col₁ + col₂",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "13", "is_correct": false},
+        {"option_text": "14", "is_correct": true},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. col₃ = col₁+col₂: 3+5=8 ✓, 4+7=11 ✓, 6+8=14.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00003",
+      "stem": "Find the missing value (?) in the matrix:\n1   2   3\n4   5   6\n7   8   ?\nThe matrix uses consecutive integers.",
+      "options": [
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": true},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Numbers fill the matrix consecutively: 1 through 9. The missing element is 9.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00004",
+      "stem": "Find the missing value (?) in the matrix:\n2   4   8\n3   9   27\n4   16  ?\nRule: col₂ = col₁², col₃ = col₁³",
+      "options": [
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "56", "is_correct": false},
+        {"option_text": "64", "is_correct": true},
+        {"option_text": "128", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. col₂=col₁²: 2²=4, 3²=9, 4²=16 ✓. col₃=col₁³: 2³=8, 3³=27, 4³=64.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00005",
+      "stem": "Find the missing value (?) in the matrix:\n6   3   2\n12  4   3\n20  5   ?\nRule: col₁ = col₂ × col₃",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. col₁=col₂×col₃: 3×2=6 ✓, 4×3=12 ✓, 5×?=20 → ?=4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00006",
+      "stem": "Find the missing value (?) in the matrix:\n8   6   48\n7   4   28\n9   5   ?\nRule: col₃ = col₁ × col₂",
+      "options": [
+        {"option_text": "35", "is_correct": false},
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "45", "is_correct": true},
+        {"option_text": "50", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 8×6=48 ✓, 7×4=28 ✓, 9×5=45.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00007",
+      "stem": "Find the missing value (?) in the matrix:\n4   7   11\n5   9   14\n6   11  ?\nRule: col₃ = col₁ + col₂",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "17", "is_correct": true},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. col₃=col₁+col₂: 4+7=11 ✓, 5+9=14 ✓, 6+11=17.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00008",
+      "stem": "Find the missing value (?) in the matrix:\n35  5   7\n48  8   6\n56  7   ?\nRule: col₁ = col₂ × col₃",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. 5×7=35 ✓, 8×6=48 ✓, 7×?=56 → ?=8.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00009",
+      "stem": "Find the missing value (?) in the matrix:\n10  5   2\n18  3   6\n21  7   ?\nRule: col₃ = col₁ ÷ col₂",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "7", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 10÷5=2 ✓, 18÷3=6 ✓, 21÷7=3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_W9_00010",
+      "stem": "Find the missing value (?) in the matrix:\n4   9   5\n16  25  ?\nRule: col₃ = col₂ − col₁",
+      "options": [
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": true},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. 9−4=5 ✓, 25−16=9. Note also: 4=2², 9=3², 16=4², 25=5² — the matrix uses perfect squares in cols 1 and 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

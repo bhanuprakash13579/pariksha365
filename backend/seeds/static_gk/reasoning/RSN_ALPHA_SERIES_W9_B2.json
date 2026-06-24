@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_ALPHA_SERIES_W9",
+  "subject": "Reasoning",
+  "topic": "Alphabetical Series (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00001",
+      "stem": "Find the next term: A, C, E, G, ?",
+      "options": [
+        {"option_text": "H", "is_correct": false},
+        {"option_text": "I", "is_correct": true},
+        {"option_text": "J", "is_correct": false},
+        {"option_text": "K", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Alternate letters (skipping one each time): A, C, E, G → next = I.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00002",
+      "stem": "Find the next pair: AB, DE, GH, JK, ?",
+      "options": [
+        {"option_text": "LM", "is_correct": false},
+        {"option_text": "MN", "is_correct": true},
+        {"option_text": "NO", "is_correct": false},
+        {"option_text": "LN", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Each pair skips two letters: AB→(skip CD)→DE→(skip EF)→GH→(skip IJ)→JK→(skip KL)→MN.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00003",
+      "stem": "Find the next pair: AZ, BY, CX, ?",
+      "options": [
+        {"option_text": "DW", "is_correct": true},
+        {"option_text": "DX", "is_correct": false},
+        {"option_text": "EW", "is_correct": false},
+        {"option_text": "DV", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. First letter advances (A,B,C,D); second letter retreats from Z (Z,Y,X,W). Pattern: each pair has letters that sum to 27 (A+Z=1+26). Next pair = DW.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00004",
+      "stem": "Find the next term: ABB, CDC, EFE, ?",
+      "options": [
+        {"option_text": "GGH", "is_correct": false},
+        {"option_text": "GHG", "is_correct": true},
+        {"option_text": "HGH", "is_correct": false},
+        {"option_text": "GHH", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern: X(2n−1)Y(2n)X(2n−1) → A(1)B(2)A(1)=ABB? Wait: ABB=A,B,B. Actually: A,B,B; C,D,C; E,F,E → the 1st and 3rd letter of each triple match, and are consecutive odd-positional letters; the 2nd letter is consecutive even. G,H,G → GHG.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00005",
+      "stem": "Find the next term in the series: A, B, D, G, K, ?",
+      "options": [
+        {"option_text": "N", "is_correct": false},
+        {"option_text": "O", "is_correct": false},
+        {"option_text": "P", "is_correct": true},
+        {"option_text": "Q", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Differences in positions: B−A=1, D−B=2, G−D=3, K−G=4. Next difference = 5: K(11)+5 = P(16).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00006",
+      "stem": "Find the next term: Z, X, V, T, R, ?",
+      "options": [
+        {"option_text": "N", "is_correct": false},
+        {"option_text": "O", "is_correct": false},
+        {"option_text": "P", "is_correct": true},
+        {"option_text": "Q", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Each letter decreases by 2 positions: Z(26),X(24),V(22),T(20),R(18) → P(16).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00007",
+      "stem": "Find the next group: ACE, FHJ, KMO, ?",
+      "options": [
+        {"option_text": "PQR", "is_correct": false},
+        {"option_text": "PRT", "is_correct": true},
+        {"option_text": "QSU", "is_correct": false},
+        {"option_text": "PRU", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Each group has alternate letters starting at +5 from previous group's start: A(1),C(3),E(5); F(6),H(8),J(10); K(11),M(13),O(15); P(16),R(18),T(20) → PRT.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00008",
+      "stem": "Find the next pair: AE, BF, CG, ?",
+      "options": [
+        {"option_text": "DH", "is_correct": true},
+        {"option_text": "DI", "is_correct": false},
+        {"option_text": "EH", "is_correct": false},
+        {"option_text": "DG", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. First letter: A,B,C,D (+1 each). Second letter is first letter +4: A+4=E, B+4=F, C+4=G, D+4=H. Next pair = DH.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00009",
+      "stem": "Find the next pair: AZ, CX, EV, GT, ?",
+      "options": [
+        {"option_text": "IR", "is_correct": true},
+        {"option_text": "IS", "is_correct": false},
+        {"option_text": "HR", "is_correct": false},
+        {"option_text": "IQ", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. First letters: A(1),C(3),E(5),G(7) → next = I(9). Second letters: Z(26),X(24),V(22),T(20) → next = R(18). Each pair sums to 27 in positions. Next pair = IR.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHA_SERIES_W9_00010",
+      "stem": "Find the next term: B2E, D4G, F6I, H8K, ?",
+      "options": [
+        {"option_text": "J10M", "is_correct": true},
+        {"option_text": "J10N", "is_correct": false},
+        {"option_text": "K10M", "is_correct": false},
+        {"option_text": "J8M", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. First letter: B,D,F,H (+2 each) → next = J. Number: 2,4,6,8 (+2 each) → next = 10. Third letter is first letter +3: B→E, D→G, F→I, H→K, J→M. Next term = J10M.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

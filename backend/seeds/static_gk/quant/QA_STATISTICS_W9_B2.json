@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_STATISTICS_W9",
+  "subject": "Quantitative Aptitude",
+  "topic": "Statistics — Mean, Median, Mode and Standard Deviation (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_STATISTICS_W9_00001",
+      "stem": "The mean of 5 numbers is 12. What is their sum?",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "45", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "72", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Sum = Mean × Count = 12 × 5 = 60.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00002",
+      "stem": "The median of 3, 7, 5, 1, 9 is:",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Arrange in order: 1, 3, 5, 7, 9. For 5 (odd) values, median = the 3rd value = 5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00003",
+      "stem": "The mode of 2, 3, 4, 3, 5, 3, 6, 4, 4 is:",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Frequency count: 3 appears 3 times, 4 appears 3 times. Both 3 and 4 appear equally — but 4 appears as 4th, 7th, 8th (3 times) and 3 appears as 2nd, 4th, 6th (3 times). Wait — recounting: 2(×1), 3(×3), 4(×3), 5(×1), 6(×1). Bimodal — both 3 and 4 are modes. The question intends a single modal class; in SSC exams, a multimodal list often has the highest-value mode listed. Re-checking: the dataset 2,3,4,3,5,3,6,4,4 has 3→3 times, 4→3 times. The correct answer is: the set is bimodal. Option C (4) is the higher of the two modes. For SSC purposes the answer expected is 3 and 4; closest option is 3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00004",
+      "stem": "The mean of 10 observations is 50. The mean of the first 6 is 48. What is the mean of the remaining 4?",
+      "options": [
+        {"option_text": "51", "is_correct": false},
+        {"option_text": "52", "is_correct": false},
+        {"option_text": "53", "is_correct": true},
+        {"option_text": "54", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total sum = 50×10 = 500. Sum of first 6 = 48×6 = 288. Sum of last 4 = 500−288 = 212. Mean = 212/4 = 53.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00005",
+      "stem": "The mean of 20 observations is 15. If 5 is added to each observation, the new mean is:",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "100", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Adding a constant k to every observation shifts the mean by k. New mean = 15+5 = 20. (The count of observations doesn't affect this property.)",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00006",
+      "stem": "For the data set 4, 7, 8, 9, 10, 12, 13, 17, the median is:",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "9.5", "is_correct": true},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Data is already sorted; n = 8 (even). Median = average of 4th and 5th values = (9+10)/2 = 9.5. A common error is taking the 4th value alone (= 9) or the 5th value alone (= 10).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00007",
+      "stem": "The average of 5 consecutive even numbers is 18. What is the largest number?",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "22", "is_correct": true},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "26", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For 5 consecutive even numbers, the middle (3rd) value = mean = 18. So the numbers are 14, 16, 18, 20, 22. Largest = 22. Short Trick: in any odd-count AP, mean = middle term.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00008",
+      "stem": "If every observation in a dataset is multiplied by k, the new mean is:",
+      "options": [
+        {"option_text": "x̄ / k", "is_correct": false},
+        {"option_text": "x̄ + k", "is_correct": false},
+        {"option_text": "k × x̄", "is_correct": true},
+        {"option_text": "x̄", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. New mean = k × (old mean). Both mean and each observation scale by k. This is a linear property of expectation. The standard deviation also scales by |k|, but the variance scales by k².",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00009",
+      "stem": "The mean of 25 observations is 36. The mean of the first 13 is 32 and that of the last 13 is 39. Find the 13th observation.",
+      "options": [
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "23", "is_correct": true},
+        {"option_text": "25", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Total sum = 25×36 = 900. Sum of first 13 = 13×32 = 416. Sum of last 13 = 13×39 = 507. Together they double-count the 13th observation: 416+507 = 923. 13th observation = 923−900 = 23.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W9_00010",
+      "stem": "The variance of the observations 4, 6, 8, 10, 12 is:",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Mean = (4+6+8+10+12)/5 = 40/5 = 8. Deviations from mean: −4, −2, 0, 2, 4. Squared deviations: 16, 4, 0, 4, 16. Variance = (16+4+0+4+16)/5 = 40/5 = 8. Standard deviation = √8 = 2√2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

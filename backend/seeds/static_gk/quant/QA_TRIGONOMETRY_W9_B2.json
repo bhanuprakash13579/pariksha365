@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_TRIGONOMETRY_W9",
+  "subject": "Quantitative Aptitude",
+  "topic": "Trigonometry — Identities, Ratios and Heights & Distances (W9)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00001",
+      "stem": "The value of sin 30° × cos 60° + cos 30° × sin 60° is:",
+      "options": [
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "√3/2", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "√3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. This is sin(30°+60°) = sin 90° = 1. Direct verification: (1/2)(1/2) + (√3/2)(√3/2) = 1/4 + 3/4 = 1. Short Trick: Recognise the sin(A+B) pattern — faster than computing individually.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00002",
+      "stem": "If sin θ = 5/13, what is the value of tan θ?",
+      "options": [
+        {"option_text": "5/12", "is_correct": true},
+        {"option_text": "12/13", "is_correct": false},
+        {"option_text": "13/12", "is_correct": false},
+        {"option_text": "12/5", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. cos θ = √(1 − 25/169) = √(144/169) = 12/13. tan θ = sin/cos = (5/13)/(12/13) = 5/12. Short Trick: sin = 5/13 → recognise 5-12-13 Pythagorean triple; opposite=5, hypotenuse=13, adjacent=12.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00003",
+      "stem": "The value of (tan 45° + cot 45°) ÷ (sin 30° + cos 60°) is:",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "√2", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Numerator: tan45°+cot45° = 1+1 = 2. Denominator: sin30°+cos60° = 1/2+1/2 = 1. Result = 2÷1 = 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00004",
+      "stem": "If sec θ + tan θ = 5, what is the value of sec θ − tan θ?",
+      "options": [
+        {"option_text": "1/3", "is_correct": false},
+        {"option_text": "1/5", "is_correct": true},
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Using identity: sec²θ − tan²θ = 1, i.e., (secθ+tanθ)(secθ−tanθ) = 1. So 5 × (secθ−tanθ) = 1, giving sec θ − tan θ = 1/5. Short Trick: If (sec+tan)=k then (sec−tan)=1/k — product is always 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00005",
+      "stem": "From a point on the ground, the angle of elevation of the top of a 30 m high tower is 30°. How far is the point from the foot of the tower?",
+      "options": [
+        {"option_text": "30 m", "is_correct": false},
+        {"option_text": "30√2 m", "is_correct": false},
+        {"option_text": "30√3 m", "is_correct": true},
+        {"option_text": "60 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. tan 30° = height/distance → 1/√3 = 30/d → d = 30√3 m. Common error: choosing 30 m (using sin instead of tan) or 60 m (doubling the height).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00006",
+      "stem": "If sin A + sin²A = 1, find the value of cos²A + cos⁴A.",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "sin A", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. From sin A + sin²A = 1 → sin A = 1 − sin²A = cos²A. So cos²A + cos⁴A = sin A + sin²A = 1 (by the given condition). This is a classic SSC substitution identity trap.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00007",
+      "stem": "sin²10° + sin²20° + sin²70° + sin²80° = ?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "1.5", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Pair complementary angles: sin 80° = cos 10°, so sin²10° + sin²80° = sin²10° + cos²10° = 1. Similarly sin 70° = cos 20°, so sin²20° + sin²70° = 1. Total = 1+1 = 2. Short Trick: Always pair θ and (90°−θ); their sin²+cos² = 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00008",
+      "stem": "A ladder 10 m long leans against a wall, making a 60° angle with the ground. How high does the ladder reach on the wall?",
+      "options": [
+        {"option_text": "5 m", "is_correct": false},
+        {"option_text": "5√2 m", "is_correct": false},
+        {"option_text": "5√3 m", "is_correct": true},
+        {"option_text": "10√3 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Height = ladder × sin 60° = 10 × √3/2 = 5√3 m. The base of the ladder = 10 × cos 60° = 5 m. Distractor A (5 m) is the base, not the height.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00009",
+      "stem": "If tan θ + cot θ = 4, find the value of tan²θ + cot²θ.",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "14", "is_correct": true},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. tan²θ + cot²θ = (tan θ + cot θ)² − 2·tan θ·cot θ = 16 − 2(1) = 14. Note: tan θ × cot θ = 1 always. Common error: forgetting to subtract 2, giving 16.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W9_00010",
+      "stem": "If cos θ/(1 − sin θ) + cos θ/(1 + sin θ) = 4, find θ.",
+      "options": [
+        {"option_text": "30°", "is_correct": false},
+        {"option_text": "45°", "is_correct": false},
+        {"option_text": "60°", "is_correct": true},
+        {"option_text": "90°", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. LHS = cos θ [(1+sin θ + 1−sin θ)/(1−sin²θ)] = cos θ [2/cos²θ] = 2/cos θ = 2 sec θ. So 2 sec θ = 4 → sec θ = 2 → cos θ = 1/2 → θ = 60°.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}
