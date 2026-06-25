@@ -2,28 +2,25 @@
 """
 Deduplicates quiz_questions by normalized question_text.
 
-For each group of questions with identical text (case-insensitive, whitespace-collapsed):
+For each group with identical text (case-insensitive, whitespace-collapsed):
   - Keeps the earliest created_at row (smallest UUID as tiebreaker)
-  - Remaps quiz_attempts and flagged_questions from deleted IDs → kept ID
-  - Deletes the duplicate rows (CASCADE cleans any remaining FKs)
+  - Remaps quiz_attempts + flagged_questions to the kept ID in one SQL pass
+  - Deletes duplicates in one SQL pass (CASCADE handles remaining FKs)
+
+All three operations run inside a single transaction — zero partial commits.
 
 Usage (from backend directory):
     DATABASE_URL=postgresql+asyncpg://... python scripts/deduplicate_quiz_questions.py
-
-Or with an existing .env:
-    source .env && python scripts/deduplicate_quiz_questions.py
 """
 import asyncio
 import os
 import re
 import sys
-from collections import defaultdict
 
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
 if not DATABASE_URL:
     sys.exit("ERROR: DATABASE_URL environment variable not set.")
 
-# Normalize to asyncpg driver
 DATABASE_URL = re.sub(r"^postgres://", "postgresql+asyncpg://", DATABASE_URL)
 DATABASE_URL = re.sub(r"^postgresql://", "postgresql+asyncpg://", DATABASE_URL)
 
@@ -31,12 +28,11 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import text
 
-
-def _normalize(s: str) -> str:
-    """Collapse whitespace and lowercase for comparison."""
-    if not s:
-        return ""
-    return re.sub(r"\s+", " ", s.strip().lower())
+# Normalization expression used consistently across all three queries.
+# Window functions identify: rn=1 → kept, rn>1 → duplicate.
+_NORM = r"lower(regexp_replace(trim(question_text), '\s+', ' ', 'g'))"
+_RANK = f"ROW_NUMBER() OVER (PARTITION BY {_NORM} ORDER BY created_at ASC NULLS LAST, id ASC)"
+_KEPT = f"FIRST_VALUE(id) OVER (PARTITION BY {_NORM} ORDER BY created_at ASC NULLS LAST, id ASC)"
 
 
 async def main():
@@ -44,89 +40,75 @@ async def main():
     async_session = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
 
     async with async_session() as db:
-        print("Fetching all quiz questions...")
-        rows = (await db.execute(
-            text("SELECT id::text, question_text, created_at FROM quiz_questions ORDER BY created_at ASC NULLS LAST, id ASC")
-        )).fetchall()
-        print(f"Total questions in DB: {len(rows)}")
+        before = (await db.execute(text("SELECT COUNT(*) FROM quiz_questions"))).scalar()
+        print(f"Questions before : {before}")
 
-        # Group by normalized question_text; first entry per group = kept (earliest)
-        groups: dict[str, list] = defaultdict(list)
-        for row_id, question_text, created_at in rows:
-            norm = _normalize(question_text or "")
-            groups[norm].append(row_id)
+        # Preview how many duplicates exist
+        dup_info = (await db.execute(text(f"""
+            SELECT COUNT(*) FROM (
+                SELECT {_RANK} AS rn FROM quiz_questions
+            ) t WHERE rn > 1
+        """))).scalar()
+        print(f"Duplicate rows   : {dup_info}")
 
-        duplicate_groups = {k: v for k, v in groups.items() if len(v) > 1}
-        if not duplicate_groups:
-            print("No duplicate questions found.")
+        if not dup_info:
+            print("Nothing to do.")
             return
 
-        total_to_delete = sum(len(v) - 1 for v in duplicate_groups.values())
-        print(f"Found {len(duplicate_groups)} duplicate groups → {total_to_delete} rows to delete\n")
+        # Step 1: Remap quiz_attempts (server-side join — one round trip)
+        print("Remapping quiz_attempts...")
+        r1 = await db.execute(text(f"""
+            WITH ranked AS (
+                SELECT id, {_KEPT} AS kept_id, {_RANK} AS rn
+                FROM quiz_questions
+            ),
+            dupes AS (SELECT id AS dupe_id, kept_id FROM ranked WHERE rn > 1)
+            UPDATE quiz_attempts
+            SET question_id = dupes.kept_id
+            FROM dupes
+            WHERE quiz_attempts.question_id = dupes.dupe_id
+        """))
+        print(f"  quiz_attempts remapped : {r1.rowcount}")
 
-        # Build remap: duplicate_id → kept_id
-        remap: dict[str, str] = {}
-        for norm, group in duplicate_groups.items():
-            kept_id = group[0]
-            for dupe_id in group[1:]:
-                remap[dupe_id] = kept_id
+        # Step 2: Remap flagged_questions (stored as text UUID, no FK) — skip if table absent
+        flagged_exists = (await db.execute(text(
+            "SELECT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_name='flagged_questions')"
+        ))).scalar()
+        if flagged_exists:
+            print("Remapping flagged_questions...")
+            r2 = await db.execute(text(f"""
+                WITH ranked AS (
+                    SELECT id, {_KEPT} AS kept_id, {_RANK} AS rn
+                    FROM quiz_questions
+                ),
+                dupes AS (SELECT id::text AS dupe_id, kept_id::text AS kept_id FROM ranked WHERE rn > 1)
+                UPDATE flagged_questions
+                SET question_id = dupes.kept_id
+                FROM dupes
+                WHERE flagged_questions.question_id = dupes.dupe_id
+                  AND flagged_questions.question_source IN ('quiz', 'pyq')
+            """))
+            print(f"  flagged_questions remapped : {r2.rowcount}")
+        else:
+            print("Skipping flagged_questions (table not in prod yet)")
 
-        dupe_ids = list(remap.keys())
-
-        # Remap quiz_attempts: point attempts on deleted questions to the kept question
-        print(f"Remapping quiz_attempts ({len(dupe_ids)} duplicate IDs)...")
-        remapped_attempts = 0
-        for dupe_id, kept_id in remap.items():
-            result = await db.execute(
-                text("UPDATE quiz_attempts SET question_id = :kept::uuid WHERE question_id = :dupe::uuid"),
-                {"kept": kept_id, "dupe": dupe_id}
+        # Step 3: Delete duplicates (CASCADE removes any remaining FK references)
+        print("Deleting duplicates...")
+        r3 = await db.execute(text(f"""
+            WITH ranked AS (
+                SELECT id, {_RANK} AS rn FROM quiz_questions
             )
-            remapped_attempts += result.rowcount
-
-        # Remap flagged_questions (stored as plain string, no FK)
-        print(f"Remapping flagged_questions...")
-        remapped_flags = 0
-        for dupe_id, kept_id in remap.items():
-            result = await db.execute(
-                text("""
-                    UPDATE flagged_questions
-                    SET question_id = :kept
-                    WHERE question_id = :dupe
-                      AND question_source IN ('quiz', 'pyq')
-                """),
-                {"kept": kept_id, "dupe": dupe_id}
-            )
-            remapped_flags += result.rowcount
-
-        # Delete duplicates in batches of 100
-        print(f"Deleting {len(dupe_ids)} duplicate questions...")
-        deleted = 0
-        batch_size = 100
-        for i in range(0, len(dupe_ids), batch_size):
-            batch = dupe_ids[i : i + batch_size]
-            placeholders = ", ".join(f":id{j}" for j in range(len(batch)))
-            params = {f"id{j}": bid for j, bid in enumerate(batch)}
-            result = await db.execute(
-                text(f"DELETE FROM quiz_questions WHERE id::text IN ({placeholders})"),
-                params
-            )
-            deleted += result.rowcount
-            print(f"  Deleted batch {i // batch_size + 1}: {result.rowcount} rows")
+            DELETE FROM quiz_questions
+            WHERE id IN (SELECT id FROM ranked WHERE rn > 1)
+        """))
+        print(f"  Deleted : {r3.rowcount} rows")
 
         await db.commit()
 
-        print(f"\n--- Summary ---")
-        print(f"  Duplicate groups found : {len(duplicate_groups)}")
-        print(f"  Questions deleted      : {deleted}")
-        print(f"  Attempts remapped      : {remapped_attempts}")
-        print(f"  Flags remapped         : {remapped_flags}")
-
-        # Print a few examples of what was deduped
-        print("\nSample groups (kept → deleted):")
-        for norm, group in list(duplicate_groups.items())[:8]:
-            preview = norm[:80] + ("..." if len(norm) > 80 else "")
-            print(f"  kept={group[0]}  ({len(group)-1} duplicate{'s' if len(group)-1>1 else ''} removed)")
-            print(f"  text: {preview}")
+        after = (await db.execute(text("SELECT COUNT(*) FROM quiz_questions"))).scalar()
+        print(f"\nQuestions after  : {after}")
+        print(f"Net reduction    : {before - after}")
+        print("Done.")
 
     await engine.dispose()
 
