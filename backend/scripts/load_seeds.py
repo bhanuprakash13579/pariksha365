@@ -705,13 +705,21 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
     files = [p for p in sorted(gk_root.rglob("*.json")) if not p.name.startswith("_")]
     totals = {"bundles_loaded": 0, "questions_loaded": 0, "questions_skipped_existing": 0}
 
-    # Pre-fetch every existing question UUID in one round-trip so the per-Q
-    # dedup check is O(1) in Python instead of one Railway DB round-trip per
-    # question (~80ms RTT × ~40k questions = ~50 min just on lookups).
+    # Pre-fetch every existing question UUID AND question_text hash in one
+    # round-trip so the per-Q dedup check is O(1) in Python instead of one
+    # Railway DB round-trip per question (~80ms RTT × ~40k questions = ~50 min).
+    # Two-layer dedup:
+    #   1. UUID layer  — catches re-runs of the same seed file (same sgk_* id)
+    #   2. Text layer  — catches questions whose sgk_* id changed between runs
+    #                    (e.g. auto_run appended duplicates under new seq IDs)
     existing_uuids: set = set()
-    log.info("pre-fetching existing quiz_question IDs from prod...")
-    rows = await db.execute(_sql_select(QuizQuestion.id))
-    existing_uuids = {r[0] for r in rows.all()}
+    existing_text_hashes: set = set()
+    log.info("pre-fetching existing quiz_question IDs and text hashes from prod...")
+    rows = await db.execute(_sql_select(QuizQuestion.id, QuizQuestion.question_text))
+    for r in rows.all():
+        existing_uuids.add(r[0])
+        if r[1]:
+            existing_text_hashes.add(hashlib.md5(r[1].strip().encode()).hexdigest())
     log.info("found %d existing quiz_questions", len(existing_uuids))
 
     count = 0
@@ -737,7 +745,14 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
                 break
             qid = q_doc.get("id")
             q_uuid = _uuid_for(_NS_QUIZ_Q, qid) if qid else _uuid.uuid4()
-            already_present = q_uuid in existing_uuids
+            _qtext = (q_doc.get("stem") or q_doc.get("text") or "").strip()
+            _qhash = hashlib.md5(_qtext.encode()).hexdigest() if _qtext else None
+            # Two-layer dedup: UUID (catches same sgk_* id) OR text hash
+            # (catches same question re-inserted under a new sequential id due
+            # to auto_run restarts appending duplicate stems to seed files).
+            already_present = (q_uuid in existing_uuids) or (
+                _qhash is not None and _qhash in existing_text_hashes
+            )
             # Normalise options to {option_text, is_correct} regardless of source format.
             # Seeds use one of three shapes:
             #   1. [{"option_text": "...", "is_correct": bool}]
@@ -766,6 +781,8 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
             # Track for the rest of this run so duplicates within seeds
             # don't both try to insert and trip a PK violation.
             existing_uuids.add(q_uuid)
+            if _qhash:
+                existing_text_hashes.add(_qhash)
             # CA-aware fields. Static-GK bundles leave these unset; CA
             # bundles (under seeds/static_gk/_current_affairs/) carry them
             # so the admin Current Affairs dashboard shows them as managed.

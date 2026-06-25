@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .canonical import SUBJECT_FOLDER, to_schema_a_bundle
-from .gates import run_all_gates
+from .gates import run_all_gates, _norm_stem
 
 _BACKEND = Path(__file__).resolve().parents[2]
 _POOL = _BACKEND / "seeds" / "static_gk"
@@ -73,8 +73,21 @@ def apply(bundle: dict, dry_run: bool = False, generator_tag: str | None = None)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     tag = generator_tag or f"auto-seed-{now[:10]}"
 
+    # Build a set of normalised stems already in the file so that restarted
+    # auto_run waves cannot append duplicate questions under new sequential IDs.
+    existing_sigs: set[str] = {
+        _norm_stem(q.get("stem") or q.get("text") or "")
+        for q in existing["questions"]
+    }
+
     added: list[str] = []
+    skipped_dup: list[str] = []
     for q in norm["questions"]:
+        sig = _norm_stem(q.get("stem") or q.get("text") or "")
+        if sig and sig in existing_sigs:
+            skipped_dup.append(sig[:60])
+            continue
+        existing_sigs.add(sig)
         q.setdefault("answer_source", "generated")
         q.setdefault("generator_tag", tag)
         q.setdefault("generated_at", now)
@@ -89,6 +102,7 @@ def apply(bundle: dict, dry_run: bool = False, generator_tag: str | None = None)
         "topic": topic,
         "path": str(out_path.relative_to(_BACKEND)),
         "added_ids": added,
+        "skipped_dup": len(skipped_dup),
         "total_after": len(existing["questions"]),
     }
 
