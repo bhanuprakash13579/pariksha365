@@ -81,17 +81,18 @@ async def get_daily_quiz(
     limit: int = 10, bookmarked_ids: Optional[List[str]] = None
 ) -> list:
     """
-    Pattern-diversity quiz with per-question mastery gating:
+    Pattern-diversity quiz with per-question mastery gating + unattempted-first ordering.
+
+    Per-topic draw order within each session:
+    1. Unattempted questions (never seen) — always preferred first
+    2. Wrong/pending (attempted but never answered correctly) — only after unattempted exhausted
+    3. Reserve (soft/fully mastered) — only when both above are empty for all topics
 
     Mastery rules (based on lifetime correct-answer count per question):
-    - correct_count == 0  → always in primary draw pool (unattempted or wrong-pending)
+    - correct_count == 0  → primary draw pool (unattempted or wrong-pending)
     - correct_count == 1, NOT bookmarked → reserve only (excluded from primary draw)
-    - correct_count == 1, bookmarked → in primary draw pool (still learning it)
-    - correct_count >= 2  → reserve only, even if bookmarked (fully mastered, stop repeating)
-
-    Wrong/skipped questions are mixed into the primary pool randomly — they are NOT
-    pushed to the front.  Bookmarked questions that still qualify also appear naturally
-    in the random draw, not at priority position 1.
+    - correct_count == 1, bookmarked → primary draw pool (still learning it)
+    - correct_count >= 2  → always excluded, even if bookmarked (fully mastered, retire)
 
     Topic ordering: discovery-first (never-practised topics come before weak/proficient),
     then by accuracy ascending.  Aims for ≥ min(limit, topic_count) different topics.
@@ -105,6 +106,11 @@ async def get_daily_quiz(
         .group_by(QuizAttempt.question_id)
     )).all()
     correct_counts: dict = {row[0]: row[1] for row in correct_count_rows}
+
+    # --- all-time attempted question IDs (for unattempted-first ordering) ---
+    all_attempted_ids: set = set(r[0] for r in (await db.execute(
+        select(QuizAttempt.question_id).where(QuizAttempt.user_id == user_id).distinct()
+    )).all())
 
     # correct once  → soft-mastered (excluded unless bookmarked)
     mastered_once: set = {qid for qid, cnt in correct_counts.items() if cnt == 1}
@@ -202,16 +208,26 @@ async def get_daily_quiz(
                 QuizQuestion.topic_code == key,
             ]
 
-        # Primary draw: flat random pool (wrong + unattempted + bookmarked-soft-mastered)
-        exclude = excluded_from_primary | seen_ids
-        primary_cond = list(base_cond)
-        if exclude:
-            primary_cond.append(QuizQuestion.id.not_in(exclude))
+        # Primary draw — Phase A: unattempted questions (never seen, always preferred)
+        exclude_primary = excluded_from_primary | seen_ids
+        unatt_exclude = exclude_primary | all_attempted_ids
+        unatt_cond = list(base_cond)
+        if unatt_exclude:
+            unatt_cond.append(QuizQuestion.id.not_in(unatt_exclude))
+        primary_qs = list((await db.execute(
+            select(QuizQuestion).where(*unatt_cond).order_by(func.random()).limit(quota)
+        )).scalars().all())
 
-        primary_qs = (await db.execute(
-            select(QuizQuestion).where(*primary_cond)
-            .order_by(func.random()).limit(quota)
-        )).scalars().all()
+        # Phase B: wrong/pending — attempted but never answered correctly, only fills gap
+        if len(primary_qs) < quota:
+            wrong_pending = all_attempted_ids - excluded_from_primary - seen_ids - {q.id for q in primary_qs}
+            if wrong_pending:
+                wp_cond = list(base_cond) + [QuizQuestion.id.in_(wrong_pending)]
+                wp_qs = (await db.execute(
+                    select(QuizQuestion).where(*wp_cond)
+                    .order_by(func.random()).limit(quota - len(primary_qs))
+                )).scalars().all()
+                primary_qs.extend(wp_qs)
 
         # Collect reserve for this topic (used only when primary is exhausted)
         if len(primary_qs) < quota and reserve_ids:
