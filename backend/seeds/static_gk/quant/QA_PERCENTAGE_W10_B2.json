@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PERCENTAGE_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Percentage — Harder Applications for SSC CGL Tier 2 (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00001",
+      "stem": "A price increases from ₹200 to ₹250, then decreases to ₹225. What is the net percentage change from the original price?",
+      "options": [
+        {"option_text": "10% increase", "is_correct": false},
+        {"option_text": "12.5% increase", "is_correct": true},
+        {"option_text": "10% decrease", "is_correct": false},
+        {"option_text": "12.5% decrease", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Original = ₹200, Final = ₹225. Net change = 25/200×100 = 12.5% increase. Trap: students may calculate the % changes in each step (25% up then 10% down) and try to combine them as 25−10=15%, which is wrong — percentage changes must be applied sequentially on the updated base.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00002",
+      "stem": "Water constitutes 25% of a 40-litre solution. If 10 litres of water are added, what percentage of the new solution is water?",
+      "options": [
+        {"option_text": "30%", "is_correct": false},
+        {"option_text": "35%", "is_correct": false},
+        {"option_text": "40%", "is_correct": true},
+        {"option_text": "45%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Original water = 25% of 40 = 10 L. After adding 10 L water: total water = 20 L, total solution = 50 L. New % = 20/50×100 = 40%. Trap: 30% applies 25% + some fraction without updating both numerator and denominator.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00003",
+      "stem": "In a class, 60% of students passed Maths and 70% passed English. If 10% failed both, what percentage passed both subjects?",
+      "options": [
+        {"option_text": "30%", "is_correct": false},
+        {"option_text": "35%", "is_correct": false},
+        {"option_text": "40%", "is_correct": true},
+        {"option_text": "45%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 10% failed both → 90% passed at least one. By inclusion-exclusion: P(M∪E) = P(M)+P(E)−P(M∩E). 90 = 60+70−P(M∩E). P(M∩E) = 40%. Trap: 30% = 60+70−100 (wrongly uses 100% instead of 90% for the union); students forget to subtract the 'failed both' from 100.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00004",
+      "stem": "A number is increased by 30% and then decreased by 30%. What is the net percentage change?",
+      "options": [
+        {"option_text": "0% (no change)", "is_correct": false},
+        {"option_text": "6% decrease", "is_correct": false},
+        {"option_text": "9% decrease", "is_correct": true},
+        {"option_text": "9% increase", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Net change = 30−30−(30×30)/100 = −9%. So it is a 9% decrease. Example: 100→130→130×0.7=91. Net = −9%. Short Trick: for equal and opposite % changes of r, net = −r²/100. Here: −900/100 = −9%. The most common wrong answer is 0% (assuming the changes cancel perfectly).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00005",
+      "stem": "The price of wheat rises by 25%. By what percentage should a family reduce its consumption so that expenditure remains unchanged?",
+      "options": [
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "22%", "is_correct": false},
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "28%", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Short Trick: reduction% = r/(100+r) × 100 = 25/125×100 = 20%. Verify: if price was 100 and consumption 1 unit (expenditure=100), after 25% rise price = 125. To keep expenditure 100: new consumption = 100/125 = 4/5 units = 20% less. Trap: 25% (students naively reduce by the same %) is wrong because the base has changed.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00006",
+      "stem": "A's salary is 50% more than B's, and B's salary is 20% less than C's. What is the ratio of A's salary to C's salary?",
+      "options": [
+        {"option_text": "5 : 4", "is_correct": false},
+        {"option_text": "6 : 5", "is_correct": true},
+        {"option_text": "4 : 3", "is_correct": false},
+        {"option_text": "7 : 5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let C = 100. B = 80 (20% less). A = 80×1.5 = 120. A:C = 120:100 = 6:5. Trap: 5:4 reverses the ratio or confuses A and C; students who compute A's % relative to C directly sometimes use wrong chain formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00007",
+      "stem": "Two candidates contested an election. The winner received 55% of votes and won by 2,400 votes. What was the total number of votes cast? (No invalid votes.)",
+      "options": [
+        {"option_text": "10,000", "is_correct": false},
+        {"option_text": "12,000", "is_correct": false},
+        {"option_text": "24,000", "is_correct": true},
+        {"option_text": "30,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Winner: 55%, Loser: 45%. Margin = 10% = 2,400. Total = 2400/0.10 = 24,000. Trap: 12,000 divides by 0.20 (mistaking margin for 20%); 10,000 uses margin as 24% of the total.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00008",
+      "stem": "In successive years, the price of a commodity rose by 10%, fell by 10%, and rose by 10%. What is the overall percentage change?",
+      "options": [
+        {"option_text": "8.9% increase", "is_correct": true},
+        {"option_text": "10% increase", "is_correct": false},
+        {"option_text": "10% decrease", "is_correct": false},
+        {"option_text": "11% increase", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. 100 → 110 → 99 → 108.9. Net = 8.9% increase. Calculation: 1.10 × 0.90 × 1.10 = 1.089. Trap: 10% increase (wrongly assumes changes cancel the second and third steps); 11% adds 10+10+10−20+... incorrectly. This tests the crucial insight that % changes compound multiplicatively, not additively.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00009",
+      "stem": "If 15% of (x + y) = 20% of (x − y), find the ratio x : y.",
+      "options": [
+        {"option_text": "5 : 1", "is_correct": false},
+        {"option_text": "7 : 1", "is_correct": true},
+        {"option_text": "9 : 1", "is_correct": false},
+        {"option_text": "11 : 1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 15(x+y) = 20(x−y). 15x+15y = 20x−20y. 35y = 5x. x:y = 35:5 = 7:1. Verify: x=7, y=1. LHS = 15%×8 = 1.2. RHS = 20%×6 = 1.2 ✓. Trap: students who mistakenly write 20(x+y)=15(x-y) get a negative ratio; 9:1 comes from mishandling the sign on 15y.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERCENTAGE_W10_B2_00010",
+      "stem": "In a factory, 60% of workers are males. 40% of males and 30% of females earn more than ₹20,000 per month. If 780 workers earn more than ₹20,000, find the total number of workers.",
+      "options": [
+        {"option_text": "2,000", "is_correct": false},
+        {"option_text": "2,200", "is_correct": false},
+        {"option_text": "2,500", "is_correct": true},
+        {"option_text": "3,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let total = T. Males = 0.6T; Females = 0.4T. High earners: 0.4×0.6T + 0.3×0.4T = 0.24T + 0.12T = 0.36T = 780. T = 780/0.36 = 2,500. Trap: 2,000 uses 0.39T=780; 3,000 uses 0.26T (applies only one group's %).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

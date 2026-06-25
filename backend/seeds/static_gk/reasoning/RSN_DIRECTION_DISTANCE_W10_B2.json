@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_DIRECTION_DISTANCE_W10_B2",
+  "subject": "Reasoning",
+  "topic": "Direction and Distance — Harder Set (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00001",
+      "stem": "Ram walks 5 km north, then 3 km east, then 5 km south. How far is he from his starting point?",
+      "options": [
+        {"option_text": "3 km", "is_correct": true},
+        {"option_text": "5 km", "is_correct": false},
+        {"option_text": "8 km", "is_correct": false},
+        {"option_text": "√34 km", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Path: 5N → 3E → 5S. The 5N and 5S cancel out, leaving only 3E displacement. Distance from start = 3 km (due East). Trap: √34 = √(5²+3²) — mistakenly uses 5 km north as the remaining north displacement; 8 = 5+3 (sum of paths, not displacement).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00002",
+      "stem": "Priya faces East and walks 12 km, then turns left and walks 5 km. In which direction is she now moving?",
+      "options": [
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "North", "is_correct": true},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "South", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Priya faces East. Turning left (anticlockwise 90°) from East means she now faces North. So after walking 5 km, she is heading North. Trap: Turning right from East = South; confusing left/right turns is the classic SSC trap here.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00003",
+      "stem": "A person walks 4 km north, turns right and walks 3 km, then turns right again and walks 4 km. How far is he from the starting point?",
+      "options": [
+        {"option_text": "1 km", "is_correct": false},
+        {"option_text": "3 km", "is_correct": true},
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "5 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Path: 4N → right (now facing East) 3E → right (now facing South) 4S. North-South: 4N−4S = 0. East-West: 3E. Final position = 3 km East of start. Distance = 3 km. Trap: 5 = √(4²+3²) — student forgets the return south legs cancel the north; 4 = the north/south leg.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00004",
+      "stem": "Point A is 6 km north of B, and point C is 8 km east of B. What is the straight-line distance from A to C?",
+      "options": [
+        {"option_text": "9 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": true},
+        {"option_text": "12 km", "is_correct": false},
+        {"option_text": "14 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. B is at origin. A = (0, 6), C = (8, 0). AC = √(8²+6²) = √(64+36) = √100 = 10 km. (6, 8, 10) = (3,4,5)×2 Pythagorean triple. Trap: 14 = 6+8 (sum of legs, not hypotenuse); 12 = wrong application of the triple.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00005",
+      "stem": "Starting from a point, Aman walks 8 km east, then 6 km north, then 8 km west. How far is he from the starting point?",
+      "options": [
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "6 km", "is_correct": true},
+        {"option_text": "8 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Path: 8E → 6N → 8W. East-West: 8E−8W = 0. North: +6. Final position = 6 km directly north of start. Distance = 6 km. Trap: 10 = √(8²+6²) — student forgets the 8W cancels the 8E; 8 = the east/west leg.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00006",
+      "stem": "A man is facing south. He turns 90° clockwise. In which direction is he now facing?",
+      "options": [
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Clockwise turns from each direction: North→East→South→West→North. Starting South, turning 90° clockwise → West. Trick to remember: clockwise = right-hand turn when looking at a map from above. South + right = West. Trap: East is a 90° anticlockwise turn from South; North is 180° turn.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00007",
+      "stem": "Shyam walks 6 km south, turns right and walks 8 km, then turns right again and walks 6 km. How far is he from the start?",
+      "options": [
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "8 km", "is_correct": true},
+        {"option_text": "10 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Start at (0,0). Walk 6S → (0,−6). Turn right from south = West. Walk 8W → (−8,−6). Turn right from west = North. Walk 6N → (−8,0). Distance from start (0,0) to current (−8,0) = 8 km (due West). Trap: 10 = √(8²+6²) — student forgets the 6N cancels the 6S; visualising turns from South is the common error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00008",
+      "stem": "X is 15 km north of Y. Z is 20 km east of Y. What is the straight-line distance from X to Z?",
+      "options": [
+        {"option_text": "20 km", "is_correct": false},
+        {"option_text": "22 km", "is_correct": false},
+        {"option_text": "25 km", "is_correct": true},
+        {"option_text": "30 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Y at origin. X = (0, 15), Z = (20, 0). XZ = √(20²+15²) = √(400+225) = √625 = 25 km. (15, 20, 25) = (3, 4, 5)×5. Trap: 30 = 15+20−5; 22 = rough approximation without Pythagoras.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00009",
+      "stem": "From P, a person goes 5 km north to Q, then 12 km east to R. From R he turns south and walks to S such that QS = 13 km. What is the distance from P to S?",
+      "options": [
+        {"option_text": "8 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": false},
+        {"option_text": "12 km", "is_correct": true},
+        {"option_text": "15 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P=(0,0), Q=(0,5), R=(12,5). From R, person walks south to S=(12, 5−d). QS=13 km. QS = √((12−0)²+(5−d−5)²) = √(144+d²) = 13. d²=169−144=25 → d=5. S=(12,0). Distance PS = √(12²+0²) = 12 km. Trap: 13 = QS (the given distance, not PS); 15 is the total path length.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_DISTANCE_W10_B2_00010",
+      "stem": "A walks 20 m north, then 12 m east, then 5 m south, then 4 m west, then 15 m south. How far is A from the starting point?",
+      "options": [
+        {"option_text": "6 m", "is_correct": false},
+        {"option_text": "8 m", "is_correct": true},
+        {"option_text": "10 m", "is_correct": false},
+        {"option_text": "12 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Net North-South: 20N − 5S − 15S = 0. Net East-West: 12E − 4W = 8E. Final position = 8 m due East. Distance = 8 m. Step-by-step: (0,0)→(0,20)→(12,20)→(12,15)→(8,15)→(8,0). √(8²+0²) = 8 m. Trap: 10 = √(8²+6²) (adds a non-existent north displacement); 12 = total east movement before subtracting west.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

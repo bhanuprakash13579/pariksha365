@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_STATISTICS_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Statistics — Mean, Median, Mode, Variance and SD (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00001",
+      "stem": "The mean of 10 numbers is 7. If each number is multiplied by 3 and then 5 is added to each result, what is the new mean?",
+      "options": [
+        {"option_text": "21", "is_correct": false},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "26", "is_correct": true},
+        {"option_text": "28", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. If every value is transformed as x → 3x+5, the mean transforms identically: new mean = 3×7+5 = 26. Rule: mean transforms linearly with the same operations applied to data. Trap: 21 = 3×7 (forgets the +5); 24 = 3×7+3 (adds wrong constant).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00002",
+      "stem": "Find the median of the data set: 3, 7, 2, 9, 5, 1, 8, 4, 6.",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Sort: 1,2,3,4,5,6,7,8,9. There are 9 values (odd count) → median = 5th value = 5. Trap: 4 is the 4th value; 6 is the 6th value; students who forget to sort first pick the middle-positioned value of the unsorted list (5th of original = 1) which is wrong.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00003",
+      "stem": "If the mean of 7 observations is 10 and the mean of 5 of those observations is 8, find the mean of the remaining 2 observations.",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "13", "is_correct": false},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total sum = 7×10 = 70. Sum of known 5 = 5×8 = 40. Sum of remaining 2 = 70−40 = 30. Mean of 2 = 30/2 = 15. Trap: 12 = (10+8)/2−3 (wrong formula); 13 = simple average of 10 and 8 minus a guess.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00004",
+      "stem": "In a data set of 50 values, the standard deviation is 6. Every value is multiplied by 2 and then 4 is subtracted. What is the new standard deviation?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Standard deviation is not affected by adding or subtracting a constant (it measures spread, not location). Multiplying by 2 scales SD by |2|. New SD = 6×2 = 12. The −4 has no effect. Trap: 6 (no change at all); 8 = 6+2 (wrong); 16 = 6×2+4 (wrongly includes the constant).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00005",
+      "stem": "Find the mode of the data: 2, 3, 5, 2, 7, 3, 2, 5, 3, 2.",
+      "options": [
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "No mode", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Frequency count: 2 appears 4 times, 3 appears 3 times, 5 appears 2 times, 7 appears once. Mode = 2 (highest frequency). Trap: 3 appears 3 times (second most frequent); students often miscount by scanning unsorted data.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00006",
+      "stem": "The mean of a data set is 25 and its standard deviation is 5. What is the coefficient of variation?",
+      "options": [
+        {"option_text": "5%", "is_correct": false},
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Coefficient of Variation = (SD/Mean)×100 = (5/25)×100 = 20%. CV is used to compare relative variability of data sets with different scales or units. Trap: 5% confuses SD directly for CV; 25% confuses mean for CV.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00007",
+      "stem": "The mean and median of a moderately skewed distribution are 24 and 26 respectively. Using the empirical relationship between mean, median and mode, find the mode.",
+      "options": [
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "29", "is_correct": false},
+        {"option_text": "30", "is_correct": true},
+        {"option_text": "32", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Karl Pearson's empirical relation: Mode = 3×Median − 2×Mean = 3×26 − 2×24 = 78−48 = 30. This is the standard SSC CGL Tier 2 relation between the three central tendencies for skewed data. Trap: 28 = 3×Mean − 2×Median (reverses the formula); 32 applies wrong coefficients.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00008",
+      "stem": "Find the variance of the data: 2, 4, 5, 7, 2.",
+      "options": [
+        {"option_text": "2.8", "is_correct": false},
+        {"option_text": "3.2", "is_correct": false},
+        {"option_text": "3.6", "is_correct": true},
+        {"option_text": "4.0", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Mean = (2+4+5+7+2)/5 = 20/5 = 4. Squared deviations: (2−4)²=4, (4−4)²=0, (5−4)²=1, (7−4)²=9, (2−4)²=4. Sum of squared deviations = 18. Variance = 18/5 = 3.6. Trap: 2.8 = sum of |deviations|/5 (that's mean deviation, not variance); 4.0 uses n=4 instead of n=5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00009",
+      "stem": "The median of six values arranged in ascending order — 3, x, 6, 8, y, 15 — is 7. The mean of all six values is 9. Find x + y.",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "22", "is_correct": true},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "26", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. For 6 values, median = average of 3rd and 4th = (6+8)/2 = 7 ✓ (x must be ≤6 and y must be ≥8). Mean = (3+x+6+8+y+15)/6 = 9 → 3+x+6+8+y+15 = 54 → x+y = 54−32 = 22. Trap: 24 uses mean = 8 (off by one); 20 subtracts instead of adding correctly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_W10_B2_00010",
+      "stem": "A student's mean score in 5 tests is 80. In the 6th test she scores 92. By how much does her mean score increase?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Sum of 5 tests = 5×80 = 400. New sum = 400+92 = 492. New mean = 492/6 = 82. Increase = 82−80 = 2. Short Trick: increase = (new score − old mean)/(n+1) = (92−80)/6 = 12/6 = 2. Trap: 4 = (92−80)/3 (wrong denominator); 1 = 12/12 (wrong n).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

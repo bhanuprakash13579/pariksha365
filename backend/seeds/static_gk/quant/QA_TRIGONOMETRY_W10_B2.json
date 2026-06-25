@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_TRIGONOMETRY_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Trigonometry — Identities, Values and Applications (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00001",
+      "stem": "If sin θ = 3/5, find the value of cos θ (given θ is in the first quadrant).",
+      "options": [
+        {"option_text": "3/4", "is_correct": false},
+        {"option_text": "4/5", "is_correct": true},
+        {"option_text": "5/4", "is_correct": false},
+        {"option_text": "5/3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. cos θ = √(1−sin²θ) = √(1−9/25) = √(16/25) = 4/5. The 3-4-5 Pythagorean triple is the most frequently tested in SSC trig. Trap: 3/4 is wrong (not from identity); 5/4 > 1 (impossible for cosine); 5/3 is the hypotenuse-to-side ratio (cosecant, not cosine).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00002",
+      "stem": "Find the value of sin²30° + cos²60°.",
+      "options": [
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "1/2", "is_correct": true},
+        {"option_text": "3/4", "is_correct": false},
+        {"option_text": "1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. sin 30° = 1/2 → sin²30° = 1/4. cos 60° = 1/2 → cos²60° = 1/4. Sum = 1/4+1/4 = 1/2. Trap: 1 confuses this with sin²θ+cos²θ=1 (which requires SAME angle); sin²30°+cos²30°=1, but here it's 30° and 60°.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00003",
+      "stem": "If tan θ = 4/3, find the value of (sin θ + cos θ).",
+      "options": [
+        {"option_text": "5/7", "is_correct": false},
+        {"option_text": "7/5", "is_correct": true},
+        {"option_text": "4/5", "is_correct": false},
+        {"option_text": "3/5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. tan θ = 4/3 → using a 3-4-5 right triangle: opposite=4, adjacent=3, hypotenuse=5. sin θ = 4/5, cos θ = 3/5. sin θ+cos θ = 4/5+3/5 = 7/5. Trap: 4/5 and 3/5 are individual values; 5/7 inverts the result.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00004",
+      "stem": "If sin θ + cosec θ = 2, find sin²θ + cosec²θ.",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "Depends on θ", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Square both sides: (sinθ+cosecθ)² = sin²θ+2sinθcosecθ+cosec²θ = 4. Since sinθ×cosecθ = 1, we get sin²θ+cosec²θ+2 = 4 → sin²θ+cosec²θ = 2. Note: sinθ+cosecθ = 2 implies sinθ=1 (since AM−GM: sinθ+cosecθ ≥ 2, equality when sinθ=1). Trap: 4 = (sinθ+cosecθ)² without subtracting the 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00005",
+      "stem": "Simplify: (1 + tan²θ) / cosec²θ",
+      "options": [
+        {"option_text": "sin²θ", "is_correct": false},
+        {"option_text": "cos²θ", "is_correct": false},
+        {"option_text": "tan²θ", "is_correct": true},
+        {"option_text": "sec²θ", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 1+tan²θ = sec²θ. cosec²θ = 1/sin²θ. So (sec²θ)/(cosec²θ) = (1/cos²θ)/(1/sin²θ) = sin²θ/cos²θ = tan²θ. Trap: sec²θ forgets to divide by cosec²θ; sin²θ has the ratio inverted.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00006",
+      "stem": "If 3 sin θ + 4 cos θ = 5, find the value of 3 cos θ − 4 sin θ.",
+      "options": [
+        {"option_text": "0", "is_correct": true},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "√5", "is_correct": false},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Use the identity: (3sinθ+4cosθ)²+(3cosθ−4sinθ)² = 9+16 = 25 (expanding both squares and using sin²θ+cos²θ=1). So 25+(3cosθ−4sinθ)² = 25 → (3cosθ−4sinθ)² = 0 → 3cosθ−4sinθ = 0. Trap: 5 uses the given value directly instead of computing the complementary expression.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00007",
+      "stem": "If sin A + sin²A = 1, find the value of cos²A + cos⁴A.",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "2", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. From sin A + sin²A = 1: sin A = 1−sin²A = cos²A. So cos⁴A = sin²A (substituting cos²A = sinA). Therefore cos²A+cos⁴A = cos²A+sin²A = 1. This chain substitution is a classic Tier 2 pattern. Trap: 0 attempts to use sin A+sin²A=1 to cancel terms wrongly; 2 doubles the answer.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00008",
+      "stem": "If cos θ − sin θ = √2 sin θ, what is the value of cos θ + sin θ?",
+      "options": [
+        {"option_text": "√2 sin θ", "is_correct": false},
+        {"option_text": "√2 cos θ", "is_correct": true},
+        {"option_text": "2 sin θ", "is_correct": false},
+        {"option_text": "√2 (sin θ + cos θ)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. cos θ = (√2+1)sin θ. cos θ+sin θ = (√2+1)sinθ+sinθ = (√2+2)sinθ = √2(√2+1)sinθ = √2 × cosθ. Verify: (cosθ−sinθ)²+(cosθ+sinθ)² = 2(cos²θ+sin²θ) = 2. Given cosθ−sinθ = √2sinθ: 2sin²θ+(cosθ+sinθ)²=2 → (cosθ+sinθ)²=2−2sin²θ=2cos²θ → cosθ+sinθ=√2cosθ ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00009",
+      "stem": "If tan θ + sec θ = 2, find the value of sin θ.",
+      "options": [
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "3/4", "is_correct": false},
+        {"option_text": "3/5", "is_correct": true},
+        {"option_text": "4/5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let sec θ = 2−tanθ. Squaring: sec²θ = 4−4tanθ+tan²θ. 1+tan²θ = 4−4tanθ+tan²θ. 1 = 4−4tanθ. tanθ = 3/4. sinθ = tanθ/secθ. From tanθ=3/4: using 3-4-5 triple, sinθ=3/5, cosθ=4/5. Verify: tanθ+secθ = 3/4÷1+5/4 = 3/4+5/4 = 8/4 = 2 ✓. Wait: secθ=1/cosθ=5/4. tanθ+secθ = 3/4+5/4=8/4=2 ✓. Trap: 4/5 is cosθ, not sinθ; 1/2 from incorrect squaring.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W10_B2_00010",
+      "stem": "Evaluate: sin 10° × sin 50° × sin 70°",
+      "options": [
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "1/8", "is_correct": true},
+        {"option_text": "√3/8", "is_correct": false},
+        {"option_text": "√3/4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Use the product formula: sin θ × sin(60°−θ) × sin(60°+θ) = (1/4)sin 3θ. Here θ=10°: sin10°×sin50°×sin70° = sin10°×sin(60°−10°)×sin(60°+10°) = (1/4)×sin30° = (1/4)×(1/2) = 1/8. This is a standard Tier 2 product identity. Trap: 1/4 forgets the extra factor of 1/2 from sin30°; √3/8 applies the cos product formula instead.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PROFIT_LOSS_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Profit and Loss — Mark-up, Discount and Tricky Scenarios (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00001",
+      "stem": "An item bought for ₹800 is sold for ₹950. Find the profit percentage.",
+      "options": [
+        {"option_text": "15.79%", "is_correct": false},
+        {"option_text": "18.75%", "is_correct": true},
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "25%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Profit = 950−800 = ₹150. Profit% = 150/800×100 = 18.75%. Trap: 15.79% uses SP (950) as base instead of CP (800); 20% = 160/800 (applies 20% to wrong profit amount).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00002",
+      "stem": "An article is sold for ₹640 at a loss of 20%. Find its cost price.",
+      "options": [
+        {"option_text": "₹720", "is_correct": false},
+        {"option_text": "₹768", "is_correct": false},
+        {"option_text": "₹800", "is_correct": true},
+        {"option_text": "₹850", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. SP = CP×(1−loss%) → 640 = CP×0.8 → CP = 640/0.8 = ₹800. Verify: Loss = 800−640 = 160; Loss% = 160/800×100 = 20% ✓. Trap: ₹768 = 640×1.2 (adds 20% to SP instead of dividing); ₹720 applies 12.5% loss instead of 20%.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00003",
+      "stem": "A trader marks goods 30% above cost price and allows a 10% discount. Find the net profit percentage.",
+      "options": [
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "17%", "is_correct": true},
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "23%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let CP=100. MP=130. SP=130×0.9=117. Profit%=17%. Short Trick: profit% = m−d−md/100 = 30−10−30×10/100 = 20−3 = 17%. Trap: 20% forgets the markdown on the already-marked-up price (miscomputes as 30%−10%=20%).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00004",
+      "stem": "By selling 20 articles, a shopkeeper gains the SP of 5 articles. Find the profit percentage.",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "33⅓%", "is_correct": true},
+        {"option_text": "40%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Selling 20 articles gives profit = SP of 5 articles. Let SP of each = s. Total SP = 20s. Profit = 5s. CP = 20s−5s = 15s. Profit% = 5s/15s×100 = 33⅓%. Short Trick: profit% = (number of articles gained/CP articles)×100 = (5/15)×100 = 33⅓%. Trap: 25% = 5/20×100 uses SP articles as denominator instead of CP.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00005",
+      "stem": "A man buys eggs at 6 for ₹5 and sells them at 5 for ₹6. Find his gain percentage.",
+      "options": [
+        {"option_text": "30%", "is_correct": false},
+        {"option_text": "36%", "is_correct": false},
+        {"option_text": "44%", "is_correct": true},
+        {"option_text": "50%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. LCM of 6 and 5 = 30. CP of 30 eggs = 5×(30/6) = ₹25. SP of 30 eggs = 6×(30/5) = ₹36. Gain = 11. Gain% = 11/25×100 = 44%. Trap: 36% uses SP as base; 30% underestimates (mental arithmetic error).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00006",
+      "stem": "An article is sold at 15% profit. If its cost price were ₹200 less, the profit percentage would be 25%. Find the cost price.",
+      "options": [
+        {"option_text": "₹1,500", "is_correct": false},
+        {"option_text": "₹2,000", "is_correct": false},
+        {"option_text": "₹2,500", "is_correct": true},
+        {"option_text": "₹3,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. SP = x×1.15 (same in both cases). With CP = x−200: x×1.15/(x−200) = 1.25. 1.15x = 1.25x−250. 0.10x = 250. x = ₹2,500. Verify: SP = 2500×1.15 = 2875. New CP = 2300. Profit% = 575/2300×100 = 25% ✓. Trap: ₹2,000 assumes CP difference = profit difference directly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00007",
+      "stem": "A merchant sells goods at 10% loss. Had he sold at 20% profit, he would have earned ₹600 more. Find the cost price.",
+      "options": [
+        {"option_text": "₹1,500", "is_correct": false},
+        {"option_text": "₹2,000", "is_correct": true},
+        {"option_text": "₹2,500", "is_correct": false},
+        {"option_text": "₹3,000", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. SP at 10% loss = 0.9CP. SP at 20% profit = 1.2CP. Difference = 0.3CP = 600. CP = ₹2,000. Trap: ₹2,500 uses 0.3CP = 750 (wrong); ₹1,500 uses 0.3CP = 450 (wrong difference).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00008",
+      "stem": "Two articles are each sold for ₹990. One at 10% profit and one at 10% loss. What is the overall result?",
+      "options": [
+        {"option_text": "₹10 profit", "is_correct": false},
+        {"option_text": "₹20 loss", "is_correct": true},
+        {"option_text": "No profit, no loss", "is_correct": false},
+        {"option_text": "₹20 profit", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. CP of 10% profit article: 990/1.1 = ₹900. CP of 10% loss article: 990/0.9 = ₹1,100. Total CP = ₹2,000. Total SP = ₹1,980. Net loss = ₹20. Short Trick: loss% = (common%/10)² = 1%. Loss = 1%×2000 = ₹20. When same %age profit and loss occur, there is ALWAYS a net loss. Trap: 'no profit no loss' is the most common wrong answer.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00009",
+      "stem": "A shopkeeper marks goods 40% above cost and gives a 20% discount. If the selling price is ₹560, find the cost price.",
+      "options": [
+        {"option_text": "₹450", "is_correct": false},
+        {"option_text": "₹480", "is_correct": false},
+        {"option_text": "₹500", "is_correct": true},
+        {"option_text": "₹525", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. SP = CP×1.4×0.8 = 1.12×CP = 560. CP = 560/1.12 = ₹500. Net profit% = 12%. Trap: ₹450 = 560/1.24 (wrong multiplier); ₹525 uses 40%−20% = 20% profit formula (ignores compound effect).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W10_B2_00010",
+      "stem": "A shopkeeper offers 2 articles free for every 10 articles purchased. What is the effective discount percentage?",
+      "options": [
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "16⅔%", "is_correct": true},
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "25%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Buyer pays for 10 articles but receives 12. Discount on 12 articles = 2 free articles. Effective discount% = 2/12×100 = 16⅔%. Trap: 20% = 2/10×100 uses the number paid as denominator instead of total received; 15% is a common rough estimate.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PERMUTATION_COMBINATION_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Permutation and Combination — Arrangement and Selection (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00001",
+      "stem": "In how many ways can the letters of the word TEAM be arranged?",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "48", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. TEAM has 4 distinct letters: T, E, A, M. Number of arrangements = 4! = 4×3×2×1 = 24. Trap: 12 = 4!/2 (wrongly divides by 2 as if a letter were repeated); 48 = 4!×2 (doubles for no reason). No letter in TEAM repeats, so all 4! arrangements are valid.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00002",
+      "stem": "How many ways can 3 students be selected from a group of 8 to form a committee?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "56", "is_correct": true},
+        {"option_text": "336", "is_correct": false},
+        {"option_text": "512", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Selecting 3 from 8 (order doesn't matter for a committee): ⁸C₃ = 8!/(3!×5!) = (8×7×6)/(3×2×1) = 336/6 = 56. Trap: 336 = ⁸P₃ = 8×7×6 (permutation — use only if order matters, like for President/VP/Secretary); 24 = ⁴C₃×? (wrong n); 512 = 2⁸−? (wrong formula).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00003",
+      "stem": "How many 3-digit numbers can be formed using the digits 2, 4, 6, 8 (repetition not allowed)?",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "36", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Choosing and arranging 3 digits from {2,4,6,8} without repetition: ⁴P₃ = 4×3×2 = 24. Alternatively: 4 choices for the first digit, 3 for the second (one used), 2 for the third = 4×3×2 = 24. Trap: 12 = ⁴C₃×2 (wrong); 36 uses repetition logic (4×3×3).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00004",
+      "stem": "How many 4-letter words (with or without meaning) can be formed from the letters of ROSE, such that the word always starts with R?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Fix R in position 1. Remaining 3 letters {O, S, E} can be arranged in 3! = 6 ways. Total 4-letter words starting with R = 6. Trap: 24 = total arrangements of all 4 letters (no restriction); 12 = 4!/ 2 (wrong division); 3 = ³C₁×? (confuses selection with arrangement).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00005",
+      "stem": "A team of 5 is to be chosen from 6 men and 4 women such that the team has exactly 3 men and 2 women. How many ways is this possible?",
+      "options": [
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "90", "is_correct": false},
+        {"option_text": "120", "is_correct": true},
+        {"option_text": "210", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Choose 3 men from 6: ⁶C₃ = 20. Choose 2 women from 4: ⁴C₂ = 6. Total = 20×6 = 120. Trap: 210 = ¹⁰C₅ (no gender restriction); 90 = 20+70 (wrong addition instead of multiplication); 60 = 20×3 (wrong women count).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00006",
+      "stem": "In how many ways can 5 different books be arranged on a shelf if 2 specific books must always be kept together?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "48", "is_correct": true},
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "120", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Treat the 2 books that must stay together as one unit. Now arrange 4 units (the pair + 3 other books) = 4! = 24 ways. The pair itself can be internally arranged in 2! = 2 ways. Total = 24×2 = 48. Trap: 120 = 5! (no restriction); 60 = 5!/2 (wrong); 24 = 4! (forgets internal pair arrangement).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00007",
+      "stem": "How many numbers between 100 and 999 (inclusive) can be formed using digits {1, 2, 3, 4, 5} with no digit repeated?",
+      "options": [
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "100", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. 3-digit numbers using {1,2,3,4,5} with no repetition: 5 choices for hundreds, 4 for tens, 3 for units = 5×4×3 = 60. All digits are non-zero so no leading-zero issue. Trap: 100 = 5³ (allows repetition); 40 = wrong multiplication; 50 = ⁵P₂×? (mismatch).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00008",
+      "stem": "A box contains 4 red and 3 blue balls. In how many ways can 2 red and 1 blue ball be selected?",
+      "options": [
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "18", "is_correct": true},
+        {"option_text": "21", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Choose 2 red from 4: ⁴C₂ = 6. Choose 1 blue from 3: ³C₁ = 3. Total = 6×3 = 18. Trap: 21 = ⁷C₃ (3 balls from 7 with no colour restriction); 12 = 4×3 (wrong — selects 1 red and 1 blue, not 2 red and 1 blue); 9 = wrong product.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00009",
+      "stem": "How many ways can the letters of the word ARRANGE be arranged such that the two R's are never adjacent?",
+      "options": [
+        {"option_text": "420", "is_correct": false},
+        {"option_text": "660", "is_correct": false},
+        {"option_text": "900", "is_correct": true},
+        {"option_text": "1260", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. ARRANGE: 7 letters with A repeated 2 times and R repeated 2 times. Total arrangements = 7!/(2!×2!) = 5040/4 = 1260. Arrangements with both R's together: treat RR as 1 unit → 6 letters with A repeated twice = 6!/2! = 360. Arrangements with R's NOT together = 1260 − 360 = 900. Trap: 1260 = total unrestricted; 420 = 7!/(3!×?) (wrong factorial in denominator); 660 = 1260−600 (wrong subtraction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PERMUTATION_COMBINATION_W10_B2_00010",
+      "stem": "In how many ways can 8 persons be seated around a circular table?",
+      "options": [
+        {"option_text": "5040", "is_correct": true},
+        {"option_text": "8064", "is_correct": false},
+        {"option_text": "40320", "is_correct": false},
+        {"option_text": "720", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Circular permutations of n persons = (n−1)! (one person is fixed to remove rotational symmetry). For 8 persons: (8−1)! = 7! = 5040. Trap: 40320 = 8! (linear arrangements, not circular); 720 = 6! (n=7 case); 8064 = 8!/? (wrong calculation). Key concept: in a circular arrangement, all rotations of the same sequence are identical, so we fix one person and arrange the remaining n−1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

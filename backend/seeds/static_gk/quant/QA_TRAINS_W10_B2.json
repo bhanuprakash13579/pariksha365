@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_TRAINS_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Trains — Crossing Poles, Bridges and Each Other (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00001",
+      "stem": "A train 300 m long runs at 90 km/h. How many seconds does it take to pass a signal pole?",
+      "options": [
+        {"option_text": "10 seconds", "is_correct": false},
+        {"option_text": "12 seconds", "is_correct": true},
+        {"option_text": "15 seconds", "is_correct": false},
+        {"option_text": "18 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Convert: 90 km/h = 90×5/18 = 25 m/s. Time = Length/Speed = 300/25 = 12 seconds. When a train passes a pole (a point object), distance = length of train only. Trap: 18 s reverses the conversion (multiplies by 18/5 instead of 5/18); 10 s uses 30 m/s.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00002",
+      "stem": "A train running at 60 km/h takes 9 seconds to pass a signal post. Find the length of the train.",
+      "options": [
+        {"option_text": "120 m", "is_correct": false},
+        {"option_text": "135 m", "is_correct": false},
+        {"option_text": "150 m", "is_correct": true},
+        {"option_text": "180 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Speed = 60×5/18 = 50/3 m/s. Length = Speed × Time = (50/3)×9 = 150 m. Trap: 135 m uses 54 km/h (=15 m/s) by mistake; 120 m = 60×2 (treats speed as already in m/s).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00003",
+      "stem": "A train 100 m long passes a bridge 150 m long at 45 km/h. Find the time taken to cross the bridge.",
+      "options": [
+        {"option_text": "18 seconds", "is_correct": false},
+        {"option_text": "20 seconds", "is_correct": true},
+        {"option_text": "24 seconds", "is_correct": false},
+        {"option_text": "25 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total distance = train + bridge = 100+150 = 250 m. Speed = 45×5/18 = 12.5 m/s. Time = 250/12.5 = 20 seconds. Key rule: to cross a platform/bridge, add the bridge length to the train length. Trap: 18 s uses only the bridge length (150/12.5); 24 s uses wrong speed conversion.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00004",
+      "stem": "A train passes a stationary man in 10 seconds and a bridge 150 m long in 25 seconds. Find the length of the train and its speed.",
+      "options": [
+        {"option_text": "Length=80 m, Speed=28.8 km/h", "is_correct": false},
+        {"option_text": "Length=100 m, Speed=36 km/h", "is_correct": true},
+        {"option_text": "Length=100 m, Speed=40 km/h", "is_correct": false},
+        {"option_text": "Length=120 m, Speed=36 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let length = L, speed = v m/s. From pole: L = 10v. From bridge: L+150 = 25v. Substituting: 10v+150=25v → v=10 m/s = 36 km/h. L=100 m. Trap: 40 km/h = 11.1 m/s (off); length 120 m from wrong substitution.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00005",
+      "stem": "Two trains 100 m and 150 m long run toward each other at 54 km/h and 36 km/h. How long do they take to completely pass each other?",
+      "options": [
+        {"option_text": "8 seconds", "is_correct": false},
+        {"option_text": "9 seconds", "is_correct": false},
+        {"option_text": "10 seconds", "is_correct": true},
+        {"option_text": "12 seconds", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Opposite direction → add speeds: 54+36 = 90 km/h = 25 m/s. Total length = 100+150 = 250 m. Time = 250/25 = 10 seconds. Rule: relative speed when heading towards each other = sum of speeds. Trap: 8 s uses only one train's speed; 12 s divides by 20 m/s (one converted speed).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00006",
+      "stem": "Two trains 150 m and 200 m long run in the same direction at 72 km/h and 54 km/h. How long does the faster train take to completely pass the slower one?",
+      "options": [
+        {"option_text": "50 seconds", "is_correct": false},
+        {"option_text": "60 seconds", "is_correct": false},
+        {"option_text": "70 seconds", "is_correct": true},
+        {"option_text": "80 seconds", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Same direction → relative speed = 72−54 = 18 km/h = 5 m/s. Total length = 150+200 = 350 m. Time = 350/5 = 70 seconds. Rule: same direction → subtract speeds; opposite direction → add speeds. Trap: 60 s uses relative speed = 6 m/s; 50 s uses total length = 250 m.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00007",
+      "stem": "Two trains start simultaneously from stations P and Q, 300 km apart, moving toward each other at 60 km/h and 90 km/h. At what distance from P do they meet?",
+      "options": [
+        {"option_text": "100 km", "is_correct": false},
+        {"option_text": "110 km", "is_correct": false},
+        {"option_text": "120 km", "is_correct": true},
+        {"option_text": "150 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. They meet after time = 300/(60+90) = 300/150 = 2 hours. Distance from P = 60×2 = 120 km. Alternatively: ratio of distances = 60:90 = 2:3. Distance from P = (2/5)×300 = 120 km. Trap: 150 km = 300/2 assumes equal speeds; 100 km = 300/3 uses only the 90 km/h train's share.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00008",
+      "stem": "A train passes a pole in 15 seconds and a bridge 300 m long in 30 seconds. Find the speed of the train in km/h.",
+      "options": [
+        {"option_text": "54 km/h", "is_correct": false},
+        {"option_text": "60 km/h", "is_correct": false},
+        {"option_text": "72 km/h", "is_correct": true},
+        {"option_text": "80 km/h", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let length = L, speed = v. L = 15v. L+300 = 30v. 15v+300=30v → v=20 m/s = 72 km/h. L = 300 m. Verify: 300/20=15s ✓; 600/20=30s ✓. Trap: 54 km/h = 15 m/s (length would be 225 m, gives bridge time = 525/15 = 35s ≠ 30s).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00009",
+      "stem": "A moving train 300 m long takes 30 seconds to pass a stationary train 200 m long standing on a parallel track. Find the speed of the moving train.",
+      "options": [
+        {"option_text": "54 km/h", "is_correct": false},
+        {"option_text": "60 km/h", "is_correct": true},
+        {"option_text": "72 km/h", "is_correct": false},
+        {"option_text": "90 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total distance to cross = 300+200 = 500 m (the moving train must clear the stationary train completely). Speed = 500/30 = 50/3 m/s = (50/3)×(18/5) = 60 km/h. Trap: 54 km/h = 15 m/s would give time = 500/15 = 33.3 s (not 30 s); 90 km/h = 25 m/s gives time = 20 s.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRAINS_W10_B2_00010",
+      "stem": "Two trains of lengths 200 m and 300 m approach each other at 90 km/h and 60 km/h. Once they first meet, how many seconds does it take for them to completely pass each other?",
+      "options": [
+        {"option_text": "8 seconds", "is_correct": false},
+        {"option_text": "10 seconds", "is_correct": false},
+        {"option_text": "12 seconds", "is_correct": true},
+        {"option_text": "15 seconds", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Once they first meet (nose-to-nose), the combined length 200+300 = 500 m must pass. Relative speed = 90+60 = 150 km/h = 125/3 m/s. Time = 500/(125/3) = 500×3/125 = 12 seconds. Trap: 10 s uses relative speed 50 m/s (wrong conversion); 8 s uses 500/62.5 with wrong unit.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

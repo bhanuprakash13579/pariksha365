@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_AGES_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Problems on Ages — Present, Past and Future Age Equations (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_AGES_W10_B2_00001",
+      "stem": "Ravi is 5 years older than Seema. The sum of their ages is 35. Find Ravi's age.",
+      "options": [
+        {"option_text": "17", "is_correct": false},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "22", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Let Seema = x. Ravi = x+5. Sum: 2x+5=35 → x=15. Ravi = 20. Verify: 20+15=35 ✓, 20−15=5 ✓. Trap: 18 (uses x=13); 22 (misidentifies Seema as 22).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00002",
+      "stem": "The ratio of A's age to B's age is 3:5. After 6 years, the ratio will be 3:4. Find A's current age.",
+      "options": [
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "12", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Let A=3k, B=5k. After 6 years: (3k+6)/(5k+6) = 3/4. 4(3k+6) = 3(5k+6). 12k+24 = 15k+18. 3k=6. k=2. A = 3×2 = 6. Verify: now 6:10 = 3:5 ✓; after 6 years: 12:16 = 3:4 ✓. Trap: 9 uses k=3 (doesn't satisfy the after-6-years condition).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00003",
+      "stem": "Father is 4 times as old as his son. After 12 years, father will be twice as old as the son. Find the son's current age.",
+      "options": [
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Let son = s. Father = 4s. After 12 years: 4s+12 = 2(s+12). 4s+12 = 2s+24. 2s=12. s=6. Son=6, Father=24. Verify: now 24:6=4:1 ✓; after 12 years: 36:18=2:1 ✓. Trap: s=12 is a common error where students incorrectly read 2s=12 but make a sign error; s=8 or s=10 don't satisfy either condition.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00004",
+      "stem": "The present ages of P and Q are in the ratio 4:5. Five years ago their ages were in the ratio 3:4. Find P's current age.",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "25", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let P=4k, Q=5k. Five years ago: (4k−5)/(5k−5) = 3/4. 4(4k−5) = 3(5k−5). 16k−20 = 15k−15. k=5. P = 4×5 = 20, Q=25. Verify: now 20:25=4:5 ✓; 5 years ago: 15:20=3:4 ✓. Trap: 25 is Q's age (not P's); 18 arises from misapplying the earlier ratio.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00005",
+      "stem": "A is 3 times as old as B. 4 years later, A will be twice as old as B. Find A's current age.",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let B=b. A=3b. After 4 years: 3b+4 = 2(b+4). 3b+4 = 2b+8. b=4. A = 3×4 = 12. Verify: now 12:4=3:1 ✓; 4 years later: 16:8=2:1 ✓. Trap: 6 sets b=2 (does not satisfy the future ratio check); 15 applies an incorrect multiplier.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00006",
+      "stem": "The sum of ages of a mother and daughter is 48. 8 years ago, the mother was 7 times as old as the daughter. Find the mother's present age.",
+      "options": [
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "34", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "40", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let daughter=d, mother=m. m+d=48. 8 years ago: m−8=7(d−8) → m=7d−48. Substitute: 7d−48+d=48 → 8d=96 → d=12. m=36. Verify: 36+12=48 ✓; 8 years ago: mother=28, daughter=4; 28=7×4 ✓. Trap: 40 sets d=8 (does not satisfy sum=48 since 40+8=48 but 40-8=32≠7×0).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00007",
+      "stem": "10 years ago, X was half of Y's age. The sum of their present ages is 80. Find their present ages.",
+      "options": [
+        {"option_text": "X=20, Y=60", "is_correct": false},
+        {"option_text": "X=30, Y=50", "is_correct": true},
+        {"option_text": "X=25, Y=55", "is_correct": false},
+        {"option_text": "X=35, Y=45", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let X=x, Y=y. 10 years ago: x−10 = (y−10)/2 → 2x−20=y−10 → 2x−y=10 ...(1). Present sum: x+y=80 ...(2). From (1) and (2): 3x=90 → x=30. y=50. Verify: 10 years ago: 20=40/2 ✓; present sum: 30+50=80 ✓. Trap: X=25,Y=55 gives 2x−y=50−55=−5 ≠ 10 (fails condition 1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00008",
+      "stem": "The ages of P, Q, R are in ratio 3:4:5. Sum of their ages is 60. Find the age of the youngest.",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total ratio = 3+4+5 = 12. Each part = 60/12 = 5. Youngest (smallest ratio = 3): 3×5 = 15. Ages are 15, 20, 25. Sum = 60 ✓. Trap: 12 uses 60/5=12 per part (wrong denominator); 18 is the middle age (4 parts).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00009",
+      "stem": "A's age is 5/4 times B's age. B's age is 4/3 times C's age. If C is 18 years old, find A's age.",
+      "options": [
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "30", "is_correct": true},
+        {"option_text": "32", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. C=18. B = (4/3)×18 = 24. A = (5/4)×24 = 30. Verify step by step: C=18 → B=24 → A=30. Trap: 25 = (5/4)×20 (wrong B value); 32 applies the wrong fraction to B.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AGES_W10_B2_00010",
+      "stem": "A father is currently 4 times as old as his son. In 6 years, the father will be 3 times as old as the son. Find the son's current age.",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let son=s. Father=4s. In 6 years: 4s+6=3(s+6). 4s+6=3s+18. s=12. Father=48. Verify: now 48:12=4:1 ✓; after 6 years: 54:18=3:1 ✓. Trap: s=8 gives father=32; after 6: 38:14≠3:1; s=15 gives father=60; after 6: 66:21≠3:1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_COORDINATE_GEOMETRY_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Coordinate Geometry — Distance, Midpoint, Slope and Lines (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00001",
+      "stem": "Find the distance between points A(3, 4) and B(−1, 1).",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "√41", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Distance = √[(x₂−x₁)² + (y₂−y₁)²] = √[(−1−3)² + (1−4)²] = √[16+9] = √25 = 5. Trap: √41 = √[(−1−3)²+(1+4)²] = √[16+25] (wrong sign on y₁); 3 = |y₂−y₁| only; 7 = |x₂−x₁|+|y₂−y₁| = 4+3 (Manhattan distance, not Euclidean).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00002",
+      "stem": "Find the midpoint of the segment joining P(2, 6) and Q(8, 4).",
+      "options": [
+        {"option_text": "(4, 4)", "is_correct": false},
+        {"option_text": "(5, 5)", "is_correct": true},
+        {"option_text": "(6, 4)", "is_correct": false},
+        {"option_text": "(3, 5)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Midpoint = ((x₁+x₂)/2, (y₁+y₂)/2) = ((2+8)/2, (6+4)/2) = (5, 5). Trap: (4,4) = ((2+6)/2, (4+4)/2) (uses y₁=6 incorrectly as x-component); (6,4) uses Q's coordinates as midpoint; (3,5) = ((2+4)/2, (6+4)/2) (uses x=4 not x=8).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00003",
+      "stem": "What is the slope of the line passing through (1, 3) and (5, 11)?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Slope = (y₂−y₁)/(x₂−x₁) = (11−3)/(5−1) = 8/4 = 2. Trap: 1 = (11−3)/(11−3) (uses wrong denominator); 4 = 8/(5−3) (uses y difference as denominator); 3 = (11−3)/3 (wrong denominator). Slope formula: rise over run = change in y / change in x.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00004",
+      "stem": "Find the equation of a line with slope 3 and y-intercept −2.",
+      "options": [
+        {"option_text": "y = 3x + 2", "is_correct": false},
+        {"option_text": "y = 3x − 2", "is_correct": true},
+        {"option_text": "y = −3x − 2", "is_correct": false},
+        {"option_text": "y = 2x − 3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Slope-intercept form: y = mx + c, where m = slope and c = y-intercept. With m=3 and c=−2: y = 3x − 2. Trap: y=3x+2 uses +2 instead of −2 (wrong sign on intercept); y=−3x−2 negates the slope; y=2x−3 swaps slope and intercept values.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00005",
+      "stem": "The line 3x + 4y = 24 meets the x-axis at A and the y-axis at B. Find the area of triangle OAB (where O is the origin).",
+      "options": [
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "28", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. x-intercept (A): set y=0: 3x=24 → x=8. A=(8,0). y-intercept (B): set x=0: 4y=24 → y=6. B=(0,6). Area of triangle OAB = (1/2)×base×height = (1/2)×8×6 = 24. Trap: 18 = (1/2)×6×6 (uses y-intercept as both base and height); 20 = (1/2)×8×5; 28 = 8+6+14 (sum/perimeter approach).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00006",
+      "stem": "Find the slope of a line perpendicular to 2x − 3y + 6 = 0.",
+      "options": [
+        {"option_text": "3/2", "is_correct": false},
+        {"option_text": "2/3", "is_correct": false},
+        {"option_text": "−3/2", "is_correct": true},
+        {"option_text": "−2/3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rewrite 2x−3y+6=0 as 3y=2x+6 → y=(2/3)x+2. Slope of given line = 2/3. Perpendicular slope = negative reciprocal = −3/2 (multiply by −1 and flip). Verify: (2/3)×(−3/2) = −1 ✓ (product of perpendicular slopes = −1). Trap: 2/3 = slope of original line (not perpendicular); 3/2 = reciprocal without negation; −2/3 = negative of original slope (not the reciprocal).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00007",
+      "stem": "At what point does the line y = 2x − 1 intersect the line y = −x + 5?",
+      "options": [
+        {"option_text": "(1, 4)", "is_correct": false},
+        {"option_text": "(2, 3)", "is_correct": true},
+        {"option_text": "(3, 2)", "is_correct": false},
+        {"option_text": "(4, 1)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Set 2x−1 = −x+5. 3x = 6. x = 2. y = 2(2)−1 = 3. Intersection = (2, 3). Verify with second equation: y = −2+5 = 3 ✓. Trap: (1,4) gives y=2(1)−1=1 ≠ 4 (wrong x substitution); (3,2) gives 2(3)−1=5 ≠ 2; (4,1) gives 2(4)−1=7 ≠ 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00008",
+      "stem": "Find the area of the triangle with vertices at A(0,0), B(6,0), and C(3,5).",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Using the shoelace formula: Area = (1/2)|x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)| = (1/2)|0(0−5)+6(5−0)+3(0−0)| = (1/2)|0+30+0| = 15. Alternatively: base AB = 6 (along x-axis), height = perpendicular distance from C(3,5) to x-axis = 5. Area = (1/2)×6×5 = 15. Trap: 18 = (1/2)×6×6 (uses x-coordinate of C as height instead of y-coordinate); 30 = 6×5 (forgets ½).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00009",
+      "stem": "If the point P(k, 3) is equidistant from A(3, −1) and B(−2, 4), find k.",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. PA = PB → PA² = PB². PA² = (k−3)²+(3+1)² = (k−3)²+16. PB² = (k+2)²+(3−4)² = (k+2)²+1. Setting equal: (k−3)²+16 = (k+2)²+1. k²−6k+9+16 = k²+4k+4+1 → −6k+25 = 4k+5 → 20 = 10k → k = 2. Verify: PA²=(2−3)²+16=1+16=17; PB²=(2+2)²+1=16+1=17 ✓. Trap: k=0 gives PA²=9+16=25, PB²=4+1=5 (not equal); k=3 gives PA²=0+16=16, PB²=25+1=26 (not equal).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W10_B2_00010",
+      "stem": "What is the distance from the origin to the line 3x + 4y − 15 = 0?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Distance from point (x₀, y₀) to line ax+by+c=0 is |ax₀+by₀+c|/√(a²+b²). Origin = (0,0): Distance = |3(0)+4(0)−15|/√(9+16) = 15/√25 = 15/5 = 3. Trap: 5 = √(3²+4²) = denominator only (forgets numerator); 4 = y-coefficient; 2 = 15/5−1 (wrong arithmetic). The (3,4,5) triple in this formula is a classic SSC geometry pattern.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

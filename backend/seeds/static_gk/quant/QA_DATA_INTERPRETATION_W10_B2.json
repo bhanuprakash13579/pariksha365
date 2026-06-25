@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_DATA_INTERPRETATION_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Data Interpretation — Student Performance Table (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00001",
+      "stem": "The table below shows marks scored (out of 100) by 5 students across 5 subjects:\n\nStudent  | Science | Maths | English | History | Geography | Total\nAnanya   |   85    |  72   |   68    |   75    |    80     | 380\nBikram   |   70    |  88   |   75    |   65    |    72     | 370\nChitra   |   90    |  65   |   82    |   70    |    78     | 385\nDhruv    |   60    |  92   |   55    |   80    |    65     | 352\nEsha     |   75    |  78   |   70    |   85    |    82     | 390\n\nWho scored the highest total marks?",
+      "options": [
+        {"option_text": "Ananya", "is_correct": false},
+        {"option_text": "Chitra", "is_correct": false},
+        {"option_text": "Dhruv", "is_correct": false},
+        {"option_text": "Esha", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Totals: Ananya=380, Bikram=370, Chitra=385, Dhruv=352, Esha=390. Esha has the highest total (390). Trap: Chitra (385) is second highest — students who confuse Chitra and Esha's totals pick C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00002",
+      "stem": "Using the student performance table (same as Q1), in which subject did all five students together score the lowest combined marks?",
+      "options": [
+        {"option_text": "Science", "is_correct": false},
+        {"option_text": "Maths", "is_correct": false},
+        {"option_text": "English", "is_correct": true},
+        {"option_text": "History", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Column totals: Science=380, Maths=395, English=350, History=375, Geography=377. English has the lowest combined total (350). Trap: Dhruv's 55 in English is the lowest individual score, correctly flagging English as the weakest subject collectively.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00003",
+      "stem": "Using the student performance table, what is Ananya's average score across all five subjects?",
+      "options": [
+        {"option_text": "72", "is_correct": false},
+        {"option_text": "74", "is_correct": false},
+        {"option_text": "76", "is_correct": true},
+        {"option_text": "78", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Ananya's total = 85+72+68+75+80 = 380. Average = 380/5 = 76. Trap: 74 uses total 370 (Bikram's total); 78 divides by 4 instead of 5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00004",
+      "stem": "Using the student performance table, who scored the highest marks in Science?",
+      "options": [
+        {"option_text": "Ananya", "is_correct": false},
+        {"option_text": "Bikram", "is_correct": false},
+        {"option_text": "Chitra", "is_correct": true},
+        {"option_text": "Esha", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Science scores: Ananya=85, Bikram=70, Chitra=90, Dhruv=60, Esha=75. Chitra has the highest Science score (90). Trap: Ananya (85) is second — students confuse the highest scorer with the second highest.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00005",
+      "stem": "Using the student performance table, by how many marks does Chitra's total exceed Dhruv's total?",
+      "options": [
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "33", "is_correct": true},
+        {"option_text": "38", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Chitra = 385; Dhruv = 352. Difference = 385−352 = 33. Trap: 30 = 385−355 (misreads Dhruv's total); 25 = 385−360 (wrong subtraction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00006",
+      "stem": "Using the student performance table, what is the difference between the highest and lowest subject column totals?",
+      "options": [
+        {"option_text": "35", "is_correct": false},
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "45", "is_correct": true},
+        {"option_text": "50", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Column totals: Science=380, Maths=395, English=350, History=375, Geography=377. Highest = Maths (395), Lowest = English (350). Difference = 395−350 = 45. Trap: 40 uses Geography (377) as lowest; 35 uses History (375) as highest.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00007",
+      "stem": "Using the student performance table, what percentage of Maths column total did Bikram score? (Round to one decimal place.)",
+      "options": [
+        {"option_text": "20.5%", "is_correct": false},
+        {"option_text": "21.8%", "is_correct": false},
+        {"option_text": "22.3%", "is_correct": true},
+        {"option_text": "23.5%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Bikram's Maths = 88. Maths column total = 395. Percentage = (88/395)×100 = 22.28% ≈ 22.3%. Trap: 20.5% = 88/430 (wrong total); 23.5% = 92/395 (Dhruv's Maths score, not Bikram's).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00008",
+      "stem": "Using the student performance table, if Dhruv's Science score increases by 20 marks and his English score decreases by 8 marks, what is his new total?",
+      "options": [
+        {"option_text": "356", "is_correct": false},
+        {"option_text": "360", "is_correct": false},
+        {"option_text": "364", "is_correct": true},
+        {"option_text": "368", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Dhruv's current total = 352. Science increases by 20 and English decreases by 8: net change = +20−8 = +12. New total = 352+12 = 364. Trap: 360 = 352+8 (uses only the English change); 368 = 352+16 (adds both changes as positive).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00009",
+      "stem": "Using the student performance table, what is the ratio of Esha's History score to Ananya's History score?",
+      "options": [
+        {"option_text": "15 : 17", "is_correct": false},
+        {"option_text": "17 : 15", "is_correct": true},
+        {"option_text": "16 : 15", "is_correct": false},
+        {"option_text": "3 : 4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Esha's History = 85. Ananya's History = 75. Ratio = 85:75 = 17:15 (divide both by 5). Trap: 15:17 reverses the ratio (Ananya:Esha instead of Esha:Ananya); 16:15 misreads one score.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W10_B2_00010",
+      "stem": "Using the student performance table, marks are out of 100 per subject (total maximum = 500). Esha needs at least 80% to qualify for a scholarship. Does she qualify?",
+      "options": [
+        {"option_text": "Yes — she scores exactly 80%", "is_correct": false},
+        {"option_text": "Yes — she scores more than 80%", "is_correct": false},
+        {"option_text": "No — she scores 78%, which is below 80%", "is_correct": true},
+        {"option_text": "No — she scores 75%, which is below 80%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Esha's total = 390 out of 500. Percentage = 390/500×100 = 78%. Scholarship threshold = 80% of 500 = 400. Esha scores 390 < 400, so she does NOT qualify. Her percentage (78%) falls 2% short. Trap: 80% of 390 ≠ 80% of 500 — some students compute 80% incorrectly using her own score as denominator.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

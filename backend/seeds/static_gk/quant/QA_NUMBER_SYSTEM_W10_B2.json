@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System — Divisibility, Remainders and Unit Digits (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00001",
+      "stem": "What is the unit digit of 7⁹⁹?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Unit digits of powers of 7 cycle in groups of 4: 7¹→7, 7²→9, 7³→3, 7⁴→1, then repeats. 99 = 4×24 + 3 → remainder 3. So unit digit = same as 7³ = 3. Trap: 7 = unit digit of 7¹ (remainder 1 case); 9 = unit digit of 7² (remainder 2); 1 = unit digit of 7⁴ (remainder 0). The cycle length 4 trick applies to 7, 2, 3, 8.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00002",
+      "stem": "Which of the following numbers is divisible by 11?\n(a) 473812  (b) 246153  (c) 358974  (d) 694857",
+      "options": [
+        {"option_text": "473812", "is_correct": false},
+        {"option_text": "246153", "is_correct": false},
+        {"option_text": "358974", "is_correct": true},
+        {"option_text": "694857", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Divisibility rule for 11: |(sum of odd-position digits) − (sum of even-position digits)| must be 0 or a multiple of 11. For 358974: odd positions (1st,3rd,5th) = 3+8+7=18; even positions (2nd,4th,6th) = 5+9+4=18. Difference = 0 → divisible by 11 ✓. Check others: 473812 → |4+3+1−7+8+2| = |8−17| = 9 (not divisible); 246153 → |2+6+5−4+1+3| = |13−8| = 5 (not divisible); 694857 → |6+4+5−9+8+7| = |15−24| = 9 (not divisible).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00003",
+      "stem": "What is the remainder when 2¹⁰⁰ is divided by 7?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Find pattern of 2ⁿ mod 7: 2¹=2, 2²=4, 2³=8→1, 2⁴=16→2, cycle length=3 (remainders cycle 2,4,1). 100 = 3×33 + 1 → remainder 1 in cycle → same as 2¹ → remainder = 2. Verify: 2¹=2 mod 7=2; 2⁴=16 mod 7=2; 2¹⁰⁰ mod 7=2 ✓. Trap: 4 = remainder of 2² (position 2 in cycle); 1 = remainder of 2³ (position 3).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00004",
+      "stem": "A number when divided by 6 leaves remainder 5, and when divided by 5 leaves remainder 4. What is the smallest such number?",
+      "options": [
+        {"option_text": "19", "is_correct": false},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "29", "is_correct": true},
+        {"option_text": "34", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Number = 6k+5 and Number = 5m+4. Note that 6k+5 = 6(k+1)−1 and 5m+4 = 5(m+1)−1. So (Number+1) must be divisible by both 6 and 5. LCM(6,5)=30. Number+1=30 → Number=29. Verify: 29÷6=4 rem 5 ✓; 29÷5=5 rem 4 ✓. Trap: 19 = LCM(6,5)−11 (wrong); 24 = 6×4 (remainder 0, not 5).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00005",
+      "stem": "The product of two numbers is 6750 and their HCF is 15. How many such pairs of numbers (a, b) with a ≤ b are possible?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let the numbers be 15p and 15q where HCF(p,q)=1. Product = 225pq = 6750 → pq = 30. Find coprime pairs with pq=30, p≤q: 30 = 1×30 (gcd=1 ✓), 30 = 2×15 (gcd=1 ✓), 30 = 3×10 (gcd=1 ✓), 30 = 5×6 (gcd=1 ✓). All four pairs have gcd=1. The corresponding number pairs: (15,450), (30,225), (45,150), (75,90) — four valid pairs. Trap: 2 = only counting (1,30) and (5,6); 3 = misses one pair.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00006",
+      "stem": "What is the unit digit of the product 267 × 463 × 824 × 375?",
+      "options": [
+        {"option_text": "0", "is_correct": true},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Unit digit of product = product of unit digits, then take unit digit. Unit digits: 7 × 3 × 4 × 5. Evaluate step-by-step: 7×3=21 (unit 1); 1×4=4; 4×5=20 (unit 0). Whenever 5 multiplies an even unit digit, the result ends in 0. Since 824 has unit digit 4 (even) and 375 has unit digit 5, their product has unit digit 0. And 0 × anything = 0. Trap: students who multiply left to right without noticing the 5×even pattern.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00007",
+      "stem": "Find the number of zeros at the end of 50! (50 factorial).",
+      "options": [
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Trailing zeros = count of factor pairs (2×5). Since factors of 2 always outnumber factors of 5, count factors of 5 in 50!: ⌊50/5⌋ + ⌊50/25⌋ = 10 + 2 = 12. (⌊50/125⌋ = 0). So 50! has 12 trailing zeros. Trap: 10 = ⌊50/5⌋ only (forgets 25=5² contributes an extra 5); 15 = ⌊75/5⌋ (wrong n); 14 = wrong count.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00008",
+      "stem": "When a number N is divided by 12, the quotient is 8 and the remainder is 5. What is N?",
+      "options": [
+        {"option_text": "96", "is_correct": false},
+        {"option_text": "101", "is_correct": true},
+        {"option_text": "104", "is_correct": false},
+        {"option_text": "107", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Division algorithm: N = Divisor × Quotient + Remainder = 12 × 8 + 5 = 96 + 5 = 101. Verify: 101 ÷ 12 = 8 remainder 5 ✓. Trap: 96 = 12×8 (forgets to add the remainder); 104 = 12×8+8 (adds quotient instead of remainder); 107 = 12×9−1 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00009",
+      "stem": "What is the remainder when 17¹² is divided by 16?",
+      "options": [
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. 17 = 16 + 1, so 17 ≡ 1 (mod 16). Therefore 17¹² ≡ 1¹² = 1 (mod 16). Remainder = 1. This uses the key property: (divisor + 1)ⁿ ≡ 1ⁿ = 1 (mod divisor). Generalisation: (n×k + 1)^m ≡ 1 (mod k) for any integer m. Trap: 15 = 17 − 2 (guessing based on proximity to 16); 7 = unit digit of 17 (irrelevant to mod 16); 9 = 17−8 (wrong logic).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W10_B2_00010",
+      "stem": "How many 3-digit numbers are divisible by 7?",
+      "options": [
+        {"option_text": "126", "is_correct": false},
+        {"option_text": "128", "is_correct": true},
+        {"option_text": "130", "is_correct": false},
+        {"option_text": "142", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Smallest 3-digit number divisible by 7: 105 (7×15). Largest: 994 (7×142). Count = 142 − 15 + 1 = 128. Alternatively: numbers from 100 to 999 divisible by 7 → ⌊999/7⌋ − ⌊99/7⌋ = 142 − 14 = 128. Trap: 126 = 7×18 (not a count); 130 = 142−12 (wrong lower bound); 142 = just the quotient (forgets to subtract lower bound).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

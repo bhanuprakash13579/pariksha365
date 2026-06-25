@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_ORDER_RANKING_W10_B2",
+  "subject": "Reasoning",
+  "topic": "Order and Ranking — Position Puzzles (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00001",
+      "stem": "Ravi is 12th from the left in a row of students. Meena is 15th from the right. They interchange positions. Ravi is now 18th from the left. How many students are in the row?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "32", "is_correct": true},
+        {"option_text": "33", "is_correct": false},
+        {"option_text": "34", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. After interchange, Ravi takes Meena's original position. Ravi is now 18th from the left = Meena's original position from the left. Total students = (position from left) + (position from right) − 1 = 18 + 15 − 1 = 32. Trap: 30 = 12+15+3 (wrong formula); 33 = 18+15 (forgets to subtract 1); 34 = 18+15+1 (adds instead of subtracts 1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00002",
+      "stem": "In a class of 40 students, Priya ranks 10th from the top. What is her rank from the bottom?",
+      "options": [
+        {"option_text": "29", "is_correct": false},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "31", "is_correct": true},
+        {"option_text": "32", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rank from bottom = (total students) − (rank from top) + 1 = 40 − 10 + 1 = 31. Trap: 30 = 40−10 (forgets to add 1); 29 = 40−10−1 (subtracts 1 instead of adding); 32 = 40−10+2 (wrong offset). The formula 'rank from bottom = n − rank from top + 1' is standard.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00003",
+      "stem": "Karan is taller than Arun but shorter than Dev. Esha is taller than Dev. Farhan is shorter than Arun. Who is the shortest?",
+      "options": [
+        {"option_text": "Arun", "is_correct": false},
+        {"option_text": "Karan", "is_correct": false},
+        {"option_text": "Farhan", "is_correct": true},
+        {"option_text": "Dev", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Order (tallest to shortest): Esha > Dev > Karan > Arun > Farhan. The ordering: Dev > Karan > Arun (given), Esha > Dev (given), Farhan < Arun (given). So Farhan is at the bottom = shortest. Trap: Arun is second shortest (students confuse second-shortest with shortest when Farhan's position is added last).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00004",
+      "stem": "In a row, Ankit is 7th from the left and 13th from the right. How many students are in the row?",
+      "options": [
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "19", "is_correct": true},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "21", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total = position from left + position from right − 1 = 7 + 13 − 1 = 19. Trap: 20 = 7+13 (forgets −1); 18 = 7+13−2 (subtracts 2 instead of 1); 21 = 7+13+1 (adds 1 instead of subtracts).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00005",
+      "stem": "5 books P, Q, R, S, T are stacked one above the other. Q is just above P. P is just above S. S is just above R. T is at the bottom. What is the position of S from the top?",
+      "options": [
+        {"option_text": "2nd", "is_correct": false},
+        {"option_text": "3rd", "is_correct": true},
+        {"option_text": "4th", "is_correct": false},
+        {"option_text": "5th", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Build the stack top-to-bottom from the 'just above' clues: Q is just above P → Q(1), P(2). P is just above S → S(3). S is just above R → R(4). T is at bottom → T(5). Final stack: Q(1)→P(2)→S(3)→R(4)→T(5). S is 3rd from top. Trap: 4th = R's position; 5th = T's position (bottom).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00006",
+      "stem": "5 books Q, P, R, S, T are stacked (top to bottom). Clues: Q is just above P. T is at the bottom. P is just above S. S is just above R. What position is R from the top?",
+      "options": [
+        {"option_text": "2nd", "is_correct": false},
+        {"option_text": "3rd", "is_correct": false},
+        {"option_text": "4th", "is_correct": true},
+        {"option_text": "5th", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Build from clues: Q just above P → Q is directly above P. P just above S → P is directly above S. S just above R → S is directly above R. T is at bottom (5th). Chain: Q→P→S→R (top to bottom chain). T must be below R. Stack from top: Q(1)→P(2)→S(3)→R(4)→T(5). R is 4th from top. Trap: 5th = T's position (bottom); 3rd = S's position.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00007",
+      "stem": "In a row of 50 students, A's position from the right is 3 times B's position from the left. B's rank from the left is 6. What is A's rank from the left?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "31", "is_correct": false},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "33", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. B's rank from left = 6. A's rank from right = 3 × 6 = 18. A's rank from left = 50 − 18 + 1 = 33. Verify: A is at position 33 from left in a 50-student row; A's right rank = 50−33+1 = 18 = 3×6 ✓. Trap: 30 = 50−18−2 (wrong offset); 31 = 50−18 (forgets +1); 32 = 50−18+0 (off by one error).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00008",
+      "stem": "Among 5 players A, B, C, D, E: A scored more than B. C scored more than A. D scored less than B. E scored more than C. Who is ranked 3rd?",
+      "options": [
+        {"option_text": "A", "is_correct": true},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Build the order from the clues: E > C > A > B > D. Ranking from highest (1st): E(1st) → C(2nd) → A(3rd) → B(4th) → D(5th). A is ranked 3rd. Trap: C is 2nd (not 3rd); B is 4th; D is last.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00009",
+      "stem": "In a class of 40 students, Reena's rank from the top is 4 more than Seema's rank from the bottom. If Seema's rank from the top is 21, what is Reena's rank from the top?",
+      "options": [
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "28", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Seema's rank from top = 21. Seema's rank from bottom = 40 − 21 + 1 = 20. Reena's rank from top = Seema's rank from bottom + 4 = 20 + 4 = 24. Trap: 22 = 20+2 (adds 2 instead of 4); 26 = 20+6 (adds 6); 28 = 21+4+3 (wrong base — uses rank from top instead of rank from bottom).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDER_RANKING_W10_B2_00010",
+      "stem": "In a row of 35 students, Hari is 20th from the left. There are exactly 5 students between Hari and Raj, and Raj is to the right of Hari. What is Raj's position from the right end?",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Hari is at position 20 from left. With 5 students between Hari and Raj (and Raj to the right), Raj's position from left = 20 + 5 + 1 = 26. Position from right = 35 − 26 + 1 = 10. Trap: 9 = 35−26 (forgets +1 in formula); 8 = 35−27 (over-counts gap by 1); 11 = 35−25+1 (wrongly places Raj at 25 instead of 26).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

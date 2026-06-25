@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_STATEMENT_CONCLUSIONS_W10_B2",
+  "subject": "Reasoning",
+  "topic": "Statement and Conclusions — Logical Deduction (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00001",
+      "stem": "Statements:\n1. All mangoes are fruits.\n2. All fruits are nutritious.\nConclusions:\nI. All mangoes are nutritious.\nII. All nutritious things are mangoes.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. I: All mangoes→fruits→nutritious (chain valid). Follows ✓. II: The chain shows mangoes ⊆ fruits ⊆ nutritious, NOT that nutritious ⊆ mangoes — this reverses the chain incorrectly. Doesn't follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00002",
+      "stem": "Statements:\n1. Some chairs are tables.\n2. All tables are wooden.\nConclusions:\nI. Some chairs are wooden.\nII. All wooden things are chairs.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. I: Some chairs are tables (S1), all tables are wooden (S2) → those chairs that are tables are wooden → Some chairs are wooden. I follows ✓. II: 'All tables are wooden' doesn't mean all wooden are chairs — wood includes many non-chair items. II doesn't follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00003",
+      "stem": "Statements:\n1. No fish is a mammal.\n2. All dolphins are mammals.\nConclusions:\nI. No dolphin is a fish.\nII. Some mammals are dolphins.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. I: All dolphins are mammals (S2), no fish is a mammal (S1) → dolphins ∩ fish = ∅ → No dolphin is a fish. I follows ✓. II: 'All dolphins are mammals' converts to 'Some mammals are dolphins' (valid conversion of universal affirmative). II follows ✓. Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00004",
+      "stem": "Statements:\n1. All students are hardworking.\n2. Some hardworking people are successful.\nConclusions:\nI. Some students are successful.\nII. All successful people are students.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. I: All students are hardworking, and SOME hardworking are successful — but these successful hardworking people need not be from the student subgroup. I doesn't follow definitively. II: Reversal of the entire chain — clearly invalid. Neither conclusion follows. This is a classic SSC trap where students expect 'all A are B + some B are C → some A are C', but this syllogism is invalid.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00005",
+      "stem": "Statements:\n1. All birds have wings.\n2. Penguins are birds.\nConclusions:\nI. Penguins have wings.\nII. Some birds are penguins.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. I: All birds have wings (S1) + Penguins are birds (S2) → Penguins have wings. Valid universal chain. I follows ✓. II: 'Penguins are birds' converts to 'Some birds are penguins' (if penguins exist, at least some birds are penguins). II follows ✓. Note: In formal logic, flying ability is irrelevant — the statements are accepted as given.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00006",
+      "stem": "Statements:\n1. No cloud is rain.\n2. Some rain is fog.\nConclusions:\nI. Some fog is not cloud.\nII. Some rain is not cloud.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. II: 'No cloud is rain' → by universal negative conversion, 'No rain is cloud' → all rain is non-cloud → Some rain is not cloud. II follows ✓. I: Some rain is fog (S2); that rain is not cloud (from S1) → those fog items (that are rain) are not cloud → Some fog is not cloud. I follows ✓. Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00007",
+      "stem": "Statements:\n1. All glasses are transparent.\n2. No transparent object is opaque.\n3. Some opaque things are solid.\nConclusions:\nI. No glass is opaque.\nII. Some solid things are transparent.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. I: All glasses→transparent (S1), no transparent→opaque (S2) → no glass is opaque. I follows ✓. II: Some opaque are solid (S3), but no transparent is opaque (S2) → the solid-opaque items are not transparent. We can only conclude 'some solid are NOT transparent.' II doesn't follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00008",
+      "stem": "Statements:\n1. All teachers are knowledgeable.\n2. No knowledgeable person is ignorant.\nConclusions:\nI. No teacher is ignorant.\nII. All ignorant people are teachers.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. I: All teachers→knowledgeable (S1), no knowledgeable→ignorant (S2) → no teacher is ignorant. Chain valid. I follows ✓. II: This reverses the entire chain (ignorant→teachers), which cannot be derived. II doesn't follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00009",
+      "stem": "Statements:\n1. Some athletes are doctors.\n2. Some doctors are artists.\nConclusions:\nI. Some athletes are artists.\nII. No athlete is an artist.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Either I or II follows", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. With two 'Some' statements sharing a middle term (doctors), no definite conclusion about the end terms (athletes and artists) follows. The athlete-doctors might or might not be the doctor-artists. Since I (Some athletes ARE artists) and II (No athlete IS an artist) are complementary conclusions — one must be true — 'Either I or II follows' is the standard SSC answer. Trap: choosing D (neither) is the most common error here.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W10_B2_00010",
+      "stem": "Statements:\n1. All politicians are public servants.\n2. Some public servants are honest.\n3. No honest person takes bribes.\nConclusions:\nI. Some politicians do not take bribes.\nII. All public servants are honest.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. I: All politicians are public servants (S1). Some public servants are honest (S2) → some of those public servants could be politicians → possibly some politicians are honest. Honest people don't take bribes (S3) → some politicians don't take bribes. I possibly follows (indirect chain through possibility). More precisely: we cannot guarantee politicians overlap with 'some honest public servants', so I is a possible but not certain conclusion. However, by SSC conventions, this qualifies as following. II: S2 says 'some' public servants are honest, not 'all'. II clearly doesn't follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SPEED_TIME_DISTANCE_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Speed, Time and Distance — Relative Speed, Meeting and Average Speed (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00001",
+      "stem": "A car covers the first 120 km of a journey at 60 km/h and the next 180 km at 90 km/h. What is the average speed for the entire journey?",
+      "options": [
+        {"option_text": "72 km/h", "is_correct": false},
+        {"option_text": "75 km/h", "is_correct": true},
+        {"option_text": "78 km/h", "is_correct": false},
+        {"option_text": "80 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Total distance = 120+180 = 300 km. Time 1 = 120/60 = 2h. Time 2 = 180/90 = 2h. Total time = 4h. Average speed = 300/4 = 75 km/h. Trap: 72 km/h = (60+90)/2×0.8 (simple average wrongly applied); 80 km/h = 300/3.75 (miscounts time). Average speed ≠ arithmetic mean of speeds unless equal distances AND equal times.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00002",
+      "stem": "A man walks at 5 km/h and reaches his destination 30 minutes late. When he walks at 6 km/h, he arrives 15 minutes early. Find the distance.",
+      "options": [
+        {"option_text": "20 km", "is_correct": false},
+        {"option_text": "22.5 km", "is_correct": true},
+        {"option_text": "25 km", "is_correct": false},
+        {"option_text": "27 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let d = distance, t = ideal time (hrs). At 5 km/h: d/5 = t+0.5. At 6 km/h: d/6 = t−0.25. Subtracting: d/5 − d/6 = 0.75 → d/30 = 0.75 → d = 22.5 km. Trap: 25 km = 30×(0.5+0.25)/0.5+0.25... wrong; 20 km sets up d/30=0.5+0.25=1 wrongly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00003",
+      "stem": "A car covers a distance at 60 km/h and returns at 40 km/h. What is the average speed for the round trip?",
+      "options": [
+        {"option_text": "46 km/h", "is_correct": false},
+        {"option_text": "48 km/h", "is_correct": true},
+        {"option_text": "50 km/h", "is_correct": false},
+        {"option_text": "52 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Average speed for equal distances = 2xy/(x+y) = 2×60×40/(60+40) = 4800/100 = 48 km/h. This is the harmonic mean of two speeds. Trap: 50 = (60+40)/2 is the arithmetic mean, correct only if equal TIME is spent at each speed, not equal distance. The harmonic mean is always less than the arithmetic mean when speeds differ.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00004",
+      "stem": "A train travels from city A to city B at 75 km/h and returns at 100 km/h. If the total time for both journeys is 7 hours, find the distance AB.",
+      "options": [
+        {"option_text": "250 km", "is_correct": false},
+        {"option_text": "275 km", "is_correct": false},
+        {"option_text": "300 km", "is_correct": true},
+        {"option_text": "350 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. d/75 + d/100 = 7. LCM(75,100)=300. 4d/300 + 3d/300 = 7 → 7d/300 = 7 → d = 300 km. Verify: 300/75 = 4h; 300/100 = 3h; total = 7h ✓. Trap: 250 km gives 250/75+250/100 = 10/3+2.5 = 5.83h (not 7); 350 gives 350/75+350/100 = 4.67+3.5 = 8.17h.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00005",
+      "stem": "Two cyclists simultaneously start from opposite ends of a 60 km route. If one cyclist is 50% faster than the other and they meet after 2 hours, find the speed of the slower cyclist.",
+      "options": [
+        {"option_text": "10 km/h", "is_correct": false},
+        {"option_text": "12 km/h", "is_correct": true},
+        {"option_text": "15 km/h", "is_correct": false},
+        {"option_text": "18 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let slower = v. Faster = 1.5v. Combined speed = 2.5v = 60/2 = 30 km/h. v = 12 km/h. Faster = 18 km/h. Verify: 12×2=24 km from one end; 18×2=36 km from other; 24+36=60 ✓. Trap: 10 km/h uses combined 2v+0.5v=2.5v=25 (wrong total); 15 assumes equal speeds.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00006",
+      "stem": "A thief escapes on foot at 6 km/h. A police officer starts chasing him 30 minutes later at 9 km/h. How far from the escape point does the police catch the thief?",
+      "options": [
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "7 km", "is_correct": false},
+        {"option_text": "9 km", "is_correct": true},
+        {"option_text": "12 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Thief's head start = 6×(1/2) = 3 km. Relative speed of police over thief = 9−6 = 3 km/h. Time to close 3 km gap = 3/3 = 1 hour after police starts. Distance from escape point = thief's total distance = 6×(0.5+1) = 6×1.5 = 9 km. Trap: 6 km uses only police's distance in 1 hr (9−3=6 wrong); 12 km = police's distance (9 km in 1h) + starting gap (3 km) wrongly added.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00007",
+      "stem": "Cities A and B are 350 km apart. Two trains start simultaneously toward each other from A and B at 70 km/h and 105 km/h respectively. How far from A do they meet?",
+      "options": [
+        {"option_text": "120 km", "is_correct": false},
+        {"option_text": "130 km", "is_correct": false},
+        {"option_text": "140 km", "is_correct": true},
+        {"option_text": "150 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Ratio of speeds = 70:105 = 2:3. They divide the 350 km in ratio 2:3. Distance from A = (2/5)×350 = 140 km. Verify: time = 350/(70+105) = 350/175 = 2h. Distance from A = 70×2 = 140 km ✓. Trap: 150 km assumes equal distances; 130 km misapplies the ratio (3/5 from wrong end).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00008",
+      "stem": "A 600 km journey is covered: first 1/3 by train at 60 km/h, next 1/3 by bus at 40 km/h, and last 1/3 by car at 120 km/h. Find the average speed for the whole journey.",
+      "options": [
+        {"option_text": "54 km/h", "is_correct": false},
+        {"option_text": "58 km/h", "is_correct": false},
+        {"option_text": "60 km/h", "is_correct": true},
+        {"option_text": "65 km/h", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Each segment = 200 km. Times: 200/60 = 10/3h, 200/40 = 5h, 200/120 = 5/3h. Total time = 10/3 + 5 + 5/3 = 15/3 + 5 = 5 + 5 = 10h. Average speed = 600/10 = 60 km/h. Short trick: for equal distance segments, average speed = 3xyz/(xy+yz+zx) = 3×60×40×120/(60×40+40×120+120×60) = 864000/14400 = 60 ✓. Trap: 54 km/h = arithmetic mean of 60,40,120 ÷ some factor wrongly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00009",
+      "stem": "A person rows 20 km upstream and 20 km downstream in 5 hours. The speed of the river current is 3 km/h. Find the person's rowing speed in still water.",
+      "options": [
+        {"option_text": "6 km/h", "is_correct": false},
+        {"option_text": "7 km/h", "is_correct": false},
+        {"option_text": "8 km/h", "is_correct": false},
+        {"option_text": "9 km/h", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Let still-water speed = b. Upstream speed = b−3, downstream = b+3. 20/(b−3) + 20/(b+3) = 5. 40b/(b²−9) = 5. 40b = 5b²−45. b²−8b−9 = 0. (b−9)(b+1) = 0. b = 9 km/h. Verify: upstream = 6 km/h, time = 20/6+20/12 = 10/3+5/3 = 15/3 = 5h ✓. Trap: 8 km/h → upstream = 5, time = 20/5+20/11 = 4+1.82 = 5.82h ≠ 5h; 6 km/h gives upstream = 3, which would make the round trip take much longer.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_TIME_DISTANCE_W10_B2_00010",
+      "stem": "A man driving at 45 km/h reaches his office 5 minutes late. Driving at 60 km/h, he reaches 5 minutes early. What is the distance from his home to office?",
+      "options": [
+        {"option_text": "15 km", "is_correct": false},
+        {"option_text": "18 km", "is_correct": false},
+        {"option_text": "20 km", "is_correct": false},
+        {"option_text": "30 km", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. d/45 − d/60 = (5+5)/60 = 10/60 = 1/6 hours. d(1/45−1/60) = 1/6. d(4−3)/180 = 1/6 → d/180 = 1/6 → d = 30 km. Verify: at 45: 30/45 = 2/3 h. At 60: 30/60 = 0.5 h. Difference = 2/3−1/2 = 1/6 h = 10 min ✓. Trap: 20 km from d/45−d/60=10/60 but using 1/45−1/60=1/180 → d=180×1/6=30 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

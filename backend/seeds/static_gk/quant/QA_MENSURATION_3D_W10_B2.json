@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_MENSURATION_3D_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mensuration 3D — Volume and Surface Area of Solids (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00001",
+      "stem": "Find the volume of a cylinder with base radius 7 cm and height 10 cm. (Use π = 22/7)",
+      "options": [
+        {"option_text": "1320 cm³", "is_correct": false},
+        {"option_text": "1450 cm³", "is_correct": false},
+        {"option_text": "1540 cm³", "is_correct": true},
+        {"option_text": "1650 cm³", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. V = πr²h = (22/7)×7²×10 = 22×7×10 = 1540 cm³. Key step: (22/7)×49 = 22×7 = 154; 154×10 = 1540. Trap: 1320 uses r=6 (=22/7×36×10=1131.4, not clean); 1650 uses π=3.3 accidentally.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00002",
+      "stem": "Find the curved surface area of a cylinder with base radius 5 cm and height 14 cm. (Use π = 22/7)",
+      "options": [
+        {"option_text": "380 cm²", "is_correct": false},
+        {"option_text": "400 cm²", "is_correct": false},
+        {"option_text": "440 cm²", "is_correct": true},
+        {"option_text": "480 cm²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. CSA = 2πrh = 2×(22/7)×5×14 = 2×22×5×2 = 440 cm². Note: 14/7=2. Trap: 400 = 2×20×10 (miscomputes r×h); 380 = 2×π×5×12 (wrong height). Total surface area would include the two circular ends: 440 + 2×(22/7×25) = 440 + 1100/7 ≈ 597 cm².",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00003",
+      "stem": "Find the total surface area of a cone with base radius 7 cm and slant height 25 cm. (Use π = 22/7)",
+      "options": [
+        {"option_text": "576 cm²", "is_correct": false},
+        {"option_text": "660 cm²", "is_correct": false},
+        {"option_text": "704 cm²", "is_correct": true},
+        {"option_text": "770 cm²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. TSA = πr(l+r) = (22/7)×7×(25+7) = 22×32 = 704 cm². Lateral SA = πrl = 22×25 = 550 cm². Base area = πr² = 22×7 = 154 cm². Total = 550+154 = 704 cm². Trap: 660 uses l alone (πrl only); 770 = 22×35 (uses r+l=32 as 35 by mistake).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00004",
+      "stem": "A cone with base radius 6 cm and height 3 cm is melted and recast into a sphere. Find the radius of the sphere.",
+      "options": [
+        {"option_text": "2 cm", "is_correct": false},
+        {"option_text": "3 cm", "is_correct": true},
+        {"option_text": "4 cm", "is_correct": false},
+        {"option_text": "6 cm", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Volume of cone = (1/3)πr²h = (1/3)π×36×3 = 36π cm³. Volume of sphere = (4/3)πR³ = 36π → R³ = 27 → R = 3 cm. Trap: R=6 confuses cone radius with sphere radius; R=4 → R³=64≠27.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00005",
+      "stem": "A cylinder with radius r is inscribed in a cube of side 2r (cylinder height = cube side). What is the ratio of the volume of the cylinder to the volume of the cube?",
+      "options": [
+        {"option_text": "π : 2", "is_correct": false},
+        {"option_text": "π : 4", "is_correct": true},
+        {"option_text": "π : 6", "is_correct": false},
+        {"option_text": "π : 8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Cylinder: V = πr²×2r = 2πr³. Cube: V = (2r)³ = 8r³. Ratio = 2πr³ : 8r³ = π : 4. This is a standard ratio question that appears in Tier 2 — the cylinder volume is always π/4 of the enclosing cube's volume when the cylinder touches all four sides. Trap: π:2 forgets to cube the side; π:8 uses V=πr³ (wrong formula).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00006",
+      "stem": "If a sphere and a cylinder have the same radius r and the same volume, what is the height of the cylinder in terms of r?",
+      "options": [
+        {"option_text": "r/3", "is_correct": false},
+        {"option_text": "2r/3", "is_correct": false},
+        {"option_text": "4r/3", "is_correct": true},
+        {"option_text": "2r", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Sphere volume = (4/3)πr³. Cylinder volume = πr²h. Setting equal: πr²h = (4/3)πr³ → h = 4r/3. Trap: 2r/3 inverts the fraction (uses 3/4 instead of 4/3); r/3 uses sphere formula without the r in front; 2r applies the surface area formula by mistake.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00007",
+      "stem": "Water flows through a cylindrical pipe of diameter 2 cm at 7 m/s into a rectangular tank of dimensions 50 cm × 44 cm. How many seconds to raise the water level by 14 cm? (Use π = 22/7)",
+      "options": [
+        {"option_text": "10 seconds", "is_correct": false},
+        {"option_text": "12 seconds", "is_correct": false},
+        {"option_text": "14 seconds", "is_correct": true},
+        {"option_text": "20 seconds", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Pipe radius = 1 cm. Flow speed = 7 m/s = 700 cm/s. Flow rate = π×1²×700 = 700×22/7 = 2200 cm³/s. Volume of tank needed = 50×44×14 = 30,800 cm³. Time = 30800/2200 = 14 seconds. Trap: 10 s uses wrong flow rate; 20 s forgets to convert 7 m/s to cm/s.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00008",
+      "stem": "A hollow sphere has inner radius 3 cm and outer radius 6 cm. Find the volume of metal used. (Answer in terms of π)",
+      "options": [
+        {"option_text": "148π cm³", "is_correct": false},
+        {"option_text": "189π cm³", "is_correct": false},
+        {"option_text": "252π cm³", "is_correct": true},
+        {"option_text": "288π cm³", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. V = (4/3)π(R³−r³) = (4/3)π(216−27) = (4/3)π×189 = 252π cm³. Trap: 288π uses only outer sphere volume (4/3)π×216; 189π forgets the 4/3 factor.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00009",
+      "stem": "A frustum of a cone has top radius 5 cm, base radius 10 cm, and height 12 cm. Find its volume. (Use π = 22/7)",
+      "options": [
+        {"option_text": "1980 cm³", "is_correct": false},
+        {"option_text": "2100 cm³", "is_correct": false},
+        {"option_text": "2200 cm³", "is_correct": true},
+        {"option_text": "2400 cm³", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. V = (πh/3)(R²+Rr+r²) = (22/7×12/3)(100+50+25) = (22/7×4)×175 = 88/7×175 = 88×25 = 2200 cm³. Trap: 1980 uses only R² + r² (forgets Rr term); 2400 uses (R+r)² instead of R²+Rr+r².",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W10_B2_00010",
+      "stem": "A sphere of radius 3 cm is melted and recast into a cylinder of radius 3 cm. Find the height of the cylinder.",
+      "options": [
+        {"option_text": "2 cm", "is_correct": false},
+        {"option_text": "3 cm", "is_correct": false},
+        {"option_text": "4 cm", "is_correct": true},
+        {"option_text": "6 cm", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Sphere volume = (4/3)π(3)³ = 36π. Cylinder: π(3)²×h = 9πh = 36π → h = 4 cm. Trap: h=6 uses sphere diameter instead of equating volumes; h=3 confuses radius with height.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

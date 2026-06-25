@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_GEOMETRY_TRIANGLES_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Geometry — Triangles, Circles and Theorems (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00001",
+      "stem": "In triangle PQR, ∠P = 65° and ∠Q = 45°. What is the measure of ∠R?",
+      "options": [
+        {"option_text": "60°", "is_correct": false},
+        {"option_text": "70°", "is_correct": true},
+        {"option_text": "75°", "is_correct": false},
+        {"option_text": "80°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Sum of angles of a triangle = 180°. ∠R = 180° − 65° − 45° = 70°. Trap: 75° = 180°−65°−40° (misreads ∠Q as 40°); 60° = 180°−65°−55° (wrong ∠Q).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00002",
+      "stem": "In triangle ABC, the exterior angle at vertex C is 110°. If ∠A = 60°, find ∠B.",
+      "options": [
+        {"option_text": "40°", "is_correct": false},
+        {"option_text": "45°", "is_correct": false},
+        {"option_text": "50°", "is_correct": true},
+        {"option_text": "55°", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. By the exterior angle theorem: exterior angle = sum of two non-adjacent interior angles. So 110° = ∠A + ∠B = 60° + ∠B → ∠B = 50°. Verify: ∠C = 180°−110° = 70°. ∠A+∠B+∠C = 60°+50°+70° = 180° ✓. Trap: 40° uses 110°−60°−10°; 55° adds 5° error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00003",
+      "stem": "A right triangle has legs of lengths 8 cm and 15 cm. Find the length of the hypotenuse.",
+      "options": [
+        {"option_text": "16 cm", "is_correct": false},
+        {"option_text": "17 cm", "is_correct": true},
+        {"option_text": "18 cm", "is_correct": false},
+        {"option_text": "20 cm", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. By Pythagoras: h² = 8² + 15² = 64 + 225 = 289. h = √289 = 17 cm. (8, 15, 17) is a standard Pythagorean triple. Trap: 16 = √(64+192) — wrong arithmetic; 20 = √(64+336) — wrong arithmetic. SSC regularly uses (3,4,5), (5,12,13), (8,15,17) triples.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00004",
+      "stem": "Find the area of a triangle with base 14 cm and height 9 cm.",
+      "options": [
+        {"option_text": "54 cm²", "is_correct": false},
+        {"option_text": "63 cm²", "is_correct": true},
+        {"option_text": "72 cm²", "is_correct": false},
+        {"option_text": "126 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Area = (1/2) × base × height = (1/2) × 14 × 9 = 63 cm². Trap: 126 = 14 × 9 (forgot the 1/2); 54 = (1/2) × 12 × 9 (misreads base as 12); 72 = (1/2) × 16 × 9.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00005",
+      "stem": "Find the area of an equilateral triangle whose side is 6 cm. (Use √3 = 1.73)",
+      "options": [
+        {"option_text": "9√3 cm² (≈ 15.57 cm²)", "is_correct": true},
+        {"option_text": "12√3 cm² (≈ 20.76 cm²)", "is_correct": false},
+        {"option_text": "18 cm²", "is_correct": false},
+        {"option_text": "6√3 cm² (≈ 10.38 cm²)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Area of equilateral triangle = (√3/4)×a². With a=6: Area = (√3/4)×36 = 9√3 cm² ≈ 9×1.73 = 15.57 cm². Trap: 12√3 uses formula (√3/3)×a²; 18 = 3²×2 (confuses perimeter with area); 6√3 = (√3/4)×24 (uses a=4√6 instead).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00006",
+      "stem": "In triangle ABC, D is a point on BC such that AD bisects angle A. If AB = 8 cm, AC = 12 cm, and BC = 15 cm, find BD.",
+      "options": [
+        {"option_text": "4 cm", "is_correct": false},
+        {"option_text": "5 cm", "is_correct": false},
+        {"option_text": "6 cm", "is_correct": true},
+        {"option_text": "8 cm", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. By the Angle Bisector Theorem: BD/DC = AB/AC = 8/12 = 2/3. Since BD + DC = 15: BD = (2/5)×15 = 6 cm. DC = 9 cm. Verify: 6+9 = 15 ✓ and 6/9 = 2/3 = 8/12 ✓. Trap: 5 = (1/3)×15; 8 = AB itself (confuses AB with BD).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00007",
+      "stem": "Triangles ABC and DEF are similar with AB/DE = 3/2. If the area of △ABC is 45 cm², find the area of △DEF.",
+      "options": [
+        {"option_text": "15 cm²", "is_correct": false},
+        {"option_text": "20 cm²", "is_correct": true},
+        {"option_text": "25 cm²", "is_correct": false},
+        {"option_text": "30 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For similar triangles, the ratio of areas = (ratio of corresponding sides)². Area(DEF)/Area(ABC) = (DE/AB)² = (2/3)² = 4/9. Area(DEF) = (4/9) × 45 = 20 cm². Trap: 30 = (2/3)×45 (uses side ratio instead of area ratio = side ratio squared); 25 = 45×5/9 (squares incorrectly).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00008",
+      "stem": "A triangle is inscribed in a circle of diameter 13 cm. One side of the triangle is the diameter. If the other two sides are 5 cm and 12 cm, verify it is a right triangle and find its area.",
+      "options": [
+        {"option_text": "25 cm²", "is_correct": false},
+        {"option_text": "30 cm²", "is_correct": true},
+        {"option_text": "32.5 cm²", "is_correct": false},
+        {"option_text": "65 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A triangle inscribed in a semicircle (diameter as one side) is always a right triangle (angle in semicircle = 90°). Verify: 5² + 12² = 25+144 = 169 = 13² ✓. Area = (1/2)×5×12 = 30 cm² (legs are the base and height). Trap: 32.5 = (1/2)×5×13 (uses diameter as height instead of the leg); 65 = 5×13.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00009",
+      "stem": "In triangle ABC, medians AD, BE, CF meet at centroid G. If AG = 8 cm, find GD (the distance from centroid to side BC).",
+      "options": [
+        {"option_text": "2 cm", "is_correct": false},
+        {"option_text": "4 cm", "is_correct": true},
+        {"option_text": "6 cm", "is_correct": false},
+        {"option_text": "8 cm", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The centroid divides each median in the ratio 2:1 (from vertex to midpoint of opposite side). So AG:GD = 2:1. AG = 8 cm → GD = AG/2 = 4 cm. Also, the full median AD = AG+GD = 8+4 = 12 cm. Trap: 6 = AG×(3/4) (wrong ratio); 2 = AG/4 (uses 4:1 instead of 2:1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_TRIANGLES_W10_B2_00010",
+      "stem": "In triangle ABC, a line DE is drawn parallel to BC, with D on AB and E on AC. If AD/AB = 3/5, find the ratio of area of triangle ADE to the area of trapezium BCED.",
+      "options": [
+        {"option_text": "9 : 16", "is_correct": true},
+        {"option_text": "3 : 5", "is_correct": false},
+        {"option_text": "9 : 25", "is_correct": false},
+        {"option_text": "3 : 7", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Since DE || BC and AD/AB = 3/5, △ADE ~ △ABC with ratio 3:5. Area(ADE)/Area(ABC) = (3/5)² = 9/25. Area(trapezium BCED) = Area(ABC) − Area(ADE) = 25−9 = 16 parts. Ratio ADE:BCED = 9:16. Trap: 9:25 is the ratio ADE:ABC (not ADE:trapezium); 3:5 is the linear ratio (not area ratio).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SIMPLE_INTEREST_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Simple Interest — Rate, Time, Principal and Amount (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00001",
+      "stem": "Find the simple interest on ₹3,000 at 8% per annum for 3 years.",
+      "options": [
+        {"option_text": "₹540", "is_correct": false},
+        {"option_text": "₹680", "is_correct": false},
+        {"option_text": "₹720", "is_correct": true},
+        {"option_text": "₹800", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. SI = PRT/100 = 3000×8×3/100 = 72000/100 = ₹720. Amount = 3000+720 = ₹3720. Trap: ₹540 uses 6% instead of 8%; ₹800 applies rate on 2-year basis.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00002",
+      "stem": "Find the rate of interest if ₹2,500 invested for 4 years earns a simple interest of ₹500.",
+      "options": [
+        {"option_text": "4%", "is_correct": false},
+        {"option_text": "5%", "is_correct": true},
+        {"option_text": "6%", "is_correct": false},
+        {"option_text": "8%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. R = SI×100/(P×T) = 500×100/(2500×4) = 50000/10000 = 5%. Trap: 4% gives SI = 2500×4×4/100 = 400 (not 500); 8% doubles the required rate.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00003",
+      "stem": "A sum amounts to ₹7,500 in 5 years at 10% simple interest per annum. Find the principal.",
+      "options": [
+        {"option_text": "₹4,000", "is_correct": false},
+        {"option_text": "₹4,500", "is_correct": false},
+        {"option_text": "₹5,000", "is_correct": true},
+        {"option_text": "₹5,500", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A = P(1+RT/100) = P(1+10×5/100) = P×1.5 = 7500. P = 7500/1.5 = ₹5,000. Verify: SI = 5000×10×5/100 = ₹2,500; A = 5000+2500 = ₹7500 ✓. Trap: ₹4500 uses A=P×(1+RT) without dividing by 100.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00004",
+      "stem": "At what rate per annum will ₹5,000 amount to ₹6,500 in 3 years at simple interest?",
+      "options": [
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "9%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "12%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. SI = 6500−5000 = ₹1,500. R = SI×100/(P×T) = 1500×100/(5000×3) = 150000/15000 = 10%. Trap: 8% gives SI = 5000×8×3/100 = 1200 (not 1500); 12% gives SI = 1800.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00005",
+      "stem": "The ratio of SI for 3 years at 5% to SI for 2 years at 8% (on the same principal) is:",
+      "options": [
+        {"option_text": "15 : 16", "is_correct": true},
+        {"option_text": "16 : 15", "is_correct": false},
+        {"option_text": "3 : 4", "is_correct": false},
+        {"option_text": "5 : 8", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. SI is proportional to R×T. First: 5×3 = 15. Second: 8×2 = 16. Ratio = 15:16. Short Trick: ratio of SI = ratio of (Rate × Time) when principal is the same. Trap: 16:15 reverses the order; 5:8 uses only the rates.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00006",
+      "stem": "₹4,000 is lent: part at 10% SI and the rest at 12% SI for 2 years. Total interest = ₹920. Find the amount lent at 10%.",
+      "options": [
+        {"option_text": "₹800", "is_correct": false},
+        {"option_text": "₹1,000", "is_correct": true},
+        {"option_text": "₹1,200", "is_correct": false},
+        {"option_text": "₹1,500", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let x at 10%. Equation: x×10×2/100 + (4000−x)×12×2/100 = 920. 0.2x + 960 − 0.24x = 920. −0.04x = −40. x = ₹1,000. Verify: 1000×0.2 + 3000×0.24 = 200+720 = ₹920 ✓. Trap: ₹1,200 applies only the 12% calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00007",
+      "stem": "₹6,000 is lent for 3 years: part at 8% SI and the rest at 6% SI. Interest from the 8% part exceeds interest from the 6% part by ₹180. Find the amount lent at 8%.",
+      "options": [
+        {"option_text": "₹2,500", "is_correct": false},
+        {"option_text": "₹3,000", "is_correct": true},
+        {"option_text": "₹3,500", "is_correct": false},
+        {"option_text": "₹4,000", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let x at 8%. Interest difference: x×8×3/100 − (6000−x)×6×3/100 = 180. 0.24x − 0.18(6000−x) = 180. 0.24x − 1080 + 0.18x = 180. 0.42x = 1260. x = ₹3,000. Verify: 3000×0.24−3000×0.18 = 720−540 = ₹180 ✓. Trap: ₹2,500 uses 0.40x = 1260 (wrong coefficient).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00008",
+      "stem": "In what time will ₹3,000 amount to ₹3,720 at 8% per annum simple interest?",
+      "options": [
+        {"option_text": "2 years", "is_correct": false},
+        {"option_text": "2.5 years", "is_correct": false},
+        {"option_text": "3 years", "is_correct": true},
+        {"option_text": "4 years", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. SI = 3720−3000 = ₹720. T = SI×100/(P×R) = 720×100/(3000×8) = 72000/24000 = 3 years. Trap: 2.5 years gives SI = 3000×8×2.5/100 = 600 (not 720); 4 years gives SI = 960.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00009",
+      "stem": "Two equal sums are invested at 5% and 6% SI respectively for 4 years. The total interest from both is ₹2,200. Find each sum.",
+      "options": [
+        {"option_text": "₹4,000", "is_correct": false},
+        {"option_text": "₹4,500", "is_correct": false},
+        {"option_text": "₹5,000", "is_correct": true},
+        {"option_text": "₹5,500", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let each sum = P. Total SI = P×5×4/100 + P×6×4/100 = 0.20P + 0.24P = 0.44P = 2200. P = ₹5,000. Verify: 5000×0.20 + 5000×0.24 = 1000+1200 = ₹2200 ✓. Trap: ₹4,500 gives total = 0.44×4500 = 1980 (not 2200).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W10_B2_00010",
+      "stem": "A sum of money triples itself at simple interest in 20 years. What is the rate of interest per annum?",
+      "options": [
+        {"option_text": "5%", "is_correct": false},
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. If P triples: A = 3P → SI = 2P. SI = PRT/100 → 2P = P×R×20/100 → 2 = R×20/100 → R = 200/20 = 10%. Short Trick: if sum becomes n times in T years, R = (n−1)×100/T. Here: (3−1)×100/20 = 10%. Trap: 5% gives doubling (not tripling) in 20 years; 15% triples in ~13.3 years.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

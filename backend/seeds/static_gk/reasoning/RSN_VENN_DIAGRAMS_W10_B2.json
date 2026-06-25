@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_VENN_DIAGRAMS_W10_B2",
+  "subject": "Reasoning",
+  "topic": "Venn Diagrams — Set Operations and Cardinality (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00001",
+      "stem": "In a class of 50 students, 30 study Science and 25 study Arts. 10 students study both. How many study only Science?",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Only Science = Total Science − Both = 30−10 = 20. Students who study only Arts = 25−10 = 15. Trap: 25 = only Arts (wrong label); 30 includes those who study both subjects.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00002",
+      "stem": "In a survey of 100 people, 60 like Product A and 50 like Product B. 25 like both. How many like A or B (or both)?",
+      "options": [
+        {"option_text": "75", "is_correct": false},
+        {"option_text": "80", "is_correct": false},
+        {"option_text": "85", "is_correct": true},
+        {"option_text": "110", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. |A∪B| = |A|+|B|−|A∩B| = 60+50−25 = 85 (Inclusion-Exclusion Principle). Trap: 110 = 60+50 (double-counts the 25 who like both); 75 = 60+50−35 (wrong intersection value).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00003",
+      "stem": "In a group of 80 people, 55 like Cricket, 45 like Football, and 30 like both. How many like neither sport?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. |C∪F| = 55+45−30 = 70. Neither = 80−70 = 10. Trap: 5 = 80−(55+45−25) using wrong 'both' value; 15 = 80−65 (uses |C∪F|=65 from 55+45−35).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00004",
+      "stem": "In a class, 35 students play Cricket, 30 play Football, and 20 play both. Exactly how many play only ONE sport?",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "45", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Only Cricket = 35−20 = 15. Only Football = 30−20 = 10. Exactly one sport = 15+10 = 25. Trap: 45 = total who play at least one sport (35+30−20); 20 confuses 'exactly two' (both) with 'exactly one'.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00005",
+      "stem": "Sets A, B, C have |A|=20, |B|=28, |C|=25, |A∩B|=8, |B∩C|=10, |A∩C|=6, |A∩B∩C|=3. Find |A∪B∪C|.",
+      "options": [
+        {"option_text": "46", "is_correct": false},
+        {"option_text": "49", "is_correct": false},
+        {"option_text": "52", "is_correct": true},
+        {"option_text": "55", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. |A∪B∪C| = |A|+|B|+|C|−|A∩B|−|B∩C|−|A∩C|+|A∩B∩C| = 20+28+25−8−10−6+3 = 73−24+3 = 52. This is the three-set Inclusion-Exclusion formula — a key Tier 2 topic. Trap: 55 omits the +|A∩B∩C| correction; 49 uses the wrong sign for the triple intersection.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00006",
+      "stem": "In a survey of 250 people, 155 read Newspaper A, 130 read Newspaper B, and 45 read both. How many read neither newspaper?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. |A∪B| = 155+130−45 = 240. Neither = 250−240 = 10. Trap: 5 = 250−(155+90) (wrong B calculation); 15 = 250−235 (uses both=45 but adds wrong total).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00007",
+      "stem": "100 people are surveyed. 60 like Math, 55 like Science, 45 like English. 10 like all three. 15 like Math & Science only (not English), 12 like Science & English only (not Math), 8 like Math & English only (not Science). How many like ONLY Math?",
+      "options": [
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "27", "is_correct": true},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. 'Only Math' = |Math| − (Math∩Science only) − (Math∩English only) − (all three) = 60−15−8−10 = 27. The pairs given are already 'only that pair' (excluding the triple overlap). Trap: 25 omits one pairwise overlap; 22 subtracts all overlaps twice.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00008",
+      "stem": "In a class, every student plays at least one game. 20 play Cricket, 16 play Football, 12 play Badminton. 8 play Cricket & Football, 6 play Football & Badminton, 5 play Cricket & Badminton, and 3 play all three. Find the total number of students.",
+      "options": [
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "32", "is_correct": true},
+        {"option_text": "36", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. |C∪F∪B| = 20+16+12−8−6−5+3 = 48−19+3 = 32. Since every student plays at least one game, total = 32. Trap: 36 = 20+16+12−8−6+2 (forgets to add back the triple intersection); 30 uses |C∩F|+|F∩B|+|C∩B| = 19 but misses the triple correction.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00009",
+      "stem": "Out of 200 students, 80 study Physics, 100 study Chemistry, and 70 study Biology. 30 study Physics & Chemistry, 20 study Chemistry & Biology, 25 study Physics & Biology, and 10 study all three. How many students study EXACTLY two subjects?",
+      "options": [
+        {"option_text": "35", "is_correct": false},
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "45", "is_correct": true},
+        {"option_text": "50", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. 'Exactly two' means pairwise overlaps minus the triple. P∩C only = 30−10=20. C∩B only = 20−10=10. P∩B only = 25−10=15. Exactly two = 20+10+15 = 45. Trap: 35 subtracts triple from total pairwise (30+20+25−10=65... wrong); 50 = 30+20+25−10+5 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W10_B2_00010",
+      "stem": "In a class of 60, every student studies at least one of Hindi or English. 40 study Hindi and 35 study English. How many study Hindi but NOT English?",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "23", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. |H∪E| = 60 (all students study at least one). |H∩E| = |H|+|E|−|H∪E| = 40+35−60 = 15. Hindi only (not English) = |H|−|H∩E| = 40−15 = 25. Trap: 30 = 60−30 (confuses 'neither' with something else); 20 = 35−15 gives English only, not Hindi only.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_LCM_HCF_W10_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "LCM and HCF — Word Problems and Applications (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00001",
+      "stem": "Find the HCF of 48 and 72.",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "36", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Prime factorisation: 48 = 2⁴ × 3; 72 = 2³ × 3². HCF = product of lowest powers of common primes = 2³ × 3 = 8 × 3 = 24. Verify: 48 = 24×2 ✓, 72 = 24×3 ✓. Trap: 36 = 72/2 (not a common factor of 48 since 48/36 is not an integer).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00002",
+      "stem": "Find the LCM of 12, 15, and 20.",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "90", "is_correct": false},
+        {"option_text": "120", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Prime factorisation: 12 = 2²×3; 15 = 3×5; 20 = 2²×5. LCM = product of highest powers of all primes = 2²×3×5 = 60. Verify: 60/12=5, 60/15=4, 60/20=3 — all exact ✓. Trap: 120 = LCM of 12, 15, 20, and 8 (extra factor).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00003",
+      "stem": "The HCF of two numbers is 12 and their LCM is 180. If one number is 36, find the other number.",
+      "options": [
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "72", "is_correct": false},
+        {"option_text": "90", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Product of two numbers = HCF × LCM. Other number = (HCF × LCM) / first number = (12 × 180) / 36 = 2160 / 36 = 60. Verify: HCF(36, 60) = 12 ✓; LCM(36, 60) = 180 ✓. Trap: 72 = 36×2 (ignores the formula); 90 = 180/2 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00004",
+      "stem": "Three bells toll at intervals of 4, 6, and 9 minutes. They all toll together at 12:00 noon. When will they next toll together?",
+      "options": [
+        {"option_text": "12:18 PM", "is_correct": false},
+        {"option_text": "12:36 PM", "is_correct": true},
+        {"option_text": "12:24 PM", "is_correct": false},
+        {"option_text": "12:54 PM", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Next time all bells toll together = LCM(4, 6, 9). 4 = 2²; 6 = 2×3; 9 = 3². LCM = 2²×3² = 36 minutes. Starting from 12:00, they toll together again at 12:36 PM. Trap: 18 = LCM(6,9) (omits 4); 24 = LCM(4,6,8) (wrong set); 54 = 6×9 (product, not LCM).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00005",
+      "stem": "Find the largest number that divides 54, 81, and 108 exactly.",
+      "options": [
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "27", "is_correct": true},
+        {"option_text": "54", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 'Largest number that divides all three' = HCF. 54 = 2×3³; 81 = 3⁴; 108 = 2²×3³. HCF = 3³ = 27. Verify: 54/27=2 ✓, 81/27=3 ✓, 108/27=4 ✓. Trap: 9 = 3² (not the highest common power); 18 = 2×3² (2 is not present in 81).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00006",
+      "stem": "The LCM of two numbers is 280 and their HCF is 8. If the numbers are in ratio 5:7, find the larger number.",
+      "options": [
+        {"option_text": "35", "is_correct": false},
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "56", "is_correct": true},
+        {"option_text": "70", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let the numbers = 5k and 7k. Since HCF(5,7) = 1 (coprime), the HCF of the two numbers = k. Given HCF = 8, so k = 8. Numbers = 5×8 = 40 and 7×8 = 56. Verify: LCM(40, 56): 40=2³×5, 56=2³×7. LCM = 2³×5×7 = 280 ✓. HCF = 8 ✓. Larger number = 56. Trap: 70 = 7×10 (uses k=10); 40 = the smaller number; 35 = the ratio number itself (not scaled by HCF).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00007",
+      "stem": "What is the smallest number that, when divided by 6, 8, and 9, leaves a remainder of 3 in each case?",
+      "options": [
+        {"option_text": "69", "is_correct": false},
+        {"option_text": "75", "is_correct": true},
+        {"option_text": "87", "is_correct": false},
+        {"option_text": "99", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The required number = LCM(6, 8, 9) + 3. LCM(6,8,9): 6=2×3; 8=2³; 9=3². LCM = 2³×3² = 72. Required number = 72 + 3 = 75. Verify: 75÷6 = 12 rem 3 ✓; 75÷8 = 9 rem 3 ✓; 75÷9 = 8 rem 3 ✓. Trap: 69 = 72−3 (subtracts instead of adding remainder); 99 = 96+3 where 96 = LCM(8,12,6) (wrong LCM).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00008",
+      "stem": "Two ropes of lengths 270 m and 360 m need to be cut into equal pieces of maximum possible length with no leftover. How many total pieces will there be?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "7", "is_correct": true},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Maximum piece length = HCF(270, 360). 270 = 2×3³×5; 360 = 2³×3²×5. HCF = 2×3²×5 = 90 m. Pieces from first rope: 270/90 = 3. Pieces from second rope: 360/90 = 4. Total = 3+4 = 7 pieces. Trap: 10 = 270/90 + 360/90 using wrong HCF (27); 5 = 90/18 (wrong HCF=18).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00009",
+      "stem": "Find the greatest number that divides 80, 130, and 180, leaving a remainder of 5 in each case.",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "50", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Subtract the common remainder from each number: 80−5=75; 130−5=125; 180−5=175. Required greatest number = HCF(75, 125, 175). 75=3×5²; 125=5³; 175=5²×7. HCF = 5² = 25. Verify: 80÷25=3 rem 5 ✓; 130÷25=5 rem 5 ✓; 180÷25=7 rem 5 ✓. Trap: 50 = 2×25 but 75/50 is not exact; 15 = HCF(75,125,175) using 3×5 instead of 5² only.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_LCM_HCF_W10_B2_00010",
+      "stem": "The traffic lights at three road crossings change every 48 seconds, 72 seconds, and 108 seconds. If they all change simultaneously at 8:00:00 AM, at what time will they next change simultaneously?",
+      "options": [
+        {"option_text": "8:04:12 AM", "is_correct": false},
+        {"option_text": "8:07:12 AM", "is_correct": true},
+        {"option_text": "8:06:00 AM", "is_correct": false},
+        {"option_text": "8:09:00 AM", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Next simultaneous change = LCM(48, 72, 108). 48=2⁴×3; 72=2³×3²; 108=2²×3³. LCM = 2⁴×3³ = 16×27 = 432 seconds. 432 seconds = 7 minutes 12 seconds. So next simultaneous change = 8:07:12 AM. Trap: 360 = LCM(72,120) gives 8:06:00 (wrong set); 540 = 8:09:00 (LCM of 60,108,? — wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

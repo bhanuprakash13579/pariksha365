@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_LETTER_SERIES_W10_B2",
+  "subject": "Reasoning",
+  "topic": "Letter and Alphabet Series — Patterns and Sequences (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00001",
+      "stem": "Find the next term in the series: B, E, H, K, N, ?",
+      "options": [
+        {"option_text": "O", "is_correct": false},
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": true},
+        {"option_text": "R", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Pattern: each letter advances by +3 in the alphabet. B(2)→E(5)→H(8)→K(11)→N(14)→Q(17). Trap: P is only +2 ahead of N; O is only +1; R skips Q.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00002",
+      "stem": "Find the next term: Z, X, V, T, R, ?",
+      "options": [
+        {"option_text": "N", "is_correct": false},
+        {"option_text": "O", "is_correct": false},
+        {"option_text": "P", "is_correct": true},
+        {"option_text": "Q", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Pattern: every alternate letter in reverse — skip one letter each time. Z(26)→X(24)→V(22)→T(20)→R(18)→P(16). The pattern is −2 at each step. Trap: Q(17) is −1 from R; N is −4 (skips too far).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00003",
+      "stem": "Find the next term: B, D, G, K, P, ?",
+      "options": [
+        {"option_text": "T", "is_correct": false},
+        {"option_text": "V", "is_correct": true},
+        {"option_text": "W", "is_correct": false},
+        {"option_text": "X", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Differences: D−B=2, G−D=3, K−G=4, P−K=5, ?−P=6. P(16)+6 = V(22). The gap between consecutive terms increases by 1. Trap: T is P+4 (wrong increment); W is P+7 (over-increments).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00004",
+      "stem": "Find the next pair in the series: AZ, BY, CX, DW, ?",
+      "options": [
+        {"option_text": "EU", "is_correct": false},
+        {"option_text": "EV", "is_correct": true},
+        {"option_text": "FV", "is_correct": false},
+        {"option_text": "FU", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. First letter: A→B→C→D→E (forward +1). Second letter: Z→Y→X→W→V (backward −1). Together, the pair converges from both ends of the alphabet simultaneously. Next pair = EV. Trap: EU goes one too far back for the second letter; FV advances the first letter one too many.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00005",
+      "stem": "Find the next group in the series: ACE, BDF, CEG, DFH, ?",
+      "options": [
+        {"option_text": "EGH", "is_correct": false},
+        {"option_text": "EGI", "is_correct": true},
+        {"option_text": "EHI", "is_correct": false},
+        {"option_text": "FGI", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Each group is 3 alternate letters. Group starting points: A, B, C, D, E (each +1). ACE: positions 1,3,5. BDF: 2,4,6. CEG: 3,5,7. DFH: 4,6,8. Next: EGI: positions 5,7,9. Trap: EGH skips the pattern (H is at position 8, not 9); FGI starts with the wrong first letter.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00006",
+      "stem": "Find the missing term: A, B, D, G, K, P, ?",
+      "options": [
+        {"option_text": "T", "is_correct": false},
+        {"option_text": "U", "is_correct": false},
+        {"option_text": "V", "is_correct": true},
+        {"option_text": "W", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Differences: B−A=1, D−B=2, G−D=3, K−G=4, P−K=5, ?−P=6. P(16)+6 = V(22). Differences increase by 1 each time (triangular number gaps). Trap: U(21)=P+5 (wrong, gap should be 6, not 5); W(23)=P+7 (over-counts).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00007",
+      "stem": "Find the next pair: AZ, CX, EV, GT, IR, ?",
+      "options": [
+        {"option_text": "JP", "is_correct": false},
+        {"option_text": "KP", "is_correct": true},
+        {"option_text": "KQ", "is_correct": false},
+        {"option_text": "LO", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. First letters: A(1),C(3),E(5),G(7),I(9) → +2 each time → next = K(11). Second letters: Z(26),X(24),V(22),T(20),R(18) → −2 each time → next = P(16). Next pair = KP. Trap: JP uses wrong first letter (J=10, not 11); KQ goes only −1 for the second letter.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00008",
+      "stem": "Find the next term: Z, Y, X, U, T, S, P, O, N, ?",
+      "options": [
+        {"option_text": "J", "is_correct": false},
+        {"option_text": "K", "is_correct": true},
+        {"option_text": "L", "is_correct": false},
+        {"option_text": "M", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The series consists of groups of 3 consecutive descending letters, with a gap of 3 between groups: Z,Y,X (26,25,24) → gap of 3 → U,T,S (21,20,19) → gap of 3 → P,O,N (16,15,14) → gap of 3 → K(11). After N(14), the next group begins at 14−3 = K(11). Trap: L(12) = N−2 (doesn't account for the 3-letter gap); J(10) skips too far.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00009",
+      "stem": "Find the next term in the series: AB, BA, CD, DC, EF, FE, GH, ?",
+      "options": [
+        {"option_text": "GI", "is_correct": false},
+        {"option_text": "HG", "is_correct": true},
+        {"option_text": "HI", "is_correct": false},
+        {"option_text": "IH", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The pattern alternates: forward pair followed by reversed pair. AB → BA (reverse), CD → DC (reverse), EF → FE (reverse), GH → HG (reverse). After GH comes its reversal HG. Trap: HI would start a new pair instead of reversing GH; IH starts too far ahead.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W10_B2_00010",
+      "stem": "Find the next letter in the series: B, C, E, H, L, ?",
+      "options": [
+        {"option_text": "N", "is_correct": false},
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": true},
+        {"option_text": "S", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. B(2),C(3),E(5),H(8),L(12). Differences: +1,+2,+3,+4,+5. Next difference = +5: L(12)+5 = Q(17). The differences form an arithmetic sequence (1,2,3,4,5). Trap: P(16) = L+4 (repeats the previous gap instead of incrementing it); N(14) = L+2 (too small).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

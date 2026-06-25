@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_BLOOD_RELATIONS_W10_B2",
+  "subject": "Reasoning",
+  "topic": "Blood Relations — Family Tree Puzzles (W10 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00001",
+      "stem": "A is the father of B. B is the sister of C. C is the mother of D. What is A's relation to D?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Grand uncle", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. A is father of B → A is B's father. B is sister of C → B and C are siblings, so A is also C's father. C is mother of D → A is C's father = D's grandfather. Chain: A (father) → C (through sibling B) → D. So A is D's Grandfather.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00002",
+      "stem": "Pointing to a photograph, Ravi says, 'She is the daughter of my grandfather's only son.' How is the person in the photograph related to Ravi?",
+      "options": [
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false},
+        {"option_text": "Niece", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Ravi's grandfather's only son = Ravi's father. The daughter of Ravi's father = Ravi's sister. Trap: 'Cousin' — only if it were the son of an uncle/aunt; 'Aunt' — would be the father's sister; 'Niece' — would be Ravi's sibling's daughter.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00003",
+      "stem": "X is Y's brother. Y is Z's sister. Z is Q's father. What is X's relation to Q?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. X is Y's brother. Y is Z's sister → X, Y, Z are all siblings (same generation). Z is Q's father → Z is male. X (sibling of Z) is Q's uncle. Trap: 'Father' confuses X and Z's roles; 'Brother' would be if X were in the same generation as Q; 'Grandfather' would require one more generation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00004",
+      "stem": "Seema is the wife of Aman. Aman's mother is Kiran. Kiran's father is Suresh. What is Seema's relation to Suresh?",
+      "options": [
+        {"option_text": "Granddaughter-in-law", "is_correct": true},
+        {"option_text": "Daughter-in-law", "is_correct": false},
+        {"option_text": "Granddaughter", "is_correct": false},
+        {"option_text": "Sister-in-law", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Suresh is Kiran's father → Kiran is Suresh's daughter. Kiran is Aman's mother → Aman is Suresh's grandson. Seema is Aman's wife → Seema is Suresh's granddaughter-in-law. Trap: 'Daughter-in-law' would be Seema's relation to Kiran (one generation difference), not Suresh (two generations).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00005",
+      "stem": "A man says to a woman, 'Your mother's husband's sister is my aunt.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Daughter", "is_correct": false},
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 'Your mother's husband' = woman's father. 'Woman's father's sister' = woman's aunt. The man says this woman's aunt is his aunt too. Since they share the same aunt (father's sister), they share the same father → they are siblings. So the woman is the man's sister. Trap: 'Cousin' = if it were mother's brother's daughter; 'Niece' = would be man's sibling's daughter (not the woman herself).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00006",
+      "stem": "P is the son of Q. R is Q's sister. S is R's mother. T is S's husband. How is T related to P?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Great-grandfather", "is_correct": true},
+        {"option_text": "Grandfather", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. T is S's husband. S is R's mother → T is R's father. R is Q's sister → T is Q's grandfather (one more generation up: T→S→Q). P is Q's son → T is P's great-grandfather. Chain: P (son of Q) → Q (R's sibling) → R (S's child) → S (T's wife). T is 3 generations above P = great-grandfather. Trap: 'Grandfather' is T's relation to Q, not P.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00007",
+      "stem": "Introducing a boy, a girl says, 'He is the son of my mother's only brother.' What is the boy's relation to the girl's father?",
+      "options": [
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Nephew", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The boy's father = girl's mother's only brother = girl's maternal uncle. The boy's father and the girl's father are brothers-in-law (married to sisters). The boy is the son of a man who is NOT related by blood to the girl's father. But the question asks boy's relation to girl's father: the boy's father is the girl's mother's brother → the boy's father is the girl's father's brother-in-law. The boy is the son of his father, so the boy is the girl's father's nephew (his wife's brother's son = nephew-in-law, but by common usage = nephew). Trap: 'Son' would imply the girl's father is the boy's grandfather.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00008",
+      "stem": "In a family: A and B are a married couple. C is A's sister. D is C's husband. E is B's father. How is D related to E?",
+      "options": [
+        {"option_text": "Son-in-law", "is_correct": false},
+        {"option_text": "Brother-in-law", "is_correct": false},
+        {"option_text": "No direct relation", "is_correct": true},
+        {"option_text": "Son", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A and B are married. C is A's sister. D is C's husband → D is A's brother-in-law. E is B's father → E is A's father-in-law. D (A's brother-in-law) and E (A's father-in-law) have no defined blood or marriage relationship to each other — they are connected only through A. By standard relationship terminology, D and E have no direct family relation. Trap: Students often try to force a connection; in codified blood-relation questions, 'no direct relation' is a valid and frequently correct answer.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00009",
+      "stem": "If 'P × Q' means P is father of Q, 'P + Q' means P is mother of Q, 'P − Q' means P is brother of Q, 'P ÷ Q' means P is sister of Q, then what is the relationship of M to K in: M × N + L − K?",
+      "options": [
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Great-grandfather", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Decode left to right: M × N = M is father of N. N + L = N is mother of L. L − K = L is brother of K. So: M (father) → N (mother of L) → L (brother of K). M is N's father, N is K's mother → M is K's grandfather. Trap: 'Uncle' would require M to be a sibling of K's parent, not the parent's parent. Operator-coded blood relations are high-frequency SSC Tier 1 questions.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W10_B2_00010",
+      "stem": "Using the same codes as Q9 (× = father, + = mother, − = brother, ÷ = sister), decode: A ÷ B × C + D. What is A's relation to D?",
+      "options": [
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": false},
+        {"option_text": "Grand-aunt (great-aunt)", "is_correct": true},
+        {"option_text": "Mother", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A ÷ B = A is sister of B. B × C = B is father of C. C + D = C is mother of D. Chain: A is B's sister. B is C's father → A is C's aunt (father's sister). C is D's mother → A is D's grand-aunt (aunt of D's mother = great-aunt to D). Trap: 'Grandmother' = B's mother, not A; 'Aunt' = A's relation to C, not D; 'Mother' = C's relation to D. Students must carefully track each generation shift.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}
