@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_BLOOD_RELATIONS_W11_B1",
+  "subject": "Reasoning",
+  "topic": "Blood Relations — Family Tree and Coded Relation Puzzles (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00001",
+      "stem": "A is the brother of B. B is the sister of C. C is the son of D. How is A related to D?",
+      "options": [
+        {"option_text": "Son", "is_correct": true},
+        {"option_text": "Daughter", "is_correct": false},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. A is the brother of B → A is male. B is the sister of C → B and C are siblings; B is female. C is the son of D → C is male and D's child. Since A is B's brother and B is C's sister, A, B, and C are siblings. C is D's son → all three are D's children. A is D's Son. Trap: Nephew = wrong generation — A is D's child, not the child of D's sibling.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00002",
+      "stem": "Pointing to a photograph, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man in the photograph?",
+      "options": [
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": false},
+        {"option_text": "Mother", "is_correct": true},
+        {"option_text": "Sister", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 'His mother is the only daughter of my mother.' The only daughter of the woman's mother = the woman herself. So 'his mother' = the woman. The woman is the Mother of the man. Trap: Grandmother = confuses two generations; Aunt = would apply if the woman's sister were his mother.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00003",
+      "stem": "If P × Q means 'P is the father of Q', P + Q means 'P is the mother of Q', and P ÷ Q means 'P is the sister of Q', what is the relation of P to R in the expression: P × Q + R?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Brother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. P × Q = P is the father of Q (Q is P's child). Q + R = Q is the mother of R (R is Q's child). Chaining: P is the father of Q; Q is the mother of R. Therefore P is the father of R's mother = P is R's grandfather. P → Q (parent) → R (grandchild). Trap: Father = one generation difference (here it's two generations); Uncle = P would need to be a sibling of R's parent.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00004",
+      "stem": "Introducing a man, a woman said, 'He is the only son of my father's only son.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Aunt", "is_correct": true},
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 'My father's only son' = the woman's brother (since her father has only one son). 'He is the only son of my father's only son' = He is the son of the woman's brother = He is her nephew. The woman is His Aunt. Trap: Mother = would apply if the woman herself were his parent; Sister = would make them the same generation as siblings.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00005",
+      "stem": "A man said to a woman, 'Your mother's husband's sister is my aunt.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Daughter", "is_correct": false},
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Mother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 'Your mother's husband' = the woman's father. 'Your mother's husband's sister' = the woman's father's sister = the woman's paternal aunt. The man says 'is my aunt'. So the woman's paternal aunt is also the man's aunt. They share the same paternal aunt → they share the same father. The woman and the man are siblings. The woman is the man's Sister. Trap: Niece = would require a generation difference.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00006",
+      "stem": "P is the father of Q. Q is the sister of R. S is the husband of R. T is the son of S. How is P related to T?",
+      "options": [
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Great-grandfather", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. P is the father of Q. Q is the sister of R → P is also R's father (Q and R are siblings). R married S. T is the son of S and R. T is P's grandchild (through R). P is the Grandfather of T. Trap: Uncle = P would be T's uncle if P and R were siblings (but P is R's parent); Great-grandfather = one generation too many.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00007",
+      "stem": "Looking at the portrait of a man, Asha said, 'He is the son of my father's only son.' The man in the portrait is Asha's:",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Nephew", "is_correct": true},
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Brother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 'My father's only son' = Asha's brother (Asha's father has only one son). 'He is the son of Asha's brother' = Asha's nephew. The portrait shows Asha's Nephew. Trap: Son = Asha's own son would require 'the son of myself/me' (she can't be her own brother); Brother = is her father's son but not the son OF her brother.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00008",
+      "stem": "A and B are brothers. C and D are sisters. A's son is D's brother. How is B related to C?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": true},
+        {"option_text": "Grandfather", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A and B are brothers. C and D are sisters. A's son is D's brother → A's son and D are siblings → A is their parent → A is the father of D (and C, since C and D are sisters). So A is the father of C. B is the brother of A. Therefore B is the uncle of C (brother of C's father). Trap: Father = A is C's father, not B; Brother = different generations here.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00009",
+      "stem": "Ram said to Shyam, 'Your father's father is my father's son.' Assuming Ram has no brother, how is Ram related to Shyam?",
+      "options": [
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Great-grandfather", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. 'My father's son' (Ram speaking) = Ram himself (since Ram has no brother). So 'Shyam's father's father = Ram'. Shyam's father's father = Shyam's grandfather (paternal). Therefore Shyam's grandfather = Ram. Ram is Shyam's Grandfather. Trap: Father = Ram would need to be Shyam's father's father's son — one generation difference, not two; Uncle = lateral, not vertical lineage.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_W11_B1_00010",
+      "stem": "Neha's father has only one son. That son has one daughter. How many granddaughters does Neha's grandfather have (counting only through Neha's father's family)?",
+      "options": [
+        {"option_text": "One", "is_correct": false},
+        {"option_text": "Two", "is_correct": true},
+        {"option_text": "Three", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Neha's father has one son = Neha's brother. Neha's brother has one daughter = Neha's niece. Neha's grandfather's granddaughters (through Neha's father): (1) Neha herself — she is the daughter of Neha's father (who is Neha's grandfather's son); (2) Neha's niece — she is the daughter of Neha's brother (who is Neha's grandfather's grandson). Total = 2 granddaughters. Trap: One = counts only Neha and ignores her niece; Three = overcounts; Cannot be determined = all necessary information is provided.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

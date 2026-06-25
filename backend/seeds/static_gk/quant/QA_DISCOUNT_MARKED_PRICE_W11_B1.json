@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_DISCOUNT_MARKED_PRICE_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Discount and Marked Price — Successive Discounts, Profit + Discount (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00001",
+      "stem": "A book is marked at ₹500 and sold at a discount of 20%. What is the selling price?",
+      "options": [
+        {"option_text": "₹350", "is_correct": false},
+        {"option_text": "₹380", "is_correct": false},
+        {"option_text": "₹400", "is_correct": true},
+        {"option_text": "₹420", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. SP = MP × (1 − discount%/100) = 500 × (1 − 20/100) = 500 × 0.8 = ₹400. Trap: ₹350 = 500 × 0.7 (30% discount); ₹420 = 500 × 0.84 (16% discount); ₹380 = wrong computation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00002",
+      "stem": "An item is marked at ₹800 and sold for ₹680. What is the discount percentage?",
+      "options": [
+        {"option_text": "12%", "is_correct": false},
+        {"option_text": "15%", "is_correct": true},
+        {"option_text": "18%", "is_correct": false},
+        {"option_text": "20%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Discount = 800 − 680 = ₹120. Discount% = (120/800)×100 = 15%. Trap: 12% → discount = ₹96, SP = ₹704 ≠ 680; 20% → SP = ₹640 ≠ 680.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00003",
+      "stem": "A shopkeeper marks his goods 25% above cost price and then gives a discount of 10%. What is his profit percentage?",
+      "options": [
+        {"option_text": "10%", "is_correct": false},
+        {"option_text": "12.5%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "17.5%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let CP = 100. MP = 125. SP = 125×0.9 = 112.5. Profit% = (112.5−100)/100 × 100 = 12.5%. Shortcut: profit% = (1+m/100)(1−d/100)−1 = 1.25×0.9−1 = 1.125−1 = 12.5%. Trap: 15% = MP%−discount% (wrong subtraction); 10% = just the discount (ignores markup).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00004",
+      "stem": "A product with a marked price of ₹1,000 is sold after two successive discounts of 20% and 10%. What is the final selling price?",
+      "options": [
+        {"option_text": "₹700", "is_correct": false},
+        {"option_text": "₹720", "is_correct": true},
+        {"option_text": "₹730", "is_correct": false},
+        {"option_text": "₹750", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. After first 20% discount: 1000×0.8 = ₹800. After second 10% discount: 800×0.9 = ₹720. Net equivalent single discount = 20+10−(20×10)/100 = 28%. SP = 1000×0.72 = ₹720 ✓. Trap: ₹700 = 1000×(1−30%) (adds discounts simply: 20+10=30); ₹750 = 1000×0.75 (25% discount — midpoint).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00005",
+      "stem": "A trader marks goods 40% above cost price and offers a 25% discount. Find the profit or loss percentage.",
+      "options": [
+        {"option_text": "5% loss", "is_correct": false},
+        {"option_text": "No profit, no loss", "is_correct": false},
+        {"option_text": "5% profit", "is_correct": true},
+        {"option_text": "10% profit", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let CP = 100. MP = 140. SP = 140×0.75 = 105. Profit% = 5%. Shortcut: profit% = (1+40/100)(1−25/100)−1 = 1.40×0.75−1 = 1.05−1 = 0.05 = 5%. Trap: 0% = thinking 40% markup and 25% discount cancel (they don't — markups and discounts have different bases); 10% = adding 40−25−5 wrong.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00006",
+      "stem": "What single discount is equivalent to two successive discounts of 30% and 20%?",
+      "options": [
+        {"option_text": "42%", "is_correct": false},
+        {"option_text": "44%", "is_correct": true},
+        {"option_text": "46%", "is_correct": false},
+        {"option_text": "50%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Equivalent single discount = x+y−xy/100 = 30+20−(30×20)/100 = 50−6 = 44%. Verify: MP = 100. After 30%: SP₁ = 70. After 20%: SP₂ = 70×0.8 = 56. Single discount = 100−56 = 44% ✓. Trap: 50% = simple sum of 30+20; 42% = 30+20−8 (wrong product term); 46% = 30+20−4 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00007",
+      "stem": "An article with a marked price of ₹1,200 is sold after two equal successive discounts. If the final selling price is ₹768, what is the rate of each discount?",
+      "options": [
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "18%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. SP = MP×(1−d/100)² → 768 = 1200×(1−d/100)². (1−d/100)² = 768/1200 = 0.64. (1−d/100) = √0.64 = 0.8. d/100 = 0.2. d = 20%. Verify: 1200×0.8×0.8 = 1200×0.64 = 768 ✓. Trap: 25% → 1200×0.75² = 1200×0.5625 = 675 ≠ 768; 15% → 1200×0.85² = 867 ≠ 768.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00008",
+      "stem": "A shopkeeper earns a profit of 12% after selling an article at a 20% discount on the marked price. What is the ratio of the cost price to the marked price?",
+      "options": [
+        {"option_text": "4:5", "is_correct": false},
+        {"option_text": "5:7", "is_correct": true},
+        {"option_text": "7:10", "is_correct": false},
+        {"option_text": "3:4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. SP = MP×0.8 and SP = CP×1.12. So CP×1.12 = MP×0.8 → CP/MP = 0.8/1.12 = 80/112 = 5/7. CP:MP = 5:7. Trap: 4:5 = 0.8/1 (ignores profit factor); 7:10 = wrong ratio; 3:4 = another incorrect ratio.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00009",
+      "stem": "A television is sold at a profit of 15% after giving a discount of 8% on the marked price. By what percentage is the marked price above the cost price?",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "23%", "is_correct": false},
+        {"option_text": "25%", "is_correct": true},
+        {"option_text": "27%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. SP = MP×0.92 = CP×1.15. MP = CP×(1.15/0.92) = CP×1.25. So MP is 25% above CP. Verify: if CP=100, MP=125, SP=125×0.92=115=CP×1.15 ✓. Trap: 23% = 15+8 (adds the rates); 20% = some wrong computation; 27% = another wrong combination.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W11_B1_00010",
+      "stem": "Two articles are sold at the same selling price of ₹600 each. One is sold at a profit of 20% and the other at a loss of 20%. What is the overall result?",
+      "options": [
+        {"option_text": "No overall gain or loss", "is_correct": false},
+        {"option_text": "Loss of 2%", "is_correct": false},
+        {"option_text": "Loss of 4%", "is_correct": true},
+        {"option_text": "Gain of 4%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. CP₁ = 600/1.20 = ₹500. CP₂ = 600/0.80 = ₹750. Total CP = 1250. Total SP = 1200. Loss = 50. Loss% = 50/1250 × 100 = 4%. Formula: when the same SP is charged, one at x% profit and one at x% loss, overall loss% = x²/100 = 20²/100 = 4%. Trap: 0% = assumes gains and losses cancel equally (they don't because CPs are different); Gain of 4% = wrong sign.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

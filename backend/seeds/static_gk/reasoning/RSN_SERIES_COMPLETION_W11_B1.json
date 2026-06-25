@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SERIES_COMPLETION_W11_B1",
+  "subject": "Reasoning",
+  "topic": "Series Completion — Number Series and Letter Series (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00001",
+      "stem": "Find the missing term: 2, 6, 18, 54, ?",
+      "options": [
+        {"option_text": "108", "is_correct": false},
+        {"option_text": "162", "is_correct": true},
+        {"option_text": "216", "is_correct": false},
+        {"option_text": "270", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Pattern: each term is multiplied by 3. 2×3=6, 6×3=18, 18×3=54, 54×3=162. This is a geometric progression with common ratio 3. Trap: 108 = 54×2 (wrong ratio); 216 = 54×4 (wrong ratio); 270 = 54×5 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00002",
+      "stem": "Find the missing term: 1, 4, 9, 16, 25, ?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "34", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "49", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Pattern: 1²=1, 2²=4, 3²=9, 4²=16, 5²=25, 6²=36. Series of perfect squares. Next = 6² = 36. Trap: 30 = 25+5 (adds 5, wrong — differences are 3,5,7,9,11,...); 34 = 25+9 (wrong); 49 = 7² (skips 6²=36).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00003",
+      "stem": "Find the missing term: 3, 8, 15, 24, 35, ?",
+      "options": [
+        {"option_text": "42", "is_correct": false},
+        {"option_text": "46", "is_correct": false},
+        {"option_text": "48", "is_correct": true},
+        {"option_text": "50", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Differences: 8−3=5, 15−8=7, 24−15=9, 35−24=11. Second-level differences are constant: 2. The differences increase by 2 each time. Next difference = 11+2 = 13. Next term = 35+13 = 48. Pattern: n²−1: 2²−1=3, 3²−1=8, 4²−1=15, 5²−1=24, 6²−1=35, 7²−1=48. Trap: 42 = 35+7 (adds the wrong difference); 46 = 35+11 (repeats the previous difference).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00004",
+      "stem": "Find the missing term: 2, 3, 5, 8, 13, 21, ?",
+      "options": [
+        {"option_text": "29", "is_correct": false},
+        {"option_text": "31", "is_correct": false},
+        {"option_text": "34", "is_correct": true},
+        {"option_text": "38", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. This is the Fibonacci sequence: each term = sum of the previous two. 2+3=5, 3+5=8, 5+8=13, 8+13=21, 13+21=34. Next term = 34. Trap: 29 = 21+8 (adds wrong previous pair); 31 = 21+10 (arbitrary); 38 = 21+17 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00005",
+      "stem": "Find the missing term in the letter series: B, E, H, K, ?",
+      "options": [
+        {"option_text": "L", "is_correct": false},
+        {"option_text": "M", "is_correct": false},
+        {"option_text": "N", "is_correct": true},
+        {"option_text": "O", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. B(2), E(5), H(8), K(11), ?(14). Each letter advances by 3 positions in the alphabet. 14th letter = N. B+3=E, E+3=H, H+3=K, K+3=N. Trap: M = K+2 (gap of 2); O = K+4 (gap of 4); L = K+1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00006",
+      "stem": "Find the odd one out in the number series: 2, 5, 10, 17, 26, 36, 50",
+      "options": [
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "17", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Pattern: 1²+1=2, 2²+1=5, 3²+1=10, 4²+1=17, 5²+1=26, 6²+1=37 (not 36!), 7²+1=50. The term after 26 should be 37, not 36. So 36 is the odd one out; it should be 37. Trap: 50 = 7²+1 = 50 ✓ (correct term); 26 = 5²+1 = 26 ✓ (correct term); 17 = 4²+1 = 17 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00007",
+      "stem": "Find the missing term: 1, 2, 6, 24, 120, ?",
+      "options": [
+        {"option_text": "360", "is_correct": false},
+        {"option_text": "480", "is_correct": false},
+        {"option_text": "600", "is_correct": false},
+        {"option_text": "720", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Pattern: 1!=1, 2!=2, 3!=6, 4!=24, 5!=120, 6!=720. This is the factorial sequence. Alternatively: each term multiplied by its position number: 1×2=2, 2×3=6, 6×4=24, 24×5=120, 120×6=720. Trap: 360 = 120×3; 480 = 120×4; 600 = 120×5. The correct multiplier is 6.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00008",
+      "stem": "Find the missing term in the series: AZ, BY, CX, DW, ?",
+      "options": [
+        {"option_text": "EV", "is_correct": true},
+        {"option_text": "EU", "is_correct": false},
+        {"option_text": "FV", "is_correct": false},
+        {"option_text": "FU", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Two interleaved sequences: First letters go forward: A, B, C, D, E. Second letters go backward: Z, Y, X, W, V. Pattern: position n → (nth letter from A, nth letter from Z backwards). Next pair = E(5th from A) + V(5th from Z) = EV. Trap: EU = uses U (6th from Z) for the second letter; FV = advances the first letter one too many steps.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00009",
+      "stem": "Find the missing term: 100, 96, 89, 79, 66, ?",
+      "options": [
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "50", "is_correct": true},
+        {"option_text": "52", "is_correct": false},
+        {"option_text": "55", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Differences: 100−96=4, 96−89=7, 89−79=10, 79−66=13. The differences increase by 3 each time: 4, 7, 10, 13, 16. Next difference = 13+3 = 16. Next term = 66−16 = 50. Trap: 48 = 66−18 (wrong difference of 18); 52 = 66−14 (repeats 13 roughly); 55 = 66−11 (decreasing difference, wrong direction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_W11_B1_00010",
+      "stem": "Find the missing term: 4, 7, 12, 19, 28, ?",
+      "options": [
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "37", "is_correct": false},
+        {"option_text": "39", "is_correct": true},
+        {"option_text": "41", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Differences: 7−4=3, 12−7=5, 19−12=7, 28−19=9. Differences increase by 2 each time: 3, 5, 7, 9, 11. Next difference = 9+2 = 11. Next term = 28+11 = 39. Pattern: n²+3: 1²+3=4, 2²+3=7, 3²+3=12, 4²+3=19, 5²+3=28, 6²+3=39. Trap: 36 = 28+8 (wrong); 37 = 28+9 (repeats the previous difference); 41 = 28+13 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

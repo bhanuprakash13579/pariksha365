@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_TIME_WORK_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Time and Work — Classic Problems, Efficiency and Pipes (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00001",
+      "stem": "A can complete a task in 10 days and B can complete the same task in 15 days. If they work together, in how many days will the task be done?",
+      "options": [
+        {"option_text": "4 days", "is_correct": false},
+        {"option_text": "5 days", "is_correct": false},
+        {"option_text": "6 days", "is_correct": true},
+        {"option_text": "8 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Combined rate = 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6. Days = 6. Shortcut: (a×b)/(a+b) = (10×15)/(10+15) = 150/25 = 6. Trap: 5 = 10/2 (simple average); 4 = 10+15/(some wrong denominator).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00002",
+      "stem": "A and B together complete a work in 8 days. A alone takes 12 days. How many days will B alone take?",
+      "options": [
+        {"option_text": "16 days", "is_correct": false},
+        {"option_text": "20 days", "is_correct": false},
+        {"option_text": "24 days", "is_correct": true},
+        {"option_text": "28 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 1/B = 1/8 − 1/12 = 3/24 − 2/24 = 1/24. B = 24 days. Verify: 1/12+1/24 = 2/24+1/24 = 3/24 = 1/8 ✓. Trap: 20 = 12+8 (wrong sum); 16 = 2×8 (doubles the combined time).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00003",
+      "stem": "A, B, and C can complete a job in 4, 6, and 12 days respectively. If they all work together, how many days to finish the job?",
+      "options": [
+        {"option_text": "1 day", "is_correct": false},
+        {"option_text": "2 days", "is_correct": true},
+        {"option_text": "3 days", "is_correct": false},
+        {"option_text": "4 days", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Combined = 1/4+1/6+1/12 = 3/12+2/12+1/12 = 6/12 = 1/2. Days = 2. Trap: 3 = LCM/(4+6+12+...) type error; 1 = minimum individual time (A's time); 4 = A's time alone (ignores B and C).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00004",
+      "stem": "A is 3 times as efficient as B. Together they complete a job in 6 days. How many days would B alone take?",
+      "options": [
+        {"option_text": "18 days", "is_correct": false},
+        {"option_text": "20 days", "is_correct": false},
+        {"option_text": "24 days", "is_correct": true},
+        {"option_text": "30 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A's rate = 3B's rate. Combined rate = 3r+r = 4r = 1/6 → r = 1/24. B takes 24 days. Verify: A takes 8 days (1/(3r)), B takes 24 days. Together: 1/8+1/24 = 3/24+1/24 = 4/24 = 1/6 ✓. Trap: 18 = 3×6 (multiplies instead of working with rates); 30 = 5×6 (wrong ratio).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00005",
+      "stem": "8 men can complete a work in 15 days. In how many days can 12 men complete the same work?",
+      "options": [
+        {"option_text": "8 days", "is_correct": false},
+        {"option_text": "10 days", "is_correct": true},
+        {"option_text": "12 days", "is_correct": false},
+        {"option_text": "18 days", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Men × Days = constant (same work). 8×15 = 12×D → D = 120/12 = 10 days. Verify: 12×10 = 120 = 8×15 ✓. Trap: 18 = 15+3 (adds 3, one per extra man — wrong); 12 = 15−3 (wrong arithmetic); more men = fewer days, so answer must be < 15.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00006",
+      "stem": "A can complete ⅓ of a piece of work in 5 days. In how many days can he complete ⅗ of the work?",
+      "options": [
+        {"option_text": "6 days", "is_correct": false},
+        {"option_text": "7 days", "is_correct": false},
+        {"option_text": "9 days", "is_correct": true},
+        {"option_text": "12 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A completes ⅓ work in 5 days → full work in 15 days. ⅗ of work = (3/5)×15 = 9 days. Trap: 6 = (3/5)×10 (wrong total time); 12 = (4/5)×15 (wrong fraction); 7 ≠ any clean value here.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00007",
+      "stem": "A and B work together for 4 days, after which B leaves. A finishes the remaining work in 4 more days. If B alone would take 20 days, how long does A take alone?",
+      "options": [
+        {"option_text": "8 days", "is_correct": false},
+        {"option_text": "9 days", "is_correct": false},
+        {"option_text": "10 days", "is_correct": true},
+        {"option_text": "12 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let A take 'a' days. Work by both together (4 days) + A alone (4 days) = 1. 4(1/a+1/20) + 4/a = 1 → 4/a + 1/5 + 4/a = 1 → 8/a = 4/5 → a = 10 days. Verify: Together 4 days: 4(1/10+1/20) = 4×3/20 = 3/5. A alone 4 days: 4/10 = 2/5. Total = 3/5+2/5 = 1 ✓. Trap: 12 = 3a/5−something (algebra error); 8 = half of B's 20 days (wrong pattern).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00008",
+      "stem": "Two pipes fill a tank in 12 minutes and 15 minutes respectively. A drain pipe empties it in 20 minutes. If all three are open together, in how many minutes is the tank full?",
+      "options": [
+        {"option_text": "8 minutes", "is_correct": false},
+        {"option_text": "10 minutes", "is_correct": true},
+        {"option_text": "12 minutes", "is_correct": false},
+        {"option_text": "15 minutes", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Net rate = 1/12+1/15−1/20 = 5/60+4/60−3/60 = 6/60 = 1/10. Tank fills in 10 minutes. Trap: 12 = first pipe alone (ignores others); 8 = 1/(1/12+1/15) = combined fill rate ignoring drain; 15 = second pipe alone.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00009",
+      "stem": "15 men complete a job in 8 days. After 4 days of work, 5 men leave. In how many total days is the job completed?",
+      "options": [
+        {"option_text": "8 days", "is_correct": false},
+        {"option_text": "9 days", "is_correct": false},
+        {"option_text": "10 days", "is_correct": true},
+        {"option_text": "12 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Total work = 15×8 = 120 man-days. First 4 days: 15×4 = 60 man-days done. Remaining = 60 man-days. Remaining men = 15−5 = 10. Days to finish = 60/10 = 6 more days. Total = 4+6 = 10 days. Trap: 9 = 4+5 (adds 5 men instead of computing properly); 12 = 120/10 (doesn't account for first 4 days already done).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_WORK_W11_B1_00010",
+      "stem": "A alone can finish a work in 12 days and B alone in 20 days. They work together for some days, then A leaves and B finishes the remaining work in 4 days. For how many days did they work together?",
+      "options": [
+        {"option_text": "4 days", "is_correct": false},
+        {"option_text": "5 days", "is_correct": false},
+        {"option_text": "6 days", "is_correct": true},
+        {"option_text": "8 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let together-days = d. d(1/12+1/20) + 4/20 = 1. d(5/60+3/60) + 1/5 = 1. d×(8/60) = 4/5. d = (4/5)×(60/8) = 240/40 = 6. Verify: 6(1/12+1/20)+4/20 = 6×8/60+1/5 = 48/60+12/60 = 60/60 = 1 ✓. Trap: 5 = 1/5÷(8/60) with wrong initial fraction; 4 = same as B's remaining days (coincidence, wrong approach).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

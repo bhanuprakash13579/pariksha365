@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_MATHEMATICAL_OPERATIONS_W11_B1",
+  "subject": "Reasoning",
+  "topic": "Mathematical Operations — Symbol Substitution (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00001",
+      "stem": "If A means '+', B means '−', C means '×', D means '÷', find:\n16 D 4 C 3 A 2 B 1 = ?",
+      "options": [
+        {"option_text": "11", "is_correct": false},
+        {"option_text": "13", "is_correct": true},
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "17", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A=+, B=−, C=×, D=÷. Replace: 16÷4×3+2−1. BODMAS (left to right for × and ÷): 16÷4=4; 4×3=12; then: 12+2−1=13. Answer=13. Trap: 15=12+3 (wrong: +2−1=+1, not +3); 11=12−1 (skips +2); 17=12+5 (adds wrongly).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00002",
+      "stem": "If '+' means '÷', '−' means '×', '×' means '+', '÷' means '−', find:\n4 + 2 − 3 × 4 ÷ 2 = ?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. '+'→'÷', '−'→'×', '×'→'+', '÷'→'−'. Replace: 4÷2 × 3 + 4 − 2. BODMAS: 4÷2=2; 2×3=6; 6+4=10; 10−2=8. Answer=8. Verify step-by-step: 4÷2=2 ✓; 2×3=6 ✓; 6+4=10 ✓; 10−2=8 ✓. Trap: 6=2×3 (stops after multiplication); 9=2×3+4−1 (wrong final term).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00003",
+      "stem": "Which equation becomes correct when '+' is replaced by '÷' throughout?",
+      "options": [
+        {"option_text": "4 + 2 = 6", "is_correct": false},
+        {"option_text": "12 + 4 = 3", "is_correct": true},
+        {"option_text": "9 + 3 = 12", "is_correct": false},
+        {"option_text": "20 + 5 = 25", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Replace '+' with '÷' in each option: A) 4÷2=2≠6 FALSE; B) 12÷4=3 ✓ TRUE; C) 9÷3=3≠12 FALSE; D) 20÷5=4≠25 FALSE. Option B is the only equation that becomes TRUE after replacing '+' with '÷'. Original B was false (12+4=16≠3), but B becomes true after the replacement.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00004",
+      "stem": "If '@' means '÷', '#' means '+', '!' means '−', and '*' means '×', find:\n30 @ 5 * 4 # 6 ! 2 = ?",
+      "options": [
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "28", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. @=÷, #=+, !=−, *=×. Replace: 30÷5×4+6−2. BODMAS: 30÷5=6; 6×4=24; 24+6=30; 30−2=28. Answer=28. Verify: 30÷5=6 ✓, 6×4=24 ✓, 24+6=30 ✓, 30−2=28 ✓. Trap: 24=stops after multiplication; 26=30−2−2 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00005",
+      "stem": "If P means '+', Q means '−', R means '×', S means '÷', find:\n9 P 6 S 3 R 2 Q 4 = ?",
+      "options": [
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": true},
+        {"option_text": "11", "is_correct": false},
+        {"option_text": "13", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. P=+, Q=−, R=×, S=÷. Replace: 9+6÷3×2−4. BODMAS: 6÷3=2; 2×2=4; then: 9+4−4=9. Answer=9. Step-by-step: 6÷3=2; 2×2=4; 9+4=13; 13−4=9 ✓. Trap: 7=9+4−6 (wrong order); 11=9+4−2 (forgets to subtract 4); 13=9+4 (forgets −4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00006",
+      "stem": "Which of the following equations will become correct when '+' and '×' are interchanged?",
+      "options": [
+        {"option_text": "5 + 2 × 3 = 21", "is_correct": false},
+        {"option_text": "4 + 3 × 2 = 14", "is_correct": true},
+        {"option_text": "7 + 2 × 3 = 20", "is_correct": false},
+        {"option_text": "2 + 5 × 3 = 21", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. After swapping '+' and '×', check each option: A) 5+2×3=11≠21 (orig FALSE); after swap: 5×2+3=13≠21 FALSE. B) 4+3×2=4+6=10≠14 (orig FALSE); after swap: 4×3+2=12+2=14 ✓ TRUE → B becomes correct! C) 7+2×3=13≠20 (orig FALSE); after swap: 7×2+3=17≠20 FALSE. D) 2+5×3=17≠21 (orig FALSE); after swap: 2×5+3=13≠21 FALSE. Only option B becomes TRUE after the interchange.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00007",
+      "stem": "If A means '+', B means '−', C means '×', D means '÷', then:\n(5 A 3) C (10 D 2) B 4 = ?",
+      "options": [
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "38", "is_correct": false},
+        {"option_text": "40", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A=+, B=−, C=×, D=÷. Replace: (5+3) × (10÷2) − 4. Evaluate brackets first: (5+3)=8; (10÷2)=5. Then: 8×5−4 = 40−4 = 36. Answer=36 ✓. Trap: 40 = 8×5 (forgets −4); 32 = 8×4 (uses 4 instead of 5 from the bracket); 38 = 40−2 (subtracts 2 instead of 4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00008",
+      "stem": "If M means '+', N means '−', O means '×', P means '÷', find:\n45 P 9 O 2 M 6 N 3 = ?",
+      "options": [
+        {"option_text": "11", "is_correct": false},
+        {"option_text": "13", "is_correct": true},
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "17", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. M=+, N=−, O=×, P=÷. Replace: 45÷9×2+6−3. BODMAS: 45÷9=5; 5×2=10; 10+6=16; 16−3=13. Answer=13 ✓. Trap: 15=5×3 (confuses 5×2 with 5×3); 11=5×2−1+6=wrong order; 17=5×2+8−1=wrong arithmetic.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00009",
+      "stem": "If A means '×', B means '÷', C means '+', D means '−', find:\n8 A 3 B 4 C 5 D 2 = ?",
+      "options": [
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": true},
+        {"option_text": "11", "is_correct": false},
+        {"option_text": "13", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A=×, B=÷, C=+, D=−. Replace: 8×3÷4+5−2. BODMAS: 8×3=24; 24÷4=6; 6+5=11; 11−2=9. Answer=9 ✓. Trap: 7=6+3−2 (wrong: adds wrong number after division); 11=6+5 (forgets −2); 13=6+5+2 (adds instead of subtracts).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATHEMATICAL_OPERATIONS_W11_B1_00010",
+      "stem": "If 'M' means '+', 'N' means '×', 'O' means '÷', and 'P' means '−', find:\n100 O 10 N 3 P 5 M 2 = ?",
+      "options": [
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "27", "is_correct": true},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "32", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. M=+, N=×, O=÷, P=−. Replace: 100÷10×3−5+2. BODMAS (left to right for × and ÷): 100÷10=10; 10×3=30; then: 30−5=25; 25+2=27. Answer=27 ✓. Trap: 25=stops after subtraction (forgets +2); 30=stops after multiplication (forgets −5+2); 32=30+2 (forgets −5).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

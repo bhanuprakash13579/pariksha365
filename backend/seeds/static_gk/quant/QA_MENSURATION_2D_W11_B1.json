@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_MENSURATION_2D_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mensuration 2D — Area and Perimeter of Plane Figures (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00001",
+      "stem": "The perimeter of a rectangle is 56 cm. If its length is 4 cm more than its breadth, what is the area of the rectangle?",
+      "options": [
+        {"option_text": "160 cm²", "is_correct": false},
+        {"option_text": "180 cm²", "is_correct": false},
+        {"option_text": "192 cm²", "is_correct": true},
+        {"option_text": "200 cm²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Perimeter = 2(l+b) = 56 → l+b = 28. Let breadth = b, then length = b+4. So b + (b+4) = 28 → 2b = 24 → b = 12, l = 16. Area = 16×12 = 192 cm². Trap: 180 = 12×15 (wrong length from arithmetic error); 160 = 10×16; 200 = 20×10 (ignores the constraint l = b+4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00002",
+      "stem": "The area of a square is 196 cm². What is the perimeter of the square?",
+      "options": [
+        {"option_text": "48 cm", "is_correct": false},
+        {"option_text": "52 cm", "is_correct": false},
+        {"option_text": "56 cm", "is_correct": true},
+        {"option_text": "64 cm", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Side = √196 = 14 cm. Perimeter = 4×14 = 56 cm. Verify: 14² = 196 ✓. Trap: 48 = 4×12 (wrong side); 64 = 4×16; 52 = 4×13.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00003",
+      "stem": "The circumference of a circle is 44 cm. What is the area of the circle? (Use π = 22/7)",
+      "options": [
+        {"option_text": "77 cm²", "is_correct": false},
+        {"option_text": "121 cm²", "is_correct": false},
+        {"option_text": "154 cm²", "is_correct": true},
+        {"option_text": "176 cm²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Circumference = 2πr = 44 → r = 44/(2×22/7) = 44×7/44 = 7 cm. Area = πr² = (22/7)×49 = 22×7 = 154 cm². Trap: 77 = 154/2 (halved area); 121 = 11² (wrong radius used); 176 = (22/7)×56 (wrong r=4 substitution).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00004",
+      "stem": "The area of a trapezium is 240 cm². Its parallel sides are 18 cm and 22 cm. What is the height of the trapezium?",
+      "options": [
+        {"option_text": "8 cm", "is_correct": false},
+        {"option_text": "10 cm", "is_correct": false},
+        {"option_text": "12 cm", "is_correct": true},
+        {"option_text": "15 cm", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Area = ½×(sum of parallel sides)×height = ½×(18+22)×h = 20h = 240 → h = 12 cm. Trap: 10 = 240/24; 8 = 240/30; 15 = incorrect formula. Verify: ½×40×12 = 240 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00005",
+      "stem": "The length of a rectangle is increased by 20% and its breadth is decreased by 10%. What is the percentage change in its area?",
+      "options": [
+        {"option_text": "8% increase", "is_correct": true},
+        {"option_text": "10% increase", "is_correct": false},
+        {"option_text": "8% decrease", "is_correct": false},
+        {"option_text": "2% increase", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. New area = l×1.2 × b×0.9 = 1.08lb = 8% more. Shortcut: % area change = x+y+xy/100 = 20+(−10)+20×(−10)/100 = 10−2 = +8%. Trap: 10% = 20−10 (misses the product −2% term); 2% = only counts the product term; sign confusion gives 8% decrease.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00006",
+      "stem": "A path of uniform width 2 m is laid around a rectangular garden of length 20 m and breadth 15 m (path is outside the garden). What is the area of the path?",
+      "options": [
+        {"option_text": "136 m²", "is_correct": false},
+        {"option_text": "148 m²", "is_correct": false},
+        {"option_text": "156 m²", "is_correct": true},
+        {"option_text": "164 m²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Outer dimensions = (20+2×2)×(15+2×2) = 24×19 = 456 m². Inner area = 20×15 = 300 m². Path area = 456−300 = 156 m². Alternative shortcut: 2×width×(l+b+2×width) = 2×2×(20+15+4) = 4×39 = 156 ✓. Trap: 140 = 2×(20+15)×2 (misses 4 corner squares); 136 = wrong outer dimensions.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00007",
+      "stem": "The radius of a circle is increased by 50%. By what percentage does its area increase?",
+      "options": [
+        {"option_text": "50%", "is_correct": false},
+        {"option_text": "100%", "is_correct": false},
+        {"option_text": "125%", "is_correct": true},
+        {"option_text": "150%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. New r = 1.5r. New area = π(1.5r)² = 2.25πr². Increase = 1.25πr² = 125% of original. Shortcut: if radius increases by x%, area change = 2x + x²/100 = 2×50 + 2500/100 = 100+25 = 125%. Trap: 50% = linear scaling (area scales as square); 100% = doubling of radius gives ×4 area, but +50% is less than doubling; 150% = wrong proportional reasoning.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00008",
+      "stem": "The diagonals of a rhombus are 24 cm and 10 cm. What is the perimeter of the rhombus?",
+      "options": [
+        {"option_text": "52 cm", "is_correct": true},
+        {"option_text": "60 cm", "is_correct": false},
+        {"option_text": "68 cm", "is_correct": false},
+        {"option_text": "72 cm", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Diagonals of a rhombus bisect each other at 90°. Half-diagonals = 12 and 5. Each side = √(12²+5²) = √(144+25) = √169 = 13 cm (5−12−13 triple). Perimeter = 4×13 = 52 cm. Trap: 68 = 4×17 (uses full diagonals as sides); 60 = perimeter of the rectangle formed by the diagonals (2×(24+10)/2 × ... wrong); 72 = 4×18.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00009",
+      "stem": "A wire of length 176 cm is bent to form a rectangle in which the length is to the breadth in the ratio 5:3. What is the area of the rectangle?",
+      "options": [
+        {"option_text": "1584 cm²", "is_correct": false},
+        {"option_text": "1760 cm²", "is_correct": false},
+        {"option_text": "1815 cm²", "is_correct": true},
+        {"option_text": "1980 cm²", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let length = 5x and breadth = 3x. Perimeter = wire length = 2(5x+3x) = 16x = 176 → x = 11. Length = 55 cm, breadth = 33 cm. Area = 55×33 = 1815 cm². Verify: Perimeter = 2(55+33) = 2×88 = 176 ✓. Trap: 1760 = 55×32 (uses 3x−1 = 32 by arithmetic error); 1584 = 44×36 (wrong ratio applied); 1980 = 55×36 (breadth = 36, wrong x).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_2D_W11_B1_00010",
+      "stem": "The area of an equilateral triangle is 36√3 cm². What is its perimeter?",
+      "options": [
+        {"option_text": "24 cm", "is_correct": false},
+        {"option_text": "30 cm", "is_correct": false},
+        {"option_text": "36 cm", "is_correct": true},
+        {"option_text": "48 cm", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Area of equilateral triangle = (√3/4)×a². Setting equal: (√3/4)×a² = 36√3 → a² = 36×4 = 144 → a = 12 cm. Perimeter = 3×12 = 36 cm. Trap: 24 = 2×12 (uses 2 sides instead of 3); 48 = 4×12 (confuses with square perimeter formula); 30 = 3×10 (wrong side from √100).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

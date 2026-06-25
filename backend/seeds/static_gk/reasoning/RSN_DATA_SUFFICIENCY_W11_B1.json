@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_DATA_SUFFICIENCY_W11_B1",
+  "subject": "Reasoning",
+  "topic": "Data Sufficiency — Two-Statement Logic (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00001",
+      "stem": "Question: What is the value of x?\nStatement I: x + y = 10\nStatement II: x − y = 4\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Both statements together are sufficient\n(D) Neither statement alone nor together is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Statement I alone: x + y = 10 — two unknowns, one equation: insufficient. Statement II alone: x − y = 4 — two unknowns, one equation: insufficient. Both together: Adding the two equations: 2x = 14 → x = 7, y = 3. Unique solution found. Both statements together are sufficient, but neither alone is. Answer = C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00002",
+      "stem": "Question: Is n an even number?\nStatement I: n/2 is an integer\nStatement II: n² is even\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Either statement alone is sufficient\n(D) Both together are sufficient but neither alone is",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: n/2 is an integer → n = 2k for some integer k → n is even. Statement I alone is sufficient. Statement II: n² is even. If n were odd, n² would be odd (odd × odd = odd). So n² even → n must be even. Statement II alone is also sufficient. Either statement alone is sufficient. Answer = C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00003",
+      "stem": "Question: What is the area of the rectangle?\nStatement I: The perimeter of the rectangle is 40 cm\nStatement II: The length is twice the breadth\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Both statements together are sufficient\n(D) Neither statement alone nor together is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: 2(l+b) = 40 → l+b = 20. This gives one equation in two unknowns — many rectangles possible (4×16, 6×14, 8×12...). Not sufficient alone. Statement II: l = 2b. This gives only the ratio, not actual dimensions (b could be anything). Not sufficient alone. Together: l+b=20 and l=2b → 2b+b=20 → b=20/3 (not integer but deterministic): b=20/3, l=40/3. Area = (20/3)(40/3) = 800/9 cm². A unique answer → both together are sufficient. Answer = C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00004",
+      "stem": "Question: Is p a prime number?\nStatement I: p is odd\nStatement II: p has exactly 2 factors\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Both statements together are sufficient\n(D) Neither statement alone nor together is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": true},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Statement I: p is odd. Not sufficient — 9 is odd but not prime; 11 is odd and prime. Statement II: p has exactly 2 factors. By definition, a prime number has exactly 2 factors: 1 and itself. If p has exactly 2 factors, p is prime by definition. Statement II alone is sufficient. Answer = B. Trap: p=1 has only 1 factor (not prime, but doesn't have 'exactly 2 factors'), so the statement correctly identifies primes.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00005",
+      "stem": "Question: Who among A, B, C is the tallest?\nStatement I: A is taller than B\nStatement II: B is taller than C\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Both statements together are sufficient\n(D) Neither statement alone nor together is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Statement I: A > B. We don't know where C fits. Not sufficient. Statement II: B > C. We don't know where A fits. Not sufficient. Together: A > B and B > C → A > B > C → A is the tallest. Both statements together are sufficient. Answer = C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00006",
+      "stem": "Question: What is the average of five numbers?\nStatement I: The sum of the five numbers is 100\nStatement II: Four of the five numbers are 15, 20, 25, and 30\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Both statements together are sufficient\n(D) Neither statement alone nor together is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": true},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Statement I: Sum = 100. Average of 5 numbers = 100/5 = 20. Statement I alone gives the answer directly. Statement II: Four numbers known (15+20+25+30=90), but we don't know the 5th number — the average can't be calculated without it. Statement II alone is NOT sufficient. Answer = A. Short trick: Average = Sum/Count; if sum is given and count is fixed (5), average is immediately determined.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00007",
+      "stem": "Question: What is the value of a² + b²?\nStatement I: a + b = 7\nStatement II: ab = 10\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Both statements together are sufficient\n(D) Neither statement alone nor together is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Key identity: a² + b² = (a+b)² − 2ab. Statement I: a+b = 7. We know (a+b)² = 49 but don't know ab. Not sufficient alone. Statement II: ab = 10. We know 2ab = 20 but don't know (a+b)². Not sufficient alone. Together: a² + b² = (a+b)² − 2ab = 7² − 2×10 = 49 − 20 = 29. Unique answer → both together are sufficient. Answer = C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00008",
+      "stem": "Question: Is the triangle PQR a right-angled triangle?\nStatement I: PQ² + QR² = PR²\nStatement II: Angle Q = 90°\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Either statement alone is sufficient\n(D) Neither statement is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: PQ² + QR² = PR² is the Pythagorean theorem — this directly proves PQR is right-angled at Q. Statement I alone is sufficient. Statement II: Angle Q = 90° directly states one angle is 90° — by definition, the triangle is right-angled. Statement II alone is sufficient. Both individually prove the triangle is right-angled. Answer = C (either alone is sufficient).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00009",
+      "stem": "Question: What is the age of Ravi?\nStatement I: Ravi is 5 years older than Priya\nStatement II: Priya's age is twice that of Sita, and Sita is 10 years old\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Both statements together are sufficient\n(D) Neither statement alone nor together is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: Ravi = Priya + 5. One equation, two unknowns (Ravi, Priya). Not sufficient alone. Statement II: Sita = 10, Priya = 2×Sita = 20. Gives Priya's age but not Ravi's. Not sufficient alone. Together: Priya = 20 (from II) and Ravi = Priya + 5 = 25 (from I+II). Both together are sufficient. Answer = C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DATA_SUFFICIENCY_W11_B1_00010",
+      "stem": "Question: What is the speed of train X?\nStatement I: Train X covers 150 km in 2 hours\nStatement II: Train Y covers 200 km in 4 hours\n\n(A) Statement I alone is sufficient\n(B) Statement II alone is sufficient\n(C) Either statement alone is sufficient\n(D) Neither statement alone nor together is sufficient",
+      "options": [
+        {"option_text": "A", "is_correct": true},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Statement I: Train X covers 150 km in 2 hours → Speed = 150/2 = 75 km/h. Directly answers the question. Statement I alone is sufficient. Statement II: gives Speed of Train Y = 200/4 = 50 km/h, but tells us nothing about Train X. Not sufficient alone and doesn't help even combined (X and Y are different trains with no stated relationship). Answer = A.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

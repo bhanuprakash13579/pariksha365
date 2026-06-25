@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SURDS_INDICES_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Surds and Indices — Laws of Exponents and Irrational Numbers (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00001",
+      "stem": "Simplify: 2³ × 2⁴",
+      "options": [
+        {"option_text": "2⁷", "is_correct": true},
+        {"option_text": "2¹²", "is_correct": false},
+        {"option_text": "4⁷", "is_correct": false},
+        {"option_text": "2⁶", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Law of indices: aᵐ × aⁿ = aᵐ⁺ⁿ. So 2³ × 2⁴ = 2³⁺⁴ = 2⁷. Trap: 2¹² = 2³ × 2⁴ using multiplication of exponents (wrong — that's the power rule, not product rule); 4⁷ = wrong base; 2⁶ = 2³ × 2³ (wrong exponent on second term).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00002",
+      "stem": "If 4ˣ = 64, find x.",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 4ˣ = 64. Express both as powers of 2: (2²)ˣ = 2⁶ → 2²ˣ = 2⁶ → 2x = 6 → x = 3. Verify: 4³ = 64 ✓. Trap: x=2 → 4² = 16 ≠ 64; x=4 → 4⁴ = 256 ≠ 64.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00003",
+      "stem": "Simplify: (3²)³",
+      "options": [
+        {"option_text": "3⁵", "is_correct": false},
+        {"option_text": "3⁶", "is_correct": true},
+        {"option_text": "9⁶", "is_correct": false},
+        {"option_text": "27³", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Power of a power rule: (aᵐ)ⁿ = aᵐⁿ. (3²)³ = 3²ˣ³ = 3⁶. Verify: 3⁶ = 729. Direct: 3² = 9, 9³ = 729 = 3⁶ ✓. Trap: 3⁵ = adds exponents (2+3=5) — wrong (add for multiplication, multiply for power-of-power); 9⁶ = wrong base.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00004",
+      "stem": "What is the value of 2⁻³?",
+      "options": [
+        {"option_text": "-8", "is_correct": false},
+        {"option_text": "1/8", "is_correct": true},
+        {"option_text": "-1/8", "is_correct": false},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Negative exponent rule: a⁻ⁿ = 1/aⁿ. So 2⁻³ = 1/2³ = 1/8. Trap: −8 = confusing negative exponent with negative result (a negative exponent does NOT give a negative value for positive base); −1/8 = partially applies the reciprocal but adds a wrong negative sign; 8 = drops the negative exponent sign entirely.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00005",
+      "stem": "Simplify: √75 − √12",
+      "options": [
+        {"option_text": "√63", "is_correct": false},
+        {"option_text": "3√3", "is_correct": true},
+        {"option_text": "4√3", "is_correct": false},
+        {"option_text": "2√3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. √75 = √(25×3) = 5√3. √12 = √(4×3) = 2√3. √75 − √12 = 5√3 − 2√3 = 3√3. Trap: √63 = √(75−12) (wrong — surds cannot be simplified by subtracting radicands); 4√3 = 5√3+2√3 (added instead of subtracted); 2√3 = 4√3−2√3 (wrong first step).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00006",
+      "stem": "If 3ˣ = 27ʸ, which of the following is true?",
+      "options": [
+        {"option_text": "x = y", "is_correct": false},
+        {"option_text": "x = 3y", "is_correct": true},
+        {"option_text": "y = 3x", "is_correct": false},
+        {"option_text": "x = y/3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 27 = 3³, so 27ʸ = (3³)ʸ = 3³ʸ. Equating bases: 3ˣ = 3³ʸ → x = 3y. Trap: x=y (only true if y=0; ignores the 27=3³ conversion); y=3x (reverses the relationship); x=y/3 (inverts the correct relationship).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00007",
+      "stem": "Rationalise the denominator: 1/(√3 − 1)",
+      "options": [
+        {"option_text": "(√3 + 1)/4", "is_correct": false},
+        {"option_text": "(√3 − 1)/2", "is_correct": false},
+        {"option_text": "(√3 + 1)/2", "is_correct": true},
+        {"option_text": "√3 + 1", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Multiply numerator and denominator by the conjugate (√3 + 1): [1×(√3+1)] / [(√3−1)(√3+1)] = (√3+1)/(3−1) = (√3+1)/2. Denominator: (a−b)(a+b) = a²−b². Here: (√3)²−1² = 3−1 = 2. Result = (√3+1)/2. Trap: (√3+1)/4 = wrong denominator (uses (√3)²−1²=4 — arithmetic error, it's 3−1=2); √3+1 = forgets to divide by the denominator 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00008",
+      "stem": "What is the value of (125)^(2/3)?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "625", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. (125)^(2/3) = (125^(1/3))² = (∛125)² = 5² = 25. Since 5³ = 125, ∛125 = 5. Then 5² = 25. Short trick: aᵐ/ⁿ = (ⁿ√a)ᵐ or equivalently (aᵐ)^(1/n). Here: cube root first, then square. Trap: 5 = only takes cube root, forgets to square; 625 = 125²/3 interpreted as (125²)^(1/3) = 15625^(1/3) ≈ 25 (actually this also gives 25); 50 = wrong arithmetic.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00009",
+      "stem": "Simplify: 5ˣ ÷ 5ˣ⁻²",
+      "options": [
+        {"option_text": "5⁰ = 1", "is_correct": false},
+        {"option_text": "5²  = 25", "is_correct": true},
+        {"option_text": "5²ˣ⁻²", "is_correct": false},
+        {"option_text": "25ˣ", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Division rule: aᵐ ÷ aⁿ = aᵐ⁻ⁿ. 5ˣ ÷ 5ˣ⁻² = 5ˣ⁻⁽ˣ⁻²⁾ = 5ˣ⁻ˣ⁺² = 5² = 25. The x cancels completely. Trap: 5⁰ = subtracts exponents incorrectly as x−(x−2)=0 (wrong sign: x−(x−2) = x−x+2 = 2, not 0); 5²ˣ⁻² = multiplies instead of subtracts the exponents.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SURDS_INDICES_W11_B1_00010",
+      "stem": "If 2ˣ⁺¹ = 8³, find x.",
+      "options": [
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 8 = 2³, so 8³ = (2³)³ = 2⁹. Equation: 2ˣ⁺¹ = 2⁹ → x+1 = 9 → x = 8. Verify: 2⁸⁺¹ = 2⁹ = 512 = 8³ = 512 ✓. Trap: x=7 → 2⁸=256 ≠ 512; x=9 → 2¹⁰=1024 ≠ 512; x=10 → 2¹¹=2048 ≠ 512.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

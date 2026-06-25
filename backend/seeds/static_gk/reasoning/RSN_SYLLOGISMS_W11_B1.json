@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SYLLOGISMS_W11_B1",
+  "subject": "Reasoning",
+  "topic": "Syllogisms — All, Some, No Conclusions (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00001",
+      "stem": "Statements:\n1. All cats are animals.\n2. All animals are living beings.\nConclusions:\nI. All cats are living beings.\nII. Some living beings are cats.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. From All A→B and All B→C: All A→C (universal chain). So: All cats are living beings (I ✓). Since some cats are living beings (cats exist), the reverse 'some living beings are cats' is the converse — valid by particular conversion (II ✓). Key rule: All+All → All. The converse of an All statement gives a Some.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00002",
+      "stem": "Statements:\n1. Some roses are flowers.\n2. All flowers are beautiful.\nConclusions:\nI. Some roses are beautiful.\nII. All beautiful things are flowers.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Some+All chain: Some A are B, All B are C → Some A are C. So: Some roses are flowers AND all flowers are beautiful → Some roses are beautiful (I ✓). Conclusion II reverses 'All flowers are beautiful' to 'All beautiful things are flowers' — this is the invalid converse of a universal affirmative (II ✗). Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00003",
+      "stem": "Statements:\n1. No pen is a pencil.\n2. Some pencils are erasers.\nConclusions:\nI. Some erasers are not pens.\nII. No eraser is a pen.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. No pen = pencil (universal negative). Some pencils = erasers → those specific pencils that are erasers are definitely not pens (since no pencil is a pen). So some erasers (the ones that are pencils) are not pens (I ✓). Conclusion II says ALL erasers are not pens — but we only know some erasers (those overlapping with pencils) are not pens. There may be erasers that are also pens (outside the pencil set). So II is too strong (II ✗). Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00004",
+      "stem": "Statements:\n1. All books are papers.\n2. No paper is a cloth.\nConclusions:\nI. No book is a cloth.\nII. Some papers are books.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. All+No chain: All A are B, No B is C → No A is C. All books are papers AND No paper is cloth → No book is cloth (I ✓). Conclusion II: 'Some papers are books' — this is the converse of 'All books are papers' (All A→B gives Some B→A) (II ✓). Both follow. Trap: students reject II thinking it's not stated directly — but the converse of an 'All' statement always gives a 'Some'.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00005",
+      "stem": "Statements:\n1. Some doctors are engineers.\n2. Some engineers are teachers.\nConclusions:\nI. Some doctors are teachers.\nII. Some teachers are doctors.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Some+Some chain NEVER gives a definite conclusion. The engineers who are doctors and the engineers who are teachers may be completely different engineers — no overlap is certain. Neither I nor II can be concluded. This is the most common trap in SSC syllogisms: two 'Some' statements = no certain conclusion. Trap: Students assume there MUST be some doctors who are teachers because both groups share engineers — but this is not logically guaranteed.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00006",
+      "stem": "Statements:\n1. All mangoes are fruits.\n2. Some fruits are sweet.\n3. All sweet things are liked by children.\nConclusions:\nI. Some mangoes are liked by children.\nII. Some fruits are liked by children.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. From Stmt 2+3: Some fruits are sweet AND All sweet→liked. So: Some fruits are liked by children (II ✓). For I: 'Some mangoes are liked' — we need mangoes to connect to 'liked'. Mangoes→Fruits (Stmt 1), but the sweet fruits may not include mangoes (Stmt 2 says only SOME fruits are sweet). We can't be certain any mango is sweet or liked (I ✗). Only II follows. Trap: students assume mangoes are sweet because they're fruits and some fruits are sweet — but 'some' doesn't guarantee it applies to mangoes specifically.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00007",
+      "stem": "Statements:\n1. No car is a bike.\n2. All bikes are vehicles.\nConclusions:\nI. No car is a vehicle.\nII. Some vehicles are not cars.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. I: No car is a vehicle — WRONG. Cars could be vehicles through some other path not mentioned; 'No car is a bike' only tells us about the car-bike relationship. Conclusion I is too strong (there's no statement saying cars aren't vehicles). II: 'Some vehicles are not cars' — bikes are vehicles (Stmt 2) and no bike is a car (Stmt 1 reversed), so bikes are vehicles that are not cars → some vehicles are not cars (II ✓). Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00008",
+      "stem": "Statements:\n1. All politicians are liars.\n2. All liars are cunning.\nConclusions:\nI. All politicians are cunning.\nII. Some cunning people are politicians.\nIII. Some liars are politicians.",
+      "options": [
+        {"option_text": "I and II follow", "is_correct": false},
+        {"option_text": "I and III follow", "is_correct": false},
+        {"option_text": "II and III follow", "is_correct": false},
+        {"option_text": "I, II and III all follow", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. All politicians→liars + All liars→cunning: All politicians are cunning (I ✓). Converse of I: Some cunning are politicians (II ✓). Converse of Stmt 1: Some liars are politicians (III ✓). All three follow. Rule: 'All A are B' → by conversion: 'Some B are A'. Applied twice: politician→liar (gives some liars are politicians) and politician→cunning (gives some cunning are politicians).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00009",
+      "stem": "Statements:\n1. Some stars are planets.\n2. No planet is a moon.\nConclusions:\nI. Some stars are not moons.\nII. No star is a moon.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Some stars are planets (Stmt 1) + No planet is a moon (Stmt 2) → The stars that are planets are definitely not moons. So some stars (those that are planets) are not moons (I ✓). Conclusion II says 'No star is a moon' — but stars that are NOT planets might still be moons. We can't rule this out from the given statements (II ✗). Only I follows. This Some+No chain gives a Some-Not conclusion (not a universal negative).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISMS_W11_B1_00010",
+      "stem": "Statements:\n1. All A are B.\n2. Some B are C.\n3. No C is D.\nConclusions:\nI. Some A are C.\nII. Some B are not D.\nIII. No A is D.",
+      "options": [
+        {"option_text": "I and II follow", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "II and III follow", "is_correct": false},
+        {"option_text": "All three follow", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. I: 'Some A are C' — All A are B + Some B are C. The B that are C may not include any A. Since only 'some B' are C and 'all A' are B, the overlap of A-with-C is uncertain (I ✗). II: 'Some B are not D' — Some B are C (Stmt 2) + No C is D (Stmt 3) → Those B that are C are not D → Some B are not D (II ✓). III: 'No A is D' — we can only conclude 'some B are not D'; not all B are non-D, and we don't know which B are A, so 'No A is D' is too strong (III ✗). Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

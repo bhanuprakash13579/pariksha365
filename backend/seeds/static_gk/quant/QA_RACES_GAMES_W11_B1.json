@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_RACES_GAMES_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Races and Games of Skill — Head Starts and Beat Margins (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00001",
+      "stem": "In a 100 m race, A beats B by 10 m. What is B's distance when A finishes the race?",
+      "options": [
+        {"option_text": "80 m", "is_correct": false},
+        {"option_text": "85 m", "is_correct": false},
+        {"option_text": "90 m", "is_correct": true},
+        {"option_text": "95 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 'A beats B by 10 m' means when A reaches 100 m, B has covered 100 − 10 = 90 m. Trap: 85 = arbitrary; 80 = 100 − 20; 95 = 100 − 5 (half the margin).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00002",
+      "stem": "In a 1000 m race, A beats B by 100 m and B beats C by 100 m. By how many metres does A beat C?",
+      "options": [
+        {"option_text": "180 m", "is_correct": false},
+        {"option_text": "190 m", "is_correct": true},
+        {"option_text": "200 m", "is_correct": false},
+        {"option_text": "210 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A:B = 1000:900 = 10:9. B:C = 1000:900 = 10:9. When A runs 1000 m, B runs 900 m. When B runs 900 m, C runs 900 × (9/10) = 810 m. A beats C by 1000 − 810 = 190 m. Trap: 200 = 100 + 100 (simple addition ignores the compounding effect).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00003",
+      "stem": "In a 100 m race, A beats B by 10 m. A's speed is 10 m/s. What is B's speed?",
+      "options": [
+        {"option_text": "7 m/s", "is_correct": false},
+        {"option_text": "8 m/s", "is_correct": false},
+        {"option_text": "9 m/s", "is_correct": true},
+        {"option_text": "10 m/s", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A's time to run 100 m = 100 ÷ 10 = 10 seconds. When A finishes (at t = 10 s), B has run 100 − 10 = 90 m in the same 10 seconds. B's speed = 90 ÷ 10 = 9 m/s. Trap: 8 = 80 ÷ 10 (uses 80 m instead of 90 m); 10 = A's speed (B is slower).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00004",
+      "stem": "In a 200 m race, A beats B by 20 m. In a 100 m race between the same runners, A beats B by how many metres?",
+      "options": [
+        {"option_text": "5 m", "is_correct": false},
+        {"option_text": "8 m", "is_correct": false},
+        {"option_text": "10 m", "is_correct": true},
+        {"option_text": "12 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. In 200 m: A:B = 200:180 = 10:9. In 100 m: when A runs 100 m, B runs 100 × (9/10) = 90 m. A beats B by 100 − 90 = 10 m. Speed ratios are constant; beat margin scales proportionally with race length. Trap: 5 = 20 ÷ 4 (divides by 4 instead of 2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00005",
+      "stem": "In a 100 m race, A gives B a start of 20 m and gives C a start of 38 m. How much start can B give C in the same race?",
+      "options": [
+        {"option_text": "15 m", "is_correct": false},
+        {"option_text": "18 m", "is_correct": false},
+        {"option_text": "20 m", "is_correct": false},
+        {"option_text": "22.5 m", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. A:B = 100:80 = 5:4 (B runs 80 m when A runs 100 m). A:C = 100:62 = 50:31. B:C = (50/31) ÷ (5/4) = 40:31. When B runs 100 m, C runs 100 × (31/40) = 77.5 m. B gives C a start of 100 − 77.5 = 22.5 m. Trap: 18 = 38 − 20 (wrong: ignores speed ratios).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00006",
+      "stem": "In a billiards game, A gives B 15 points in 60 and gives C 20 points in 60. In a game of 90 points, how many points can B give C?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. A gives B 15 in 60 → when A scores 60, B scores 45. A:B = 60:45 = 4:3. A gives C 20 in 60 → A:C = 60:40 = 3:2. B:C = (A:C) ÷ (A:B) = (3/2) ÷ (4/3) = (3/2) × (3/4) = 9/8. When B scores 90, C scores 90 × (8/9) = 80. B gives C 90 − 80 = 10 points. Trap: 8 = 90/9 − 2 (arithmetic error).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00007",
+      "stem": "A runs at 10 km/h and B runs at 8 km/h. They start together. In a 10 km race, by how many minutes does A beat B?",
+      "options": [
+        {"option_text": "10 minutes", "is_correct": false},
+        {"option_text": "12 minutes", "is_correct": false},
+        {"option_text": "15 minutes", "is_correct": true},
+        {"option_text": "20 minutes", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A's time = 10 ÷ 10 = 1 hour = 60 min. B's time = 10 ÷ 8 = 1.25 hours = 75 min. A beats B by 75 − 60 = 15 minutes. Trap: 20 = 1.5 h − 1 h (wrong, that's for B at 6 km/h); 10 = assumes B finishes at 70 min.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00008",
+      "stem": "In a race of 500 m, A beats B by 50 m and B beats C by 50 m. By how many metres does A beat C?",
+      "options": [
+        {"option_text": "90 m", "is_correct": false},
+        {"option_text": "95 m", "is_correct": true},
+        {"option_text": "98 m", "is_correct": false},
+        {"option_text": "100 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A:B = 500:450 = 10:9. B:C = 500:450 = 10:9. When A runs 500 m, B runs 450 m. When B runs 450 m, C runs 450 × (9/10) = 405 m. A beats C by 500 − 405 = 95 m. Trap: 100 = 50 + 50 (simple addition, ignores compounding).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00009",
+      "stem": "A runs 100 m in 20 seconds and B runs 100 m in 25 seconds. In a 100 m race where B gets a head start of 16 m, by how many seconds does A beat B?",
+      "options": [
+        {"option_text": "1 second", "is_correct": true},
+        {"option_text": "2 seconds", "is_correct": false},
+        {"option_text": "3 seconds", "is_correct": false},
+        {"option_text": "4 seconds", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. A's speed = 100 ÷ 20 = 5 m/s. B's speed = 100 ÷ 25 = 4 m/s. With head start of 16 m: B runs only 100 − 16 = 84 m. B's time = 84 ÷ 4 = 21 seconds. A's time = 20 seconds. A beats B by 21 − 20 = 1 second. Trap: 2 = uses head start of 12 m (84 m → 22 s); 4 = 25 − 21 (wrong, compares B's full-race time to B's reduced-distance time).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_RACES_GAMES_W11_B1_00010",
+      "stem": "In a 100 m race, A beats B by 5 m and B beats C by 4 m. By how many metres does A beat C?",
+      "options": [
+        {"option_text": "8 m", "is_correct": false},
+        {"option_text": "8.8 m", "is_correct": true},
+        {"option_text": "9 m", "is_correct": false},
+        {"option_text": "9.5 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A:B = 100:95 = 20:19. B:C = 100:96 = 25:24. When A runs 100 m, B runs 95 m. When B runs 95 m, C runs 95 × (24/25) = 91.2 m. A beats C by 100 − 91.2 = 8.8 m. Trap: 9 = 5 + 4 (simple addition, ignores compounding).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

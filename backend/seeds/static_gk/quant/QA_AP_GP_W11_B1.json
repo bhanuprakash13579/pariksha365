@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_AP_GP_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Arithmetic and Geometric Progressions — Series and Sums (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00001",
+      "stem": "The 8th term of the arithmetic progression 3, 8, 13, 18, ... is:",
+      "options": [
+        {"option_text": "33", "is_correct": false},
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "38", "is_correct": true},
+        {"option_text": "40", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. First term a = 3, common difference d = 8−3 = 5. nth term = a + (n−1)d. 8th term = 3 + (8−1)×5 = 3 + 35 = 38. Verify: 3, 8, 13, 18, 23, 28, 33, 38 ✓. Trap: 33 = 7th term (one position short); 40 = 3 + 7×5 + 2 (arithmetic error).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00002",
+      "stem": "The sum of the first 10 terms of the AP: 5, 10, 15, 20, ... is:",
+      "options": [
+        {"option_text": "250", "is_correct": false},
+        {"option_text": "275", "is_correct": true},
+        {"option_text": "300", "is_correct": false},
+        {"option_text": "325", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. a = 5, d = 5, n = 10. Sum = (n/2)[2a + (n−1)d] = (10/2)[2×5 + 9×5] = 5[10 + 45] = 5×55 = 275. Alternative: last term = 5+(10−1)×5 = 50. Sum = (n/2)(first+last) = (10/2)(5+50) = 5×55 = 275. Trap: 300 = 5×60 (uses 12th term as last); 250 = 5+10+...+50 counted wrong.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00003",
+      "stem": "How many terms of the AP: 2, 5, 8, 11, ... are needed to give a sum of 155?",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. a = 2, d = 3. Sum formula: Sₙ = (n/2)[2×2 + (n−1)×3] = (n/2)(4 + 3n − 3) = (n/2)(3n + 1). Set equal to 155: n(3n+1)/2 = 155 → n(3n+1) = 310 → 3n² + n − 310 = 0. Discriminant = 1 + 4×3×310 = 3721 = 61². n = (−1+61)/(2×3) = 60/6 = 10. Verify: S₁₀ = (10/2)[4+27] = 5×31 = 155 ✓. Trap: 9 = S₉ = (9/2)(27+1) = 9×14 = 126 (not 155); 11 = S₁₁ = (11/2)(33+1) = 11×17 = 187 (not 155).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00004",
+      "stem": "The 3rd term of a GP is 18 and the 6th term is 486. What is the first term?",
+      "options": [
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. In a GP: T₃ = ar² = 18 and T₆ = ar⁵ = 486. Dividing: (ar⁵)/(ar²) = r³ = 486/18 = 27. So r = 3. Substituting: a×3² = 18 → a×9 = 18 → a = 2. First term = 2. Verify: GP: 2, 6, 18, 54, 162, 486 ✓ (T₃=18, T₆=486 ✓). Trap: 3 = r value mistaken for a; 6 = T₂ value; 9 = r².",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00005",
+      "stem": "The sum of an infinite GP with first term 4 and common ratio 1/2 is:",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Sum of infinite GP = a/(1−r), valid when |r| < 1. a = 4, r = 1/2. Sum = 4/(1−1/2) = 4/(1/2) = 8. Series: 4 + 2 + 1 + 0.5 + 0.25 + ... → converges to 8. Trap: 6 = 4+2 (sums only first 2 terms); 16 = a/r (wrong formula); 10 = 4+2+1+... (partial sum).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00006",
+      "stem": "The 5th term of an AP is 26 and the 10th term is 51. What is the first term?",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. T₅ = a + 4d = 26 (i), T₁₀ = a + 9d = 51 (ii). Subtracting (i) from (ii): 5d = 25 → d = 5. From (i): a + 4×5 = 26 → a = 6. First term = 6. Verify: AP: 6, 11, 16, 21, 26, 31, 36, 41, 46, 51. T₅ = 26 ✓, T₁₀ = 51 ✓. Trap: 4 = d value; 8 = 6+d (second term); 10 = uses wrong subtraction.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00007",
+      "stem": "The sum of first n natural numbers is 300. Find n.",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Sum of first n natural numbers = n(n+1)/2 = 300 → n(n+1) = 600. Try n=24: 24×25 = 600 ✓. So n = 24. Verify: 24×25/2 = 300 ✓. Trap: 25 = 25×26/2 = 325 (not 300); 20 = 20×21/2 = 210 (not 300); 30 = 30×31/2 = 465 (not 300).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00008",
+      "stem": "In a GP, the first term is 5 and the common ratio is 2. What is the sum of the first 6 terms?",
+      "options": [
+        {"option_text": "310", "is_correct": false},
+        {"option_text": "315", "is_correct": true},
+        {"option_text": "320", "is_correct": false},
+        {"option_text": "325", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Sum of first n terms of GP = a(rⁿ−1)/(r−1). a=5, r=2, n=6. Sum = 5(2⁶−1)/(2−1) = 5(64−1)/1 = 5×63 = 315. Verify: 5+10+20+40+80+160 = 315 ✓ (5+10=15, +20=35, +40=75, +80=155, +160=315). Trap: 310 = 5×62 (computes 2⁶ as 62 — arithmetic error); 320 = 5×64 (forgets to subtract 1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00009",
+      "stem": "The arithmetic mean of 4 numbers is 12. If one number is 8, what is the mean of the remaining three?",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "13⅓", "is_correct": true},
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Mean of 4 numbers = 12 → sum of 4 numbers = 4×12 = 48. One number = 8. Sum of remaining 3 = 48−8 = 40. Mean of remaining 3 = 40/3 = 13⅓. Trap: 12 = original mean (same as the original, but removing the below-average value 8 pulls the mean up); 14 = approximate (40/3 ≈ 13.33, not 14); 16 = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AP_GP_W11_B1_00010",
+      "stem": "Three numbers in AP have a sum of 21 and a product of 231. What are the three numbers?",
+      "options": [
+        {"option_text": "3, 7, 11", "is_correct": true},
+        {"option_text": "4, 7, 10", "is_correct": false},
+        {"option_text": "5, 7, 9", "is_correct": false},
+        {"option_text": "2, 7, 12", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Let the three AP terms be a−d, a, a+d. Sum: (a−d)+a+(a+d) = 3a = 21 → a = 7. Product: (7−d)×7×(7+d) = 231 → 7(49−d²) = 231 → 49−d² = 33 → d² = 16 → d = 4. Numbers: 3, 7, 11. Verify: 3+7+11 = 21 ✓; 3×7×11 = 231 ✓. Trap: 4,7,10: product=4×7×10=280≠231; 5,7,9: product=5×7×9=315≠231; 2,7,12: product=2×7×12=168≠231.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

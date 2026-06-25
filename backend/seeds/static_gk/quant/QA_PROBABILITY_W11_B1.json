@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PROBABILITY_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Probability — Classical and Conditional (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00001",
+      "stem": "A fair coin is tossed twice. What is the probability of getting exactly one head?",
+      "options": [
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "1/2", "is_correct": true},
+        {"option_text": "3/4", "is_correct": false},
+        {"option_text": "1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Sample space for 2 tosses: {HH, HT, TH, TT} — 4 outcomes. Exactly 1 head: {HT, TH} — 2 favourable. P = 2/4 = 1/2. Trap: 1/4 = probability of exactly 2 heads (HH only); 3/4 = probability of at least one head; 1 = certainty (always getting a head is impossible in 2 fair tosses).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00002",
+      "stem": "A card is drawn at random from a standard deck of 52 cards. What is the probability of drawing a red face card?",
+      "options": [
+        {"option_text": "3/26", "is_correct": true},
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "3/52", "is_correct": false},
+        {"option_text": "6/52", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Face cards = J, Q, K (3 per suit). Red face cards = Jacks, Queens, Kings of Hearts and Diamonds = 3×2 = 6 cards. P = 6/52 = 3/26. Trap: 6/52 is the same as 3/26 but unsimplified; 1/4 = 13/52 (red cards only, not just face); 3/52 uses 3 face cards (one colour only — forgets both red suits).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00003",
+      "stem": "A bag contains 3 red and 5 blue balls. One ball is drawn at random. What is the probability that it is red?",
+      "options": [
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "3/8", "is_correct": true},
+        {"option_text": "5/8", "is_correct": false},
+        {"option_text": "3/5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Total balls = 3+5 = 8. Red balls = 3. P(red) = 3/8. Trap: 5/8 = P(blue) = complement; 3/5 uses only red vs blue, ignoring total; 1/4 = wrong computation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00004",
+      "stem": "Two dice are rolled simultaneously. What is the probability of getting a sum of 7?",
+      "options": [
+        {"option_text": "1/12", "is_correct": false},
+        {"option_text": "1/8", "is_correct": false},
+        {"option_text": "1/6", "is_correct": true},
+        {"option_text": "7/36", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total outcomes = 6×6 = 36. Pairs summing to 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 pairs. P = 6/36 = 1/6. Trap: 7/36 = incorrect count (7 is the sum, not the number of favourable outcomes); 1/12 = 3/36 (only counts 3 pairs); 1/8 = 4.5/36 (impossible fraction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00005",
+      "stem": "From a deck of 52 cards, what is the probability of drawing a King or a Queen?",
+      "options": [
+        {"option_text": "1/13", "is_correct": false},
+        {"option_text": "2/13", "is_correct": true},
+        {"option_text": "4/52", "is_correct": false},
+        {"option_text": "1/26", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Kings = 4, Queens = 4. No overlap (a card can't be both a King and a Queen). Favourable = 4+4 = 8. P = 8/52 = 2/13. Trap: 4/52 = 1/13 = P(King only) or P(Queen only); 1/26 = 2/52 = wrong count; 2/13 simplified correctly from 8/52.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00006",
+      "stem": "A bag has 4 white and 6 black balls. Two balls are drawn together. What is the probability that both are white?",
+      "options": [
+        {"option_text": "1/6", "is_correct": false},
+        {"option_text": "2/15", "is_correct": true},
+        {"option_text": "4/25", "is_correct": false},
+        {"option_text": "1/5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. ⁴C₂ = 6 (ways to choose 2 white from 4). ¹⁰C₂ = 45 (total ways to choose 2 from 10). P = 6/45 = 2/15. Trap: 4/25 = (4/10)² = incorrect (applies replacement formula to without-replacement problem); 1/5 = 9/45 (wrong numerator); 1/6 = 7.5/45 (impossible).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00007",
+      "stem": "Shooter A has probability 3/5 of hitting a target, and B has probability 2/3. Both shoot independently. What is the probability that the target is hit?",
+      "options": [
+        {"option_text": "2/5", "is_correct": false},
+        {"option_text": "6/15", "is_correct": false},
+        {"option_text": "13/15", "is_correct": true},
+        {"option_text": "11/15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P(target hit) = 1 − P(both miss). P(A misses) = 1−3/5 = 2/5. P(B misses) = 1−2/3 = 1/3. P(both miss) = (2/5)×(1/3) = 2/15. P(hit) = 1−2/15 = 13/15. Trap: 11/15 = 3/5+2/3−1 (wrong addition formula; P(A or B hit)=P(A)+P(B)−P(A and B hit)=3/5+2/3−2/5×2/3=9/15+10/15−6/15=13/15 ✓ same answer via addition formula); 6/15 = P(both hit) = 3/5×2/3 = 6/15 (not the question asked).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00008",
+      "stem": "Two cards are drawn at random from a well-shuffled deck of 52. What is the probability that both are Kings?",
+      "options": [
+        {"option_text": "1/169", "is_correct": false},
+        {"option_text": "1/221", "is_correct": true},
+        {"option_text": "4/52", "is_correct": false},
+        {"option_text": "1/52", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. ⁴C₂ = 6 (ways to choose 2 Kings from 4). ⁵²C₂ = (52×51)/2 = 1326 (total ways). P = 6/1326 = 1/221. Trap: 1/169 = (4/52)² = (1/13)² (applies with-replacement formula wrongly); 4/52 = P(first card is a King, ignores second); 1/52 = wrong denominator concept.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00009",
+      "stem": "Three unbiased coins are tossed together. What is the probability of getting at least one head?",
+      "options": [
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "3/4", "is_correct": false},
+        {"option_text": "7/8", "is_correct": true},
+        {"option_text": "3/8", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P(at least 1H) = 1 − P(no heads) = 1 − P(all tails) = 1 − (1/2)³ = 1 − 1/8 = 7/8. Alternatively: out of 8 outcomes, only TTT has no head → 7 favourable. Trap: 3/4 = P(at least 1H in 2 tosses); 3/8 = P(exactly 1 head in 3 tosses) → ³C₁×(1/2)³ = 3/8.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_W11_B1_00010",
+      "stem": "A bag contains 4 red and 6 blue balls. One ball is drawn and found to be red; it is not replaced. What is the probability that the second ball drawn is also red?",
+      "options": [
+        {"option_text": "2/5", "is_correct": false},
+        {"option_text": "1/3", "is_correct": true},
+        {"option_text": "4/9", "is_correct": false},
+        {"option_text": "3/10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. After first red ball is removed: 3 red, 6 blue remain → 9 total. P(second red | first red) = 3/9 = 1/3. Trap: 2/5 = 4/10 (initial probability before any drawing; forgets the first red was removed); 4/9 = 4/(9) — wrong numerator (still uses original 4 red count); 3/10 = forgets to reduce denominator.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_DIRECTION_SENSE_W11_B1",
+  "subject": "Reasoning",
+  "topic": "Direction Sense — Navigation Problems (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00001",
+      "stem": "Rahul starts from his house and walks 4 km towards the East, then turns left and walks 3 km. What is his straight-line distance from his starting point?",
+      "options": [
+        {"option_text": "3 km", "is_correct": false},
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "5 km", "is_correct": true},
+        {"option_text": "7 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rahul walks 4 km East, then turns left (now facing North) and walks 3 km North. Final position: 4 km East and 3 km North of start. Straight-line distance = √(4²+3²) = √(16+9) = √25 = 5 km. This is the 3-4-5 Pythagorean triple. Trap: 7 = 4+3 (simple addition, ignores Pythagoras); 4 and 3 = just individual segments.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00002",
+      "stem": "Priya faces North. She turns 90° clockwise, then 45° anticlockwise. In which direction is she now facing?",
+      "options": [
+        {"option_text": "North-East", "is_correct": true},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South-East", "is_correct": false},
+        {"option_text": "North", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Starting: North. After 90° clockwise: East (N→E is 90° clockwise). After 45° anticlockwise from East: East − 45° = North-East (NE is between N and E, 45° from each). Final direction: North-East. Trap: East = stops after first turn; South-East = 90°+45° clockwise from North = SE (wrong — the second turn is ANTI-clockwise); North = returns to start (needs 90° anticlockwise to undo first turn, but she only went 45°).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00003",
+      "stem": "Arjun walks 6 km North, then 8 km East, then 6 km South. What is the shortest distance from his current position to the starting point?",
+      "options": [
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "8 km", "is_correct": true},
+        {"option_text": "10 km", "is_correct": false},
+        {"option_text": "14 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Track Arjun's position: Start→6 km North→6+8=14 km (then 8 East)→then 6 South = back to original latitude. Final position: 8 km due East of starting point. Shortest distance = 8 km. The 6 km North and 6 km South cancel out exactly. Trap: 10 = assumes he's at 6 N and 8 E (doesn't cancel the N and S legs); 14 = total of North+South legs; 6 = one of the NS legs.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00004",
+      "stem": "A man is facing East. He turns 135° anticlockwise. In which direction is he facing now?",
+      "options": [
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "North-West", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Starting: East. Turning 135° anticlockwise (counterclockwise) from East: 45° anticlockwise = North-East; 90° anticlockwise = North; 135° anticlockwise = North-West. Final direction: North-West. Note: anticlockwise = N, NW, W, SW, S, SE, E (going backwards through compass). Trap: West = 180° anticlockwise from East (needs only 90° more than 90°, but here 135°); North = 90° anticlockwise.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00005",
+      "stem": "Seema starts from point A, walks 5 km South, then 5 km East, then 5 km North. What is the direction of A from her current position?",
+      "options": [
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": true},
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "East", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Track position: Start at A. 5 km South → 5 km East → 5 km North (cancels South). Final position: 5 km East of A. So Seema is 5 km East of A. Therefore A is to the WEST of Seema's current position. Trap: East = direction she walked last; South = direction she walked first; North = opposite of one of her directions.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00006",
+      "stem": "In a direction map, South is shown as East and West is shown as North. What will North be shown as in this map?",
+      "options": [
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "North-East", "is_correct": false},
+        {"option_text": "West", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. The two given mappings (S→E and W→N) are consistent with a reflection of the compass across the NW-SE axis. Under this transformation, using reflection formula (new angle = 2×315° − original angle): N(0°) → 630° − 0° = 270° = West; S(180°) → 630° − 180° = 450° = 90° = East ✓; W(270°) → 630° − 270° = 360° = North ✓. Therefore North is shown as West. Trap: East = the image of South, not North; South = the image of East, not North.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00007",
+      "stem": "Ram walks 10 m North, then 10 m East, then 10 m South, then 10 m West. Where is he now relative to his starting point?",
+      "options": [
+        {"option_text": "10 m North", "is_correct": false},
+        {"option_text": "10 m East", "is_correct": false},
+        {"option_text": "Back at starting point", "is_correct": true},
+        {"option_text": "10 m to the South-East", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. N and S cancel: 10m North − 10m South = 0. E and W cancel: 10m East − 10m West = 0. Ram is back at his starting point. This is a classic 'square walk' or 'closed loop' that returns to origin. Trap: 10 m North = only counts the first segment; 10 m East = only counts the second segment; South-East = incorrectly combines remaining directions.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00008",
+      "stem": "A person starts from Point X, walks 15 km South, then 20 km East, then 15 km North. What is the shortest distance between Point X and his final position?",
+      "options": [
+        {"option_text": "15 km", "is_correct": false},
+        {"option_text": "20 km", "is_correct": true},
+        {"option_text": "25 km", "is_correct": false},
+        {"option_text": "50 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 15 km South and 15 km North cancel out. Net displacement = 20 km East. Shortest distance = 20 km. Trap: 25 = √(15²+20²) = 25 (used if N and S did NOT cancel — wrong, they DO cancel here since both are 15 km); 50 = 15+20+15 (total distance travelled, not displacement).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00009",
+      "stem": "Kavita is standing facing North. She turns right, then right again. In which direction is she facing now?",
+      "options": [
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South", "is_correct": true},
+        {"option_text": "West", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Start: North. Turn right (clockwise 90°): now facing East. Turn right again (clockwise 90°): now facing South. Two right turns = 180° clockwise = facing the opposite direction. North → South. Trap: East = only one right turn; West = North + left+left or right×3 (three right turns); North = four right turns (back to start).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_W11_B1_00010",
+      "stem": "P is 40 m South of Q. R is 30 m East of Q. What is the distance between P and R?",
+      "options": [
+        {"option_text": "40 m", "is_correct": false},
+        {"option_text": "50 m", "is_correct": true},
+        {"option_text": "60 m", "is_correct": false},
+        {"option_text": "70 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Q is origin. P is 40 m South of Q → P is at (0, −40). R is 30 m East of Q → R is at (30, 0). Distance PR = √((30−0)² + (0−(−40))²) = √(900+1600) = √2500 = 50 m. Classic 3-4-5 triple (×10): PR = 50 m. Trap: 70 = 40+30 (adds instead of Pythagoras); 40 = just the NS distance; 60 = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

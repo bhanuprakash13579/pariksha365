@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SPEED_DISTANCE_TIME_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Speed, Distance and Time — Trains, Boats, Relative Speed (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00001",
+      "stem": "A train travels 360 km in 4 hours. What is its speed in km/h?",
+      "options": [
+        {"option_text": "80 km/h", "is_correct": false},
+        {"option_text": "90 km/h", "is_correct": true},
+        {"option_text": "100 km/h", "is_correct": false},
+        {"option_text": "120 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Speed = Distance/Time = 360/4 = 90 km/h. Trap: 80 = 360/4.5 (wrong time); 100 = 400/4 (wrong distance); 120 = 360/3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00002",
+      "stem": "A person covers a distance of 240 km partly by train at 60 km/h and partly by bus at 40 km/h. If the total time is 5 hours, find the distance covered by train.",
+      "options": [
+        {"option_text": "100 km", "is_correct": false},
+        {"option_text": "120 km", "is_correct": true},
+        {"option_text": "140 km", "is_correct": false},
+        {"option_text": "160 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let train distance = d km. Bus distance = (240−d) km. Time equation: d/60 + (240−d)/40 = 5. Multiply by 120: 2d + 3(240−d) = 600. 2d + 720−3d = 600. −d = −120. d = 120 km. Verify: 120/60 + 120/40 = 2+3 = 5 ✓. Trap: 100 → 100/60+140/40=5/3+7/2=10/6+21/6=31/6≠5; 160 → 160/60+80/40=8/3+2=14/3≠5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00003",
+      "stem": "A 200 m long train running at 72 km/h crosses a platform in 25 seconds. What is the length of the platform?",
+      "options": [
+        {"option_text": "250 m", "is_correct": false},
+        {"option_text": "300 m", "is_correct": true},
+        {"option_text": "350 m", "is_correct": false},
+        {"option_text": "400 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Speed = 72 km/h = 72×(1000/3600) = 20 m/s. Distance covered in 25 seconds = 20×25 = 500 m. This distance = train length + platform length. Platform = 500−200 = 300 m. Trap: 250 = 500−200−50 (wrong subtraction); 350 = 550−200 (wrong total using 72×(5/18)≠20); always convert km/h to m/s: multiply by 5/18.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00004",
+      "stem": "Two trains of lengths 200 m and 300 m are running in opposite directions at 54 km/h and 36 km/h respectively. How long will they take to cross each other?",
+      "options": [
+        {"option_text": "15 seconds", "is_correct": false},
+        {"option_text": "20 seconds", "is_correct": true},
+        {"option_text": "25 seconds", "is_correct": false},
+        {"option_text": "30 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total length to cover = 200+300 = 500 m. Relative speed (opposite directions) = 54+36 = 90 km/h = 90×(5/18) = 25 m/s. Time = 500/25 = 20 seconds. Trap: 15 = 500/33.33 (uses wrong speed 90 km/h ≈ 33.33 but 90×5/18=25, not 33.33); 25 = 500/20 (inverts speed and time); 30 = 500/(54×5/18) = 500/15 (uses only one train's speed).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00005",
+      "stem": "A boat goes 30 km upstream and 44 km downstream in 10 hours. It also goes 40 km upstream and 55 km downstream in 13 hours. Find the speed of the boat in still water.",
+      "options": [
+        {"option_text": "7 km/h", "is_correct": false},
+        {"option_text": "8 km/h", "is_correct": true},
+        {"option_text": "9 km/h", "is_correct": false},
+        {"option_text": "10 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let upstream speed = u, downstream = d. 30/u + 44/d = 10 ...(1). 40/u + 55/d = 13 ...(2). Multiply (1) by 4: 120/u + 176/d = 40. Multiply (2) by 3: 120/u + 165/d = 39. Subtract: 11/d = 1 → d = 11 km/h. From (1): 30/u + 4 = 10 → 30/u = 6 → u = 5 km/h. Boat speed = (d+u)/2 = (11+5)/2 = 8 km/h. Verify: 30/5+44/11=6+4=10 ✓; 40/5+55/11=8+5=13 ✓. Trap: 7 = (11+3)/2 wrong upstream; 9 = (11+7)/2 wrong downstream.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00006",
+      "stem": "A person walks at 4 km/h and reaches his office 15 minutes late. If he walks at 5 km/h, he reaches 9 minutes early. What is the distance to the office?",
+      "options": [
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "8 km", "is_correct": true},
+        {"option_text": "10 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let distance = d km. At 4 km/h: time = d/4 hours. At 5 km/h: time = d/5 hours. The difference = 15+9 = 24 minutes = 24/60 = 2/5 hour. d/4 − d/5 = 2/5. 5d/20 − 4d/20 = 2/5. d/20 = 2/5. d = 8 km. Verify: 8/4=2h, 8/5=1.6h. Difference=0.4h=24min=15+9 ✓. Trap: 6 → 6/4−6/5=6/20=18min≠24; 10 → 10/20=30min≠24.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00007",
+      "stem": "Two trains start from stations A and B simultaneously, 500 km apart, moving towards each other at 60 km/h and 40 km/h. At what distance from A do they meet?",
+      "options": [
+        {"option_text": "250 km", "is_correct": false},
+        {"option_text": "280 km", "is_correct": false},
+        {"option_text": "300 km", "is_correct": true},
+        {"option_text": "320 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Combined speed = 60+40 = 100 km/h. Time to meet = 500/100 = 5 hours. Distance from A (train from A at 60 km/h): 60×5 = 300 km. Trap: 250 = 500/2 (wrong, assumes equal speeds); 280 = 60×14/3 (wrong time calculation); 320 = 40×8 (confuses the two trains' speeds).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00008",
+      "stem": "A thief is spotted 100 m ahead of a policeman. The thief runs at 8 km/h and the policeman runs at 10 km/h. In how many minutes will the policeman catch the thief?",
+      "options": [
+        {"option_text": "2 minutes", "is_correct": false},
+        {"option_text": "3 minutes", "is_correct": true},
+        {"option_text": "4 minutes", "is_correct": false},
+        {"option_text": "5 minutes", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Relative speed of policeman with respect to thief = 10−8 = 2 km/h = 2000/60 m/min = 100/3 m/min. Gap to close = 100 m. Time = 100/(100/3) = 3 minutes. Verify: In 3 min, policeman covers 10×3/60 km = 0.5 km = 500 m. Thief covers 8×3/60 = 0.4 km = 400 m. Policeman: 500 m. Thief: 100+400 = 500 m. They meet ✓. Trap: 5 = 100/20 (uses km/h directly without conversion); 2 = using combined speed instead of relative.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00009",
+      "stem": "A train 150 m long is running at 54 km/h. How long does it take to cross a man standing on the platform?",
+      "options": [
+        {"option_text": "8 seconds", "is_correct": false},
+        {"option_text": "10 seconds", "is_correct": true},
+        {"option_text": "12 seconds", "is_correct": false},
+        {"option_text": "15 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Speed = 54 km/h = 54×(5/18) = 15 m/s. To cross a stationary man, the train needs to cover its own length = 150 m. Time = 150/15 = 10 seconds. Trap: 8 = 150/18.75 (wrong conversion); 12 = 15×0.8 (wrong); 15 = 150/10 (confuses m/s with 10 instead of 15).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_TIME_W11_B1_00010",
+      "stem": "In still water, a boat's speed is 10 km/h and the stream's speed is 2 km/h. How long does the boat take to travel 48 km upstream?",
+      "options": [
+        {"option_text": "4 hours", "is_correct": false},
+        {"option_text": "5 hours", "is_correct": false},
+        {"option_text": "6 hours", "is_correct": true},
+        {"option_text": "8 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Upstream speed = Still water speed − Stream speed = 10−2 = 8 km/h. Time = Distance/Speed = 48/8 = 6 hours. Trap: 4 = 48/12 (uses downstream speed 10+2=12); 5 = 48/9.6 (wrong); 8 = 48/6 (reverses the formula: uses time as denominator).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

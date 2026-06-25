@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM_W11_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System — Divisibility, HCF, LCM and Properties (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00001",
+      "stem": "What is the HCF of 36, 48, and 60?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Factorize: 36 = 2²×3², 48 = 2⁴×3, 60 = 2²×3×5. HCF = lowest power of common prime factors = 2² × 3¹ = 4 × 3 = 12. Verify: 36÷12=3 ✓, 48÷12=4 ✓, 60÷12=5 ✓. Trap: 6 = 2×3 (takes minimum individual factor, wrong: minimum of 2²,2⁴,2² is 2²=4); 24 = HCF of 48 and 24 only (not all three).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00002",
+      "stem": "The LCM of two numbers is 120 and their HCF is 10. If one of the numbers is 40, what is the other?",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "30", "is_correct": true},
+        {"option_text": "60", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Product of two numbers = HCF × LCM. So: first × second = 10 × 120 = 1200. Second number = 1200 ÷ 40 = 30. Verify: HCF(40, 30) = 10 ✓; LCM(40, 30) = 120 ✓. Trap: 60 = 1200÷20 (used wrong first number); 24 = LCM÷5 (arbitrary division).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00003",
+      "stem": "Which of the following numbers is divisible by 11?",
+      "options": [
+        {"option_text": "123456", "is_correct": false},
+        {"option_text": "246801", "is_correct": false},
+        {"option_text": "112233", "is_correct": true},
+        {"option_text": "135792", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Divisibility by 11: (sum of digits at odd positions) − (sum of digits at even positions) = 0 or multiple of 11. For 112233 (positions 1-6): Odd positions (1,3,5) = 1+2+3 = 6; Even positions (2,4,6) = 1+2+3 = 6. Difference = 6−6 = 0. Divisible by 11 ✓. Check others: 123456: odd=1+3+5=9, even=2+4+6=12, diff=−3. 246801: odd=2+6+0=8, even=4+8+1=13, diff=−5. 135792: odd=1+5+9=15, even=3+7+2=12, diff=3. None divisible by 11 except 112233.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00004",
+      "stem": "Find the remainder when 2⁵³ is divided by 7.",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Powers of 2 mod 7 cycle with period 3: 2¹=2, 2²=4, 2³=8≡1 (mod 7), 2⁴≡2, 2⁵≡4, 2⁶≡1 ... The cycle is 2,4,1 (period 3). 53 = 3×17 + 2. Remainder when 53÷3 = 2. So 2⁵³ ≡ 2² = 4 (mod 7). Remainder = 4. Trap: 2 = 2⁵³ ≡ 2¹ (uses 53 mod 3 = 0, but 53÷3=17 remainder 2, not 0); 1 = 2³ᵏ ≡ 1 (53 is not a multiple of 3).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00005",
+      "stem": "The sum of two numbers is 100 and their difference is 30. What is the product of the two numbers?",
+      "options": [
+        {"option_text": "1,500", "is_correct": false},
+        {"option_text": "2,275", "is_correct": true},
+        {"option_text": "2,500", "is_correct": false},
+        {"option_text": "3,000", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let the numbers be a and b. a+b=100, a−b=30. Solving: a=65, b=35. Product = 65×35 = 2275. Method: (a+b)²−(a−b)² = 4ab → 100²−30² = 4ab → 10000−900 = 4ab → 9100 = 4ab → ab = 2275. Verify: 65×35 = 65×35 = 2275 ✓. Trap: 2500 = 50×50 (uses equal numbers ignoring the difference); 1500 = 50×30 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00006",
+      "stem": "How many numbers between 1 and 100 (inclusive) are divisible by both 3 and 5?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Divisible by both 3 and 5 = divisible by LCM(3,5) = 15. Multiples of 15 from 1 to 100: 15, 30, 45, 60, 75, 90 = 6 numbers. (100÷15 = 6 remainder 10, so there are 6 multiples.) Trap: 10 = multiples of 10 (wrong criterion); 7 = counts 105 as within range (105 > 100); 5 = undercounts.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00007",
+      "stem": "A number when divided by 6 gives a remainder of 4. What will be the remainder when the square of that number is divided by 6?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "0", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let number = 6k+4 (for some integer k). (6k+4)² = 36k²+48k+16. Divide by 6: 36k²÷6 = 6k² (exact); 48k÷6 = 8k (exact); 16÷6 = 2 remainder 4. So remainder = 4. Alternative: use n ≡ 4 (mod 6) → n² ≡ 16 ≡ 4 (mod 6). Check: 4÷6 → R=4; 4²=16; 16÷6 = 2 R 4 ✓. Another check: 10÷6→R=4; 10²=100; 100÷6=16 R 4 ✓. Trap: 2 = wrong modular arithmetic; 1 = uses 4²=16, 1+6=7... wrong.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00008",
+      "stem": "The smallest number which must be added to 1000 to make it exactly divisible by 35 is:",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "15", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. 35 × 28 = 980; 35 × 29 = 1015. Remainder when 1000 ÷ 35: 1000 − 980 = 20. To reach the next multiple (1015): 1015 − 1000 = 15. Add 15 to 1000 to get 1015, which is exactly divisible by 35 (35 × 29 = 1015). Trap: 5 = 1000 + 5 = 1005; 1005 ÷ 35 = 28.71 (not exact); 10 = 1010 ÷ 35 = 28.86 (not exact).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00009",
+      "stem": "What is the digit in the units place of 7⁵⁷?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "7", "is_correct": true},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Units digits of powers of 7 repeat with cycle length 4: 7¹→7, 7²→9, 7³→3, 7⁴→1, 7⁵→7, ... Cycle: (7, 9, 3, 1). Find 57 mod 4: 57 = 4×14 + 1; remainder = 1. Position 1 in the cycle → units digit = 7. Therefore 7⁵⁷ ends in 7. Trap: 3 = position 3 in cycle (remainder 3, not 1); 9 = position 2 (remainder 2); 1 = position 4 (remainder 0, i.e., multiple of 4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W11_B1_00010",
+      "stem": "If n is a natural number, which of the following is always odd?",
+      "options": [
+        {"option_text": "n² + n", "is_correct": false},
+        {"option_text": "n² − n", "is_correct": false},
+        {"option_text": "n² + n + 1", "is_correct": true},
+        {"option_text": "2n + 1 when n is even", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. n² + n + 1 = n(n+1) + 1. n(n+1) = product of consecutive integers, which is always even (one of n or n+1 must be even). Even + 1 = Odd. Therefore n² + n + 1 is always odd. Check: n=1: 1+1+1=3 (odd) ✓; n=2: 4+2+1=7 (odd) ✓; n=3: 9+3+1=13 (odd) ✓. Trap: n²+n = n(n+1) = always even (product of consecutive integers); n²−n = n(n−1) = also always even (consecutive integers); 2n+1 when n is even = odd, but this is a restricted case (only when n is even), not ALWAYS.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

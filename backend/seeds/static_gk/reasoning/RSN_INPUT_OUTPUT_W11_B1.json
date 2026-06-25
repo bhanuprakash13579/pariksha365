@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_INPUT_OUTPUT_W11_B1",
+  "subject": "Reasoning",
+  "topic": "Input-Output — Word and Number Rearrangement (W11 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00001",
+      "stem": "A word-arrangement machine rearranges words from left to right following a certain rule. Observe the steps:\n\nInput:   sky blue warm night cold sun\nStep 1:  blue sky warm night cold sun\nStep 2:  blue cold sky warm night sun\nStep 3:  blue cold night sky warm sun\nStep 4:  blue cold night sky sun warm\n\nThe machine arranges words in alphabetical order one at a time from the left. How many steps would be needed to fully arrange the input: fox ant elk bat dog cat?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Input: fox ant elk bat dog cat. Sorted order: ant bat cat dog elk fox. The machine places the next alphabetically smallest word into its correct position each step. Step 1: ant → pos1: ant fox elk bat dog cat. Step 2: bat → pos2: ant bat fox elk dog cat. Step 3: cat → pos3: ant bat cat fox elk dog. Step 4: dog → pos4: ant bat cat dog fox elk. Step 5: elk → pos5: ant bat cat dog elk fox. Fox falls into pos6 automatically. Total = 5 steps. Trap: 3 = the number of steps if you use 'dog cat ant bat elk fox' where elk and fox are already in final relative order; 6 = maximum possible steps for a 6-word list, but the last word always falls into place automatically so maximum is n−1=5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00002",
+      "stem": "A number rearrangement machine follows a fixed rule:\n\nInput:   45  72  19  63  38  56\nStep 1:  19  45  72  63  38  56\nStep 2:  19  38  45  72  63  56\nStep 3:  19  38  45  56  72  63\nStep 4:  19  38  45  56  63  72\n\n(The machine arranges numbers in ascending order, one at a time, from left to right.)\n\nWhat will Step 3 of the following input look like?\nInput: 82  15  47  63  29  51",
+      "options": [
+        {"option_text": "15  29  47  82  63  51", "is_correct": false},
+        {"option_text": "15  29  47  51  82  63", "is_correct": false},
+        {"option_text": "15  29  47  63  82  51", "is_correct": false},
+        {"option_text": "15  29  47  82  63  51", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. The machine places the smallest remaining number at the next position each step. Sorted order of input: 15, 29, 47, 51, 63, 82. Input: 82 15 47 63 29 51. Step 1: 15 moved to position 1 → 15  82  47  63  29  51. Step 2: 29 moved to position 2 → 15  29  82  47  63  51. Step 3: 47 moved to position 3 → 15  29  47  82  63  51. Answer = 15  29  47  82  63  51.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00003",
+      "stem": "A machine rearranges a mixed input of words and numbers:\n\nInput:   win 41 top 18 run 63 old 25\nStep 1:  18 win 41 top run 63 old 25\nStep 2:  18 25 win 41 top run 63 old\nStep 3:  18 25 41 win top run 63 old\nStep 4:  18 25 41 63 win top run old\n\n(Numbers are arranged in ascending order at the left; words remain in their original relative order on the right.)\n\nWhat is the last step (fully arranged output)?",
+      "options": [
+        {"option_text": "18 25 41 63 old run top win", "is_correct": false},
+        {"option_text": "18 25 41 63 win top run old", "is_correct": true},
+        {"option_text": "18 25 41 63 run old top win", "is_correct": false},
+        {"option_text": "18 25 41 63 top win old run", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The rule: each step moves the next smallest number to the leftmost available position; words maintain their original relative order and shift right. After Step 4 (all 4 numbers placed): 18 25 41 63 | win top run old. The words maintain their original left-to-right order from the input (win → top → run → old). So the final output = 18 25 41 63 win top run old. Trap: A reverses word order alphabetically (old < run < top < win) — but the rule doesn't sort words; they stay in original relative order.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00004",
+      "stem": "A machine rearranges a mixed input of words and numbers:\n\nInput:   bright 31 ample 56 dear 14 fear 77\nStep 1:  14 bright 31 ample 56 dear fear 77\nStep 2:  14 31 bright ample 56 dear fear 77\nStep 3:  14 31 56 bright ample dear fear 77\nStep 4:  14 31 56 77 bright ample dear fear\n\n(Numbers move to the left in ascending order; words maintain their original relative order.)\n\nIn which step does the word 'dear' first appear at the 7th position?",
+      "options": [
+        {"option_text": "Step 2", "is_correct": false},
+        {"option_text": "Step 3", "is_correct": false},
+        {"option_text": "Step 4", "is_correct": true},
+        {"option_text": "Step 5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Track 'dear' at each step: Input: dear is at position 5 (bright(1) 31(2) ample(3) 56(4) dear(5) 14(6) fear(7) 77(8)). Step 1: 14 → pos1 → 14 bright 31 ample 56 dear fear 77 → dear at position 6. Step 2: 31 → pos2 → 14 31 bright ample 56 dear fear 77 → dear at position 6. Step 3: 56 → pos3 → 14 31 56 bright ample dear fear 77 → dear at position 6. Step 4: 77 → pos4 → 14 31 56 77 bright ample dear fear → dear at position 7 ✓. First time dear is at position 7 = Step 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00005",
+      "stem": "A machine operates on word strings using a rule: in each step, the first and last words are swapped, and the remaining words shift one position to the right.\n\nInput: MANGO BANANA APPLE CHERRY GRAPE\nStep 1: GRAPE MANGO BANANA APPLE CHERRY\nStep 2: CHERRY GRAPE MANGO BANANA APPLE\nStep 3: APPLE CHERRY GRAPE MANGO BANANA\n\nWhat will Step 5 look like?",
+      "options": [
+        {"option_text": "GRAPE MANGO BANANA APPLE CHERRY", "is_correct": false},
+        {"option_text": "MANGO BANANA APPLE CHERRY GRAPE", "is_correct": true},
+        {"option_text": "BANANA APPLE CHERRY GRAPE MANGO", "is_correct": false},
+        {"option_text": "APPLE CHERRY GRAPE MANGO BANANA", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The rule is a right-rotation: each step, the last word moves to the front and everything else shifts right by 1. Input (Step 0): MANGO BANANA APPLE CHERRY GRAPE. Step 1: GRAPE | MANGO BANANA APPLE CHERRY. Step 2: CHERRY | GRAPE MANGO BANANA APPLE. Step 3: APPLE | CHERRY GRAPE MANGO BANANA. Step 4: BANANA | APPLE CHERRY GRAPE MANGO. Step 5: MANGO | BANANA APPLE CHERRY GRAPE = MANGO BANANA APPLE CHERRY GRAPE. After 5 rotations of a 5-element set, we're back to the original arrangement. Step 5 = Input. Answer = B.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00006",
+      "stem": "A machine operates on numbers. Each step subtracts the leftmost number from the rightmost and appends the result to the right, while the leftmost number is dropped.\n\nInput: 3  5  8  13  21\nStep 1: 5  8  13  21  18     (21−3=18)\nStep 2: 8  13  21  18  13    (18−5=13)\nStep 3: 13  21  18  13  5    (13−8=5)\n\nWhat is the 2nd number in Step 4?",
+      "options": [
+        {"option_text": "13", "is_correct": false},
+        {"option_text": "18", "is_correct": true},
+        {"option_text": "21", "is_correct": false},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Step 3: 13  21  18  13  5. Step 4: drop 13, append (5−13) = −8: 21  18  13  5  −8. The 2nd number in Step 4 = 18. Trap: 13 = the dropped number (first of Step 3); 21 = 1st number of Step 4; 8 = absolute value of new term (forgets sign).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00007",
+      "stem": "A machine rearranges numbers. Observe the pattern:\n\nInput:  96  43  71  28  55  12\nStep 1: 12  96  43  71  28  55\nStep 2: 12  28  96  43  71  55\nStep 3: 12  28  43  96  71  55\nStep 4: 12  28  43  55  96  71\nStep 5: 12  28  43  55  71  96\n\n(Each step places the next smallest number into its correct position from left to right.)\n\nIf the input is 77  33  55  11  44  66, how many steps does it take to reach the final arrangement?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Input: 77 33 55 11 44 66. Sorted: 11 33 44 55 66 77. Step 1: 11 moved to pos 1 → 11 77 33 55 44 66. Step 2: 33 moved to pos 2 → 11 33 77 55 44 66. Step 3: 44 moved to pos 3 → 11 33 44 77 55 66. Step 4: 55 moved to pos 4 → 11 33 44 55 77 66. Step 5: 66 moved to pos 5 → 11 33 44 55 66 77. 77 is already at pos 6. Total = 5 steps. Trap: 4 = undercount by 1; 6 = the number of elements (max possible steps, but last element auto-places).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00008",
+      "stem": "A machine rearranges words in a sentence. Each step reverses the first and last words and moves them inward by 1 position.\n\nInput:  A B C D E F\nStep 1: F B C D E A  (F moves to pos 1, A moves to pos 6 — i.e., first↔last swap)\nStep 2: F E C D B A  (E moves to pos 2, B moves to pos 5)\nStep 3: F E D C B A  (D moves to pos 3, C moves to pos 4)\n\nAfter Step 3 is reached starting from 'P Q R S T U', what is the 3rd element?",
+      "options": [
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "S", "is_correct": true},
+        {"option_text": "T", "is_correct": false},
+        {"option_text": "U", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The machine reverses the string in 3 steps (for a 6-element string, Step n swaps elements from position n and (7−n)). After Step 3: the output is the full reverse. Input: P Q R S T U. Reversed: U T S R Q P. The 3rd element = S. Alternatively: Step 1 swaps pos 1 and 6 → U Q R S T P. Step 2 swaps pos 2 and 5 → U T R S Q P. Step 3 swaps pos 3 and 4 → U T S R Q P. 3rd element = S.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00009",
+      "stem": "A machine processes words:\n\nInput:   RISE FALL DAWN DUSK NOON NIGHT\nStep 1:  DAWN RISE FALL DUSK NOON NIGHT\nStep 2:  DAWN DUSK RISE FALL NOON NIGHT\nStep 3:  DAWN DUSK FALL RISE NOON NIGHT\nStep 4:  DAWN DUSK FALL NIGHT RISE NOON\nStep 5:  DAWN DUSK FALL NIGHT NOON RISE\n\n(Words are sorted alphabetically, one per step.)\n\nIn which step does NIGHT first appear to the left of NOON?",
+      "options": [
+        {"option_text": "Step 3", "is_correct": false},
+        {"option_text": "Step 4", "is_correct": true},
+        {"option_text": "Step 5", "is_correct": false},
+        {"option_text": "Step 2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Track NIGHT's position relative to NOON: Input: NIGHT is at pos 6, NOON at pos 5 → NIGHT is to the right of NOON. Step 1: NIGHT at pos 6, NOON at pos 5 → right. Step 2: NIGHT at pos 6, NOON at pos 5 → right. Step 3: DAWN DUSK FALL RISE NOON NIGHT — NIGHT(6) to right of NOON(5). Step 4: DAWN DUSK FALL NIGHT RISE NOON — NIGHT(4) to left of NOON(6) ✓. First time NIGHT is left of NOON = Step 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B1_00010",
+      "stem": "A machine processes numbers:\n\nInput: 64  36  81  25  49  16\nStep 1: 16  64  36  81  25  49\nStep 2: 16  25  64  36  81  49\nStep 3: 16  25  36  64  81  49\nStep 4: 16  25  36  49  64  81\n\n(Ascending sort, one number per step.)\n\nIf the input were 100  49  64  25  81  36, what would be the 4th number in Step 3?",
+      "options": [
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "49", "is_correct": false},
+        {"option_text": "64", "is_correct": false},
+        {"option_text": "100", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Input: 100 49 64 25 81 36. Sorted order: 25, 36, 49, 64, 81, 100. Step 1: move 25 to pos 1 → 25  100  49  64  81  36. Step 2: move 36 to pos 2 → 25  36  100  49  64  81. Step 3: move 49 to pos 3 → 25  36  49  100  64  81. The 4th number in Step 3 = 100. Trap: 64 = would be 4th if 100 doesn't displace it; 49 = the number moved in Step 3 (3rd pos); 25 = 1st position.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}
