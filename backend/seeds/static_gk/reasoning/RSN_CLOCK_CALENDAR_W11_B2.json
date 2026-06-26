@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_CLOCK_CALENDAR_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Clock and Calendar Problems (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00001",
+      "stem": "At what time between 3 and 4 o'clock do the minute hand and hour hand of a clock form a right angle (90°) for the SECOND time (after the 3:00 position)?",
+      "options": [
+        {"option_text": "3 hours 27 (3/11) minutes", "is_correct": false},
+        {"option_text": "3 hours 32 (8/11) minutes", "is_correct": true},
+        {"option_text": "3 hours 49 (1/11) minutes", "is_correct": false},
+        {"option_text": "3 hours 16 (4/11) minutes", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. At t minutes past 3: minute hand = 6t°; hour hand = 90+0.5t°. For 90° angle: 6t-(90+0.5t)=90 → 5.5t=180 → t=180/5.5=360/11=32(8/11) minutes. (The other equation 90+0.5t-6t=90 gives t=0, i.e., the 3:00 starting position.) So the next right angle after 3:00 occurs at 3 hours 32(8/11) minutes. Short trick: Time of right angle = (H×60±15)×12/11 minutes past 12. For 3:00 moving forward: (3×60+15)×12/11=(195)×12/11=180/11+...=360/11=32(8/11) minutes past 3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00002",
+      "stem": "What is the angle between the hour hand and minute hand of a clock at 4:20?",
+      "options": [
+        {"option_text": "0°", "is_correct": false},
+        {"option_text": "5°", "is_correct": false},
+        {"option_text": "10°", "is_correct": true},
+        {"option_text": "15°", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Hour hand position at 4:20: At 4:00, hour hand is at 120°. In 20 minutes, it moves 20×0.5 = 10°. Hour hand position = 120+10 = 130°. Minute hand at 20 minutes = 20×6 = 120°. Angle between = |130-120| = 10°. Verify: At 4:20, minute hand is at 4 (=120°). Hour hand should be slightly past 4, specifically (4×30)+(20×0.5)=120+10=130°. Difference = 10° ✓. Trap: 0° = confuses 4:20 with the time the hands coincide (≈4:22); 15° = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00003",
+      "stem": "If 1st January 2024 falls on a Monday, what day does 1st January 2025 fall on?",
+      "options": [
+        {"option_text": "Monday", "is_correct": false},
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Wednesday", "is_correct": true},
+        {"option_text": "Thursday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 2024 is a leap year (divisible by 4, and 2024 ÷ 4 = 506). A leap year has 366 days = 52 weeks + 2 days. So the next year starts 2 days later. Monday + 2 = Wednesday. Verify: 2024 leap year (366 days) → 366 = 52×7+2 → advances by 2 days → Monday → Wednesday ✓. Trap: Tuesday = assumes non-leap year advance of 1 day; Thursday = advances by 3 days (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00004",
+      "stem": "A clock shows 8:00. How many times do the hands of the clock overlap between 8:00 AM and 8:00 AM the next day?",
+      "options": [
+        {"option_text": "21", "is_correct": false},
+        {"option_text": "22", "is_correct": true},
+        {"option_text": "23", "is_correct": false},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The minute hand gains on the hour hand at a rate of 5.5 minute-spaces per minute. They overlap every 65(5/11) minutes ≈ 65.45 minutes. In 12 hours = 720 minutes: overlaps = 720/65.45 ≈ 11. In 24 hours (8 AM to 8 AM next day), the hands overlap exactly 22 times. This is because in any 12-hour period the hands coincide exactly 11 times (at 12:00, ~1:05, ~2:10, ~3:16, ~4:21, ~5:27, ~6:32, ~7:38, ~8:43, ~9:49, ~10:54 — 11 times). In 24 hours = 22 times. Trap: 24 = assumes once per hour; 21 = undercounts.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00005",
+      "stem": "What day of the week was it on 15th August 1947? (Hint: 1947 started on a Wednesday; Jan 1 = Wednesday)",
+      "options": [
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Wednesday", "is_correct": false},
+        {"option_text": "Friday", "is_correct": true},
+        {"option_text": "Saturday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Jan 1, 1947 = Wednesday. Count days from Jan 1 to Aug 15: Jan=31, Feb=28 (1947 not leap), Mar=31, Apr=30, May=31, Jun=30, Jul=31, Aug 1-15=15. Total days from Jan 1 to Aug 15 = 31+28+31+30+31+30+31+15 = 227 days. Jan 1 is day 1, so Aug 15 is day 227. Days from Jan 1 = 226. 226 ÷ 7 = 32 remainder 2. Wednesday + 2 = Friday. Verify: 32×7=224; 226-224=2; Wednesday (day 4 in 1-Sun through 7-Sat) + 2 = Friday ✓. India's Independence Day = Friday, 15 August 1947 ✓ (historically confirmed).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00006",
+      "stem": "A clock is set correctly at 12 noon on Monday. It loses 5 minutes in every 24 hours. What will it show at 12 noon on Friday of the same week?",
+      "options": [
+        {"option_text": "11:40 AM", "is_correct": true},
+        {"option_text": "11:45 AM", "is_correct": false},
+        {"option_text": "11:50 AM", "is_correct": false},
+        {"option_text": "11:20 AM", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Monday noon to Friday noon = 4 days. Loss per day = 5 minutes. Total loss in 4 days = 4×5 = 20 minutes. Actual time = 12:00 noon. Slow clock shows = 12:00-20 min = 11:40 AM. Verify: Mon→Tue=5 min lost, Tue→Wed=5, Wed→Thu=5, Thu→Fri=5; total=20 min. 12:00-0:20=11:40 AM ✓. Trap: 11:20 AM = loss of 40 min (8 days, not 4); 11:50 AM = loss of 10 min (2 days, not 4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00007",
+      "stem": "What is the angle between the hour and minute hands at 9:00?",
+      "options": [
+        {"option_text": "180°", "is_correct": false},
+        {"option_text": "270°", "is_correct": false},
+        {"option_text": "90°", "is_correct": true},
+        {"option_text": "120°", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. At 9:00: Minute hand = at 12 = 0°. Hour hand = at 9 = 9×30 = 270°. Angle between them = min(270, 360-270) = min(270, 90) = 90°. The actual angle is the SMALLER of the two possible angles (reflex vs non-reflex). Trap: 270° = takes the reflex angle (the larger arc); 180° = confuses with 6:00 position.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00008",
+      "stem": "The month of February 2025 starts on a Saturday. Which day will March 1, 2025 fall on?",
+      "options": [
+        {"option_text": "Friday", "is_correct": false},
+        {"option_text": "Saturday", "is_correct": true},
+        {"option_text": "Sunday", "is_correct": false},
+        {"option_text": "Monday", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. February 2025 starts on Saturday, Feb 1 = Saturday. 2025 is not a leap year (not divisible by 4: 2025÷4=506.25). February 2025 has 28 days. 28 days = exactly 4 weeks (4×7=28). Since 28 is a multiple of 7, March 1 falls on the SAME day as February 1 = Saturday. Verify: If Feb 1 = Saturday (day 1), Feb 28 = Saturday+27 = 27 mod 7 = 6 days ahead = Friday. March 1 = Saturday (one more day after Feb 28 = Friday+1 = Saturday) ✓. Trap: Sunday = if Feb had 29 days (leap year), March 1 would advance by 1 more day; but 2025 is NOT a leap year.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00009",
+      "stem": "How many times do the hour and minute hands of a clock form a straight line (180° or 0°) in 12 hours?",
+      "options": [
+        {"option_text": "11", "is_correct": false},
+        {"option_text": "22", "is_correct": true},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "12", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A 'straight line' means either 0° (hands overlapping, 11 times in 12h) or 180° (hands pointing opposite ways, 11 times in 12h). Total = 11+11 = 22 times in 12 hours. Verify: Hands coincide 11 times in 12 hours (not 12 — because at 12:00 they overlap, then approximately at 1:05, 2:10, ..., 10:54 — that's 11). Similarly for 180° — they are opposite 11 times. 11+11=22. Trap: 11 = counts only overlaps or only opposite positions; 24 = assumes 2 per hour (wrong — they coincide ~1.09 times per hour).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CLOCK_CALENDAR_W11_B2_00010",
+      "stem": "If today is Thursday, what day of the week will it be 100 days from now?",
+      "options": [
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Thursday", "is_correct": false},
+        {"option_text": "Saturday", "is_correct": true},
+        {"option_text": "Sunday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 100 days from Thursday: 100 ÷ 7 = 14 remainder 2. So 100 days from Thursday = Thursday + 2 days = Saturday. Verify: 14 complete weeks = 98 days (back to Thursday); 2 more days → Friday → Saturday ✓. Trap: Thursday = if 100 were exactly divisible by 7 (it's not — remainder is 2); Tuesday = adds 2 backwards instead of forwards.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

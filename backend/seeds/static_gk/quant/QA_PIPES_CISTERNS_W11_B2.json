@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PIPES_CISTERNS_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Pipes and Cisterns (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00001",
+      "stem": "Pipe A fills a tank in 6 hours, Pipe B fills it in 8 hours. Both are opened together. In how many hours will the tank be full?",
+      "options": [
+        {"option_text": "24/7 hours", "is_correct": true},
+        {"option_text": "3 hours", "is_correct": false},
+        {"option_text": "4 hours", "is_correct": false},
+        {"option_text": "7 hours", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. A's rate = 1/6 per hour; B's rate = 1/8 per hour. Combined = 1/6+1/8 = 4/24+3/24 = 7/24 per hour. Time = 24/7 hours ≈ 3.43 hours. Verify: In 24/7 hours, A fills (24/7)/6=4/7; B fills (24/7)/8=3/7; total=7/7=1 ✓. Short trick: ab/(a+b) = 6×8/(6+8) = 48/14 = 24/7 hours. Trap: 3 = minimum of 6/2; 7 = just adds the pipes' hours.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00002",
+      "stem": "A tank is filled by Pipe A in 12 hours and emptied by Pipe B in 18 hours. If both are opened simultaneously when the tank is empty, how long will it take to fill the tank?",
+      "options": [
+        {"option_text": "24 hours", "is_correct": false},
+        {"option_text": "30 hours", "is_correct": false},
+        {"option_text": "36 hours", "is_correct": true},
+        {"option_text": "48 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Net filling rate = 1/12-1/18 = 3/36-2/36 = 1/36 per hour. Tank fills in 36 hours. Verify: In 36 hours, A fills 36/12=3 tanks; B drains 36/18=2 tanks; net = 1 tank ✓. Trap: 24 = 12+12 (wrong); 30 = (12+18)/1 (wrong). Key insight: when a filling pipe and draining pipe both open, subtract their rates.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00003",
+      "stem": "Pipes A and B can fill a tank in 8 and 12 hours respectively. Pipe C can empty the full tank in 24 hours. All three are opened simultaneously when the tank is empty. In how many hours will the tank be full?",
+      "options": [
+        {"option_text": "5 hours", "is_correct": false},
+        {"option_text": "6 hours", "is_correct": true},
+        {"option_text": "8 hours", "is_correct": false},
+        {"option_text": "10 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Net rate = (fill A) + (fill B) - (drain C) = 1/8+1/12-1/24. LCM=24: 3/24+2/24-1/24 = 4/24 = 1/6 per hour. Tank fills in 6 hours. Verify: In 6 hours, A fills 6/8=3/4; B fills 6/12=1/2; C drains 6/24=1/4. Net = 3/4+1/2-1/4 = 3/4+2/4-1/4 = 4/4 = 1 ✓. Trap: 8 = ignores pipe C entirely (1/8+1/12=5/24; time=24/5≈5 h); 5 = only counts A (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00004",
+      "stem": "Pipe A fills a tank in 12 hours, Pipe B fills in 18 hours. Both opened together for 3 hours, then B is closed. How many more hours will A alone take to fill the tank?",
+      "options": [
+        {"option_text": "5 hours", "is_correct": false},
+        {"option_text": "6 hours", "is_correct": false},
+        {"option_text": "7 hours", "is_correct": true},
+        {"option_text": "8 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. (A+B) rate = 1/12+1/18 = 3/36+2/36 = 5/36 per hour. In 3 hours together: 15/36 = 5/12 filled. Remaining = 1-5/12 = 7/12. A alone at 1/12 per hour. Time = (7/12)/(1/12) = 7 hours. Verify: 3h at 5/36 = 5/12; then 7h at 1/12 = 7/12; total=5/12+7/12=12/12=1 ✓. Trap: 6 = assumes remaining is 1/2 (wrong); 8 = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00005",
+      "stem": "Three pipes A, B, and C can fill a tank in 6, 8, and 12 hours. All three are opened at once. How long will it take to fill the tank?",
+      "options": [
+        {"option_text": "1 hour", "is_correct": false},
+        {"option_text": "2.4 hours", "is_correct": false},
+        {"option_text": "8/3 hours", "is_correct": true},
+        {"option_text": "3 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Combined rate = 1/6+1/8+1/12. LCM=24: 4/24+3/24+2/24 = 9/24 = 3/8 per hour. Time = 8/3 hours ≈ 2.67 hours. Verify: In 8/3 hours: A fills (8/3)/6=4/9; B fills (8/3)/8=1/3=3/9; C fills (8/3)/12=2/9; total=4/9+3/9+2/9=9/9=1 ✓. Short trick: 24/9=8/3 hours. Trap: 2.4 = wrong calculation 24/10; 3 = wrong LCM use.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00006",
+      "stem": "A cistern has a leak at the bottom which empties it in 15 hours. A filling pipe fills the cistern in 10 hours. If both the filling pipe and leak are active together on an empty cistern, how long will it take to fill the cistern?",
+      "options": [
+        {"option_text": "20 hours", "is_correct": false},
+        {"option_text": "25 hours", "is_correct": false},
+        {"option_text": "30 hours", "is_correct": true},
+        {"option_text": "45 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Fill rate = 1/10 per hour; leak rate = 1/15 per hour (empties). Net rate = 1/10-1/15 = 3/30-2/30 = 1/30 per hour. Cistern fills in 30 hours. Verify: In 30 hours, fill pipe adds 30/10=3 cisterns; leak drains 30/15=2 cisterns; net=1 cistern ✓. Trap: 25 = 10+15 (wrong — adds instead of working out net rate); 20 = 2×10 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00007",
+      "stem": "A tank can be filled by Pipe A in 15 hours. Pipe B, which is a drainage pipe, can empty the full tank in 20 hours. The tank is 1/4 full. If both pipes are opened, how long will it take to fill the remaining 3/4?",
+      "options": [
+        {"option_text": "40 hours", "is_correct": false},
+        {"option_text": "42 hours", "is_correct": false},
+        {"option_text": "45 hours", "is_correct": true},
+        {"option_text": "50 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Net fill rate = 1/15-1/20 = 4/60-3/60 = 1/60 per hour. Remaining to fill = 3/4. Time = (3/4)/(1/60) = (3/4)×60 = 45 hours. Verify: In 45 hours at 1/60 per hour: 45/60 = 3/4 filled. Starting from 1/4 full, ending at 1/4+3/4=1 = full ✓. Trap: 40 = (3/4)/(1/60)... actually 60×3/4=45. Someone might compute 20×(3/4)×?=40 (wrong); 50 = wrong numerics.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00008",
+      "stem": "Two pipes A and B can fill a tank in 16 and 24 hours respectively. They are opened alternately, each for 1 hour. How long will the tank take to be full?",
+      "options": [
+        {"option_text": "18 hours", "is_correct": false},
+        {"option_text": "19 hours", "is_correct": true},
+        {"option_text": "20 hours", "is_correct": false},
+        {"option_text": "21 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A fills 1/16 per hour; B fills 1/24 per hour. In each 2-hour cycle (1h A + 1h B): 1/16+1/24 = 3/48+2/48 = 5/48 of tank. After 9 complete cycles (18 hours): 9×5/48 = 45/48 = 15/16 filled. Remaining = 1/16. In the 19th hour (A's turn): A fills 1/16 per hour. Time to fill 1/16 at rate 1/16 = 1 hour. Total = 18+1 = 19 hours. Verify: 45/48 + 1/16 = 45/48+3/48 = 48/48 = 1 ✓. Trap: 20 = 10 complete cycles = 50/48 > 1 (over-shoots); 18 = assumes 9 cycles = done but 45/48 ≠ 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00009",
+      "stem": "If Pipe A alone fills a tank in 'a' hours and Pipe B alone fills in 'b' hours, how long do they take together? Choose the correct formula:",
+      "options": [
+        {"option_text": "a + b", "is_correct": false},
+        {"option_text": "ab / (a + b)", "is_correct": true},
+        {"option_text": "(a + b) / 2", "is_correct": false},
+        {"option_text": "ab / (a − b)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Combined rate = 1/a+1/b = (a+b)/ab per hour. Time together = ab/(a+b) hours. This is the harmonic mean formula for two rates. Example: a=6, b=4: together = 24/10 = 2.4 hours; verify 1/6+1/4=5/12; time=12/5=2.4 ✓. Trap: (a+b)/2 = arithmetic mean (applies to averages of distances, not parallel rates); a+b = wrong (just adds the individual times); ab/(a-b) = used when one pipe fills and one drains.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PIPES_CISTERNS_W11_B2_00010",
+      "stem": "A pipe fills a cistern in 30 minutes. However, due to a leak at the bottom, the cistern takes 50 minutes to be filled. In how many minutes will the leak empty the full cistern if no filling pipe is active?",
+      "options": [
+        {"option_text": "60 min", "is_correct": false},
+        {"option_text": "65 min", "is_correct": false},
+        {"option_text": "75 min", "is_correct": true},
+        {"option_text": "80 min", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Fill rate = 1/30; net fill rate (with leak) = 1/50. Leak rate = 1/30-1/50 = 5/150-3/150 = 2/150 = 1/75. Leak empties the full cistern in 75 minutes. Verify: In 75 min, pipe would fill 75/30=2.5 cisterns; leak drains 75/75=1 cistern; net=1.5 cisterns? No wait — the question is about the leak alone. Leak rate = 1/75 per minute → empties full tank in 75 minutes ✓. Check: fill-leak = 1/30-1/75 = 5/150-2/150 = 3/150 = 1/50 ✓ (matches 50-min fill time). Trap: 60 = 30+30 (wrong); 80 = 30+50 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

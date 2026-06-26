@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SYLLOGISM_III_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Syllogism — Conclusions from Statements (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00001",
+      "stem": "Statements:\nAll cats are animals.\nAll animals are living beings.\nConclusions:\nI. All cats are living beings.\nII. Some living beings are cats.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. All cats → all animals → all living beings. By transitivity: All cats are living beings (Conclusion I ✓). Since all cats are living beings, those same cats are some living beings that are cats → Some living beings are cats (Conclusion II ✓). Both follow. Method: cats⊂animals⊂living beings (concentric circles). If all A are B and all B are C, then all A are C, and some C are A.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00002",
+      "stem": "Statements:\nSome books are pens.\nAll pens are pencils.\nConclusions:\nI. Some books are pencils.\nII. All pencils are books.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": true},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Some books are pens (partial overlap). All pens are pencils. Those pens that are also books become pencils too → Some books are pencils (I ✓). Conclusion II ('All pencils are books') is wrong — pencils can exist that are not books, because the first statement says only SOME books are pens. Diagram: Books circle partially overlaps Pens circle. Pens circle is fully inside Pencils. So some Books are inside Pencils, but not all Pencils are inside Books.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00003",
+      "stem": "Statements:\nNo doctors are lawyers.\nAll lawyers are teachers.\nConclusions:\nI. No teachers are doctors.\nII. Some teachers are not doctors.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. No doctors are lawyers. All lawyers are teachers → lawyers⊂teachers. Since no doctors are lawyers, those teachers who ARE lawyers are not doctors → Some teachers (the lawyer-teachers) are not doctors (II ✓). Can we say NO teachers are doctors (I)? No — because teachers may include non-lawyer teachers who could be doctors. The statements only exclude lawyer-teachers from being doctors. So I is too strong and does NOT necessarily follow. Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00004",
+      "stem": "Statements:\nAll flowers are fruits.\nSome fruits are vegetables.\nConclusions:\nI. Some flowers are vegetables.\nII. Some vegetables are flowers.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Flowers⊂Fruits. Some fruits are vegetables (partial overlap between fruits and vegetables). The overlapping fruits may or may not include any flowers. The statements do not guarantee that the fruits that overlap with vegetables are the same fruits that come from flowers. Diagram: Flowers⊂Fruits; Fruits∩Vegetables≠∅ (some overlap), but the overlap could be entirely in the non-flower part of fruits. Neither I nor II necessarily follows. Trap: Students often assume transitivity when 'some' is involved — but 'some A are B' and 'all C are A' does NOT mean 'some C are B'.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00005",
+      "stem": "Statements:\nAll mangoes are oranges.\nNo orange is an apple.\nConclusions:\nI. No mango is an apple.\nII. Some apples are mangoes.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": true},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. All mangoes are oranges. No orange is an apple. Since no orange is an apple, and all mangoes are oranges, no mango can be an apple (I ✓). Conclusion II ('Some apples are mangoes') directly contradicts I — both cannot follow simultaneously. If no mango is an apple, then no apple is a mango either. II does not follow. Verify: mangoes⊂oranges; oranges∩apples=∅; therefore mangoes∩apples=∅ → No mango is an apple ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00006",
+      "stem": "Statements:\nSome students are players.\nSome players are singers.\nConclusions:\nI. Some students are singers.\nII. All singers are students.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Some students are players (partial overlap). Some players are singers (partial overlap). The overlapping players may or may not include the student-players. I ('Some students are singers') is not guaranteed — the singer-players might be entirely from the non-student portion of players. II ('All singers are students') is definitely too strong. Neither I nor II necessarily follows. This is the SSC classic 'some-some' trap: two 'some' statements rarely yield a definitive conclusion.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00007",
+      "stem": "Statements:\nAll birds can fly.\nA penguin is a bird.\nConclusions:\nI. A penguin can fly.\nII. Some birds are penguins.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. In syllogism questions, we must accept the given statements as true EVEN IF THEY CONTRADICT REAL-WORLD FACTS. The statement 'All birds can fly' is given as universally true. A penguin is a bird → penguin can fly (I ✓). Since penguin is a bird, and penguin is one bird among birds → Some birds are penguins (II ✓). Both follow. SSC syllogism rule: Never use outside knowledge; treat statements as absolute truth for the purpose of the question.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00008",
+      "stem": "Statements:\nSome tables are chairs.\nAll chairs are wooden.\nConclusions:\nI. All tables are wooden.\nII. Some wooden things are tables.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Some tables are chairs. All chairs are wooden → those tables that are chairs are also wooden → Some tables are wooden. But I says 'All tables are wooden' — we only know SOME tables are chairs (and hence wooden); other tables might not be wooden. I does not follow. Since some tables are wooden → some wooden things are tables (II ✓). Only II follows. Verify: tables∩chairs = some overlap; chairs⊂wooden. Overlapping tables are wooden → some tables⊂wooden → some wooden are tables ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00009",
+      "stem": "Statements:\nNo stone is a metal.\nAll metals are heavy.\nConclusions:\nI. No stone is heavy.\nII. Some heavy things are not stones.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. No stone is a metal. All metals are heavy → metals⊂heavy. Since no stone is a metal, those heavy things that are metals are not stones → Some heavy things (the metals) are not stones (II ✓). Can we say 'No stone is heavy' (I)? No — stones could be heavy for reasons other than being metal. The statement only excludes stones from being metal-type-heavy, not from being heavy in general. Only II follows. This tests the critical reading that absence from one category (metal) doesn't preclude membership in another (heavy).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_III_W11_B2_00010",
+      "stem": "Statements:\nAll roads lead to the city.\nSome highways are roads.\nConclusions:\nI. Some highways lead to the city.\nII. All highways lead to the city.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": true},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. All roads lead to the city. Some highways are roads → those highways that are roads lead to the city → Some highways lead to the city (I ✓). Conclusion II 'All highways lead to the city' is not established — some highways may not be roads (only SOME highways are roads per the statement). I follows; II does not. Verify: roads⊂city-leading; highways∩roads=some overlap → some highways∩city-leading (I ✓); but highways not fully ⊂ roads → II ✗.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

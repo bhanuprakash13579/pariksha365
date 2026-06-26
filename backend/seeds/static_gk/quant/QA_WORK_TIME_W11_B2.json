@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_WORK_TIME_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Work and Time — Efficiency Problems (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00001",
+      "stem": "A can complete a work in 10 days, B in 15 days. In how many days will they finish it together?",
+      "options": [
+        {"option_text": "5 days", "is_correct": false},
+        {"option_text": "6 days", "is_correct": true},
+        {"option_text": "7 days", "is_correct": false},
+        {"option_text": "8 days", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A's rate = 1/10 per day; B's rate = 1/15 per day. Combined = 1/10+1/15 = 3/30+2/30 = 5/30 = 1/6. Together they finish in 6 days. Verify: In 6 days, A does 6/10=3/5; B does 6/15=2/5; total=3/5+2/5=1 ✓. Trap: 5 = 10+15)/2×(product)/(sum) error; 12 = harmonic confusion.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00002",
+      "stem": "A alone can do a piece of work in 12 days. A and B together can do it in 8 days. In how many days can B alone do the work?",
+      "options": [
+        {"option_text": "16 days", "is_correct": false},
+        {"option_text": "24 days", "is_correct": true},
+        {"option_text": "20 days", "is_correct": false},
+        {"option_text": "18 days", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. B's rate = (A+B) rate - A rate = 1/8-1/12 = 3/24-2/24 = 1/24. B alone takes 24 days. Verify: A+B in 8 days: A does 8/12=2/3; B does 8/24=1/3; total=1 ✓. Trap: 20 = 12+8=20 (wrong — just adds the days); 16 = 2×8 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00003",
+      "stem": "A, B, and C together can complete a task in 4 days. A alone takes 8 days and B alone takes 12 days. How many days does C alone need?",
+      "options": [
+        {"option_text": "16 days", "is_correct": false},
+        {"option_text": "20 days", "is_correct": false},
+        {"option_text": "22 days", "is_correct": false},
+        {"option_text": "24 days", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. C's rate = (A+B+C) rate - A rate - B rate = 1/4-1/8-1/12. LCM(4,8,12)=24. 1/4=6/24; 1/8=3/24; 1/12=2/24. C = 6/24-3/24-2/24 = 1/24. C alone takes 24 days. Verify: 1/8+1/12+1/24 = 3/24+2/24+1/24 = 6/24 = 1/4. Together = 4 days ✓. Trap: 16 = 8×2 (wrong); 20 = common distractor.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00004",
+      "stem": "A can do a piece of work in 15 days. A and B together can do it in 10 days. B and C together can do it in 20 days. How long will C alone take?",
+      "options": [
+        {"option_text": "40 days", "is_correct": false},
+        {"option_text": "50 days", "is_correct": false},
+        {"option_text": "60 days", "is_correct": true},
+        {"option_text": "80 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A = 1/15. (A+B) = 1/10 → B = 1/10-1/15 = 3/30-2/30 = 1/30. (B+C) = 1/20 → C = 1/20-1/30 = 3/60-2/60 = 1/60. C alone takes 60 days. Verify: B+C = 1/30+1/60 = 2/60+1/60 = 3/60 = 1/20. Together B+C = 20 days ✓. Trap: 40 = 2×(B alone=30), wrong; 80 = 4×20 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00005",
+      "stem": "If 8 workers complete a job in 12 days working 6 hours a day, how many workers are needed to complete the same job in 8 days working 9 hours a day?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Total work = 8 workers × 12 days × 6 hours = 576 worker-hours. New scenario: 8 days × 9 hours = 72 hours per worker. Workers needed = 576/72 = 8 workers. Verify: 8×8×9 = 576 worker-hours ✓. Trap: 6 = 576/(8×12) = 6 (divides by only two factors, wrong); 9 = uses wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00006",
+      "stem": "A is twice as efficient as B. Together they complete a task in 12 days. How many days does A alone need?",
+      "options": [
+        {"option_text": "16 days", "is_correct": false},
+        {"option_text": "18 days", "is_correct": true},
+        {"option_text": "20 days", "is_correct": false},
+        {"option_text": "24 days", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A is twice as efficient → if B takes x days, A takes x/2 days. Combined rate: 1/(x/2)+1/x = 2/x+1/x = 3/x = 1/12. x = 36 days (B), x/2 = 18 days (A). Verify: A's rate=1/18; B's rate=1/36; combined=2/36+1/36=3/36=1/12. Together=12 days ✓. Trap: 24 = uses B's days ÷ 2 = 36/2 but mistakenly computes 12×2=24; 16 = wrong formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00007",
+      "stem": "A, B, and C can complete a work in 12, 15, and 20 days respectively. All three start together. After 2 days, C leaves. How many more days will A and B take to finish the remaining work?",
+      "options": [
+        {"option_text": "2 days", "is_correct": false},
+        {"option_text": "3 days", "is_correct": false},
+        {"option_text": "4 days", "is_correct": true},
+        {"option_text": "5 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. LCM(12,15,20)=60. A=5 units/day; B=4 units/day; C=3 units/day. Together=12 units/day. In 2 days: 24 units done. Total work=60. Remaining=36 units. (A+B) rate=9 units/day. Time=36÷9=4 days. Verify: 2 days at 12/day=24 done; 4 days at 9/day=36 more; 24+36=60=total ✓. Trap: 3 = 36÷12 (divides by combined rate instead of A+B rate); 2 = 18÷9 (halves remaining incorrectly).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00008",
+      "stem": "A can complete a job in 9 days. B can complete it in 18 days. A works alone for 3 days, then B joins. How many more days do they need together to finish the job?",
+      "options": [
+        {"option_text": "3 days", "is_correct": false},
+        {"option_text": "4 days", "is_correct": true},
+        {"option_text": "5 days", "is_correct": false},
+        {"option_text": "6 days", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A's rate = 1/9. Work done by A in 3 days = 3/9 = 1/3. Remaining = 1-1/3 = 2/3. (A+B) rate = 1/9+1/18 = 2/18+1/18 = 3/18 = 1/6. Time for remaining 2/3 = (2/3)/(1/6) = (2/3)×6 = 4 days. Verify: Together in 4 days: A does 4/9+B does 4/18=8/18+4/18=12/18=2/3; total=1/3+2/3=1 ✓. Trap: 3 = assumes B does the same as A; 6 = time for B alone to do remaining 2/3 (=2/3×18=12 days, not 6).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00009",
+      "stem": "18 men can complete a piece of work in 10 days. After 4 days, 6 men leave. How many more days are needed to complete the remaining work?",
+      "options": [
+        {"option_text": "7 days", "is_correct": false},
+        {"option_text": "8 days", "is_correct": false},
+        {"option_text": "9 days", "is_correct": true},
+        {"option_text": "10 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Total work = 18×10 = 180 man-days. Work done in 4 days = 18×4 = 72 man-days. Remaining = 180-72 = 108 man-days. After 6 men leave: 12 men remain. Days = 108÷12 = 9 days. Verify: 12×9 = 108 ✓. Total = 72+108 = 180 ✓. Trap: 8 = 96÷12 (wrong — computes remaining as 96); 7 = 84÷12 (wrong remaining).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_WORK_TIME_W11_B2_00010",
+      "stem": "P, Q, and R together complete a work in 4 days. P and Q together can do it in 6 days. In how many days can R alone do the work?",
+      "options": [
+        {"option_text": "8 days", "is_correct": false},
+        {"option_text": "10 days", "is_correct": false},
+        {"option_text": "12 days", "is_correct": true},
+        {"option_text": "16 days", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. R's rate = (P+Q+R) rate - (P+Q) rate = 1/4-1/6 = 3/12-2/12 = 1/12. R alone takes 12 days. Verify: (P+Q+R) in 4 days at 1/4 per day; (P+Q) at 1/6 per day; R at 1/12 per day; 1/6+1/12=2/12+1/12=3/12=1/4 ✓. Trap: 8 = 4+6-2 (wrong arithmetic); 10 = common distractor.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

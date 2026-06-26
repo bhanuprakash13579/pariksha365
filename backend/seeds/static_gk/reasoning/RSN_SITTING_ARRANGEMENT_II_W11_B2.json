@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SITTING_ARRANGEMENT_II_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Sitting Arrangement II — Circular and Linear Seating (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00001",
+      "stem": "Five friends A, B, C, D, E are seated in a straight line facing North. B is at the leftmost end. A is to the immediate right of B. D is between E and A. C is at the rightmost end. What is the position of D from the left end?",
+      "options": [
+        {"option_text": "2nd", "is_correct": false},
+        {"option_text": "3rd", "is_correct": true},
+        {"option_text": "4th", "is_correct": false},
+        {"option_text": "5th", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. B is at left end (position 1). A is immediately right of B: A=2. C is at right end: C=5. D is between E and A — A is at position 2, so D is at position 3 (adjacent to A), and E is at position 4. Arrangement: B(1)-A(2)-D(3)-E(4)-C(5). Verify: D between E and A — A at 2, D at 3, E at 4: D is between them ✓. D is 3rd from left. Trap: 4th = E's position, not D's.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00002",
+      "stem": "Six people P, Q, R, S, T, U are seated in a row. Q is at one end. P is 2nd from Q. T is between P and R. S is between R and U. U is at the other end. Who is in the middle (3rd from left if Q is at left end)?",
+      "options": [
+        {"option_text": "T", "is_correct": true},
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "S", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Q(1)-P(2)-T(3)-R(4)-S(5)-U(6). Verify: P is 2nd from Q(left end) ✓; T is between P(2) and R(4): T at 3 ✓; S between R(4) and U(6): S at 5 ✓; U at right end ✓. Position 3 (middle of first half) = T. T is 3rd from left. Trap: Q is leftmost (position 1), so 3rd from left = T not Q or P.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00003",
+      "stem": "A, B, C, D, E are sitting in a row. D is to the right of E. A is between E and C. B is between D and C. C is to the right of B. Who is sitting at the rightmost position?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Work through clues step by step: D is right of E (E...D). A is between E and C → E-A-C or C-A-E. B is between D and C with C right of B → D-B-C. Combining: E is leftmost. A between E and C means C is to right of A. B is between D and C, so D is between E and B. Full order: E-A-D-B-C. Verify: D right of E ✓; A between E(1) and C(5) ✓; B between D(3) and C(5) ✓; C right of B ✓. C is rightmost. Trap: D appears far right but B and C are placed after D.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00004",
+      "stem": "In a row of 10 students, A is 4th from the left and B is 7th from the left. How many students are sitting between A and B?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. A is at position 4 and B is at position 7. Students between them are at positions 5 and 6 — that is 2 students. Formula: students between = |7-4| - 1 = 3-1 = 2. Trap: 3 = difference of positions (7-4=3), but this counts A and B themselves as part of the gap; subtract 1 to get the number of people sitting BETWEEN them.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00005",
+      "stem": "8 persons are seated in two parallel rows of 4 each. P, Q, R, S are in Row 1 (facing South). T, U, V, W are in Row 2 (facing North). Persons sitting opposite each other face each other. P faces U. Q is to the immediate right of P. T is to the immediate right of U. Who faces Q?",
+      "options": [
+        {"option_text": "T", "is_correct": true},
+        {"option_text": "V", "is_correct": false},
+        {"option_text": "W", "is_correct": false},
+        {"option_text": "U", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Row 1 (left to right facing South): P, Q, R, S. Row 2 (facing North, so left-to-right from our view = right-to-left from their view). P faces U (Row 1 position 1 faces Row 2 position 1). Q is immediately right of P → Q=position 2 in Row 1. T is immediately right of U in Row 2: U=position 1, T=position 2. The person opposite Q (Row 1, position 2) is Row 2 position 2 = T. Q faces T. Trap: U faces P (not Q); V and W are at positions 3 and 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00006",
+      "stem": "In a row of students, Ravi is 15th from the left and Suresh is 12th from the right. If they interchange their positions, Ravi becomes 18th from the left. How many students are in the row?",
+      "options": [
+        {"option_text": "27", "is_correct": false},
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "29", "is_correct": true},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. After interchange, Ravi occupies Suresh's original position: 18th from left. Suresh's original position was 12th from right AND (after swap) Ravi is 18th from left = same position. So 18th from left = 12th from right. Total = 18 + 12 - 1 = 29. Trap: 30 = 18+12 (forgets to subtract 1 for the position itself); 28 = 18+12-2 (subtracts 2 — wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00007",
+      "stem": "Five persons A, B, C, D, E are sitting in a circle all facing the centre. A is to the immediate right of B. C is to the immediate left of D. E is between A and D (going clockwise from A). Who is to the immediate left of B?",
+      "options": [
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "A", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Place B=1 (clockwise). A is immediately right of B → A=2 (clockwise from B). E is between A and D going clockwise from A → A(2)-E(3)-D(4). C is immediately left of D → C is anticlockwise from D → C=3. But E=3 and C=3 — conflict. Adjust: if E(3) is taken, C must be at 5. D is clockwise from C: if C=5, D=6... but we have only 5 seats. Reorder: 5 seats: B(1)-A(2)-E(3)-D(4)-C(5). Verify: A right of B ✓; C left of D: C at 5, D at 4 — C(5) is to the right of D(4) in clockwise, but to the LEFT of D anticlockwise. In a clockwise circle, 'left of D(4)' = C(5) ✓; E between A(2) and D(4) clockwise: E(3) ✓. Left of B(1) anticlockwise = C(5). Immediate left of B = C. Trap: A is immediately RIGHT of B, not left.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00008",
+      "stem": "In a row, there are 5 people. Q is between P and R. S is between P and Q. T is between Q and R. What is the position of S from the right?",
+      "options": [
+        {"option_text": "2nd", "is_correct": false},
+        {"option_text": "3rd", "is_correct": false},
+        {"option_text": "4th", "is_correct": true},
+        {"option_text": "5th", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Q is between P and R. S is between P and Q. T is between Q and R. Start from P on the left: P is leftmost anchor. S between P and Q → P-S-Q. T between Q and R → Q-T-R. Full row: P(1)-S(2)-Q(3)-T(4)-R(5). Verify: Q between P and R ✓; S between P(1) and Q(3) ✓; T between Q(3) and R(5) ✓. S is at position 2 from left = position 4 from right (5-2+1=4). Trap: Students may count 2nd from left instead of from right; the question asks FROM THE RIGHT.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00009",
+      "stem": "If Asha is 16th from the front and 20th from the back of a queue, how many people are in the queue?",
+      "options": [
+        {"option_text": "34", "is_correct": false},
+        {"option_text": "35", "is_correct": true},
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "37", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Total = rank from front + rank from back - 1 = 16 + 20 - 1 = 35. The -1 avoids counting Asha twice. Verify: If 35 total, position 16 from front = position 35-16+1=20 from back ✓. Trap: 36 = 16+20 (forgets to subtract 1 for Asha herself); 34 = 16+20-2 (wrong double subtraction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SITTING_ARRANGEMENT_II_W11_B2_00010",
+      "stem": "In a line of students, X is 10th from the left. Y is 3 places to the right of X. If Y is 8th from the right end, how many students are in the row?",
+      "options": [
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "21", "is_correct": false},
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "23", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. X is 10th from left. Y is 3 places to right of X → Y is 10+3 = 13th from left. Y is 8th from right. Total = 13 + 8 - 1 = 20. Verify: 20 total, Y 13th from left → 20-13+1 = 8th from right ✓. Trap: 21 = 13+8 (forgets to subtract 1); 22 = 10+8+4 (wrong arithmetic ignoring the Y-X offset).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SIMPLE_INTEREST_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Simple Interest — Word Problems (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00001",
+      "stem": "A sum of Rs. 5,000 is lent at 8% per annum simple interest. What is the interest after 3 years?",
+      "options": [
+        {"option_text": "Rs. 1,000", "is_correct": false},
+        {"option_text": "Rs. 1,200", "is_correct": true},
+        {"option_text": "Rs. 1,400", "is_correct": false},
+        {"option_text": "Rs. 1,600", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. SI = P×R×T/100 = 5000×8×3/100 = 120000/100 = Rs. 1,200. Trap: 1,000 = 5000×8×2.5/100 (wrong time); 1,400 = 5000×8×3.5/100 (wrong time); 1,600 = 5000×8×4/100 (wrong time = 4 years).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00002",
+      "stem": "At what rate per annum will Rs. 2,400 amount to Rs. 3,264 in 3 years?",
+      "options": [
+        {"option_text": "9%", "is_correct": false},
+        {"option_text": "10%", "is_correct": false},
+        {"option_text": "12%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. SI = Amount - Principal = 3264 - 2400 = 864. Rate = SI×100/(P×T) = 864×100/(2400×3) = 86400/7200 = 12%. Verify: SI = 2400×12×3/100 = 864; Amount = 2400+864 = 3264 ✓. Trap: 10%: SI=2400×10×3/100=720, Amount=3120≠3264; 15%: SI=2400×15×3/100=1080, Amount=3480≠3264.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00003",
+      "stem": "In how many years will Rs. 6,000 become Rs. 8,400 at 10% per annum simple interest?",
+      "options": [
+        {"option_text": "3 years", "is_correct": false},
+        {"option_text": "4 years", "is_correct": true},
+        {"option_text": "5 years", "is_correct": false},
+        {"option_text": "6 years", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SI = 8400-6000 = 2400. Time = SI×100/(P×R) = 2400×100/(6000×10) = 240000/60000 = 4 years. Verify: SI = 6000×10×4/100 = 2400; Amount = 6000+2400 = 8400 ✓. Trap: 3 years: SI=6000×10×3/100=1800, Amount=7800≠8400; 5 years: Amount=9000≠8400.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00004",
+      "stem": "A sum of money doubles itself in 8 years at simple interest. What is the rate of interest per annum?",
+      "options": [
+        {"option_text": "10%", "is_correct": false},
+        {"option_text": "12%", "is_correct": false},
+        {"option_text": "12.5%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. If principal = P, amount = 2P. SI = 2P-P = P. Rate = SI×100/(P×T) = P×100/(P×8) = 100/8 = 12.5%. Short trick: If a sum doubles in T years at SI, rate = 100/T. Here T=8, rate = 100/8 = 12.5%. Trap: 10% = 100/10 (correct for T=10, not T=8); 12% = wrong rounding.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00005",
+      "stem": "Rs. 800 becomes Rs. 956 in 3 years at SI. If the rate of interest is increased by 4%, what will Rs. 800 become in 3 years?",
+      "options": [
+        {"option_text": "Rs. 1,000", "is_correct": false},
+        {"option_text": "Rs. 1,052", "is_correct": true},
+        {"option_text": "Rs. 1,100", "is_correct": false},
+        {"option_text": "Rs. 1,156", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Current SI = 956-800 = 156. Current rate = 156×100/(800×3) = 6.5%. New rate = 6.5+4 = 10.5%. New SI = 800×10.5×3/100 = 252. New amount = 800+252 = Rs. 1,052. Verify: 800×10.5×3=25200; 25200/100=252; 800+252=1052 ✓. Trap: 1,000 = uses rate=8.33% (wrong); 1,156 = adds 200 to current amount (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00006",
+      "stem": "Two equal sums are lent at 5% and 6% per annum respectively for 4 years each. If the difference in interest earned is Rs. 200, find the sum lent at each rate.",
+      "options": [
+        {"option_text": "Rs. 3,000", "is_correct": false},
+        {"option_text": "Rs. 4,000", "is_correct": false},
+        {"option_text": "Rs. 5,000", "is_correct": true},
+        {"option_text": "Rs. 6,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let each sum = P. SI₁ = P×5×4/100 = 20P/100. SI₂ = P×6×4/100 = 24P/100. Difference = 24P/100 - 20P/100 = 4P/100 = 200. P = 200×100/4 = Rs. 5,000. Verify: SI at 5% = 5000×5×4/100=1000; SI at 6%=5000×6×4/100=1200. Difference=200 ✓. Trap: 4,000: diff=4000×4×4/4×100=160≠200; 6,000: diff=6000×4/100=240≠200.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00007",
+      "stem": "The SI on a sum of money for 3 years at 6% per annum is Rs. 3,600. Find the principal.",
+      "options": [
+        {"option_text": "Rs. 18,000", "is_correct": false},
+        {"option_text": "Rs. 20,000", "is_correct": true},
+        {"option_text": "Rs. 22,000", "is_correct": false},
+        {"option_text": "Rs. 24,000", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. P = SI×100/(R×T) = 3600×100/(6×3) = 360000/18 = Rs. 20,000. Verify: SI = 20000×6×3/100 = 3600 ✓. Trap: 18,000: SI=18000×6×3/100=3240≠3600; 22,000: SI=22000×6×3/100=3960≠3600.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00008",
+      "stem": "A borrowed Rs. 12,000 at 5% per annum SI for 2 years and Rs. 8,000 at 6% for 3 years. What is the total interest paid?",
+      "options": [
+        {"option_text": "Rs. 2,200", "is_correct": false},
+        {"option_text": "Rs. 2,640", "is_correct": true},
+        {"option_text": "Rs. 2,880", "is_correct": false},
+        {"option_text": "Rs. 3,000", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SI₁ = 12000×5×2/100 = 1200. SI₂ = 8000×6×3/100 = 1440. Total interest = 1200+1440 = Rs. 2,640. Verify: 12000×0.05×2=1200; 8000×0.06×3=1440; sum=2640 ✓. Trap: Rs. 2,200 = 12000×5×2/100+8000×5×2/100 (wrong rate/time on second loan); Rs. 2,880 = miscalculates one component.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00009",
+      "stem": "A sum of Rs. 15,000 is divided into two parts. One part is lent at 5% per annum and the other at 8% per annum. If the total interest from both parts after 1 year is Rs. 930, what is the sum lent at 5%?",
+      "options": [
+        {"option_text": "Rs. 5,000", "is_correct": false},
+        {"option_text": "Rs. 7,000", "is_correct": false},
+        {"option_text": "Rs. 9,000", "is_correct": true},
+        {"option_text": "Rs. 10,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let sum at 5% = x. Sum at 8% = (15000-x). Interest equation: x×5/100 + (15000-x)×8/100 = 930. Multiply by 100: 5x + 120000-8x = 93000. -3x = -27000. x = Rs. 9,000. Verify: 9000×5/100=450; 6000×8/100=480; 450+480=930 ✓. Trap: Rs. 10,000 at 5% → 500; 5000 at 8% → 400; total=900≠930 (wrong); Rs. 7,000 at 5% → 350; 8000 at 8% → 640; total=990≠930 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W11_B2_00010",
+      "stem": "The ratio of the principals that yield the same SI in 4 years at 5% and in 3 years at 10% respectively is:",
+      "options": [
+        {"option_text": "2 : 3", "is_correct": false},
+        {"option_text": "3 : 2", "is_correct": true},
+        {"option_text": "2 : 1", "is_correct": false},
+        {"option_text": "1 : 2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let the principals be P₁ and P₂. Equal SI means: P₁×5×4/100 = P₂×10×3/100. 20P₁/100 = 30P₂/100. 20P₁ = 30P₂. P₁/P₂ = 30/20 = 3/2. So P₁ : P₂ = 3 : 2. Verify: if P₁=300, P₂=200: SI₁=300×5×4/100=60; SI₂=200×10×3/100=60 ✓ (equal). Trap: 2:3 = inverted ratio.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

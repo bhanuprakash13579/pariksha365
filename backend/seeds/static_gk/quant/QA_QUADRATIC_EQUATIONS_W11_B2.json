@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_QUADRATIC_EQUATIONS_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Quadratic Equations — Roots and Relationship (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00001",
+      "stem": "Find the roots of the equation x² − 5x + 6 = 0.",
+      "options": [
+        {"option_text": "x = 1 and x = 6", "is_correct": false},
+        {"option_text": "x = 2 and x = 3", "is_correct": true},
+        {"option_text": "x = −2 and x = −3", "is_correct": false},
+        {"option_text": "x = 2 and x = −3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Factorise: x²−5x+6 = (x−2)(x−3) = 0. So x = 2 or x = 3. Verify: 2²−5(2)+6 = 4−10+6 = 0 ✓; 3²−5(3)+6 = 9−15+6 = 0 ✓. Trap: −2 and −3 = roots of x²+5x+6; 2 and −3 = roots of x²+x−6.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00002",
+      "stem": "If the roots of x² − px + q = 0 are 4 and 5, what are the values of p and q?",
+      "options": [
+        {"option_text": "p = 9, q = 20", "is_correct": true},
+        {"option_text": "p = 20, q = 9", "is_correct": false},
+        {"option_text": "p = −9, q = 20", "is_correct": false},
+        {"option_text": "p = 9, q = −20", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Sum of roots = 4+5 = 9 = p (since sum of roots = p/1 = p). Product of roots = 4×5 = 20 = q (since product = q/1 = q). So p = 9, q = 20. Verify: x²−9x+20 = (x−4)(x−5) ✓. Trap: p=20, q=9 = confuses sum with product.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00003",
+      "stem": "The discriminant of 2x² − 4x + 3 = 0 is:",
+      "options": [
+        {"option_text": "−8", "is_correct": true},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "0", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Discriminant D = b²−4ac. Here a=2, b=−4, c=3. D = (−4)²−4(2)(3) = 16−24 = −8. Since D < 0, the equation has no real roots (complex roots). Trap: 8 = b²−4ac but computes 16−8=8 (wrong: 4ac=4×2×3=24, not 8); 40 = b²+4ac (adds instead of subtracts).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00004",
+      "stem": "Which of the following quadratic equations has equal roots?",
+      "options": [
+        {"option_text": "x² − 5x + 4 = 0", "is_correct": false},
+        {"option_text": "x² − 6x + 9 = 0", "is_correct": true},
+        {"option_text": "x² − 7x + 10 = 0", "is_correct": false},
+        {"option_text": "x² − 8x + 12 = 0", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Equal roots when D = b²−4ac = 0. Check each: A: 25−16=9≠0; B: 36−36=0 ✓ (equal roots: x=3,3); C: 49−40=9≠0; D: 64−48=16≠0. x²−6x+9 = (x−3)² = 0 → x = 3 (repeated). Trap: D=0 must hold — only B satisfies this condition.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00005",
+      "stem": "If one root of x² − kx + 8 = 0 is 2, what is the value of k?",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. If x=2 is a root: 2²−k(2)+8 = 0 → 4−2k+8 = 0 → 12 = 2k → k = 6. Verify: x²−6x+8 = (x−2)(x−4) = 0. Roots are 2 and 4 ✓; product = 2×4 = 8 ✓. Trap: 4 = confuses k with the other root; 8 = confuses k with the product.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00006",
+      "stem": "The sum of a number and its reciprocal is 10/3. Find the number.",
+      "options": [
+        {"option_text": "1/3 or 3", "is_correct": true},
+        {"option_text": "2 or 5", "is_correct": false},
+        {"option_text": "1/2 or 2", "is_correct": false},
+        {"option_text": "3 or 4", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Let number = x. Then x + 1/x = 10/3. Multiply by 3x: 3x² + 3 = 10x → 3x² − 10x + 3 = 0. Factorise: (3x−1)(x−3) = 0 → x = 1/3 or x = 3. Verify: 3 + 1/3 = 10/3 ✓; 1/3 + 3 = 10/3 ✓. Note: 1/3 and 3 are reciprocals of each other. Trap: 2 or 5: 2+1/2=5/2≠10/3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00007",
+      "stem": "Solve: x² = 169",
+      "options": [
+        {"option_text": "x = 13 only", "is_correct": false},
+        {"option_text": "x = ±13", "is_correct": true},
+        {"option_text": "x = −13 only", "is_correct": false},
+        {"option_text": "x = ±11", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. x² = 169 → x = ±√169 = ±13. Both 13²=169 and (−13)²=169 satisfy the equation. A quadratic equation has two roots; both ±13 must be included. Trap: 13 only = forgets the negative root; −13 only = takes only the negative root.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00008",
+      "stem": "The product of two consecutive even integers is 168. What are the integers?",
+      "options": [
+        {"option_text": "12 and 14", "is_correct": true},
+        {"option_text": "13 and 15", "is_correct": false},
+        {"option_text": "14 and 16", "is_correct": false},
+        {"option_text": "10 and 12", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Let consecutive even integers be n and n+2. n(n+2) = 168 → n²+2n−168 = 0. Discriminant = 4+4×168 = 4+672 = 676 = 26². n = (−2+26)/2 = 12. Integers = 12 and 14. Verify: 12×14 = 168 ✓. Trap: 14 and 16: 14×16=224≠168; 10 and 12: 10×12=120≠168.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00009",
+      "stem": "For what values of k does kx² + 6x + 1 = 0 have equal roots?",
+      "options": [
+        {"option_text": "k = 3", "is_correct": false},
+        {"option_text": "k = 6", "is_correct": false},
+        {"option_text": "k = 9", "is_correct": true},
+        {"option_text": "k = 12", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. For equal roots: D = b²−4ac = 0. Here b=6, a=k, c=1. D = 36−4k = 0 → 4k = 36 → k = 9. Verify: 9x²+6x+1 = (3x+1)² = 0 → x = −1/3 (equal roots) ✓. Trap: k=6: D=36−24=12≠0; k=3: D=36−12=24≠0.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_QUADRATIC_EQUATIONS_W11_B2_00010",
+      "stem": "I. x² − 7x + 10 = 0     II. y² − 9y + 20 = 0\nSolve both and determine the relationship between x and y:",
+      "options": [
+        {"option_text": "x > y", "is_correct": false},
+        {"option_text": "x < y", "is_correct": false},
+        {"option_text": "x = y", "is_correct": false},
+        {"option_text": "Relationship cannot be determined", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Equation I: x²−7x+10 = (x−2)(x−5) = 0 → x = 2 or 5. Equation II: y²−9y+20 = (y−4)(y−5) = 0 → y = 4 or 5. Compare all pairs: x=2,y=4: x<y; x=2,y=5: x<y; x=5,y=4: x>y; x=5,y=5: x=y. Not all pairs show the same relationship, so no definitive conclusion can be drawn. Trap: A student who only checks x=2 concludes x<y — but x=5,y=4 reverses this. In SSC/bank-exam DI questions, ALL pairs must satisfy the same inequality for a definitive answer.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

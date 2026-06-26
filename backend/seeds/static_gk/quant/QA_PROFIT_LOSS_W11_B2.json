@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PROFIT_LOSS_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Profit and Loss — Advanced Problems (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00001",
+      "stem": "A shopkeeper buys an article for Rs. 400 and marks it 40% above the cost price. He then gives a discount of 20%. What is his profit percentage?",
+      "options": [
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "10%", "is_correct": false},
+        {"option_text": "12%", "is_correct": true},
+        {"option_text": "14%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. CP = 400. MP = 400×1.40 = 560. Discount = 20% → SP = 560×0.80 = 448. Profit = 448-400 = 48. Profit% = 48/400×100 = 12%. Short trick: Profit% = (1+m/100)(1-d/100)-1 = 1.40×0.80-1 = 1.12-1 = 12%. Trap: 20% = mistake of subtracting discount from markup directly (40-20=20%); 8% = uses wrong base for discount.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00002",
+      "stem": "An article is sold for Rs. 990 at a loss of 10%. At what price should it be sold to gain 10%?",
+      "options": [
+        {"option_text": "Rs. 1,100", "is_correct": false},
+        {"option_text": "Rs. 1,180", "is_correct": false},
+        {"option_text": "Rs. 1,210", "is_correct": true},
+        {"option_text": "Rs. 1,250", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. SP at 10% loss = 990. CP = 990 ÷ 0.90 = 1100. SP for 10% gain = 1100 × 1.10 = Rs. 1,210. Verify: CP=1100; 10% loss: 1100×0.9=990 ✓; 10% gain: 1100×1.1=1210 ✓. Trap: 1,100 = the CP itself (no profit added); 1,180 = 990+190 (wrong calculation).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00003",
+      "stem": "A dishonest dealer claims to sell goods at cost price but uses a weight of 800 g instead of 1000 g. What is his actual profit percentage?",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "22%", "is_correct": false},
+        {"option_text": "25%", "is_correct": true},
+        {"option_text": "28%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. The dealer gives 800 g but charges for 1000 g. Effectively, he sells 800 g at the price of 1000 g. If CP of 1000 g = Rs. 100, then CP of 800 g = Rs. 80. He sells it (charges) for Rs. 100. Profit = 100-80 = 20. Profit% = 20/80 × 100 = 25%. Short trick: Profit% = (Error/True weight - Error) × 100 = (200/(1000-200)) × 100 = (200/800)×100 = 25%. Trap: 20% = takes profit on selling price (wrong denominator); 22% = wrong error formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00004",
+      "stem": "Two articles are sold at Rs. 9,600 each. On one, a gain of 20% is made and on the other, a loss of 20% is made. What is the overall profit or loss percentage?",
+      "options": [
+        {"option_text": "No profit, no loss", "is_correct": false},
+        {"option_text": "4% profit", "is_correct": false},
+        {"option_text": "4% loss", "is_correct": true},
+        {"option_text": "2% loss", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. When two items are sold at the SAME price with equal gain and loss percentages, there is always a LOSS. Loss% = (common %)²/100 = 20²/100 = 400/100 = 4%. Verify: CP of item 1 = 9600/1.20 = 8000; CP of item 2 = 9600/0.80 = 12000. Total CP = 20000; Total SP = 19200. Loss = 800. Loss% = 800/20000×100 = 4% ✓. Trap: 'No profit, no loss' = the classic wrong answer (symmetry is deceptive); actual math always gives loss in this scenario.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00005",
+      "stem": "A trader buys 100 kg of rice at Rs. 10 per kg. He sells 40 kg at Rs. 8 per kg. At what price per kg should he sell the remaining 60 kg to gain an overall profit of 10%?",
+      "options": [
+        {"option_text": "Rs. 11", "is_correct": false},
+        {"option_text": "Rs. 12", "is_correct": false},
+        {"option_text": "Rs. 13", "is_correct": true},
+        {"option_text": "Rs. 15", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Total CP = 100×10 = Rs. 1000. Required SP for 10% profit = 1000×1.10 = Rs. 1100. Revenue from 40 kg at Rs. 8 = 40×8 = Rs. 320. Required revenue from remaining 60 kg = 1100-320 = Rs. 780. Price per kg = 780/60 = Rs. 13. Verify: 40×8+60×13 = 320+780 = 1100; profit = (1100-1000)/1000×100 = 10% ✓. Trap: Rs. 12 → 40×8+60×12 = 320+720 = 1040; profit = 4% (insufficient); Rs. 15 → 40×8+60×15 = 320+900 = 1220; profit = 22% (too high).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00006",
+      "stem": "A trader marks his goods 25% above cost price. He allows a discount and still gains 12.5%. What is the discount percentage?",
+      "options": [
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "12%", "is_correct": false},
+        {"option_text": "15%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let CP = 100. MP = 100×1.25 = 125. SP = 100×1.125 = 112.5 (for 12.5% profit). Discount = MP-SP = 125-112.5 = 12.5. Discount% = 12.5/125×100 = 10%. Verify: SP = 125×(1-10/100) = 125×0.90 = 112.5. Profit = 112.5-100 = 12.5%. ✓ Trap: 12% = confuses absolute discount with percentage; 8% = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00007",
+      "stem": "If the cost price of 15 pens equals the selling price of 12 pens, what is the profit or loss percentage?",
+      "options": [
+        {"option_text": "20% profit", "is_correct": false},
+        {"option_text": "25% profit", "is_correct": true},
+        {"option_text": "20% loss", "is_correct": false},
+        {"option_text": "25% loss", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let CP of each pen = Re. 1. CP of 15 pens = 15. SP of 12 pens = 15 (given: CP of 15 = SP of 12). So SP of each pen = 15/12 = 5/4. Profit per pen = 5/4-1 = 1/4. Profit% = (1/4)/1 × 100 = 25%. Short trick: Profit% = (CP_qty - SP_qty)/SP_qty × 100 = (15-12)/12 × 100 = 3/12 × 100 = 25%. Trap: 20% = uses CP quantity in denominator: (15-12)/15 × 100 = 20% (wrong — denominator should be SP quantity).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00008",
+      "stem": "A merchant purchased goods worth Rs. 3,000 and paid 5% as transportation charges. He then sold the goods at 20% profit on the total cost. What is the selling price?",
+      "options": [
+        {"option_text": "Rs. 3,600", "is_correct": false},
+        {"option_text": "Rs. 3,750", "is_correct": false},
+        {"option_text": "Rs. 3,780", "is_correct": true},
+        {"option_text": "Rs. 3,900", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Cost of goods = 3000. Transportation = 5% of 3000 = 150. Total cost = 3000+150 = 3150. SP = 3150×1.20 = Rs. 3,780. Verify: 3150×1.2 = 3150+630 = 3780 ✓. Trap: 3,600 = 3000×1.20 (forgets transportation cost); 3,750 = 3000×1.25 (wrong profit% on wrong base).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00009",
+      "stem": "By selling an article at 4/5 of its marked price, a shopkeeper incurs a loss of 8%. What is the ratio of the marked price to the cost price?",
+      "options": [
+        {"option_text": "4 : 5", "is_correct": false},
+        {"option_text": "5 : 4", "is_correct": false},
+        {"option_text": "23 : 20", "is_correct": true},
+        {"option_text": "20 : 23", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. SP = (4/5)×MP. Loss = 8% → SP = 0.92×CP. Equating: (4/5)MP = 0.92×CP. MP/CP = 0.92×(5/4) = 4.60/4 = 1.15 = 23/20. So MP : CP = 23 : 20. Verify: If CP=100, MP=115. SP = (4/5)×115 = 92 = 0.92×100 = 8% loss ✓. Trap: 20:23 = inverted ratio (CP:MP instead of MP:CP); 5:4 = (4/5)MP ratio inverted.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_W11_B2_00010",
+      "stem": "A man buys 3 articles for Rs. 1 and sells 2 for Rs. 1. What is his gain percentage?",
+      "options": [
+        {"option_text": "33.33%", "is_correct": false},
+        {"option_text": "50%", "is_correct": true},
+        {"option_text": "66.67%", "is_correct": false},
+        {"option_text": "100%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. CP of 1 article = 1/3. SP of 1 article = 1/2. Profit per article = 1/2-1/3 = 3/6-2/6 = 1/6. Profit% = (1/6)/(1/3) × 100 = (1/6) × (3/1) × 100 = 3/6 × 100 = 50%. Verify: Buy 6 articles for Rs. 2; sell 6 articles (= 3 pairs, each pair for Rs. 1) for Rs. 3. Profit = 1 on CP of 2 = 50% ✓. Trap: 33.33% = profit on SP rather than CP; 66.67% = wrong formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

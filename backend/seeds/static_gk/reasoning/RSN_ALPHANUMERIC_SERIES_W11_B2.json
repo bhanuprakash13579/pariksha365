@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_ALPHANUMERIC_SERIES_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Alphanumeric Series — Pattern Identification (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00001",
+      "stem": "Find the missing term: A1, C3, E5, G7, ?",
+      "options": [
+        {"option_text": "H8", "is_correct": false},
+        {"option_text": "I9", "is_correct": true},
+        {"option_text": "J9", "is_correct": false},
+        {"option_text": "I10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Letters: A, C, E, G — every alternate letter (skip one): A→C→E→G→I. Numbers: 1, 3, 5, 7 — odd numbers increasing by 2: next = 9. Next term = I9. Trap: J9 = advances letter by 3 (wrong); H8 = moves to the very next letter with next even number; I10 = uses correct letter but wrong number (10 is even, pattern uses odd numbers).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00002",
+      "stem": "Find the missing term: Z1, X4, V9, T16, ?",
+      "options": [
+        {"option_text": "R25", "is_correct": true},
+        {"option_text": "S25", "is_correct": false},
+        {"option_text": "R24", "is_correct": false},
+        {"option_text": "P25", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Letters: Z, X, V, T — going backward, skipping one letter each time: Z→X(skip Y)→V(skip W)→T(skip U)→R(skip S). Numbers: 1, 4, 9, 16 = 1², 2², 3², 4² → next = 5² = 25. Next term = R25. Trap: S25 = S is only one letter back from T (wrong; should skip one letter to get R); P25 = skips two letters instead of one.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00003",
+      "stem": "In the series: B2E, D4G, F6I, H8K, what comes next?",
+      "options": [
+        {"option_text": "J10L", "is_correct": false},
+        {"option_text": "J10M", "is_correct": true},
+        {"option_text": "K10M", "is_correct": false},
+        {"option_text": "J12M", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Analyse each term: B(2)2E(5), D(4)4G(7), F(6)6I(9), H(8)8K(11). First letter: B,D,F,H → +2 each time → next = J(10). Number: 2,4,6,8 → +2 each time → next = 10. Last letter: E,G,I,K → +2 each time → next = M(13). Next term = J10M. Trap: J10L = L is only +1 from K (wrong; pattern is +2); K10M = K is wrong first letter (+1 from H instead of +2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00004",
+      "stem": "Study the sequence: 2B4, 4D8, 6F12, 8H16, ?\nFind the missing term.",
+      "options": [
+        {"option_text": "10J20", "is_correct": true},
+        {"option_text": "10I20", "is_correct": false},
+        {"option_text": "12J20", "is_correct": false},
+        {"option_text": "10J18", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Pattern in each term (number)(letter)(number): First number: 2,4,6,8 → +2 → next = 10. Letter: B(2),D(4),F(6),H(8) → every alternate letter (+2 positions) → next = J(10). Last number: 4,8,12,16 → +4 → next = 20. Also: last number = 2× first number (4=2×2, 8=2×4, 12=2×6, 16=2×8, 20=2×10) ✓. Next term = 10J20. Trap: 10I20 = I is the letter between H and J but should skip to J; 12J20 = wrong first number.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00005",
+      "stem": "Find the odd one out in this alphanumeric series: P3Q, R5S, T7U, V8W, X11Y",
+      "options": [
+        {"option_text": "P3Q", "is_correct": false},
+        {"option_text": "R5S", "is_correct": false},
+        {"option_text": "V8W", "is_correct": true},
+        {"option_text": "X11Y", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Pattern: each group is (letter)(prime number)(next consecutive letter). Numbers: 3, 5, 7, ?, 11. The primes in sequence are 3, 5, 7, 11 (skipping 9 which is not prime). The next prime after 7 is 11 — but V8W uses 8, which is NOT prime (8 = 2³). V8W breaks the prime-number pattern. Letters: P→Q (consecutive), R→S, T→U, V→W, X→Y — all consecutive letter pairs ✓. The flaw is the number 8 in V8W. Trap: X11Y uses 11 (prime) ✓; R5S uses 5 (prime) ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00006",
+      "stem": "If the series A=1, B=2, C=3... Z=26, what is the value of CAB + BAC?",
+      "options": [
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "21", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Decode each letter using its alphabetical position: C=3, A=1, B=2. CAB = sum of its letters = C+A+B = 3+1+2 = 6. BAC = B+A+C = 2+1+3 = 6. CAB + BAC = 6+6 = 12. Trap: 18 = common wrong answer when students add A=1,B=2,C=3,D=4... and confuse position with value; 15 = result of some non-standard letter coding.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00007",
+      "stem": "In the series: M5N, O7P, Q9R, S11T, what is the next term?",
+      "options": [
+        {"option_text": "U12V", "is_correct": false},
+        {"option_text": "U13V", "is_correct": true},
+        {"option_text": "V13W", "is_correct": false},
+        {"option_text": "U14V", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern: each term = (letter)(number)(next consecutive letter). First letters: M(13), O(15), Q(17), S(19) → +2 each time → next = U(21). Numbers: 5, 7, 9, 11 → +2 each time → next = 13. Last letter = first letter + 1: M→N, O→P, Q→R, S→T → next = U→V. Next term = U13V. Trap: U12V = wrong number (12 not in odd-number pattern); V13W = wrong first letter (+3 from S instead of +2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00008",
+      "stem": "If PEN = 35 (P=16, E=5, N=14 → 16+5+14=35), what is the value of CAT?",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Using A=1, B=2, ... Z=26: C=3, A=1, T=20. CAT = 3+1+20 = 24. Verify: PEN = P(16)+E(5)+N(14) = 35 ✓ (confirms the coding). Trap: 20 = only T's value; 28 = 3+5+20 (uses E's value instead of A's); 30 = 3+7+20 (wrong middle value).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00009",
+      "stem": "Find the missing term: 3A, 5C, 9E, 15G, ?",
+      "options": [
+        {"option_text": "21I", "is_correct": false},
+        {"option_text": "23I", "is_correct": true},
+        {"option_text": "21H", "is_correct": false},
+        {"option_text": "23J", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Numbers: 3, 5, 9, 15 — differences: 2, 4, 6. Second differences are +2. Next difference = 8. Next number = 15+8 = 23. Letters: A, C, E, G — every alternate letter (+2 each): next = I. Next term = 23I. Trap: 21I = 15+6 (repeats the previous difference instead of increasing by 2); 23J = wrong letter (J is not +2 from G; I is).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ALPHANUMERIC_SERIES_W11_B2_00010",
+      "stem": "In a certain code: A=2, B=4, C=6... (each letter = 2 × position number). What is the code for DOG?",
+      "options": [
+        {"option_text": "52", "is_correct": true},
+        {"option_text": "64", "is_correct": false},
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "48", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Rule: each letter = 2 × position. D is 4th → 2×4=8; O is 15th → 2×15=30; G is 7th → 2×7=14. DOG = 8+30+14 = 52. Verify with the given code: A=2(1st)=2, B=2(2nd)=4, C=2(3rd)=6 ✓. Trap: 64 = uses O=32 (wrong; 15th → 30, not 32); 26 = uses raw position values D=4,O=15,G=7 → 4+15+7=26 (omits the ×2 multiplier).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

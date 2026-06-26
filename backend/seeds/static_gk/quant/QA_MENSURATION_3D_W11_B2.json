@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_MENSURATION_3D_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mensuration 3D — Volume and Surface Area (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00001",
+      "stem": "The volume of a cube is 343 cm³. What is its total surface area?",
+      "options": [
+        {"option_text": "196 cm²", "is_correct": false},
+        {"option_text": "294 cm²", "is_correct": true},
+        {"option_text": "324 cm²", "is_correct": false},
+        {"option_text": "216 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Volume of cube = a³ = 343 → a = ∛343 = 7 cm. Total surface area = 6a² = 6×7² = 6×49 = 294 cm². Trap: 216 = 6×6²=6×36 (wrong edge=6); 196 = 4×7²=4×49 (lateral surface only, not total); 324 = 6×7.35² (computation error).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00002",
+      "stem": "A cuboid has dimensions 8 cm × 6 cm × 5 cm. What is its total surface area?",
+      "options": [
+        {"option_text": "240 cm²", "is_correct": false},
+        {"option_text": "236 cm²", "is_correct": true},
+        {"option_text": "280 cm²", "is_correct": false},
+        {"option_text": "264 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total surface area of cuboid = 2(lb + bh + lh) where l=8, b=6, h=5. = 2(8×6 + 6×5 + 8×5) = 2(48 + 30 + 40) = 2×118 = 236 cm². Verify: lb=48, bh=30, lh=40; sum=118; ×2=236 ✓. Trap: 240 = 2(8×6 + 6×6 + 8×6) uses wrong value; 280 = 2(8+6+5)×... (lateral surface method misapplied).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00003",
+      "stem": "The radius of a cylinder is 7 cm and height is 10 cm. What is the volume? (Use π = 22/7)",
+      "options": [
+        {"option_text": "1340 cm³", "is_correct": false},
+        {"option_text": "1540 cm³", "is_correct": true},
+        {"option_text": "1470 cm³", "is_correct": false},
+        {"option_text": "1760 cm³", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Volume of cylinder = πr²h = (22/7)×7²×10 = (22/7)×49×10 = 22×7×10 = 1540 cm³. Short trick: (22/7)×49 = 22×7 = 154; then ×10 = 1540. Trap: 1470 = πr²h with r=7,h=10 but uses π=3 (wrong); 1760 = 2πrh×r (confused with lateral surface); 1340 = computational error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00004",
+      "stem": "The curved surface area of a cylinder is 440 cm² and height is 10 cm. What is the radius? (Use π = 22/7)",
+      "options": [
+        {"option_text": "5 cm", "is_correct": false},
+        {"option_text": "7 cm", "is_correct": true},
+        {"option_text": "10 cm", "is_correct": false},
+        {"option_text": "14 cm", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. CSA of cylinder = 2πrh = 440. 2×(22/7)×r×10 = 440. (44/7)×10×r = 440. 440r/7 = 440. r = 7 cm. Verify: 2×(22/7)×7×10 = 2×22×10 = 440 ✓. Trap: 14 = doubles the radius (confuses radius with diameter); 5 = half of 10 (random division).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00005",
+      "stem": "A solid sphere has radius 6 cm. What is its volume? (Use π = 22/7)",
+      "options": [
+        {"option_text": "904.32 cm³", "is_correct": false},
+        {"option_text": "905 1/7 cm³", "is_correct": true},
+        {"option_text": "864 cm³", "is_correct": false},
+        {"option_text": "972 cm³", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Volume of sphere = (4/3)πr³ = (4/3)×(22/7)×6³ = (4/3)×(22/7)×216. = (4×22×216)/(3×7) = (4×22×72)/7 = (6336)/7 = 905 1/7 cm³ ≈ 905.14 cm³. Step check: 216/3=72; 4×22=88; 88×72=6336; 6336/7=905.14. Trap: 904.32 uses π=3.14 (decimal approximation gives slight difference); 864 = 4×6³/3 (forgets π).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00006",
+      "stem": "The slant height of a cone is 13 cm and radius is 5 cm. What is the curved surface area? (Use π = 22/7)",
+      "options": [
+        {"option_text": "204 2/7 cm²", "is_correct": true},
+        {"option_text": "190 cm²", "is_correct": false},
+        {"option_text": "216 cm²", "is_correct": false},
+        {"option_text": "220 cm²", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. CSA of cone = πrl = (22/7)×5×13 = (22×65)/7 = 1430/7 = 204 2/7 cm². Verify: 22×5=110; 110×13=1430; 1430÷7=204.28=204 2/7 ✓. Note: no need to find height (which = √(13²−5²)=√(169−25)=√144=12 cm) since slant height l is given directly. Trap: 220 = (22/7)×5×14 (uses l=14 instead of 13).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00007",
+      "stem": "A cone has base radius 7 cm and height 24 cm. What is its slant height?",
+      "options": [
+        {"option_text": "23 cm", "is_correct": false},
+        {"option_text": "25 cm", "is_correct": true},
+        {"option_text": "26 cm", "is_correct": false},
+        {"option_text": "31 cm", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Slant height l = √(r²+h²) = √(7²+24²) = √(49+576) = √625 = 25 cm. Recognise this as a Pythagorean triple: 7-24-25 ✓. Trap: 26 = √(7²+25²)=√674≈26 (wrong — 25 is the slant height, not height); 31 = √(7²+30²) (wrong values).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00008",
+      "stem": "If the radius of a sphere is doubled, by what factor does its volume increase?",
+      "options": [
+        {"option_text": "2 times", "is_correct": false},
+        {"option_text": "4 times", "is_correct": false},
+        {"option_text": "6 times", "is_correct": false},
+        {"option_text": "8 times", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Volume of sphere ∝ r³. If r → 2r, new volume = (4/3)π(2r)³ = (4/3)π×8r³ = 8×original volume. Volume increases 8 times. Short trick: volume scales as (ratio of radii)³ = 2³ = 8. Trap: 2 = linear scaling (forgets it's cubic); 4 = surface area scaling (area scales as r², not volume); 6 = common wrong answer for cubic scaling.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00009",
+      "stem": "A hollow cylinder (pipe) has outer radius 7 cm, inner radius 5 cm, and length 14 cm. What is the volume of metal used? (Use π = 22/7)",
+      "options": [
+        {"option_text": "1048 cm³", "is_correct": false},
+        {"option_text": "1056 cm³", "is_correct": true},
+        {"option_text": "1100 cm³", "is_correct": false},
+        {"option_text": "1016 cm³", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Volume of metal in hollow cylinder = pi(R^2 - r^2)h where R=7, r=5, h=14. = (22/7) x (49 - 25) x 14 = (22/7) x 24 x 14 = 22 x 24 x 2 = 1056 cm^3. Step check: 49 - 25 = 24; 24 x 14 = 336; 336 x 22 = 7392; 7392 / 7 = 1056. Short cut: (22/7) x 24 x 14 = 22 x 24 x 2 = 22 x 48 = 1056. Trap: 1100 = uses wrong ring dimensions; 1048 = off-by-8 computation error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MENSURATION_3D_W11_B2_00010",
+      "stem": "A metallic sphere of radius 3 cm is melted and recast into a cylinder of radius 3 cm. What is the height of the cylinder? (Use π = 22/7)",
+      "options": [
+        {"option_text": "2 cm", "is_correct": false},
+        {"option_text": "4 cm", "is_correct": true},
+        {"option_text": "6 cm", "is_correct": false},
+        {"option_text": "8 cm", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Volume of sphere = volume of cylinder (same metal, no wastage). (4/3)πr₁³ = πr₂²h. Here r₁=3 (sphere), r₂=3 (cylinder). (4/3)π×27 = π×9×h. 36π = 9πh. h = 36/9 = 4 cm. Verify: sphere volume = (4/3)π×27=36π; cylinder volume = π×9×4=36π ✓. Short trick: when radii are equal, h = (4/3)r = (4/3)×3 = 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

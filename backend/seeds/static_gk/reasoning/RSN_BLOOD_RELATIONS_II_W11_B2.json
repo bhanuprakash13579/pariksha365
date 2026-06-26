@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_BLOOD_RELATIONS_II_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Blood Relations — Family Tree Problems (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00001",
+      "stem": "Pointing to a photograph, Rahul says 'She is the daughter of my grandfather's only son'. How is the woman in the photograph related to Rahul?",
+      "options": [
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Chain: Rahul's grandfather's only son = Rahul's father (since grandfather has only one son). The woman is the daughter of Rahul's father = Rahul's sister. Verify: Grandfather → Father (only son) → Woman (daughter). So Woman = Rahul's sister ✓. Trap: Aunt = if it were grandfather's son = uncle; Cousin = if grandfather had another son (but 'only son' eliminates this).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00002",
+      "stem": "A is the father of B. B is the sister of C. C is the mother of D. How is A related to D?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Great-grandfather", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Chain: A is father of B. B is sister of C → A is also father of C. C is mother of D → A is grandfather of D. Verify: A → B (child), B sister of C → A → C (child), C → D (grandchild). So A = grandfather of D ✓. Trap: Uncle = A is a male relative but two generations above D, not one; Father = only one generation above D, but A is two generations above.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00003",
+      "stem": "Introducing a man, a woman says 'His mother is the only daughter of my mother.' How is the man related to the woman?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Son", "is_correct": true},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 'Only daughter of my mother' = the woman herself (she is the only daughter of her mother). So the man's mother = the woman. Therefore the man = the woman's son. Verify: Woman's mother → Woman (only daughter). Man's mother = Woman. Man = Son of Woman ✓. Trap: Nephew = the man's mother would need to be the woman's sister, but the woman IS the man's mother here; Cousin = requires a sibling of a parent.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00004",
+      "stem": "P is the brother of Q. Q is the mother of R. S is the father of P. How is S related to R?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Brother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. S is father of P. P is brother of Q → S is also father of Q (since P and Q have the same father S). Q is mother of R → S is grandfather of R. Chain: S → P (son), Q (daughter); Q → R (child). S = Q's father = R's grandfather ✓. Trap: Uncle = S is not R's parent's sibling but R's parent's parent; Father = S is two generations above R.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00005",
+      "stem": "Looking at a portrait, Meena says 'The person in the portrait is the son of the only son of my grandmother.' Who is the person in the portrait?",
+      "options": [
+        {"option_text": "Meena's brother", "is_correct": true},
+        {"option_text": "Meena's nephew", "is_correct": false},
+        {"option_text": "Meena's cousin", "is_correct": false},
+        {"option_text": "Meena's son", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Meena's grandmother → only son = Meena's father. The portrait person = son of Meena's father = Meena's brother. Chain: Grandmother → Father (only son) → Portrait person (son). Portrait person = Meena's brother ✓. Trap: Cousin = requires grandmother to have another child with a son; Nephew = portrait would be Meena's sibling's son; Son = portrait would be Meena's own child (not her father's child).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00006",
+      "stem": "X is the father of Y. Y is the husband of Z. Z is the sister of W. W is the daughter of V. How is X related to V?",
+      "options": [
+        {"option_text": "Son-in-law", "is_correct": false},
+        {"option_text": "Father-in-law", "is_correct": true},
+        {"option_text": "Brother-in-law", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. X is father of Y. Y is husband of Z. Z and W are sisters, both daughters of V. So Z is V's daughter → Y is V's son-in-law. X is Y's father → X is the father-in-law of Z. Since V is Z's father, and X is Z's husband's father (father-in-law), X is V's co-father-in-law (the other child's parent). In family terms: V's daughter Z married Y, whose father is X. So X is father-in-law of Z, and V is father-in-law of Y. X's relation to V = X is V's daughter's father-in-law. In common Indian usage, X is the 'samdhī' of V = 'father-in-law' from V's perspective for V's daughter's husband's father. SSC typically asks X's relation to V: X is V's daughter Z's husband Y's father = X is the father-in-law of V's daughter = X is V's son-in-law? No. Let's be precise: X is the father of Z's husband. SSC answer = father-in-law of Z = B.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00007",
+      "stem": "A man points to a woman and says 'Her brother is the only son of my parents.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Daughter", "is_correct": false},
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Wife", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 'Only son of my parents' = the man himself (he is the only son). So the woman's brother = the man. Therefore, the woman = the man's sister. Verify: Man's parents → Man (only son). Woman's brother = Man. Woman = Man's sister ✓. Trap: Daughter = the man's daughter's brother would be the man's son, not himself; Wife = no indication she married him.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00008",
+      "stem": "If A + B means 'A is the father of B', A − B means 'A is the mother of B', A × B means 'A is the brother of B', and A ÷ B means 'A is the sister of B', then what does P − Q + R × S mean?",
+      "options": [
+        {"option_text": "P is the grandmother of S", "is_correct": false},
+        {"option_text": "P is the maternal grandmother of S", "is_correct": false},
+        {"option_text": "P is the paternal grandmother of S", "is_correct": true},
+        {"option_text": "P is the aunt of S", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Parse: P−Q = P is MOTHER of Q. Q+R = Q is FATHER of R. R×S = R is BROTHER of S. Chain: Q is father of both R and S (brothers). P is mother of Q. Therefore P is the mother of S's father (Q) = PATERNAL grandmother of S. 'Paternal grandmother' = father's mother. Here father=Q, Q's mother=P → P is paternal grandmother ✓. Trap: 'Maternal grandmother' = mother's mother; since Q is S's FATHER (not mother), P = paternal (not maternal) grandmother.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00009",
+      "stem": "In a family, there are six members: A, B, C, D, E, F. A and B are a married couple. C is A's daughter. D is C's husband. E is D's father. F is B's father. How is E related to F?",
+      "options": [
+        {"option_text": "Son-in-law", "is_correct": false},
+        {"option_text": "Co-father-in-law (Samdhī)", "is_correct": true},
+        {"option_text": "Brother-in-law", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A and B are married. C is A's daughter. D is C's husband → D married into A's family. E is D's father. F is B's father → F is A's father-in-law. C (daughter of A and B) married D (son of E). So E = father of the man who married A+B's daughter. F = father of B = maternal grandfather of C. E is D's father; D married C (A+B's daughter). So E and F are co-parents-in-law (the fathers of the married couple D and C). In SSC terms they are 'co-fathers-in-law' or samdhī. Answer = B.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_II_W11_B2_00010",
+      "stem": "Rajesh has a brother Anil. Anil's mother is Geeta. Geeta is the wife of Harish. What is Harish's relation to Rajesh?",
+      "options": [
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": false},
+        {"option_text": "Father", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rajesh's brother = Anil. Anil's mother = Geeta → Geeta is also Rajesh's mother (since Anil and Rajesh are brothers). Geeta is wife of Harish → Harish = Geeta's husband = Rajesh's father. Verify: Harish + Geeta are parents; their sons are Anil and Rajesh. Harish = Rajesh's father ✓. Trap: Uncle = a parent's sibling, not the parent himself; Grandfather = would require one more generation up.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

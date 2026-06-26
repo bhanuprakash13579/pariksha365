@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_DATA_INTERPRETATION_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Data Interpretation — Table and Bar Chart Based Questions (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00001",
+      "stem": "Study the table and answer Q1–Q5:\n\nProduction of Wheat (in lakh tonnes) by 5 states over 4 years:\n\nState | 2019 | 2020 | 2021 | 2022\n------|------|------|------|------\n  P   |  12  |  15  |  18  |  21\n  Q   |  10  |  12  |  14  |  16\n  R   |   8  |  10  |  12  |  14\n  S   |  20  |  22  |  24  |  26\n  T   |   5  |   7  |   9  |  11\n\nWhat is the total wheat production by all 5 states in 2021?",
+      "options": [
+        {"option_text": "75 lakh tonnes", "is_correct": false},
+        {"option_text": "77 lakh tonnes", "is_correct": true},
+        {"option_text": "79 lakh tonnes", "is_correct": false},
+        {"option_text": "81 lakh tonnes", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 2021 column total = P+Q+R+S+T = 18+14+12+24+9 = 77 lakh tonnes. Verify: 18+14=32; 32+12=44; 44+24=68; 68+9=77 ✓. Trap: 75 = misreads one state; 79 = adds 2 extra; 81 = uses 2022 column for one state.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00002",
+      "stem": "[Refer to the same table from Q1]\n\nWhich state showed the highest total production over all four years combined?",
+      "options": [
+        {"option_text": "State P", "is_correct": false},
+        {"option_text": "State Q", "is_correct": false},
+        {"option_text": "State S", "is_correct": true},
+        {"option_text": "State T", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Totals: P=12+15+18+21=66; Q=10+12+14+16=52; R=8+10+12+14=44; S=20+22+24+26=92; T=5+7+9+11=32. State S has the highest total of 92 lakh tonnes. Trap: P = second-highest at 66 but still below S's 92.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00003",
+      "stem": "[Refer to the same table from Q1]\n\nThe percentage increase in State P's production from 2019 to 2022 is:",
+      "options": [
+        {"option_text": "65%", "is_correct": false},
+        {"option_text": "70%", "is_correct": false},
+        {"option_text": "75%", "is_correct": true},
+        {"option_text": "80%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. State P: 2019=12, 2022=21. Increase = 21−12 = 9. % increase = (9/12)×100 = 75%. Trap: 70% = 9/13×100 (wrong base); 80% = overestimates by using 12+12/15 ratio incorrectly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00004",
+      "stem": "[Refer to the same table from Q1]\n\nIn 2022, what is the ratio of production of State T to that of State P?",
+      "options": [
+        {"option_text": "11:21", "is_correct": true},
+        {"option_text": "21:11", "is_correct": false},
+        {"option_text": "1:2", "is_correct": false},
+        {"option_text": "3:7", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. State T in 2022 = 11 lakh tonnes. State P in 2022 = 21 lakh tonnes. Ratio T:P = 11:21 (already in simplest form — HCF(11,21)=1). Trap: 21:11 = P:T, the ratio reversed; 1:2 = approximate (11:21 ≈ 0.52, not 0.5); 3:7 = 3/7 ≈ 0.43, not equal to 11/21 ≈ 0.52.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00005",
+      "stem": "[Refer to the same table from Q1]\n\nThe average annual production of State R (2019–2022) is:",
+      "options": [
+        {"option_text": "10 lakh tonnes", "is_correct": false},
+        {"option_text": "11 lakh tonnes", "is_correct": true},
+        {"option_text": "12 lakh tonnes", "is_correct": false},
+        {"option_text": "13 lakh tonnes", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. State R: 8+10+12+14 = 44 over 4 years. Average = 44/4 = 11 lakh tonnes. Trap: 10 = average of first two years only; 12 = 2021 value mistaken for average.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00006",
+      "stem": "Study the bar chart data and answer Q6–Q10:\n\nNumber of employees in 5 departments of a company:\n\nHR: 40  |  Finance: 60  |  IT: 120  |  Marketing: 80  |  Operations: 100\n\nTotal employees in the company:",
+      "options": [
+        {"option_text": "380", "is_correct": false},
+        {"option_text": "390", "is_correct": false},
+        {"option_text": "400", "is_correct": true},
+        {"option_text": "420", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Total = 40+60+120+80+100 = 400. Verify: 40+60=100; 100+120=220; 220+80=300; 300+100=400 ✓. Trap: 380 = misses one department; 420 = adds extra 20 somewhere.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00007",
+      "stem": "[Refer to the same bar chart data from Q6]\n\nThe IT department has what percentage of the total employees?",
+      "options": [
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "28%", "is_correct": false},
+        {"option_text": "30%", "is_correct": true},
+        {"option_text": "35%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. IT = 120 out of 400 total. Percentage = (120/400)×100 = 30%. Trap: 25% = 100/400 (Operations proportion); 28% = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00008",
+      "stem": "[Refer to the same bar chart data from Q6]\n\nIf the company hires 50 more employees, all in the Finance department, what is the new percentage share of Finance?",
+      "options": [
+        {"option_text": "22%", "is_correct": false},
+        {"option_text": "24%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "28%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. New Finance = 60+50 = 110. New total = 400+50 = 450. New % = (110/450)×100 = 11000/450 = 24.44% ≈ 24%. Trap: 25% = 110/440 (wrong new total — adds 40 not 50); 22% = 110/500 (wrong denominator).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00009",
+      "stem": "[Refer to the same bar chart data from Q6]\n\nThe ratio of employees in Marketing to HR is:",
+      "options": [
+        {"option_text": "2:1", "is_correct": true},
+        {"option_text": "3:1", "is_correct": false},
+        {"option_text": "3:2", "is_correct": false},
+        {"option_text": "4:1", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Marketing = 80, HR = 40. Ratio = 80:40 = 2:1. Trap: 3:1 = misreads Marketing as 120 (IT value); 3:2 = uses wrong department values.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_W11_B2_00010",
+      "stem": "[Refer to the same bar chart data from Q6]\n\nIf 20% of IT employees are transferred to Operations, how many employees will Operations have?",
+      "options": [
+        {"option_text": "112", "is_correct": false},
+        {"option_text": "120", "is_correct": false},
+        {"option_text": "124", "is_correct": true},
+        {"option_text": "130", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 20% of IT = 20% of 120 = 24 employees transferred. Operations (new) = 100+24 = 124. Trap: 120 = 100+20 (takes 20 instead of 20% of 120 = 24); 112 = 100+12 (takes 10% instead of 20%).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

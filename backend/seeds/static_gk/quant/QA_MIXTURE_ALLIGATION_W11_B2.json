@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_MIXTURE_ALLIGATION_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mixture and Alligation — Ratio Problems (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00001",
+      "stem": "In what ratio must tea at Rs. 80 per kg be mixed with tea at Rs. 120 per kg so that the mixture costs Rs. 90 per kg?",
+      "options": [
+        {"option_text": "1 : 3", "is_correct": false},
+        {"option_text": "2 : 1", "is_correct": false},
+        {"option_text": "3 : 1", "is_correct": true},
+        {"option_text": "1 : 2", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. By alligation rule: Cheaper : Costlier = (Costlier price - Mean price) : (Mean price - Cheaper price) = (120-90) : (90-80) = 30 : 10 = 3 : 1. So Rs. 80 tea : Rs. 120 tea = 3 : 1. Verify: (3×80 + 1×120)/4 = (240+120)/4 = 360/4 = 90 ✓. Trap: 1:3 = inverted ratio (confuses which is cheaper).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00002",
+      "stem": "A container has 40 litres of milk. 8 litres are removed and replaced with water. This process is repeated once more. What fraction of the mixture is now milk?",
+      "options": [
+        {"option_text": "16/25", "is_correct": true},
+        {"option_text": "4/5", "is_correct": false},
+        {"option_text": "9/25", "is_correct": false},
+        {"option_text": "3/5", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Formula for repeated replacement: milk remaining = P × (1 - r/P)^n where P=40, r=8, n=2. Milk = 40 × (1-8/40)² = 40 × (32/40)² = 40 × (4/5)² = 40 × 16/25 = 640/25 = 25.6 litres. Fraction = 25.6/40 = 16/25. Verify: After 1st replacement: milk = 32L, water = 8L. After 2nd: remove 8L from 40L (which is 32L milk + 8L water). Milk removed = 8×32/40=6.4L. Remaining milk = 32-6.4 = 25.6L. Fraction = 25.6/40 = 16/25 ✓. Trap: 4/5 = fraction after 1 replacement only (not 2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00003",
+      "stem": "In what ratio must water be mixed with milk costing Rs. 12 per litre so that the mixture can be sold for Rs. 8 per litre at a profit of 33⅓%?",
+      "options": [
+        {"option_text": "1 : 2", "is_correct": false},
+        {"option_text": "1 : 3", "is_correct": false},
+        {"option_text": "2 : 3", "is_correct": false},
+        {"option_text": "1 : 1", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Selling price = Rs. 8. Profit = 33⅓% on cost. If cost = C, then C × (1 + 1/3) = 8 → C × 4/3 = 8 → C = 6. So the mixture's cost price per litre = Rs. 6. Water costs Rs. 0 per litre. Milk costs Rs. 12 per litre. By alligation: Water : Milk = (Milk price - CP of mixture) : (CP of mixture - Water price) = (12-6) : (6-0) = 6 : 6 = 1 : 1. Trap: 1:2 = using SP=8 directly as CP (wrong — must find CP from profit margin).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00004",
+      "stem": "A 60 litre mixture has milk and water in the ratio 2 : 1. How much water must be added to make the ratio 1 : 1?",
+      "options": [
+        {"option_text": "15 litres", "is_correct": false},
+        {"option_text": "20 litres", "is_correct": true},
+        {"option_text": "25 litres", "is_correct": false},
+        {"option_text": "30 litres", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Current mixture: milk = (2/3)×60 = 40L; water = (1/3)×60 = 20L. For ratio 1:1, milk = water. Milk stays at 40L (only water is added). Need water = 40L. Current water = 20L. Water to add = 40-20 = 20 litres. Verify: New mixture = 40L milk + 40L water = 80L total, ratio 1:1 ✓. Trap: 30 = total water needed (not additional); 15 = half of water needed (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00005",
+      "stem": "A grocer mixes 30 kg of rice at Rs. 14 per kg with 20 kg of rice at Rs. 9 per kg. At what price per kg should he sell the mixture to gain 25%?",
+      "options": [
+        {"option_text": "Rs. 12", "is_correct": false},
+        {"option_text": "Rs. 13", "is_correct": false},
+        {"option_text": "Rs. 14", "is_correct": false},
+        {"option_text": "Rs. 15", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Total cost = 30×14 + 20×9 = 420 + 180 = 600. Total quantity = 50 kg. CP per kg = 600/50 = Rs. 12. SP per kg = 12 × 1.25 = Rs. 15. Verify: gain = (15-12)/12 × 100 = 3/12 × 100 = 25% ✓. Trap: Rs. 14 = the higher variety price (not the mixture CP); Rs. 12 = CP (no gain added yet).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00006",
+      "stem": "In what ratio must a grocer mix two types of rice costing Rs. 10 and Rs. 16 per kg to obtain a mixture worth Rs. 11.50 per kg?",
+      "options": [
+        {"option_text": "2 : 1", "is_correct": false},
+        {"option_text": "3 : 1", "is_correct": true},
+        {"option_text": "1 : 3", "is_correct": false},
+        {"option_text": "5 : 3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Alligation: Cheaper : Costlier = (Costlier - Mean) : (Mean - Cheaper) = (16-11.5) : (11.5-10) = 4.5 : 1.5 = 3 : 1. Rs. 10 rice : Rs. 16 rice = 3 : 1. Verify: (3×10+1×16)/4 = (30+16)/4 = 46/4 = 11.50 ✓. Trap: 1:3 = inverted ratio; 2:1 = miscalculation (16-11.5=4.5, 11.5-10=1.5, ratio=3:1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00007",
+      "stem": "In what ratio must a 20% salt solution be mixed with pure water to get a 5% salt solution?",
+      "options": [
+        {"option_text": "1 : 3", "is_correct": false},
+        {"option_text": "3 : 1", "is_correct": false},
+        {"option_text": "1 : 4", "is_correct": false},
+        {"option_text": "3 : 1 (water : solution)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Use alligation: Water (0%) mixed with 20% solution to get 5% mean. Water : Solution = (20-5) : (5-0) = 15 : 5 = 3 : 1. So 3 parts water to 1 part 20% solution. Verify: (3×0% + 1×20%)/4 = 20%/4 = 5% ✓. The ratio is 3:1 (water to solution). Trap: B=3:1 labelled as 'solution:water' would give the wrong reading; D correctly labels the ratio direction as water:solution.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00008",
+      "stem": "How many kilograms of sugar at Rs. 3.60 per kg must be mixed with 8 kg of sugar at Rs. 4.20 per kg so that there may be a gain of 20% by selling the mixture at Rs. 4.80 per kg?",
+      "options": [
+        {"option_text": "4 kg", "is_correct": true},
+        {"option_text": "6 kg", "is_correct": false},
+        {"option_text": "8 kg", "is_correct": false},
+        {"option_text": "10 kg", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. SP = Rs. 4.80. Gain = 20%. CP of mixture = 4.80/1.20 = Rs. 4 per kg. Alligation on CP: Rs. 3.60 and Rs. 4.20 mixed to get mean Rs. 4. Ratio of (Rs.3.60 sugar) : (Rs.4.20 sugar) = (4.20-4.00) : (4.00-3.60) = 0.20 : 0.40 = 1 : 2. So cheap : expensive = 1 : 2. We have 8 kg of the expensive (Rs.4.20) variety = 2 parts. Therefore 1 part = 4 kg of Rs.3.60 sugar is needed. Trap: 8 kg = confuses the given quantity with the answer; ratio 1:2 means 1 part cheap to 2 parts expensive.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00009",
+      "stem": "A vessel contains 20 litres of pure alcohol. 5 litres are withdrawn and replaced with water. 5 litres of the mixture are then withdrawn and replaced with water. What is the quantity of alcohol remaining?",
+      "options": [
+        {"option_text": "11.25 litres", "is_correct": true},
+        {"option_text": "12.5 litres", "is_correct": false},
+        {"option_text": "10 litres", "is_correct": false},
+        {"option_text": "13.75 litres", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. After 1st withdrawal: alcohol = 20-5 = 15L; water = 5L. After 2nd withdrawal of 5L from 20L (which is 75% alcohol): alcohol removed = 5×15/20 = 3.75L. Remaining alcohol = 15-3.75 = 11.25L. Formula: alcohol remaining = 20×(1-5/20)² = 20×(3/4)² = 20×9/16 = 180/16 = 11.25L ✓. Trap: 12.5L = 20×(1-5/20) = after only 1 withdrawal; 10L = 20×(1/2)² wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_MIXTURE_ALLIGATION_W11_B2_00010",
+      "stem": "In what ratio should two varieties of oil costing Rs. 60 and Rs. 100 per litre be mixed so that the mixture costs Rs. 75 per litre?",
+      "options": [
+        {"option_text": "5 : 3", "is_correct": true},
+        {"option_text": "3 : 5", "is_correct": false},
+        {"option_text": "1 : 3", "is_correct": false},
+        {"option_text": "5 : 2", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Alligation: Cheaper (Rs.60) : Costlier (Rs.100) = (100-75):(75-60) = 25:15 = 5:3. Mix Rs.60 oil with Rs.100 oil in ratio 5:3. Verify: (5×60+3×100)/8 = (300+300)/8 = 600/8 = 75 ✓. Trap: 3:5 = inverted ratio (confuses order of cheap and costly).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

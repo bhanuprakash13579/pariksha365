@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_RANKING_ORDER_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Ranking and Order — Position-Based Problems (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00001",
+      "stem": "In a class of 40 students, Rohan's rank from the top is 15th. What is his rank from the bottom?",
+      "options": [
+        {"option_text": "25th", "is_correct": false},
+        {"option_text": "26th", "is_correct": true},
+        {"option_text": "27th", "is_correct": false},
+        {"option_text": "28th", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rank from bottom = Total students - Rank from top + 1 = 40 - 15 + 1 = 26. Trap: 25 = 40-15 (forgets to add 1); 27 = 40-15+2 (adds 2 instead of 1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00002",
+      "stem": "Priya is 8th from the left in a row of girls. Deepa is 12th from the right. If they interchange positions, Priya becomes 16th from the left. How many girls are in the row?",
+      "options": [
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "27", "is_correct": true},
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "29", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. After interchange, Priya is at Deepa's original position = 16th from left = 12th from right. Total = 16+12-1 = 27. Verify: Original Deepa position = 12th from right = 27-12+1 = 16th from left = Priya's new position ✓. Trap: 28 = 16+12 (forgets -1); 26 = 16+12-2 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00003",
+      "stem": "In a queue, A is 5th from the front and B is 8th from the back. There are 3 people between A and B. How many people are in the queue?",
+      "options": [
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "16", "is_correct": true},
+        {"option_text": "17", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A is 5th from front. 3 people between A and B means B could be at position 9 from front (A at 5, then 3 between, then B at 9). B is 8th from back → from front = Total-8+1. If B at position 9 from front: 9 = Total-8+1 → Total = 16. Verify: Total=16, A=5th from front, B=9th from front=8th from back (16-9+1=8) ✓. Between A(5) and B(9): positions 6,7,8 = 3 people ✓. Trap: 15: then B=8th from back=8th from front(15-8+1=8), between A(5) and B(8)=positions 6,7=2 people, not 3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00004",
+      "stem": "In a class, among students who passed: A ranks 7th from the top and 20th from the bottom. Among those who failed: B ranks 3rd. Total students = 30. How many students failed?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Number of students who passed = rank from top + rank from bottom - 1 = 7+20-1 = 26. Students who failed = Total - Passed = 30-26 = 4. Verify: B ranks 3rd among 4 who failed — consistent (3 ≤ 4 ✓). Trap: 3 = uses 7+20-1=26, then 30-26-1=3 (wrong extra subtraction); 5 = uses 7+20=27, then 30-27=3 (double error).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00005",
+      "stem": "Five friends — Priya, Qaid, Ravi, Sara, Tina — are ranked by age. Priya is older than Qaid. Tina is older than Sara. Sara is older than Ravi. Ravi is older than Priya. Who is the youngest?",
+      "options": [
+        {"option_text": "Priya", "is_correct": false},
+        {"option_text": "Qaid", "is_correct": true},
+        {"option_text": "Ravi", "is_correct": false},
+        {"option_text": "Tina", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Chain the clues: Tina > Sara > Ravi > Priya > Qaid (5 people, complete ordering). Clue 1: Priya > Qaid. Clue 2: Tina > Sara. Clue 3: Sara > Ravi. Clue 4: Ravi > Priya. Combined chain: Tina > Sara > Ravi > Priya > Qaid. Qaid is at the bottom — the youngest. Trap: Priya = 4th oldest, not youngest; Ravi = 3rd oldest (not youngest — Qaid is below Priya who is below Ravi); Tina = the oldest.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00006",
+      "stem": "Meera is 10th from the left in a row. If 5 students join the row from the right end, what is Meera's position from the left?",
+      "options": [
+        {"option_text": "5th", "is_correct": false},
+        {"option_text": "10th", "is_correct": true},
+        {"option_text": "15th", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. When students join from the RIGHT end, Meera's position from the LEFT does not change — her left-side rank is unaffected by additions to the right. Meera remains 10th from the left. Trap: 15th = adds the 5 new students to Meera's rank (wrong — new students join from the right, not the left); 5th = 10-5 (wrong reasoning).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00007",
+      "stem": "In a competitive exam, 25 students scored more than Anil and 18 scored less. How many students appeared in the exam?",
+      "options": [
+        {"option_text": "42", "is_correct": false},
+        {"option_text": "43", "is_correct": false},
+        {"option_text": "44", "is_correct": true},
+        {"option_text": "45", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Total = students who scored more + Anil + students who scored less = 25 + 1 + 18 = 44. Trap: 43 = 25+18 (forgets to count Anil himself); 42 = 25+18-1 (wrong double subtraction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00008",
+      "stem": "P ranks 7th from the top in a class. Q ranks 11th from the bottom. R is exactly between P and Q. There are 2 students between P and Q. How many students are in the class?",
+      "options": [
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "19", "is_correct": false},
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "21", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P is at rank 7 from top. Q is at rank 11 from bottom. 2 students between P and Q → P and Q are 3 positions apart (e.g., if P=7, then Q=10 from top, with 8 and 9 between them). Q is 10th from top → Q is also 11th from bottom. So Total = Q's rank from top + Q's rank from bottom - 1 = 10+11-1 = 20. Verify: Total=20, P=7th from top, Q=10th from top=11th from bottom(20-10+1=11) ✓. Between P(7) and Q(10): positions 8,9 = 2 students ✓. Trap: 21 = 7+11+3 (wrong); 18 = 7+11 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00009",
+      "stem": "In a row of students, the ratio of students to Ravi's left to his right is 3:2. If there are 5 more students to Ravi's left than to his right, how many students are in the row?",
+      "options": [
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "26", "is_correct": true},
+        {"option_text": "27", "is_correct": false},
+        {"option_text": "28", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let students to left = 3k and to right = 2k. Difference = 3k-2k = k = 5. So k=5: left=15, right=10. Total = 15+1(Ravi)+10 = 26. Verify: ratio left:right = 15:10 = 3:2 ✓; difference = 15-10 = 5 ✓. Trap: 25 = 15+10 (forgets to count Ravi); 27 = 16+10+1 (wrong k).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_RANKING_ORDER_W11_B2_00010",
+      "stem": "In a class of 50 students ranked by marks, Sita is at the 22nd position from the top. She scored more than Gita who is at the 34th position from the top. How many students are ranked between them?",
+      "options": [
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "11", "is_correct": true},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "13", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Sita=22nd, Gita=34th. Students between them = 34-22-1 = 11 (positions 23,24,...33 = 11 students). Formula: |rank₂ - rank₁| - 1 = |34-22| - 1 = 12-1 = 11. Trap: 12 = 34-22 (counts the gap without subtracting 1 for the 'between' condition); 10 = 34-22-2 (subtracts 2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

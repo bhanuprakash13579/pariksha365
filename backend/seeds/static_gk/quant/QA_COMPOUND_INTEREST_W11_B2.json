@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_COMPOUND_INTEREST_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Compound Interest — Formulae and Applications (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00001",
+      "stem": "Find the compound interest on Rs. 10,000 at 10% per annum for 2 years, compounded annually.",
+      "options": [
+        {"option_text": "Rs. 1,900", "is_correct": false},
+        {"option_text": "Rs. 2,000", "is_correct": false},
+        {"option_text": "Rs. 2,100", "is_correct": true},
+        {"option_text": "Rs. 2,200", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Amount = P(1 + r/100)^n = 10000×(1.1)² = 10000×1.21 = 12,100. CI = A - P = 12,100 - 10,000 = Rs. 2,100. Short trick: For 2 years at r%, CI = SI + (r% of SI for 1 year) = 2000 + 10% of 1000 = 2000 + 100 = 2100. SI for 2 years = 10000×10×2/100 = 2000. Trap: 2,000 = SI answer (wrong — CI is always more than SI for same terms).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00002",
+      "stem": "A sum of Rs. 8,000 amounts to Rs. 9,261 in 3 years at compound interest. What is the rate of interest per annum?",
+      "options": [
+        {"option_text": "4%", "is_correct": false},
+        {"option_text": "5%", "is_correct": true},
+        {"option_text": "6%", "is_correct": false},
+        {"option_text": "7%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A = P(1 + r/100)^n. 9261 = 8000×(1 + r/100)³. (1 + r/100)³ = 9261/8000 = 1.157625. Note: 1.05³ = 1.157625 ✓ (since 21³=9261 and 20³=8000, so ratio = (21/20)³). So 1 + r/100 = 21/20 → r/100 = 1/20 → r = 5%. Trap: 4%: 1.04³=1.1249≠1.1576; 6%: 1.06³=1.1910≠1.1576.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00003",
+      "stem": "The difference between CI and SI on Rs. 5,000 for 2 years at 8% per annum is:",
+      "options": [
+        {"option_text": "Rs. 24", "is_correct": false},
+        {"option_text": "Rs. 28", "is_correct": false},
+        {"option_text": "Rs. 32", "is_correct": true},
+        {"option_text": "Rs. 40", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Formula: CI - SI = P×(r/100)² for 2 years. = 5000×(8/100)² = 5000×0.0064 = 32. Verify: SI = 5000×8×2/100 = 800. CI: Year 1 interest = 400; Year 2 interest = 400 + 8% of 400 = 400+32=432; Total CI = 832. Difference = 832-800 = 32 ✓. Short trick: Difference = P × (r/100)² = 5000 × (0.08)² = 5000 × 0.0064 = 32.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00004",
+      "stem": "At what rate of compound interest per annum will Rs. 1,200 become Rs. 1,348.32 in 2 years?",
+      "options": [
+        {"option_text": "4%", "is_correct": false},
+        {"option_text": "5%", "is_correct": false},
+        {"option_text": "6%", "is_correct": true},
+        {"option_text": "8%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 1348.32 = 1200×(1 + r/100)². (1 + r/100)² = 1348.32/1200 = 1.1236. √1.1236 = 1.06. So r = 6%. Verify: 1200×1.06² = 1200×1.1236 = 1348.32 ✓. Trap: 5%: 1200×1.1025=1323≠1348.32; 8%: 1200×1.1664=1399.68≠1348.32.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00005",
+      "stem": "What is the compound interest on Rs. 16,000 at 20% per annum for 9 months, compounded quarterly?",
+      "options": [
+        {"option_text": "Rs. 2,420", "is_correct": false},
+        {"option_text": "Rs. 2,424.80", "is_correct": false},
+        {"option_text": "Rs. 2,522", "is_correct": true},
+        {"option_text": "Rs. 2,600", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Quarterly rate = 20/4 = 5% per quarter. 9 months = 3 quarters (n=3). A = 16000×(1.05)³ = 16000×1.157625 = 18,522. CI = 18,522 - 16,000 = 2,522. Compute: 1.05³ = 1.157625; 16000×1.157625 = 18522. Trap: 2,420 = using annual rate for 9 months as simple SI; 2,424.80 = uses half-year compounding instead of quarterly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00006",
+      "stem": "In how many years will Rs. 3,000 become Rs. 3,993 at 10% compound interest per annum?",
+      "options": [
+        {"option_text": "2 years", "is_correct": false},
+        {"option_text": "3 years", "is_correct": true},
+        {"option_text": "4 years", "is_correct": false},
+        {"option_text": "5 years", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 3993 = 3000×(1.1)^n. (1.1)^n = 3993/3000 = 1.331. 1.1¹=1.1, 1.1²=1.21, 1.1³=1.331 ✓. So n = 3 years. Short trick: recognise 1.331 = 1.1³ directly (11³=1331). Trap: 2 years: 3000×1.21=3630≠3993; 4 years: 3000×1.4641=4392.3≠3993.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00007",
+      "stem": "A certain sum doubles itself in 5 years under compound interest. In how many years will it become 8 times itself?",
+      "options": [
+        {"option_text": "10 years", "is_correct": false},
+        {"option_text": "12 years", "is_correct": false},
+        {"option_text": "15 years", "is_correct": true},
+        {"option_text": "20 years", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. If P doubles in 5 years: (1+r/100)^5 = 2. To become 8 times: (1+r/100)^n = 8 = 2³ = [(1+r/100)^5]³. So (1+r/100)^n = (1+r/100)^15 → n = 15 years. Shortcut: 2→5 years; 4=2²→10 years; 8=2³→15 years. Each doubling takes 5 years; 8 = 3 doublings → 3×5 = 15 years. Trap: 10 years = only 2 doublings (gives 4 times, not 8); 20 = 4 doublings (gives 16 times).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00008",
+      "stem": "The CI on a sum for 2 years is Rs. 832 and SI is Rs. 800. What is the principal?",
+      "options": [
+        {"option_text": "Rs. 4,000", "is_correct": false},
+        {"option_text": "Rs. 5,000", "is_correct": true},
+        {"option_text": "Rs. 6,000", "is_correct": false},
+        {"option_text": "Rs. 8,000", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. SI for 2 years = 800, so SI for 1 year = 400. Rate of interest = (CI - SI)/SI for 1 year × 100 = (832-800)/400 × 100 = 32/400 × 100 = 8%. SI = P×r×t/100 → 800 = P×8×2/100 → P = 800×100/16 = 5,000. Verify: CI = 5000×(1.08)² - 5000 = 5000×1.1664 - 5000 = 5832-5000 = 832 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00009",
+      "stem": "A bank offers 12% interest compounded half-yearly. What is the effective annual rate?",
+      "options": [
+        {"option_text": "12%", "is_correct": false},
+        {"option_text": "12.36%", "is_correct": true},
+        {"option_text": "13%", "is_correct": false},
+        {"option_text": "14.4%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Half-yearly rate = 12/2 = 6% per half-year. Effective annual rate = (1.06)² - 1 = 1.1236 - 1 = 0.1236 = 12.36%. Verify: Rs. 100 grows to 100×1.06=106 after 6 months, then 106×1.06=112.36 after 1 year. Effective rate = 12.36%. Trap: 12% = the nominal rate (ignores compounding effect); 14.4% = 12%×1.2 (wrong multiplication).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W11_B2_00010",
+      "stem": "Rs. 2,000 is lent at 5% per annum CI. After 3 years, the lender has the money back. What is the interest earned?",
+      "options": [
+        {"option_text": "Rs. 300", "is_correct": false},
+        {"option_text": "Rs. 315.25", "is_correct": true},
+        {"option_text": "Rs. 310", "is_correct": false},
+        {"option_text": "Rs. 330", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A = 2000×(1.05)³ = 2000×1.157625 = 2315.25. CI = 2315.25 - 2000 = Rs. 315.25. Compute: 1.05³ = 1.157625 (1.05×1.05=1.1025; 1.1025×1.05=1.157625). Trap: 300 = SI answer (2000×5×3/100=300); 310 = off-by-one computation; 330 = wrong rate application.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

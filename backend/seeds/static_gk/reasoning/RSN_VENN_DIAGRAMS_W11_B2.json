@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_VENN_DIAGRAMS_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Venn Diagrams — Set Relationships (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00001",
+      "stem": "In a class of 60 students, 35 play cricket, 20 play football, and 10 play both. How many students play neither sport?",
+      "options": [
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "25", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. |Cricket ∪ Football| = |Cricket| + |Football| - |Both| = 35+20-10 = 45. Students who play neither = Total - |Cricket ∪ Football| = 60-45 = 15. Verify: Only cricket = 35-10=25; Only football = 20-10=10; Both=10; Neither=15; Total=25+10+10+15=60 ✓. Trap: 20 = forgets to subtract the overlap (35+20=55, 60-55=5? No — 55 is wrong too since overlap is added twice).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00002",
+      "stem": "Which Venn diagram correctly shows the relationship among: Animals — Wolves — Dogs?",
+      "options": [
+        {"option_text": "Three completely separate circles", "is_correct": false},
+        {"option_text": "Two circles inside one large circle, with the two inner circles separate", "is_correct": true},
+        {"option_text": "Three concentric circles (one inside another inside another)", "is_correct": false},
+        {"option_text": "Two overlapping circles inside one large circle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Animals is the broadest set — it contains all animals. Wolves and Dogs are both subsets of Animals, but they are separate species (no wolf is a dog, no dog is a wolf). So both wolves and dogs sit inside the Animals circle, but they are separate circles from each other. Trap: Three concentric = would mean Dogs are all Wolves or Wolves are all Dogs (wrong); Overlapping inside Animals = would mean some dogs are wolves (wrong); Completely separate = ignores that both are types of animals.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00003",
+      "stem": "In a survey of 100 people, 72 like tea, 52 like coffee, and every person likes at least one. How many people like both tea and coffee?",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "28", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Since every person likes at least one: |Tea ∪ Coffee| = 100. Formula: |Both| = |Tea| + |Coffee| - |Tea ∪ Coffee| = 72+52-100 = 124-100 = 24. Verify: Only tea = 72-24=48; Only coffee = 52-24=28; Both=24; Total=48+28+24=100 ✓. Trap: 20 = 72-52 (just difference, wrong); 26 = arithmetic error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00004",
+      "stem": "Which Venn diagram best represents the relationship: Males — Fathers — Humans?",
+      "options": [
+        {"option_text": "All three circles overlapping equally", "is_correct": false},
+        {"option_text": "Males inside Humans; Fathers inside Males (three concentric circles)", "is_correct": true},
+        {"option_text": "Males inside Humans; Fathers overlapping Males and partially outside Humans", "is_correct": false},
+        {"option_text": "All three are separate circles", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. All Males are Humans (Males ⊂ Humans). All Fathers are Males — by definition, a father is a male parent (Fathers ⊂ Males). Not all Males are Fathers (many males are not fathers). This creates a strict subset chain: Fathers ⊂ Males ⊂ Humans = three concentric circles (Humans outermost, Males middle, Fathers innermost). Trap: 'All overlapping equally' = wrong (no father or male is non-human); 'Partially outside Humans' = wrong (no father can be non-human); 'All separate' = wrong (all fathers are males and all males are humans).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00005",
+      "stem": "Out of 50 students, 30 passed in English, 22 passed in Maths, and 5 failed in both. How many passed in both subjects?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "7", "is_correct": true},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Students who passed at least one = Total - Failed in both = 50-5 = 45. |English ∪ Maths| = 45. Passed both = |English| + |Maths| - |English ∪ Maths| = 30+22-45 = 52-45 = 7. Verify: Only English = 30-7=23; Only Maths = 22-7=15; Both=7; Failed both=5; Total=23+15+7+5=50 ✓. Trap: 5 = confuses 'failed both' with 'passed both'; 8 = arithmetic error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00006",
+      "stem": "Which Venn diagram correctly shows the relationship: Squares — Rectangles — Quadrilaterals?",
+      "options": [
+        {"option_text": "Three separate circles", "is_correct": false},
+        {"option_text": "Squares inside Rectangles inside Quadrilaterals (three concentric circles)", "is_correct": true},
+        {"option_text": "Squares and Rectangles inside Quadrilaterals, with Squares and Rectangles overlapping", "is_correct": false},
+        {"option_text": "Squares inside Quadrilaterals; Rectangles separate from Quadrilaterals", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Logic: All squares are rectangles (a square has all properties of a rectangle plus equal sides). All rectangles are quadrilaterals (a rectangle has 4 sides). So: Squares ⊂ Rectangles ⊂ Quadrilaterals. This gives three concentric circles (each smaller one completely inside the larger one). Trap: Overlapping = wrong (ALL squares are rectangles, not just some); Separate = wrong (every square IS a rectangle IS a quadrilateral).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00007",
+      "stem": "In a group of 80 people, 45 speak Hindi, 30 speak English, and 15 speak both. How many speak only Hindi?",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "30", "is_correct": true},
+        {"option_text": "35", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Only Hindi = |Hindi| - |Both| = 45-15 = 30. No calculation of the total is needed here — just subtract those who speak both from the total Hindi speakers. Verify: Only Hindi=30; Both=15; Only English=30-15=15; Total Hindi speakers = 30+15=45 ✓; Total English speakers = 15+15=30 ✓. Trap: 35 = subtracts English count from Hindi count (45-10? wrong); 25 = 45-20 (uses wrong 'both' number).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00008",
+      "stem": "In a class: 40 students study Science, 30 study Commerce, 20 study both, and 10 study neither. What is the total number of students in the class?",
+      "options": [
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "70", "is_correct": false},
+        {"option_text": "80", "is_correct": false},
+        {"option_text": "90", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. |Science ∪ Commerce| = 40+30-20 = 50. Total = |Science ∪ Commerce| + Neither = 50+10 = 60. Verify: Only Science=40-20=20; Only Commerce=30-20=10; Both=20; Neither=10; Total=20+10+20+10=60 ✓. Trap: 70 = 40+30=70 (double-counts the 'both' students and ignores neither); 80 = 40+30+10 (adds neither but doesn't subtract overlap).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00009",
+      "stem": "In a class, 60% of students passed Maths, 70% passed English, and 20% failed both. What percentage passed both Maths and English?",
+      "options": [
+        {"option_text": "40%", "is_correct": false},
+        {"option_text": "45%", "is_correct": false},
+        {"option_text": "50%", "is_correct": true},
+        {"option_text": "55%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Failed both = 20% → Passed at least one = 80%. |Maths ∪ English| = 80%. Both = |Maths| + |English| - |Maths ∪ English| = 60+70-80 = 50%. Verify: Only Maths = 60-50=10%; Only English = 70-50=20%; Both=50%; Failed both=20%; Total=10+20+50+20=100% ✓. Trap: 40% = 60-20 (wrong); 45% = arithmetic error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_VENN_DIAGRAMS_W11_B2_00010",
+      "stem": "Which Venn diagram best represents: Doctors — Women — Surgeons?",
+      "options": [
+        {"option_text": "Three separate circles", "is_correct": false},
+        {"option_text": "Three concentric circles (Surgeons inside Doctors inside Women)", "is_correct": false},
+        {"option_text": "Three partially overlapping circles (each intersecting the other two)", "is_correct": true},
+        {"option_text": "Women and Surgeons inside Doctors", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Analysis: Some doctors are women (not all doctors are women; not all women are doctors). Some doctors are surgeons (not all doctors are surgeons; not all surgeons are doctors — consider dentists, vets). Some women are surgeons (a female surgeon is both). These sets share partial overlaps with each other. No set is fully contained within another. Result: Three intersecting circles with a central region where all three overlap (women who are also doctors and surgeons). Trap: Concentric = wrong (not all surgeons are doctors in the broader sense; the three groups have independent members); All separate = wrong (they DO share members).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

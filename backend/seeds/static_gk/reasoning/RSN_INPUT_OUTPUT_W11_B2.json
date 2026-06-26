@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_INPUT_OUTPUT_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Input-Output Machine — Pattern Identification (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00001",
+      "stem": "A machine follows a rule: Input → Output.\n24 → 6\n36 → 9\n48 → 12\n60 → ?\nWhat is the output for 60?",
+      "options": [
+        {"option_text": "13", "is_correct": false},
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "16", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: Output = Input ÷ 4. 24÷4=6 ✓; 36÷4=9 ✓; 48÷4=12 ✓; 60÷4=15. Trap: 14 = 60÷4.3 (wrong rule); 16 = 60÷3.75 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00002",
+      "stem": "A machine transforms numbers:\n3 → 10\n5 → 26\n7 → 50\n9 → ?\nWhat is the output for 9?",
+      "options": [
+        {"option_text": "74", "is_correct": false},
+        {"option_text": "80", "is_correct": false},
+        {"option_text": "82", "is_correct": true},
+        {"option_text": "90", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: n² + 1. 3²+1=10 ✓; 5²+1=26 ✓; 7²+1=50 ✓; 9²+1=81+1=82. Trap: 80 = 9²-1=80 (subtracts instead of adds); 74 = 9²-7 (wrong); 90 = 9×10 (wrong rule).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00003",
+      "stem": "A machine applies a rule to word inputs (Step 1 rearranges letters):\nStep 1: Reverse the word\nStep 2: Shift each letter one forward in the alphabet\nInput: CAT\nWhat is the Step 2 output?",
+      "options": [
+        {"option_text": "TBD", "is_correct": false},
+        {"option_text": "UBD", "is_correct": true},
+        {"option_text": "TCU", "is_correct": false},
+        {"option_text": "BUD", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Step 1 (Reverse CAT): TAC. Step 2 (shift each letter +1): T→U, A→B, C→D. Result: UBD. Verify: C=3→D; A=1→B; T=20→U. TAC reversed gives T,A,C → shift → U,B,D = UBD ✓. Trap: TBD = doesn't reverse first (shifts CAT directly: C→D,A→B,T→U=DBU, not TBD); TCU = reverses but shifts backwards.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00004",
+      "stem": "Machine rule: The output is double the input plus three.\nIf the output is 27, what was the input?",
+      "options": [
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "13", "is_correct": false},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Rule: Output = 2×Input+3. Reverse: Input = (Output-3)/2 = (27-3)/2 = 24/2 = 12. Verify: 2×12+3 = 24+3 = 27 ✓. Trap: 13 = (27-1)/2=13 (wrong formula); 10 = (27-7)/2=10 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00005",
+      "stem": "A number machine:\n2 → 8\n4 → 24\n6 → 48\n8 → ?\nWhat is the output for 8?",
+      "options": [
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "72", "is_correct": false},
+        {"option_text": "80", "is_correct": true},
+        {"option_text": "96", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: n × (n+2). 2×(2+2)=2×4=8 ✓; 4×(4+2)=4×6=24 ✓; 6×(6+2)=6×8=48 ✓; 8×(8+2)=8×10=80. Trap: 72 = 8×9 (uses n×(n+1) instead of n×(n+2)); 96 = 8×12 (uses n×(n+4)).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00006",
+      "stem": "A machine applies three steps to a number:\nStep 1: Multiply by 3\nStep 2: Add 6\nStep 3: Divide by 3\nIf the input is 9, what is the final output?",
+      "options": [
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "11", "is_correct": true},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Step 1: 9×3=27. Step 2: 27+6=33. Step 3: 33÷3=11. Output=11. Verify: 9→27→33→11 ✓. Note: This formula = (3n+6)/3 = n+2. So 9+2=11 ✓ (a quick shortcut once the pattern is seen). Trap: 9 = assumes the operations cancel each other (multiply ÷ divide ≠ original if addition is in between); 12 = 9+3 (wrong shortcut).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00007",
+      "stem": "The following shows a word-coding machine:\nMOON → PRRQ\nSKY → VNB\nFLOW → IORZ\nWhat is the code for SUN?",
+      "options": [
+        {"option_text": "VXQ", "is_correct": true},
+        {"option_text": "TVO", "is_correct": false},
+        {"option_text": "VWP", "is_correct": false},
+        {"option_text": "UWP", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Rule: Each letter is shifted +3 places forward (A→D, B→E, ..., X→A, Y→B, Z→C). M+3=P; O+3=R; O+3=R; N+3=Q → MOON→PRRQ ✓. S+3=V; K+3=N; Y+3=B → SKY→VNB ✓. F+3=I; L+3=O; O+3=R; W+3=Z → FLOW→IORZ ✓. SUN: S+3=V; U+3=X; N+3=Q → VXQ. Trap: TVO = shifts +1 (wrong rule); VWP = S+3=V, U+2=W (wrong — shifts U by 2 not 3); UWP = shifts forward by 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00008",
+      "stem": "A machine takes a number, squares it, then subtracts the original number:\nInput: 5, Output: 20\nInput: 7, Output: 42\nInput: 10, Output: ?\nWhat is the output for 10?",
+      "options": [
+        {"option_text": "80", "is_correct": false},
+        {"option_text": "90", "is_correct": true},
+        {"option_text": "100", "is_correct": false},
+        {"option_text": "110", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rule: n²-n = n(n-1). 5²-5=25-5=20 ✓; 7²-7=49-7=42 ✓; 10²-10=100-10=90. Verify: 10×(10-1)=10×9=90 ✓. Trap: 100 = just squares (10²=100, forgets to subtract); 80 = 10²-20=80 (wrong subtraction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00009",
+      "stem": "A machine processes word inputs in two steps:\nStep 1: Replace each vowel with the next vowel in the sequence a,e,i,o,u (u wraps to a)\nStep 2: Capitalise the entire word\nInput: 'best'\nWhat is the output?",
+      "options": [
+        {"option_text": "BIST", "is_correct": true},
+        {"option_text": "BAST", "is_correct": false},
+        {"option_text": "BUST", "is_correct": false},
+        {"option_text": "BEST", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. 'best': vowels in the word = 'e'. Consonants stay: b, s, t. Step 1: Replace 'e' with next vowel = 'i'. Result: 'bist'. Step 2: Capitalise = 'BIST'. Verify: b=consonant (unchanged), e→i (e is 2nd vowel, next is i = 3rd vowel ✓), s=consonant, t=consonant. Output: BIST ✓. Trap: BUST = e→u (skips 2 vowels); BAST = e→a (goes backward or wraps wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_INPUT_OUTPUT_W11_B2_00010",
+      "stem": "Look at the pattern:\nInput → Output\n13 → 4\n24 → 6\n35 → 8\n46 → ?\nWhat is the output for 46?",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: Sum of digits. 1+3=4 ✓; 2+4=6 ✓; 3+5=8 ✓; 4+6=10. Trap: 9 = 4+5 (uses wrong digit pair); 11 = 5+6 (wrong — uses next pair); 8 = 3+5 (uses previous pair). The answer is sum of the two digits of the input: 4+6=10.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

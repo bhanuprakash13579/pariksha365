@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_GEOMETRY_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Geometry — Triangles, Circles, and Angles (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00001",
+      "stem": "In a right-angled triangle, the two legs are 3 cm and 4 cm. What is the length of the hypotenuse?",
+      "options": [
+        {"option_text": "5 cm", "is_correct": true},
+        {"option_text": "6 cm", "is_correct": false},
+        {"option_text": "7 cm", "is_correct": false},
+        {"option_text": "√25 cm (same as A)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Pythagoras theorem: c² = a²+b² = 3²+4² = 9+16 = 25. c = √25 = 5 cm. This is the famous 3-4-5 Pythagorean triple. Other common triples to memorise: 5-12-13; 8-15-17; 7-24-25. Verify: 3²+4²=9+16=25=5² ✓. Trap: 6 = 3+4-1 (wrong); 7 = 3+4=7 (just adding legs).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00002",
+      "stem": "The sum of interior angles of a polygon with 7 sides (heptagon) is:",
+      "options": [
+        {"option_text": "720°", "is_correct": false},
+        {"option_text": "900°", "is_correct": true},
+        {"option_text": "1080°", "is_correct": false},
+        {"option_text": "1260°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Formula: Sum of interior angles = (n-2)×180°, where n = number of sides. For n=7: (7-2)×180 = 5×180 = 900°. Key values: Triangle(3): 180°; Quadrilateral(4): 360°; Pentagon(5): 540°; Hexagon(6): 720°; Heptagon(7): 900°; Octagon(8): 1080°; Decagon(10): 1440°. Trap: 720° = hexagon (6 sides), not heptagon; 1080° = octagon (8 sides).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00003",
+      "stem": "In triangle ABC, angle A = 45°, angle B = 65°. What is the measure of angle C?",
+      "options": [
+        {"option_text": "60°", "is_correct": false},
+        {"option_text": "70°", "is_correct": true},
+        {"option_text": "80°", "is_correct": false},
+        {"option_text": "110°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Sum of angles in a triangle = 180°. Angle C = 180°-(45°+65°) = 180°-110° = 70°. Verify: 45+65+70 = 180 ✓. Trap: 110° = finds A+B instead of 180-(A+B); 60° = common guess for equilateral-like triangles.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00004",
+      "stem": "The radius of a circle is 7 cm. What is its circumference? (Use π = 22/7)",
+      "options": [
+        {"option_text": "22 cm", "is_correct": false},
+        {"option_text": "44 cm", "is_correct": true},
+        {"option_text": "154 cm", "is_correct": false},
+        {"option_text": "88 cm", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Circumference = 2πr = 2×(22/7)×7 = 2×22 = 44 cm. Verify: 2×π×7 = 14π = 14×22/7 = 44 cm ✓. Area = πr² = (22/7)×7² = (22/7)×49 = 22×7 = 154 cm² (that's area, not circumference). Trap: 154 cm² = AREA, not circumference; 22 = πr = half the circumference; 88 = 2×44 (doubled).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00005",
+      "stem": "Two parallel lines are cut by a transversal. If one alternate interior angle is 55°, what is the other alternate interior angle?",
+      "options": [
+        {"option_text": "45°", "is_correct": false},
+        {"option_text": "55°", "is_correct": true},
+        {"option_text": "125°", "is_correct": false},
+        {"option_text": "135°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Alternate interior angles formed by a transversal cutting two parallel lines are EQUAL. If one alternate interior angle = 55°, the other = 55°. Key angle relationships with parallel lines and a transversal: (1) Corresponding angles = equal; (2) Alternate interior angles = equal; (3) Co-interior (same-side interior) angles = supplementary (add to 180°). Trap: 125° = 180-55 (that's the co-interior angle, not alternate); 135° = wrong.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00006",
+      "stem": "The area of an equilateral triangle with side 6 cm is:",
+      "options": [
+        {"option_text": "9√3 cm²", "is_correct": true},
+        {"option_text": "18 cm²", "is_correct": false},
+        {"option_text": "12√3 cm²", "is_correct": false},
+        {"option_text": "36 cm²", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Area of equilateral triangle = (√3/4)×a² = (√3/4)×36 = 9√3 cm². Verify: side=6; height = (√3/2)×6 = 3√3; area = (1/2)×6×3√3 = 9√3 ✓. Numerical value: 9√3 ≈ 9×1.732 ≈ 15.59 cm². Short trick: memorise (√3/4)a² for equilateral triangles. Trap: 18 = (1/2)×6×6 (uses base×base instead of base×height); 36 = 6² (just squares the side).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00007",
+      "stem": "In a circle, an angle inscribed in a semicircle (i.e., subtended by the diameter at any point on the circle) is always:",
+      "options": [
+        {"option_text": "60°", "is_correct": false},
+        {"option_text": "90°", "is_correct": true},
+        {"option_text": "120°", "is_correct": false},
+        {"option_text": "180°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Thales' theorem: The angle inscribed in a semicircle (angle at the circumference subtended by a diameter) is always 90° (a right angle). This is a fundamental circle theorem. Application: In triangle ABC where AC is the diameter, ∠ABC = 90° regardless of where B is on the circle. Trap: 180° = the arc subtended by the diameter (not the inscribed angle); 60° = angle in an equilateral triangle inscribed in a circle (different case).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00008",
+      "stem": "Two sides of a triangle are 5 cm and 9 cm. Which of the following CANNOT be the length of the third side?",
+      "options": [
+        {"option_text": "6 cm", "is_correct": false},
+        {"option_text": "8 cm", "is_correct": false},
+        {"option_text": "10 cm", "is_correct": false},
+        {"option_text": "14 cm", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Triangle inequality: any side must be LESS THAN the sum of the other two sides AND GREATER THAN the absolute difference. Here: |9-5|<third side<9+5 → 4<third side<14. So the third side must be strictly between 4 and 14 (exclusive). 14 cm is NOT less than 14 — it equals the sum, which would make a degenerate triangle (collinear points). 6, 8, 10 are all between 4 and 14 ✓. 14 fails because 5+9=14 (not strictly less). Trap: some choose 10 thinking it's too large, but 10<14=5+9 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00009",
+      "stem": "The diagonal of a square is 10 cm. What is the area of the square?",
+      "options": [
+        {"option_text": "25 cm²", "is_correct": false},
+        {"option_text": "50 cm²", "is_correct": true},
+        {"option_text": "100 cm²", "is_correct": false},
+        {"option_text": "70.71 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. For a square with diagonal d: side = d/√2. Area = side² = (d/√2)² = d²/2 = 100/2 = 50 cm². Short trick: Area of square = d²/2 (where d = diagonal). Verify: side=10/√2=5√2; area=(5√2)²=50 ✓. Alternatively: Area = (1/2)×d₁×d₂ = (1/2)×10×10 = 50 (using the rhombus/kite area formula, since both diagonals equal 10). Trap: 100 = 10² (squares the diagonal directly without dividing by 2); 25 = (10/2)² (halves the diagonal then squares).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_GEOMETRY_W11_B2_00010",
+      "stem": "In a right-angled triangle, the hypotenuse is 13 cm and one leg is 5 cm. What is the area of the triangle?",
+      "options": [
+        {"option_text": "25 cm²", "is_correct": false},
+        {"option_text": "30 cm²", "is_correct": true},
+        {"option_text": "32.5 cm²", "is_correct": false},
+        {"option_text": "60 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Other leg = √(13²-5²) = √(169-25) = √144 = 12 cm. (5-12-13 is a Pythagorean triple ✓). Area = (1/2)×base×height = (1/2)×5×12 = 30 cm². Verify: 5²+12²=25+144=169=13² ✓; Area=(1/2)×5×12=30 ✓. Trap: 32.5 = (1/2)×5×13 (uses hypotenuse as height — wrong; height must be perpendicular to base); 60 = 5×12 (forgets to divide by 2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

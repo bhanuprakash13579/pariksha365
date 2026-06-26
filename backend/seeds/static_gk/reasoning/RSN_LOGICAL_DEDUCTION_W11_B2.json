@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_LOGICAL_DEDUCTION_W11_B2",
+  "subject": "Reasoning",
+  "topic": "Logical Deduction — Syllogisms and Conclusions (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00001",
+      "stem": "Statements:\nAll dogs are animals.\nAll animals are living beings.\nConclusion I: All dogs are living beings.\nConclusion II: Some living beings are dogs.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusion I and II follow", "is_correct": true},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. From 'All dogs → animals' and 'All animals → living beings': by transitivity, All dogs are living beings (Conclusion I ✓). Also, since all dogs are living beings, at least some living beings are dogs (Conclusion II ✓ — a partial converse is valid when the whole class is included). Both conclusions follow. Trap: Students sometimes reject II thinking 'some' is uncertain when 'all' is stated — but if ALL dogs are living beings, then by partial conversion, SOME living beings must be dogs.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00002",
+      "stem": "Statements:\nNo cats are dogs.\nAll dogs are mammals.\nConclusion I: No cats are mammals.\nConclusion II: Some mammals are not cats.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": true},
+        {"option_text": "Both conclusions follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Conclusion I: 'No cats are mammals' — this DOES NOT follow. We know no cats are dogs, but cats could still be mammals through another route (e.g., cats are also mammals independently). The premises only tell us about dogs, not all mammals. Conclusion I is an invalid jump. Conclusion II: 'Some mammals are not cats' — this DOES follow. All dogs are mammals (from premise 2), and no cats are dogs. Therefore, dogs (being mammals) are not cats → some mammals (at least the dogs) are not cats ✓. Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00003",
+      "stem": "Statements:\nSome birds are parrots.\nAll parrots can speak.\nConclusion I: Some birds can speak.\nConclusion II: All birds can speak.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": true},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both conclusions follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Some birds are parrots + all parrots can speak → some birds (those that are parrots) can speak → Conclusion I ✓. Conclusion II (ALL birds can speak) does NOT follow — we only know some birds (the parrots) can speak; other birds may not be parrots and may not speak. 'Some' in the first premise prevents us from generalising to 'all'. Only Conclusion I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00004",
+      "stem": "Statements:\nAll roses are flowers.\nSome flowers are red.\nConclusion I: Some roses are red.\nConclusion II: All flowers are roses.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both conclusions follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Conclusion I (Some roses are red): From 'All roses are flowers' and 'Some flowers are red', we CANNOT conclude some roses are red. The red flowers may be non-rose flowers — the overlap of 'roses' and 'red flowers' is not guaranteed. Conclusion I does NOT follow. Conclusion II (All flowers are roses): clearly wrong — premise says 'All roses are flowers' (roses ⊂ flowers), NOT the other way around. Neither conclusion follows. Trap: I is a very tempting wrong answer — students mix up the direction of the subset relationship.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00005",
+      "stem": "Statements:\nAll chairs are tables.\nAll tables are furniture.\nSome furniture is wooden.\nConclusion I: Some chairs are wooden.\nConclusion II: All chairs are furniture.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": true},
+        {"option_text": "Both conclusions follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Conclusion II: All chairs → tables → furniture. By transitivity, All chairs are furniture ✓. Conclusion I: Some furniture is wooden, and All chairs are furniture — but we cannot guarantee the wooden furniture overlaps with the chairs. The wooden furniture may be non-chair items. 'Some furniture is wooden' doesn't mean the chair-subset is in the wooden-subset. Conclusion I is NOT certain. Only II follows. Trap: I is tempting because chairs ARE furniture and some furniture IS wooden — but 'some' is not enough to guarantee the specific overlap includes chairs.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00006",
+      "stem": "Statements:\nNo politician is honest.\nAll honest people are respected.\nConclusion I: No politician is respected.\nConclusion II: Some respected people are not politicians.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": true},
+        {"option_text": "Both conclusions follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Conclusion I (No politician is respected): this does NOT necessarily follow. Politicians may be respected for reasons OTHER than honesty. The premises only tell us about the 'honest' route to respect. A politician could be respected without being honest. Conclusion I is invalid. Conclusion II (Some respected people are not politicians): all honest people are respected (from premise 2), and no politician is honest (premise 1), so honest people = respected people who are NOT politicians → some respected people (at least honest ones) are not politicians ✓. Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00007",
+      "stem": "Statements:\nAll pens are books.\nSome books are pencils.\nConclusion I: Some pens are pencils.\nConclusion II: Some pencils are pens.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. 'All pens are books' and 'Some books are pencils'. The books that are pencils may or may not overlap with the pens-subset of books. Since pens form only PART of the books set, and the pencil-books may be the non-pen part, we cannot say some pens are pencils. Conclusion I does NOT follow. Conclusion II (Some pencils are pens): this is the converse of I — if I doesn't follow, II doesn't either (they are logically equivalent in this structure). Neither conclusion follows. Trap: Students often assume the overlap must exist, but 'some books are pencils' is consistent with a world where NO pens are pencils.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00008",
+      "stem": "Statements:\nAll mangoes are fruits.\nNo fruit is a vegetable.\nConclusion I: No mango is a vegetable.\nConclusion II: No vegetable is a mango.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Conclusion I: All mangoes are fruits + no fruit is a vegetable → no mango is a vegetable (transitivity of negative) ✓. Conclusion II is the converse: 'No vegetable is a mango' = same relationship viewed from the other direction. If no mango is a vegetable, then no vegetable can be a mango (symmetric property of 'No A is B' → 'No B is A') ✓. Both conclusions follow. Note: 'No A is B' is always convertible to 'No B is A' — this is the E-type conversion in logic.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00009",
+      "stem": "Statements:\nSome teachers are doctors.\nAll doctors earn well.\nConclusion I: Some teachers earn well.\nConclusion II: All who earn well are either teachers or doctors.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": true},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Conclusion I: Some teachers are doctors + all doctors earn well → some teachers (those who are doctors) earn well ✓. Conclusion II (All who earn well are either teachers or doctors): this does NOT follow — the premises say nothing about people who earn well other than doctors. Earning well could apply to engineers, lawyers, etc. too. Conclusion II is an unsupported generalisation. Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LOGICAL_DEDUCTION_W11_B2_00010",
+      "stem": "Statements:\nAll trains are fast.\nSome fast things are expensive.\nConclusion I: Some trains are expensive.\nConclusion II: All fast things are trains.\nWhich conclusion(s) follow(s)?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Conclusion I (Some trains are expensive): 'All trains are fast' and 'Some fast things are expensive'. The expensive fast things may not be the train-subset — trains are fast but the expensive fast things could be cars, planes etc. No guaranteed overlap. I does NOT follow. Conclusion II (All fast things are trains): clearly wrong — premise says 'All trains are fast' (trains ⊂ fast), not 'All fast things are trains'. Converse of a universal affirmative does not hold. Neither conclusion follows. Trap: I is extremely tempting but the 'some' overlap is not guaranteed to include trains.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_TIME_DISTANCE_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Time, Speed and Distance (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00001",
+      "stem": "A car travels at 60 km/h for 2 hours and then at 80 km/h for 3 hours. What is the average speed for the entire journey?",
+      "options": [
+        {"option_text": "68 km/h", "is_correct": false},
+        {"option_text": "70 km/h", "is_correct": false},
+        {"option_text": "72 km/h", "is_correct": true},
+        {"option_text": "75 km/h", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total distance = 60×2 + 80×3 = 120+240 = 360 km. Total time = 2+3 = 5 hours. Average speed = 360/5 = 72 km/h. Trap: 70 km/h = (60+80)/2 (wrong — simple average only works when equal distances, not equal times); 68 = miscalculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00002",
+      "stem": "A train 150 m long passes a pole in 10 seconds. What is the speed of the train in km/h?",
+      "options": [
+        {"option_text": "48 km/h", "is_correct": false},
+        {"option_text": "54 km/h", "is_correct": true},
+        {"option_text": "60 km/h", "is_correct": false},
+        {"option_text": "66 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Speed = Distance/Time = 150/10 = 15 m/s. Convert to km/h: 15 × (18/5) = 15×18/5 = 270/5 = 54 km/h. Verify: 54 km/h = 54×5/18 = 15 m/s; distance in 10s = 15×10 = 150 m ✓. Trap: 60 km/h = uses wrong conversion factor (÷3 instead of ×18/5); 48 = 150/10×18/5 calculated as 15×16/5.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00003",
+      "stem": "Two trains of lengths 200 m and 150 m run on parallel tracks. When running in the same direction, the faster train crosses the slower in 35 seconds. When running in opposite directions, they cross each other in 5 seconds. Find the speed of the faster train.",
+      "options": [
+        {"option_text": "108 km/h", "is_correct": false},
+        {"option_text": "126 km/h", "is_correct": false},
+        {"option_text": "132 km/h", "is_correct": false},
+        {"option_text": "144 km/h", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Let faster speed = u m/s, slower = v m/s. Total length = 200+150 = 350 m. Same direction: u-v = 350/35 = 10 m/s. Opposite directions: u+v = 350/5 = 70 m/s. Adding: 2u = 80 → u = 40 m/s. Faster train = 40 × 18/5 = 144 km/h. Verify: v = 30 m/s = 108 km/h. Same direction: 40-30=10; 350/10=35 s ✓. Opposite: 40+30=70; 350/70=5 s ✓. Trap: 108 km/h = slower train's speed; 126 = wrong u from 2u=70 (not adding the two equations correctly).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00004",
+      "stem": "A man takes 30 minutes more when he covers a certain distance at 4 km/h instead of 5 km/h. What is the distance?",
+      "options": [
+        {"option_text": "8 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": true},
+        {"option_text": "12 km", "is_correct": false},
+        {"option_text": "15 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let distance = D km. Time at 4 km/h = D/4 h. Time at 5 km/h = D/5 h. Difference = 30 min = 1/2 hour. D/4 - D/5 = 1/2. (5D-4D)/20 = 1/2. D/20 = 1/2. D = 10 km. Verify: Time at 4 km/h = 10/4 = 2.5 h; Time at 5 km/h = 10/5 = 2 h. Difference = 2.5-2 = 0.5 h = 30 min ✓. Trap: 8 km → D/20=0.4 → diff=24 min≠30; 12 km → diff=36 min≠30.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00005",
+      "stem": "A person covers a certain distance in 1 hour 30 minutes at 20 km/h. At what speed should he cover the same distance in 45 minutes?",
+      "options": [
+        {"option_text": "30 km/h", "is_correct": false},
+        {"option_text": "40 km/h", "is_correct": true},
+        {"option_text": "45 km/h", "is_correct": false},
+        {"option_text": "50 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Distance = 20 × 1.5 = 30 km. Required speed = 30 ÷ (45/60) = 30 ÷ 0.75 = 40 km/h. Verify: Time at 40 km/h = 30/40 = 0.75 h = 45 min ✓. Trap: 30 km/h = confuses time and distance; 45 km/h = time = 30/45 = 40 min (not 45 min).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00006",
+      "stem": "A and B start simultaneously from two towns 280 km apart towards each other. A travels at 60 km/h and B at 80 km/h. After how many hours will they meet?",
+      "options": [
+        {"option_text": "1.5 hours", "is_correct": false},
+        {"option_text": "2 hours", "is_correct": true},
+        {"option_text": "2.5 hours", "is_correct": false},
+        {"option_text": "3 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Moving towards each other → relative speed = 60+80 = 140 km/h. Time to meet = Total distance ÷ Relative speed = 280 ÷ 140 = 2 hours. Verify: A covers 60×2=120 km; B covers 80×2=160 km; 120+160=280 km ✓. Trap: 1.5 hours → 1.5×140=210 km≠280; 2.5 hours → 2.5×140=350 km≠280.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00007",
+      "stem": "A train crosses a platform of length 300 m in 30 seconds and a pole in 15 seconds. What is the length of the train?",
+      "options": [
+        {"option_text": "150 m", "is_correct": false},
+        {"option_text": "200 m", "is_correct": false},
+        {"option_text": "300 m", "is_correct": true},
+        {"option_text": "350 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let length of train = L m. Speed is same in both cases. Passing a pole: speed = L/15. Passing platform: speed = (L+300)/30. Since speed is equal: L/15 = (L+300)/30. 30L = 15(L+300). 30L = 15L+4500. 15L = 4500. L = 300 m. Verify: Speed = 300/15 = 20 m/s; Platform crossing time = (300+300)/20 = 600/20 = 30 s ✓. Trap: 150 m = 300/2 (just halves the platform length without logic); 200 = common miscalculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00008",
+      "stem": "A boat travels 12 km upstream in 3 hours and 12 km downstream in 2 hours. What is the speed of the current?",
+      "options": [
+        {"option_text": "1 km/h", "is_correct": true},
+        {"option_text": "2 km/h", "is_correct": false},
+        {"option_text": "3 km/h", "is_correct": false},
+        {"option_text": "4 km/h", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Upstream speed = 12/3 = 4 km/h. Downstream speed = 12/2 = 6 km/h. Speed of current = (Downstream - Upstream)/2 = (6-4)/2 = 2/2 = 1 km/h. Boat speed in still water = (6+4)/2 = 5 km/h. Verify: Upstream = 5-1 = 4 km/h ✓; Downstream = 5+1 = 6 km/h ✓. Trap: 2 km/h = uses downstream - upstream directly (= 6-4 = 2, without dividing by 2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00009",
+      "stem": "Two cyclists start from the same point and ride in opposite directions. One rides at 15 km/h and the other at 20 km/h. After how many hours will they be 105 km apart?",
+      "options": [
+        {"option_text": "2 hours", "is_correct": false},
+        {"option_text": "3 hours", "is_correct": true},
+        {"option_text": "4 hours", "is_correct": false},
+        {"option_text": "5 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Combined speed (opposite directions) = 15+20 = 35 km/h. Time = Distance/Combined speed = 105/35 = 3 hours. Verify: Distance apart after 3 hours = 15×3 + 20×3 = 45+60 = 105 km ✓. Trap: 4 hours: distance = 4×35 = 140 km ≠ 105; 2 hours: distance = 70 km ≠ 105.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TIME_DISTANCE_W11_B2_00010",
+      "stem": "A man leaves home and walks at 4 km/h for 30 minutes, then takes a rest for 15 minutes, then walks back at 6 km/h. What is the total time from leaving home to returning home?",
+      "options": [
+        {"option_text": "55 minutes", "is_correct": false},
+        {"option_text": "60 minutes", "is_correct": false},
+        {"option_text": "65 minutes", "is_correct": true},
+        {"option_text": "70 minutes", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Distance walked away = 4 km/h × 0.5 h = 2 km. Time to walk back 2 km at 6 km/h = 2/6 h = 20 minutes. Total time = 30 (walk out) + 15 (rest) + 20 (walk back) = 65 minutes. Verify: walk out = 30 min, rest = 15 min, walk back = 20 min, total = 65 min ✓. Trap: 60 = omits the rest time; 55 = 30+5+20 (halves the rest); 70 = 30+20+20 (wrong return time).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

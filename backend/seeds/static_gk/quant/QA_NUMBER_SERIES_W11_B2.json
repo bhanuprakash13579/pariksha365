@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_NUMBER_SERIES_W11_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number Series — Pattern Recognition (W11 B2)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00001",
+      "stem": "Find the missing number in the series:\n2, 6, 12, 20, 30, ?",
+      "options": [
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "42", "is_correct": true},
+        {"option_text": "44", "is_correct": false},
+        {"option_text": "48", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Pattern: 2=1×2, 6=2×3, 12=3×4, 20=4×5, 30=5×6, next = 6×7 = 42. Alternatively, differences: 4, 6, 8, 10, ? → next difference = 12 → 30+12 = 42. Trap: 40 = 30+10 (keeps difference at 10 instead of increasing by 2); 44 = 30+14 (wrong difference increment).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00002",
+      "stem": "Find the missing number:\n3, 9, 27, 81, ?",
+      "options": [
+        {"option_text": "162", "is_correct": false},
+        {"option_text": "243", "is_correct": true},
+        {"option_text": "270", "is_correct": false},
+        {"option_text": "324", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Each term is 3× the previous: 3×3=9, 9×3=27, 27×3=81, 81×3=243. This is a geometric progression with ratio r=3. Trap: 162 = 81×2 (wrong ratio); 324 = 81×4 (wrong ratio).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00003",
+      "stem": "Find the next number in the series:\n1, 4, 9, 16, 25, ?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "49", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Series of perfect squares: 1²=1, 2²=4, 3²=9, 4²=16, 5²=25, 6²=36. Trap: 49 = 7² (skips one term — 6²=36 should come next, then 7²=49); 30 = 25+5 (wrong arithmetic approach).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00004",
+      "stem": "Find the wrong number in the series:\n1, 2, 4, 8, 16, 31, 64",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "31", "is_correct": true},
+        {"option_text": "64", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Pattern: Each term is doubled (×2): 1, 2, 4, 8, 16, 32, 64. The 6th term should be 16×2=32, not 31. The wrong number is 31 (should be 32). Trap: 64 = correct (32×2=64 — but if 31 is wrong, then 64 = 31×2 = 62 would also be wrong; however, 64 is independently consistent as 2⁶; the first wrong number is 31).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00005",
+      "stem": "Find the missing number:\n2, 3, 5, 8, 13, 21, ?",
+      "options": [
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "29", "is_correct": false},
+        {"option_text": "34", "is_correct": true},
+        {"option_text": "35", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. This is the Fibonacci-type series: each number = sum of the two preceding. 2+3=5, 3+5=8, 5+8=13, 8+13=21, 13+21=34. Trap: 29 = 21+8 (adds wrong pair); 35 = 21+14 (wrong); 34 is unambiguous.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00006",
+      "stem": "Find the missing number:\n5, 11, 23, 47, 95, ?",
+      "options": [
+        {"option_text": "189", "is_correct": false},
+        {"option_text": "190", "is_correct": false},
+        {"option_text": "191", "is_correct": true},
+        {"option_text": "192", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Pattern: Each term = 2×(previous) + 1. 2×5+1=11, 2×11+1=23, 2×23+1=47, 2×47+1=95, 2×95+1=191. Verify: 2×95=190; 190+1=191 ✓. Trap: 190 = 2×95 (forgets to add 1); 192 = 2×95+2 (wrong addend); 189 = 95+94 (arithmetic error).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00007",
+      "stem": "Find the missing number:\n144, 121, 100, 81, 64, ?",
+      "options": [
+        {"option_text": "49", "is_correct": true},
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "45", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Descending squares: 12²=144, 11²=121, 10²=100, 9²=81, 8²=64, 7²=49. Trap: 50 = 64-14 (wrong arithmetic approach); 48 = 64-16 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00008",
+      "stem": "Find the missing number in the series:\n7, 13, 24, 45, 86, ?",
+      "options": [
+        {"option_text": "157", "is_correct": false},
+        {"option_text": "163", "is_correct": false},
+        {"option_text": "167", "is_correct": true},
+        {"option_text": "171", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Differences: 13-7=6, 24-13=11, 45-24=21, 86-45=41. Pattern of differences: each = (previous difference × 2) - 1. 6×2-1=11 ✓; 11×2-1=21 ✓; 21×2-1=41 ✓; 41×2-1=81. Next term = 86+81 = 167. Verify: All differences follow the rule ×2−1, giving consistent progression. Trap: 171 = 2×86-1 = 171 (applies the formula to the term itself, not to the difference); 163 = 86+77 (wrong difference).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00009",
+      "stem": "Find the wrong number in the series:\n4, 8, 16, 32, 64, 96, 128",
+      "options": [
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "96", "is_correct": true},
+        {"option_text": "128", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Pattern: ×2 each time: 4, 8, 16, 32, 64, 128, 256. The 6th term should be 64×2=128, not 96. So 96 is the wrong number (should be 128). 128 in the series appears at position 7 (64×2=128, if we accept 96 is wrong). Trap: 128 looks odd at position 7 because if 96 were correct, next would be 192 not 128; but the rule is ×2, so the wrong number is 96 (which breaks the ×2 pattern).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SERIES_W11_B2_00010",
+      "stem": "Find the missing number:\n1, 8, 27, 64, 125, ?",
+      "options": [
+        {"option_text": "196", "is_correct": false},
+        {"option_text": "210", "is_correct": false},
+        {"option_text": "216", "is_correct": true},
+        {"option_text": "225", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Series of perfect cubes: 1³=1, 2³=8, 3³=27, 4³=64, 5³=125, 6³=216. Trap: 196 = 14² (a perfect square, not a cube); 225 = 15² (a perfect square); 210 = no clean formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}
