@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_MATRIX_REASONING_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Matrix Reasoning — Number, Letter and Pattern Matrices (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00001",
+      "stem": "In the matrix below, find the value of ?: Row 1: [4, 6, 5]; Row 2: [7, 2, 6]; Row 3: [5, 3, ?]",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": true},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: sum of each row = 15. Row 1: 4+6+5=15 ✓. Row 2: 7+2+6=15 ✓. Row 3: 5+3+? = 15 → ?=7. Trap: 6 = sums Row 3 to 14 (off by 1); 8 = sums Row 3 to 16 (off by 1 the other way).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00002",
+      "stem": "In the matrix below, find the value of ?: Row 1: [2, 3, 6]; Row 2: [4, 3, 12]; Row 3: [3, 3, ?]",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "9", "is_correct": true},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rule: Col1 × Col2 = Col3 in each row. Row 1: 2×3=6 ✓. Row 2: 4×3=12 ✓. Row 3: 3×3=9 → ?=9. Trap: 6 = uses addition (3+3=6) instead of multiplication; 12 = copies Row 2's answer without applying the rule to Row 3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00003",
+      "stem": "In the matrix below, find the value of ?: Row 1: [3, 5, 7]; Row 2: [4, 6, 8]; Row 3: [5, 7, ?]",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": true},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rule: each row is consecutive odd numbers with gap of +2. Row 1: 3,5,7 (+2 each). Row 2: 4,6,8 (+2 each). Row 3: 5,7,? (+2 each) → ?=9. Column pattern confirms: Col1: 3,4,5 (+1); Col2: 5,6,7 (+1); Col3: 7,8,? (+1) → ?=9 ✓. Trap: 10 = continues Row 2 by +2 (8+2=10), ignoring the row identity.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00004",
+      "stem": "In the matrix below, find the value of ?: Row 1: [5, 3, 16]; Row 2: [7, 5, 24]; Row 3: [4, 2, ?]",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "14", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: Col3 = Col1² − Col2². Row 1: 5²−3²=25−9=16 ✓. Row 2: 7²−5²=49−25=24 ✓. Row 3: 4²−2²=16−4=12 → ?=12. Formula (difference of squares): Col1²−Col2²=(Col1+Col2)(Col1−Col2). Row 3: (4+2)(4−2)=6×2=12 ✓. Trap: 8 = uses Col1−Col2 without squaring (4−2=2, then 2×4=8 wrong); 10 = adds instead (4+2=6+?; doesn't fit).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00005",
+      "stem": "In the letter matrix below, find the value of ?: Row 1: [C, F, I]; Row 2: [D, G, J]; Row 3: [E, H, ?]",
+      "options": [
+        {"option_text": "I", "is_correct": false},
+        {"option_text": "J", "is_correct": false},
+        {"option_text": "K", "is_correct": true},
+        {"option_text": "L", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Row pattern: each letter is +3 positions ahead. Row 1: C(3)→F(6)→I(9): +3 each ✓. Row 2: D(4)→G(7)→J(10): +3 each ✓. Row 3: E(5)→H(8)→?(11=K): +3 each → ?=K ✓. Column pattern confirms: Col1: C,D,E (+1 each); Col2: F,G,H (+1 each); Col3: I,J,? (+1) → ?=K ✓. Trap: J = copies Row 2's last letter; L = skips one position beyond K.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00006",
+      "stem": "In the matrix below, find the value of ?: Row 1: [2, 4, 8]; Row 2: [3, 9, 27]; Row 3: [4, 16, ?]",
+      "options": [
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "64", "is_correct": true},
+        {"option_text": "128", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: each row shows powers of the first element. Row 1: 2¹=2, 2²=4, 2³=8 ✓. Row 2: 3¹=3, 3²=9, 3³=27 ✓. Row 3: 4¹=4, 4²=16, 4³=64 → ?=64. Trap: 32 = 2⁵ (wrong base); 48 = 3×16 (multiplication, not exponentiation); 128 = 2⁷ (wrong base and exponent).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00007",
+      "stem": "In the matrix below, find the value of ?: Row 1: [4, 2, 12]; Row 2: [6, 3, 27]; Row 3: [5, 2, ?]",
+      "options": [
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "21", "is_correct": true},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "35", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Rule: Col3 = (Col1+Col2)×(Col1−Col2). Row 1: (4+2)×(4−2)=6×2=12 ✓. Row 2: (6+3)×(6−3)=9×3=27 ✓. Row 3: (5+2)×(5−2)=7×3=21 → ?=21. This is the difference-of-squares formula: (a+b)(a−b)=a²−b². Verify Row 3: 5²−2²=25−4=21 ✓. Trap: 14 = Col1×Col2+Col1−Col2=10+3=13... wrong. 25 = 5² (only first column squared).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00008",
+      "stem": "In the matrix below, find the value of ?: Row 1: [1, 4, 9]; Row 2: [4, 9, 16]; Row 3: [9, 16, ?]",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "36", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: all values are perfect squares (1²,2²,3²,4²,5²,...). Row 1: 1²,2²,3²=1,4,9. Row 2: 2²,3²,4²=4,9,16. Row 3: 3²,4²,5²=9,16,25 → ?=25. Each row is 3 consecutive squares starting one position later. Alternatively: the matrix is filled diagonally with n². Bottom-right element = 5²=25 ✓. Trap: 36 = 6² (one square too many); 20 = 16+4 (addition, no pattern).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00009",
+      "stem": "In the matrix below, find the value of ?: Row 1: [3, 4, 37]; Row 2: [2, 5, 39]; Row 3: [4, 2, ?]",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "28", "is_correct": true},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "36", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Rule: Col3 = (Col1+Col2)² − Col1×Col2. Row 1: (3+4)²−3×4=49−12=37 ✓. Row 2: (2+5)²−2×5=49−10=39 ✓. Row 3: (4+2)²−4×2=36−8=28 → ?=28. Algebraically: (a+b)²−ab = a²+2ab+b²−ab = a²+ab+b². Trap: 32 = uses (a+b)²−ab with an arithmetic slip; 36 = uses only (4+2)²=36 (forgot to subtract 4×2=8).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_MATRIX_REASONING_W12_B1_00010",
+      "stem": "In the matrix below, find the value of ?: Row 1: [2, 8, 4]; Row 2: [3, 15, 9]; Row 3: [4, 24, ?]",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "16", "is_correct": true},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "40", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Two simultaneous patterns: Col2 = Col1×(Col1+2); Col3 = Col1². Row 1: 2×4=8✓; 2²=4✓. Row 2: 3×5=15✓; 3²=9✓. Row 3: 4×6=24✓; 4²=16 → ?=16. Two-pattern matrices require checking BOTH Col2 and Col3 relationships with Col1 to confirm the rule. Trap: 40 = uses Col3=Col1²+Col2 (4²+24=40, a different pattern that doesn't hold for Row 1: 2²+8=12≠4); 20 = uses Col3=Col1×5 (wrong); 12 = uses Col3=Col1×3 (wrong for Row 2: 3×3=9✓ but Row 1: 2×3=6≠4).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

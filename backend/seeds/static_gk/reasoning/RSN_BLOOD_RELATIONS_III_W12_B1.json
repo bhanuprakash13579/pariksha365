@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_BLOOD_RELATIONS_III_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Blood Relations — Family Tree Deductions and Relationship Chains (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00001",
+      "stem": "Pointing to a boy, Reena says 'He is the son of my grandfather's only son.' How is the boy related to Reena?",
+      "options": [
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": false},
+        {"option_text": "Brother", "is_correct": true},
+        {"option_text": "Father", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. My grandfather's only son = my father (assuming no other male siblings of the father are implied). The boy is the son of my father = my brother. Trap: Cousin = son of grandfather's other son (but the problem specifies 'only son', leaving only the father); Uncle = if grandfather had a son who was not Reena's father (ruled out by 'only son').",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00002",
+      "stem": "A is the mother of B. C is the son of B. How is A related to C?",
+      "options": [
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": true},
+        {"option_text": "Sister", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. A is B's mother. C is B's son. Relationship chain: A→(mother)→B→(son)→C. A is B's mother and B is C's parent → A is C's grandmother. Verify: A(grandmother)→B(parent)→C(grandchild) ✓. Trap: Mother = A is B's mother, but not C's mother (one generation higher); Aunt = no sibling relationship established.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00003",
+      "stem": "How is a man's sister's husband's sister related to the man?",
+      "options": [
+        {"option_text": "Cousin", "is_correct": false},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Sister-in-law", "is_correct": true},
+        {"option_text": "Aunt", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Chain: Man's sister's husband = brother-in-law. Brother-in-law's sister = sister-in-law of the man (the sister of the person who married into the family). The man's sister married someone; that person's sister is now related to the man through his sister's marriage → sister-in-law. Verify: If Man's sister → married → Husband A. Husband A's sister = a woman related by marriage to the man = his sister-in-law. Trap: Cousin = requires a common grandparent; Niece = daughter of sibling (not the case here).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00004",
+      "stem": "X is Y's father's nephew. Y's brother is Z. How is X related to Z?",
+      "options": [
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. X = Y's father's nephew. Father's nephew = cousin of Y (child of father's sibling). So X is Y's cousin. Z is Y's brother. Since X is cousin of Y, and Z is Y's brother (same generation, same parents), X is also cousin of Z. Trap: Uncle = if X were father's generation (not nephew); Brother = would require same parents (not the case).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00005",
+      "stem": "Looking at a photograph, a woman says 'This man's son is the only brother of my daughter.' How is the man related to the woman?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Husband", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 'This man's son is the only brother of my daughter.' The only brother of the woman's daughter = the woman's son (she has one son). So: the man's son = woman's son. If a man's son is also the woman's son → the man and woman share the same son → the man is the woman's husband. Verify: husband and wife have the same children ✓. Trap: Father = would mean the man is the woman's own father (not her son's father); Brother = sibling relationship, not marital.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00006",
+      "stem": "A is the father of B. C is the mother of D. B and D are sisters. How is A related to C?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Husband", "is_correct": true},
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. B and D are sisters → same parents. A is B's father → A is also D's father. C is D's mother → C is also B's mother. A (father) and C (mother) of the same children (B and D) → A is C's husband. Verify: A and C are parents of both B and D ✓. Trap: Brother = sibling (no sibling clue given between A and C).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00007",
+      "stem": "M is married to N. P is M's brother. Q is P's father. R is Q's son (R ≠ M and R ≠ P). How is R related to N?",
+      "options": [
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Brother-in-law", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Q is the father of P and M (siblings). R is another son of Q → R is also a brother of M (and P). N married M → N's brothers-in-law are M's siblings (P and R). R is M's brother → R is N's brother-in-law. Verify: N's spouse is M; M's sibling R = N's brother-in-law ✓. Trap: Son = N has no son established; Cousin = R is a full sibling of M (not cousin, since same father Q).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00008",
+      "stem": "A man introduces a woman as 'The mother of the only child of my only sister.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Sister-in-law", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 'My only sister' has one child. 'The mother of that child' = the one who gave birth to the sister's child = the sister herself (if it's the sister's biological child). The woman introduced = the man's sister. Verify: sister has one child; sister is the mother of that child; man is introducing his sister ✓. Trap: Sister-in-law = wife of the man's brother (not the case here); Niece = daughter of the man's sibling (the woman here IS the sibling, not her daughter).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00009",
+      "stem": "P's mother is Q's daughter. R is P's sister. How is Q related to R?",
+      "options": [
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": true},
+        {"option_text": "Sister", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P's mother = Q's daughter. So Q is the mother of P's mother → Q is P's maternal grandmother. R is P's sister (same parents) → R's mother is also Q's daughter → Q is also R's maternal grandmother. Chain: Q→(daughter)→P's mother→(children)→P and R. Q is grandmother of both P and R. Verify: Q(grandmother)→daughter→R(grandchild) ✓. Trap: Mother = Q is P's mother's mother (grandmother, not mother); Aunt = would require Q to be a sibling of R's parent.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_III_W12_B1_00010",
+      "stem": "A woman points to a man and says, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Grandmother", "is_correct": false},
+        {"option_text": "Daughter", "is_correct": false},
+        {"option_text": "Mother", "is_correct": true},
+        {"option_text": "Aunt", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. 'His mother is the only daughter of MY mother.' The only daughter of the woman's mother = the woman herself. So the man's mother = the woman. The woman IS the man's mother. Chain: woman's mother → only daughter = woman → man (the woman's son). Verify: woman's mother's only daughter = woman (she is the only daughter); man's mother = woman ✓. Trap: Grandmother = the woman's mother is the man's grandmother (one generation above the woman, who IS the mother); Aunt = would require the man's mother to be the woman's sibling (but she IS the woman).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

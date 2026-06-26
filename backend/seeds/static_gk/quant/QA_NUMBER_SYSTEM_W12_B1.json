@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM_W12_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System — Divisibility, Primes, Unit Digits and Factorials (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00001",
+      "stem": "Which of the following numbers is divisible by 4?",
+      "options": [
+        {"option_text": "2345", "is_correct": false},
+        {"option_text": "3674", "is_correct": false},
+        {"option_text": "4568", "is_correct": true},
+        {"option_text": "5791", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: A number is divisible by 4 if its last two digits form a number divisible by 4. 4568: last two digits = 68; 68÷4 = 17 ✓. Others: 45÷4=11.25 (No); 74÷4=18.5 (No); 91÷4=22.75 (No). Trap: checking the entire number for divisibility is slow; the last-two-digits shortcut is essential for SSC speed.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00002",
+      "stem": "Which of the following is a prime number?",
+      "options": [
+        {"option_text": "49", "is_correct": false},
+        {"option_text": "51", "is_correct": false},
+        {"option_text": "57", "is_correct": false},
+        {"option_text": "43", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. 43 is prime — not divisible by 2, 3, 5, or 7 (√43<7). 49=7² (composite); 51=3×17 (composite; 5+1=6, div by 3); 57=3×19 (composite; 5+7=12, div by 3). Short test: to check if n is prime, test divisibility by all primes up to √n. For 43: √43≈6.5 → test 2,3,5 (43 is odd; 4+3=7 not div by 3; doesn't end in 0 or 5) → prime ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00003",
+      "stem": "Which of the following numbers is NOT divisible by 3?",
+      "options": [
+        {"option_text": "123", "is_correct": false},
+        {"option_text": "456", "is_correct": false},
+        {"option_text": "100", "is_correct": true},
+        {"option_text": "789", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: A number is divisible by 3 if the sum of its digits is divisible by 3. 123: 1+2+3=6 ✓; 456: 4+5+6=15 ✓; 789: 7+8+9=24 ✓. But 100: 1+0+0=1 — NOT divisible by 3. Trap: students sometimes check divisibility of round numbers by dividing mentally (100÷3=33.33), but the digit-sum rule is faster for verification.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00004",
+      "stem": "How many prime numbers are there between 1 and 30?",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Primes between 1 and 30 (excluding 1): 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 = 10 primes. Note: 1 is neither prime nor composite; 4,6,8,9,10,12,14,15,16,18,20,21,22,24,25,26,27,28,30 are all composite. Trap: 9 primes = mistakenly excludes 2 (the only even prime); 11 = mistakenly includes 1 (which is not prime by definition).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00005",
+      "stem": "What is the unit digit of 7⁵⁵?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Unit digits of powers of 7 cycle with period 4: 7¹→7, 7²→9, 7³→3, 7⁴→1, 7⁵→7... (cycle: 7,9,3,1). Find 55 mod 4: 55=13×4+3, so 55 mod 4=3. Unit digit of 7⁵⁵ = unit digit of 7³ = 3. Verify: 7³=343; unit digit=3 ✓. Trap: 7 = for 55 mod 4=1 (wrong remainder); 1 = for exponent divisible by 4; 9 = for remainder 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00006",
+      "stem": "What is the remainder when 5⁵⁷ is divided by 4?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 5 mod 4 = 1 (since 5=4+1). By modular arithmetic: 5 ≡ 1 (mod 4). Therefore 5^n ≡ 1^n = 1 (mod 4) for any positive integer n. So 5⁵⁷ ≡ 1 (mod 4). Remainder = 1. Verify directly: 5¹=5, 5/4=1r1 ✓; 5²=25, 25/4=6r1 ✓; 5³=125, 125/4=31r1 ✓. Trap: 0 = thinking 5 is divisible by 4 (it is not); 2 = confusing with 5 mod 2 = 1... actually 5 mod 2 = 1 too, but 5 mod 4 = 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00007",
+      "stem": "Find the greatest number that divides 40, 58, and 76 leaving the same remainder in each case.",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "18", "is_correct": true},
+        {"option_text": "22", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Method: The required divisor = HCF of all pairwise differences. Differences: 58−40=18; 76−58=18; 76−40=36. HCF(18,18,36)=18. Verify: 40÷18=2r4; 58÷18=3r4; 76÷18=4r4. All leave remainder 4 ✓. Trap: 6 = HCF(18,36)? No: HCF(18,36)=18, not 6. But students may compute GCD incorrectly; 9 = a factor of 18 but not the GCD of the differences.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00008",
+      "stem": "Find the greatest 4-digit number that is exactly divisible by both 8 and 12.",
+      "options": [
+        {"option_text": "9960", "is_correct": false},
+        {"option_text": "9972", "is_correct": false},
+        {"option_text": "9984", "is_correct": true},
+        {"option_text": "9996", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. LCM(8,12): 8=2³, 12=2²×3; LCM=2³×3=24. Greatest 4-digit number = 9999. 9999÷24=416.625. Greatest multiple of 24 ≤ 9999: 416×24=9984. Verify: 9984÷8=1248 ✓; 9984÷12=832 ✓; 9984+24=10008>9999 ✓ (so 9984 is the greatest). Trap: 9996 = divisible by 4 (9996÷4=2499) but 9996÷24=416.5 (not an integer); 9960÷24=415 ✓ but not the GREATEST.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00009",
+      "stem": "What is the sum of all natural numbers from 1 to 100?",
+      "options": [
+        {"option_text": "4950", "is_correct": false},
+        {"option_text": "5000", "is_correct": false},
+        {"option_text": "5050", "is_correct": true},
+        {"option_text": "5150", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Sum = n(n+1)/2 = 100×101/2 = 5050. Gauss's method: pair 1+100=101, 2+99=101, ..., 50+51=101; there are 50 pairs; sum=50×101=5050. Alternatively: average of first and last term = (1+100)/2=50.5; multiply by count (100): 50.5×100=5050. Trap: 4950 = n(n−1)/2 for n=100 (wrong formula); 5000 = 100×50 (uses arithmetic mean without the +1).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W12_B1_00010",
+      "stem": "How many zeros are at the end of 25! (25 factorial)?",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Trailing zeros = count of factors of 10 = min(powers of 2, powers of 5) in n!. Powers of 5 are the limiting factor. Count 5s in 25!: ⌊25/5⌋+⌊25/25⌋ = 5+1 = 6. (The 5s come from: 5,10,15,20,25; and 25=5² contributes an extra 5.) Verify: 5,10,15,20 each contribute one factor of 5 (=4 factors); 25=5² contributes two factors (=2 more); total=6 ✓. Trap: 5 = counts only ⌊25/5⌋=5 (misses the extra from 25=5²); 4 = counts 5,10,15,20 only (forgets 25).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

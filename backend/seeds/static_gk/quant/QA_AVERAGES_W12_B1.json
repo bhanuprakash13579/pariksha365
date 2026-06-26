@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_AVERAGES_W12_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Averages — Mean, Weighted Average and Applications (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00001",
+      "stem": "The average of 5 numbers is 12. If one number is removed and the new average is 11, what is the removed number?",
+      "options": [
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "16", "is_correct": true},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Original sum = 5×12 = 60. New sum (4 numbers) = 4×11 = 44. Removed number = 60-44 = 16. Verify: 4 numbers avg 11 (sum=44); removed=60-44=16; 5 numbers sum=44+16=60; avg=60/5=12 ✓. Trap: 14 = 60-46 (wrong new sum using 4×11.5); 18 = uses wrong formula.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00002",
+      "stem": "The average age of a group of 10 students is 15 years. A teacher aged 37 joins the group. What is the new average age?",
+      "options": [
+        {"option_text": "16 years", "is_correct": false},
+        {"option_text": "17 years", "is_correct": true},
+        {"option_text": "18 years", "is_correct": false},
+        {"option_text": "20 years", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Original sum = 10×15 = 150. New sum = 150+37 = 187. New count = 11. New average = 187/11 = 17 years. Verify: 11×17=187; 187-37=150; 150/10=15 ✓. Trap: 16 = uses 150+26=176; 176/11=16 (wrong teacher age); 18 = uses 150+48=198; 198/11=18 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00003",
+      "stem": "The average of first 9 natural numbers is:",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "4.5", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "5.5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. First 9 natural numbers: 1,2,3,4,5,6,7,8,9. Sum = 9×10/2 = 45. Average = 45/9 = 5. Short trick: Average of first n natural numbers = (n+1)/2. For n=9: (9+1)/2=5. Verify: 1+2+...+9=45; 45÷9=5 ✓. Trap: 4.5 = (1+9)/2=5 (wait, that IS 5, not 4.5); common error uses (n/2) = 9/2=4.5 (wrong formula). Correct formula is (n+1)/2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00004",
+      "stem": "In a cricket match, a batsman scores 45, 62, 38, 71, and 54 in 5 innings. What is his average score?",
+      "options": [
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "52", "is_correct": false},
+        {"option_text": "54", "is_correct": true},
+        {"option_text": "56", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Sum = 45+62+38+71+54. Step by step: 45+62=107; 107+38=145; 145+71=216; 216+54=270. Average = 270/5 = 54. Verify: 5×54=270 ✓. Trap: 52 = 260/5 (missing 10 in sum; perhaps counted 44 instead of 54); 50 = 250/5 (wrong sum).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00005",
+      "stem": "The average of 6 consecutive even numbers is 21. What is the largest of the 6 numbers?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "26", "is_correct": true},
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For n consecutive even numbers, average = middle value. For 6 numbers: average = (3rd + 4th)/2 = 21. Let the numbers be x, x+2, x+4, x+6, x+8, x+10. Average = (6x+30)/6 = x+5 = 21 → x=16. Numbers: 16,18,20,22,24,26. Largest = 26. Verify: (16+18+20+22+24+26)/6 = 126/6 = 21 ✓. Trap: 24 = picks the 5th number; 28 = goes one beyond (16+12=28, off by one step).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00006",
+      "stem": "A student's average marks in 5 subjects is 72. If the marks in the 6th subject are included, the average becomes 73. What are the marks in the 6th subject?",
+      "options": [
+        {"option_text": "74", "is_correct": false},
+        {"option_text": "76", "is_correct": false},
+        {"option_text": "78", "is_correct": true},
+        {"option_text": "80", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Sum of 5 subjects = 5×72 = 360. Sum of 6 subjects = 6×73 = 438. 6th subject marks = 438-360 = 78. Verify: (360+78)/6=438/6=73 ✓. Short trick: 6th subject = new avg + (new avg - old avg)×n = 73+(73-72)×5=73+5=78. Trap: 74 = 73+1 (wrong — adds just 1 instead of 1×5=5 above new average); 80 = 73+7 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00007",
+      "stem": "A car travels 60 km at 30 km/h and the next 60 km at 60 km/h. What is the average speed for the entire journey?",
+      "options": [
+        {"option_text": "40 km/h", "is_correct": true},
+        {"option_text": "45 km/h", "is_correct": false},
+        {"option_text": "48 km/h", "is_correct": false},
+        {"option_text": "50 km/h", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Total distance = 60+60 = 120 km. Time for first 60 km = 60/30 = 2 hours. Time for next 60 km = 60/60 = 1 hour. Total time = 3 hours. Average speed = 120/3 = 40 km/h. Formula for equal distances: avg speed = 2uv/(u+v) = 2×30×60/(30+60) = 3600/90 = 40 km/h. Trap: 45 = (30+60)/2 = arithmetic mean (wrong for equal DISTANCES; arithmetic mean is correct for equal TIMES); 50 = wrong average.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00008",
+      "stem": "In a class of 40 students, the average weight is 50 kg. If 5 students leave and the average weight of remaining students becomes 48 kg, what was the average weight of the 5 students who left?",
+      "options": [
+        {"option_text": "62 kg", "is_correct": false},
+        {"option_text": "64 kg", "is_correct": true},
+        {"option_text": "66 kg", "is_correct": false},
+        {"option_text": "70 kg", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Original total weight = 40×50 = 2000 kg. Remaining students = 35; their total weight = 35×48 = 1680 kg. Weight of 5 who left = 2000-1680 = 320 kg. Average of 5 who left = 320/5 = 64 kg. Verify: 1680+320=2000; 2000/40=50 ✓. Trap: 62 = uses 35×49 for remaining sum (wrong avg); 66 = arithmetic error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00009",
+      "stem": "A man buys 5 kg of tea at Rs.80/kg and 3 kg at Rs.100/kg. What is the weighted average price per kg?",
+      "options": [
+        {"option_text": "Rs.87.5", "is_correct": true},
+        {"option_text": "Rs.90", "is_correct": false},
+        {"option_text": "Rs.92.5", "is_correct": false},
+        {"option_text": "Rs.95", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Total cost = 5×80+3×100 = 400+300 = 700. Total kg = 5+3 = 8. Weighted average = 700/8 = Rs.87.5. Verify: 8×87.5=700 ✓. Trap: Rs.90 = (80+100)/2 = simple average (wrong — ignores that more kg of cheaper tea were bought; simple average is only valid when quantities are equal); Rs.95 = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_AVERAGES_W12_B1_00010",
+      "stem": "The average of 10 numbers is 40. If each number is increased by 8, the new average is:",
+      "options": [
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "44", "is_correct": false},
+        {"option_text": "48", "is_correct": true},
+        {"option_text": "50", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. When each of n numbers is increased by a constant k, the average also increases by k. New average = 40+8 = 48. Verify: Original sum = 10×40=400. New sum = 400+10×8=400+80=480. New avg = 480/10=48 ✓. Short rule: Adding k to each number shifts the average by exactly k. Trap: 44 = old average + k/2 (wrong); 50 = old average + k×something (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

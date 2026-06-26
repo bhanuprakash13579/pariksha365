@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_CODING_DECODING_III_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Coding-Decoding — Letter Shift, Reversal, Number and Sentence Coding (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00001",
+      "stem": "In a code language, COLD is written as DPME. What is HEAT written as?",
+      "options": [
+        {"option_text": "IFBU", "is_correct": true},
+        {"option_text": "GDZS", "is_correct": false},
+        {"option_text": "IFAT", "is_correct": false},
+        {"option_text": "IEAT", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Rule: each letter shifted +1. C(3)+1=D(4)✓; O(15)+1=P(16)✓; L(12)+1=M(13)✓; D(4)+1=E(5)✓. Apply to HEAT: H(8)+1=I(9); E(5)+1=F(6); A(1)+1=B(2); T(20)+1=U(21). Code = IFBU. Trap: GDZS = shifts by −1 (backward); IFAT = A is unchanged; IEAT = only first letter shifted.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00002",
+      "stem": "In a code: STAR = UVCT. What is the code for MOON?",
+      "options": [
+        {"option_text": "OQQP", "is_correct": true},
+        {"option_text": "NLLM", "is_correct": false},
+        {"option_text": "OQNP", "is_correct": false},
+        {"option_text": "PRRQ", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Rule: each letter shifted +2. S(19)+2=U(21)✓; T(20)+2=V(22)✓; A(1)+2=C(3)✓; R(18)+2=T(20)✓. Apply to MOON: M(13)+2=O(15); O(15)+2=Q(17); O(15)+2=Q(17); N(14)+2=P(16). Code = OQQP. Trap: NLLM = shifts by −1; OQNP = N unchanged (error at position 3); PRRQ = shifts by +3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00003",
+      "stem": "In a certain code, the word CLOCK is written as KCOLC. By the same logic, what is FLAME written as?",
+      "options": [
+        {"option_text": "EMALP", "is_correct": false},
+        {"option_text": "EMALF", "is_correct": true},
+        {"option_text": "FMALE", "is_correct": false},
+        {"option_text": "AMLEF", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rule: reverse the word. CLOCK (C-L-O-C-K) reversed = K-C-O-L-C = KCOLC ✓. Apply to FLAME (F-L-A-M-E) reversed = E-M-A-L-F = EMALF. Trap: EMALP = wrong last letter P instead of F; FMALE = rearranges without strict reversal; AMLEF = anagram, not a reverse.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00004",
+      "stem": "In a code language: CAT = 24 and DOG = 26. By the same rule, what is BIRD = ?",
+      "options": [
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "33", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Rule: sum of alphabetical position values of all letters. CAT: C=3, A=1, T=20 → 3+1+20=24 ✓. DOG: D=4, O=15, G=7 → 4+15+7=26 ✓. BIRD: B=2, I=9, R=18, D=4 → 2+9+18+4=33. Trap: 30 = common guess (B+I+R+D with I=10, off by one); 32 = B=2+I=10+R=18+D=4-2=32 (wrong I value and wrong operation); 28 = undercount.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00005",
+      "stem": "If COME is coded as BNLD, how is GRID coded?",
+      "options": [
+        {"option_text": "FQHC", "is_correct": true},
+        {"option_text": "HSJF", "is_correct": false},
+        {"option_text": "FRHD", "is_correct": false},
+        {"option_text": "GQHC", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Rule: each letter shifted −1 (one position backward). C(3)−1=B(2)✓; O(15)−1=N(14)✓; M(13)−1=L(12)✓; E(5)−1=D(4)✓. Apply to GRID: G(7)−1=F(6); R(18)−1=Q(17); I(9)−1=H(8); D(4)−1=C(3). Code = FQHC. Trap: HSJF = shifts forward by +1 (G+1=H, R+1=S, I+1=J, D+1=F); GQHC = G unchanged, rest shifted −1 (inconsistent); FRHD = R and D unchanged.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00006",
+      "stem": "In a code language, FINE is written as ILQH. What is CAKE coded as?",
+      "options": [
+        {"option_text": "FDNH", "is_correct": true},
+        {"option_text": "FDMH", "is_correct": false},
+        {"option_text": "ECMG", "is_correct": false},
+        {"option_text": "GEOI", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Rule: each letter shifted +3. F(6)+3=I(9)✓; I(9)+3=L(12)✓; N(14)+3=Q(17)✓; E(5)+3=H(8)✓. Apply to CAKE: C(3)+3=F(6); A(1)+3=D(4); K(11)+3=N(14); E(5)+3=H(8). Code = FDNH. Trap: FDMH = K shifted by only +2 giving M instead of N; ECMG = all letters shifted +2 (one less than the correct +3); GEOI = all letters shifted +4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00007",
+      "stem": "In a code language: CALM = ECON and DARK = FCTM. What is BARK = ?",
+      "options": [
+        {"option_text": "DCTM", "is_correct": true},
+        {"option_text": "DCTK", "is_correct": false},
+        {"option_text": "DCTN", "is_correct": false},
+        {"option_text": "EBNL", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Confirm rule using CALM: C(3)+2=E(5)✓; A(1)+2=C(3)✓; L(12)+2=N(14)✓; M(13)+2=O(15)✓ → ECON ✓. Confirm with DARK: D(4)+2=F(6)✓; A(1)+2=C(3)✓; R(18)+2=T(20)✓; K(11)+2=M(13)✓ → FCTM ✓. Rule: +2 shift. BARK: B(2)+2=D(4); A(1)+2=C(3); R(18)+2=T(20); K(11)+2=M(13). Code = DCTM. Trap: DCTK = K unchanged; DCTN = K shifted by +3 giving N(14); EBNL = B shifted by +3 and inconsistent other shifts.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00008",
+      "stem": "In a code: FACE = 6135 and FADE = 6145. What is the code for ACED?",
+      "options": [
+        {"option_text": "1345", "is_correct": false},
+        {"option_text": "1354", "is_correct": true},
+        {"option_text": "3154", "is_correct": false},
+        {"option_text": "1453", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. From FACE=6135: F=6, A=1, C=3, E=5. From FADE=6145: F=6(✓), A=1(✓), D=4, E=5(✓) — D=4 confirmed. Now ACED: A=1, C=3, E=5, D=4 → 1354. Verify: 1-3-5-4 maps A-C-E-D. All letter-digit pairs are consistent across both source words ✓. Trap: 1345 = swaps D and E values (uses D=5, E=4); 3154 = C and A swapped; 1453 = rearranges digits without following the letter order.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00009",
+      "stem": "In a code: PLACE = 32145 and CAPE = 4135. What is the code for PALE?",
+      "options": [
+        {"option_text": "3152", "is_correct": false},
+        {"option_text": "3125", "is_correct": true},
+        {"option_text": "2135", "is_correct": false},
+        {"option_text": "3215", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. From PLACE=32145: P=3, L=2, A=1, C=4, E=5. Verify with CAPE=4135: C=4(✓), A=1(✓), P=3(✓), E=5(✓) — all consistent. PALE: P=3, A=1, L=2, E=5 → 3125. Verify: 3(P)−1(A)−2(L)−5(E) = 3125 ✓. Trap: 3152 = L and E swapped (2 and 5 interchanged); 2135 = L and P positions swapped; 3215 = L=2 and A=1 are swapped in the output.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_III_W12_B1_00010",
+      "stem": "In a coded language: 'ka la ma' = 'sky is blue'; 'na la pa' = 'flower is red'; 'ka ra ta' = 'sky looks beautiful'; 'pa la ka' = 'red is sky'. What does the code word 'na' stand for?",
+      "options": [
+        {"option_text": "sky", "is_correct": false},
+        {"option_text": "flower", "is_correct": true},
+        {"option_text": "beautiful", "is_correct": false},
+        {"option_text": "red", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Step 1: Compare S1('ka la ma'='sky is blue') and S2('na la pa'='flower is red') — common code 'la', common word 'is' → la = 'is'. Step 2: Compare S1 and S3('ka ra ta'='sky looks beautiful') — common code 'ka', common word 'sky' → ka = 'sky'. Step 3: In S4('pa la ka'='red is sky'): la='is' and ka='sky', so pa = 'red'. Step 4: In S2('na la pa'='flower is red'): la='is' and pa='red', so na = 'flower'. Trap: 'sky'=ka; 'red'=pa; 'beautiful' is either ra or ta (indeterminate from given data).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

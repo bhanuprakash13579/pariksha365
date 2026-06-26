@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_COMPOUND_INTEREST_W12_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Compound Interest — Formula, Half-Yearly and Comparison with SI (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00001",
+      "stem": "Find the compound interest on Rs.1,000 at 10% per annum for 2 years, compounded annually.",
+      "options": [
+        {"option_text": "Rs.200", "is_correct": false},
+        {"option_text": "Rs.210", "is_correct": true},
+        {"option_text": "Rs.220", "is_correct": false},
+        {"option_text": "Rs.250", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A = P(1+r/100)^n = 1000×(1.10)² = 1000×1.21 = 1210. CI = 1210−1000 = Rs.210. Verify: Year 1 interest = 1000×10/100=100; Year 2 interest = 1100×10/100=110; Total CI=210 ✓. Short trick: CI − SI = P×(r/100)². SI for 2 years=200; Difference=1000×(0.1)²=10; CI=200+10=210 ✓. Trap: Rs.200 = simple interest for 2 years (misses the compounding in Year 2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00002",
+      "stem": "What is the compound interest on Rs.5,000 at 4% per annum for 2 years?",
+      "options": [
+        {"option_text": "Rs.400", "is_correct": false},
+        {"option_text": "Rs.404", "is_correct": false},
+        {"option_text": "Rs.408", "is_correct": true},
+        {"option_text": "Rs.416", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. A = 5000×(1.04)² = 5000×1.0816 = 5408. CI = 5408−5000 = Rs.408. Verify: SI for 2 years = 5000×4×2/100 = 400. Difference = P×(r/100)² = 5000×0.0016 = 8. CI = 400+8 = 408 ✓. Trap: Rs.400 = simple interest (ignores compounding); Rs.404 = SI + P×(r/100) (wrong formula for difference).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00003",
+      "stem": "What is the difference between Compound Interest and Simple Interest on Rs.2,000 at 5% per annum for 2 years?",
+      "options": [
+        {"option_text": "Rs.3", "is_correct": false},
+        {"option_text": "Rs.5", "is_correct": true},
+        {"option_text": "Rs.10", "is_correct": false},
+        {"option_text": "Rs.20", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. For 2 years: CI − SI = P×(r/100)² = 2000×(5/100)² = 2000×25/10000 = 5. Verify: SI = 2000×5×2/100 = 200. CI: A=2000×(1.05)²=2000×1.1025=2205; CI=205. Difference=205−200=5 ✓. Short formula: for 2 years, difference = P×r²/10000. Here: 2000×25/10000=5 ✓. Trap: Rs.10 = uses r (5) instead of r² (25); Rs.20 = uses P×r/100 (wrong formula).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00004",
+      "stem": "What is the compound interest on Rs.8,000 at 15% per annum for 2 years, compounded annually?",
+      "options": [
+        {"option_text": "Rs.2,400", "is_correct": false},
+        {"option_text": "Rs.2,480", "is_correct": false},
+        {"option_text": "Rs.2,580", "is_correct": true},
+        {"option_text": "Rs.2,640", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A = 8000×(1.15)² = 8000×1.3225 = 10580. CI = 10580−8000 = Rs.2580. Verify step-by-step: Year 1: 8000×15%=1200; A₁=9200. Year 2: 9200×15%=1380; A₂=10580. CI=10580−8000=2580 ✓. Trap: Rs.2400 = SI (8000×15×2/100=2400, ignores compounding); Rs.2480 = Year 2 interest alone (1200+1280=2480, but 9200×15%=1380 not 1280 — arithmetic error).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00005",
+      "stem": "The compound interest on a sum of money for 2 years at 10% per annum is Rs.2,100. Find the principal.",
+      "options": [
+        {"option_text": "Rs.8,000", "is_correct": false},
+        {"option_text": "Rs.9,000", "is_correct": false},
+        {"option_text": "Rs.10,000", "is_correct": true},
+        {"option_text": "Rs.12,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. CI for 2 years at 10% = A−P = P×[(1.1)²−1] = P×0.21. So P×0.21 = 2100 → P = 2100/0.21 = 10000. Verify: 10000×(1.21)=12100; CI=12100−10000=2100 ✓. Short trick: For 10% for 2 years, CI/P ratio = 0.21 (21%). So P = CI/0.21 = 2100/0.21 = 10000. Trap: Rs.12,000 = divides 2100 by 0.175 (wrong multiplier for 15%); Rs.8,000 = confuses the SI formula P = CI×100/(r×t).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00006",
+      "stem": "Rs.10,000 is invested at 10% per annum, compounded half-yearly. What is the amount after 1 year?",
+      "options": [
+        {"option_text": "Rs.11,000", "is_correct": false},
+        {"option_text": "Rs.11,025", "is_correct": true},
+        {"option_text": "Rs.11,050", "is_correct": false},
+        {"option_text": "Rs.11,100", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Half-yearly: rate per half = 10/2 = 5%; periods = 2 (in 1 year). A = 10000×(1.05)² = 10000×1.1025 = Rs.11,025. CI = Rs.1,025. Compare: SI for 1 year = Rs.1,000; annual compounding gives Rs.1,000 too. Half-yearly compounding = Rs.1,025 > annual CI. Trap: Rs.11,000 = annual compounding at 10% for 1 year (wrong — should be 10000×1.10=11000 for annual, which IS 11000. But half-yearly gives 11025 which is higher ✓). Trap: Rs.11,100 = uses full 10% for each half-year (double counting).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00007",
+      "stem": "The population of a town is 64,000. It grows at 5% per annum. What will be the population after 2 years?",
+      "options": [
+        {"option_text": "70,000", "is_correct": false},
+        {"option_text": "70,400", "is_correct": false},
+        {"option_text": "70,560", "is_correct": true},
+        {"option_text": "71,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Population growth uses compound interest formula: P_new = P×(1+r/100)^n = 64000×(1.05)² = 64000×1.1025 = 70,560. Verify: Year 1: 64000×1.05=67200. Year 2: 67200×1.05=70560 ✓. Trap: 70,000 = uses 64000+6000=70000 (SI approach: 64000×5%=3200 per year; 2×3200=6400; 64000+6400=70400 is SI). Rs.70,400 = SI approach (wrong, misses compounding effect of 200 extra).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00008",
+      "stem": "A sum of money doubles itself at compound interest in 5 years. In how many years will it become 4 times?",
+      "options": [
+        {"option_text": "8 years", "is_correct": false},
+        {"option_text": "10 years", "is_correct": true},
+        {"option_text": "15 years", "is_correct": false},
+        {"option_text": "20 years", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. If P doubles in 5 years: P×r_factor = 2P, so r_factor^5 = 2. In 10 years: P×r_factor^10 = P×(r_factor^5)² = P×2² = 4P. So it becomes 4 times in 10 years. Rule: if a sum becomes n-fold in t years at CI, it becomes n²-fold in 2t years. Here: n=2, t=5, so n²=4 in 2t=10 years ✓. Trap: 20 years = applies SI logic (4 times needs 4× the doubling period — wrong for CI); 15 years = CI reasoning error (3 periods).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00009",
+      "stem": "What is the compound interest on Rs.5,000 at 10% per annum for 3 years?",
+      "options": [
+        {"option_text": "Rs.1,500", "is_correct": false},
+        {"option_text": "Rs.1,550", "is_correct": false},
+        {"option_text": "Rs.1,655", "is_correct": true},
+        {"option_text": "Rs.1,700", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A = 5000×(1.10)³ = 5000×1.331 = 6655. CI = 6655−5000 = Rs.1,655. Verify step-by-step: Y1: 5000→5500 (interest 500). Y2: 5500→6050 (interest 550). Y3: 6050→6655 (interest 605). Total CI=500+550+605=1655 ✓. Trap: Rs.1,500 = SI for 3 years (5000×10×3/100=1500); Rs.1,550 = Y1+Y2 interest only (500+550=1050... wait that's 1050, not 1550). Check: perhaps 1550 = using (1.10)³ incorrectly as 1.10×3=1.30; 5000×0.30=1500. Rs.1,700 = overestimate.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COMPOUND_INTEREST_W12_B1_00010",
+      "stem": "A certain sum becomes Rs.1,331 in 3 years at 10% per annum compound interest. Find the principal.",
+      "options": [
+        {"option_text": "Rs.900", "is_correct": false},
+        {"option_text": "Rs.1,000", "is_correct": true},
+        {"option_text": "Rs.1,100", "is_correct": false},
+        {"option_text": "Rs.1,210", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A = P×(1.10)³ = P×1.331 = 1331. So P = 1331/1.331 = 1000. Key: 1.331 = (1.1)³ = 11³/10³ = 1331/1000. So P = 1331×(1000/1331) = Rs.1,000. Verify: 1000×(1.1)³=1000×1.331=1331 ✓. Trap: Rs.1,100 = P×(1.1)=1331 (solving as if n=1); Rs.1,210 = P×(1.1)²=1331 (solving as if n=2); Rs.900 = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SIMPLE_INTEREST_W12_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Simple Interest — Formula, Rate Finding and Multi-Step Problems (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00001",
+      "stem": "Find the Simple Interest on Rs.1,000 at 5% per annum for 2 years.",
+      "options": [
+        {"option_text": "Rs.50", "is_correct": false},
+        {"option_text": "Rs.100", "is_correct": true},
+        {"option_text": "Rs.150", "is_correct": false},
+        {"option_text": "Rs.200", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. SI = P×R×T/100 = 1000×5×2/100 = 10000/100 = Rs.100. Verify: 5% of 1000 = Rs.50 per year × 2 years = Rs.100 ✓. Trap: Rs.50 = interest for 1 year only; Rs.200 = interest for 4 years (confuses T=4 with T=2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00002",
+      "stem": "Find the Simple Interest on Rs.2,000 at 10% per annum for 3 years.",
+      "options": [
+        {"option_text": "Rs.400", "is_correct": false},
+        {"option_text": "Rs.500", "is_correct": false},
+        {"option_text": "Rs.600", "is_correct": true},
+        {"option_text": "Rs.800", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. SI = P×R×T/100 = 2000×10×3/100 = 60000/100 = Rs.600. Verify: 10% of 2000 = Rs.200 per year × 3 years = Rs.600 ✓. Amount = P+SI = 2000+600 = Rs.2,600. Trap: Rs.400 = for 2 years; Rs.800 = for 4 years.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00003",
+      "stem": "At what rate of interest will Rs.2,000 yield Rs.360 as Simple Interest in 3 years?",
+      "options": [
+        {"option_text": "4%", "is_correct": false},
+        {"option_text": "5%", "is_correct": false},
+        {"option_text": "6%", "is_correct": true},
+        {"option_text": "8%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. R = SI×100/(P×T) = 360×100/(2000×3) = 36000/6000 = 6% per annum. Verify: 2000×6×3/100 = 360 ✓. Trap: 5% → 2000×5×3/100=300≠360; 8% → 2000×8×3/100=480≠360.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00004",
+      "stem": "A sum of Rs.5,000 amounts to Rs.6,500 in 4 years at Simple Interest. Find the rate of interest per annum.",
+      "options": [
+        {"option_text": "6%", "is_correct": false},
+        {"option_text": "7%", "is_correct": false},
+        {"option_text": "7.5%", "is_correct": true},
+        {"option_text": "8%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. SI = Amount − Principal = 6500 − 5000 = 1500. R = SI×100/(P×T) = 1500×100/(5000×4) = 150000/20000 = 7.5%. Verify: 5000×7.5×4/100=1500; 5000+1500=6500 ✓. Trap: 7% → 5000×7×4/100=1400; Amount=6400≠6500; 8% → SI=1600; Amount=6600≠6500.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00005",
+      "stem": "A sum of money doubles itself in 10 years at Simple Interest. What is the rate of interest per annum?",
+      "options": [
+        {"option_text": "5%", "is_correct": false},
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "12%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. If sum doubles, Amount=2P, so SI=P. P = P×R×10/100 → R=100/10=10% per annum. Short rule: if sum doubles in T years at SI, R=100/T%. For T=10: R=100/10=10%. Verify: at 10% pa SI, P grows by 10%×P per year; in 10 years grows by 100% = doubles ✓. Trap: 5% → doubles in 20 years (not 10); 20% → doubles in 5 years.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00006",
+      "stem": "Rs.4,000 is invested at 5% p.a. for 2 years and then at 7% p.a. for 3 more years. What is the total Simple Interest?",
+      "options": [
+        {"option_text": "Rs.1,100", "is_correct": false},
+        {"option_text": "Rs.1,200", "is_correct": false},
+        {"option_text": "Rs.1,240", "is_correct": true},
+        {"option_text": "Rs.1,400", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. SI for first 2 years at 5%: 4000×5×2/100=400. SI for next 3 years at 7%: 4000×7×3/100=840. Total SI=400+840=Rs.1,240. Verify: 4000×0.05×2=400; 4000×0.07×3=840; 400+840=1240 ✓. Trap: Rs.1,200 = 4000×5×6/100=1200 (uses 5% throughout for all 5 years — ignores rate change).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00007",
+      "stem": "Rs.10,000 is split equally and invested at 4% and 6% per annum for 2 years. What is the total Simple Interest earned?",
+      "options": [
+        {"option_text": "Rs.800", "is_correct": false},
+        {"option_text": "Rs.900", "is_correct": false},
+        {"option_text": "Rs.1,000", "is_correct": true},
+        {"option_text": "Rs.1,200", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Each half = Rs.5,000. SI at 4% for 2 years: 5000×4×2/100=400. SI at 6% for 2 years: 5000×6×2/100=600. Total SI=400+600=Rs.1,000. Shortcut: average rate = (4+6)/2 = 5%; Total SI = 10000×5×2/100=1000 ✓ (valid when amounts are equal). Trap: Rs.800 = 10000×4×2/100 (uses 4% only); Rs.1,200 = 10000×6×2/100 (uses 6% only).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00008",
+      "stem": "Rs.2,000 earns Rs.800 as SI in 4 years. In how many years will Rs.3,000 earn Rs.1,800 as SI at the same rate?",
+      "options": [
+        {"option_text": "5 years", "is_correct": false},
+        {"option_text": "6 years", "is_correct": true},
+        {"option_text": "7 years", "is_correct": false},
+        {"option_text": "8 years", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Step 1: Find rate. R=SI×100/(P×T)=800×100/(2000×4)=10%. Step 2: Find T for new principal. T=SI×100/(P×R)=1800×100/(3000×10)=180000/30000=6 years. Verify: 3000×10×6/100=1800 ✓. Trap: 5 years → 3000×10×5/100=1500≠1800; 8 years → 2400≠1800.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00009",
+      "stem": "A principal amount grows to Rs.950 in 3 years and Rs.1,100 in 6 years at Simple Interest. Find the principal.",
+      "options": [
+        {"option_text": "Rs.700", "is_correct": false},
+        {"option_text": "Rs.750", "is_correct": false},
+        {"option_text": "Rs.800", "is_correct": true},
+        {"option_text": "Rs.850", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. SI for years 3 to 6 (3 years) = 1100−950 = 150. So SI per year = 150/3 = 50. SI for 3 years = 150. Principal = 950 − 150 = 800. Verify: P=800, SI/year=50, SI for 3 years=150; A₃=950 ✓; SI for 6 years=300; A₆=800+300=1100 ✓. Rate=50×100/800=6.25%. Trap: Rs.750 = 950−200 (wrong SI calculation); Rs.850 = midpoint error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SIMPLE_INTEREST_W12_B1_00010",
+      "stem": "What sum of money will produce Rs.1,400 as Simple Interest in 4 years at 3.5% per annum?",
+      "options": [
+        {"option_text": "Rs.8,000", "is_correct": false},
+        {"option_text": "Rs.9,000", "is_correct": false},
+        {"option_text": "Rs.10,000", "is_correct": true},
+        {"option_text": "Rs.12,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P = SI×100/(R×T) = 1400×100/(3.5×4) = 140000/14 = Rs.10,000. Verify: 10000×3.5×4/100=140000/100=1400 ✓. Trap: Rs.8,000 = uses wrong denominator (1400×100/17.5=8000; 17.5=3.5×5, wrong T); Rs.12,000 = arithmetic error. Short check: 3.5% of 10000=350/year; 350×4=1400 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_DIRECTION_SENSE_II_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Direction Sense — Compass Turns, Shadow Directions and Distance Problems (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00001",
+      "stem": "A person is facing North. He turns 90° to his right. Which direction is he now facing?",
+      "options": [
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "East", "is_correct": true},
+        {"option_text": "North-East", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Facing North, turning right (clockwise) 90° leads to East. Compass clockwise: N → E → S → W → N. Each 90° turn clockwise moves one position: N+90°right = East. Trap: West = 90° left turn from North; South = 180° turn from North.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00002",
+      "stem": "Ram walks 3 km North, then turns and walks 4 km East. How far is he from his starting point?",
+      "options": [
+        {"option_text": "3 km", "is_correct": false},
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "5 km", "is_correct": true},
+        {"option_text": "7 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. The path forms a right angle: 3 km North and 4 km East. By Pythagoras: distance = √(3²+4²) = √(9+16) = √25 = 5 km. This is the classic 3-4-5 Pythagorean triple. Trap: 7 km = 3+4 = adding distances linearly (only valid if both in same direction); 3 km or 4 km = only one leg of the triangle.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00003",
+      "stem": "A walks 5 km East, then 5 km South, then 5 km West. How far is A from the starting point and in which direction?",
+      "options": [
+        {"option_text": "5 km North", "is_correct": false},
+        {"option_text": "5 km South", "is_correct": true},
+        {"option_text": "5√2 km South-East", "is_correct": false},
+        {"option_text": "0 km (at starting point)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Net East-West: 5E−5W = 0 (cancelled out). Net North-South: 5S only. A ends up 5 km due South of the starting point. Visualise: moves East (returns West), so only South movement remains. Trap: 0 km = would require walking back North also; 5√2 South-East = wrong (no net East-West component).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00004",
+      "stem": "Starting facing South, a person turns 90° right, then 90° right again. What direction is he now facing?",
+      "options": [
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "North", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Clockwise sequence (right turns): South → West (first 90° right) → North (second 90° right). Two right turns = 180° total rotation from South = North. Trap: East = one right turn from South leads to West, not East; West = only one right turn from South (stops after first turn); note 'right from South' goes West (not East) because when facing South, right = West.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00005",
+      "stem": "A walks 8 km North, then 6 km East, then 8 km South, then 2 km East. In which direction and how far is A from the starting point?",
+      "options": [
+        {"option_text": "6 km East", "is_correct": false},
+        {"option_text": "8 km East", "is_correct": true},
+        {"option_text": "6 km North-East", "is_correct": false},
+        {"option_text": "2 km East", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Net North-South: 8N − 8S = 0 (cancelled). Net East-West: 6E + 2E = 8E. A is 8 km due East of start. Trap: 6 km East = only counts the first eastward leg (misses the second 2 km East); 2 km East = only counts the last leg; 6 km North-East = wrong because N-S cancelled (no North component remains).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00006",
+      "stem": "In the morning, a man stands such that his shadow falls to his left. Which direction is the man facing?",
+      "options": [
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "North", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. In the morning, the Sun is in the East, so shadows point West. If the shadow falls to his left, West is to his left. When West is on your left, you are facing North. Verify: facing North → left = West (sun in E → shadow to W = to your left) ✓. Trap: South = shadow would be to the right when facing South; East = facing East puts shadow behind you (sun behind is wrong — sun is in East, so facing East puts shadow behind, not to the left).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00007",
+      "stem": "A person walks 3 km North, 4 km East, 3 km South, and 6 km West from his office. In which direction is he from the office?",
+      "options": [
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": true},
+        {"option_text": "North", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Net North-South: 3N − 3S = 0. Net East-West: 4E − 6W = −2W = 2 km West. He is 2 km West of his office. Trap: East = he walked east 4 km but then came back 6 km west, netting 2 west, not east; North = N-S components cancelled completely.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00008",
+      "stem": "Anita is facing East. She turns 90° to her left, then 90° to her right, and then another 90° to her left. Which direction is she facing?",
+      "options": [
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "North", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Start: East. Left 90°: East → North. Right 90°: North → East. Left 90°: East → North. Final direction: North. Shortcut: left and right turns cancel each other → the net effect of [left, right, left] = [left only]. One left turn from East = North ✓. Trap: East = two lefts and one right cancel to nothing (wrong — 2L+1R = 1L net); West = two left turns from East (that would need L+L = West, but there's also one right).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00009",
+      "stem": "Point A is 12 m North of point B. Point C is 5 m East of point A. Point D is 24 m South of point C. What is the straight-line distance between B and D?",
+      "options": [
+        {"option_text": "10 m", "is_correct": false},
+        {"option_text": "12 m", "is_correct": false},
+        {"option_text": "13 m", "is_correct": true},
+        {"option_text": "17 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Place B at origin (0,0). A is 12m North → A=(0,12). C is 5m East of A → C=(5,12). D is 24m South of C → D=(5, 12−24)=(5,−12). Distance BD = √[(5−0)²+(−12−0)²] = √[25+144] = √169 = 13 m. This is the 5-12-13 Pythagorean triple. Trap: 17 = 5+12 (adding directly instead of Pythagoras); 12 = only the N-S component from B to D (ignores the 5m East offset).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DIRECTION_SENSE_II_W12_B1_00010",
+      "stem": "A person faces North-West. He turns 135° clockwise. Which direction is he now facing?",
+      "options": [
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "East", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "South-East", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. North-West = 315° on the compass (N=0°/360°, E=90°, S=180°, W=270°, NW=315°). Turning 135° clockwise: 315°+135°=450°=90° (subtracting 360°)=East. Alternatively count clockwise from NW: NW→N(45°)→NE(90°)→E(135°). Three 45° steps clockwise from NW reaches East. ✓ Trap: North-East = only 90° clockwise from NW; South = 225° clockwise from NW (wrong count); South-East = 135° is 3 steps of 45° not 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

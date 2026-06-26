@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_STATEMENT_CONCLUSIONS_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Statement and Conclusions — Syllogism-Based Logical Deductions (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00001",
+      "stem": "Statements: All cats are animals. All animals have four legs. Conclusions: I. All cats have four legs. II. Some animals are cats. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": true},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Conclusion I: All A→B (cats→animals), All B→C (animals→four legs) → All A→C (cats→four legs). VALID syllogism. Conclusion II: 'All cats are animals' → by conversion: 'Some animals are cats.' VALID (All A are B → Some B are A is valid by particular conversion). Both I and II follow. Trap: thinking I doesn't follow because 'some animals might have less than 4 legs' — but we ACCEPT statements as true in syllogism, regardless of real-world facts.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00002",
+      "stem": "Statements: Some apples are fruits. All fruits are healthy. Conclusions: I. Some apples are healthy. II. All healthy things are fruits. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": true},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Conclusion I: 'Some apples are fruits' + 'All fruits are healthy' → Some apples are healthy. VALID (Some A→B + All B→C → Some A→C). Conclusion II: 'All healthy things are fruits' = converse of 'All fruits are healthy' — but converting 'All A are B' to 'All B are A' is INVALID. 'All fruits are healthy' doesn't mean 'all healthy things are fruits' (exercise and sleep are also healthy but not fruits). Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00003",
+      "stem": "Statements: No dog is a cat. Some cats are black. Conclusions: I. No dog is black. II. Some black things are cats. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": true},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Conclusion I: 'No dog is a cat' and 'Some cats are black' → Can we conclude 'No dog is black'? NO — the statements allow dogs to be black through non-cat means (the colour black isn't exclusive to cats). Some black dogs exist. NOT valid. Conclusion II: 'Some cats are black' → by conversion: 'Some black things are cats.' VALID (Some A→B → Some B→A). Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00004",
+      "stem": "Statement: Coffee is harmful for health. Conclusions: I. People should stop drinking coffee. II. Coffee should be banned by the government. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Both conclusions go BEYOND what the statement says. The statement states a fact (coffee is harmful). Conclusion I ('people should stop') is a prescriptive recommendation — not logically deduced from a mere factual statement. Conclusion II ('should be banned') is a policy prescription — even further removed. Many harmful things (sugar, alcohol) are not banned. Neither conclusion NECESSARILY follows from the statement alone. Trap: thinking I naturally follows because 'harmful things should be stopped' — this assumes an unstated premise.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00005",
+      "stem": "Statements: Some books are pens. Some pens are papers. Conclusions: I. Some books are papers. II. Some papers are books. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. 'Some A→B' + 'Some B→C' gives NO definite conclusion about A and C. The some-some combination can yield no conclusion because: the subset of pens that overlaps with books may not be the same subset that overlaps with papers. Even if Some books are pens AND some pens are papers, the books-pens overlap and the pens-papers overlap may be completely different subsets of pens. Neither I nor II follows. SSC PYQ frequent pattern: Some+Some = No Conclusion.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00006",
+      "stem": "Statements: All chairs are tables. All tables are wooden. Conclusions: I. All chairs are wooden. II. Some wooden things are chairs. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": true},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Conclusion I: All A→B (chairs→tables) + All B→C (tables→wooden) → All A→C (chairs→wooden). VALID. Conclusion II: Since 'All chairs are wooden' (from I), by conversion: 'Some wooden things are chairs.' VALID. Both follow. Remember: All A→B → Some B→A (valid partial conversion). Trap: thinking 'some wooden' has to be verified separately — it follows directly once we know all chairs are wooden.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00007",
+      "stem": "Statements: No pen is a book. All books are useful. Conclusions: I. No pen is useful. II. Some useful things are books. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": true},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Conclusion I: 'No pen is a book' + 'All books are useful' → Can we say 'No pen is useful'? NO. This would only follow if 'nothing except books is useful' — but the statement doesn't say that. Pens can be useful through other means. NOT valid. Conclusion II: 'All books are useful' → by conversion: 'Some useful things are books.' VALID (All A→B → Some B→A). Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00008",
+      "stem": "Statement: Most successful people in this company were promoted in their first year. Conclusions: I. All successful people in the company were promoted in their first year. II. Promotion in the first year leads to success. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": false},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Conclusion I: 'Most' ≠ 'All'. We cannot conclude ALL from MOST. NOT valid. Conclusion II: The statement establishes correlation (most successful people were promoted early), not causation. 'Leads to success' implies causation — we cannot conclude cause-effect from a correlation statement. Also, the direction could be reversed (success led to promotion, not vice versa). NOT valid. Neither follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00009",
+      "stem": "Statements: All students who study hard pass exams. Raju did not pass the exam. Conclusions: I. Raju did not study hard. II. Raju is not a capable student. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": true},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Conclusion I: Using the CONTRAPOSITIVE of 'All who study hard pass' → 'All who don't pass didn't study hard.' Raju didn't pass → Raju didn't study hard. VALID. Conclusion II: 'Not a capable student' goes far beyond the given statements. The statements mention studying hard and passing — nothing about capability. A capable student may simply not have studied. NOT valid — goes beyond the information given. Only I follows. Logical tool: contrapositive of 'If P then Q' = 'If not-Q then not-P' (always valid).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_STATEMENT_CONCLUSIONS_W12_B1_00010",
+      "stem": "Statements: Some teachers are doctors. All doctors are qualified. Conclusions: I. Some teachers are qualified. II. All qualified persons are teachers. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only Conclusion I follows", "is_correct": true},
+        {"option_text": "Only Conclusion II follows", "is_correct": false},
+        {"option_text": "Both Conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither Conclusion I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Conclusion I: 'Some teachers are doctors' + 'All doctors are qualified' → Some teachers are qualified. VALID (Some A→B + All B→C → Some A→C). Conclusion II: 'All qualified persons are teachers' = claiming All C→A. From 'All doctors are qualified' (All B→C), by conversion we get 'Some qualified are doctors' (Some C→B) — NOT 'All qualified are teachers.' Many qualified persons (engineers, lawyers) are not teachers. NOT valid. Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

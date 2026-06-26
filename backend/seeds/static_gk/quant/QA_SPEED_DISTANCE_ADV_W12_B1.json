@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SPEED_DISTANCE_ADV_W12_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Speed, Distance and Time — Relative Speed, Trains and Average Speed (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00001",
+      "stem": "A car covers 240 km in 4 hours. What is its speed?",
+      "options": [
+        {"option_text": "50 km/h", "is_correct": false},
+        {"option_text": "60 km/h", "is_correct": true},
+        {"option_text": "70 km/h", "is_correct": false},
+        {"option_text": "80 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Speed = Distance/Time = 240/4 = 60 km/h. Verify: 60×4=240 ✓. Trap: 50 = 200/4 (wrong distance); 80 = 320/4 (wrong distance).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00002",
+      "stem": "A train travels at 50 km/h. How far does it travel in 3 hours?",
+      "options": [
+        {"option_text": "120 km", "is_correct": false},
+        {"option_text": "135 km", "is_correct": false},
+        {"option_text": "150 km", "is_correct": true},
+        {"option_text": "165 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Distance = Speed × Time = 50×3 = 150 km. Verify: 50×3=150 ✓. Trap: 120 = 40×3 (wrong speed); 165 = 55×3 (wrong speed).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00003",
+      "stem": "A cyclist covers 300 km at 60 km/h. How long does the journey take?",
+      "options": [
+        {"option_text": "4 hours", "is_correct": false},
+        {"option_text": "5 hours", "is_correct": true},
+        {"option_text": "6 hours", "is_correct": false},
+        {"option_text": "8 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Time = Distance/Speed = 300/60 = 5 hours. Verify: 60×5=300 ✓. Trap: 6 = 300/50 (wrong speed denominator); 4 = 300/75 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00004",
+      "stem": "A and B start from the same point, walking in the same direction. A walks at 6 km/h and B at 9 km/h. After how many hours will B be 12 km ahead of A?",
+      "options": [
+        {"option_text": "2 hours", "is_correct": false},
+        {"option_text": "3 hours", "is_correct": false},
+        {"option_text": "4 hours", "is_correct": true},
+        {"option_text": "6 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Relative speed (same direction) = 9−6 = 3 km/h. Time to create 12 km gap = 12/3 = 4 hours. Verify: in 4h, A covers 24 km; B covers 36 km; difference=12 km ✓. Trap: 2 = gap/half relative speed; 6 = 12/2 (divides by 2, not relative speed). Key: when two move in same direction, relative speed = DIFFERENCE.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00005",
+      "stem": "Two trains, 120 m and 80 m long, travel towards each other at 60 km/h and 40 km/h. How long do they take to cross each other?",
+      "options": [
+        {"option_text": "5.6 seconds", "is_correct": false},
+        {"option_text": "7.2 seconds", "is_correct": true},
+        {"option_text": "8.4 seconds", "is_correct": false},
+        {"option_text": "9.6 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Relative speed (opposite directions) = 60+40 = 100 km/h = 100×1000/3600 = 250/9 m/s. Total distance to cross = 120+80 = 200 m. Time = 200/(250/9) = 200×9/250 = 7.2 seconds. Verify: 7.2×(250/9)=7.2×27.78=200m ✓. Trap: 5.6 = uses sum of lengths as 160 (wrong); 9.6 = uses wrong relative speed. Key: crossing = sum of train lengths; opposite direction = add speeds.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00006",
+      "stem": "A train 200 m long passes a 300 m platform in 25 seconds. What is the speed of the train?",
+      "options": [
+        {"option_text": "60 km/h", "is_correct": false},
+        {"option_text": "72 km/h", "is_correct": true},
+        {"option_text": "80 km/h", "is_correct": false},
+        {"option_text": "90 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total distance to cover a platform = train length + platform length = 200+300 = 500 m. Speed = 500/25 = 20 m/s. Convert to km/h: 20×3600/1000 = 72 km/h. Verify: 72×1000/3600=20 m/s; 20×25=500m ✓. Trap: 60 km/h = only platform distance: 300/25=12m/s=43.2km/h (wrong); 80 km/h = uses only train distance 200m somehow.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00007",
+      "stem": "A man covers the first half of a journey at 40 km/h and the second half at 60 km/h. What is his average speed for the entire journey?",
+      "options": [
+        {"option_text": "48 km/h", "is_correct": true},
+        {"option_text": "50 km/h", "is_correct": false},
+        {"option_text": "52 km/h", "is_correct": false},
+        {"option_text": "54 km/h", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. For equal DISTANCES (not times), average speed = 2S₁S₂/(S₁+S₂) = 2×40×60/(40+60) = 4800/100 = 48 km/h. Verify with 120 km total: First 60 km at 40 km/h = 1.5h; next 60 km at 60 km/h = 1h; total time=2.5h; avg speed=120/2.5=48 km/h ✓. Trap: 50 = arithmetic mean (40+60)/2 = 50; this is WRONG when distances are equal (only correct when times are equal).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00008",
+      "stem": "A runs 1.5 km in 9 minutes; B runs the same distance in 7.5 minutes. In a race of 1.5 km, by how many seconds does B beat A?",
+      "options": [
+        {"option_text": "60 seconds", "is_correct": false},
+        {"option_text": "75 seconds", "is_correct": false},
+        {"option_text": "90 seconds", "is_correct": true},
+        {"option_text": "120 seconds", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A's time = 9 minutes = 540 seconds. B's time = 7.5 minutes = 450 seconds. B beats A by 540−450 = 90 seconds. Verify: A takes 9 min, B takes 7.5 min for same distance; difference = 1.5 min = 90 seconds ✓. Trap: 60 seconds = 1 minute (underestimates the difference); 120 seconds = 2 minutes (overestimates).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00009",
+      "stem": "A leaves town X at 6 AM walking at 40 km/h. B leaves the same town at 8 AM in the same direction at 60 km/h. At what time will B catch up with A?",
+      "options": [
+        {"option_text": "10 AM", "is_correct": false},
+        {"option_text": "11 AM", "is_correct": false},
+        {"option_text": "12 PM (noon)", "is_correct": true},
+        {"option_text": "1 PM", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. By 8 AM (when B starts), A has been walking 2 hours at 40 km/h → A is 80 km ahead. Relative speed of B catching up = 60−40 = 20 km/h. Time for B to close 80 km gap = 80/20 = 4 hours after 8 AM = 12 PM. Verify: at 12 PM, A has walked 6h×40=240 km; B has walked 4h×60=240 km. Same distance ✓. Trap: 10 AM = 2h after B starts (gap = 80km; 2h×20=40km, only half closed).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SPEED_DISTANCE_ADV_W12_B1_00010",
+      "stem": "A journey from P to Q has two legs: P to R (60 km at 20 km/h) and R to Q (60 km at 30 km/h). What is the average speed for the whole journey?",
+      "options": [
+        {"option_text": "22 km/h", "is_correct": false},
+        {"option_text": "24 km/h", "is_correct": true},
+        {"option_text": "25 km/h", "is_correct": false},
+        {"option_text": "26 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total distance = 60+60 = 120 km. Time for P→R: 60/20 = 3h. Time for R→Q: 60/30 = 2h. Total time = 5h. Average speed = 120/5 = 24 km/h. Formula: 2×20×30/(20+30) = 1200/50 = 24 km/h (valid since distances are equal). Trap: 25 = arithmetic mean (20+30)/2 = 25 (wrong for equal DISTANCES); 22 = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

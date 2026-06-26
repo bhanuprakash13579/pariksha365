@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_LETTER_SERIES_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Letter Series and Alphanumeric Patterns (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00001",
+      "stem": "What is the next term in the series: B, D, F, H, J, ?",
+      "options": [
+        {"option_text": "K", "is_correct": false},
+        {"option_text": "L", "is_correct": true},
+        {"option_text": "M", "is_correct": false},
+        {"option_text": "N", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rule: every alternate letter (skip one between each). B(2)→D(4)→F(6)→H(8)→J(10)→L(12). Each letter advances by +2 positions. Verify: B+2=D, D+2=F, F+2=H, H+2=J, J+2=L ✓. These are consecutive even-positioned letters. Trap: K(11) = +1 from J (wrong skip); M(13) = +3 from J (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00002",
+      "stem": "What is the next term in the series: Z, X, V, T, R, ?",
+      "options": [
+        {"option_text": "Q", "is_correct": false},
+        {"option_text": "P", "is_correct": true},
+        {"option_text": "O", "is_correct": false},
+        {"option_text": "N", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rule: descending, skipping one letter (−2 each step). Z(26)→X(24)→V(22)→T(20)→R(18)→P(16). Verify: Z−2=X, X−2=V, V−2=T, T−2=R, R−2=P ✓. These are consonants in reverse order (skipping vowels: Y, W, U, S, Q are the skipped letters). Trap: Q(17) = just one below R (−1 not −2); N(14) = −4 from R (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00003",
+      "stem": "What is the next term: A, C, F, J, O, ?",
+      "options": [
+        {"option_text": "S", "is_correct": false},
+        {"option_text": "T", "is_correct": false},
+        {"option_text": "U", "is_correct": true},
+        {"option_text": "V", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Differences in position values: A=1, C=3 (+2), F=6 (+3), J=10 (+4), O=15 (+5). Next: +6 → position 21 = U. Pattern: gaps increase by 1 each time (+2,+3,+4,+5,+6...). Verify: A(1)+2=C(3)+3=F(6)+4=J(10)+5=O(15)+6=U(21) ✓. Trap: T(20) = only +5 from O (same gap as previous, not increasing); S(19) = wrong.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00004",
+      "stem": "What is the next term: AB, CD, EF, GH, ?",
+      "options": [
+        {"option_text": "HI", "is_correct": false},
+        {"option_text": "IJ", "is_correct": true},
+        {"option_text": "JK", "is_correct": false},
+        {"option_text": "KL", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Rule: consecutive pairs of letters. AB (1,2), CD (3,4), EF (5,6), GH (7,8), IJ (9,10). Each pair is the next two consecutive letters in the alphabet. Verify: after GH (7,8), next pair = IJ (9,10) ✓. Trap: HI = starts at H (8), overlaps with previous pair; KL = skips IJ entirely.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00005",
+      "stem": "What is the next term in the alphanumeric series: A2, C4, E6, G8, ?",
+      "options": [
+        {"option_text": "H9", "is_correct": false},
+        {"option_text": "I9", "is_correct": false},
+        {"option_text": "I10", "is_correct": true},
+        {"option_text": "J10", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Letter pattern: A, C, E, G, I (every alternate letter, +2 each: vowels A, E and consonants C, G, I alternating). The next letter after G = I (G+2=I). Number pattern: 2, 4, 6, 8, 10 (even numbers increasing by 2). Next number = 10. Combined: I10. Verify: G+2=I ✓; 8+2=10 ✓. Trap: J10 = J is not alternate from G (G(7)+2=I(9), not J(10)); I9 = number should be 10 not 9.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00006",
+      "stem": "What is the next term: AZ, BY, CX, DW, ?",
+      "options": [
+        {"option_text": "EV", "is_correct": true},
+        {"option_text": "EU", "is_correct": false},
+        {"option_text": "FV", "is_correct": false},
+        {"option_text": "FU", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Pattern: First letter advances from front (A,B,C,D,E); second letter retreats from back (Z,Y,X,W,V). Together each pair uses positions (1,26), (2,25), (3,24), (4,23), (5,22) = positions summing to 27. Next pair: E(5)V(22) → sum=27 ✓. Verify: A+Z=1+26=27; B+Y=2+25=27; C+X=3+24=27; D+W=4+23=27; E+V=5+22=27 ✓. Trap: EU = V=22, U=21 (one short); FV = F is 6th, not 5th (wrong front letter).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00007",
+      "stem": "Find the odd one out in the letter group: QRS, BCD, MNO, GHJ",
+      "options": [
+        {"option_text": "QRS", "is_correct": false},
+        {"option_text": "BCD", "is_correct": false},
+        {"option_text": "MNO", "is_correct": false},
+        {"option_text": "GHJ", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. QRS: Q(17),R(18),S(19) — consecutive ✓. BCD: B(2),C(3),D(4) — consecutive ✓. MNO: M(13),N(14),O(15) — consecutive ✓. GHJ: G(7),H(8),J(10) — NOT consecutive (skips I=9). The odd one out = GHJ (should be GHI for consecutive). Trap: all four groups appear similar; careful position-checking of GHJ reveals the skip from H(8) to J(10).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00008",
+      "stem": "What is the next term: Z1A, Y2B, X3C, W4D, ?",
+      "options": [
+        {"option_text": "U5E", "is_correct": false},
+        {"option_text": "V5D", "is_correct": false},
+        {"option_text": "V5E", "is_correct": true},
+        {"option_text": "U6E", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Three patterns simultaneously: First letter (descending from end): Z,Y,X,W,V. Middle number (ascending): 1,2,3,4,5. Last letter (ascending from start): A,B,C,D,E. Next: V(letter from end), 5(number), E(letter from start) = V5E. Verify: Z(26)→Y(25)→X(24)→W(23)→V(22) ✓; 1→2→3→4→5 ✓; A(1)→B(2)→C(3)→D(4)→E(5) ✓. Trap: U5E = uses U instead of V (goes too far back); V5D = D already used (should be E).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00009",
+      "stem": "If A=1, B=2, C=3... Z=26, what is the value of EXAM + PASS?",
+      "options": [
+        {"option_text": "90", "is_correct": false},
+        {"option_text": "94", "is_correct": false},
+        {"option_text": "96", "is_correct": false},
+        {"option_text": "98", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. EXAM: E=5, X=24, A=1, M=13 → 5+24+1+13=43. PASS: P=16, A=1, S=19, S=19 → 16+1+19+19=55. Total = 43+55 = 98. Verify: E(5)+X(24)=29; 29+A(1)=30; 30+M(13)=43 ✓. P(16)+A(1)=17; 17+S(19)=36; 36+S(19)=55 ✓. 43+55=98 ✓. Trap: 90 = guesses a round number; 94 = arithmetic error losing 4 in one of the words.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_LETTER_SERIES_W12_B1_00010",
+      "stem": "In a code where each letter is replaced by the letter that is 3 positions after it in the alphabet (Z wraps to C, Y wraps to B, X wraps to A), what does 'KHOOR' decode to?",
+      "options": [
+        {"option_text": "HELLO", "is_correct": true},
+        {"option_text": "HILLO", "is_correct": false},
+        {"option_text": "JELLO", "is_correct": false},
+        {"option_text": "WORLD", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Each letter in the code is 3 positions AFTER the original. To decode, shift BACK 3 positions (−3). K(11)−3=H(8); H(8)−3=E(5); O(15)−3=L(12); O(15)−3=L(12); R(18)−3=O(15). Decodes to: HELLO. This is the classic Caesar cipher with shift 3 (as used by Julius Caesar). Verify: H→K (+3) ✓; E→H (+3) ✓; L→O (+3) ✓; L→O (+3) ✓; O→R (+3) ✓. Trap: JELLO = shifts back only 1 (J=K−1 not K−3); WORLD = a different famous word but doesn't decode from KHOOR.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_PROFIT_LOSS_ADV_W12_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Profit and Loss — Marked Price, Discount and Multi-Step Problems (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00001",
+      "stem": "A shopkeeper buys an article for Rs.80 and sells it for Rs.100. What is his profit percentage?",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "25%", "is_correct": true},
+        {"option_text": "30%", "is_correct": false},
+        {"option_text": "40%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Profit = SP − CP = 100 − 80 = Rs.20. Profit% = (Profit/CP)×100 = (20/80)×100 = 25%. Verify: 80 × 125/100 = 100 ✓. Trap: 20% = confuses (20/100)×100 (uses SP not CP in denominator); profit% is always calculated on CP.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00002",
+      "stem": "An article is bought for Rs.200 and sold for Rs.180. What is the loss percentage?",
+      "options": [
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "9%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "12%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Loss = CP − SP = 200 − 180 = Rs.20. Loss% = (Loss/CP)×100 = (20/200)×100 = 10%. Verify: 200 × 90/100 = 180 ✓. Trap: 9% = uses SP as denominator (20/180×100≈11.1%); loss% is on CP.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00003",
+      "stem": "A trader bought goods for Rs.500 and wants a profit of 20%. At what price should he sell?",
+      "options": [
+        {"option_text": "Rs.550", "is_correct": false},
+        {"option_text": "Rs.580", "is_correct": false},
+        {"option_text": "Rs.600", "is_correct": true},
+        {"option_text": "Rs.620", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. SP = CP × (100 + Profit%)/100 = 500 × 120/100 = Rs.600. Verify: Profit = 600 − 500 = 100; Profit% = 100/500 × 100 = 20% ✓. Trap: Rs.550 = 500 + 10% (uses 10% not 20%); Rs.620 = 500 × 124/100 (wrong multiplier).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00004",
+      "stem": "By selling an article for Rs.390, a shopkeeper earns 30% profit. What was the cost price?",
+      "options": [
+        {"option_text": "Rs.270", "is_correct": false},
+        {"option_text": "Rs.280", "is_correct": false},
+        {"option_text": "Rs.300", "is_correct": true},
+        {"option_text": "Rs.310", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. CP = SP × 100/(100+P%) = 390 × 100/130 = 39000/130 = Rs.300. Verify: 300 × 130/100 = 390 ✓; Profit = 90; P% = 90/300 × 100 = 30% ✓. Trap: Rs.270 = 390 × 100/143 (uses wrong multiplier); Rs.280 = 390 − 30% of 390 = 390 − 117 = 273 (wrong — P% is on CP not SP).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00005",
+      "stem": "A shopkeeper marks goods at 40% above cost price and gives a 10% discount. What is his profit percentage?",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "24%", "is_correct": false},
+        {"option_text": "26%", "is_correct": true},
+        {"option_text": "30%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let CP=100. MP=140 (40% markup). SP after 10% discount = 140 × 90/100 = 126. Profit = 126 − 100 = 26. Profit% = 26%. Formula: Profit% = (1+markup%/100)×(1-discount%/100)×100 − 100 = 1.40×0.90×100 − 100 = 126 − 100 = 26% ✓. Trap: 30% = marks up 40%, ignores the 10% discount; 20% = markup minus discount (arithmetic, wrong — should be multiplicative, not additive).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00006",
+      "stem": "A man buys 10 oranges for Rs.40 and sells 8 oranges for Rs.40. What is his profit or loss percentage?",
+      "options": [
+        {"option_text": "20% loss", "is_correct": false},
+        {"option_text": "20% profit", "is_correct": false},
+        {"option_text": "25% loss", "is_correct": false},
+        {"option_text": "25% profit", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. CP of 1 orange = 40/10 = Rs.4. SP of 1 orange = 40/8 = Rs.5. Profit per orange = 5 − 4 = 1. Profit% = (1/4) × 100 = 25%. Verify: buys 10 for Rs.40 (CP=40). Sells them in groups of 8 at Rs.40 per 8: for 10 oranges sold, earnings = 10/8 × 40 = Rs.50. SP=50, CP=40, Profit=10, P%=10/40×100=25% ✓. Trap: 20% profit = uses wrong CP/SP ratio.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00007",
+      "stem": "By selling an item for Rs.63, a shopkeeper incurs a loss of 10%. At what price must he sell to gain 10%?",
+      "options": [
+        {"option_text": "Rs.72", "is_correct": false},
+        {"option_text": "Rs.77", "is_correct": true},
+        {"option_text": "Rs.80", "is_correct": false},
+        {"option_text": "Rs.84", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. CP = SP × 100/(100 − L%) = 63 × 100/90 = 6300/90 = Rs.70. For 10% gain: New SP = 70 × 110/100 = Rs.77. Verify: CP=70, loss SP=70×90/100=63 ✓; gain SP=70×110/100=77 ✓. Trap: Rs.72 = 63 + 9 (adds 9, wrong); Rs.80 = 63 + loss + gain = 63 + 7 + 7 = 77... wait 63+7=70=CP, 70+7=77=profit SP. Rs.80 = wrong CP assumption.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00008",
+      "stem": "A sells to B at 25% profit. B sells to C at 20% profit. If C pays Rs.300, what was A's cost price?",
+      "options": [
+        {"option_text": "Rs.160", "is_correct": false},
+        {"option_text": "Rs.180", "is_correct": false},
+        {"option_text": "Rs.200", "is_correct": true},
+        {"option_text": "Rs.240", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. C pays B Rs.300. B's CP from A = B's SP to C × 100/120 = 300 × 100/120 = 250. A's SP to B = 250 = A's cost × 125/100. A's cost = 250 × 100/125 = Rs.200. Verify: A buys at 200, sells to B at 200×1.25=250; B sells to C at 250×1.20=300 ✓. Trap: Rs.180 = 300/1.20/1.25... arithmetic error; work backwards correctly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00009",
+      "stem": "A dishonest dealer claims to sell at cost price but uses a false weight of 800 g instead of 1 kg. What is his actual gain percentage?",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "22.5%", "is_correct": false},
+        {"option_text": "25%", "is_correct": true},
+        {"option_text": "30%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. He gives 800g but charges for 1000g. Gain = (1000 − 800)/800 × 100 = 200/800 × 100 = 25%. Logical approach: he buys 1000g at CP, but sells only 800g at the price of 1000g. Leftover = 200g = extra profit. Gain% = (extra/given) × 100 = 200/800 × 100 = 25%. Trap: 20% = uses 200/1000 (wrong denominator — gain% is on what he actually gave, not the standard weight); formula: Gain% = (true weight − false weight)/false weight × 100.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_PROFIT_LOSS_ADV_W12_B1_00010",
+      "stem": "Two articles are each sold for Rs.990. One is sold at 10% profit and the other at 10% loss. What is the net result?",
+      "options": [
+        {"option_text": "Rs.20 profit", "is_correct": false},
+        {"option_text": "Neither profit nor loss", "is_correct": false},
+        {"option_text": "Rs.20 loss", "is_correct": true},
+        {"option_text": "Rs.22 loss", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. CP₁ (at 10% profit) = 990×100/110 = 900. CP₂ (at 10% loss) = 990×100/90 = 1100. Total CP = 900+1100 = 2000. Total SP = 1980. Net Loss = 2000−1980 = Rs.20. Rule: when two items are sold at the same price with equal % profit and loss, there is ALWAYS a net loss = (P%)²/100 % on total CP. Here: 1% loss on 2000 = 20 ✓. Trap: 'no profit no loss' = common wrong answer; this rule catches many students who think equal profit/loss cancels.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SEATING_ARRANGEMENT_II_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Seating Arrangement — Linear and Circular (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00001",
+      "stem": "Read the information and answer Q1-Q5. Six people F, G, H, I, J, K sit in a row facing North. (1) G is at the leftmost position. (2) H is 3rd from the left. (3) I is immediately to the right of H. (4) F is exactly between G and H. (5) J is not at either end. — Who sits at the rightmost position?",
+      "options": [
+        {"option_text": "I", "is_correct": false},
+        {"option_text": "J", "is_correct": false},
+        {"option_text": "K", "is_correct": true},
+        {"option_text": "H", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Derivation: G=1(leftmost clue 1); H=3(clue 2); I=4(right of H, clue 3); F=2(between G=1 and H=3, clue 4). Remaining: J,K at positions 5,6. Clue 5: J not at end → J≠6 → J=5, K=6. Arrangement: G(1)-F(2)-H(3)-I(4)-J(5)-K(6). Rightmost = K ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00002",
+      "stem": "[Same arrangement as Q1: G-F-H-I-J-K] Who are J's immediate neighbours?",
+      "options": [
+        {"option_text": "H and K", "is_correct": false},
+        {"option_text": "I and K", "is_correct": true},
+        {"option_text": "F and K", "is_correct": false},
+        {"option_text": "H and I", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. From the arrangement G(1)-F(2)-H(3)-I(4)-J(5)-K(6): J is at position 5. Immediate left = I(4); immediate right = K(6). J's neighbours are I and K. Trap: H and K = H is at position 3, two seats from J (not immediate); F and K = F is at position 2, far from J.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00003",
+      "stem": "[Same arrangement: G-F-H-I-J-K] What is F's position from the right end?",
+      "options": [
+        {"option_text": "2nd from right", "is_correct": false},
+        {"option_text": "3rd from right", "is_correct": false},
+        {"option_text": "4th from right", "is_correct": false},
+        {"option_text": "5th from right", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. F is at position 2 from the left in a 6-person row. Position from right = (total + 1) − position from left = (6+1)−2 = 5. So F is 5th from the right. Verify: counting from right: K(1st), J(2nd), I(3rd), H(4th), F(5th), G(6th) ✓. Short formula: position from right = n+1 − position from left (for n people).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00004",
+      "stem": "[Same arrangement: G-F-H-I-J-K] How many people sit between G and I?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. G is at position 1; I is at position 4. Positions between them: 2(F) and 3(H) = 2 people. Formula: people between = |pos2−pos1| − 1 = |4−1| − 1 = 3−1 = 2. Trap: 3 = counts positions 2,3,4 (includes I itself — wrong); 1 = only one of the two intervening people counted.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00005",
+      "stem": "[Same arrangement: G-F-H-I-J-K] If G and K exchange seats, and F and I exchange seats, who sits 4th from the left?",
+      "options": [
+        {"option_text": "H", "is_correct": false},
+        {"option_text": "F", "is_correct": true},
+        {"option_text": "I", "is_correct": false},
+        {"option_text": "J", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Original: G(1)-F(2)-H(3)-I(4)-J(5)-K(6). After G↔K: K(1)-F(2)-H(3)-I(4)-J(5)-G(6). After F↔I: K(1)-I(2)-H(3)-F(4)-J(5)-G(6). 4th from left = F. Trap: I = I is now at position 2 after the exchange (not 4th); H = H remains at position 3 (not 4th).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00006",
+      "stem": "Read the information and answer Q6-Q10. Six friends A, B, C, D, E, F sit around a circular table, all facing the centre. (1) A sits opposite to D. (2) B is immediately to the right of A. (3) C is immediately to the left of D. (4) F is between E and B. — Who sits immediately to the left of A?",
+      "options": [
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "F", "is_correct": true},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Place A at position 1 (clockwise: 1→2→3→4→5→6→1). B is right of A (clockwise) → B=2. D is opposite A in 6-person circle (3 seats) → D=4. C is left of D → C is at position 3 (counterclockwise from D=4 is position 3). Remaining: E, F at positions 5 and 6. F is between E and B(2). Positions 5 and 6 border B(2) at position 6 (since 6 is adjacent to 1=A which is adjacent to 2=B). F between E and B: if F=6, E=5 (F at 6 is between E=5 and B=2 via A=1) → This works. Arrangement clockwise: A(1)-B(2)-C(3)-D(4)-E(5)-F(6). Immediately left of A(1) = F(6) ✓ (in clockwise arrangement, left of position 1 = position 6).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00007",
+      "stem": "[Same circular arrangement: A(1)-B(2)-C(3)-D(4)-E(5)-F(6)] Who sits opposite to B?",
+      "options": [
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": true},
+        {"option_text": "F", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. In a 6-person circular arrangement, opposite means 3 seats away. B=2. Opposite of B = 2+3=5 = E. Verify: A(1)↔D(4) ✓ (given); B(2)↔E(5); C(3)↔F(6). Trap: D = D is opposite A (not B); F = F is opposite C (not B).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00008",
+      "stem": "[Same circular arrangement: A(1)-B(2)-C(3)-D(4)-E(5)-F(6)] How many people sit between A and D (going clockwise from A to D)?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Going clockwise from A(1) to D(4): pass through B(2) and C(3). That is 2 people between A and D going clockwise. Going anticlockwise from A(1) to D(4): pass through F(6), E(5) = 3 people (longer path). The question specifies clockwise, so answer = 2. Trap: 3 = the anticlockwise count; 1 = one position in between (wrong — positions 2 and 3 are both between 1 and 4 clockwise).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00009",
+      "stem": "[Same circular arrangement: A(1)-B(2)-C(3)-D(4)-E(5)-F(6)] If B and E exchange seats, who will be sitting to the immediate right of the new position of E?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "F", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Original: A(1)-B(2)-C(3)-D(4)-E(5)-F(6). B and E exchange: A(1)-E(2)-C(3)-D(4)-B(5)-F(6). E is now at position 2. Immediately to the right of position 2 = position 3 = C. Verify: clockwise from E(2) → C(3) ✓. Trap: A = A is to the LEFT of E's new position (position 1 is anticlockwise from position 2).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SEATING_ARRANGEMENT_II_W12_B1_00010",
+      "stem": "[Same circular arrangement: A(1)-B(2)-C(3)-D(4)-E(5)-F(6)] Who are the two persons sitting diagonally opposite to each other across the centre if C and F exchange positions?",
+      "options": [
+        {"option_text": "A and D", "is_correct": false},
+        {"option_text": "C and B", "is_correct": false},
+        {"option_text": "F and B", "is_correct": false},
+        {"option_text": "A and D; B and E; F and C", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Original opposite pairs: A(1)↔D(4); B(2)↔E(5); C(3)↔F(6). If C and F exchange: F moves to position 3 and C moves to position 6. New arrangement: A(1)-B(2)-F(3)-D(4)-E(5)-C(6). New opposite pairs: A(1)↔D(4); B(2)↔E(5); F(3)↔C(6). All three opposite pairs are now A-D, B-E, and F-C (F and C have swapped places so they now sit opposite each other). The question asks who are diagonally opposite — the correct option lists all three opposite pairs after the exchange. Trap: 'A and D' alone = only one of three pairs.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

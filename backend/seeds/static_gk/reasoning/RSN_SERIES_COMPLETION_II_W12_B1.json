@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SERIES_COMPLETION_II_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Number Series Completion — Arithmetic, Geometric and Special Sequences (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00001",
+      "stem": "What is the next term in the series: 2, 4, 8, 16, 32, ?",
+      "options": [
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "56", "is_correct": false},
+        {"option_text": "64", "is_correct": true},
+        {"option_text": "72", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: each term is multiplied by 2. 2→4→8→16→32→64 (×2 each time). This is a geometric progression with ratio r=2. Verify: 32×2=64 ✓. Trap: 48 = adds 16 (arithmetic difference, wrong pattern); 56 = adds 24 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00002",
+      "stem": "What is the next term in the series: 1, 4, 9, 16, 25, ?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "34", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "40", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: perfect squares of consecutive natural numbers. 1²=1, 2²=4, 3²=9, 4²=16, 5²=25, 6²=36. Next term = 6²=36. Alternatively: differences are 3,5,7,9,11 (consecutive odd numbers); next difference=11; 25+11=36 ✓. Trap: 30 = 25+5 (adds the first difference 3 instead of the correct next odd 11); 34 = 25+9 (uses the previous difference).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00003",
+      "stem": "What is the next term in the series: 1, 1, 2, 3, 5, 8, 13, ?",
+      "options": [
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "21", "is_correct": true},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: Fibonacci sequence — each term = sum of the two preceding terms. 1+1=2; 1+2=3; 2+3=5; 3+5=8; 5+8=13; 8+13=21. Next term = 21. The Fibonacci sequence is named after Italian mathematician Leonardo Fibonacci. Trap: 18 = 13+5 (adds wrong two terms); 20 = 13+7 (not Fibonacci).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00004",
+      "stem": "What is the next term in the series: 3, 6, 10, 15, 21, ?",
+      "options": [
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "28", "is_correct": true},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Differences: 6−3=3, 10−6=4, 15−10=5, 21−15=6. The differences increase by 1 each time (+3,+4,+5,+6,...). Next difference = +7. Next term = 21+7=28. These are triangular numbers: n(n+1)/2 for n=2,3,4,5,6,7: 3,6,10,15,21,28 ✓. Trap: 25 = adds 4 (uses a previous difference); 30 = adds 9 (wrong increment).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00005",
+      "stem": "What is the next term in the series: 2, 5, 10, 17, 26, ?",
+      "options": [
+        {"option_text": "35", "is_correct": false},
+        {"option_text": "37", "is_correct": true},
+        {"option_text": "39", "is_correct": false},
+        {"option_text": "41", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Differences: 5−2=3, 10−5=5, 17−10=7, 26−17=9. Differences increase by 2 (odd numbers: 3,5,7,9,...). Next difference=11. Next term=26+11=37. Pattern recognition: these are n²+1 for n=1,2,3,4,5,6: 1+1=2, 4+1=5, 9+1=10, 16+1=17, 25+1=26, 36+1=37 ✓. Trap: 35 = adds 9 (uses previous difference); 39 = adds 13 (skips a step).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00006",
+      "stem": "What is the next term in the series: 100, 50, 25, 12.5, ?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "6.25", "is_correct": true},
+        {"option_text": "7.5", "is_correct": false},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Rule: each term is divided by 2 (×1/2 each time). 100→50→25→12.5→6.25. Geometric progression with ratio r=1/2. Verify: 12.5÷2=6.25 ✓. Trap: 6 = subtracts 6.5 (arithmetic approach, wrong); 7.5 = 12.5×0.6 (wrong ratio).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00007",
+      "stem": "What is the next term in the series: 4, 9, 25, 49, 121, ?",
+      "options": [
+        {"option_text": "144", "is_correct": false},
+        {"option_text": "169", "is_correct": true},
+        {"option_text": "196", "is_correct": false},
+        {"option_text": "225", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Rule: squares of prime numbers. 2²=4, 3²=9, 5²=25, 7²=49, 11²=121, 13²=169. Primes: 2,3,5,7,11,13... Next prime after 11 is 13. 13²=169. Trap: 144=12² (12 is not prime); 196=14² (14 is not prime); 225=15² (15 is not prime).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00008",
+      "stem": "What is the next term in the series: 1, 8, 27, 64, 125, ?",
+      "options": [
+        {"option_text": "180", "is_correct": false},
+        {"option_text": "196", "is_correct": false},
+        {"option_text": "216", "is_correct": true},
+        {"option_text": "256", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: perfect cubes of consecutive natural numbers. 1³=1, 2³=8, 3³=27, 4³=64, 5³=125, 6³=216. Next term=6³=216. Verify: 6×6×6=216 ✓. Trap: 256=4⁴=2⁸ (powers of 2, not cubes); 196=14² (perfect square, not cube); 180 = 5×36 (arbitrary).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00009",
+      "stem": "What is the next term in the series: 1, 2, 6, 24, 120, ?",
+      "options": [
+        {"option_text": "240", "is_correct": false},
+        {"option_text": "600", "is_correct": false},
+        {"option_text": "720", "is_correct": true},
+        {"option_text": "840", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Rule: factorial sequence. 1=1!, 2=2!, 6=3!, 24=4!, 120=5!, 720=6!. Verify: 6!=6×5×4×3×2×1=720 ✓. Alternatively, ratios: 2/1=2, 6/2=3, 24/6=4, 120/24=5, next ratio=6 → 120×6=720. Trap: 240=120×2 (uses ratio 2 instead of 6); 600=120×5 (repeats the previous ratio).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SERIES_COMPLETION_II_W12_B1_00010",
+      "stem": "What is the next term in the series: 3, 5, 9, 15, 23, 33, ?",
+      "options": [
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "43", "is_correct": false},
+        {"option_text": "45", "is_correct": true},
+        {"option_text": "47", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Differences: 5−3=2, 9−5=4, 15−9=6, 23−15=8, 33−23=10. The differences increase by 2 each time (even numbers: 2,4,6,8,10,...). Next difference=12. Next term=33+12=45. Second-level pattern: differences of differences are all 2 (constant) confirming arithmetic progression of differences. Trap: 43=33+10 (uses previous difference); 47=33+14 (wrong increment).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

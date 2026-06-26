@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_CUBES_DICE_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Cubes and Dice — Face Counting, Painting Problems and Dice Logic (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00001",
+      "stem": "On a standard die where opposite faces sum to 7, which number is opposite to 4?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. On a standard die, opposite face pairs each sum to 7: 1↔6, 2↔5, 3↔4. Opposite of 4 = 7−4 = 3. Visualise: if 4 is on top, 3 is at bottom. Trap: 5 = opposite of 2 (not 4); 1 = opposite of 6 (not 4); 2 = opposite of 5 (not 4). Memory: 3-4, 2-5, 1-6 (smallest-largest pairs; or just remember sum=7).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00002",
+      "stem": "A 3×3×3 cube is painted red on all faces, then cut into 27 unit cubes. How many unit cubes have NO face painted?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Only the centre cube (completely surrounded by other cubes) has no face touching any painted surface. Formula: for n×n×n cube: 0-face painted = (n−2)³ = (3−2)³ = 1. Verify: the 3×3×3 cube has exactly 1 interior cube (the very centre). Trap: 6 = face-centre cubes (1 face painted); 8 = corner cubes (3 faces painted); 0 = wrong — the centre cube does exist.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00003",
+      "stem": "A 3×3×3 cube is painted on all faces and cut into 27 unit cubes. How many unit cubes have exactly 3 faces painted?",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "12", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Unit cubes with 3 faces painted are the CORNER cubes — each cube occupies a corner of the large cube where 3 faces meet. A cube has exactly 8 corners. Formula: 3-face painted = 8 (always 8 for any n×n×n cube, n≥2). Trap: 12 = edge cubes (2 faces painted); 6 = face-centre cubes (1 face painted); 4 = half the corners (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00004",
+      "stem": "In a special dice, the opposite face pairs are: 1 opposite 5, 2 opposite 6, 3 opposite 4. If face 2 is on top, what face is at the bottom?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Given pairs: 1↔5, 2↔6, 3↔4. If 2 is on top, its opposite face (6) is at the bottom. Trap: students may use standard die rule (top+bottom=7 → 2+5=7) but this is a NON-STANDARD die with pair 2↔6. Always read the given pairing — don't assume standard configuration unless stated.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00005",
+      "stem": "A 4×4×4 cube is painted on all faces and cut into 64 unit cubes. How many unit cubes have exactly 2 faces painted?",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "32", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Formula for 2-face painted unit cubes = 12×(n−2) where n is the side length. For n=4: 12×(4−2) = 12×2 = 24. These are the edge cubes (not corners). A cube has 12 edges; each edge of 4×4×4 cube has 4−2=2 non-corner unit cubes = 12×2=24 ✓. Verify cube: 8(3-face)+24(2-face)+6×(2²)(1-face)+(2)³(0-face)=8+24+24+8=64 ✓. Trap: 8 = only corner cubes; 16 = 12×(4-3) (wrong formula).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00006",
+      "stem": "A 3×3×3 cube is painted on all faces and cut into 27 unit cubes. How many unit cubes have exactly 2 faces painted?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Formula: 2-face painted = 12×(n−2) = 12×(3−2) = 12×1 = 12. These are the edge-middle cubes (not corners). A cube has 12 edges; each edge of 3×3×3 has 3−2=1 non-corner unit cube = 12×1=12. Verify: 8(3-face)+12(2-face)+6(1-face)+1(0-face)=27 ✓. Trap: 6 = face-centre cubes (1 face); 8 = corners (3 faces); 18 = 12+6 (mixing 1-face and 2-face counts).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00007",
+      "stem": "On a standard die, if face 3 is at the bottom, which face is on top?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. On a standard die: opposite pairs sum to 7. 3+4=7, so 3 is opposite to 4. If 3 is at bottom, 4 is at top. Trap: 6 = opposite of 1 (not 3); 1 = opposite of 6 (not 3); 3 = a face cannot be opposite to itself.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00008",
+      "stem": "A 3×3×3 cube has all 6 faces painted. It is cut into 27 unit cubes. How many unit cubes have AT LEAST one face painted?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "26", "is_correct": true},
+        {"option_text": "27", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total unit cubes = 27. Unit cubes with NO face painted = 1 (the centre cube). Unit cubes with at least one face painted = 27−1 = 26. Alternatively: 8(3-face)+12(2-face)+6(1-face) = 8+12+6 = 26. Trap: 27 = counts even the interior cube (wrong — it has no painted face); 24 = 8+12+4 (miscounts the 1-face cubes).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00009",
+      "stem": "A 4×4×4 cube painted on all faces is cut into 64 unit cubes. How many unit cubes have exactly 1 face painted?",
+      "options": [
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "48", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Formula: 1-face painted = 6×(n−2)² = 6×(4−2)² = 6×4 = 24. These are the face-centre cubes (not on any edge or corner). Each face of 4×4×4 has (4−2)²=4 interior unit cubes = 6 faces × 4 = 24 ✓. Verify: 8(3-face)+24(2-face)+24(1-face)+(4−2)³×1(0-face) = 8+24+24+8=64 ✓. Trap: 16 = (4−2)⁴=16 (wrong formula with wrong exponent); 48 = overcounts.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CUBES_DICE_W12_B1_00010",
+      "stem": "Two standard dice are thrown simultaneously. What is the probability that the sum of the two faces is 7?",
+      "options": [
+        {"option_text": "1/9", "is_correct": false},
+        {"option_text": "1/6", "is_correct": true},
+        {"option_text": "7/36", "is_correct": false},
+        {"option_text": "1/4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total outcomes = 6×6 = 36. Outcomes giving sum=7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 outcomes. Probability = 6/36 = 1/6. Note: 7 is the most likely sum when two dice are rolled (more ways to make 7 than any other sum). Verify: sums from 2–12; sum=7 has 6 combinations out of 36 = 1/6 ✓. Trap: 7/36 = confuses 7 (sum) with favourable outcomes (there ARE 6, not 7, ways to get sum=7); 1/9 = 4/36 = probability of sum=5 or sum=9.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

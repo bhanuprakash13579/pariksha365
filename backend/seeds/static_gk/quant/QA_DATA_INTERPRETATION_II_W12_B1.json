@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_DATA_INTERPRETATION_II_W12_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Data Interpretation — Table and Pie Chart Analysis (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00001",
+      "stem": "Study the table and answer Q1–Q5. Five students' marks (out of 100) in three subjects: A: Math=80, Science=70, English=90 | B: Math=60, Science=85, English=75 | C: Math=95, Science=60, English=80 | D: Math=70, Science=90, English=65 | E: Math=85, Science=75, English=70. — Which student scored highest in Mathematics?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Math scores: A=80, B=60, C=95, D=70, E=85. Highest = C with 95. Verify: 95>85>80>70>60 → C is highest ✓. Trap: E=85 is the second-highest (students may confuse 85 with the maximum).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00002",
+      "stem": "[Same table as Q1] What is Student B's total score across all three subjects?",
+      "options": [
+        {"option_text": "205", "is_correct": false},
+        {"option_text": "210", "is_correct": false},
+        {"option_text": "220", "is_correct": true},
+        {"option_text": "230", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. B's scores: Math=60, Science=85, English=75. Total = 60+85+75 = 220. Verify: 60+85=145; 145+75=220 ✓. Trap: 210 = 60+75+75 (wrong, copies English score twice); 230 = 60+85+85 (copies Science twice).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00003",
+      "stem": "[Same table as Q1] In which subject did Student A score the lowest marks?",
+      "options": [
+        {"option_text": "Mathematics", "is_correct": false},
+        {"option_text": "Science", "is_correct": true},
+        {"option_text": "English", "is_correct": false},
+        {"option_text": "All equal", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Student A's scores: Math=80, Science=70, English=90. Lowest = Science (70). Ranking: English(90) > Math(80) > Science(70). Trap: Mathematics=80 (second lowest, not lowest); English=90 (highest, not lowest).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00004",
+      "stem": "[Same table as Q1] What is the average score in Mathematics across all five students?",
+      "options": [
+        {"option_text": "75", "is_correct": false},
+        {"option_text": "76", "is_correct": false},
+        {"option_text": "78", "is_correct": true},
+        {"option_text": "80", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Math scores: 80+60+95+70+85=390. Average=390/5=78. Verify: 80+60=140; 140+95=235; 235+70=305; 305+85=390; 390/5=78 ✓. Trap: 80 = Student A's score (not the average); 76 = wrong addition (perhaps 60+95 counted as 150 instead of 155).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00005",
+      "stem": "[Same table as Q1] How many students scored strictly above 75 in Science?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Science scores: A=70, B=85, C=60, D=90, E=75. Strictly above 75 means >75 (not ≥75). B=85>75 ✓; D=90>75 ✓. A=70, C=60, E=75 — E is exactly 75, NOT strictly above. Count = 2. Trap: 3 = includes E=75 (but 75 is not strictly above 75); 1 = counts only D or only B.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00006",
+      "stem": "Study the pie chart data and answer Q6–Q10. A company's annual budget of Rs.20 crore is distributed: Salaries=40%, Infrastructure=25%, Marketing=20%, R&D=10%, Others=5%. — How much (in crore) is spent on Salaries?",
+      "options": [
+        {"option_text": "Rs.6 crore", "is_correct": false},
+        {"option_text": "Rs.7 crore", "is_correct": false},
+        {"option_text": "Rs.8 crore", "is_correct": true},
+        {"option_text": "Rs.10 crore", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Salaries = 40% of 20 crore = 0.40×20 = Rs.8 crore. Verify: 0.40×20=8 ✓. Trap: Rs.10 = 50% of 20 (wrong percentage); Rs.6 = 30% of 20 (uses 30% instead of 40%).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00007",
+      "stem": "[Same pie chart] Which is the second largest expenditure category?",
+      "options": [
+        {"option_text": "Marketing", "is_correct": false},
+        {"option_text": "Infrastructure", "is_correct": true},
+        {"option_text": "R&D", "is_correct": false},
+        {"option_text": "Others", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Expenditures: Salaries=40% (largest), Infrastructure=25% (second), Marketing=20%, R&D=10%, Others=5%. Ranking: 40>25>20>10>5. Second largest = Infrastructure at 25%. Trap: Marketing=20% (third largest, not second); Others=5% (smallest).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00008",
+      "stem": "[Same pie chart] How much more (in crore) is spent on Marketing than on R&D?",
+      "options": [
+        {"option_text": "Rs.1 crore", "is_correct": false},
+        {"option_text": "Rs.2 crore", "is_correct": true},
+        {"option_text": "Rs.3 crore", "is_correct": false},
+        {"option_text": "Rs.4 crore", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Marketing = 20% of 20 crore = Rs.4 crore. R&D = 10% of 20 crore = Rs.2 crore. Difference = 4−2 = Rs.2 crore. Alternatively: difference in % = 20−10 = 10%; 10% of 20 crore = Rs.2 crore. Verify: 4−2=2 ✓. Trap: Rs.4 = Marketing's absolute spend (not the difference); Rs.10 = the percentage difference itself (not multiplied by 20 crore).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00009",
+      "stem": "[Same table Q1–Q5] Rank the five students by their TOTAL marks. Who is ranked 3rd (from highest)?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "E", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Totals: A=80+70+90=240; B=60+85+75=220; C=95+60+80=235; D=70+90+65=225; E=85+75+70=230. Ranking: 1st A(240)>2nd C(235)>3rd E(230)>4th D(225)>5th B(220). 3rd = E. Verify: 240>235>230>225>220 ✓. Trap: D=225 is 4th (not 3rd); C=235 is 2nd (not 3rd).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DATA_INTERPRETATION_II_W12_B1_00010",
+      "stem": "[Same pie chart] If the total budget increases by 10% next year and the percentage allocations remain the same, how much (in crore) will be spent on Salaries next year?",
+      "options": [
+        {"option_text": "Rs.8 crore", "is_correct": false},
+        {"option_text": "Rs.8.4 crore", "is_correct": false},
+        {"option_text": "Rs.8.8 crore", "is_correct": true},
+        {"option_text": "Rs.9.6 crore", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. New total budget = 20 crore × 110/100 = 22 crore. Salaries = 40% of 22 crore = 0.40×22 = Rs.8.8 crore. Alternatively: old salary spend = Rs.8 crore; 10% increase = 8×1.10 = Rs.8.8 crore. Verify: 22×0.40=8.8 ✓. Trap: Rs.8 crore = old value (no increase applied); Rs.9.6 crore = 40% of 24 crore (20% increase instead of 10%); Rs.8.4 = adds only 5% or wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

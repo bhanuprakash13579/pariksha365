@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_TRIGONOMETRY_W12_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Trigonometry — Standard Values, Identities and Height & Distance (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00001",
+      "stem": "What is the value of sin 30° + cos 60°?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "√3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. sin 30° = 1/2; cos 60° = 1/2. Sum = 1/2 + 1/2 = 1. Key table: sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1; cos 0°=1, cos 30°=√3/2, cos 45°=1/√2, cos 60°=1/2. Note: sin θ = cos(90°−θ), so sin 30° = cos 60° ✓. Trap: √3 = sin 60°+cos 30°=√3/2+√3/2=√3 (a different pair).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00002",
+      "stem": "What is the value of tan 45°?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1/√3", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "√3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. tan 45° = sin 45°/cos 45° = (1/√2)/(1/√2) = 1. Tangent table: tan 0°=0, tan 30°=1/√3, tan 45°=1, tan 60°=√3, tan 90°=undefined (∞). At 45°, the opposite and adjacent sides of the right triangle are equal, giving tan = 1. Trap: 1/√3 = tan 30° (not 45°); √3 = tan 60° (not 45°).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00003",
+      "stem": "For any angle θ, sin²θ + cos²θ = ?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "Depends on θ", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. sin²θ + cos²θ = 1 is the fundamental Pythagorean trigonometric identity, true for ALL values of θ. Derive it: In a right triangle, (opposite)²+(adjacent)² = (hypotenuse)² → dividing by (hypotenuse)² gives (sin θ)²+(cos θ)²=1. Verify at 30°: (1/2)²+(√3/2)²=1/4+3/4=1 ✓. The two other identities follow: 1+tan²θ=sec²θ; 1+cot²θ=cosec²θ. Trap: 'depends on θ' = wrong; this identity is constant for all θ.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00004",
+      "stem": "If sin θ = 3/5, what is the value of cos θ? (θ is acute)",
+      "options": [
+        {"option_text": "3/4", "is_correct": false},
+        {"option_text": "4/5", "is_correct": true},
+        {"option_text": "5/3", "is_correct": false},
+        {"option_text": "5/4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Using sin²θ+cos²θ=1: cos²θ=1−(3/5)²=1−9/25=16/25. cos θ=4/5 (positive since θ is acute). This is the 3-4-5 Pythagorean triple: opposite=3, hypotenuse=5, adjacent=4. Verify: sin θ=3/5, cos θ=4/5, tan θ=3/4; (3/5)²+(4/5)²=9/25+16/25=25/25=1 ✓. Trap: 5/3 = cosec θ (reciprocal of sin); 5/4 = sec θ (reciprocal of cos); 3/4 = tan θ (not cos).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00005",
+      "stem": "If tan θ = 4/3, find the value of sec θ. (θ is acute)",
+      "options": [
+        {"option_text": "3/5", "is_correct": false},
+        {"option_text": "4/5", "is_correct": false},
+        {"option_text": "5/3", "is_correct": true},
+        {"option_text": "5/4", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Using sec²θ = 1+tan²θ = 1+(4/3)² = 1+16/9 = 25/9. sec θ = 5/3 (positive since acute). Alternatively, tan θ=4/3 means opposite=4, adjacent=3, hypotenuse=√(16+9)=√25=5. sec θ = hypotenuse/adjacent = 5/3. Verify: cos θ=3/5, sec θ=5/3 ✓; tan θ=sin θ/cos θ=(4/5)/(3/5)=4/3 ✓. Trap: 5/4 = cosec θ (hypotenuse/opposite); 4/5 = sin θ; 3/5 = cos θ.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00006",
+      "stem": "A vertical pole is 40 m high and casts a shadow 40 m long on flat ground. What is the angle of elevation of the sun?",
+      "options": [
+        {"option_text": "30°", "is_correct": false},
+        {"option_text": "45°", "is_correct": true},
+        {"option_text": "60°", "is_correct": false},
+        {"option_text": "90°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. tan(elevation angle) = height/shadow = 40/40 = 1. tan⁻¹(1) = 45°. When height = shadow length, the angle is always 45° (isoceles right triangle). Verify: At 45°, tan=1; 40/40=1 ✓. Short memory: shadow = height → angle = 45°; shadow = height×√3 → angle = 30°; shadow = height/√3 → angle = 60°. Trap: 60° = when shadow < height (shadow = height/√3, i.e., ≈23m, not 40m).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00007",
+      "stem": "What is the value of sin 60° × cos 30° + cos 60° × sin 30°?",
+      "options": [
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "√3/2", "is_correct": false},
+        {"option_text": "√3", "is_correct": false},
+        {"option_text": "1", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Evaluate directly: (√3/2)(√3/2)+(1/2)(1/2) = 3/4+1/4 = 1. Recognition: this is the expansion of sin(60°+30°) = sin 90° = 1, using the addition formula sin(A+B) = sinA cosB + cosA sinB. Verify: sin 90° = 1 ✓. Trap: √3/2 = sin 60° alone (not the full expression); 3/4 = just the first term sin60°×cos30°.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00008",
+      "stem": "What is the value of cos²30° − sin²30°?",
+      "options": [
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "1/2", "is_correct": true},
+        {"option_text": "√3/2", "is_correct": false},
+        {"option_text": "3/4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. cos²30°−sin²30° = (√3/2)²−(1/2)² = 3/4−1/4 = 2/4 = 1/2. Recognition: cos²θ−sin²θ = cos(2θ). Here: cos(2×30°) = cos 60° = 1/2 ✓. Verify: 3/4−1/4=1/2 ✓. Trap: 3/4 = cos²30° alone (not the difference); 1/4 = sin²30° alone; √3/2 = cos 30° (not cos 60°).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00009",
+      "stem": "If tan θ + cot θ = 2, find the value of tan²θ + cot²θ.",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Square both sides: (tan θ+cot θ)² = 4. Expand: tan²θ + 2·tan θ·cot θ + cot²θ = 4. Since tan θ·cot θ = 1 always: tan²θ+cot²θ+2 = 4. → tan²θ+cot²θ = 2. Verify: tan θ+cot θ=2 → tan θ=cot θ=1 → θ=45°. tan²45°+cot²45°=1+1=2 ✓. Trap: 4 = (tan θ+cot θ)² = the square of the sum, not the sum of squares; 6 = overestimates.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_TRIGONOMETRY_W12_B1_00010",
+      "stem": "What is the value of (1 − sin²θ)(1 + tan²θ)?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "sin²θ", "is_correct": false},
+        {"option_text": "cos²θ", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. (1−sin²θ) = cos²θ (Pythagorean identity). (1+tan²θ) = sec²θ (Pythagorean identity). Product = cos²θ × sec²θ = cos²θ × (1/cos²θ) = 1. Verify at θ=30°: (1−1/4)(1+1/3) = (3/4)(4/3) = 1 ✓. This tests knowledge of BOTH Pythagorean identities simultaneously. Trap: cos²θ = (1−sin²θ) alone without the second factor; sin²θ = doesn't follow from this expression.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

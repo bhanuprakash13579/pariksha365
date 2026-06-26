@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_PUZZLE_MIXED_W12_B1",
+  "subject": "Reasoning",
+  "topic": "Mixed Puzzles — Ages, Counting, Ranking, Weights and Logic (W12 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00001",
+      "stem": "A is 10 years older than B. B is 5 years younger than C. If C is 30, what is A's age?",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "33", "is_correct": false},
+        {"option_text": "35", "is_correct": true},
+        {"option_text": "40", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. C=30. B is 5 years younger than C → B=30-5=25. A is 10 years older than B → A=25+10=35. Verify: B=25, A=35=B+10 ✓; B=25=C-5=30-5 ✓. Trap: 30 = B's age (not A's); 40 = C+10 (adds to wrong person).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00002",
+      "stem": "If 5 machines make 5 products in 5 minutes, how long will 100 machines take to make 100 products?",
+      "options": [
+        {"option_text": "100 minutes", "is_correct": false},
+        {"option_text": "50 minutes", "is_correct": false},
+        {"option_text": "10 minutes", "is_correct": false},
+        {"option_text": "5 minutes", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Each machine makes 1 product in 5 minutes (5 machines make 5 products in 5 min = each makes 1). If 100 machines all work simultaneously, each makes 1 product → 100 machines make 100 products in 5 minutes (same time as before). Trap: 100 minutes = linear scaling error (multiplying 5×20=100); the key insight is that machines work IN PARALLEL, so adding machines doesn't change individual machine time.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00003",
+      "stem": "P is taller than Q. R is shorter than P. Q is taller than R. Who is the shortest?",
+      "options": [
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": false},
+        {"option_text": "R", "is_correct": true},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. From the clues: P>Q (P taller than Q); P>R (R shorter than P); Q>R (Q taller than R). Combining: P>Q>R. Shortest = R. All three positions are determined uniquely. Trap: 'Cannot be determined' = wrong; all three comparisons are given directly, leaving no ambiguity. Order: P (tallest) > Q > R (shortest).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00004",
+      "stem": "A man has two children. Each child has exactly one sibling. How many children does the man have?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The man has 2 children. Each child has exactly 1 sibling — they are each other's sibling. There is no contradiction: with exactly 2 children, Child A's sibling = Child B, and Child B's sibling = Child A. This is a lateral-thinking trap; people who add children to give each more siblings are overthinking. The statement 'two children, each with one sibling' is perfectly consistent with exactly 2 children.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00005",
+      "stem": "Five people stand in a queue. A is 3rd from the front. B is 2nd from the back. How many people stand between A and B?",
+      "options": [
+        {"option_text": "0", "is_correct": true},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Positions: 1(front), 2, 3, 4, 5(back). A=3rd from front=position 3. B=2nd from back=position 4 (position from back: 5th=1st from back, 4th=2nd from back). A at position 3, B at position 4 — they are adjacent. Nobody stands between them. People between = |4−3|−1 = 0. Trap: 1 = counts one of A or B themselves; 'Cannot be determined' = the positions are fully determined.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00006",
+      "stem": "A weighs 20 kg more than B. C weighs half of what B weighs. If their combined weight is 140 kg, what is B's weight?",
+      "options": [
+        {"option_text": "40 kg", "is_correct": false},
+        {"option_text": "44 kg", "is_correct": false},
+        {"option_text": "48 kg", "is_correct": true},
+        {"option_text": "52 kg", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let B=x. A=x+20. C=x/2. Total: (x+20)+x+(x/2)=140 → 2.5x+20=140 → 2.5x=120 → x=48. B=48 kg. Verify: B=48, A=68, C=24; 48+68+24=140 ✓; A=B+20=68 ✓; C=B/2=24 ✓. Trap: 40 = assuming C=0 or simplifying wrongly; 44 = arithmetic error in the equation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00007",
+      "stem": "At a party with 20 people, if each person shakes hands exactly once with every other person, how many handshakes take place in total?",
+      "options": [
+        {"option_text": "100", "is_correct": false},
+        {"option_text": "190", "is_correct": true},
+        {"option_text": "200", "is_correct": false},
+        {"option_text": "380", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total handshakes = C(n,2) = n(n-1)/2 = 20×19/2 = 190. Each handshake involves exactly 2 people; 20 people each shake 19 hands = 20×19 = 380 total 'handshakes from each person's perspective'; divide by 2 (each handshake counted twice) = 190. Verify: C(20,2) = 190 ✓. Trap: 200 = 20×10 (wrong formula); 380 = 20×19 (counts each handshake twice).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00008",
+      "stem": "Statement: All flowers are beautiful. Some beautiful things are roses. Conclusion: Some flowers are roses. Does the conclusion follow?",
+      "options": [
+        {"option_text": "Yes, the conclusion follows", "is_correct": false},
+        {"option_text": "No, the conclusion does not follow", "is_correct": true},
+        {"option_text": "The conclusion follows only if all roses are beautiful", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern: All A→B + Some B→C → CANNOT conclude Some A→C. Just because all flowers are beautiful and some beautiful things are roses doesn't mean any flower is also a rose. The 'some beautiful things that are roses' could be a completely different subset of beautiful things than flowers. This is the classic Some+All syllogism trap. Trap: 'Yes, the conclusion follows' = the most common error — students think: flowers are beautiful, some beautiful things are roses, so some flowers must be roses. This is logically invalid.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00009",
+      "stem": "A clock shows 3:15. What is the angle between the hour hand and the minute hand?",
+      "options": [
+        {"option_text": "0°", "is_correct": false},
+        {"option_text": "7.5°", "is_correct": true},
+        {"option_text": "15°", "is_correct": false},
+        {"option_text": "22.5°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. At 3:15: Minute hand at 15 min = 15×6° = 90° from 12 o'clock. Hour hand: at 3:00 it is at 90°. In 15 minutes, hour hand moves 15×0.5° = 7.5° (hour hand moves 0.5° per minute). Hour hand position = 90°+7.5° = 97.5°. Angle between hands = 97.5°−90° = 7.5°. Trap: 0° = thinking both hands are at the 3 exactly (they're not — minute hand is exactly at 3 but hour has moved past); 15° = overestimates.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_W12_B1_00010",
+      "stem": "A snail climbs 3 m up a 10 m wall during the day but slips back 2 m at night. On which day does the snail first reach the top?",
+      "options": [
+        {"option_text": "7th day", "is_correct": false},
+        {"option_text": "8th day", "is_correct": true},
+        {"option_text": "9th day", "is_correct": false},
+        {"option_text": "10th day", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Net progress per full day+night cycle = 3−2 = 1 m. After 7 complete cycles (7 days), the snail is at 7 m (at end of each night). On Day 8, starting from 7 m, it climbs 3 m to reach 10 m — the TOP. Since it reaches the top during the DAY, it does NOT slip back. Total = 8 days. Verify: End of Day 1 night = 1m; Day 2 night = 2m; ... Day 7 night = 7m; Day 8 daytime = 7+3 = 10m (reached!). Trap: 7th day = 7m after day 7 night, but it hasn't reached the top yet; 10th day = applies the 1m/day rate all the way (wrong — doesn't account for the final day climbing without slipping).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}
