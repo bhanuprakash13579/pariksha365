@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_SYLLOGISM_ADV_W13_B1",
+  "subject": "Reasoning",
+  "topic": "Syllogism — Advanced Deduction with Three Statements and Tricky Conclusion Combinations (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00001",
+      "stem": "Statements: All roses are flowers. Some flowers are red. Conclusions: I. Some roses are red. II. All flowers are red. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Statement 1: All roses → flowers (All A are B). Statement 2: Some flowers are red (Some B are C). When combined: A→B, some B→C. We CANNOT conclude some A→C (All+Some does not guarantee overlap at A). The 'some red flowers' might be tulips, not roses. I does NOT follow. II (All flowers are red) violates S2 ('SOME', not 'ALL'). RULE: All A are B + Some B are C ≠ Some A are C. This is the most frequently misapplied rule in SSC syllogism. Trap: Students wrongly chain All+Some → Some (only valid chain is All+All → All, or All+Some → Some if A is the subset).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00002",
+      "stem": "Statements: Some books are pens. All pens are erasers. Conclusions: I. Some books are erasers. II. All erasers are books. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Some books are pens (Some A are B) + All pens are erasers (All B are C) → Some books are erasers ✓ (Rule: Some A are B + All B are C → Some A are C — VALID chain). Conclusion I follows. Conclusion II (All erasers are books): wrong direction — we know all pens are erasers, meaning erasers include all pens, but not all erasers need be books. II does NOT follow. Trap: Students often reverse the 'All' statement and conclude II; remember 'All B are C' does NOT mean 'All C are B'.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00003",
+      "stem": "Statements: No bird is a fish. Some fish are mammals. Conclusions: I. No bird is a mammal. II. Some mammals are not birds. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. No bird is fish (No A is B) + Some fish are mammals (Some B are C). Conclusion I (No bird is mammal): INVALID — we only know birds and fish are disjoint; birds could be mammals through another connection not excluded by these statements. The given statements cannot prove or disprove birds being mammals. Conclusion II (Some mammals are not birds): VALID — those fish that are mammals are certainly not birds (since no bird is fish). Some of those C (mammals = the fish-mammals) are definitely not A (birds). II follows. RULE: No A is B + Some B are C → Some C are not A (valid).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00004",
+      "stem": "Statements: All tables are chairs. All chairs are furniture. All furniture is wood. Conclusions: I. All tables are wood. II. Some wood is furniture. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Conclusion I: All tables → chairs → furniture → wood (three-step chain of All+All+All): All tables are wood ✓. Conclusion II: 'All furniture is wood' can be partially converted: if All furniture is wood, then at least Some wood is furniture (partial conversion of a universal affirmative). Formally: All C are D → Some D are C ✓. Both conclusions follow. SHORTCUT: In syllogism, 'All A are B' always implies 'Some B are A' by partial (I-type) conversion. Lock this rule for all three-statement chains.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00005",
+      "stem": "Statements: All A are B. Some B are C. No C is D. Conclusions: I. Some A are C. II. No B is D. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Conclusion I (Some A are C): All A are B + Some B are C → NOT a valid chain (All+Some does not guarantee Some A are C — the B's that are C might not overlap with the B's that are A). Conclusion II (No B is D): We know 'No C is D'. Some B are C (the C-portion of B is not D), but the B's that are NOT C could still be D. So we cannot say 'No B is D'. Neither follows. This is SSC's most-loved trap: All A are B + Some B are C does NOT yield Some A are C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00006",
+      "stem": "Statements: Some scientists are doctors. No doctor is a lawyer. All lawyers are politicians. Conclusions: I. Some scientists are not lawyers. II. No scientist is a lawyer. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Conclusion I: Some scientists are doctors + No doctor is a lawyer → those doctor-scientists are definitely not lawyers → Some scientists are not lawyers ✓ (VALID). Conclusion II: No scientist is a lawyer → to be valid, ALL scientists would need to be doctors (which isn't stated — only SOME scientists are doctors). The non-doctor scientists might be lawyers. II does NOT follow. Critical distinction: 'Some A are not C' is a weaker claim than 'No A is C'; the stronger claim (II) requires more evidence than given.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00007",
+      "stem": "Statements: All engineers are graduates. Some graduates are employed. No employed person is poor. Conclusions: I. Some engineers are employed. II. No engineer is poor. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Conclusion I (Some engineers are employed): All engineers → graduates + Some graduates are employed → the employed graduates might be non-engineers. All+Some does NOT guarantee Some A are C. I does NOT follow. Conclusion II (No engineer is poor): Even if we knew some engineers were employed, only those employed engineers would be 'not poor'; unemployed engineers could still be poor. II does NOT follow. Both fail — neither follows. EXAMINER TRICK: Students assume engineers = educated = employed. Syllogism ignores real-world assumptions; only use the stated relationships.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00008",
+      "stem": "Statements: Some politicians are honest. No honest person is greedy. Some greedy people are lawyers. Conclusions: I. Some politicians are not greedy. II. Some lawyers are honest. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Conclusion I: Some politicians are honest + No honest person is greedy → those honest-politicians are not greedy → Some politicians are not greedy ✓. Conclusion II (Some lawyers are honest): Lawyers include some greedy people. Greedy people are not honest (from S2 converted: No honest → greedy, equivalently No greedy → honest). Therefore those greedy lawyers are NOT honest. Are there non-greedy lawyers who might be honest? Nothing in the statements guarantees it. We CANNOT conclude Some lawyers are honest. II does NOT follow. Trap: Students see 'some lawyers' and 'honest' in the statements and assume a connection; the connection is actually negative (the lawyers we know about are greedy, hence not honest).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00009",
+      "stem": "Statements: All sparrows are birds. Some birds are parrots. All parrots are green. Conclusions: I. Some sparrows are green. II. Some green things are birds. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Conclusion I (Some sparrows are green): All sparrows → birds + Some birds are parrots + All parrots are green. The parrots-that-are-birds are green, but those parrots might not be sparrows. All+Some → Some (sparrows→birds, some birds→parrots) fails (same trap as Q1 and Q5). I does NOT follow. Conclusion II (Some green things are birds): Some birds are parrots (the parrot-birds exist) + All parrots are green → Some birds are green (the parrot-birds are green) → Some green things are birds (conversion) ✓. II follows via chain: Some B are C + All C are D → Some B are D (valid) → Some D are B (conversion) ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_ADV_W13_B1_00010",
+      "stem": "Statements: All doctors are intelligent. Some intelligent people are creative. No creative person is dull. Conclusions: I. Some doctors may be creative. II. All intelligent people are not dull. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Conclusion I (Some doctors MAY BE creative): In SSC syllogism, when a definitive 'Some A are C' cannot be proved, we check if it is a POSSIBILITY. All doctors are intelligent + Some intelligent are creative → the creative portion of intelligent could include doctors (possibility exists since all doctors are intelligent, and some intelligent people are creative). 'May be' conclusions are valid when the combination does not contradict any statement. I follows as a possibility conclusion. Conclusion II (All intelligent are not dull): We know No creative → dull; but intelligent people who are NOT creative could still be dull. II cannot be concluded for ALL intelligent people. II does NOT follow. RULE: 'May be' conclusions represent SSC's possibility test — a common high-difficulty addition in Tier 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

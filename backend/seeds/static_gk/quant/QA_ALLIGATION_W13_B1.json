@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_ALLIGATION_W13_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mixture and Alligation — Milk-Water, Repeated Removal and Price Averaging (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00001",
+      "stem": "In what ratio must tea at Rs.40/kg and Rs.60/kg be mixed so that the blended tea costs Rs.54/kg?",
+      "options": [
+        {"option_text": "1:2", "is_correct": false},
+        {"option_text": "3:7", "is_correct": true},
+        {"option_text": "2:3", "is_correct": false},
+        {"option_text": "1:3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Alligation cross: Cheaper(40) vs Dearer(60); Mean=54. Cheaper : Dearer = (Dearer−Mean) : (Mean−Cheaper) = (60−54) : (54−40) = 6 : 14 = 3 : 7. Verify: (3×40+7×60)/(3+7) = (120+420)/10 = 54 ✓. Trap: 1:2 is the answer if mean were 46.67; 2:3 if mean were 48.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00002",
+      "stem": "A container holds 40 litres of pure milk. 8 litres is drawn out and replaced with water. This process is repeated once more. What fraction of the container is now milk?",
+      "options": [
+        {"option_text": "4/5", "is_correct": false},
+        {"option_text": "9/25", "is_correct": false},
+        {"option_text": "16/25", "is_correct": true},
+        {"option_text": "3/5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. After each replacement, fraction of original liquid remaining = (1 − removed/total)^n = (1−8/40)² = (4/5)² = 16/25. Milk = 40×16/25 = 25.6 L; fraction = 16/25. Verify: After 1st: milk=32L; after 2nd: remove 8/40 of 32=6.4L milk → milk=25.6L; 25.6/40=16/25 ✓. Trap: 4/5 = after only one replacement; 9/25 = (3/5)² (wrong — denominator stays 40 not 32 in each step).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00003",
+      "stem": "60 litres of a mixture has 20% water. How many litres of water must be added to make the water content 40%?",
+      "options": [
+        {"option_text": "12 litres", "is_correct": false},
+        {"option_text": "15 litres", "is_correct": false},
+        {"option_text": "18 litres", "is_correct": false},
+        {"option_text": "20 litres", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Milk = 80% of 60 = 48L (constant). Milk must stay 60% of new total (since water = 40%). New total = 48/0.60 = 80L. Water added = 80−60 = 20L. Verify: (12+20)/80 = 32/80 = 40% ✓. Alternatively: (12+x)/(60+x)=2/5 → 60+5x=60+10+2x... 5(12+x)=2(60+x)→60+5x=120+2x→3x=60→x=20 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00004",
+      "stem": "A shopkeeper mixes 18 kg of Rs.20/kg sugar with 12 kg of Rs.30/kg sugar. To earn 20% profit, at what price per kg must the mixture be sold?",
+      "options": [
+        {"option_text": "Rs.24.00", "is_correct": false},
+        {"option_text": "Rs.26.40", "is_correct": false},
+        {"option_text": "Rs.28.80", "is_correct": true},
+        {"option_text": "Rs.30.00", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total cost = 18×20+12×30 = 360+360 = Rs.720 for 30 kg. CP/kg = 720/30 = Rs.24. SP = 24×120/100 = Rs.28.80. Verify: profit = 30×28.80−720 = 864−720 = Rs.144; P% = 144/720×100 = 20% ✓. Trap: Rs.24 = CP (before profit); Rs.30 = SP of the expensive variety, not the mixture.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00005",
+      "stem": "Two alloys contain gold and silver in ratios 2:1 and 3:1 respectively. In what ratio must they be mixed so that the new alloy contains gold and silver in ratio 5:2?",
+      "options": [
+        {"option_text": "2:3", "is_correct": false},
+        {"option_text": "1:2", "is_correct": false},
+        {"option_text": "3:4", "is_correct": true},
+        {"option_text": "4:3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Gold fractions: Alloy1=2/3; Alloy2=3/4; target=5/7. By alligation: ratio = (3/4−5/7):(5/7−2/3) = (21/28−20/28):(15/21−14/21) = (1/28):(1/21) = 21:28 = 3:4. Verify: mix 3 parts Alloy1 + 4 parts Alloy2: gold=3×(2/3)+4×(3/4)=2+3=5; silver=3×(1/3)+4×(1/4)=1+1=2. Gold:Silver=5:2 ✓. Trap: 2:3 reverses the ratio (that gives Alloy2-heavy mix, less gold).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00006",
+      "stem": "Worker A earns Rs.8/hour and worker B earns Rs.12/hour. If the average wage of a group is Rs.9/hour, in what ratio are workers A and B present in the group?",
+      "options": [
+        {"option_text": "1:3", "is_correct": false},
+        {"option_text": "3:1", "is_correct": true},
+        {"option_text": "1:1", "is_correct": false},
+        {"option_text": "2:1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Alligation: A:B = (higher wage−mean):(mean−lower wage) = (12−9):(9−8) = 3:1. Verify: average = (3×8+1×12)/(3+1) = (24+12)/4 = 36/4 = 9 ✓. The mean (9) is much closer to A's wage (8) than B's (12), so far more A workers are in the group. Trap: 1:3 = reverses the logic (mean closer to A means more A, not more B).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00007",
+      "stem": "A milkman mixes pure milk (Rs.16/L) with water (free). He sells the mixture at Rs.10.40/L and still earns 30% profit. In what ratio did he mix milk and water?",
+      "options": [
+        {"option_text": "2:1", "is_correct": false},
+        {"option_text": "1:1", "is_correct": true},
+        {"option_text": "4:1", "is_correct": false},
+        {"option_text": "3:2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SP = Rs.10.40 at 30% profit → CP = 10.40/1.30 = Rs.8/L. Alligation on cost (milk=16, water=0, mean=8): Milk:Water = (8−0):(16−8) = 8:8 = 1:1. Verify: mix 1L milk + 1L water; cost=Rs.16 for 2L → CP=Rs.8/L; SP=8×1.30=Rs.10.40 ✓. Trap: 4:1 = would give mean cost=16×4/5=12.8, not 8.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00008",
+      "stem": "Three varieties of rice at Rs.20, Rs.40, and Rs.60/kg are mixed in ratio 1:2:1. What is the price of the mixture per kg?",
+      "options": [
+        {"option_text": "Rs.35", "is_correct": false},
+        {"option_text": "Rs.40", "is_correct": true},
+        {"option_text": "Rs.42", "is_correct": false},
+        {"option_text": "Rs.45", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Weighted average = (1×20+2×40+1×60)/(1+2+1) = (20+80+60)/4 = 160/4 = Rs.40. Verify: 4 kg total; cost = 20+80+60=160; per kg=40 ✓. Trap: Rs.35 = simple average (20+40+60)/3=40 — actually simple average of 3 prices IS 40, same result here! But ratio 1:2:1 makes it weighted, and middle variety gets double weight, still giving 40. Trap: Rs.42 = uses ratio 1:1:2 instead (20+40+120)/4=45; Rs.45 = uses wrong ratio.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00009",
+      "stem": "60 litres of a milk-water mixture has milk:water = 2:1. How much water must be added to make the ratio 1:1?",
+      "options": [
+        {"option_text": "10 litres", "is_correct": false},
+        {"option_text": "15 litres", "is_correct": false},
+        {"option_text": "20 litres", "is_correct": true},
+        {"option_text": "30 litres", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Current: milk=40L, water=20L (ratio 2:1). For 1:1 ratio, milk = water. Milk stays at 40L, so water must become 40L. Water to add = 40−20 = 20L. Verify: (20+20)/(60+20) → milk=40, water=40, ratio=1:1 ✓. Short rule: if milk stays constant and you want milk:water = 1:1, final water = milk = 40L; add 40−20=20L ✓. Trap: 10L = adds to make 30:1 (wrong calculation); 30L = makes total 90L with 40:50=4:5 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_ALLIGATION_W13_B1_00010",
+      "stem": "100 ml of a solution contains 25% acid. How much pure acid (in ml) must be added to make the solution 40% acid?",
+      "options": [
+        {"option_text": "15 ml", "is_correct": false},
+        {"option_text": "20 ml", "is_correct": false},
+        {"option_text": "25 ml", "is_correct": true},
+        {"option_text": "30 ml", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Current acid = 25ml; water = 75ml. Adding x ml pure acid: (25+x)/(100+x) = 40/100. Cross-multiply: 100(25+x) = 40(100+x) → 2500+100x = 4000+40x → 60x = 1500 → x = 25ml. Verify: (25+25)/(100+25) = 50/125 = 40% ✓. Alligation method: pure acid = 100%; solution = 25%; target = 40%. Ratio = (100−40):(40−25) = 60:15 = 4:1. 100ml solution needs 100/4=25ml acid ✓. Trap: 20ml = solves for 40% by wrong proportion; 15ml = (40−25)=15 (takes the difference, not the alligation ratio).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

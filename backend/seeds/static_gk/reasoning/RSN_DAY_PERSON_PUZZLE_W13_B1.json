@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_DAY_PERSON_PUZZLE_W13_B1",
+  "subject": "Reasoning",
+  "topic": "Day-Based Puzzle — Five People on Five Different Days (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00001",
+      "stem": "Use these clues for Q1–Q10. Five friends A, B, C, D, E each visit a museum on a different day: Monday to Friday. (1) A visits on Thursday. (2) B visits immediately before C. (3) D visits on Monday. (4) E visits on Friday. (5) B does not visit on Friday. — From clues 3, 4 and 1: which days remain for B and C?",
+      "options": [
+        {"option_text": "Tuesday and Wednesday only", "is_correct": true},
+        {"option_text": "Tuesday and Friday", "is_correct": false},
+        {"option_text": "Wednesday and Friday", "is_correct": false},
+        {"option_text": "Monday and Tuesday", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. D=Monday (clue 3), A=Thursday (clue 1), E=Friday (clue 4). Placed: Mon=D, Thu=A, Fri=E. Remaining days for B and C: Tuesday and Wednesday. B not on Friday (clue 5 — already satisfied since Friday=E). ✓",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00002",
+      "stem": "[Same puzzle] From clue 2 (B immediately before C) and the remaining days being Tuesday and Wednesday: which day does B visit?",
+      "options": [
+        {"option_text": "Monday", "is_correct": false},
+        {"option_text": "Tuesday", "is_correct": true},
+        {"option_text": "Wednesday", "is_correct": false},
+        {"option_text": "Friday", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. B and C must be on Tuesday and Wednesday. B is immediately BEFORE C (chronologically). Tuesday is before Wednesday → B=Tuesday, C=Wednesday. Verify: B(Tue) immediately before C(Wed) ✓. Full arrangement: D(Mon)–B(Tue)–C(Wed)–A(Thu)–E(Fri).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00003",
+      "stem": "[Arrangement: D-Mon, B-Tue, C-Wed, A-Thu, E-Fri] Who visits on the day immediately after D?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": true},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. D=Monday. Day immediately after Monday = Tuesday = B. Trap: C=Wednesday (two days after D, not immediate); A=Thursday (three days after D).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00004",
+      "stem": "[Same arrangement] How many people visit the museum between D and A (not counting D or A)?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "0", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. D=Monday, A=Thursday. Days between them: Tuesday (B) and Wednesday (C) = 2 people. Formula: people between = |position_A−position_D|−1 = |4−1|−1 = 2. Trap: 3 = counts Mon,Tue,Wed (includes D); 1 = counts only one of B or C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00005",
+      "stem": "[Same arrangement] Who visits on the day that is two days before A?",
+      "options": [
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "B", "is_correct": true},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A=Thursday. Two days before Thursday = Tuesday = B. Trap: C=Wednesday (one day before A, not two); D=Monday (three days before A).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00006",
+      "stem": "[Same arrangement] If A and B exchange their visiting days, who now visits on Thursday?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": true},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Original: A=Thursday, B=Tuesday. After A↔B exchange: B moves to Thursday, A moves to Tuesday. New arrangement: D(Mon)–A(Tue)–C(Wed)–B(Thu)–E(Fri). Thursday = B. Trap: A = A moved to Tuesday (not Thursday) after the exchange.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00007",
+      "stem": "[Original arrangement: D-Mon, B-Tue, C-Wed, A-Thu, E-Fri] Who is the 3rd person to visit the museum?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Order of visits: 1st=D(Mon), 2nd=B(Tue), 3rd=C(Wed), 4th=A(Thu), 5th=E(Fri). 3rd person = C. Trap: A = 4th; B = 2nd.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00008",
+      "stem": "[Same arrangement] Who visits exactly in the middle of the 5-day schedule?",
+      "options": [
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. With 5 people visiting over 5 days, the middle position is 3rd = Wednesday = C. Two people visit before C (D and B), and two after (A and E). C is the median visitor. Trap: A = 4th from start (2nd from end, not middle).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00009",
+      "stem": "[Same arrangement] If D and E swap AND C visits one day later (shifting to Thursday), who now visits on Wednesday?",
+      "options": [
+        {"option_text": "A", "is_correct": true},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Original: D(Mon)–B(Tue)–C(Wed)–A(Thu)–E(Fri). Step 1: D↔E → E(Mon)–B(Tue)–C(Wed)–A(Thu)–D(Fri). Step 2: C shifts to Thursday. C was on Wed moves to Thu. But A was on Thu → A must move. A shifts to Wed (the slot C vacated). New arrangement: E(Mon)–B(Tue)–A(Wed)–C(Thu)–D(Fri). Wednesday = A. Trap: C = C moved TO Thursday (not Wednesday); B = B stays on Tuesday.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_DAY_PERSON_PUZZLE_W13_B1_00010",
+      "stem": "[Same arrangement] If the visiting schedule runs in REVERSE order (Friday becomes first, Monday last), which person visits LAST?",
+      "options": [
+        {"option_text": "D", "is_correct": true},
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Original order: D(Mon)–B(Tue)–C(Wed)–A(Thu)–E(Fri). Reversed schedule: Fri=1st, Thu=2nd, Wed=3rd, Tue=4th, Mon=5th (last). In reversed order: 1st=E, 2nd=A, 3rd=C, 4th=B, 5th(last)=D. The last person in the reversed schedule is D (who originally visited first on Monday). Trap: E = E was last in original (first in reversed); B = B is 4th in reversed (not last).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

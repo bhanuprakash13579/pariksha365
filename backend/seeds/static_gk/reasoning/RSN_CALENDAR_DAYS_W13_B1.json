@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_CALENDAR_DAYS_W13_B1",
+  "subject": "Reasoning",
+  "topic": "Calendar and Day Calculations — Odd Days Method, Day Finding and Century Rules (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00001",
+      "stem": "1st January 2023 was a Sunday. What day of the week was 1st March 2023?",
+      "options": [
+        {"option_text": "Monday", "is_correct": false},
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Wednesday", "is_correct": true},
+        {"option_text": "Thursday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Count days from Jan 1 to Mar 1: January has 31 days (Jan 1 to Feb 1 = 31 days), February 2023 has 28 days (2023 is NOT a leap year — not divisible by 4). Jan 1 to Mar 1 = 31+28 = 59 days. 59 ÷ 7 = 8 weeks + 3 remainder days. Sunday + 3 days = Wednesday. Note: 2023 is odd (not ÷4), so Feb has 28 days. Trap: If you mistakenly treat 2023 as a leap year (adding 29 days for Feb), you get Sunday + (31+29=60) = 60÷7=8R4 → Thursday (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00002",
+      "stem": "1st January 2024 was a Monday. What day was 1st January 2025?",
+      "options": [
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Wednesday", "is_correct": true},
+        {"option_text": "Thursday", "is_correct": false},
+        {"option_text": "Friday", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 2024 is a LEAP year (divisible by 4; and 2024÷4=506). A leap year has 366 days = 52 weeks + 2 days = 2 odd days. The day shifts forward by 2: Monday + 2 = Wednesday. RULE: Ordinary year → day shifts by 1; Leap year → day shifts by 2. Trap: Tuesday = shifts by only 1 (ordinary year rule); Thursday = shifts by 3.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00003",
+      "stem": "Today is Wednesday. What day will it be 100 days from now?",
+      "options": [
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Thursday", "is_correct": false},
+        {"option_text": "Friday", "is_correct": true},
+        {"option_text": "Saturday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 100 ÷ 7 = 14 weeks + 2 days remainder. Wednesday + 2 = Friday. SHORTCUT: only the remainder matters for the day shift. 100 mod 7 = 2 (since 14×7=98, remainder=2). Advance by 2 days from Wednesday: Thursday, Friday. Trap: Saturday = 100 mod 7 done as 100/7≈14.28; 0.28×7=2; Wednesday+3=Saturday (wrong rounding).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00004",
+      "stem": "If 2nd July 2023 was a Sunday, what day was 2nd July 2022?",
+      "options": [
+        {"option_text": "Friday", "is_correct": false},
+        {"option_text": "Saturday", "is_correct": true},
+        {"option_text": "Sunday", "is_correct": false},
+        {"option_text": "Monday", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Going BACKWARDS from 2023 to 2022: the year 2022 is an ordinary year (365 days = 52 weeks + 1 odd day). So going back one ordinary year, the day moves back by 1. July 2, 2023 = Sunday; July 2, 2022 = Sunday − 1 = Saturday. Alternatively: from July 2, 2022 to July 2, 2023 = 365 days (ordinary year) = 52×7+1 → advance by 1 day → Saturday+1=Sunday ✓ so going back: Sunday−1=Saturday. Trap: Friday = going back 2 days (wrong — only 1 odd day in ordinary year).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00005",
+      "stem": "The 7th day of a month is a Friday. What day does the 1st of the same month fall on?",
+      "options": [
+        {"option_text": "Saturday", "is_correct": true},
+        {"option_text": "Sunday", "is_correct": false},
+        {"option_text": "Thursday", "is_correct": false},
+        {"option_text": "Friday", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. From the 1st to the 7th = 6 days later. So 7th = 1st + 6 days. If 7th = Friday, then 1st = Friday − 6 days. Friday = day 6 (Mon=1...Sun=7). 6−6=0 ≡ 7 (mod 7) = Sunday? Let me recount directly: go back 6 days from Friday: Thursday(−1), Wednesday(−2), Tuesday(−3), Monday(−4), Sunday(−5), Saturday(−6). 1st = Saturday. Trap: Thursday = going back only 1 day; Sunday = going back 5 days. Count carefully: 7th to 6th=1 day back, 6th to 5th=2, 5th to 4th=3, 4th to 3rd=4, 3rd to 2nd=5, 2nd to 1st=6. Six days back from Friday = Saturday.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00006",
+      "stem": "15th March of a year falls on a Thursday. What day does 1st April of the same year fall on?",
+      "options": [
+        {"option_text": "Friday", "is_correct": false},
+        {"option_text": "Saturday", "is_correct": false},
+        {"option_text": "Sunday", "is_correct": true},
+        {"option_text": "Monday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. From 15th March to 1st April: remaining March days = 31−15 = 16 days. Plus April 1 itself = 16+1 = 17 days forward. 17 ÷ 7 = 2 weeks + 3 days. Thursday + 3 = Sunday. Verify: Thursday + 1=Friday, +2=Saturday, +3=Sunday ✓. Trap: Friday = +1 only; Saturday = +2; Monday = +4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00007",
+      "stem": "How many odd days are in a leap year?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. A leap year = 366 days = 52 weeks + 2 days. The extra 2 days beyond complete weeks are called ODD DAYS. For ordinary year: 365 = 52×7+1 → 1 odd day. For leap year: 366 = 52×7+2 → 2 odd days. These odd days determine the day-shift when calculating what day a date falls on across years. In 400 years, total odd days = 400 years × various = 0 (mod 7), which is why the Gregorian calendar repeats every 400 years exactly. Trap: 1 = for ordinary year; 3 = 3 odd days (no standard year type).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00008",
+      "stem": "Which of the following CANNOT be the last day of a century?",
+      "options": [
+        {"option_text": "Monday", "is_correct": false},
+        {"option_text": "Tuesday", "is_correct": true},
+        {"option_text": "Sunday", "is_correct": false},
+        {"option_text": "Friday", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. In 100 years: 76 ordinary years + 24 leap years = 76×1 + 24×2 = 76+48 = 124 odd days. 124 ÷ 7 = 17 weeks + 5 odd days. So each century the day advances by 5. If century 1 ends on some day, century 2 ends 5 days later, etc. Starting from Monday (1): Mon, Sat, Thu, Tue, Sun, Fri, Wed... (cycle of 7). The last days of centuries (in sequence) are: Friday (for years 100, 500, 900...), Wednesday (200, 600...), Monday (300, 700...), Sunday (400, 800...). NEVER Tuesday, Thursday or Saturday. Trap: Friday/Sunday/Monday = can be last days of a century.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00009",
+      "stem": "February 1, 2020 was a Saturday. What day was February 29, 2020?",
+      "options": [
+        {"option_text": "Thursday", "is_correct": false},
+        {"option_text": "Friday", "is_correct": false},
+        {"option_text": "Saturday", "is_correct": true},
+        {"option_text": "Sunday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. 2020 is a leap year (2020÷4=505, ÷100≠0 exactly... 2020÷100=20.2, so NOT a century year, and ÷4 yes → leap year). From Feb 1 to Feb 29: 28 days = exactly 4 weeks = 0 odd days. Saturday + 0 = Saturday. Verify: Feb has 29 days in 2020 (leap). Feb 1 to Feb 29 = 28 days gap. 28 ÷ 7 = 4 complete weeks → same day of week. Trap: Students who think '29 days in February' and add 29 days forward instead of counting the gap (28 days = from 1st to 29th).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_DAYS_W13_B1_00010",
+      "stem": "A man says 'The day before yesterday was Saturday.' On what day is he speaking?",
+      "options": [
+        {"option_text": "Monday", "is_correct": true},
+        {"option_text": "Sunday", "is_correct": false},
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Wednesday", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. 'Day before yesterday' = two days ago. If two days ago = Saturday, then: Yesterday = Saturday+1 = Sunday. Today = Sunday+1 = Monday. Verify: If today = Monday, yesterday = Sunday, day before yesterday = Saturday ✓. Trap: Sunday = confusing 'day before yesterday' with 'yesterday'; Tuesday = confusing the direction (going forward instead of backward); Wednesday = three days after Saturday.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

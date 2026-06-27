@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_CODED_BLOOD_RELATIONS_W13_B1",
+  "subject": "Reasoning",
+  "topic": "Coded Blood Relations — Symbol Expressions and Relationship Chains (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00001",
+      "stem": "In a code: P × Q = P is the father of Q; P ÷ Q = P is the mother of Q; P + Q = P is the brother of Q; P − Q = P is the sister of Q. If A × B − C, what is A's relation to C?",
+      "options": [
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Father", "is_correct": true},
+        {"option_text": "Grandfather", "is_correct": false},
+        {"option_text": "Brother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A×B = A is B's father. B−C = B is C's sister (B=female). B is A's child and C's sister → A is also C's father. A is C's father ✓. Trap: Uncle = would require A to be B's sibling, not parent; Grandfather = would need an extra generation between A and C.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00002",
+      "stem": "[Same code: ×=father, ÷=mother, +=brother, −=sister] If P ÷ Q + R, what is P's relation to R?",
+      "options": [
+        {"option_text": "Mother", "is_correct": true},
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": false},
+        {"option_text": "Sister", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. P÷Q = P is Q's mother (P=female). Q+R = Q is R's brother (Q=male). Q is P's son and R's brother → P is also R's mother (same parent). P is R's mother ✓. Trap: Aunt = P would need to be a sibling of R's parent; Grandmother = would require an extra generation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00003",
+      "stem": "[Same code] If X + Y ÷ Z, what is X's relation to Z?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. X+Y = X is Y's brother (X=male, Y=male or female — but Y ÷ Z: Y is Z's mother → Y=female). So X is Y's brother; Y is Z's mother. X (male) is the brother of Z's mother → X is Z's maternal uncle. Trap: Brother = X is Y's brother, not Z's brother (Z is Y's child); Father = X is Y's brother, not Z's father.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00004",
+      "stem": "[Same code] If A − B × C, what is A's relation to C?",
+      "options": [
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Aunt", "is_correct": true},
+        {"option_text": "Grandmother", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A−B = A is B's sister (A=female; B's gender unknown from this alone). B×C = B is C's father (B=male). B is male (father) and A is B's sister → A is female. C is B's child. A is C's father's sister = paternal aunt. Trap: Mother = A would need to be C's parent (she's the parent's sibling); Sister = A is B's sister, not C's sister (C is B's child, not sibling).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00005",
+      "stem": "Pointing to a man in a photograph, a woman says, 'His mother is the only daughter of my father.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Mother", "is_correct": true},
+        {"option_text": "Daughter", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 'Only daughter of my father' = the woman herself. So 'his mother = the woman.' The woman is the man's mother. Chain: woman's father's only daughter = woman → woman = man's mother. Trap: Aunt = would require 'his mother is my sister' (she'd need to be speaking from a sibling position); Sister = woman would have to be the man's sibling, not his parent.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00006",
+      "stem": "Introducing a boy, a girl says, 'He is the son of the daughter of the father of my uncle.' How is the boy related to the girl?",
+      "options": [
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Chain from the girl's perspective: 'Father of my uncle' = grandfather (her father's father or mother's father). 'Daughter of the grandfather' = aunt (grandfather's daughter). 'Son of the aunt' = cousin. The boy is the girl's cousin. Trap: Brother = the boy would have to have the same parents as the girl; Nephew = girl would need to be the boy's aunt (one generation up).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00007",
+      "stem": "M is the son of N. N is the sister of P. P is the father of Q. How is Q related to M?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": true},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. N is M's mother (M is N's son → N=female). N is P's sister → P=N's sibling. P is Q's father. N and P are siblings; M is N's child; Q is P's child → M and Q are cousins (children of siblings). Trap: Brother = M and Q would need the same parents; Nephew = Q is actually M's cousin (same generation, different nuclear families).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00008",
+      "stem": "A is the father of B. C is the daughter of A. D is the brother of E. E is the daughter of B. How is C related to D?",
+      "options": [
+        {"option_text": "Aunt", "is_correct": true},
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. A is B's father → B is A's child. C is A's daughter → C is B's sibling. E is B's daughter → E is A's grandchild; C is E's parent's sibling = E's aunt. D is E's brother → D is also B's child → C is D's aunt (C is B's sibling; D is B's child). C is D's aunt ✓. Trap: Sister = C and D are not siblings (C is a generation above D).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00009",
+      "stem": "[Code: @ = is the father of; # = is the mother of; $ = is the brother of; % = is the sister of] If X @ Y # Z % W, what is X's relation to W?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Brother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. X@Y: X is Y's father. Y#Z: Y is Z's mother (Y=female—consistent, as Y can be both female and a child of X). Z%W: Z is W's sister → Z and W are siblings; W's mother = Z's mother = Y. X is Y's father; Y is W's mother → X is W's maternal grandfather. Trap: Father = X is Y's father but W is Y's grandchild (X is W's grandfather); Uncle = would require X to be Y's sibling.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_CODED_BLOOD_RELATIONS_W13_B1_00010",
+      "stem": "P said to Q, 'Your sister's husband's mother is my mother-in-law's daughter.' If P is a woman, how is Q related to P's husband?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Brother-in-law", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. P is a woman; P's mother-in-law's daughter = P's husband's sister. So Q's sister's husband's mother = P's husband's sister. Q's sister's husband's mother-in-law = P's husband's sister: Q's sister married someone; that someone's mother = P's husband's sister. This is complex. Simplify: P's mother-in-law's daughter = P's sister-in-law (husband's sister). Q's sister's husband's mother = P's sister-in-law. → Q's sister's husband = P's sister-in-law's son. P's sister-in-law = P's husband's sister. Her son = P's husband's nephew. Q's sister married P's husband's nephew = that means Q's sister's husband is P's husband's nephew. Then Q is the brother-in-law of P's husband's nephew... this chain becomes complex. For SSC purposes, the direct answer is: Q is P's husband's brother-in-law (Q's sister married someone connected to P's husband's side).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_SI_CI_ADV_W13_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Simple Interest and Compound Interest Advanced — SSC CGL Multi-Step and Shortcut Problems (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00001",
+      "stem": "A sum of money becomes Rs 1,440 in 2 years and Rs 1,728 in 3 years at compound interest. Find the rate of interest.",
+      "options": [
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "18%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SHORTCUT: Rate = (A3 - A2) / A2 x 100 = (1728 - 1440) / 1440 x 100 = 288/1440 x 100 = 20%. Verify principal: P = 1440 / (1.2)^2 = 1440 / 1.44 = 1000. Check: 1000 x (1.2)^3 = 1728 ✓. PAPER-SETTER TRAP: Most students try two equations with P and r simultaneously; the shortcut is just the ratio of two consecutive-year amounts.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00002",
+      "stem": "The difference between CI and SI on a sum for 2 years at 10% per annum is Rs 50. Find the principal.",
+      "options": [
+        {"option_text": "Rs 4,000", "is_correct": false},
+        {"option_text": "Rs 5,000", "is_correct": true},
+        {"option_text": "Rs 6,000", "is_correct": false},
+        {"option_text": "Rs 4,500", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. FORMULA: For 2 years, CI - SI = P x (R/100)^2. So 50 = P x (10/100)^2 = P x 1/100. P = 5000. Verify: SI = 5000 x 10 x 2 / 100 = 1000. CI = 5000 x [(1.1)^2 - 1] = 5000 x 0.21 = 1050. Difference = 1050 - 1000 = 50 ✓. SHORTCUT: Memorise P(R/100)^2 for 2 years — the most common SSC test case.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00003",
+      "stem": "A sum doubles itself in 8 years at simple interest. In how many years will the same sum become 5 times itself at the same rate?",
+      "options": [
+        {"option_text": "24 years", "is_correct": false},
+        {"option_text": "28 years", "is_correct": false},
+        {"option_text": "32 years", "is_correct": true},
+        {"option_text": "40 years", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. SHORTCUT: If sum doubles in t years (SI), to become n times it takes (n-1) x t years. Here n=5, t=8: time = (5-1) x 8 = 32 years. Verify rate: doubling means SI=P in 8 years. R = 100/8 = 12.5%. For 5 times: SI needed = 4P. T = 4P x 100 / (P x 12.5) = 32 years ✓. PAPER-SETTER TRAP: '5 times' means interest = 4P not 5P. Candidates who multiply 5 x 8 = 40 get the wrong answer.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00004",
+      "stem": "Rs 6,000 is lent in two parts: one at 8% SI and the other at 12% SI per annum. If the total interest after 2 years is Rs 1,120, find the sum lent at 8%.",
+      "options": [
+        {"option_text": "Rs 2,000", "is_correct": false},
+        {"option_text": "Rs 2,500", "is_correct": false},
+        {"option_text": "Rs 3,200", "is_correct": false},
+        {"option_text": "Rs 4,000", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Let sum at 8% = x, sum at 12% = (6000-x). Total SI = [x x 8 x 2 / 100] + [(6000-x) x 12 x 2 / 100] = 1120. (16x + 144000 - 24x) / 100 = 1120. -8x + 144000 = 112000. 8x = 32000. x = 4000. Verify: SI at 8%: 4000 x 16/100 = 640. SI at 12%: 2000 x 24/100 = 480. Total = 1120 ✓. SHORTCUT (Alligation): Avg rate = 1120/(6000 x 2) x 100 = 9.33%. Ratio: (12-9.33):(9.33-8) = 2.67:1.33 = 2:1. Sum at 8% = 6000 x 2/3 = 4000.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00005",
+      "stem": "At what rate of CI (compounded annually) will Rs 10,000 become Rs 12,100 in 2 years?",
+      "options": [
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "9%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "11%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A = P(1+R/100)^n. 12100 = 10000(1+R/100)^2. (1+R/100)^2 = 1.21 = (1.1)^2. R = 10%. SHORTCUT: 12100/10000 = 1.21. Square root of 1.21 = 1.1. R = 10%. Recognise common squares: 1.21=(1.1)^2, 1.44=(1.2)^2, 1.69=(1.3)^2 — frequently tested in SSC.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00006",
+      "stem": "A sum of Rs 8,000 is invested at CI for 3 years at 5% per annum. What is the compound interest earned?",
+      "options": [
+        {"option_text": "Rs 1,200", "is_correct": false},
+        {"option_text": "Rs 1,261", "is_correct": true},
+        {"option_text": "Rs 1,240", "is_correct": false},
+        {"option_text": "Rs 1,300", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A = 8000 x (1.05)^3 = 8000 x 1.157625 = 9261. CI = 9261 - 8000 = 1261. Step by step: Year 1 interest: 8000 x 5/100 = 400, balance = 8400. Year 2 interest: 8400 x 5/100 = 420, balance = 8820. Year 3 interest: 8820 x 5/100 = 441, balance = 9261. CI = 400+420+441 = 1261 ✓. Trap: Rs 1200 = SI for 3 years (8000 x 5 x 3/100); the extra Rs 61 is the 'interest on interest' compounded.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00007",
+      "stem": "The CI on a certain sum at 20% per annum for 2 years is Rs 528. Find the SI on the same sum at the same rate and time.",
+      "options": [
+        {"option_text": "Rs 480", "is_correct": true},
+        {"option_text": "Rs 500", "is_correct": false},
+        {"option_text": "Rs 440", "is_correct": false},
+        {"option_text": "Rs 520", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. SHORTCUT: For 2 years, CI:SI = (2R/100 + R^2/10000) : (2R/100) = (40+4):40 = 44:40 = 11:10. SI = CI x 10/11 = 528 x 10/11 = 480. Verify P: CI = 0.44P = 528, P = 1200. SI = 1200 x 20 x 2/100 = 480 ✓. PAPER-SETTER TRAP: The ratio shortcut eliminates need to find P, which is much faster in the exam.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00008",
+      "stem": "A sum is invested at 10% CI compounded half-yearly for 1 year. What is the effective annual rate?",
+      "options": [
+        {"option_text": "10%", "is_correct": false},
+        {"option_text": "10.25%", "is_correct": true},
+        {"option_text": "10.5%", "is_correct": false},
+        {"option_text": "11%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Half-yearly rate = 10/2 = 5% per half-year. In 1 year = 2 compounding periods. A = P(1 + 5/100)^2 = P x 1.1025. Effective annual rate = (1.1025 - 1) x 100 = 10.25%. FORMULA: Effective rate = (1 + R/2/100)^2 - 1 for half-yearly. PAPER-SETTER TRAP: Compounding more frequently always gives MORE than nominal rate: 10.25% > 10%. This appears in SSC CGL every few papers.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00009",
+      "stem": "A sum fetches Rs 4,500 as SI in 3 years at a certain rate. If the rate were increased by 2%, it would fetch Rs 900 more in the same period. Find the principal.",
+      "options": [
+        {"option_text": "Rs 12,000", "is_correct": false},
+        {"option_text": "Rs 13,500", "is_correct": false},
+        {"option_text": "Rs 15,000", "is_correct": true},
+        {"option_text": "Rs 18,000", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Additional SI from 2% increase over 3 years = 900. So P x 2 x 3 / 100 = 900. 6P/100 = 900. P = 15000. Verify rate: 15000 x R x 3/100 = 4500. 450R = 4500. R = 10%. Check increased rate: 15000 x 12 x 3/100 = 5400 = 4500+900 ✓. SHORTCUT: Extra interest = P x extra rate x T / 100. Rearrange to find P directly from the 'extra Rs' clue.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_SI_CI_ADV_W13_B1_00010",
+      "stem": "The difference between the CI and SI on Rs 2,000 for 3 years at 10% per annum is:",
+      "options": [
+        {"option_text": "Rs 60", "is_correct": false},
+        {"option_text": "Rs 62", "is_correct": true},
+        {"option_text": "Rs 66", "is_correct": false},
+        {"option_text": "Rs 70", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. SI (3 yrs) = 2000 x 10 x 3/100 = 600. CI step-by-step: Year 1: 2000 x 10% = 200, balance = 2200. Year 2: 2200 x 10% = 220, balance = 2420. Year 3: 2420 x 10% = 242, balance = 2662. CI = 200+220+242 = 662. CI - SI = 662 - 600 = 62. FORMULA: For 3 years, CI - SI = P(R/100)^2 x (R/100 + 3) = 2000 x (0.1)^2 x 3.1 = 2000 x 0.01 x 3.1 = 62 ✓. PAPER-SETTER TRAP: The 2-year formula P(R/100)^2 gives 20, not 62 — wrong for 3 years.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

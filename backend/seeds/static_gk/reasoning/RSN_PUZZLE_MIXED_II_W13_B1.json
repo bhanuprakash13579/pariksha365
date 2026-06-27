@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_PUZZLE_MIXED_II_W13_B1",
+  "subject": "Reasoning",
+  "topic": "Puzzles Mixed II — Linear Row, Box Stacking, Floor and Circular Arrangement (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00001",
+      "stem": "Five people P, Q, R, S and T sit in a single row. R sits at the extreme left. S sits immediately to the right of R. T sits at the extreme right. P sits at the 3rd position from the left. Who sits 3rd from the right?",
+      "options": [
+        {"option_text": "Q", "is_correct": false},
+        {"option_text": "P", "is_correct": true},
+        {"option_text": "S", "is_correct": false},
+        {"option_text": "R", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Build the arrangement: R at 1, S immediately right of R → S at 2. T at 5 (extreme right). P at 3. Remaining: Q at 4. Arrangement: R(1)–S(2)–P(3)–Q(4)–T(5). 3rd from right in a 5-person row: position = 5−3+1 = 3. Position 3 = P. Verify: from right: T(1st), Q(2nd), P(3rd) ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00002",
+      "stem": "Using the arrangement from the previous question [R–S–P–Q–T], how many people sit between S and Q?",
+      "options": [
+        {"option_text": "None", "is_correct": false},
+        {"option_text": "One", "is_correct": true},
+        {"option_text": "Two", "is_correct": false},
+        {"option_text": "Three", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Arrangement: R(1)–S(2)–P(3)–Q(4)–T(5). S is at position 2, Q is at position 4. People between positions 2 and 4: only position 3 = P. Count = 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00003",
+      "stem": "Five boxes A, B, C, D and E are stacked one on top of another. A is at the bottom. C is immediately above B. D is immediately above C. B is immediately above A. E is at the top. Which box is in the 3rd position from the bottom?",
+      "options": [
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Build from clues: A at bottom (1). B immediately above A → B at 2. C immediately above B → C at 3. D immediately above C → D at 4. E at top (5). Stack: A(1)–B(2)–C(3)–D(4)–E(5). 3rd from bottom = C ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00004",
+      "stem": "Using the stack arrangement [A–B–C–D–E from bottom to top], how many boxes are above C and below E?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Stack: A(1)–B(2)–C(3)–D(4)–E(5). Above C (position 3) and below E (position 5): only position 4 = D. Count = 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00005",
+      "stem": "Six people A, B, C, D, E and F sit in a row. A sits at the extreme left. D is immediately right of A. B sits 3rd from the left. C sits immediately right of B. F sits at the extreme right. E sits between C and F. Who is 4th from the right?",
+      "options": [
+        {"option_text": "B", "is_correct": true},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Build from clues: A at 1. D immediately right of A → D at 2. B at 3. C immediately right of B → C at 4. F at 6. E between C(4) and F(6) → E at 5. Arrangement: A(1)–D(2)–B(3)–C(4)–E(5)–F(6). 4th from right = 6−4+1 = 3rd from left? No: 4th from right means: from right — F(1st), E(2nd), C(3rd), B(4th). 4th from right = B ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00006",
+      "stem": "Using the 6-person row arrangement [A–D–B–C–E–F], how many people sit to the right of D?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Arrangement: A(1)–D(2)–B(3)–C(4)–E(5)–F(6). D is at position 2. People to the right of D: positions 3, 4, 5, 6 = B, C, E, F. Count = 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00007",
+      "stem": "Five athletes P, Q, R, S and T finished a race. T finished before R. R finished before S. P finished last. Q finished immediately before P. Who finished 3rd?",
+      "options": [
+        {"option_text": "T", "is_correct": false},
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "S", "is_correct": true},
+        {"option_text": "Q", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Chain: T before R before S. P is last (5th). Q immediately before P → Q at 4th, P at 5th. T, R, S fill positions 1, 2, 3 in that order: T(1st)–R(2nd)–S(3rd)–Q(4th)–P(5th). Verify: T before R ✓; R before S ✓; Q immediately before P ✓; P last ✓. 3rd = S.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00008",
+      "stem": "Six people live on six different floors (Floor 1 = lowest, Floor 6 = top). B lives on the top floor. D lives on the bottom floor. A lives on Floor 3. C lives immediately above A. E lives between C and B. F lives between D and A. Who lives on Floor 2?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "F", "is_correct": true},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. B at 6, D at 1, A at 3. C immediately above A → C at 4. E between C(4) and B(6) → E at 5. F between D(1) and A(3) → F at 2. Floor arrangement: D(1)–F(2)–A(3)–C(4)–E(5)–B(6). Floor 2 = F ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00009",
+      "stem": "Using the floor arrangement [D–F–A–C–E–B from bottom to top], how many people live above C?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Floor arrangement: D(1)–F(2)–A(3)–C(4)–E(5)–B(6). C is on Floor 4. People above C: Floor 5 = E and Floor 6 = B. Count = 2.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_PUZZLE_MIXED_II_W13_B1_00010",
+      "stem": "Six people A, B, C, D, E and F sit around a circular table facing the centre. E sits immediately to the right of A. B sits 2nd to the right of A. C sits immediately to the right of B. D sits immediately to the left of A. F sits between C and D (going clockwise from C). Who sits directly opposite A?",
+      "options": [
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "F", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Fix A at position 1 (clockwise: 1→2→3→4→5→6→1). E immediately right of A → E at 2. B 2nd right of A → B at 3. C immediately right of B → C at 4. D immediately left of A: left of position 1 (anticlockwise) = position 6 → D at 6. F between C(4) and D(6) going clockwise → F at 5. Circle: A(1)–E(2)–B(3)–C(4)–F(5)–D(6). Directly opposite A in a 6-person circle: position 1 + 3 = position 4 = C ✓. Trap: students may incorrectly calculate opposite as 'immediate left or right' rather than 3 positions away in a 6-person circle.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

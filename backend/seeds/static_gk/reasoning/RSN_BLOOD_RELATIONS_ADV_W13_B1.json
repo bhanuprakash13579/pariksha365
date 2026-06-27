@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_BLOOD_RELATIONS_ADV_W13_B1",
+  "subject": "Reasoning",
+  "topic": "Blood Relations Advanced — Multi-Generation, Pointing Photo and Coded Relations (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00001",
+      "stem": "A and E are a married couple. B and C are their children. D is C's daughter. How is E related to D?",
+      "options": [
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Grandmother", "is_correct": true},
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Great-grandmother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A+E are parents of B and C. D is C's daughter = A and E's grandchild. E → C (parent) → D (grandchild). E is D's grandmother.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00002",
+      "stem": "A is the mother of both B and C (who are siblings). D is the husband of C. How is A related to D?",
+      "options": [
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Aunt", "is_correct": false},
+        {"option_text": "Mother-in-law", "is_correct": true},
+        {"option_text": "Grandmother", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A is C's mother. D is C's husband. A is the mother of D's wife → A is D's mother-in-law.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00003",
+      "stem": "Pointing to a photograph, Arjun says: 'This man's son is my son's uncle.' Who is the man in the photograph to Arjun?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Father", "is_correct": true},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. My son's uncle = my brother. So: this man's son = Arjun's brother. This man = father of Arjun's brother = Arjun's own father. Verify: photo man → his son = Arjun's brother → they share the same father = photo man = Arjun's father ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00004",
+      "stem": "Pointing to a girl, a man says: 'She is the daughter of the only child of my father.' How is the girl related to the man?",
+      "options": [
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Daughter", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 'Only child of my father' = the man himself (self-reference). Girl's parent = the man. Girl is the man's daughter. Verify: my father's only child = me. Girl's father = me → she is my daughter ✓. PAPER-SETTER TRAP: Students look for a third person but 'only child' points back to the speaker.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00005",
+      "stem": "Introducing a boy, a girl says: 'He is the son of the daughter of the father of my uncle.' How is the boy related to the girl?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Trace: 'father of my uncle' = grandfather (uncle's father = grandfather). 'Daughter of grandfather' = my aunt (grandfather's daughter = my father's sister). 'Son of aunt' = my cousin. Verify: grandfather → daughter (aunt) → boy (son). Boy is girl's cousin ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00006",
+      "stem": "A is the son of B. C is B's sister. D is C's mother. E is D's husband. How is E related to A?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Great-grandfather", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. C is B's sister → D is both B's and C's mother (same parents). E is D's husband = B's father. A is B's son → E is A's paternal grandfather (E → B → A). Verify: E to B = father-son, B to A = father-son. E is two generations above A = grandfather ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00007",
+      "stem": "P's father is Q's son. M is P's mother and N is Q's wife. How is N related to M?",
+      "options": [
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Daughter-in-law", "is_correct": false},
+        {"option_text": "Mother-in-law", "is_correct": true},
+        {"option_text": "Grandmother", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let P's father = R. Q's son = R → N (Q's wife) is R's mother. M is P's mother → M is married to R (P's father). N is mother of R; M is wife of R. N is M's mother-in-law. Verify: N → R (mother-son), R married M. N = M's mother-in-law ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00008",
+      "stem": "X is the father of Y. Y is the brother of Z. W is the wife of Z. V is the son of W and Z. How is X related to V?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. X = father of Y. Z = Y's brother → X = father of both Y and Z (siblings). V = son of Z → V is X's grandson. Verify: X → Z (father-son), Z → V (father-son). X is two generations above V = grandfather ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00009",
+      "stem": "P is the father of Q. Q is the sister of R. S is R's husband. T is the son of S and R. How is P related to T?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": true},
+        {"option_text": "Father-in-law", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. P = father of Q and R (siblings). R married S. T = son of R and S → T is P's grandson. Verify: P → R (grandfather's child), R → T (parent-child). P is maternal grandfather of T ✓. Trap: Father-in-law = P is father-in-law of S (S's wife R is P's daughter), but the question asks P's relation to T, not to S.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_BLOOD_RELATIONS_ADV_W13_B1_00010",
+      "stem": "Rohit says: 'My mother's mother's son's daughter is Priya.' How is Priya related to Rohit?",
+      "options": [
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": true},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Aunt", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Trace: 'Mother's mother' = Rohit's maternal grandmother. 'Maternal grandmother's son' = Rohit's maternal uncle (grandmother's son = mother's brother = uncle). 'Maternal uncle's daughter' = Rohit's cousin. Verify: grandmother → son (uncle) → daughter (Priya). Priya is Rohit's maternal cousin ✓. PAPER-SETTER TRAP: Students confuse 'grandmother's son' with 'grandmother's daughter' (which would be Rohit's mother or aunt). The son of the grandmother = Rohit's maternal uncle; uncle's daughter = cousin.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

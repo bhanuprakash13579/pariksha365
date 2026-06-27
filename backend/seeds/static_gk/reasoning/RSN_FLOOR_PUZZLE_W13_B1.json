@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_FLOOR_PUZZLE_W13_B1",
+  "subject": "Reasoning",
+  "topic": "Floor-Based Puzzle — Seven Floors, Six People (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00001",
+      "stem": "Use these clues for Q1–Q10. A 7-floor building (Floor 1=lowest, Floor 7=top) has six residents A, B, C, D, E, F; one floor is empty. (1) A lives on the topmost floor. (2) B lives on Floor 3. (3) C lives immediately above B. (4) D lives immediately below A. (5) E lives on an even-numbered floor below Floor 4. (6) F lives on an odd-numbered floor between B and D. — What floor does A occupy?",
+      "options": [
+        {"option_text": "Floor 5", "is_correct": false},
+        {"option_text": "Floor 6", "is_correct": false},
+        {"option_text": "Floor 7", "is_correct": true},
+        {"option_text": "Floor 4", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Clue 1 states A lives on the topmost floor = Floor 7. Full arrangement derived from all clues: A=7, D=6 (clue 4: immediately below A), F=5 (clue 6: odd floor between B=3 and D=6; only odd floor there is 5), C=4 (clue 3: immediately above B=3), B=3 (clue 2), E=2 (clue 5: even floor below 4; only even remaining is 2). Floor 1 = empty.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00002",
+      "stem": "[Arrangement: Floor1=empty, 2=E, 3=B, 4=C, 5=F, 6=D, 7=A] What floor does E occupy?",
+      "options": [
+        {"option_text": "Floor 1", "is_correct": false},
+        {"option_text": "Floor 2", "is_correct": true},
+        {"option_text": "Floor 4", "is_correct": false},
+        {"option_text": "Floor 6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Clue 5: E is on an even-numbered floor below Floor 4. Even floors below 4 in a 7-floor building: Floor 2. (Floor 4 itself is excluded since 'below Floor 4'.) E=2. Trap: Floor 4 = C's floor (and excluded by clue); Floor 6 = D's floor.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00003",
+      "stem": "[Same arrangement] Who lives immediately above B?",
+      "options": [
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "F", "is_correct": false},
+        {"option_text": "C", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. B=Floor 3; immediately above = Floor 4 = C (clue 3 states this directly). Trap: F=Floor 5 is two above B (not immediate); D=Floor 6 is three above B.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00004",
+      "stem": "[Same arrangement] Which floor is empty?",
+      "options": [
+        {"option_text": "Floor 1", "is_correct": true},
+        {"option_text": "Floor 2", "is_correct": false},
+        {"option_text": "Floor 3", "is_correct": false},
+        {"option_text": "Floor 4", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. All six people are placed: A=7, D=6, F=5, C=4, B=3, E=2. The only unoccupied floor is Floor 1. Derive this by placing everyone and identifying the gap: floors 2–7 are all taken; Floor 1 has no resident assigned by any clue.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00005",
+      "stem": "[Same arrangement] Who lives on Floor 5?",
+      "options": [
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "F", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Clue 6: F lives on an odd-numbered floor between B(Floor 3) and D(Floor 6). Odd floors strictly between 3 and 6 = Floor 5 only. F=5. Trap: C=4 (even floor between B and D, but clue specifies odd); D=6 is D's own floor.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00006",
+      "stem": "[Same arrangement] How many residents live on floors above Floor 4?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Floors above Floor 4: Floor 5=F, Floor 6=D, Floor 7=A → 3 residents. Trap: 4 = includes C on Floor 4 itself (above Floor 4 is strictly >4, not ≥4); 2 = miscounts by forgetting one person.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00007",
+      "stem": "[Same arrangement] Who lives immediately below D?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "F", "is_correct": true},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. D=Floor 6. Immediately below Floor 6 = Floor 5 = F. Verify: D(6)−1=5=F ✓. Trap: A=Floor 7 is immediately ABOVE D (not below); C=Floor 4 is two below D.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00008",
+      "stem": "[Same arrangement] If B and F exchange floors, who now lives on Floor 5?",
+      "options": [
+        {"option_text": "B", "is_correct": true},
+        {"option_text": "C", "is_correct": false},
+        {"option_text": "F", "is_correct": false},
+        {"option_text": "E", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Original: B=3, F=5. After exchange: B moves to F's floor (5), F moves to B's floor (3). New Floor 5 = B. All other residents remain: A=7, D=6, C=4, F(now)=3, E=2. Floor 5 = B ✓. Trap: F = F moved to Floor 3 (not 5 anymore); C = C stays on Floor 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00009",
+      "stem": "[Same arrangement] How many people live between D and C (counting only residents on floors strictly between floors 4 and 6)?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. C=Floor 4, D=Floor 6. Floors strictly between 4 and 6 = Floor 5 = F. Only 1 person (F) lives between C and D. Trap: 2 = counts Floor 4 (C) and Floor 5 (F) — but C is an endpoint, not 'between'; 0 = does not count F correctly.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_FLOOR_PUZZLE_W13_B1_00010",
+      "stem": "[Same arrangement] Who is on the 3rd floor from the top?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "F", "is_correct": true},
+        {"option_text": "C", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Counting from the top (Floor 7): 1st from top=A(7), 2nd from top=D(6), 3rd from top=F(5). Answer: F. Formula: position from top = (total floors+1) − floor number = 8 − floor_number. For 3rd from top: floor = 8−3=5=F ✓. Trap: D = 2nd from top (not 3rd); C = 4th from top (floor 4 → 8−4=4th from top).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

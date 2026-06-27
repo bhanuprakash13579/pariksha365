@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_DISCOUNT_MARKED_PRICE_W13_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Discount and Marked Price — Successive Discounts, Trade Schemes and Profit-after-Discount (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00001",
+      "stem": "An article is sold for Rs.850 after a discount of 15%. Find the marked price.",
+      "options": [
+        {"option_text": "Rs.950", "is_correct": false},
+        {"option_text": "Rs.1000", "is_correct": true},
+        {"option_text": "Rs.1020", "is_correct": false},
+        {"option_text": "Rs.1100", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SP = MP × (1 − discount%) → 850 = MP × 0.85 → MP = 850/0.85 = 1000. SHORTCUT: SP is 85% of MP → MP = SP × 100/85 = 850 × 100/85 = 1000. Trap: 950 = 850 + 100 (wrong: 15% of 850=127.5, not 100); 1020 = 850 × 1.2 (wrong operation). Always divide SP by (1−discount%) to find MP.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00002",
+      "stem": "Two successive discounts of 10% and 5% are given on a product marked Rs.1200. Find the final selling price.",
+      "options": [
+        {"option_text": "Rs.1008", "is_correct": false},
+        {"option_text": "Rs.1020", "is_correct": false},
+        {"option_text": "Rs.1026", "is_correct": true},
+        {"option_text": "Rs.1036", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. SP = 1200 × 0.90 × 0.95 = 1200 × 0.855 = 1026. SHORTCUT: Equivalent single discount = 10+5 − 10×5/100 = 15−0.5 = 14.5%. SP = 1200 × (1−0.145) = 1200 × 0.855 = 1026. Trap: 1020 = 1200 − 180 (wrong: 15% of 1200=180, but successive discounts ≠ combined discount); 1008 = 1200 × 0.84 (wrong percentage chain).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00003",
+      "stem": "A trader marks goods 30% above cost price and offers a 10% discount. What is the profit percentage?",
+      "options": [
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "17%", "is_correct": true},
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "13%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let CP = 100. MP = 130. SP = 130 × 0.90 = 117. Profit = 117−100 = 17%. SHORTCUT: Profit% = (1+markup%)(1−discount%) − 1 = 1.30 × 0.90 − 1 = 1.17 − 1 = 17%. Trap: 20% = 30−10 (wrong: cannot subtract percentages with different bases); 15% = common calculation error. Lock the formula: Net% = (1+m)(1−d) − 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00004",
+      "stem": "After a 20% discount, an article sells for Rs.640. The shopkeeper still earns 28% profit. Find the cost price.",
+      "options": [
+        {"option_text": "Rs.450", "is_correct": false},
+        {"option_text": "Rs.480", "is_correct": false},
+        {"option_text": "Rs.500", "is_correct": true},
+        {"option_text": "Rs.520", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Two-step: (1) Find MP: SP = MP × 0.80 = 640 → MP = 800. (2) Find CP from profit: SP = CP × 1.28 = 640 → CP = 640/1.28 = 500. Verify: MP = 800, CP = 500; Markup = 60%; Discount = 20%; SP = 640; Profit on CP = 140/500 = 28% ✓. Trap: 480 = 640/1.33 (wrong profit denominator); 520 = arbitrary guess. Note: MP and CP are independent — MP is set by the shopkeeper, CP is the purchase price.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00005",
+      "stem": "Find the single equivalent discount for successive discounts of 20% and 15%.",
+      "options": [
+        {"option_text": "30%", "is_correct": false},
+        {"option_text": "32%", "is_correct": true},
+        {"option_text": "33%", "is_correct": false},
+        {"option_text": "35%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Formula: Equivalent discount = d1+d2 − d1×d2/100 = 20+15 − 20×15/100 = 35−3 = 32%. Verify: On MP=100: after 20% → 80; after 15% → 80×0.85=68. Total discount = 100−68=32%. SHORTCUT memorised as: add the discounts then subtract their product/100. Trap: 35% = simply adding 20+15 (ignores the compounding effect); 30% = 20+15−5 (wrong subtraction).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00006",
+      "stem": "A shirt marked at Rs.500 is sold for Rs.380. What is the discount percentage?",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "22%", "is_correct": false},
+        {"option_text": "24%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Discount = MP − SP = 500−380 = 120. Discount % = (120/500)×100 = 24%. Verify: 24% of 500 = 120; 500−120=380 ✓. Trap: 25% = 125/500 (wrong discount amount; 25% would give SP=375 not 380); 20% = 100/500 (gives SP=400); 22% = 110/500 (gives SP=390). Always use Discount% = (MP−SP)/MP × 100.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00007",
+      "stem": "A shopkeeper marks goods 60% above cost price. What percentage discount should he offer to make exactly 20% profit?",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "22%", "is_correct": false},
+        {"option_text": "25%", "is_correct": true},
+        {"option_text": "30%", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let CP = 100. MP = 160 (60% above CP). Required SP for 20% profit = 120. Discount = MP−SP = 160−120 = 40. Discount % = (40/160)×100 = 25%. SHORTCUT: Required discount% = (MP−SP)/MP × 100 = (160−120)/160 × 100 = 25%. Trap: 40% = (40/100)×100 = wrong base (using CP instead of MP for discount%); 20% = 40/200 (wrong). Remember: discount% is always on MP, profit% is always on CP.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00008",
+      "stem": "Two articles are sold at the same price of Rs.900 each. One is sold at 20% profit and the other at 20% loss. Find the overall percentage gain or loss.",
+      "options": [
+        {"option_text": "No gain, no loss", "is_correct": false},
+        {"option_text": "2% loss", "is_correct": false},
+        {"option_text": "4% loss", "is_correct": true},
+        {"option_text": "4% gain", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. CP₁ (for 20% profit) = 900/1.20 = 750. CP₂ (for 20% loss) = 900/0.80 = 1125. Total CP = 750+1125 = 1875. Total SP = 900+900 = 1800. Loss = 75. Loss% = 75/1875 × 100 = 4%. SHORTCUT (must memorise): When SP is the same and one article sold at P% profit and other at P% loss → always a LOSS of P²/100 % = 20²/100 = 4%. This is one of SSC's most-repeated tricks. TRAP: 'No gain, no loss' — the intuitive wrong answer. The asymmetry in CP (750 vs 1125) always creates a net loss.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00009",
+      "stem": "A sells an article to B at 20% profit; B sells it to C at 25% profit. If C pays Rs.1200, what did A pay for it (A's cost price)?",
+      "options": [
+        {"option_text": "Rs.720", "is_correct": false},
+        {"option_text": "Rs.750", "is_correct": false},
+        {"option_text": "Rs.800", "is_correct": true},
+        {"option_text": "Rs.840", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Work backwards: C pays = B's SP = 1200. B sold to C at 25% profit → B's CP = 1200/1.25 = 960. B's CP = A's SP. A sold to B at 20% profit → A's CP = 960/1.20 = 800. Verify: A's CP=800; A's SP=960 (20% profit on 800 ✓); B's SP=1200 (25% profit on 960 ✓). Trap: 720 = 1200/(1.20×1.25) with wrong order of operations; 750 = 1200/1.60 (wrong divisor). Always trace back one step at a time from C to B to A.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_DISCOUNT_MARKED_PRICE_W13_B1_00010",
+      "stem": "A shopkeeper sells goods at a discount of 25% on marked price and still makes 20% profit. If cost price is Rs.800, find the marked price.",
+      "options": [
+        {"option_text": "Rs.1200", "is_correct": false},
+        {"option_text": "Rs.1250", "is_correct": false},
+        {"option_text": "Rs.1280", "is_correct": true},
+        {"option_text": "Rs.1300", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. CP = 800. Profit 20% → SP = 800×1.20 = 960. SP = MP×(1−0.25) = 0.75×MP = 960 → MP = 960/0.75 = 1280. Verify: MP=1280; 25% discount → SP = 1280×0.75 = 960; profit on CP=800 → 160/800=20% ✓. SHORTCUT: MP = SP/(1−d) = 960/0.75 = 1280. Trap: 1200 = 800+400 (wrong; adds 50% to CP); 1250 = 960/0.768 (wrong discount applied).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

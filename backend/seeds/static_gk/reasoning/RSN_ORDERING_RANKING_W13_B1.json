@@ -1,0 +1,158 @@
+{
+  "topic_code": "RSN_ORDERING_RANKING_W13_B1",
+  "subject": "Reasoning",
+  "topic": "Ordering and Ranking — Linear Arrangement with Rank from Top and Bottom (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00001",
+      "stem": "Six friends A, B, C, D, E and F are ranked 1 to 6 (Rank 1 = best). The following is known: D is ranked better than A; A is ranked better than C; B is ranked immediately above E; F has the worst rank; C is not ranked immediately below A. How is the correct ranking from 1 to 6?",
+      "options": [
+        {"option_text": "D, B, A, E, C, F", "is_correct": false},
+        {"option_text": "D, A, B, E, C, F", "is_correct": true},
+        {"option_text": "A, D, B, E, C, F", "is_correct": false},
+        {"option_text": "D, A, C, B, E, F", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Key deductions: F = Rank 6. B is immediately above E → B and E are consecutive with B one rank better. D > A > C (in rank quality). Clue: C is NOT immediately below A → A and C are not adjacent. Try D=1, A=2: C cannot be rank 3 (would be immediately below A). Place B=3, E=4 (B immediately above E ✓). Then C=5, F=6. Order: D(1), A(2), B(3), E(4), C(5), F(6). Check all clues: D>A ✓; A>C ✓; B immediately above E ✓; F=6 ✓; C at rank 5, A at rank 2 — not adjacent ✓. Option A (D,B,A,E,C,F): B=2 immediately above E=3? No, E=4 here; also A>C but A=3, C=5 ✓ but B not immediately above E (B=2, E=4 — gap of 2). Fails.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00002",
+      "stem": "Using the arrangement from Q1 (D=1st, A=2nd, B=3rd, E=4th, C=5th, F=6th): How many people are ranked BELOW B?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. B is ranked 3rd (out of 6). People ranked below B (i.e., ranks 4, 5, 6) = E(4th), C(5th), F(6th) = 3 people. Trap: Students who count 'people above B' = 2 (D and A) and confuse that with 'below B'. People ABOVE B = 2; People BELOW B = 3. Total = 6 = 1(B) + 2(above) + 3(below) = 6 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00003",
+      "stem": "Using the arrangement (D=1st, A=2nd, B=3rd, E=4th, C=5th, F=6th): Who is ranked IMMEDIATELY ABOVE C?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "E", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. C is ranked 5th. The person at rank 4 is E. 'Immediately above' means one rank better → the person just one rank above C (rank 5) is the person at rank 4 = E. Trap: A at rank 2 is above C (rank 5) but NOT immediately above (there are B and E between them).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00004",
+      "stem": "Using the arrangement (D=1st, A=2nd, B=3rd, E=4th, C=5th, F=6th): What is B's rank from the BOTTOM?",
+      "options": [
+        {"option_text": "2nd from bottom", "is_correct": false},
+        {"option_text": "3rd from bottom", "is_correct": false},
+        {"option_text": "4th from bottom", "is_correct": true},
+        {"option_text": "5th from bottom", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. B is ranked 3rd from top (out of 6). Rank from bottom = Total + 1 − Rank from top = 6 + 1 − 3 = 4th from bottom. Verify: From bottom: F(1st), C(2nd), E(3rd), B(4th), A(5th), D(6th) ✓. Trap: Students think rank 3 from top = rank 3 from bottom in a 6-person group; the correct formula is n+1−r = 6+1−3 = 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00005",
+      "stem": "Using the arrangement (D=1st, A=2nd, B=3rd, E=4th, C=5th, F=6th): How many people are ranked BETWEEN A and C (exclusive)?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "0", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A is at rank 2, C is at rank 5. People between them = those at ranks 3 and 4 = B and E = 2 people. Formula: people between = (rank of lower − rank of upper) − 1 = (5−2)−1 = 2. Trap: 3 = total difference (5−2=3) without subtracting 1; 1 = counting only B (not E).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00006",
+      "stem": "In a row of students, Priya is 7th from the left and 11th from the right. How many students are in the row?",
+      "options": [
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "17", "is_correct": true},
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "19", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total students = (Position from left) + (Position from right) − 1 = 7 + 11 − 1 = 17. The −1 accounts for Priya herself being counted twice. Verify: 6 students to her left + Priya (1) + 10 to her right = 17 ✓. Trap: 18 = 7+11 (forgetting −1); 16 = 7+11−2 (subtracting too much).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00007",
+      "stem": "In a class of 40 students, Kiran stands 15th from the top and Mohan stands 24th from the bottom. How many students are between Kiran and Mohan?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total = 40. Kiran: 15th from top. Mohan: 24th from bottom → rank from top = 40+1−24 = 17th from top. Students between ranks 15 and 17: positions 16 only → 1 student. Formula: people between = higher_rank_position − lower_rank_position − 1 = 17−15−1 = 1. Verify: positions 1(top)...15(Kiran), 16(one student), 17(Mohan)...40(bottom) ✓. Trap: 25th from bottom → Mohan = rank 16 → between = 16−15−1 = 0 (would be answer 0 if the problem said 25th, not 24th — a classic one-off trap).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00008",
+      "stem": "Using the arrangement (D=1st, A=2nd, B=3rd, E=4th, C=5th, F=6th): If E and A swap their ranks, who is ranked 2nd?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "E", "is_correct": true},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Original: A=2nd, E=4th. After swap: A takes rank 4, E takes rank 2. New order: D(1st), E(2nd), B(3rd), A(4th), C(5th), F(6th). Person ranked 2nd = E. Trap: A = students confuse which person goes where in a swap; A moves FROM 2nd TO 4th; E moves FROM 4th TO 2nd. The 2nd position is now occupied by E.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00009",
+      "stem": "Ravi is 8th from the front of a queue and 5th from the back. If 6 more people join at the back of the queue, what is Ravi's rank from the back now?",
+      "options": [
+        {"option_text": "9th", "is_correct": false},
+        {"option_text": "10th", "is_correct": false},
+        {"option_text": "11th", "is_correct": true},
+        {"option_text": "12th", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Original: Ravi is 8th from front, 5th from back. Original total = 8+5−1 = 12. After 6 join at the back: new total = 18. Ravi's position from front = unchanged = 8th. Ravi's new rank from back = 18−8+1 = 11th. ALTERNATIVELY: original rank from back = 5. 6 more join behind him → new rank from back = 5+6 = 11. Trap: 9th = 5+4 (wrong addition); 12th = 6+6 (wrong); 10th = 5+5 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_RSN_ORDERING_RANKING_W13_B1_00010",
+      "stem": "In a merit list of 50 students, A is ranked 12th from top. B is ranked such that there are exactly 14 students between A and B, with B ranked below A. C is ranked 5 positions below B. What is C's rank from the bottom?",
+      "options": [
+        {"option_text": "17th", "is_correct": false},
+        {"option_text": "19th", "is_correct": true},
+        {"option_text": "18th", "is_correct": false},
+        {"option_text": "20th", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A = 12th from top. 14 students between A and B, B below A → B = 12+14+1 = 27th from top. C is 5 positions below B → C = 27+5 = 32nd from top. C's rank from bottom = 50−32+1 = 19th. Verify: 32 from top means 50−32 = 18 students below C, so C is 19th from bottom ✓. Multi-step chain: find B's rank → find C's rank → convert top-rank to bottom-rank. Trap: 18th = forgetting the +1 in the conversion formula; 20th = using C=31st (only 4 positions below B); 17th = calculation error somewhere in chain.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

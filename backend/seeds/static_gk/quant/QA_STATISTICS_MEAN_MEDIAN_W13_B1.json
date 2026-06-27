@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_STATISTICS_MEAN_MEDIAN_W13_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Statistics — Mean, Median, Mode and Combined Applications (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00001",
+      "stem": "Find the mean of: 5, 8, 12, 7, 3.",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": true},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Mean = sum/count = (5+8+12+7+3)/5 = 35/5 = 7. Verify: 5+8=13; 13+12=25; 25+7=32; 32+3=35; 35÷5=7 ✓. Trap: 8 = largest middle value (not mean); 6 = off by 1 arithmetic error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00002",
+      "stem": "Find the MODE of: 2, 3, 5, 3, 7, 3, 2, 4.",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Mode = the value that appears most frequently. Tally: 2 appears 2 times; 3 appears 3 times; 4 appears 1 time; 5 appears 1 time; 7 appears 1 time. Mode = 3 (highest frequency). Trap: 2 = second-most frequent (not mode); never confuse mode (most frequent) with mean (average) or median (middle).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00003",
+      "stem": "Find the MEDIAN of: 3, 1, 5, 7, 9.",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. STEP 1: Sort in ascending order: 1, 3, 5, 7, 9. STEP 2: Middle value for odd count (n=5): position = (5+1)/2 = 3rd value = 5. Median = 5. Trap: NEVER find median without sorting first. 3 = the middle value if unsorted (wrong); 7 = 4th value (not middle).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00004",
+      "stem": "The mean of 10 numbers is 15. If one of the numbers (8) is replaced by 18, what is the new mean?",
+      "options": [
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "15.5", "is_correct": false},
+        {"option_text": "16", "is_correct": true},
+        {"option_text": "16.5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Original sum = 10×15 = 150. After replacing 8 with 18: new sum = 150 − 8 + 18 = 160. New mean = 160/10 = 16. Shortcut: mean increases by (18−8)/10 = 10/10 = 1. New mean = 15+1=16 ✓. Trap: 15 = no change (wrong — the sum DID change); 15.5 = adds 5 instead of 10 to sum.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00005",
+      "stem": "The mean of five numbers 4, 7, x, 12, 9 is 8. Find x.",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Sum = 5×8 = 40. 4+7+x+12+9=40. 32+x=40. x=8. Verify: 4+7+8+12+9=40; 40/5=8 ✓. Trap: 6 = if sum were 36 (wrong total); 7 = same as given 4 and 7 (wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00006",
+      "stem": "Find the MEDIAN of: 4, 6, 8, 10, 12, 14 (an even-numbered dataset).",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": true},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The data is already sorted. n=6 (even). Median = average of (n/2)th and (n/2+1)th values = average of 3rd and 4th values = (8+10)/2 = 9. Trap: 8 = 3rd value only (not average); 10 = 4th value only; 11 = (10+12)/2 (used wrong pair).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00007",
+      "stem": "Group A has 40 students with mean score 50. Group B has 60 students with mean score 60. What is the combined mean score?",
+      "options": [
+        {"option_text": "54", "is_correct": false},
+        {"option_text": "55", "is_correct": false},
+        {"option_text": "56", "is_correct": true},
+        {"option_text": "58", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Combined mean = (n₁×mean₁ + n₂×mean₂)/(n₁+n₂) = (40×50+60×60)/(40+60) = (2000+3600)/100 = 5600/100 = 56. KEY TRAP: arithmetic mean of 50 and 60 = 55 (wrong — this ignores unequal group sizes). The combined mean is closer to 60 because Group B is LARGER. Trap: 55 = unweighted average (wrong); 54 = wrong calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00008",
+      "stem": "The mode of a dataset is 7 and the median is 8. Using the empirical relationship (Mode = 3×Median − 2×Mean), find the approximate mean.",
+      "options": [
+        {"option_text": "7.5", "is_correct": false},
+        {"option_text": "8.5", "is_correct": true},
+        {"option_text": "9.5", "is_correct": false},
+        {"option_text": "10.5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Empirical formula: Mode = 3×Median − 2×Mean. 7 = 3×8 − 2×Mean = 24 − 2×Mean. 2×Mean = 17. Mean = 8.5. Verify: 3×8−2×8.5=24−17=7 ✓. This formula (Karl Pearson's) works for moderately skewed distributions. Trap: 7.5 = arithmetic average of mode and median (wrong formula); 9.5 = (3×8−7)/2+1 (wrong manipulation).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00009",
+      "stem": "4 items are priced at Rs.10 each and 6 items at Rs.15 each. What is the weighted average price per item?",
+      "options": [
+        {"option_text": "Rs.12", "is_correct": false},
+        {"option_text": "Rs.12.50", "is_correct": false},
+        {"option_text": "Rs.13", "is_correct": true},
+        {"option_text": "Rs.13.50", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Weighted average = (4×10+6×15)/(4+6) = (40+90)/10 = 130/10 = Rs.13. TRAP: Simple average = (10+15)/2=12.50 (wrong — ignores that more items are priced at 15). The weighted mean is PULLED towards the larger quantity (6 items at 15 > 4 items at 10) → mean closer to 15 than to 10 ✓. Rs.13 is closer to 15 side ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_STATISTICS_MEAN_MEDIAN_W13_B1_00010",
+      "stem": "The mean of 5 numbers is 20. Each number is then multiplied by 3 and increased by 2. What is the new mean?",
+      "options": [
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "62", "is_correct": true},
+        {"option_text": "65", "is_correct": false},
+        {"option_text": "66", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. If every value is transformed as f(x)=3x+2, then the new mean = 3×old mean + 2 = 3×20+2 = 62. General rule: if all values undergo a linear transformation (ax+b), the mean transforms as a×mean+b. New mean=3×20+2=62. Verify: if 5 numbers have mean 20 (sum=100), after ×3 sum=300 (mean=60), after +2 each: sum=300+5×2=310; mean=310/5=62 ✓. Trap: 60 = forgot the +2 per number; 65 = added 5 (total added as single value rather than per number).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

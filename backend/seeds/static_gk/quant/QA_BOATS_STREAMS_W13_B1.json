@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_BOATS_STREAMS_W13_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Boats and Streams — Speed Calculation, Time Difference and System of Equations (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00001",
+      "stem": "A boat's downstream speed is 12 km/h and upstream speed is 6 km/h. What is the speed of the current?",
+      "options": [
+        {"option_text": "2 km/h", "is_correct": false},
+        {"option_text": "3 km/h", "is_correct": true},
+        {"option_text": "4 km/h", "is_correct": false},
+        {"option_text": "6 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Speed of current = (Downstream − Upstream)/2 = (12−6)/2 = 3 km/h. Speed of boat in still water = (12+6)/2 = 9 km/h. Key formulae: Boat speed = (D+U)/2; Current speed = (D−U)/2. Trap: 6 = downstream speed (not current); 2 = (12−6)/? — divides incorrectly by 4.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00002",
+      "stem": "A man rows at 7 km/h in still water. The stream flows at 3 km/h. What is his speed upstream?",
+      "options": [
+        {"option_text": "3 km/h", "is_correct": false},
+        {"option_text": "4 km/h", "is_correct": true},
+        {"option_text": "5 km/h", "is_correct": false},
+        {"option_text": "10 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Upstream speed = Boat speed − Current speed = 7−3 = 4 km/h. (Downstream = 7+3 = 10 km/h.) Trap: 10 = downstream (added instead of subtracted); 3 = stream speed only.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00003",
+      "stem": "A man rows 5 km/h upstream and 9 km/h downstream. What is the speed of the stream?",
+      "options": [
+        {"option_text": "1 km/h", "is_correct": false},
+        {"option_text": "2 km/h", "is_correct": true},
+        {"option_text": "3 km/h", "is_correct": false},
+        {"option_text": "4 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Speed of stream = (Downstream − Upstream)/2 = (9−5)/2 = 2 km/h. Boat speed in still water = (9+5)/2 = 7 km/h. Verify: Boat+Stream = 7+2=9 ✓; Boat−Stream=7−2=5 ✓. Trap: 4 = (9−5)=4 without dividing by 2 (that gives twice the stream speed).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00004",
+      "stem": "A boat takes 3 hours to travel a distance upstream. The same distance is covered in 1.5 hours downstream. If the speed of the current is 2 km/h, what is the speed of the boat in still water?",
+      "options": [
+        {"option_text": "4 km/h", "is_correct": false},
+        {"option_text": "5 km/h", "is_correct": false},
+        {"option_text": "6 km/h", "is_correct": true},
+        {"option_text": "8 km/h", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let boat speed=u, current=2. T_upstream/T_downstream = D/(u−2) / D/(u+2) = (u+2)/(u−2) = 3/1.5 = 2. So u+2 = 2(u−2) → u+2=2u−4 → u=6 km/h. Verify: upstream speed=4, downstream=8; 3h upstream covers 12km; 1.5h downstream covers 12km ✓. Trap: 4 = boat speed equal to current (gives zero upstream speed); 8 = downstream speed, not boat speed.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00005",
+      "stem": "A man rows 30 km downstream in 3 hours. The stream speed is 3 km/h. How long does it take to row the same distance upstream?",
+      "options": [
+        {"option_text": "5 hours", "is_correct": false},
+        {"option_text": "6 hours", "is_correct": false},
+        {"option_text": "7.5 hours", "is_correct": true},
+        {"option_text": "10 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Downstream speed = 30/3 = 10 km/h = u+3 → u=7 km/h. Upstream speed = 7−3 = 4 km/h. Time upstream = 30/4 = 7.5 hours. Verify: 7.5 × 4 = 30 km ✓. Trap: 5 = 30/6 (uses wrong upstream speed); 10 = 30/3 (uses downstream time).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00006",
+      "stem": "A man can row 6 km/h in still water. The river flows at 2 km/h. He rows 20 km downstream and then 20 km back. What is the total time for the round trip?",
+      "options": [
+        {"option_text": "6 hours", "is_correct": false},
+        {"option_text": "7 hours", "is_correct": false},
+        {"option_text": "7.5 hours", "is_correct": true},
+        {"option_text": "8 hours", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Downstream speed = 6+2=8 km/h; time = 20/8 = 2.5h. Upstream speed = 6−2=4 km/h; time = 20/4 = 5h. Total = 2.5+5 = 7.5 hours. Key insight: round trip in flowing water takes MORE time than in still water. In still water: 40/6=6.67h; in river = 7.5h ✓. Trap: 6h = time in still water only (no current effect).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00007",
+      "stem": "The speed of a boat in still water is 3 times the speed of the current. It takes 4 hours more to travel 48 km upstream than downstream. Find the speed of the current.",
+      "options": [
+        {"option_text": "2 km/h", "is_correct": false},
+        {"option_text": "3 km/h", "is_correct": true},
+        {"option_text": "4 km/h", "is_correct": false},
+        {"option_text": "6 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let stream speed=v; boat speed=3v. Upstream=3v−v=2v; downstream=3v+v=4v. Time difference: 48/(2v) − 48/(4v) = 4. 24/v − 12/v = 4 → 12/v=4 → v=3 km/h. Boat speed=9 km/h. Verify: upstream=6 km/h, time=8h; downstream=12 km/h, time=4h; difference=4h ✓. Trap: 4 = 12/3 (that's v when 48/2v=8, getting confused between boat and stream).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00008",
+      "stem": "A motor boat covers 8 km in 1 hour with the stream and 2 hours against the stream. What is the speed of the stream?",
+      "options": [
+        {"option_text": "1 km/h", "is_correct": false},
+        {"option_text": "2 km/h", "is_correct": true},
+        {"option_text": "3 km/h", "is_correct": false},
+        {"option_text": "4 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Downstream speed = 8/1 = 8 km/h. Upstream speed = 8/2 = 4 km/h. Stream speed = (Downstream−Upstream)/2 = (8−4)/2 = 2 km/h. Boat speed = (8+4)/2 = 6 km/h. Verify: 6+2=8 ✓; 6−2=4 ✓. Trap: 4 = upstream speed (not stream speed); 8 = downstream speed (not stream speed).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00009",
+      "stem": "A boat goes 30 km upstream and 44 km downstream in 10 hours. It also covers 40 km upstream and 55 km downstream in 13 hours. Find the speed of the boat in still water.",
+      "options": [
+        {"option_text": "5 km/h", "is_correct": false},
+        {"option_text": "6 km/h", "is_correct": false},
+        {"option_text": "8 km/h", "is_correct": true},
+        {"option_text": "11 km/h", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let upstream speed=a, downstream=b. 30/a+44/b=10 ...(1); 40/a+55/b=13 ...(2). Multiply (1)×4−(2)×3: (120/a+176/b)−(120/a+165/b)=40−39 → 11/b=1 → b=11 km/h. Substitute in (1): 30/a+4=10 → 30/a=6 → a=5 km/h. Boat speed=(a+b)/2=(5+11)/2=8 km/h. Stream=(11−5)/2=3 km/h. Verify: 30/5+44/11=6+4=10 ✓; 40/5+55/11=8+5=13 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_BOATS_STREAMS_W13_B1_00010",
+      "stem": "A motor boat takes 2 hours more to travel 45 km against the current than with it. If the speed of the current is 3 km/h, what is the boat's speed in still water?",
+      "options": [
+        {"option_text": "9 km/h", "is_correct": false},
+        {"option_text": "10 km/h", "is_correct": false},
+        {"option_text": "12 km/h", "is_correct": true},
+        {"option_text": "15 km/h", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let boat speed=u. 45/(u−3)−45/(u+3)=2. 45[(u+3)−(u−3)]=2(u−3)(u+3). 45×6=2(u²−9). 270=2u²−18. 2u²=288. u²=144. u=12 km/h. Verify: upstream=9 km/h, time=5h; downstream=15 km/h, time=3h; difference=2h ✓. Trap: 9 = upstream speed (u−3=9); 15 = downstream speed; 10 = common wrong guess from linear approach.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}

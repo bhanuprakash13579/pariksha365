@@ -1,0 +1,158 @@
+{
+  "topic_code": "QA_COORDINATE_GEOMETRY_W13_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Coordinate Geometry — Distance, Midpoint, Slope, Section Formula and Line Equations (W13 B1)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00001",
+      "stem": "Find the distance between the points (3, 4) and (0, 0).",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "√7", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Distance formula: d = √[(x₂−x₁)²+(y₂−y₁)²] = √[(0−3)²+(0−4)²] = √[9+16] = √25 = 5. This is the classic 3-4-5 Pythagorean triple — one of the most frequently tested coordinate pairs in SSC. Trap: 7 = 3+4 (wrong: adds instead of √(sum of squares); 4 = only the y-component; √7 = √(3+4) (wrong: adds under the root).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00002",
+      "stem": "Find the midpoint of the line segment joining (2, 6) and (8, 4).",
+      "options": [
+        {"option_text": "(4, 5)", "is_correct": false},
+        {"option_text": "(5, 5)", "is_correct": true},
+        {"option_text": "(6, 5)", "is_correct": false},
+        {"option_text": "(5, 4)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Midpoint formula: M = ((x₁+x₂)/2, (y₁+y₂)/2) = ((2+8)/2, (6+4)/2) = (10/2, 10/2) = (5, 5). Trap: (4,5) = ((2+6)/2, ...) — wrong: divides x₁+y₁ instead of x₁+x₂; (5,4) = correct x, wrong y-coordinate; (6,5) = uses (8/2+2=6 wrong).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00003",
+      "stem": "Find the slope of the line passing through (1, 2) and (3, 6).",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Slope m = (y₂−y₁)/(x₂−x₁) = (6−2)/(3−1) = 4/2 = 2. SHORTCUT: rise over run = how much y increases per unit increase in x. From x=1 to x=3, y goes from 2 to 6: rise=4, run=2, slope=2. Trap: 4 = (y₂−y₁) only (forgets to divide by run); 1 = (x₂−x₁)/rise (inverted ratio).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00004",
+      "stem": "Find the area of the triangle with vertices at (0, 0), (4, 0) and (0, 3).",
+      "options": [
+        {"option_text": "4 sq units", "is_correct": false},
+        {"option_text": "6 sq units", "is_correct": true},
+        {"option_text": "8 sq units", "is_correct": false},
+        {"option_text": "12 sq units", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. This is a right triangle with legs along the axes. Base = 4 (along x-axis), Height = 3 (along y-axis). Area = (1/2) × base × height = (1/2) × 4 × 3 = 6 sq units. Verify using the coordinate formula: (1/2)|x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)| = (1/2)|0(0−3)+4(3−0)+0(0−0)| = (1/2)|0+12+0| = 6 ✓. Trap: 12 = 4×3 (forgets the half); 8 = (4×3)/1.5 (wrong formula).",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00005",
+      "stem": "Point P divides the line segment joining A(1, 2) and B(6, 7) in the ratio 2:3 internally. Find P.",
+      "options": [
+        {"option_text": "(3, 4)", "is_correct": true},
+        {"option_text": "(4, 3)", "is_correct": false},
+        {"option_text": "(3, 5)", "is_correct": false},
+        {"option_text": "(2, 4)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Section formula (internal): P = ((m×x₂+n×x₁)/(m+n), (m×y₂+n×y₁)/(m+n)) where ratio = m:n = 2:3. P_x = (2×6+3×1)/(2+3) = (12+3)/5 = 15/5 = 3. P_y = (2×7+3×2)/(2+3) = (14+6)/5 = 20/5 = 4. P = (3, 4). Verify: AP:PB = distance from A to P : P to B. A=(1,2),P=(3,4): distance=√(4+4)=√8. P=(3,4),B=(6,7): distance=√(9+9)=√18. Ratio=√8:√18=2√2:3√2=2:3 ✓. Trap: (4,3) = x and y values swapped.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00006",
+      "stem": "Which quadrant contains the point (−5, 3)?",
+      "options": [
+        {"option_text": "First quadrant (I)", "is_correct": false},
+        {"option_text": "Second quadrant (II)", "is_correct": true},
+        {"option_text": "Third quadrant (III)", "is_correct": false},
+        {"option_text": "Fourth quadrant (IV)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Quadrant rules: I: (+,+); II: (−,+); III: (−,−); IV: (+,−). Point (−5, 3): x=−5 (negative), y=3 (positive) → Quadrant II. Mnemonic: start from positive x-axis, go anticlockwise: I (NE), II (NW), III (SW), IV (SE). The point (−5, 3) is in the northwest = Quadrant II. Trap: Quadrant III = confuses (−,−) with (−,+); Quadrant I = ignores the signs.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00007",
+      "stem": "Find the equation of the line with slope 3 passing through the point (2, 1).",
+      "options": [
+        {"option_text": "y = 3x + 1", "is_correct": false},
+        {"option_text": "y = 3x − 5", "is_correct": true},
+        {"option_text": "y = 3x + 5", "is_correct": false},
+        {"option_text": "y = 3x − 2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Point-slope form: y−y₁ = m(x−x₁) → y−1 = 3(x−2) → y−1 = 3x−6 → y = 3x−5. Verify: at (2,1): 1 = 3(2)−5 = 6−5 = 1 ✓. Trap: y=3x+5 = wrong sign (using y+y₁ instead of y−y₁); y=3x+1 = ignores the subtraction of m×x₁ (uses y=mx+y₁ incorrectly); y=3x−2 = computational error.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00008",
+      "stem": "Find the area of the triangle with vertices (1, 1), (4, 5) and (7, 2).",
+      "options": [
+        {"option_text": "9.5 sq units", "is_correct": false},
+        {"option_text": "10 sq units", "is_correct": false},
+        {"option_text": "10.5 sq units", "is_correct": true},
+        {"option_text": "12 sq units", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Area = (1/2)|x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)| = (1/2)|1(5−2)+4(2−1)+7(1−5)| = (1/2)|1×3+4×1+7×(−4)| = (1/2)|3+4−28| = (1/2)|−21| = 21/2 = 10.5 sq units. Verify: A(1,1), B(4,5), C(7,2) — using Shoelace formula: (1×5+4×2+7×1)−(1×4+5×7+2×1) = (5+8+7)−(4+35+2) = 20−41 = −21; area=|−21|/2=10.5 ✓. Trap: 12 = 4×3/1 (wrong formula); 9.5 = off by 1 in calculation.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00009",
+      "stem": "If the line y = 3x + k passes through the point (2, 7), find the value of k.",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Substitute (2, 7) into y = 3x + k: 7 = 3(2) + k → 7 = 6 + k → k = 1. Verify: line is y = 3x+1; at x=2: y=7 ✓. Trap: k=0 = 7=3×2+0=6≠7 (wrong); k=2 = 7=3×2+2=8≠7; k=3 = 7=3×2+3=9≠7. Always substitute the given point into the equation to find the constant.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    },
+    {
+      "id": "sgk_QA_COORDINATE_GEOMETRY_W13_B1_00010",
+      "stem": "Three points A(1, 3), B(4, 6) and C(7, 9) are given. What is the relationship between them?",
+      "options": [
+        {"option_text": "They form an equilateral triangle", "is_correct": false},
+        {"option_text": "They form a right-angled triangle", "is_correct": false},
+        {"option_text": "They are collinear (lie on the same line)", "is_correct": true},
+        {"option_text": "They form an isosceles triangle", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Test collinearity: Slope AB = (6−3)/(4−1) = 3/3 = 1. Slope BC = (9−6)/(7−4) = 3/3 = 1. Since slope AB = slope BC = 1, all three points lie on the same line with slope 1. The line is y = x+2 (verify: A: 3=1+2 ✓; B: 6=4+2 ✓; C: 9=7+2 ✓). Alternatively: Area of triangle = 0 for collinear points → (1/2)|1(6−9)+4(9−3)+7(3−6)| = (1/2)|−3+24−21| = (1/2)|0| = 0 ✓. Trap: If area=0, students may not recognise this means collinear.",
+      "staleness_risk": 0,
+      "answer_source": "generated"
+    }
+  ]
+}
