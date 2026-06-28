@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM_W14_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System — divisibility, remainders, unit digits",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_001",
+      "stem": "The unit digit of 7^59 is:",
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Unit digits of 7 cycle as 7,9,3,1 (period 4). 59 mod 4 = 3 ⇒ third term = 3. **Short Trick:** divide the power by 4 and read the cycle position.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_002",
+      "stem": "The largest four-digit number exactly divisible by 88 is:",
+      "options": [
+        {
+          "option_text": "9944",
+          "is_correct": true
+        },
+        {
+          "option_text": "9988",
+          "is_correct": false
+        },
+        {
+          "option_text": "9900",
+          "is_correct": false
+        },
+        {
+          "option_text": "9856",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "9999 ÷ 88 = 113.6…, so 113 × 88 = 9944. The 9856 trap is 112 × 88 (one multiple too low).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_003",
+      "stem": "The remainder when 17^23 is divided by 16 is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "17 ≡ 1 (mod 16), so 17^23 ≡ 1^23 = 1. Trap 0 assumes clean divisibility.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_004",
+      "stem": "The smallest three-digit number divisible by both 5 and 8 is:",
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": true
+        },
+        {
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "option_text": "160",
+          "is_correct": false
+        },
+        {
+          "option_text": "105",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "LCM(5,8) = 40; smallest 3-digit multiple of 40 is 120. Trap 105 is divisible by 5 but not 8; 100 is not divisible by 8.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_005",
+      "stem": "The sum of the first 25 natural numbers is:",
+      "options": [
+        {
+          "option_text": "325",
+          "is_correct": true
+        },
+        {
+          "option_text": "350",
+          "is_correct": false
+        },
+        {
+          "option_text": "300",
+          "is_correct": false
+        },
+        {
+          "option_text": "625",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "n(n+1)/2 = 25·26/2 = 325. Trap 625 = 25² (sum of an A.P. confused with a square).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_006",
+      "stem": "The HCF of 1.08, 0.36 and 0.90 is:",
+      "options": [
+        {
+          "option_text": "0.18",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.36",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.06",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.12",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Treat as 108, 36, 90 ⇒ HCF = 18 ⇒ 0.18. Trap 0.36 is the largest common-looking value, not the HCF.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_007",
+      "stem": "A number divided by 13 leaves remainder 7. When twice that number is divided by 13, the remainder is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Number = 13k+7 ⇒ 2(13k+7) = 26k+14 = 13(2k+1)+1, remainder 1. Trap 14 forgets to reduce mod 13; trap 2 just doubles the digit.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_008",
+      "stem": "The unit digit of 1! + 2! + 3! + … + 10! is:",
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "1!+2!+3!+4! = 33 (unit 3); every factorial from 5! onward ends in 0. So the unit digit is 3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_009",
+      "stem": "The remainder when 2^100 is divided by 7 is:",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "2³ = 8 ≡ 1 (mod 7). 100 = 3·33 + 1, so 2^100 ≡ 1^33·2 = 2. Trap 4 stops at 2² ; trap 1 forgets the leftover power.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_W14_B2_010",
+      "stem": "The number of trailing zeros in 100! is:",
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Count factors of 5: ⌊100/5⌋ + ⌊100/25⌋ = 20 + 4 = 24. Trap 20 misses the second-order multiples of 25.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "topic_code": "RSN_SYLLOGISM_W14_B1",
+  "subject": "Reasoning",
+  "topic": "Syllogism — statements and conclusions",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_001",
+      "stem": "Statements: All cats are dogs. All dogs are animals. Conclusions: I. All cats are animals. II. Some animals are cats.",
+      "options": [
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "All cats→dogs→animals, so I follows. Since all cats are animals, some animals are cats (conversion), so II follows. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_002",
+      "stem": "Statements: All roses are flowers. Some flowers are red. Conclusions: I. Some roses are red. II. Some red things are flowers.",
+      "options": [
+        {
+          "option_text": "Only II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "The red flowers need not be roses, so I does not follow. II is the valid conversion of 'some flowers are red'. Only II follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_003",
+      "stem": "Statements: No man is a machine. All machines are tools. Conclusions: I. Some tools are not men. II. No tool is a man.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Machines are tools and no machine is a man, so those tools are not men ⇒ I follows. Some other tools could be men, so II ('no tool is a man') is not certain.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_004",
+      "stem": "Statements: All books are pens. No pen is a pencil. Conclusions: I. No book is a pencil. II. Some pens are books.",
+      "options": [
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "All books are pens and no pen is a pencil ⇒ no book is a pencil (I follows). 'All books are pens' converts to 'some pens are books' (II follows).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_005",
+      "stem": "Statements: Some doctors are lawyers. All lawyers are rich. Conclusions: I. Some doctors are rich. II. All doctors are rich.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "The doctors who are lawyers must be rich ⇒ some doctors are rich (I follows). Nothing forces every doctor to be rich, so II fails.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_006",
+      "stem": "Statements: All A are B. Some B are C. Conclusions: I. Some A are C. II. Some C are A.",
+      "options": [
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "There is no definite link between A and C: the B's that are C need not include any A. Neither conclusion follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_007",
+      "stem": "Statements: Some keys are locks. No lock is a door. Conclusions: I. Some keys are not doors. II. Some keys are doors.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either I or II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "The keys that are locks cannot be doors ⇒ some keys are not doors (I definitely follows). II is only a possibility, so it does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_008",
+      "stem": "Statements: All pens are red. All red things are bright. Some bright things are dull. Conclusions: I. All pens are bright. II. Some pens are dull.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "All pens→red→bright, so I follows. 'Some bright are dull' does not pin the dull ones onto pens, so II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_009",
+      "stem": "Statements: Some stones are gems. All gems are precious. No precious thing is cheap. Conclusions: I. Some stones are precious. II. Some stones are not cheap.",
+      "options": [
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Some stones are gems and all gems are precious ⇒ some stones are precious (I). Those precious stones cannot be cheap ⇒ some stones are not cheap (II). Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W14_B1_010",
+      "stem": "Statements: All cups are plates. Some plates are bowls. Conclusions: I. Some cups are bowls. II. Some cups are not bowls.",
+      "options": [
+        {
+          "option_text": "Either I or II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Neither is individually certain, but together I and II exhaust all cases (a cup is either a bowl or not) and the middle term allows both — a complementary I–O pair ⇒ either I or II follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-06-29",
+      "generated_at": "2026-06-29T00:00:00+00:00"
+    }
+  ]
+}
