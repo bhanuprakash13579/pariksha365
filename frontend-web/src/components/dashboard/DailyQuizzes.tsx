@@ -6,6 +6,29 @@ const fmtTime = (secs: number) => {
     const s = secs % 60;
     return `${m}:${s.toString().padStart(2, '0')}`;
 };
+
+// Clean up a topic label for display: drop the verbose descriptive tail
+// (e.g. "Number System — divisibility, remainders…" -> "Number System") and cap length.
+const shortTopic = (t?: string): string => {
+    if (!t) return '';
+    let s = t.split(/[—–(:]/)[0].trim();
+    if (s.length > 30) s = s.slice(0, 29).trimEnd() + '…';
+    return s;
+};
+
+// De-duplicate weak topics by subject + cleaned topic so variant topic_codes
+// (e.g. "…_W14_B1", "…_W15_B3") don't show as separate near-identical pills.
+const dedupeWeakTopics = (list: any[]): any[] => {
+    const seen = new Set<string>();
+    const out: any[] = [];
+    for (const wt of list || []) {
+        const key = `${(wt.subject || '').toLowerCase()}|${shortTopic(wt.topic).toLowerCase()}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push(wt);
+    }
+    return out;
+};
 import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 import { PrivateModuleQuizzes } from './PrivateModuleQuizzes';
 
@@ -38,14 +61,15 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     // Quiz session state
     const [activeQuiz, setActiveQuiz] = useState<any>(null); // { subject, questions, current, answers, submitted, scorecard, sessionId, durationSecs }
 
-    // Configurable quiz settings (default 10 questions, 10 minutes). Users can raise
-    // this to e.g. 25 questions / 15 minutes for an SSC-CGL-style session.
-    const [quizCount, setQuizCount] = useState(10);
-    const [quizMinutes, setQuizMinutes] = useState(10);
+    // Configurable quiz settings — default 10 questions / 5 minutes. Fully free-form
+    // (any count, any time). Persisted in localStorage so the Settings page and the
+    // quiz share one source of truth.
+    const [quizCount, setQuizCount] = useState(() => Number(localStorage.getItem('quizCount')) || 10);
+    const [quizMinutes, setQuizMinutes] = useState(() => Number(localStorage.getItem('quizMinutes')) || 5);
     // Raw string values for the inputs — lets you freely backspace/type
     // without the value snapping mid-keystroke. Clamped on blur.
-    const [quizCountStr, setQuizCountStr] = useState('10');
-    const [quizMinutesStr, setQuizMinutesStr] = useState('10');
+    const [quizCountStr, setQuizCountStr] = useState(() => String(Number(localStorage.getItem('quizCount')) || 10));
+    const [quizMinutesStr, setQuizMinutesStr] = useState(() => String(Number(localStorage.getItem('quizMinutes')) || 5));
     const [timeLeft, setTimeLeft] = useState<number | null>(null);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -474,6 +498,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                                 const clamped = isNaN(n) ? 1 : Math.max(1, Math.min(100, n));
                                 setQuizCount(clamped);
                                 setQuizCountStr(String(clamped));
+                                localStorage.setItem('quizCount', String(clamped));
                             }}
                             className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
                         />
@@ -488,14 +513,15 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                                 const clamped = isNaN(n) ? 1 : Math.max(1, Math.min(180, n));
                                 setQuizMinutes(clamped);
                                 setQuizMinutesStr(String(clamped));
+                                localStorage.setItem('quizMinutes', String(clamped));
                             }}
                             className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
                         />
                     </div>
                     <button
-                        onClick={() => { setQuizCount(10); setQuizMinutes(10); setQuizCountStr('10'); setQuizMinutesStr('10'); }}
+                        onClick={() => { setQuizCount(10); setQuizMinutes(5); setQuizCountStr('10'); setQuizMinutesStr('5'); localStorage.setItem('quizCount', '10'); localStorage.setItem('quizMinutes', '5'); }}
                         className="text-xs font-bold px-3 py-2 rounded-lg border bg-white text-gray-600 border-gray-300 hover:border-orange-300 transition-colors">
-                        Reset to 10 / 10 min
+                        Reset to 10 / 5 min
                     </button>
                 </div>
                 <p className="text-[11px] text-gray-400 mt-3">
@@ -522,16 +548,16 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                             </div>
                         </div>
 
-                        {/* Weak topic pills */}
+                        {/* Weak topic pills — deduped, capped, and length-limited */}
                         <div className="flex flex-wrap gap-2 mb-6">
-                            {weakQuiz.weak_topics.map((wt: any, idx: number) => (
-                                <div key={idx} className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-orange-200 text-sm">
-                                    <div className={`w-2 h-2 rounded-full ${wt.accuracy < 40 ? 'bg-red-500' : 'bg-orange-400'}`}></div>
-                                    <span className="font-medium text-gray-700">{wt.subject}</span>
-                                    {wt.topic && wt.topic !== 'General' && (
-                                        <span className="text-gray-400">→ {wt.topic}</span>
+                            {dedupeWeakTopics(weakQuiz.weak_topics).slice(0, 4).map((wt: any, idx: number) => (
+                                <div key={idx} className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-orange-200 text-sm max-w-full" title={`${wt.subject}${wt.topic && wt.topic !== 'General' ? ' → ' + wt.topic : ''} (${wt.accuracy}%)`}>
+                                    <div className={`w-2 h-2 rounded-full flex-shrink-0 ${wt.accuracy < 40 ? 'bg-red-500' : 'bg-orange-400'}`}></div>
+                                    <span className="font-medium text-gray-700 whitespace-nowrap">{wt.subject}</span>
+                                    {wt.topic && shortTopic(wt.topic) && wt.topic !== 'General' && (
+                                        <span className="text-gray-400 truncate max-w-[180px]">→ {shortTopic(wt.topic)}</span>
                                     )}
-                                    <span className={`font-bold ${wt.accuracy < 40 ? 'text-red-600' : 'text-orange-600'}`}>
+                                    <span className={`font-bold flex-shrink-0 ${wt.accuracy < 40 ? 'text-red-600' : 'text-orange-600'}`}>
                                         {wt.accuracy}%
                                     </span>
                                 </div>
