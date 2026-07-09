@@ -42,6 +42,10 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     // this to e.g. 25 questions / 15 minutes for an SSC-CGL-style session.
     const [quizCount, setQuizCount] = useState(10);
     const [quizMinutes, setQuizMinutes] = useState(10);
+    // Raw string values for the inputs — lets you freely backspace/type
+    // without the value snapping mid-keystroke. Clamped on blur.
+    const [quizCountStr, setQuizCountStr] = useState('10');
+    const [quizMinutesStr, setQuizMinutesStr] = useState('10');
     const [timeLeft, setTimeLeft] = useState<number | null>(null);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -463,27 +467,39 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                     <div>
                         <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Questions</label>
                         <input
-                            type="number" min={5} max={100} value={quizCount}
-                            onChange={(e) => setQuizCount(Math.max(5, Math.min(100, Number(e.target.value) || 10)))}
+                            type="number" min={1} max={100} value={quizCountStr}
+                            onChange={(e) => setQuizCountStr(e.target.value)}
+                            onBlur={(e) => {
+                                const n = parseInt(e.target.value, 10);
+                                const clamped = isNaN(n) ? 1 : Math.max(1, Math.min(100, n));
+                                setQuizCount(clamped);
+                                setQuizCountStr(String(clamped));
+                            }}
                             className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
                         />
                     </div>
                     <div>
                         <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Time (minutes)</label>
                         <input
-                            type="number" min={1} max={180} value={quizMinutes}
-                            onChange={(e) => setQuizMinutes(Math.max(1, Math.min(180, Number(e.target.value) || 10)))}
+                            type="number" min={1} max={180} value={quizMinutesStr}
+                            onChange={(e) => setQuizMinutesStr(e.target.value)}
+                            onBlur={(e) => {
+                                const n = parseInt(e.target.value, 10);
+                                const clamped = isNaN(n) ? 1 : Math.max(1, Math.min(180, n));
+                                setQuizMinutes(clamped);
+                                setQuizMinutesStr(String(clamped));
+                            }}
                             className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
                         />
                     </div>
                     <button
-                        onClick={() => { setQuizCount(10); setQuizMinutes(10); }}
+                        onClick={() => { setQuizCount(10); setQuizMinutes(10); setQuizCountStr('10'); setQuizMinutesStr('10'); }}
                         className="text-xs font-bold px-3 py-2 rounded-lg border bg-white text-gray-600 border-gray-300 hover:border-orange-300 transition-colors">
                         Reset to 10 / 10 min
                     </button>
                 </div>
                 <p className="text-[11px] text-gray-400 mt-3">
-                    Set any number of questions and time you like (e.g. 15 questions in 5 minutes). Each quiz is
+                    Set any number of questions and time you like (e.g. 9 questions in 4 minutes). Each quiz is
                     auto-balanced to 30% easy · 30% medium · 40% hard and spreads across more topics as you add questions.
                 </p>
             </div>
