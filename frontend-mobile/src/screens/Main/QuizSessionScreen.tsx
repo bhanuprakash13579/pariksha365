@@ -39,9 +39,11 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     const {
         subject, limit = 10, title = 'Daily Quiz',
         moduleSlug, moduleTopic, weakTopicMode = false, wrongPracticeMode = false,
+        durationSecs,
     } = route.params || {};
 
-    const QUIZ_DURATION = 5 * 60;
+    // Configurable from the launch screen; falls back to 5 minutes.
+    const QUIZ_DURATION = durationSecs && durationSecs > 0 ? durationSecs : 5 * 60;
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [currentIdx, setCurrentIdx] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number | null>>({});

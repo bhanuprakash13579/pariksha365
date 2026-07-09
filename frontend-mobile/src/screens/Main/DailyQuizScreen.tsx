@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, TextInput } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { styles, COLORS } from '../../styles/theme';
 import { QuizAPI, PrivateModuleAPI } from '../../services/api';
@@ -10,6 +10,9 @@ export default function DailyQuizScreen({ navigation }: any) {
     const [weakQuiz, setWeakQuiz] = useState<any>(null);
     const [privateModules, setPrivateModules] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    // Configurable quiz size & time (default 10 questions / 10 minutes).
+    const [quizCount, setQuizCount] = useState(10);
+    const [quizMinutes, setQuizMinutes] = useState(10);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -187,16 +190,43 @@ export default function DailyQuizScreen({ navigation }: any) {
 
                 {/* ── PATHWAY 3: Cover More Ground ── */}
                 <Text style={[styles.sectionTitle, { marginBottom: 4 }]}>📚 Cover More Ground</Text>
-                <Text style={{ color: '#6b7280', fontSize: 13, marginBottom: 16 }}>
-                    Pick a subject — 10 questions spread across different topics.
+                <Text style={{ color: '#6b7280', fontSize: 13, marginBottom: 12 }}>
+                    Pick a subject — {quizCount} questions ({quizMinutes} min) spread across topics.
                 </Text>
+
+                {/* Quiz settings: questions & time */}
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-end', gap: 12, backgroundColor: '#fff', borderRadius: 14, borderWidth: 1, borderColor: '#f3f4f6', padding: 14, marginBottom: 16 }}>
+                    <View>
+                        <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>QUESTIONS</Text>
+                        <TextInput
+                            keyboardType="number-pad"
+                            value={String(quizCount)}
+                            onChangeText={(t) => setQuizCount(Math.max(5, Math.min(100, parseInt(t) || 0)))}
+                            style={{ width: 70, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: '#1f2937' }}
+                        />
+                    </View>
+                    <View>
+                        <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>TIME (MIN)</Text>
+                        <TextInput
+                            keyboardType="number-pad"
+                            value={String(quizMinutes)}
+                            onChangeText={(t) => setQuizMinutes(Math.max(1, Math.min(180, parseInt(t) || 0)))}
+                            style={{ width: 70, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: '#1f2937' }}
+                        />
+                    </View>
+                    <TouchableOpacity
+                        onPress={() => { setQuizCount(10); setQuizMinutes(10); }}
+                        style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 10, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff' }}>
+                        <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280' }}>Reset 10 / 10</Text>
+                    </TouchableOpacity>
+                </View>
 
                 <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 12 }}>
                     {categories.map((cat: any, idx: number) => (
                         <TouchableOpacity
                             key={idx}
                             disabled={!cat.has_questions}
-                            onPress={() => navigation.navigate('QuizSession', { subject: cat.key, title: cat.name, limit: 10 })}
+                            onPress={() => navigation.navigate('QuizSession', { subject: cat.key, title: cat.name, limit: quizCount, durationSecs: quizMinutes * 60 })}
                             activeOpacity={0.75}
                             style={{
                                 width: '47%',

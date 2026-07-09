@@ -1,5 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Lock, ChevronRight } from 'lucide-react';
+
+const fmtTime = (secs: number) => {
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    return `${m}:${s.toString().padStart(2, '0')}`;
+};
 import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 import { PrivateModuleQuizzes } from './PrivateModuleQuizzes';
 
@@ -30,7 +36,14 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     const [activePrivateSlug, setActivePrivateSlug] = useState<string | null>(null);
 
     // Quiz session state
-    const [activeQuiz, setActiveQuiz] = useState<any>(null); // { subject, questions, current, answers, submitted, scorecard }
+    const [activeQuiz, setActiveQuiz] = useState<any>(null); // { subject, questions, current, answers, submitted, scorecard, sessionId, durationSecs }
+
+    // Configurable quiz settings (default 10 questions, 10 minutes). Users can raise
+    // this to e.g. 25 questions / 15 minutes for an SSC-CGL-style session.
+    const [quizCount, setQuizCount] = useState(10);
+    const [quizMinutes, setQuizMinutes] = useState(10);
+    const [timeLeft, setTimeLeft] = useState<number | null>(null);
+    const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
     useEffect(() => {
         // Main quiz data — must never block on the private-module fetch.
@@ -62,15 +75,18 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     // Start a daily quiz for a category
     const startCategoryQuiz = async (subject: string) => {
         try {
-            const res = await QuizAPI.getDailyQuiz(subject, 10);
+            const res = await QuizAPI.getDailyQuiz(subject, quizCount);
             if (res.data.questions && res.data.questions.length > 0) {
+                setTimeLeft(quizMinutes * 60);
                 setActiveQuiz({
                     subject: res.data.subject,
                     questions: res.data.questions,
                     current: 0,
                     answers: {},
                     submitted: false,
-                    scorecard: null
+                    scorecard: null,
+                    sessionId: Date.now(),
+                    durationSecs: quizMinutes * 60,
                 });
             } else {
                 alert('No questions available for this category yet.');
@@ -84,13 +100,16 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     // Start weak-topic practice quiz
     const startWeakTopicPractice = async () => {
         if (weakQuiz?.questions && weakQuiz.questions.length > 0) {
+            setTimeLeft(quizMinutes * 60);
             setActiveQuiz({
                 subject: 'Weak Topics',
                 questions: weakQuiz.questions,
                 current: 0,
                 answers: {},
                 submitted: false,
-                scorecard: null
+                scorecard: null,
+                sessionId: Date.now(),
+                durationSecs: quizMinutes * 60,
             });
         }
     };
@@ -106,7 +125,8 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
 
     // Submit the quiz
     const submitQuiz = async () => {
-        if (!activeQuiz) return;
+        if (!activeQuiz || activeQuiz.submitted) return;
+        if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
         const answerPayload = activeQuiz.questions.map((q: any) => ({
             question_id: q.id,
             selected_option_index: activeQuiz.answers[q.id] !== undefined ? activeQuiz.answers[q.id] : null
@@ -128,6 +148,8 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
 
     // Exit quiz session
     const exitQuiz = () => {
+        if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
+        setTimeLeft(null);
         setActiveQuiz(null);
         // Refresh categories to get updated question counts
         QuizAPI.getCategories().then(res => {
@@ -135,6 +157,33 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
             setStreak(res.data.streak || null);
         });
     };
+
+    // Countdown timer for the active quiz session (parity with the mobile app).
+    useEffect(() => {
+        if (!activeQuiz || activeQuiz.submitted) {
+            if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
+            return;
+        }
+        timerRef.current = setInterval(() => {
+            setTimeLeft((prev) => {
+                if (prev === null) return prev;
+                if (prev <= 1) {
+                    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
+                    return 0;
+                }
+                return prev - 1;
+            });
+        }, 1000);
+        return () => { if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; } };
+    }, [activeQuiz?.sessionId, activeQuiz?.submitted]);
+
+    // Auto-submit when the time runs out.
+    useEffect(() => {
+        if (timeLeft === 0 && activeQuiz && !activeQuiz.submitted) {
+            submitQuiz();
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [timeLeft]);
 
     // ───── QUIZ SESSION VIEW ─────
     if (activeQuiz) {
@@ -254,8 +303,15 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                         <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
                         Exit Quiz
                     </button>
-                    <span className="text-sm font-bold text-gray-500">{activeQuiz.subject}</span>
-                    <span className="text-sm font-medium text-gray-500">{activeQuiz.current + 1} / {totalQ}</span>
+                    <span className="text-sm font-bold text-gray-500 truncate max-w-[35%]">{activeQuiz.subject}</span>
+                    <div className="flex items-center gap-3">
+                        {timeLeft !== null && (
+                            <span className={`text-sm font-bold px-2 py-0.5 rounded-md ${timeLeft < 60 ? 'bg-red-100 text-red-600' : 'bg-gray-100 text-gray-700'}`}>
+                                ⏱ {fmtTime(timeLeft)}
+                            </span>
+                        )}
+                        <span className="text-sm font-medium text-gray-500">{activeQuiz.current + 1} / {totalQ}</span>
+                    </div>
                 </div>
 
                 {/* Progress bar */}
@@ -400,6 +456,37 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                     )}
                 </div>
             )}
+
+            {/* Quiz settings — number of questions & time (applies to every quiz you start) */}
+            <div className="mb-8 bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
+                <div className="flex flex-wrap items-end gap-6">
+                    <div>
+                        <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Questions</label>
+                        <input
+                            type="number" min={5} max={100} value={quizCount}
+                            onChange={(e) => setQuizCount(Math.max(5, Math.min(100, Number(e.target.value) || 10)))}
+                            className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Time (minutes)</label>
+                        <input
+                            type="number" min={1} max={180} value={quizMinutes}
+                            onChange={(e) => setQuizMinutes(Math.max(1, Math.min(180, Number(e.target.value) || 10)))}
+                            className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
+                        />
+                    </div>
+                    <button
+                        onClick={() => { setQuizCount(10); setQuizMinutes(10); }}
+                        className="text-xs font-bold px-3 py-2 rounded-lg border bg-white text-gray-600 border-gray-300 hover:border-orange-300 transition-colors">
+                        Reset to 10 / 10 min
+                    </button>
+                </div>
+                <p className="text-[11px] text-gray-400 mt-3">
+                    Set any number of questions and time you like (e.g. 15 questions in 5 minutes). Each quiz is
+                    auto-balanced to 30% easy · 30% medium · 40% hard and spreads across more topics as you add questions.
+                </p>
+            </div>
 
             {/* Recommended Weak Topics Quiz */}
             {weakQuiz && weakQuiz.weak_topics && weakQuiz.weak_topics.length > 0 && (

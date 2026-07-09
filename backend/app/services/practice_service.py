@@ -182,9 +182,23 @@ async def get_daily_quiz(
 
     sorted_patterns = sorted(pattern_map.keys(), key=lambda k: (_priority(k), random.random()))
 
-    # Aim for ≥ min(limit, topic_count) different topics — 1 question each ideally
+    # Aim for ≥ min(limit, topic_count) different topics. When there are at least `limit`
+    # topics we take one question from each (maximum spread — more questions => more topics).
+    # When the subject has fewer topics than `limit`, we take a few from each (ceil division)
+    # so the quiz still fills from real topics rather than random backfill.
     patterns_to_use = sorted_patterns[:limit]
-    per_pattern = max(1, limit // len(patterns_to_use))
+    per_pattern = max(1, -(-limit // len(patterns_to_use)))  # ceil division
+
+    # Balanced difficulty plan across the whole quiz: 3 easy / 3 medium / 4 hard per 10
+    # (30% easy / 30% medium / 40% hard), scaled to `limit`. Each primary draw slot targets
+    # one difficulty; falls back to any difficulty if the topic has none of the target level,
+    # so the quiz always fills.
+    n_easy = round(limit * 0.30)
+    n_hard = round(limit * 0.40)
+    n_med = max(0, limit - n_easy - n_hard)
+    diff_plan = ["EASY"] * n_easy + ["MEDIUM"] * n_med + ["HARD"] * n_hard
+    random.shuffle(diff_plan)
+    diff_iter = iter(diff_plan)
 
     seen_ids: set = set()
     result_questions: list = []
@@ -208,15 +222,30 @@ async def get_daily_quiz(
                 QuizQuestion.topic_code == key,
             ]
 
-        # Primary draw — Phase A: unattempted questions (never seen, always preferred)
+        # Primary draw — Phase A: unattempted questions (never seen, always preferred),
+        # each slot targeting the next difficulty from the balanced plan.
         exclude_primary = excluded_from_primary | seen_ids
-        unatt_exclude = exclude_primary | all_attempted_ids
-        unatt_cond = list(base_cond)
-        if unatt_exclude:
-            unatt_cond.append(QuizQuestion.id.not_in(unatt_exclude))
-        primary_qs = list((await db.execute(
-            select(QuizQuestion).where(*unatt_cond).order_by(func.random()).limit(quota)
-        )).scalars().all())
+        primary_qs: list = []
+        for _slot in range(quota):
+            target_diff = next(diff_iter, None)
+            picked = None
+            # Try the target difficulty first, then fall back to any difficulty.
+            for diff_filter in ([target_diff] if target_diff else []) + [None]:
+                unatt_exclude = exclude_primary | all_attempted_ids | {q.id for q in primary_qs}
+                cond = list(base_cond)
+                if unatt_exclude:
+                    cond.append(QuizQuestion.id.not_in(unatt_exclude))
+                if diff_filter:
+                    cond.append(
+                        func.upper(func.coalesce(QuizQuestion.difficulty, "MEDIUM")) == diff_filter
+                    )
+                picked = (await db.execute(
+                    select(QuizQuestion).where(*cond).order_by(func.random()).limit(1)
+                )).scalars().first()
+                if picked:
+                    break
+            if picked:
+                primary_qs.append(picked)
 
         # Phase B: wrong/pending — attempted but never answered correctly, only fills gap
         if len(primary_qs) < quota:
@@ -251,17 +280,26 @@ async def get_daily_quiz(
                 result_questions.append(q)
                 already.add(q.id)
 
-    # Last resort: any question from the subject
+    # Last resort: fill from the subject. Prefer never-attempted questions to avoid
+    # showing repeats; only reuse already-attempted questions if nothing else is left.
     if len(result_questions) < limit:
         already = {q.id for q in result_questions}
-        any_cond = [_subj_match(canonical_subject)]
-        if already:
-            any_cond.append(QuizQuestion.id.not_in(already))
-        fillers = (await db.execute(
-            select(QuizQuestion).where(*any_cond)
-            .order_by(func.random()).limit(limit - len(result_questions))
-        )).scalars().all()
-        result_questions.extend(fillers)
+        for extra_exclude in (already | all_attempted_ids, already):
+            if len(result_questions) >= limit:
+                break
+            any_cond = [_subj_match(canonical_subject)]
+            if extra_exclude:
+                any_cond.append(QuizQuestion.id.not_in(extra_exclude))
+            fillers = (await db.execute(
+                select(QuizQuestion).where(*any_cond)
+                .order_by(func.random()).limit(limit - len(result_questions))
+            )).scalars().all()
+            for q in fillers:
+                if q.id not in already:
+                    result_questions.append(q)
+                    already.add(q.id)
+                    if len(result_questions) >= limit:
+                        break
 
     random.shuffle(result_questions)
     expanded = await _expand_passage_groups(db, result_questions[:limit])

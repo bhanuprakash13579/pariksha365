@@ -45,7 +45,7 @@ async def get_daily_quiz(
     subject: str,
     db: AsyncSession = Depends(get_db),
     user: User = Depends(get_current_user),
-    limit: int = Query(10, ge=1, le=30),
+    limit: int = Query(10, ge=1, le=100),
     bookmarked_ids: Optional[str] = Query(None, description="Comma-separated question UUIDs that are bookmarked — bypass mastery exclusion so they always repeat")
 ) -> Any:
     """Get a daily quiz for a specific subject category."""
