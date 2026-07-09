@@ -36,7 +36,16 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "package": "in.pariksha365.app",
-      "versionCode": 4
+      "versionCode": 4,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "category": ["DEFAULT", "BROWSABLE"],
+          "data": [
+            { "scheme": "com.googleusercontent.apps.592393648560-rpddhav13tiikcpgki71kvlegmi3s91c" }
+          ]
+        }
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
