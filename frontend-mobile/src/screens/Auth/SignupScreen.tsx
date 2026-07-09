@@ -9,7 +9,7 @@ import { styles } from '../../styles/theme';
 
 const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
 const GOOGLE_WEB_CLIENT_ID = "592393648560-70fdb8qfubom1sllvmb29ststk1h1k0v.apps.googleusercontent.com";
-const GOOGLE_ANDROID_CLIENT_ID = "592393648560-tk26aam18hnsd38dskfkt64td6l23ebv.apps.googleusercontent.com";
+const GOOGLE_ANDROID_CLIENT_ID = "592393648560-rpddhav13tiikcpgki71kvlegmi3s91c.apps.googleusercontent.com";
 
 export default function SignupScreen({ navigation }: any) {
     const [name, setName] = useState('');

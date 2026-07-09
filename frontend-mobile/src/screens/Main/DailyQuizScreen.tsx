@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, TextInput } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { styles, COLORS } from '../../styles/theme';
 import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 
@@ -10,9 +11,35 @@ export default function DailyQuizScreen({ navigation }: any) {
     const [weakQuiz, setWeakQuiz] = useState<any>(null);
     const [privateModules, setPrivateModules] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
-    // Configurable quiz size & time (default 10 questions / 10 minutes).
+    // Configurable quiz size & time (default 10 questions / 5 minutes). Fully free-form
+    // (any count >=1, any time >=1). Raw string state so typing never snaps mid-keystroke;
+    // clamped only when editing ends. Persisted in AsyncStorage so the chosen values stay.
     const [quizCount, setQuizCount] = useState(10);
-    const [quizMinutes, setQuizMinutes] = useState(10);
+    const [quizMinutes, setQuizMinutes] = useState(5);
+    const [quizCountStr, setQuizCountStr] = useState('10');
+    const [quizMinutesStr, setQuizMinutesStr] = useState('5');
+
+    useEffect(() => {
+        AsyncStorage.multiGet(['quizCount', 'quizMinutes']).then(([[, c], [, m]]) => {
+            const cn = parseInt(c || '', 10);
+            const mn = parseInt(m || '', 10);
+            if (!isNaN(cn) && cn > 0) { setQuizCount(cn); setQuizCountStr(String(cn)); }
+            if (!isNaN(mn) && mn > 0) { setQuizMinutes(mn); setQuizMinutesStr(String(mn)); }
+        }).catch(() => { });
+    }, []);
+
+    const commitCount = (t: string) => {
+        const n = parseInt(t, 10);
+        const v = isNaN(n) ? 10 : Math.max(1, Math.min(100, n));
+        setQuizCount(v); setQuizCountStr(String(v));
+        AsyncStorage.setItem('quizCount', String(v)).catch(() => { });
+    };
+    const commitMinutes = (t: string) => {
+        const n = parseInt(t, 10);
+        const v = isNaN(n) ? 5 : Math.max(1, Math.min(180, n));
+        setQuizMinutes(v); setQuizMinutesStr(String(v));
+        AsyncStorage.setItem('quizMinutes', String(v)).catch(() => { });
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -200,8 +227,10 @@ export default function DailyQuizScreen({ navigation }: any) {
                         <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>QUESTIONS</Text>
                         <TextInput
                             keyboardType="number-pad"
-                            value={String(quizCount)}
-                            onChangeText={(t) => setQuizCount(Math.max(5, Math.min(100, parseInt(t) || 0)))}
+                            value={quizCountStr}
+                            onChangeText={setQuizCountStr}
+                            onEndEditing={(e) => commitCount(e.nativeEvent.text)}
+                            onBlur={() => commitCount(quizCountStr)}
                             style={{ width: 70, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: '#1f2937' }}
                         />
                     </View>
@@ -209,15 +238,17 @@ export default function DailyQuizScreen({ navigation }: any) {
                         <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>TIME (MIN)</Text>
                         <TextInput
                             keyboardType="number-pad"
-                            value={String(quizMinutes)}
-                            onChangeText={(t) => setQuizMinutes(Math.max(1, Math.min(180, parseInt(t) || 0)))}
+                            value={quizMinutesStr}
+                            onChangeText={setQuizMinutesStr}
+                            onEndEditing={(e) => commitMinutes(e.nativeEvent.text)}
+                            onBlur={() => commitMinutes(quizMinutesStr)}
                             style={{ width: 70, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: '#1f2937' }}
                         />
                     </View>
                     <TouchableOpacity
-                        onPress={() => { setQuizCount(10); setQuizMinutes(10); }}
+                        onPress={() => { commitCount('10'); commitMinutes('5'); }}
                         style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 10, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff' }}>
-                        <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280' }}>Reset 10 / 10</Text>
+                        <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280' }}>Reset 10 / 5</Text>
                     </TouchableOpacity>
                 </View>
 

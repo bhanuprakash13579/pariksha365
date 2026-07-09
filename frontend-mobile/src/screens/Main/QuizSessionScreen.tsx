@@ -43,7 +43,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     } = route.params || {};
 
     // Configurable from the launch screen; falls back to 5 minutes.
-    const QUIZ_DURATION = durationSecs && durationSecs > 0 ? durationSecs : 5 * 60;
+    const QUIZ_DURATION: number = durationSecs && durationSecs > 0 ? durationSecs : 5 * 60;
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [currentIdx, setCurrentIdx] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number | null>>({});
