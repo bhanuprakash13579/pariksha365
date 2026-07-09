@@ -73,6 +73,21 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     const [timeLeft, setTimeLeft] = useState<number | null>(null);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+    // Bookmarked question IDs (parity with mobile). Persisted in localStorage; passed to
+    // the daily-quiz API so bookmarked questions bypass mastery-exclusion and can recur.
+    const [bookmarks, setBookmarks] = useState<Set<string>>(() => {
+        try { return new Set<string>(JSON.parse(localStorage.getItem('quizBookmarks') || '[]')); }
+        catch { return new Set<string>(); }
+    });
+    const toggleBookmark = (qid: string) => {
+        setBookmarks((prev) => {
+            const next = new Set(prev);
+            if (next.has(qid)) next.delete(qid); else next.add(qid);
+            localStorage.setItem('quizBookmarks', JSON.stringify(Array.from(next)));
+            return next;
+        });
+    };
+
     useEffect(() => {
         // Main quiz data — must never block on the private-module fetch.
         const fetchData = async () => {
@@ -103,7 +118,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     // Start a daily quiz for a category
     const startCategoryQuiz = async (subject: string) => {
         try {
-            const res = await QuizAPI.getDailyQuiz(subject, quizCount);
+            const res = await QuizAPI.getDailyQuiz(subject, quizCount, Array.from(bookmarks));
             if (res.data.questions && res.data.questions.length > 0) {
                 setTimeLeft(quizMinutes * 60);
                 setActiveQuiz({
@@ -338,6 +353,12 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                                 ⏱ {fmtTime(timeLeft)}
                             </span>
                         )}
+                        <button
+                            onClick={() => toggleBookmark(q.id)}
+                            title={bookmarks.has(q.id) ? 'Remove bookmark' : 'Bookmark this question'}
+                            className={`text-lg leading-none transition-colors ${bookmarks.has(q.id) ? 'text-orange-500' : 'text-gray-300 hover:text-orange-400'}`}>
+                            {bookmarks.has(q.id) ? '★' : '☆'}
+                        </button>
                         <span className="text-sm font-medium text-gray-500">{activeQuiz.current + 1} / {totalQ}</span>
                     </div>
                 </div>
