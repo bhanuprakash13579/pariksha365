@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number system — divisibility, remainders, digit problems",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_001",
+      "stem": "For the three-digit number 3x5 to be divisible by 9, the digit x must be:",
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "3 + x + 5 must be a multiple of 9 ⇒ x = 1. **Short Trick:** a number is divisible by 9 iff its digit sum is.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_002",
+      "stem": "The largest three-digit number divisible by 7 is:",
+      "options": [
+        {
+          "option_text": "999",
+          "is_correct": false
+        },
+        {
+          "option_text": "987",
+          "is_correct": false
+        },
+        {
+          "option_text": "994",
+          "is_correct": true
+        },
+        {
+          "option_text": "1001",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "999 − (999 mod 7) = 999 − 5 = 994. **Short Trick:** subtract the remainder of 999 ÷ 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_003",
+      "stem": "The remainder when 2⁵⁶ is divided by 3 is:",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "2 ≡ −1 (mod 3) ⇒ 2⁵⁶ ≡ 1. **Short Trick:** use 2 ≡ −1 (mod 3).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_004",
+      "stem": "The count of numbers from 1 to 100 that are divisible by both 3 and 4 is:",
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Divisible by 12 ⇒ ⌊100/12⌋ = 8. **Short Trick:** count the multiples of the LCM.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_005",
+      "stem": "The units digit of 234 × 567 × 678 is:",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Multiply only the units: 4 × 7 × 8 = 224 ⇒ 4. **Short Trick:** the units digit depends only on the units digits.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_006",
+      "stem": "A number when divided by 6 leaves remainder 4. The remainder when its square is divided by 6 is:",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "(6k+4)² leaves 16 mod 6 = 4. **Short Trick:** square the remainder, then reduce mod 6.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_007",
+      "stem": "The sum of all two-digit numbers is:",
+      "options": [
+        {
+          "option_text": "4500",
+          "is_correct": false
+        },
+        {
+          "option_text": "4905",
+          "is_correct": true
+        },
+        {
+          "option_text": "5050",
+          "is_correct": false
+        },
+        {
+          "option_text": "4950",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "10 to 99 is an AP of 90 terms ⇒ (10+99)×90/2 = 4905. **Short Trick:** AP sum = (n/2)(first + last).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_008",
+      "stem": "The number of digits x for which the three-digit number 5x2 is divisible by 3 is:",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "5 + x + 2 must be a multiple of 3 ⇒ x ∈ {2, 5, 8} ⇒ 3 values.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_009",
+      "stem": "The greatest number that divides 400, 435 and 541 leaving remainders 9, 10 and 14 respectively is:",
+      "options": [
+        {
+          "option_text": "19",
+          "is_correct": false
+        },
+        {
+          "option_text": "23",
+          "is_correct": false
+        },
+        {
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "option_text": "17",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "HCF(400−9, 435−10, 541−14) = HCF(391, 425, 527) = 17. **Short Trick:** take the HCF of (number − its remainder).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_DIVISIBILITY_W50_B2_010",
+      "stem": "The least number that must be subtracted from 1000 to make it divisible by 17 is:",
+      "options": [
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "14",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "1000 mod 17 = 14 ⇒ subtract 14. **Short Trick:** subtract the remainder of the division.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}
