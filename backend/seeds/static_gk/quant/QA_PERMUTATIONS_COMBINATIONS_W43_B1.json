@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_PERMUTATIONS_COMBINATIONS_W43_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Permutations & combinations — circular, restrictions, diagonals",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_001",
+      "stem": "The number of ways to seat 5 people around a circular table is:",
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Circular arrangements of n = (n−1)! = 4! = 24. **Short Trick:** fix one seat ⇒ (n−1)! arrangements around a circle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_002",
+      "stem": "The number of ways to arrange all the letters of the word DELHI is:",
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "720",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "5 distinct letters ⇒ 5! = 120.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_003",
+      "stem": "The number of ways in which 3 boys and 3 girls can sit in a row so that boys and girls alternate is:",
+      "options": [
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "144",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "72",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "2 patterns × 3! × 3! = 2×6×6 = 72. **Short Trick:** arrange each group (3!) and multiply by 2 for the two starting patterns.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_004",
+      "stem": "The number of ways to select 3 books out of 8 is:",
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "56",
+          "is_correct": true
+        },
+        {
+          "option_text": "112",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Selection ⇒ C(8,3) = 56. **Short Trick:** order doesn't matter ⇒ use C(n,r).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_005",
+      "stem": "The number of diagonals in a decagon (10 sides) is:",
+      "options": [
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "option_text": "35",
+          "is_correct": true
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "n(n−3)/2 = 10×7/2 = 35. **Short Trick:** diagonals of an n-gon = n(n−3)/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_006",
+      "stem": "The number of ways to seat 4 people in a row of 6 chairs is:",
+      "options": [
+        {
+          "option_text": "720",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "360",
+          "is_correct": true
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "P(6,4) = 6×5×4×3 = 360. **Short Trick:** arrangements = n!/(n−r)!.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_007",
+      "stem": "The number of handshakes when 12 people each shake hands once with every other is:",
+      "options": [
+        {
+          "option_text": "66",
+          "is_correct": true
+        },
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "132",
+          "is_correct": false
+        },
+        {
+          "option_text": "78",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "C(12,2) = 66. **Short Trick:** handshakes = C(n,2) = n(n−1)/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_008",
+      "stem": "The number of 3-digit numbers that can be formed from the digits 1–5 without repetition is:",
+      "options": [
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "125",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "5×4×3 = 60. **Short Trick:** fill each place with the shrinking count of digits.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_009",
+      "stem": "The number of distinct arrangements of the letters of the word BANANA is:",
+      "options": [
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "180",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "6!/(3!·2!) = 720/12 = 60 (three A's, two N's). **Short Trick:** divide n! by the factorials of the repeated-letter counts.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PERMUTATIONS_COMBINATIONS_W43_B1_010",
+      "stem": "The number of ways to form a committee of 2 men and 2 women from 5 men and 4 women is:",
+      "options": [
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C(5,2)×C(4,2) = 10×6 = 60. **Short Trick:** multiply the independent selections.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

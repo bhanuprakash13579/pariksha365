@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_PROBABILITY_MODELS_W44_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Probability — dice, cards, balls, at-least-one, union",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_001",
+      "stem": "The probability of getting a head when a fair coin is tossed once is:",
+      "options": [
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "One favourable outcome out of two ⇒ 1/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_002",
+      "stem": "The probability of getting an even number on a single throw of a die is:",
+      "options": [
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "Evens {2,4,6} ⇒ 3/6 = 1/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_003",
+      "stem": "Two dice are rolled together. The probability that the sum is 7 is:",
+      "options": [
+        {
+          "option_text": "1/6",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/12",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/36",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/9",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "6 favourable pairs out of 36 ⇒ 1/6. **Short Trick:** count favourable outcomes over 36.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_004",
+      "stem": "A card is drawn from a well-shuffled pack of 52. The probability that it is a king or a queen is:",
+      "options": [
+        {
+          "option_text": "1/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/13",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/26",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "(4 + 4)/52 = 8/52 = 2/13. **Short Trick:** add the counts of the mutually exclusive cards.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_005",
+      "stem": "A bag has 4 red and 6 blue balls. The probability of drawing a red ball is:",
+      "options": [
+        {
+          "option_text": "3/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/5",
+          "is_correct": true
+        },
+        {
+          "option_text": "4/6",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "4/10 = 2/5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_006",
+      "stem": "Two dice are thrown. The probability that the sum is greater than 9 is:",
+      "options": [
+        {
+          "option_text": "1/9",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6",
+          "is_correct": true
+        },
+        {
+          "option_text": "5/36",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/12",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Sums 10, 11, 12 give 3+2+1 = 6 outcomes ⇒ 6/36 = 1/6. **Short Trick:** count the high-sum outcomes over 36.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_007",
+      "stem": "A card is drawn from a pack of 52. The probability that it is a face card is:",
+      "options": [
+        {
+          "option_text": "4/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/26",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/13",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "12 face cards ⇒ 12/52 = 3/13. **Short Trick:** there are 12 face cards (J, Q, K × 4).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_008",
+      "stem": "Two balls are drawn together from a bag of 5 red and 3 green. The probability that both are red is:",
+      "options": [
+        {
+          "option_text": "5/14",
+          "is_correct": true
+        },
+        {
+          "option_text": "9/14",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/14",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/28",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "C(5,2)/C(8,2) = 10/28 = 5/14. **Short Trick:** P = C(favourable, 2) / C(total, 2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_009",
+      "stem": "The probability of getting at least one head in two tosses of a fair coin is:",
+      "options": [
+        {
+          "option_text": "3/4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "1 − P(no head) = 1 − 1/4 = 3/4. **Short Trick:** at least one = 1 − P(none).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROBABILITY_MODELS_W44_B2_010",
+      "stem": "A number is chosen at random from 1 to 25. The probability that it is a multiple of 3 or 5 is:",
+      "options": [
+        {
+          "option_text": "13/25",
+          "is_correct": false
+        },
+        {
+          "option_text": "11/25",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "12/25",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "Multiples of 3 (8) + of 5 (5) − of 15 (1) = 12 ⇒ 12/25. **Short Trick:** P(A∪B) = P(A) + P(B) − P(A∩B).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}
