@@ -9,10 +9,6 @@
       "stem": "Statements: All cats are animals. Some animals are wild. Conclusion: 'Some cats being wild is a possibility.'",
       "options": [
         {
-          "option_text": "Yes, it is a possibility",
-          "is_correct": true
-        },
-        {
           "option_text": "No, it is impossible",
           "is_correct": false
         },
@@ -23,9 +19,13 @@
         {
           "option_text": "Cannot say at all",
           "is_correct": false
+        },
+        {
+          "option_text": "Yes, it is a possibility",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "Cats are animals and some animals are wild; the wild animals could include cats, so the overlap is possible (not certain).",
       "staleness_risk": 0,
@@ -39,10 +39,6 @@
       "stem": "Statements: All A are B. No B is C. Conclusion: 'Some A being C is a possibility.'",
       "options": [
         {
-          "option_text": "No, it is impossible",
-          "is_correct": true
-        },
-        {
           "option_text": "Yes, it is a possibility",
           "is_correct": false
         },
@@ -53,9 +49,13 @@
         {
           "option_text": "Data inadequate",
           "is_correct": false
+        },
+        {
+          "option_text": "No, it is impossible",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "All A are B and no B is C ⇒ no A can be C, so the overlap is impossible.",
       "staleness_risk": 0,
@@ -99,12 +99,12 @@
       "stem": "Statements: All dogs are mammals. All mammals are animals. Conclusion: 'Some dogs are animals.'",
       "options": [
         {
-          "option_text": "Definitely true",
-          "is_correct": true
-        },
-        {
           "option_text": "Only a possibility",
           "is_correct": false
+        },
+        {
+          "option_text": "Definitely true",
+          "is_correct": true
         },
         {
           "option_text": "Impossible",
@@ -115,7 +115,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Dogs → mammals → animals, so all dogs are animals; hence 'some dogs are animals' is definitely true.",
       "staleness_risk": 0,
@@ -129,10 +129,6 @@
       "stem": "Statements: No A is B. All C are A. Conclusion: 'No C is B.'",
       "options": [
         {
-          "option_text": "Definitely true",
-          "is_correct": true
-        },
-        {
           "option_text": "Only a possibility",
           "is_correct": false
         },
@@ -141,11 +137,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Definitely true",
+          "is_correct": true
+        },
+        {
           "option_text": "Cannot say",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "All C are A and no A is B ⇒ no C is B; the conclusion is definitely true.",
       "staleness_risk": 0,
@@ -189,10 +189,6 @@
       "stem": "Statements: All M are N. Some N are O. Regarding M and O:",
       "options": [
         {
-          "option_text": "Both possibilities are valid",
-          "is_correct": true
-        },
-        {
           "option_text": "'Some M are O' is definite",
           "is_correct": false
         },
@@ -203,9 +199,13 @@
         {
           "option_text": "Neither is possible",
           "is_correct": false
+        },
+        {
+          "option_text": "Both possibilities are valid",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "The O's among N need not relate to M, so both 'some M are O' and 'no M is O' remain possible — neither is forced.",
       "staleness_risk": 0,
@@ -219,10 +219,6 @@
       "stem": "Statements: All A are B. All B are C. Conclusion: 'All C are A is a possibility.'",
       "options": [
         {
-          "option_text": "Yes, it is a possibility",
-          "is_correct": true
-        },
-        {
           "option_text": "No, it is impossible",
           "is_correct": false
         },
@@ -233,9 +229,13 @@
         {
           "option_text": "Cannot be determined",
           "is_correct": false
+        },
+        {
+          "option_text": "Yes, it is a possibility",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "Sets can coincide (A = B = C), so 'all C are A' is a valid possibility, though not certain.",
       "staleness_risk": 0,
@@ -249,10 +249,6 @@
       "stem": "Statements: No dog is a cat. Some cats are pets. Conclusion: 'Some pets are not dogs.'",
       "options": [
         {
-          "option_text": "Definitely true",
-          "is_correct": true
-        },
-        {
           "option_text": "Only a possibility",
           "is_correct": false
         },
@@ -261,11 +257,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Definitely true",
+          "is_correct": true
+        },
+        {
           "option_text": "Cannot say",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "The cats that are pets cannot be dogs (no dog is a cat), so 'some pets are not dogs' is definitely true.",
       "staleness_risk": 0,

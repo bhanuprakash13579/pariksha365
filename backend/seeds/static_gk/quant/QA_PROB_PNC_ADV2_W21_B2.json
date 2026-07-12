@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_PROB_PNC_ADV2_W21_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Probability & counting — new models",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_001",
+      "stem": "One card is drawn from a pack of 52. The probability that it is a spade or a king is:",
+      "options": [
+        {
+          "option_text": "17/52",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/13",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/13",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "P = (13 + 4 − 1)/52 = 16/52 = 4/13 (one card is both).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_002",
+      "stem": "A bag has 3 red and 2 green balls. Two are drawn without replacement. The probability of one red and one green is:",
+      "options": [
+        {
+          "option_text": "2/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6/25",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/5",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "(³C₁·²C₁)/⁵C₂ = 6/10 = 3/5. **Short Trick:** Use combinations: favourable C's / total C(n,2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_003",
+      "stem": "Two dice are rolled. The probability that their sum is a prime number is:",
+      "options": [
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/12",
+          "is_correct": true
+        },
+        {
+          "option_text": "7/18",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Prime sums 2,3,5,7,11 occur in 1+2+4+6+2 = 15 ways ⇒ 15/36 = 5/12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_004",
+      "stem": "A fair coin is tossed 3 times. The probability of getting at most one head is:",
+      "options": [
+        {
+          "option_text": "3/8",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "P(0 heads)+P(1 head) = 1/8 + 3/8 = 1/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_005",
+      "stem": "In how many ways can 5 boys and 3 girls sit in a row so that no two girls sit together?",
+      "options": [
+        {
+          "option_text": "2880",
+          "is_correct": false
+        },
+        {
+          "option_text": "14400",
+          "is_correct": true
+        },
+        {
+          "option_text": "720",
+          "is_correct": false
+        },
+        {
+          "option_text": "43200",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Boys 5! ways; girls fill 3 of 6 gaps: ⁶P₃ = 120 ⇒ 120·120 = 14400.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_006",
+      "stem": "The number of ways to distribute 10 identical balls into 3 distinct boxes (a box may be empty) is:",
+      "options": [
+        {
+          "option_text": "1000",
+          "is_correct": false
+        },
+        {
+          "option_text": "66",
+          "is_correct": true
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Stars and bars: C(10+3−1, 3−1) = C(12,2) = 66.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_007",
+      "stem": "From 6 men and 4 women, a committee of 3 with at least one woman can be formed in:",
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "80",
+          "is_correct": false
+        },
+        {
+          "option_text": "100",
+          "is_correct": true
+        },
+        {
+          "option_text": "64",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Total − no-woman = C(10,3) − C(6,3) = 120 − 20 = 100 ways. **Short Trick:** At least one = total C − none-women C.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_008",
+      "stem": "Five people are to be seated around a round table so that two particular people sit together. The number of ways is:",
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Treat the pair as one unit: (4−1)!·2! = 6·2 = 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_009",
+      "stem": "The number of arrangements of the letters of the word 'ALGEBRA' with both A's together is:",
+      "options": [
+        {
+          "option_text": "1440",
+          "is_correct": false
+        },
+        {
+          "option_text": "2520",
+          "is_correct": false
+        },
+        {
+          "option_text": "5040",
+          "is_correct": false
+        },
+        {
+          "option_text": "720",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Treat AA as one block ⇒ 6 distinct units ⇒ 6! = 720. **Short Trick:** Tie the two A's together (treat as one), arrange, divide by repeats.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PNC_ADV2_W21_B2_010",
+      "stem": "A number is chosen at random from 1 to 20. The probability that it is prime is:",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/10",
+          "is_correct": false
+        },
+        {
+          "option_text": "9/20",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/5",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Primes: 2,3,5,7,11,13,17,19 (8 numbers) ⇒ 8/20 = 2/5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

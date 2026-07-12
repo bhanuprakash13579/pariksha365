@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_NUMBER_ALGEBRA_DEEP_W26_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number theory & algebra — deeper new models",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_001",
+      "stem": "The highest power of 12 that divides 100! is:",
+      "options": [
+        {
+          "option_text": "48",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "option_text": "97",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "12 = 2²·3. Power of 2 in 100! = 97, of 3 = 48; 12^k needs 2^(2k), 3^k ⇒ k ≤ min(⌊97/2⌋, 48) = 48. **Short Trick:** Legendre's formula; the answer is limited by the prime in shortest supply.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_002",
+      "stem": "The unit digit of 7^(7^7) is:",
+      "options": [
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "7^7 ≡ 3 (mod 4); unit digits of 7 cycle 7,9,3,1 ⇒ position 3 ⇒ 3. **Short Trick:** Unit digits of 7 cycle 7,9,3,1 (period 4); reduce the exponent mod 4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_003",
+      "stem": "The HCF of (2¹⁰⁰ − 1) and (2¹²⁰ − 1) is:",
+      "options": [
+        {
+          "option_text": "2¹⁰ − 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2²²⁰ − 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2²⁰ − 1",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "gcd(2ᵐ−1, 2ⁿ−1) = 2^gcd(m,n) − 1 = 2²⁰ − 1 (gcd(100,120)=20).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_004",
+      "stem": "The remainder when 3¹⁰⁰ is divided by 7 is:",
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "By Fermat, 3⁶ ≡ 1 (mod 7); 100 = 6·16+4 ⇒ 3⁴ = 81 ≡ 4. **Short Trick:** Fermat: 3⁶ ≡ 1 (mod 7); reduce the exponent mod 6.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_005",
+      "stem": "The sum of all 4-digit numbers formed using the digits 1, 2, 3, 4 without repetition is:",
+      "options": [
+        {
+          "option_text": "6666",
+          "is_correct": false
+        },
+        {
+          "option_text": "60000",
+          "is_correct": false
+        },
+        {
+          "option_text": "66660",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Each digit appears 3! = 6 times per place ⇒ 6·(1+2+3+4)·1111 = 66660. **Short Trick:** Each digit hits each place (n−1)! times ⇒ sum = (n−1)!·(Σdigits)·(repunit).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_006",
+      "stem": "If x + y + z = 0, then x²/(yz) + y²/(zx) + z²/(xy) equals:",
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "−3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "x³+y³+z³ = 3xyz when x+y+z = 0 ⇒ dividing by xyz gives 3. **Short Trick:** If x+y+z=0 then this equals 3 (from x³+y³+z³=3xyz).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_007",
+      "stem": "If a = 2, b = 3, c = 5, then (a−b)³ + (b−c)³ + (c−a)³ equals:",
+      "options": [
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "option_text": "−18",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "When (a−b)+(b−c)+(c−a) = 0, the sum of cubes = 3(a−b)(b−c)(c−a) = 3(−1)(−2)(3) = 18. **Short Trick:** When the three terms sum to 0, their cubes sum to 3× their product.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_008",
+      "stem": "The sum of the coefficients in the expansion of (2x − 3y)⁵ is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "−1",
+          "is_correct": true
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "option_text": "−243",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Put x = y = 1: (2−3)⁵ = (−1)⁵ = −1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_009",
+      "stem": "How many factors of 360 are divisible by 6?",
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Such factors = 6·(divisors of 360/6 = 60) ⇒ number of divisors of 60 = 3·2·2 = 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_ALGEBRA_DEEP_W26_B1_010",
+      "stem": "The total number of squares on a standard 8×8 chessboard is:",
+      "options": [
+        {
+          "option_text": "64",
+          "is_correct": false
+        },
+        {
+          "option_text": "65",
+          "is_correct": false
+        },
+        {
+          "option_text": "204",
+          "is_correct": true
+        },
+        {
+          "option_text": "140",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "1² + 2² + … + 8² = 204.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

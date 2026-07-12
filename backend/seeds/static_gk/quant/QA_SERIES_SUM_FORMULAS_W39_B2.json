@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_SERIES_SUM_FORMULAS_W39_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Series-sum formulas — cubes, k(k+1), GP, nth-term",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_001",
+      "stem": "The value of 1³ + 2³ + 3³ + 4³ is:",
+      "options": [
+        {
+          "option_text": "100",
+          "is_correct": true
+        },
+        {
+          "option_text": "64",
+          "is_correct": false
+        },
+        {
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "option_text": "96",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "= (1+2+3+4)² = 10² = 100. **Short Trick:** Σn³ = (Σn)² = (n(n+1)/2)².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_002",
+      "stem": "The value of 1·2 + 2·3 + 3·4 + 4·5 is:",
+      "options": [
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "2+6+12+20 = 40. **Short Trick:** Σk(k+1) = n(n+1)(n+2)/3 = 4·5·6/3 = 40.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_003",
+      "stem": "The sum of the first 10 even natural numbers is:",
+      "options": [
+        {
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "option_text": "110",
+          "is_correct": true
+        },
+        {
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "2+4+…+20 = 10·11 = 110. **Short Trick:** sum of first n even numbers = n(n+1).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_004",
+      "stem": "The sum of the first 12 odd natural numbers is:",
+      "options": [
+        {
+          "option_text": "144",
+          "is_correct": true
+        },
+        {
+          "option_text": "132",
+          "is_correct": false
+        },
+        {
+          "option_text": "121",
+          "is_correct": false
+        },
+        {
+          "option_text": "156",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "= 12² = 144. **Short Trick:** sum of first n odd numbers = n².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_005",
+      "stem": "The sum of the first 6 terms of the GP 2, 6, 18, … is:",
+      "options": [
+        {
+          "option_text": "728",
+          "is_correct": true
+        },
+        {
+          "option_text": "726",
+          "is_correct": false
+        },
+        {
+          "option_text": "730",
+          "is_correct": false
+        },
+        {
+          "option_text": "364",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "a = 2, r = 3 ⇒ 2(3⁶−1)/(3−1) = 3⁶ − 1 = 728. **Short Trick:** GP sum = a(rⁿ−1)/(r−1).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_006",
+      "stem": "The sum to infinity of 1 + ½ + ¼ + ⅛ + … is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1.5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "a/(1−r) = 1/(1−½) = 2. **Short Trick:** infinite GP sum = a/(1−r) when |r| < 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_007",
+      "stem": "The sum of all multiples of 3 lying between 1 and 50 is:",
+      "options": [
+        {
+          "option_text": "400",
+          "is_correct": false
+        },
+        {
+          "option_text": "408",
+          "is_correct": true
+        },
+        {
+          "option_text": "432",
+          "is_correct": false
+        },
+        {
+          "option_text": "384",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "3+6+…+48 has 16 terms ⇒ (16/2)(3+48) = 408. **Short Trick:** AP sum = (n/2)(first + last).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_008",
+      "stem": "If 1² + 2² + 3² + … + n² = 30, then n is:",
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "n(n+1)(2n+1)/6 = 30 ⇒ n = 4 (1+4+9+16). **Short Trick:** test small n in Σn² = n(n+1)(2n+1)/6.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_009",
+      "stem": "The nth term of the sequence 2, 5, 10, 17, 26, … is:",
+      "options": [
+        {
+          "option_text": "n² + n",
+          "is_correct": false
+        },
+        {
+          "option_text": "2n² − 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "n² + 1",
+          "is_correct": true
+        },
+        {
+          "option_text": "n² − 1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Second differences are constant (2) ⇒ quadratic; the pattern is n² + 1. **Short Trick:** constant second difference ⇒ nth term is quadratic; match to n²+1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SERIES_SUM_FORMULAS_W39_B2_010",
+      "stem": "Which term of the AP 5, 8, 11, … is equal to 50?",
+      "options": [
+        {
+          "option_text": "16th",
+          "is_correct": true
+        },
+        {
+          "option_text": "15th",
+          "is_correct": false
+        },
+        {
+          "option_text": "17th",
+          "is_correct": false
+        },
+        {
+          "option_text": "18th",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "(50 − 5)/3 + 1 = 16. **Short Trick:** position n = (term − a)/d + 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

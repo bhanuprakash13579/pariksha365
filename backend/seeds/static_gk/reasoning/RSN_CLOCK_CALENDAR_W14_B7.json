@@ -9,10 +9,6 @@
       "stem": "Which of the following is a leap year?",
       "options": [
         {
-          "option_text": "2000",
-          "is_correct": true
-        },
-        {
           "option_text": "1900",
           "is_correct": false
         },
@@ -21,11 +17,15 @@
           "is_correct": false
         },
         {
+          "option_text": "2000",
+          "is_correct": true
+        },
+        {
           "option_text": "1800",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "A century year is a leap year only if divisible by 400; 2000 qualifies, but 1900, 1800 and 2100 do not.",
       "staleness_risk": 0,
@@ -69,10 +69,6 @@
       "stem": "In 12 hours, the hands of a clock coincide:",
       "options": [
         {
-          "option_text": "11 times",
-          "is_correct": true
-        },
-        {
           "option_text": "12 times",
           "is_correct": false
         },
@@ -81,11 +77,15 @@
           "is_correct": false
         },
         {
+          "option_text": "11 times",
+          "is_correct": true
+        },
+        {
           "option_text": "24 times",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "The hands overlap 11 times in every 12 hours.",
       "staleness_risk": 0,
@@ -99,12 +99,12 @@
       "stem": "The minute hand of a clock moves through how many degrees in 20 minutes?",
       "options": [
         {
-          "option_text": "120°",
-          "is_correct": true
-        },
-        {
           "option_text": "60°",
           "is_correct": false
+        },
+        {
+          "option_text": "120°",
+          "is_correct": true
         },
         {
           "option_text": "90°",
@@ -115,7 +115,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "The minute hand moves 6° per minute ⇒ 20×6° = 120°.",
       "staleness_risk": 0,
@@ -159,10 +159,6 @@
       "stem": "The angle between the hands of a clock at 3:30 is:",
       "options": [
         {
-          "option_text": "75°",
-          "is_correct": true
-        },
-        {
           "option_text": "90°",
           "is_correct": false
         },
@@ -171,11 +167,15 @@
           "is_correct": false
         },
         {
+          "option_text": "75°",
+          "is_correct": true
+        },
+        {
           "option_text": "60°",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "Hour hand at 3:30 = 105°, minute hand = 180° ⇒ difference = 75°.",
       "staleness_risk": 0,
@@ -189,12 +189,12 @@
       "stem": "Between 4 and 5 o'clock, the hands of a clock coincide at:",
       "options": [
         {
-          "option_text": "21 9/11 min past 4",
-          "is_correct": true
-        },
-        {
           "option_text": "20 min past 4",
           "is_correct": false
+        },
+        {
+          "option_text": "21 9/11 min past 4",
+          "is_correct": true
         },
         {
           "option_text": "22 min past 4",
@@ -205,7 +205,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "Coincidence time = (5/11)×(initial gap 120°/6) ... = 21 9/11 minutes past 4.",
       "staleness_risk": 0,
@@ -219,12 +219,12 @@
       "stem": "The number of odd days in 100 years is:",
       "options": [
         {
-          "option_text": "5",
-          "is_correct": true
-        },
-        {
           "option_text": "1",
           "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
         },
         {
           "option_text": "2",
@@ -235,7 +235,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "100 years = 24 leap + 76 ordinary ⇒ 24×2 + 76 = 124 odd days; 124 mod 7 = 5.",
       "staleness_risk": 0,
@@ -249,12 +249,12 @@
       "stem": "The time in a mirror's reflection of a clock showing 4:20 will appear as:",
       "options": [
         {
-          "option_text": "7:40",
-          "is_correct": true
-        },
-        {
           "option_text": "8:40",
           "is_correct": false
+        },
+        {
+          "option_text": "7:40",
+          "is_correct": true
         },
         {
           "option_text": "7:20",
@@ -265,7 +265,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "Mirror time = 11:60 − given time = 11:60 − 4:20 = 7:40.",
       "staleness_risk": 0,
@@ -279,10 +279,6 @@
       "stem": "If 1 March is a Monday in a non-leap year, then 1 April of the same year is a:",
       "options": [
         {
-          "option_text": "Thursday",
-          "is_correct": true
-        },
-        {
           "option_text": "Wednesday",
           "is_correct": false
         },
@@ -293,9 +289,13 @@
         {
           "option_text": "Monday",
           "is_correct": false
+        },
+        {
+          "option_text": "Thursday",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "March has 31 days; 31 mod 7 = 3 ⇒ Monday + 3 = Thursday.",
       "staleness_risk": 0,

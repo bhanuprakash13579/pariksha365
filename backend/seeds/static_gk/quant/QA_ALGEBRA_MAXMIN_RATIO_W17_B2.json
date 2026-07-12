@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_ALGEBRA_MAXMIN_RATIO_W17_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Max-min (AM-GM), a·sinθ+b·cosθ, AM-GM-HM, duplicate ratios",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_001",
+      "stem": "For x > 0, the minimum value of x + 1/x is:",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "By AM-GM, x + 1/x ≥ 2√(x·1/x) = 2. **Short Trick:** x + 1/x ≥ 2 for x>0 (AM-GM), equality at x=1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_002",
+      "stem": "For x > 0, the minimum value of 9x + 1/x is:",
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "AM-GM: 9x + 1/x ≥ 2√(9x·1/x) = 2·3 = 6. **Short Trick:** AM-GM: px + q/x ≥ 2√(pq).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_003",
+      "stem": "The maximum value of 3 sinθ + 4 cosθ is:",
+      "options": [
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Max of a sinθ + b cosθ = √(a²+b²) = √(9+16) = 5. **Short Trick:** amplitude = √(a²+b²).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_004",
+      "stem": "The minimum value of 5 sinθ − 12 cosθ is:",
+      "options": [
+        {
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "option_text": "−13",
+          "is_correct": true
+        },
+        {
+          "option_text": "−7",
+          "is_correct": false
+        },
+        {
+          "option_text": "−17",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Range is ±√(5²+12²) = ±13, so the minimum is −13. **Short Trick:** Range of a sinθ+b cosθ is ±√(a²+b²).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_005",
+      "stem": "The arithmetic mean of two numbers is 15 and their geometric mean is 12. Their harmonic mean is:",
+      "options": [
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "13.5",
+          "is_correct": false
+        },
+        {
+          "option_text": "9.6",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "GM² = AM·HM ⇒ HM = 12²/15 = 144/15 = 9.6. **Short Trick:** AM·GM·HM: GM² = AM·HM.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_006",
+      "stem": "For two positive numbers, AM = 10 and HM = 8. Their geometric mean is:",
+      "options": [
+        {
+          "option_text": "6√5",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "4√5",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "GM = √(AM·HM) = √(10·8) = √80 = 4√5. **Short Trick:** GM = √(AM·HM).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_007",
+      "stem": "The duplicate ratio of 3 : 4 is:",
+      "options": [
+        {
+          "option_text": "9 : 16",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 : 8",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 : 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "27 : 64",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Duplicate ratio squares the terms: 3² : 4² = 9 : 16. **Short Trick:** Duplicate ratio squares the terms (a:b → a²:b²).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_008",
+      "stem": "The sub-duplicate ratio of 16 : 25 is:",
+      "options": [
+        {
+          "option_text": "8 : 12.5",
+          "is_correct": false
+        },
+        {
+          "option_text": "256 : 625",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 : 5",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 : 5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Sub-duplicate ratio takes square roots: √16 : √25 = 4 : 5. **Short Trick:** Duplicate ratio squares the terms (a:b → a²:b²).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_009",
+      "stem": "The minimum value of x² − 6x + 11 is:",
+      "options": [
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "−3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "x² − 6x + 11 = (x−3)² + 2 ⇒ minimum 2 at x = 3. **Short Trick:** Min of ax²+bx+c (a>0) is c − b²/4a; or complete the square.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_MAXMIN_RATIO_W17_B2_010",
+      "stem": "The maximum value of 5 − (x − 2)² is:",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "−2",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "The square is ≥ 0, so the expression is greatest (= 5) when x = 2. **Short Trick:** A square is ≥ 0, so k − (…)² is greatest (= k) when the square is 0.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

@@ -9,10 +9,6 @@
       "stem": "A man walks 5 km North, turns right and walks 3 km, then turns right and walks 5 km. He is now:",
       "options": [
         {
-          "option_text": "3 km East of start",
-          "is_correct": true
-        },
-        {
           "option_text": "3 km West of start",
           "is_correct": false
         },
@@ -23,9 +19,13 @@
         {
           "option_text": "2 km North of start",
           "is_correct": false
+        },
+        {
+          "option_text": "3 km East of start",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "North 5, East 3, South 5 ⇒ the N and S cancel, leaving 3 km East.",
       "staleness_risk": 0,
@@ -69,12 +69,12 @@
       "stem": "Facing North, a person turns 90° clockwise, then 180°, then 90° anticlockwise. He now faces:",
       "options": [
         {
-          "option_text": "South",
-          "is_correct": true
-        },
-        {
           "option_text": "North",
           "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": true
         },
         {
           "option_text": "West",
@@ -85,7 +85,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "N → E (cw 90) → W (180) → S (acw 90 from W). Final facing is South.",
       "staleness_risk": 0,
@@ -99,10 +99,6 @@
       "stem": "A man walks 4 km East and then 3 km North. His straight-line distance from the start is:",
       "options": [
         {
-          "option_text": "5 km",
-          "is_correct": true
-        },
-        {
           "option_text": "7 km",
           "is_correct": false
         },
@@ -113,9 +109,13 @@
         {
           "option_text": "12 km",
           "is_correct": false
+        },
+        {
+          "option_text": "5 km",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "√(4² + 3²) = √25 = 5 km. Trap 7 km adds the legs.",
       "staleness_risk": 0,
@@ -129,10 +129,6 @@
       "stem": "At sunrise a man walks towards the sun, then turns right, then turns left. He is now facing:",
       "options": [
         {
-          "option_text": "East",
-          "is_correct": true
-        },
-        {
           "option_text": "South",
           "is_correct": false
         },
@@ -143,9 +139,13 @@
         {
           "option_text": "West",
           "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "Sunrise is East; towards sun = East, right = South, left = East again.",
       "staleness_risk": 0,
@@ -159,10 +159,6 @@
       "stem": "B is 5 km East of A, C is 5 km North of B, and D is 5 km West of C. D is in which direction from A?",
       "options": [
         {
-          "option_text": "North",
-          "is_correct": true
-        },
-        {
           "option_text": "North-West",
           "is_correct": false
         },
@@ -171,11 +167,15 @@
           "is_correct": false
         },
         {
+          "option_text": "North",
+          "is_correct": true
+        },
+        {
           "option_text": "North-East",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "D ends up directly above A (5 km East then 5 km West cancel) ⇒ 5 km North of A.",
       "staleness_risk": 0,
@@ -219,10 +219,6 @@
       "stem": "A man walks 3 km North, 4 km East, 5 km South and 4 km West. His distance and direction from the start are:",
       "options": [
         {
-          "option_text": "2 km South",
-          "is_correct": true
-        },
-        {
           "option_text": "2 km North",
           "is_correct": false
         },
@@ -233,9 +229,13 @@
         {
           "option_text": "0 km",
           "is_correct": false
+        },
+        {
+          "option_text": "2 km South",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "North 3 − South 5 = 2 South; East 4 − West 4 = 0 ⇒ 2 km South.",
       "staleness_risk": 0,
@@ -249,10 +249,6 @@
       "stem": "From one point A walks 3 km North then 4 km East; B walks 4 km South then 3 km East. The distance between A and B is:",
       "options": [
         {
-          "option_text": "5√2 km",
-          "is_correct": true
-        },
-        {
           "option_text": "7 km",
           "is_correct": false
         },
@@ -261,11 +257,15 @@
           "is_correct": false
         },
         {
+          "option_text": "5√2 km",
+          "is_correct": true
+        },
+        {
           "option_text": "√58 km",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "A is at (4, 3), B at (3, −4); distance = √(1² + 7²) = √50 = 5√2 km.",
       "staleness_risk": 0,
@@ -279,10 +279,6 @@
       "stem": "A man walks 5 m East, 5 m North, 5 m East and 5 m North. His straight-line distance from the start is:",
       "options": [
         {
-          "option_text": "10√2 m",
-          "is_correct": true
-        },
-        {
           "option_text": "20 m",
           "is_correct": false
         },
@@ -293,9 +289,13 @@
         {
           "option_text": "√100 m",
           "is_correct": false
+        },
+        {
+          "option_text": "10√2 m",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "Net displacement is 10 m East and 10 m North ⇒ √(10² + 10²) = 10√2 m.",
       "staleness_risk": 0,

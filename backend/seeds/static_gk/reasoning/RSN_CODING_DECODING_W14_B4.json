@@ -9,12 +9,12 @@
       "stem": "If FACE is coded as GBDF (each letter moved one step forward), then BOOK is coded as:",
       "options": [
         {
-          "option_text": "CPPL",
-          "is_correct": true
-        },
-        {
           "option_text": "CPPK",
           "is_correct": false
+        },
+        {
+          "option_text": "CPPL",
+          "is_correct": true
         },
         {
           "option_text": "CQQL",
@@ -25,7 +25,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Each letter +1: B→C, O→P, O→P, K→L = CPPL. Trap CPPK forgets to shift the last letter.",
       "staleness_risk": 0,
@@ -39,12 +39,12 @@
       "stem": "If RED = 27 (sum of alphabetical positions 18+5+4), then BLUE equals:",
       "options": [
         {
-          "option_text": "40",
-          "is_correct": true
-        },
-        {
           "option_text": "38",
           "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
         },
         {
           "option_text": "42",
@@ -55,7 +55,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "B+L+U+E = 2+12+21+5 = 40. Trap 38 mis-places one letter's value.",
       "staleness_risk": 0,
@@ -99,10 +99,6 @@
       "stem": "If TEACHER is coded as VGCEJGT (each letter +2), then STUDENT is coded as:",
       "options": [
         {
-          "option_text": "UVWFGPV",
-          "is_correct": true
-        },
-        {
           "option_text": "UVWEGPV",
           "is_correct": false
         },
@@ -113,9 +109,13 @@
         {
           "option_text": "TVWFGPV",
           "is_correct": false
+        },
+        {
+          "option_text": "UVWFGPV",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "Each letter +2: S→U, T→V, U→W, D→F, E→G, N→P, T→V = UVWFGPV.",
       "staleness_risk": 0,
@@ -129,10 +129,6 @@
       "stem": "In a code each letter is replaced by its opposite (A↔Z, B↔Y, …). The code for DOG is:",
       "options": [
         {
-          "option_text": "WLT",
-          "is_correct": true
-        },
-        {
           "option_text": "WLU",
           "is_correct": false
         },
@@ -141,11 +137,15 @@
           "is_correct": false
         },
         {
+          "option_text": "WLT",
+          "is_correct": true
+        },
+        {
           "option_text": "WMT",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "D↔W, O↔L, G↔T = WLT. Trap WLU mis-pairs G (G is 7th from start, so T, the 7th from end).",
       "staleness_risk": 0,
@@ -159,12 +159,12 @@
       "stem": "In a code, '526' means 'good sweet fruit', '678' means 'sweet yellow banana' and '124' means 'good fresh milk'. The digit for 'sweet' is:",
       "options": [
         {
-          "option_text": "6",
-          "is_correct": true
-        },
-        {
           "option_text": "5",
           "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
         },
         {
           "option_text": "2",
@@ -175,7 +175,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "'526' and '678' share the word 'sweet' and the common digit 6 ⇒ 6 = sweet. Trap 5 appears in only one set.",
       "staleness_risk": 0,
@@ -189,12 +189,12 @@
       "stem": "In a code (each letter +1), the code 'TJOH' represents the word:",
       "options": [
         {
-          "option_text": "SING",
-          "is_correct": true
-        },
-        {
           "option_text": "RING",
           "is_correct": false
+        },
+        {
+          "option_text": "SING",
+          "is_correct": true
         },
         {
           "option_text": "SUNG",
@@ -205,7 +205,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Decode by −1: T→S, J→I, O→N, H→G = SING. Trap SONG would need 'TPOH'.",
       "staleness_risk": 0,
@@ -249,10 +249,6 @@
       "stem": "If FRIEND is coded as IULHQG (each letter +3), then CANDLE is coded as:",
       "options": [
         {
-          "option_text": "FDQGOH",
-          "is_correct": true
-        },
-        {
           "option_text": "FDQGOI",
           "is_correct": false
         },
@@ -263,9 +259,13 @@
         {
           "option_text": "GDQGOH",
           "is_correct": false
+        },
+        {
+          "option_text": "FDQGOH",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "Each letter +3: C→F, A→D, N→Q, D→G, L→O, E→H = FDQGOH.",
       "staleness_risk": 0,
@@ -279,10 +279,6 @@
       "stem": "In a code, MONKEY = 1-2-3-4-5-6 and DONKEY = 7-2-3-4-5-6. The code 7-2-3-4 stands for:",
       "options": [
         {
-          "option_text": "DONK",
-          "is_correct": true
-        },
-        {
           "option_text": "MONK",
           "is_correct": false
         },
@@ -291,11 +287,15 @@
           "is_correct": false
         },
         {
+          "option_text": "DONK",
+          "is_correct": true
+        },
+        {
           "option_text": "DOOR",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "From the two words, 7=D, 2=O, 3=N, 4=K ⇒ 7-2-3-4 = DONK. Trap MONK uses 1 (=M) instead of 7.",
       "staleness_risk": 0,

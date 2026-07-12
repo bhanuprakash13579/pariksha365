@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM_ADV_W18_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number system — bases, HCF/LCM of fractions, CRT, divisibility",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_001",
+      "stem": "The binary number 1101 equals, in decimal:",
+      "options": [
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "13",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "1101₂ = 8+4+0+1 = 13.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_002",
+      "stem": "The decimal number 45 in binary is:",
+      "options": [
+        {
+          "option_text": "110101",
+          "is_correct": false
+        },
+        {
+          "option_text": "101011",
+          "is_correct": false
+        },
+        {
+          "option_text": "111001",
+          "is_correct": false
+        },
+        {
+          "option_text": "101101",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "45 = 32+8+4+1 = 101101₂. **Short Trick:** Repeatedly halve, record remainders bottom-up.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_003",
+      "stem": "The greatest number that divides 2011 and 2623 leaving remainders 9 and 5 respectively is:",
+      "options": [
+        {
+          "option_text": "154",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "HCF(2011−9, 2623−5) = HCF(2002, 2618) = 2·7·11 = 154. **Short Trick:** HCF of (2011−9) and (2623−5).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_004",
+      "stem": "How many numbers from 100 to 300 (inclusive) are divisible by 7?",
+      "options": [
+        {
+          "option_text": "29",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Multiples of 7 run 105 … 294 ⇒ 42 − 15 + 1 = 28.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_005",
+      "stem": "The LCM of the fractions 2/3, 4/9 and 5/6 is:",
+      "options": [
+        {
+          "option_text": "20/18",
+          "is_correct": false
+        },
+        {
+          "option_text": "10/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "20/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "40/9",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "LCM of fractions = LCM(numerators)/HCF(denominators) = LCM(2,4,5)/HCF(3,9,6) = 20/3. **Short Trick:** LCM of fractions = LCM(numerators)/HCF(denominators).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_006",
+      "stem": "The HCF of the fractions 3/4, 6/7 and 9/8 is:",
+      "options": [
+        {
+          "option_text": "3/28",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/56",
+          "is_correct": true
+        },
+        {
+          "option_text": "9/56",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/112",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "HCF of fractions = HCF(numerators)/LCM(denominators) = HCF(3,6,9)/LCM(4,7,8) = 3/56. **Short Trick:** HCF of fractions = HCF(numerators)/LCM(denominators).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_007",
+      "stem": "The HCF and LCM of two numbers are 12 and 240. If one number is 48, the other is:",
+      "options": [
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Product = HCF × LCM ⇒ other = 12·240/48 = 60. **Short Trick:** Product of the two numbers = HCF × LCM.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_008",
+      "stem": "The remainder when 2²⁵⁶ is divided by 17 is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "2⁴ ≡ −1 (mod 17) ⇒ 2⁸ ≡ 1; 256 = 8×32 ⇒ 2²⁵⁶ ≡ 1. **Short Trick:** Use 2⁴ ≡ −1 (mod 17) ⇒ 2⁸ ≡ 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_009",
+      "stem": "If the six-digit number 8x9484 is divisible by 11, the digit x is:",
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Alternating digit sum = (4+4+x) − (8+9+8) = x − 17; divisible by 11 ⇒ x = 6. **Short Trick:** Alternating digit sum must be a multiple of 11.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_SYSTEM_ADV_W18_B1_010",
+      "stem": "The smallest number that leaves remainder 3 when divided by 7 and remainder 2 when divided by 5 is:",
+      "options": [
+        {
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "17",
+          "is_correct": true
+        },
+        {
+          "option_text": "31",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "N ≡ 3 (mod 7) and N ≡ 2 (mod 5) ⇒ N = 17 (17÷7 = 2 r3, 17÷5 = 3 r2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

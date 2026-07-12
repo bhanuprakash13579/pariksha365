@@ -9,12 +9,12 @@
       "stem": "If x + 1/x = 4, then x³ + 1/x³ equals:",
       "options": [
         {
-          "option_text": "52",
-          "is_correct": true
-        },
-        {
           "option_text": "64",
           "is_correct": false
+        },
+        {
+          "option_text": "52",
+          "is_correct": true
         },
         {
           "option_text": "60",
@@ -25,7 +25,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "x³ + 1/x³ = (x+1/x)³ − 3(x+1/x) = 64 − 12 = 52. **Short Trick:** a³+1/a³ = a³-cube minus 3×(the value).",
       "staleness_risk": 0,
@@ -69,12 +69,12 @@
       "stem": "If x = √3 + √2, then x² + 1/x² equals:",
       "options": [
         {
-          "option_text": "10",
-          "is_correct": true
-        },
-        {
           "option_text": "12",
           "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": true
         },
         {
           "option_text": "2√6",
@@ -85,7 +85,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "1/x = √3 − √2; x² = 5 + 2√6 and 1/x² = 5 − 2√6, so the sum is 10. The surd terms cancel.",
       "staleness_risk": 0,
@@ -99,12 +99,12 @@
       "stem": "On rationalising, (√5 + √3)/(√5 − √3) equals:",
       "options": [
         {
-          "option_text": "4 + √15",
-          "is_correct": true
-        },
-        {
           "option_text": "4 − √15",
           "is_correct": false
+        },
+        {
+          "option_text": "4 + √15",
+          "is_correct": true
         },
         {
           "option_text": "√15",
@@ -115,7 +115,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Multiply by (√5+√3): (√5+√3)²/(5−3) = (8 + 2√15)/2 = 4 + √15. Trap 8+2√15 forgets to divide by 2.",
       "staleness_risk": 0,
@@ -159,12 +159,12 @@
       "stem": "If x² − 3x + 1 = 0, then x³ + 1/x³ equals:",
       "options": [
         {
-          "option_text": "18",
-          "is_correct": true
-        },
-        {
           "option_text": "27",
           "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": true
         },
         {
           "option_text": "36",
@@ -175,7 +175,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "Dividing by x gives x + 1/x = 3; then x³+1/x³ = 3³ − 3·3 = 18.",
       "staleness_risk": 0,
@@ -219,10 +219,6 @@
       "stem": "If 2^x = 3^y = 6^z, then 1/x + 1/y equals:",
       "options": [
         {
-          "option_text": "1/z",
-          "is_correct": true
-        },
-        {
           "option_text": "z",
           "is_correct": false
         },
@@ -233,9 +229,13 @@
         {
           "option_text": "x + y",
           "is_correct": false
+        },
+        {
+          "option_text": "1/z",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "Let each equal k; then 2 = k^(1/x), 3 = k^(1/y), 6 = k^(1/z); since 2·3 = 6, 1/x + 1/y = 1/z.",
       "staleness_risk": 0,
@@ -249,12 +249,12 @@
       "stem": "If x = 7 + 4√3, then √x + 1/√x equals:",
       "options": [
         {
-          "option_text": "4",
-          "is_correct": true
-        },
-        {
           "option_text": "2√3",
           "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
         },
         {
           "option_text": "2",
@@ -265,7 +265,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "7 + 4√3 = (2 + √3)², so √x = 2 + √3 and 1/√x = 2 − √3 ⇒ sum = 4.",
       "staleness_risk": 0,

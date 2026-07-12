@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_PROB_PERCENT_ADV_W24_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Expected value, conditional probability, derangement, election, set %",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_001",
+      "stem": "A fair die is rolled once. The expected value of the number shown is:",
+      "options": [
+        {
+          "option_text": "3.5",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "(1+2+3+4+5+6)/6 = 21/6 = 3.5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_002",
+      "stem": "A card drawn from a pack of 52 is known to be red. The probability that it is a king is:",
+      "options": [
+        {
+          "option_text": "2/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/13",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/26",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Among 26 red cards there are 2 kings ⇒ 2/26 = 1/13. **Short Trick:** Conditional: restrict the sample space to red cards.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_003",
+      "stem": "The number of ways to put 4 letters into 4 addressed envelopes so that no letter goes into its correct envelope is:",
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "Derangement D₄ = 9. **Short Trick:** Derangements: D₄ = 9.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_004",
+      "stem": "In an election 10% of the votes were invalid. The winner secured 60% of the valid votes and won by 720 votes. The total number of votes cast was:",
+      "options": [
+        {
+          "option_text": "4000",
+          "is_correct": true
+        },
+        {
+          "option_text": "3600",
+          "is_correct": false
+        },
+        {
+          "option_text": "5000",
+          "is_correct": false
+        },
+        {
+          "option_text": "4400",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Margin = 20% of valid = 0.2·0.9T = 0.18T = 720 ⇒ T = 4000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_005",
+      "stem": "In an exam 40% failed in Maths, 30% failed in English and 10% failed in both. The percentage who passed in both is:",
+      "options": [
+        {
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "option_text": "40%",
+          "is_correct": true
+        },
+        {
+          "option_text": "60%",
+          "is_correct": false
+        },
+        {
+          "option_text": "20%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Failed in at least one = 40+30−10 = 60% ⇒ passed both = 40%. **Short Trick:** Passed both = 100 − (40 + 30 − 10) by inclusion–exclusion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_006",
+      "stem": "A student scores 60, 70 and 80 in three subjects with weights 1, 2 and 3. The weighted average is:",
+      "options": [
+        {
+          "option_text": "73.33",
+          "is_correct": true
+        },
+        {
+          "option_text": "70",
+          "is_correct": false
+        },
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "75",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "(60·1 + 70·2 + 80·3)/(1+2+3) = 440/6 = 73.33.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_007",
+      "stem": "A shop's sales over five days are 40, 55, 35, 60 and 50 units. The average daily sale is:",
+      "options": [
+        {
+          "option_text": "48",
+          "is_correct": true
+        },
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "option_text": "240",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "(40+55+35+60+50)/5 = 240/5 = 48.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_008",
+      "stem": "Two cards are drawn together from a pack of 52. The probability that both are kings is:",
+      "options": [
+        {
+          "option_text": "1/221",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/169",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/52",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "C(4,2)/C(52,2) = 6/1326 = 1/221. **Short Trick:** P = C(4,2)/C(52,2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_009",
+      "stem": "A salary is first increased by 20%. To bring it back to the original, it must be decreased by:",
+      "options": [
+        {
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "16⅔%",
+          "is_correct": true
+        },
+        {
+          "option_text": "10%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Decrease = 20/120 × 100 = 16⅔%. **Short Trick:** To undo a +x% change, decrease by x/(100+x)×100%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_PROB_PERCENT_ADV_W24_B2_010",
+      "stem": "15% of 25% of a number is 30. The number is:",
+      "options": [
+        {
+          "option_text": "600",
+          "is_correct": false
+        },
+        {
+          "option_text": "1200",
+          "is_correct": false
+        },
+        {
+          "option_text": "500",
+          "is_correct": false
+        },
+        {
+          "option_text": "800",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "0.15 × 0.25 × N = 30 ⇒ N = 30/0.0375 = 800.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

@@ -9,10 +9,6 @@
       "stem": "Which class fully contains the others: Sparrow, Bird, Animal?",
       "options": [
         {
-          "option_text": "Animal",
-          "is_correct": true
-        },
-        {
           "option_text": "Bird",
           "is_correct": false
         },
@@ -23,9 +19,13 @@
         {
           "option_text": "None",
           "is_correct": false
+        },
+        {
+          "option_text": "Animal",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "Animal ⊃ Bird ⊃ Sparrow, so Animal is the most inclusive.",
       "staleness_risk": 0,
@@ -39,10 +39,6 @@
       "stem": "Which two are mutually exclusive: Pen, Pencil, Stationery?",
       "options": [
         {
-          "option_text": "Pen and Pencil",
-          "is_correct": true
-        },
-        {
           "option_text": "Pen and Stationery",
           "is_correct": false
         },
@@ -53,9 +49,13 @@
         {
           "option_text": "None of these",
           "is_correct": false
+        },
+        {
+          "option_text": "Pen and Pencil",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "Pens and pencils are separate items, both within stationery.",
       "staleness_risk": 0,
@@ -69,10 +69,6 @@
       "stem": "Which is the most inclusive class: Rose, Flower, Plant?",
       "options": [
         {
-          "option_text": "Plant",
-          "is_correct": true
-        },
-        {
           "option_text": "Flower",
           "is_correct": false
         },
@@ -83,9 +79,13 @@
         {
           "option_text": "All equal",
           "is_correct": false
+        },
+        {
+          "option_text": "Plant",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "Plant ⊃ Flower ⊃ Rose.",
       "staleness_risk": 0,
@@ -129,12 +129,12 @@
       "stem": "Which is the most inclusive: India, Asia, Delhi?",
       "options": [
         {
-          "option_text": "Asia",
-          "is_correct": true
-        },
-        {
           "option_text": "India",
           "is_correct": false
+        },
+        {
+          "option_text": "Asia",
+          "is_correct": true
         },
         {
           "option_text": "Delhi",
@@ -145,7 +145,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Asia ⊃ India ⊃ Delhi.",
       "staleness_risk": 0,
@@ -159,12 +159,12 @@
       "stem": "For Teachers, Males and Graduates, which statement is correct?",
       "options": [
         {
-          "option_text": "All three may overlap",
-          "is_correct": true
-        },
-        {
           "option_text": "All teachers are graduates",
           "is_correct": false
+        },
+        {
+          "option_text": "All three may overlap",
+          "is_correct": true
         },
         {
           "option_text": "No teacher is male",
@@ -175,7 +175,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "A person can be a male teacher who is also a graduate, so all three sets may overlap.",
       "staleness_risk": 0,
@@ -189,10 +189,6 @@
       "stem": "Which best describes Vegetables, Potatoes and Carrots?",
       "options": [
         {
-          "option_text": "Two disjoint sets inside one",
-          "is_correct": true
-        },
-        {
           "option_text": "Three overlapping sets",
           "is_correct": false
         },
@@ -203,9 +199,13 @@
         {
           "option_text": "Three separate sets",
           "is_correct": false
+        },
+        {
+          "option_text": "Two disjoint sets inside one",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "Potatoes and carrots are disjoint, both lying inside the set of vegetables.",
       "staleness_risk": 0,
@@ -219,10 +219,6 @@
       "stem": "For Apples, Fruits and Red things, which statement is correct?",
       "options": [
         {
-          "option_text": "Apples are fruits, some red",
-          "is_correct": true
-        },
-        {
           "option_text": "All fruits are surely red",
           "is_correct": false
         },
@@ -231,11 +227,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Apples are fruits, some red",
+          "is_correct": true
+        },
+        {
           "option_text": "No apple can ever be red",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "All apples are fruits, and some apples (and other things) are red.",
       "staleness_risk": 0,
@@ -249,10 +249,6 @@
       "stem": "Which is the most inclusive: Province, Country, Continent, City?",
       "options": [
         {
-          "option_text": "Continent",
-          "is_correct": true
-        },
-        {
           "option_text": "Country",
           "is_correct": false
         },
@@ -261,11 +257,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Continent",
+          "is_correct": true
+        },
+        {
           "option_text": "City",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "Continent ⊃ Country ⊃ Province ⊃ City.",
       "staleness_risk": 0,
@@ -279,10 +279,6 @@
       "stem": "Among Reptiles, Snakes and Cobras, which is the smallest (innermost) class?",
       "options": [
         {
-          "option_text": "Cobras",
-          "is_correct": true
-        },
-        {
           "option_text": "Snakes",
           "is_correct": false
         },
@@ -293,9 +289,13 @@
         {
           "option_text": "All equal",
           "is_correct": false
+        },
+        {
+          "option_text": "Cobras",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "Cobras ⊂ Snakes ⊂ Reptiles.",
       "staleness_risk": 0,

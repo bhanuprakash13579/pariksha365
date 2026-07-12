@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_BINOMIAL_THEOREM_W37_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Binomial theorem — terms, coefficients, independent term",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_001",
+      "stem": "The number of terms in the expansion of (x + y)¹⁰ is:",
+      "options": [
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "(x+y)ⁿ has n+1 terms ⇒ 11. **Short Trick:** number of terms = n + 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_002",
+      "stem": "The middle term in the expansion of (x + y)⁸ is the:",
+      "options": [
+        {
+          "option_text": "4th term",
+          "is_correct": false
+        },
+        {
+          "option_text": "5th term",
+          "is_correct": true
+        },
+        {
+          "option_text": "6th term",
+          "is_correct": false
+        },
+        {
+          "option_text": "9th term",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "For even n there is one middle term, the (n/2 + 1)th = 5th. **Short Trick:** even n ⇒ single middle term at position n/2 + 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_003",
+      "stem": "The coefficient of x² in the expansion of (1 + x)⁵ is:",
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Coefficient of xᵏ in (1+x)ⁿ is C(n,k); C(5,2) = 10. **Short Trick:** coeff of xᵏ in (1+x)ⁿ = C(n,k).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_004",
+      "stem": "The sum of all the binomial coefficients in (1 + x)⁶ is:",
+      "options": [
+        {
+          "option_text": "64",
+          "is_correct": true
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "option_text": "128",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Put x = 1 ⇒ sum = 2⁶ = 64. **Short Trick:** substitute x = 1 to get the coefficient sum = 2ⁿ.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_005",
+      "stem": "The term independent of x in the expansion of (x + 1/x)⁶ is:",
+      "options": [
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "General term C(6,k)x^(6−2k); independent ⇒ 6 − 2k = 0 ⇒ k = 3 ⇒ C(6,3) = 20. **Short Trick:** set the net power of x to zero to locate the constant term.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_006",
+      "stem": "The number of distinct terms in the expansion of (x + y + z)² is:",
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "x², y², z², xy, yz, zx ⇒ 6 terms. **Short Trick:** distinct terms in (x+y+z)ⁿ = C(n+2, 2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_007",
+      "stem": "The greatest coefficient in the expansion of (1 + x)⁶ is:",
+      "options": [
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "64",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "The greatest coefficient is the middle one, C(6,3) = 20. **Short Trick:** for (1+x)ⁿ with even n, the greatest coefficient is C(n, n/2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_008",
+      "stem": "The coefficient of x in the expansion of (2 + x)³ is:",
+      "options": [
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Term with x: C(3,1)·2²·x = 12x. **Short Trick:** coeff of xᵏ in (a+x)ⁿ = C(n,k)·a^(n−k).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_009",
+      "stem": "The value of C(7, 2) is:",
+      "options": [
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": true
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "7·6/2 = 21. **Short Trick:** C(n,2) = n(n−1)/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_BINOMIAL_THEOREM_W37_B1_010",
+      "stem": "The constant term in the expansion of (x − 2)⁴ is:",
+      "options": [
+        {
+          "option_text": "−16",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "−8",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "The constant term takes x⁰: C(4,0)·(−2)⁴ = 16. **Short Trick:** the constant term of (x + c)ⁿ is cⁿ (put x = 0).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

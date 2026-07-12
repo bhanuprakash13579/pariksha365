@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_NUMBER_THEORY_FORMULAS_W35_B2",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number-theory formulas: factorial powers, divisor functions, cyclicity",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_001",
+      "stem": "The number of trailing zeros in 100! is:",
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "⌊100/5⌋ + ⌊100/25⌋ = 20 + 4 = 24. **Short Trick:** zeros in n! = ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + …",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_002",
+      "stem": "The highest power of 3 contained in 20! is:",
+      "options": [
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "⌊20/3⌋ + ⌊20/9⌋ = 6 + 2 = 8. **Short Trick:** highest power of a prime p in n! = Σ⌊n/pᵏ⌋.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_003",
+      "stem": "The highest power of 12 that divides 20! is:",
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "12 = 2²·3. Power of 2 in 20! = 18 ⇒ ⌊18/2⌋ = 9; power of 3 = 8. **Short Trick:** for m = ∏pᵢ^aᵢ, answer = minᵢ ⌊(power of pᵢ)/aᵢ⌋ = min(9,8) = 8.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_004",
+      "stem": "The highest power of 10 that divides 200! is:",
+      "options": [
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "49",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Limited by the number of 5s: ⌊200/5⌋ + ⌊200/25⌋ + ⌊200/125⌋ = 40 + 8 + 1 = 49. **Short Trick:** power of 10 = power of 5 (there are always more 2s).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_005",
+      "stem": "The number of divisors of 7200 is:",
+      "options": [
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "54",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "7200 = 2⁵·3²·5² ⇒ (5+1)(2+1)(2+1) = 54. **Short Trick:** d(N) = ∏(exponent + 1).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_006",
+      "stem": "The sum of all divisors of 60 is:",
+      "options": [
+        {
+          "option_text": "144",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "180",
+          "is_correct": false
+        },
+        {
+          "option_text": "168",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "60 = 2²·3·5 ⇒ (1+2+4)(1+3)(1+5) = 7·4·6 = 168. **Short Trick:** σ(N) = ∏ (p^(a+1) − 1)/(p − 1).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_007",
+      "stem": "The unit digit of 17²⁵⁶ is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Only the base's unit digit 7 matters; 7 cycles 7, 9, 3, 1 with period 4, and 256 mod 4 = 0 ⇒ the 4th value. **Short Trick:** reduce the exponent mod 4 to read off the cycle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_008",
+      "stem": "The remainder when 2¹⁰⁰ is divided by 7 is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "2³ = 8 ≡ 1 (mod 7); 100 mod 3 = 1 ⇒ 2¹⁰⁰ ≡ 2¹ = 2. **Short Trick:** find the exponent that gives remainder 1, then reduce.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_009",
+      "stem": "The smallest natural number having exactly 8 divisors is:",
+      "options": [
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "8 = 4×2 = (3+1)(1+1) ⇒ 2³·3 = 24 (loading the larger exponent on the smaller prime beats 2·3·5 = 30). **Short Trick:** match the factor-count product, big exponents on small primes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_NUMBER_THEORY_FORMULAS_W35_B2_010",
+      "stem": "The product of all the divisors of 36 is:",
+      "options": [
+        {
+          "option_text": "36⁴",
+          "is_correct": false
+        },
+        {
+          "option_text": "6⁹",
+          "is_correct": true
+        },
+        {
+          "option_text": "6⁶",
+          "is_correct": false
+        },
+        {
+          "option_text": "36⁹",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "36 has 9 divisors ⇒ product = 36^(9/2) = 6⁹. **Short Trick:** product of divisors of N = N^(d(N)/2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

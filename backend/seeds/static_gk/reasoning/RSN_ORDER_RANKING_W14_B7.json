@@ -9,12 +9,12 @@
       "stem": "In a row of 40 students, A is 12th from the left. A's position from the right is:",
       "options": [
         {
-          "option_text": "29th",
-          "is_correct": true
-        },
-        {
           "option_text": "28th",
           "is_correct": false
+        },
+        {
+          "option_text": "29th",
+          "is_correct": true
         },
         {
           "option_text": "30th",
@@ -25,7 +25,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Position from right = 40 − 12 + 1 = 29th.",
       "staleness_risk": 0,
@@ -69,10 +69,6 @@
       "stem": "In a row of 40, A is 15th from the left and B is 20th from the right. The number of students between them is:",
       "options": [
         {
-          "option_text": "5",
-          "is_correct": true
-        },
-        {
           "option_text": "6",
           "is_correct": false
         },
@@ -83,9 +79,13 @@
         {
           "option_text": "7",
           "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "B from left = 40 − 20 + 1 = 21; between 15 and 21 ⇒ 21 − 15 − 1 = 5.",
       "staleness_risk": 0,
@@ -99,12 +99,12 @@
       "stem": "In a queue of 25 people, Ram is 10th from the front. His position from the back is:",
       "options": [
         {
-          "option_text": "16th",
-          "is_correct": true
-        },
-        {
           "option_text": "15th",
           "is_correct": false
+        },
+        {
+          "option_text": "16th",
+          "is_correct": true
         },
         {
           "option_text": "17th",
@@ -115,7 +115,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Position from back = 25 − 10 + 1 = 16th.",
       "staleness_risk": 0,
@@ -249,10 +249,6 @@
       "stem": "Among five friends, T is heavier than P; P is heavier than Q; Q is heavier than R; S is lighter than R. The lightest is:",
       "options": [
         {
-          "option_text": "S",
-          "is_correct": true
-        },
-        {
           "option_text": "R",
           "is_correct": false
         },
@@ -261,11 +257,15 @@
           "is_correct": false
         },
         {
+          "option_text": "S",
+          "is_correct": true
+        },
+        {
           "option_text": "T",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "Order: T > P > Q > R > S ⇒ S is lightest.",
       "staleness_risk": 0,

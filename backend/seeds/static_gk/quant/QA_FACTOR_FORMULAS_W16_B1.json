@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_FACTOR_FORMULAS_W16_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Factors — count, sum, product formulas",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_001",
+      "stem": "The total number of factors of 360 is:",
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "360 = 2³·3²·5 ⇒ factors = (3+1)(2+1)(1+1) = 24.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_002",
+      "stem": "The sum of all the factors of 60 is:",
+      "options": [
+        {
+          "option_text": "168",
+          "is_correct": true
+        },
+        {
+          "option_text": "144",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "156",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "60 = 2²·3·5 ⇒ σ = (1+2+4)(1+3)(1+5) = 7·4·6 = 168.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_003",
+      "stem": "The product of all the factors of 24 is:",
+      "options": [
+        {
+          "option_text": "576",
+          "is_correct": false
+        },
+        {
+          "option_text": "13824",
+          "is_correct": false
+        },
+        {
+          "option_text": "331776",
+          "is_correct": true
+        },
+        {
+          "option_text": "1152",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "24 has 8 factors ⇒ product = 24^(8/2) = 24⁴ = 331776.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_004",
+      "stem": "The number of even factors of 240 is:",
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "240 = 2⁴·3·5. Total factors = 5·2·2 = 20; odd factors = 2·2 = 4 ⇒ even = 20 − 4 = 16. **Short Trick:** Even factors = total factors − odd factors (odd = factors of the odd part).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_005",
+      "stem": "The number of odd factors of 180 is:",
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "180 = 2²·3²·5. Odd factors come from 3²·5 ⇒ (2+1)(1+1) = 6. **Short Trick:** Odd factors = product of (exponent+1) for the odd primes only.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_006",
+      "stem": "The number of ways to express 36 as a product of two factors is:",
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "36 is a perfect square with 9 factors ⇒ ways = (9+1)/2 = 5 (1×36, 2×18, 3×12, 4×9, 6×6). **Short Trick:** Number of unordered pairs = ⌈d(N)/2⌉ (perfect squares add a middle pair).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_007",
+      "stem": "How many factors of 1000 are perfect squares?",
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "1000 = 2³·5³. A square factor needs even exponents ≤ 3: 2^{0,2} and 5^{0,2} ⇒ 2×2 = 4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_008",
+      "stem": "The sum of all the factors of 96 is:",
+      "options": [
+        {
+          "option_text": "240",
+          "is_correct": false
+        },
+        {
+          "option_text": "192",
+          "is_correct": false
+        },
+        {
+          "option_text": "280",
+          "is_correct": false
+        },
+        {
+          "option_text": "252",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "96 = 2⁵·3 ⇒ σ = (2⁶−1)/(2−1) · (3²−1)/(3−1) = 63·4 = 252.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_009",
+      "stem": "The smallest natural number having exactly 12 factors is:",
+      "options": [
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "96",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "12 = 3·2·2 ⇒ smallest is 2²·3·5 = 60 (put larger exponents on the smallest primes). **Short Trick:** Match 12 = (a+1)(b+1)… and load the largest exponents onto the smallest primes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_FACTOR_FORMULAS_W16_B1_010",
+      "stem": "The number of factors of 7! is:",
+      "options": [
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "56",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "7! = 5040 = 2⁴·3²·5·7 ⇒ factors = (4+1)(2+1)(1+1)(1+1) = 60.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

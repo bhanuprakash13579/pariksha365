@@ -9,10 +9,6 @@
       "stem": "Statements: All cats are dogs. All dogs are animals. Conclusions: I. All cats are animals. II. Some animals are cats.",
       "options": [
         {
-          "option_text": "Both I and II follow",
-          "is_correct": true
-        },
-        {
           "option_text": "Only I follows",
           "is_correct": false
         },
@@ -23,9 +19,13 @@
         {
           "option_text": "Neither I nor II follows",
           "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "All cats→dogs→animals, so I follows. Since all cats are animals, some animals are cats (conversion), so II follows. Both follow.",
       "staleness_risk": 0,
@@ -39,12 +39,12 @@
       "stem": "Statements: All roses are flowers. Some flowers are red. Conclusions: I. Some roses are red. II. Some red things are flowers.",
       "options": [
         {
-          "option_text": "Only II follows",
-          "is_correct": true
-        },
-        {
           "option_text": "Only I follows",
           "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": true
         },
         {
           "option_text": "Both I and II follow",
@@ -55,7 +55,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "The red flowers need not be roses, so I does not follow. II is the valid conversion of 'some flowers are red'. Only II follows.",
       "staleness_risk": 0,
@@ -69,10 +69,6 @@
       "stem": "Statements: No man is a machine. All machines are tools. Conclusions: I. Some tools are not men. II. No tool is a man.",
       "options": [
         {
-          "option_text": "Only I follows",
-          "is_correct": true
-        },
-        {
           "option_text": "Only II follows",
           "is_correct": false
         },
@@ -81,11 +77,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
           "option_text": "Neither I nor II follows",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "Machines are tools and no machine is a man, so those tools are not men ⇒ I follows. Some other tools could be men, so II ('no tool is a man') is not certain.",
       "staleness_risk": 0,
@@ -189,12 +189,12 @@
       "stem": "Statements: Some keys are locks. No lock is a door. Conclusions: I. Some keys are not doors. II. Some keys are doors.",
       "options": [
         {
-          "option_text": "Only I follows",
-          "is_correct": true
-        },
-        {
           "option_text": "Only II follows",
           "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
         },
         {
           "option_text": "Both I and II follow",
@@ -205,7 +205,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "The keys that are locks cannot be doors ⇒ some keys are not doors (I definitely follows). II is only a possibility, so it does not follow.",
       "staleness_risk": 0,
@@ -219,12 +219,12 @@
       "stem": "Statements: All pens are red. All red things are bright. Some bright things are dull. Conclusions: I. All pens are bright. II. Some pens are dull.",
       "options": [
         {
-          "option_text": "Only I follows",
-          "is_correct": true
-        },
-        {
           "option_text": "Only II follows",
           "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
         },
         {
           "option_text": "Both I and II follow",
@@ -235,7 +235,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "All pens→red→bright, so I follows. 'Some bright are dull' does not pin the dull ones onto pens, so II does not follow.",
       "staleness_risk": 0,
@@ -249,12 +249,12 @@
       "stem": "Statements: Some stones are gems. All gems are precious. No precious thing is cheap. Conclusions: I. Some stones are precious. II. Some stones are not cheap.",
       "options": [
         {
-          "option_text": "Both I and II follow",
-          "is_correct": true
-        },
-        {
           "option_text": "Only I follows",
           "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
         },
         {
           "option_text": "Only II follows",
@@ -265,7 +265,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "Some stones are gems and all gems are precious ⇒ some stones are precious (I). Those precious stones cannot be cheap ⇒ some stones are not cheap (II). Both follow.",
       "staleness_risk": 0,

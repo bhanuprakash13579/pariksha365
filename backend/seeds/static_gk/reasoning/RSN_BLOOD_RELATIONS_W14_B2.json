@@ -9,10 +9,6 @@
       "stem": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
       "options": [
         {
-          "option_text": "Mother",
-          "is_correct": true
-        },
-        {
           "option_text": "Sister",
           "is_correct": false
         },
@@ -21,11 +17,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Mother",
+          "is_correct": true
+        },
+        {
           "option_text": "Grandmother",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "'The only daughter of my mother' is the woman herself, and she is the man's mother. So she is his Mother. Trap Aunt assumes a second daughter exists.",
       "staleness_risk": 0,
@@ -39,10 +39,6 @@
       "stem": "A is B's father. B is C's brother. D is C's mother. How is A related to D?",
       "options": [
         {
-          "option_text": "Husband",
-          "is_correct": true
-        },
-        {
           "option_text": "Brother",
           "is_correct": false
         },
@@ -51,11 +47,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Husband",
+          "is_correct": true
+        },
+        {
           "option_text": "Son",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "A fathers B and C; D mothers C; so A and D are the parents ⇒ A is D's Husband. Trap Father confuses generation.",
       "staleness_risk": 0,
@@ -69,10 +69,6 @@
       "stem": "P is the sister of Q. Q is the son of R. R is the mother of S. How is P related to S?",
       "options": [
         {
-          "option_text": "Sister",
-          "is_correct": true
-        },
-        {
           "option_text": "Mother",
           "is_correct": false
         },
@@ -83,9 +79,13 @@
         {
           "option_text": "Cousin",
           "is_correct": false
+        },
+        {
+          "option_text": "Sister",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "P and Q are children of R; S is also R's child; so P, Q, S are siblings ⇒ P is S's Sister. Trap Aunt skips a generation wrongly.",
       "staleness_risk": 0,
@@ -99,12 +99,12 @@
       "stem": "A man, who has no siblings, says, 'That man's father is my father's son.' Whose photograph is the man looking at?",
       "options": [
         {
-          "option_text": "His son",
-          "is_correct": true
-        },
-        {
           "option_text": "His father",
           "is_correct": false
+        },
+        {
+          "option_text": "His son",
+          "is_correct": true
         },
         {
           "option_text": "Himself",
@@ -115,7 +115,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "'My father's son' (with no siblings) is the speaker himself; so that man's father is the speaker ⇒ the photo is of His son. Trap 'Himself' is the classic mis-read.",
       "staleness_risk": 0,
@@ -129,12 +129,12 @@
       "stem": "M is the brother of N. O is the father of M. P is the brother of O. How is P related to N?",
       "options": [
         {
-          "option_text": "Uncle",
-          "is_correct": true
-        },
-        {
           "option_text": "Father",
           "is_correct": false
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": true
         },
         {
           "option_text": "Brother",
@@ -145,7 +145,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "P is the brother of O, who is N's father; the father's brother is an Uncle. Trap Grandfather adds a generation.",
       "staleness_risk": 0,
@@ -159,12 +159,12 @@
       "stem": "In a code, X + Y means 'X is the mother of Y' and X − Y means 'X is the brother of Y'. In 'P − Q + R', how is P related to R?",
       "options": [
         {
-          "option_text": "Maternal uncle",
-          "is_correct": true
-        },
-        {
           "option_text": "Father",
           "is_correct": false
+        },
+        {
+          "option_text": "Maternal uncle",
+          "is_correct": true
         },
         {
           "option_text": "Brother",
@@ -175,7 +175,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Q + R: Q is mother of R; P − Q: P is brother of Q; so P is the brother of R's mother ⇒ Maternal uncle. Trap Father ignores the brother link.",
       "staleness_risk": 0,
@@ -189,12 +189,12 @@
       "stem": "A is the son of C. C and D are sisters. E is the mother of D. F is the son of E. Who is the grandmother of A?",
       "options": [
         {
-          "option_text": "E",
-          "is_correct": true
-        },
-        {
           "option_text": "D",
           "is_correct": false
+        },
+        {
+          "option_text": "E",
+          "is_correct": true
         },
         {
           "option_text": "C",
@@ -205,7 +205,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "C is A's parent; E is the mother of C and D (sisters) ⇒ E is A's grandmother. Trap D is only A's aunt.",
       "staleness_risk": 0,
@@ -249,12 +249,12 @@
       "stem": "P is the husband of Q. R is the daughter of P. S is the husband of R. T is the daughter of S. How is Q related to T?",
       "options": [
         {
-          "option_text": "Grandmother",
-          "is_correct": true
-        },
-        {
           "option_text": "Mother",
           "is_correct": false
+        },
+        {
+          "option_text": "Grandmother",
+          "is_correct": true
         },
         {
           "option_text": "Aunt",
@@ -265,7 +265,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "R is the daughter of P and Q; T is R's daughter ⇒ Q is T's Grandmother. Trap Mother-in-law misreads the in-law chain.",
       "staleness_risk": 0,
@@ -279,10 +279,6 @@
       "stem": "A man, who has no brothers or sisters, says, 'The girl's mother is the wife of my father's son.' How is the man related to the girl?",
       "options": [
         {
-          "option_text": "Father",
-          "is_correct": true
-        },
-        {
           "option_text": "Uncle",
           "is_correct": false
         },
@@ -291,11 +287,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Father",
+          "is_correct": true
+        },
+        {
           "option_text": "Grandfather",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "'My father's son' (no siblings) is the man himself; the girl's mother is his wife ⇒ he is the girl's Father. Trap Uncle assumes he has a brother.",
       "staleness_risk": 0,

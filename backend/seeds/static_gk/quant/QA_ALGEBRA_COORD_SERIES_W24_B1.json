@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_ALGEBRA_COORD_SERIES_W24_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Symmetric functions, coordinate distance, GP sums, poly HCF",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_001",
+      "stem": "If a + b + c = 6, ab + bc + ca = 11 and abc = 6, then 1/a + 1/b + 1/c equals:",
+      "options": [
+        {
+          "option_text": "11/6",
+          "is_correct": true
+        },
+        {
+          "option_text": "6/11",
+          "is_correct": false
+        },
+        {
+          "option_text": "17/6",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "1/a+1/b+1/c = (ab+bc+ca)/abc = 11/6. **Short Trick:** 1/a+1/b+1/c = (ab+bc+ca)/abc — build it from the symmetric sums, don't invert each.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_002",
+      "stem": "If a + b = 7 and ab = 10, then 1/a + 1/b equals:",
+      "options": [
+        {
+          "option_text": "7/10",
+          "is_correct": true
+        },
+        {
+          "option_text": "10/7",
+          "is_correct": false
+        },
+        {
+          "option_text": "17/10",
+          "is_correct": false
+        },
+        {
+          "option_text": "70",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "1/a + 1/b = (a+b)/ab = 7/10. **Short Trick:** 1/a+1/b = (a+b)/ab — use the sum and product directly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_003",
+      "stem": "The area of the quadrilateral with vertices (0, 0), (5, 0), (6, 4) and (1, 4) is:",
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Shoelace: ½|0+20+20+0| = 20. **Short Trick:** Shoelace: area = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_004",
+      "stem": "The distance of the point (3, 4) from the line 3x + 4y − 10 = 0 is:",
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "|3·3+4·4−10|/√(3²+4²) = 15/5 = 3. **Short Trick:** |ax₀+by₀+c|/√(a²+b²).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_005",
+      "stem": "The sum of the series 2 + 4 + 8 + … + 256 is:",
+      "options": [
+        {
+          "option_text": "512",
+          "is_correct": false
+        },
+        {
+          "option_text": "510",
+          "is_correct": true
+        },
+        {
+          "option_text": "256",
+          "is_correct": false
+        },
+        {
+          "option_text": "508",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "GP: a=2, r=2, last = 2⁸ ⇒ sum = 2(2⁸−1)/(2−1) = 510.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_006",
+      "stem": "The value of 2 + 22 + 222 + 2222 is:",
+      "options": [
+        {
+          "option_text": "2470",
+          "is_correct": false
+        },
+        {
+          "option_text": "2468",
+          "is_correct": true
+        },
+        {
+          "option_text": "2456",
+          "is_correct": false
+        },
+        {
+          "option_text": "2222",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "= 2(1+11+111+1111) = 2·1234 = 2468. **Short Trick:** Take the digit common: 2·(1 + 11 + 111 + 1111).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_007",
+      "stem": "The sum of the first 25 odd natural numbers is:",
+      "options": [
+        {
+          "option_text": "650",
+          "is_correct": false
+        },
+        {
+          "option_text": "576",
+          "is_correct": false
+        },
+        {
+          "option_text": "625",
+          "is_correct": true
+        },
+        {
+          "option_text": "1250",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Sum of first n odd numbers = n² = 25² = 625. **Short Trick:** Sum of the first n odd numbers = n².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_008",
+      "stem": "The HCF of the polynomials x² − 4 and x² − 5x + 6 is:",
+      "options": [
+        {
+          "option_text": "x − 2",
+          "is_correct": true
+        },
+        {
+          "option_text": "x + 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "x − 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "(x−2)(x+2)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "x²−4 = (x−2)(x+2); x²−5x+6 = (x−2)(x−3) ⇒ common factor (x − 2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_009",
+      "stem": "If α and β are the roots of x² − 5x + 6 = 0, then α² + β² equals:",
+      "options": [
+        {
+          "option_text": "13",
+          "is_correct": true
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "37",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "α²+β² = (α+β)² − 2αβ = 25 − 12 = 13. **Short Trick:** α²+β² = (sum)² − 2·product (Vieta) — no need to solve the equation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_ALGEBRA_COORD_SERIES_W24_B1_010",
+      "stem": "If α and β are the roots of x² − 7x + 12 = 0, then 1/α + 1/β equals:",
+      "options": [
+        {
+          "option_text": "12/7",
+          "is_correct": false
+        },
+        {
+          "option_text": "19/12",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/12",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "1/α + 1/β = (α+β)/αβ = 7/12. **Short Trick:** 1/α+1/β = (sum of roots)/(product of roots).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-12",
+      "generated_at": "2026-07-12T00:00:00+00:00"
+    }
+  ]
+}

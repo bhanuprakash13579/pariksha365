@@ -9,10 +9,6 @@
       "stem": "If A's salary is 25% more than B's, then B's salary is less than A's by:",
       "options": [
         {
-          "option_text": "20%",
-          "is_correct": true
-        },
-        {
           "option_text": "25%",
           "is_correct": false
         },
@@ -21,11 +17,15 @@
           "is_correct": false
         },
         {
+          "option_text": "20%",
+          "is_correct": true
+        },
+        {
           "option_text": "15%",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "Reverse %: 25/(100+25)×100 = 20%. Trap 25% wrongly assumes the reverse equals the forward percentage.",
       "staleness_risk": 0,
@@ -39,10 +39,6 @@
       "stem": "30% of 40% of ₹500 is:",
       "options": [
         {
-          "option_text": "₹60",
-          "is_correct": true
-        },
-        {
           "option_text": "₹120",
           "is_correct": false
         },
@@ -53,9 +49,13 @@
         {
           "option_text": "₹45",
           "is_correct": false
+        },
+        {
+          "option_text": "₹60",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "0.30 × 0.40 × 500 = ₹60. Trap 120 adds the percentages (70%) of something; 75 multiplies wrongly.",
       "staleness_risk": 0,
@@ -99,10 +99,6 @@
       "stem": "If the price of sugar rises by 25%, by what percent must consumption be reduced to keep expenditure unchanged?",
       "options": [
         {
-          "option_text": "20%",
-          "is_correct": true
-        },
-        {
           "option_text": "25%",
           "is_correct": false
         },
@@ -113,9 +109,13 @@
         {
           "option_text": "22%",
           "is_correct": false
+        },
+        {
+          "option_text": "20%",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "Reduction = 25/(100+25)×100 = 20%. Trap 25% mirrors the rise instead of reversing it.",
       "staleness_risk": 0,
@@ -129,10 +129,6 @@
       "stem": "Two successive discounts of 20% and 10% are equivalent to a single discount of:",
       "options": [
         {
-          "option_text": "28%",
-          "is_correct": true
-        },
-        {
           "option_text": "30%",
           "is_correct": false
         },
@@ -143,9 +139,13 @@
         {
           "option_text": "25%",
           "is_correct": false
+        },
+        {
+          "option_text": "28%",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "Net = 1 − 0.8×0.9 = 0.28 = 28%. Trap 30% simply adds the two discounts.",
       "staleness_risk": 0,
@@ -159,12 +159,12 @@
       "stem": "In a class 60% of the students passed and 240 failed. The total number of students is:",
       "options": [
         {
-          "option_text": "600",
-          "is_correct": true
-        },
-        {
           "option_text": "480",
           "is_correct": false
+        },
+        {
+          "option_text": "600",
+          "is_correct": true
         },
         {
           "option_text": "720",
@@ -175,7 +175,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Failed = 40% = 240 ⇒ total = 600. Trap 400 treats 240 as 60%.",
       "staleness_risk": 0,
@@ -219,12 +219,12 @@
       "stem": "A town's population rises 10% in the first year and 20% in the second, reaching 13,200. The original population was:",
       "options": [
         {
-          "option_text": "10,000",
-          "is_correct": true
-        },
-        {
           "option_text": "11,000",
           "is_correct": false
+        },
+        {
+          "option_text": "10,000",
+          "is_correct": true
         },
         {
           "option_text": "12,000",
@@ -235,7 +235,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "13,200 ÷ (1.10 × 1.20) = 13,200 ÷ 1.32 = 10,000. Trap 11,000 reverses only the 20% rise.",
       "staleness_risk": 0,

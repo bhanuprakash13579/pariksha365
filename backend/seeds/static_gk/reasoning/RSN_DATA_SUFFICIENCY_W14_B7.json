@@ -39,10 +39,6 @@
       "stem": "Question: What is B's present age?  I: B is 5 years older than A.  II: A is 20 years old.",
       "options": [
         {
-          "option_text": "Both statements together are needed",
-          "is_correct": true
-        },
-        {
           "option_text": "Statement I alone is sufficient",
           "is_correct": false
         },
@@ -53,9 +49,13 @@
         {
           "option_text": "Either statement alone suffices",
           "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are needed",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "I links B to A; II fixes A; only together do they give B = 25.",
       "staleness_risk": 0,
@@ -69,12 +69,12 @@
       "stem": "Question: Is n an even number?  I: n is divisible by 4.  II: n is a multiple of 6.",
       "options": [
         {
-          "option_text": "Either statement is sufficient",
-          "is_correct": true
-        },
-        {
           "option_text": "Only statement I suffices",
           "is_correct": false
+        },
+        {
+          "option_text": "Either statement is sufficient",
+          "is_correct": true
         },
         {
           "option_text": "Only statement II suffices",
@@ -85,7 +85,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "Multiples of 4 and multiples of 6 are both even, so either alone settles it.",
       "staleness_risk": 0,
@@ -99,10 +99,6 @@
       "stem": "Question: What is the value of x?  I: 2x + 3 = 11.  II: x is a prime number.",
       "options": [
         {
-          "option_text": "Statement I alone is sufficient",
-          "is_correct": true
-        },
-        {
           "option_text": "Statement II alone is sufficient",
           "is_correct": false
         },
@@ -111,11 +107,15 @@
           "is_correct": false
         },
         {
+          "option_text": "Statement I alone is sufficient",
+          "is_correct": true
+        },
+        {
           "option_text": "Neither is sufficient",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
       "explanation": "I gives x = 4 uniquely; II alone allows many values.",
       "staleness_risk": 0,
@@ -129,10 +129,6 @@
       "stem": "Question: Which day is the 1st of a month?  I: The 3rd of that month is a Monday.  II: That month has 31 days.",
       "options": [
         {
-          "option_text": "Statement I alone is sufficient",
-          "is_correct": true
-        },
-        {
           "option_text": "Statement II alone is sufficient",
           "is_correct": false
         },
@@ -143,9 +139,13 @@
         {
           "option_text": "Either statement alone suffices",
           "is_correct": false
+        },
+        {
+          "option_text": "Statement I alone is sufficient",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "MEDIUM",
       "explanation": "If the 3rd is Monday, the 1st is Saturday — I alone is enough; II is irrelevant to the weekday.",
       "staleness_risk": 0,
@@ -159,10 +159,6 @@
       "stem": "Question: How is P related to Q?  I: P is the son of Q's mother.  II: Q is the only daughter of her parents.",
       "options": [
         {
-          "option_text": "Statement I alone is sufficient",
-          "is_correct": true
-        },
-        {
           "option_text": "Statement II alone is sufficient",
           "is_correct": false
         },
@@ -173,9 +169,13 @@
         {
           "option_text": "Neither is sufficient",
           "is_correct": false
+        },
+        {
+          "option_text": "Statement I alone is sufficient",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "I makes P a son of Q's mother, i.e. Q's brother — sufficient by itself.",
       "staleness_risk": 0,
@@ -189,12 +189,12 @@
       "stem": "Question: What is the two-digit number?  I: It is a multiple of 11.  II: The sum of its digits is 8.",
       "options": [
         {
-          "option_text": "Both statements together are sufficient",
-          "is_correct": true
-        },
-        {
           "option_text": "Statement I alone is sufficient",
           "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient",
+          "is_correct": true
         },
         {
           "option_text": "Statement II alone is sufficient",
@@ -205,7 +205,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "HARD",
       "explanation": "Multiples of 11 with digit-sum 8 ⇒ only 44; neither statement alone pins it down.",
       "staleness_risk": 0,

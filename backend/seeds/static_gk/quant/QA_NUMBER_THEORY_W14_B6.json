@@ -69,12 +69,12 @@
       "stem": "The number of factors of 72 is:",
       "options": [
         {
-          "option_text": "12",
-          "is_correct": true
-        },
-        {
           "option_text": "6",
           "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
         },
         {
           "option_text": "8",
@@ -85,7 +85,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "72 = 2³·3² ⇒ factors = (3+1)(2+1) = 12.",
       "staleness_risk": 0,
@@ -99,12 +99,12 @@
       "stem": "The number of trailing zeros in 20! is:",
       "options": [
         {
-          "option_text": "4",
-          "is_correct": true
-        },
-        {
           "option_text": "2",
           "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
         },
         {
           "option_text": "5",
@@ -115,7 +115,7 @@
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
       "explanation": "⌊20/5⌋ + ⌊20/25⌋ = 4 + 0 = 4.",
       "staleness_risk": 0,
@@ -159,10 +159,6 @@
       "stem": "The last two digits of 7⁷⁷ are:",
       "options": [
         {
-          "option_text": "07",
-          "is_correct": true
-        },
-        {
           "option_text": "43",
           "is_correct": false
         },
@@ -171,11 +167,15 @@
           "is_correct": false
         },
         {
+          "option_text": "07",
+          "is_correct": true
+        },
+        {
           "option_text": "01",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "7^n mod 100 cycles 07,49,43,01 (period 4); 77 mod 4 = 1 ⇒ 07.",
       "staleness_risk": 0,
@@ -189,10 +189,6 @@
       "stem": "The unit digit of 7⁸⁵ × 3⁴⁹ × 11¹⁷ is:",
       "options": [
         {
-          "option_text": "1",
-          "is_correct": true
-        },
-        {
           "option_text": "7",
           "is_correct": false
         },
@@ -201,11 +197,15 @@
           "is_correct": false
         },
         {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
           "option_text": "9",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "Unit digits: 7⁸⁵→7, 3⁴⁹→3, 11¹⁷→1; 7×3×1 = 21 ⇒ unit digit 1.",
       "staleness_risk": 0,
@@ -249,10 +249,6 @@
       "stem": "The remainder when 15²³ + 23²³ is divided by 19 is:",
       "options": [
         {
-          "option_text": "0",
-          "is_correct": true
-        },
-        {
           "option_text": "1",
           "is_correct": false
         },
@@ -261,11 +257,15 @@
           "is_correct": false
         },
         {
+          "option_text": "0",
+          "is_correct": true
+        },
+        {
           "option_text": "4",
           "is_correct": false
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "C",
       "difficulty": "HARD",
       "explanation": "15 ≡ −4 and 23 ≡ 4 (mod 19); (−4)²³ + 4²³ = −4²³ + 4²³ = 0.",
       "staleness_risk": 0,
@@ -279,10 +279,6 @@
       "stem": "The HCF of two numbers is 12 and their LCM is 144. If one number is 36, the other is:",
       "options": [
         {
-          "option_text": "48",
-          "is_correct": true
-        },
-        {
           "option_text": "12",
           "is_correct": false
         },
@@ -293,9 +289,13 @@
         {
           "option_text": "24",
           "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": true
         }
       ],
-      "correct_letter": "A",
+      "correct_letter": "D",
       "difficulty": "HARD",
       "explanation": "Product = HCF×LCM = 12×144 = 1728; other = 1728/36 = 48.",
       "staleness_risk": 0,
