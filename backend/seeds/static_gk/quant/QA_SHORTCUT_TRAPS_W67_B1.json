@@ -1,0 +1,308 @@
+{
+  "topic_code": "QA_SHORTCUT_TRAPS_W67_B1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Time-saver trap models — near-base, telescoping, digit-count",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_001",
+      "stem": "The value of 999 × 998 is:",
+      "options": [
+        {
+          "option_text": "997020",
+          "is_correct": false
+        },
+        {
+          "option_text": "998002",
+          "is_correct": false
+        },
+        {
+          "option_text": "996002",
+          "is_correct": false
+        },
+        {
+          "option_text": "997002",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "(1000−1)(1000−2) = 1000000 − 3000 + 2 = 997002. **Short Trick:** multiply near the base 1000: subtract the deficits from 1000, then append their product.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_002",
+      "stem": "The number of times the digit 9 appears while writing the numbers from 1 to 100 is:",
+      "options": [
+        {
+          "option_text": "19",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Units place: 10 nines; tens place (90–99): 10 nines ⇒ 20. **Short Trick:** count each place separately.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_003",
+      "stem": "The sum of all natural numbers from 1 to 50 is:",
+      "options": [
+        {
+          "option_text": "1250",
+          "is_correct": false
+        },
+        {
+          "option_text": "1225",
+          "is_correct": false
+        },
+        {
+          "option_text": "1326",
+          "is_correct": false
+        },
+        {
+          "option_text": "1275",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "50×51/2 = 1275. **Short Trick:** Σn = n(n+1)/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_004",
+      "stem": "The value of 96² is:",
+      "options": [
+        {
+          "option_text": "9016",
+          "is_correct": false
+        },
+        {
+          "option_text": "9216",
+          "is_correct": true
+        },
+        {
+          "option_text": "9224",
+          "is_correct": false
+        },
+        {
+          "option_text": "9200",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "(100 − 4)² = 10000 − 800 + 16 = 9216. **Short Trick:** (100 − a)² = 10000 − 200a + a².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_005",
+      "stem": "The value of 45 × 45 − 40 × 40 is:",
+      "options": [
+        {
+          "option_text": "400",
+          "is_correct": false
+        },
+        {
+          "option_text": "450",
+          "is_correct": false
+        },
+        {
+          "option_text": "405",
+          "is_correct": false
+        },
+        {
+          "option_text": "425",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "(45 + 40)(45 − 40) = 85 × 5 = 425. **Short Trick:** a² − b² = (a+b)(a−b).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_006",
+      "stem": "The unit digit of 1! + 2! + 3! + … + 100! is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "1 + 2 + 6 + 24 = 33 (units 3); every factorial from 5! ends in 0. **Short Trick:** only 1! to 4! affect the unit digit.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_007",
+      "stem": "The value of (1 + 1/2)(1 + 1/3)(1 + 1/4) … (1 + 1/9) is:",
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "4.5",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "(3/2)(4/3)…(10/9) telescopes to 10/2 = 5. **Short Trick:** consecutive factors cancel — keep last numerator over first denominator.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_008",
+      "stem": "The value of (1 − 1/2)(1 − 1/3)(1 − 1/4) … (1 − 1/10) is:",
+      "options": [
+        {
+          "option_text": "1/9",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/10",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "(1/2)(2/3)…(9/10) telescopes to 1/10. **Short Trick:** everything cancels except the first numerator over the last denominator.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_009",
+      "stem": "The unit digit of 2¹⁰⁰ × 3¹⁰⁰ is:",
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "2¹⁰⁰ × 3¹⁰⁰ = 6¹⁰⁰, and every power of 6 ends in 6. **Short Trick:** combine the bases first: 6ⁿ always ends in 6.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_QA_SHORTCUT_TRAPS_W67_B1_010",
+      "stem": "The value of 1² − 2² + 3² − 4² + … + 9² − 10² is:",
+      "options": [
+        {
+          "option_text": "55",
+          "is_correct": false
+        },
+        {
+          "option_text": "−55",
+          "is_correct": true
+        },
+        {
+          "option_text": "−45",
+          "is_correct": false
+        },
+        {
+          "option_text": "−50",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Pairing gives −(3 + 7 + 11 + 15 + 19) = −55. **Short Trick:** a² − (a+1)² = −(2a+1); sum the odd numbers.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    }
+  ]
+}
