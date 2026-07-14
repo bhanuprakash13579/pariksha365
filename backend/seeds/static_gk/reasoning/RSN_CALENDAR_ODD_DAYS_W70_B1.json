@@ -1,0 +1,308 @@
+{
+  "topic_code": "RSN_CALENDAR_ODD_DAYS_W70_B1",
+  "subject": "Reasoning",
+  "topic": "Calendar — odd days & day finding",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_001",
+      "stem": "If today is Monday, the day after 61 days will be:",
+      "options": [
+        {
+          "option_text": "Saturday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sunday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "61 mod 7 = 5 ⇒ Monday + 5 = Saturday. **Short Trick:** reduce the number of days modulo 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_002",
+      "stem": "If 1 January of a non-leap year is Monday, then 1 March of the same year is:",
+      "options": [
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thursday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tuesday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "31 + 28 = 59 days later; 59 mod 7 = 3 ⇒ Monday + 3 = Thursday. **Short Trick:** count days to the target, then mod 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_003",
+      "stem": "The number of odd days in an ordinary (non-leap) year is:",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "365 mod 7 = 1. **Short Trick:** 365 = 52 weeks + 1 day.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_004",
+      "stem": "If 1 January 2020 was a Wednesday, then 26 January 2020 was a:",
+      "options": [
+        {
+          "option_text": "Saturday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sunday",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "25 days later; 25 mod 7 = 4 ⇒ Wednesday + 4 = Sunday. **Short Trick:** add (date − 1) mod 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_005",
+      "stem": "If the last day of a 31-day month is Wednesday, the first day of that month is:",
+      "options": [
+        {
+          "option_text": "Tuesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sunday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Day 31 = day 1 + 30; 30 mod 7 = 2 ⇒ first = Wednesday − 2 = Monday. **Short Trick:** shift back by (days − 1) mod 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_006",
+      "stem": "If today is Tuesday, the day after 100 days will be:",
+      "options": [
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thursday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Saturday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "100 mod 7 = 2 ⇒ Tuesday + 2 = Thursday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_007",
+      "stem": "The number of odd days in 100 years is:",
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "76 ordinary + 24 leap years give 124 odd days; 124 mod 7 = 5. **Short Trick:** memorise 100→5, 200→3, 300→1, 400→0.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_008",
+      "stem": "If 3 March of a year is Monday, then 3 April of the same year (March has 31 days) is:",
+      "options": [
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thursday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Saturday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "31 days later; 31 mod 7 = 3 ⇒ Monday + 3 = Thursday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_009",
+      "stem": "Which of the following is a leap year?",
+      "options": [
+        {
+          "option_text": "1900",
+          "is_correct": false
+        },
+        {
+          "option_text": "2100",
+          "is_correct": false
+        },
+        {
+          "option_text": "1800",
+          "is_correct": false
+        },
+        {
+          "option_text": "2000",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "A century year is a leap year only if divisible by 400 ⇒ 2000. **Short Trick:** centuries need division by 400.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CALENDAR_ODD_DAYS_W70_B1_010",
+      "stem": "If the day before yesterday was Friday, the day after tomorrow will be:",
+      "options": [
+        {
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sunday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tuesday",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Day before yesterday Friday ⇒ today Sunday ⇒ day after tomorrow Tuesday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    }
+  ]
+}

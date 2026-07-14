@@ -1,0 +1,308 @@
+{
+  "topic_code": "RSN_CODING_DECODING_W68_B1",
+  "subject": "Reasoning",
+  "topic": "Coding-decoding — positional & shift methods",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_001",
+      "stem": "Letters are valued A = 1, B = 2, …, Z = 26. The value (sum) of the word 'CAB' is:",
+      "options": [
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C + A + B = 3 + 1 + 2 = 6. **Short Trick:** add the positional values of the letters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_002",
+      "stem": "Using the pairing A↔Z, B↔Y, C↔X, …, the letter opposite to 'D' is:",
+      "options": [
+        {
+          "option_text": "W",
+          "is_correct": true
+        },
+        {
+          "option_text": "V",
+          "is_correct": false
+        },
+        {
+          "option_text": "X",
+          "is_correct": false
+        },
+        {
+          "option_text": "U",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Opposite position = 27 − 4 = 23 = W. **Short Trick:** opposite letter = (27 − position).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_003",
+      "stem": "If 'CAT' is written as 'DBU' (each letter + 1), then 'DOG' is written as:",
+      "options": [
+        {
+          "option_text": "DPH",
+          "is_correct": false
+        },
+        {
+          "option_text": "EPH",
+          "is_correct": true
+        },
+        {
+          "option_text": "EOH",
+          "is_correct": false
+        },
+        {
+          "option_text": "FPI",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "D→E, O→P, G→H ⇒ EPH. **Short Trick:** shift every letter forward by 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_004",
+      "stem": "If 'ROSE' is coded as 'PMQC' (each letter − 2), then 'FROG' is coded as:",
+      "options": [
+        {
+          "option_text": "EPMF",
+          "is_correct": false
+        },
+        {
+          "option_text": "CPLD",
+          "is_correct": false
+        },
+        {
+          "option_text": "DQNF",
+          "is_correct": false
+        },
+        {
+          "option_text": "DPME",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "F→D, R→P, O→M, G→E ⇒ DPME. **Short Trick:** shift every letter back by 2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_005",
+      "stem": "If 'MOUSE' is coded as 'NPVTF' (+1), then 'TIGER' is coded as:",
+      "options": [
+        {
+          "option_text": "TIGFS",
+          "is_correct": false
+        },
+        {
+          "option_text": "UJHER",
+          "is_correct": false
+        },
+        {
+          "option_text": "VKIGT",
+          "is_correct": false
+        },
+        {
+          "option_text": "UJHFS",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "T→U, I→J, G→H, E→F, R→S ⇒ UJHFS. **Short Trick:** add 1 to each letter.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_006",
+      "stem": "If the word 'LEAF' is coded by reversing its letters as 'FAEL', then 'TREE' is coded as:",
+      "options": [
+        {
+          "option_text": "ERET",
+          "is_correct": false
+        },
+        {
+          "option_text": "EERT",
+          "is_correct": true
+        },
+        {
+          "option_text": "TEER",
+          "is_correct": false
+        },
+        {
+          "option_text": "REET",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Reverse the order ⇒ EERT.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_007",
+      "stem": "If A = 26, B = 25, …, Z = 1 (reverse values), the value (sum) of 'ACE' is:",
+      "options": [
+        {
+          "option_text": "78",
+          "is_correct": false
+        },
+        {
+          "option_text": "66",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "72",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "A = 26, C = 24, E = 22 ⇒ 72. **Short Trick:** reverse value = 27 − normal position.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_008",
+      "stem": "Letters are valued A = 1, B = 2, …, Z = 26. The sum of the values of the letters in 'BOX' is:",
+      "options": [
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "41",
+          "is_correct": true
+        },
+        {
+          "option_text": "39",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "B + O + X = 2 + 15 + 24 = 41.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_009",
+      "stem": "In a code, 'CODE' is written as 'DPEF' (each letter + 1). The word that is written as 'IBQQZ' is:",
+      "options": [
+        {
+          "option_text": "HAPPI",
+          "is_correct": false
+        },
+        {
+          "option_text": "GAPPY",
+          "is_correct": false
+        },
+        {
+          "option_text": "HAQQY",
+          "is_correct": false
+        },
+        {
+          "option_text": "HAPPY",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "Reverse the shift (− 1): I→H, B→A, Q→P, Q→P, Z→Y ⇒ HAPPY. **Short Trick:** to decode a +1 code, shift back by 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_CODING_DECODING_W68_B1_010",
+      "stem": "If 'SUN' becomes 'TVO' (each letter + 1), then 'MOON' becomes:",
+      "options": [
+        {
+          "option_text": "NOOP",
+          "is_correct": false
+        },
+        {
+          "option_text": "NPPO",
+          "is_correct": true
+        },
+        {
+          "option_text": "MPPO",
+          "is_correct": false
+        },
+        {
+          "option_text": "NPPN",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "M→N, O→P, O→P, N→O ⇒ NPPO. **Short Trick:** add 1 to each letter.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    }
+  ]
+}

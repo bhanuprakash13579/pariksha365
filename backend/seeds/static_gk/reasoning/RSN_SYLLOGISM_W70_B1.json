@@ -1,0 +1,308 @@
+{
+  "topic_code": "RSN_SYLLOGISM_W70_B1",
+  "subject": "Reasoning",
+  "topic": "Syllogism — rule-based conclusions",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_001",
+      "stem": "Statements: All roses are flowers. All flowers are plants. Conclusions: I. All roses are plants. II. Some plants are roses.",
+      "options": [
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "All roses→plants (transitive) gives I; its converse 'some plants are roses' gives II. **Short Trick:** All A→B, All B→C ⇒ All A→C and 'some C are A'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_002",
+      "stem": "Statements: Some pens are books. All books are papers. Conclusions: I. Some pens are papers. II. All papers are pens.",
+      "options": [
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Some pens are books and all books are papers ⇒ some pens are papers (I). II is not valid.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_003",
+      "stem": "Statements: No dog is a cat. All cats are pets. Conclusions: I. No dog is a pet. II. Some pets are not dogs.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Cats are pets and are not dogs ⇒ some pets are not dogs (II). I is not certain. **Short Trick:** No A-B + All B-C ⇒ some C are not A.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_004",
+      "stem": "Statements: All apples are red. Some red things are sweet. Conclusions: I. Some apples are sweet. II. Some sweet things are red.",
+      "options": [
+        {
+          "option_text": "Only II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "'Some red are sweet' converts to 'some sweet are red' (II). I is not guaranteed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_005",
+      "stem": "Statements: Some books are pens. No pen is a pencil. Conclusions: I. Some books are not pencils. II. No book is a pencil.",
+      "options": [
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "The books that are pens cannot be pencils ⇒ some books are not pencils (I). II is too strong.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_006",
+      "stem": "Statements: All cars are vehicles. No vehicle is a toy. Conclusions: I. No car is a toy. II. Some vehicles are cars.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "All cars are vehicles and no vehicle is a toy ⇒ no car is a toy (I); and 'some vehicles are cars' (II) both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_007",
+      "stem": "Statements: Some students are lazy. All lazy people are dull. Conclusions: I. Some students are dull. II. All dull people are students.",
+      "options": [
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Some students are lazy and all lazy are dull ⇒ some students are dull (I). II is not valid.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_008",
+      "stem": "Statements: All squares are rectangles. All rectangles are quadrilaterals. Conclusions: I. All squares are quadrilaterals. II. Some quadrilaterals are squares.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Transitivity gives I; its converse gives II ⇒ both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_009",
+      "stem": "Statements: Some doctors are engineers. Some engineers are teachers. Conclusions: I. Some doctors are teachers. II. Some teachers are doctors.",
+      "options": [
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Two particular ('some') premises yield no definite conclusion ⇒ neither follows. **Short Trick:** two 'some' statements never give a sure conclusion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "id": "sgk_RSN_SYLLOGISM_W70_B1_010",
+      "stem": "Statements: All pens are blue. No blue thing is red. Conclusions: I. No pen is red. II. Some pens are red.",
+      "options": [
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "All pens are blue and no blue is red ⇒ no pen is red (I). II contradicts I.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "inline-gen-2026-07-13",
+      "generated_at": "2026-07-13T00:00:00+00:00"
+    }
+  ]
+}
