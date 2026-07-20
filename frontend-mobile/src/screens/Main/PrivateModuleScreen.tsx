@@ -33,6 +33,17 @@ const SUBJECT_EMOJI: Record<string, string> = {
     'Reasoning': '🧠',
     'Quantitative Aptitude': '📐',
     'General Studies': '📚',
+    'General Knowledge & Current Affairs': '🌐',
+    'Perspectives in Education': '🏫',
+    'Educational Psychology': '🧠',
+    'Child Development & Pedagogy': '🧠',
+    'Language I — Telugu': '🅰️',
+    'Language II — English': '📖',
+    'Mathematics': '📐',
+    'Science': '🔬',
+    'Environmental Studies': '🌿',
+    'Social Studies': '🗺️',
+    'Full Mock': '⏱️',
 };
 
 function getEmoji(subject: string): string {

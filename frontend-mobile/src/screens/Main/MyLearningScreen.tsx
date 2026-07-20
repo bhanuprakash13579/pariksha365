@@ -9,10 +9,14 @@ import { PrivateModuleAPI, AttemptAPI } from '../../services/api';
 const MODULE_COLORS: Record<string, [string, string]> = {
     'epfo-apfc': ['#7c3aed', '#a855f7'],
     'ssc-cgl-aao-paper3': ['#0369a1', '#0ea5e9'],
+    'ap-dsc-sgt': ['#047857', '#10b981'],
+    'ap-tet': ['#b45309', '#f59e0b'],
 };
 const MODULE_ICONS: Record<string, string> = {
     'epfo-apfc': 'shield-checkmark',
     'ssc-cgl-aao-paper3': 'calculator',
+    'ap-dsc-sgt': 'school',
+    'ap-tet': 'ribbon',
 };
 const DEFAULT_COLORS: [string, string] = ['#374151', '#6b7280'];
 
