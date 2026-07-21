@@ -55,49 +55,18 @@ MODULES: dict[str, dict] = {
         "dir": "ap_dsc_sgt",
         "name": "AP DSC — SGT (Secondary Grade Teacher)",
         "description": (
-            "Exhaustive, chapter-by-chapter MCQ bank for the AP DSC / Mega-DSC "
-            "Secondary Grade Teacher (SGT) written test. Pattern: 160 questions · "
-            "80 marks (½ mark each) · 150 minutes · no negative marking. Eight "
-            "sections: General Knowledge & Current Affairs (16), Perspectives in "
-            "Education (8), Educational Psychology (16), Language-I Telugu (24), "
-            "Language-II English (24), Mathematics (24), Science (24), Social "
-            "Studies (24). Study one chapter, then practise only that chapter — "
-            "you are never forced to face the whole syllabus at once. A Full-Mock "
-            "section holds exactly-timed 160-question papers. Selection = 80% TRT "
-            "+ 20% AP TET. Note: Pedagogy, Language-I, Language-II, Mathematics and "
-            "Science chapters are the same core syllabus as the AP TET module — "
-            "study them once, they count for both exams. General Knowledge & "
-            "Current Affairs and Social Studies are SGT-only; AP TET never tests them. "
-            "For Mathematics and English SKILL practice (percentage, SI/CI, algebra, "
-            "geometry, grammar, vocabulary, comprehension), use the main app's "
-            "Quantitative Aptitude / English / Vocabulary quiz sections — they already "
-            "cover these topics far more deeply. This module's Mathematics/English "
-            "chapters hold only the Methodology of Teaching content (how to teach "
-            "the subject), which is TET/SGT-exclusive and not found anywhere else."
+            "Chapter-by-chapter MCQ practice for the AP DSC SGT written test "
+            "(160 Q · 80 marks · 150 min). Study one chapter at a time — Full-Mock "
+            "has exactly-timed papers."
         ),
     },
     "ap-tet": {
         "dir": "ap_tet",
         "name": "AP TET (Teacher Eligibility Test)",
         "description": (
-            "Exhaustive, chapter-by-chapter MCQ bank for AP TET (October-2025 CBT "
-            "pattern). Pattern: 150 questions · 150 marks (1 mark each) · 150 "
-            "minutes · NO negative marking. Paper-1A/1B (Classes I–V): Child "
-            "Development & Pedagogy, Language-I, Language-II English, Mathematics, "
-            "Environmental Studies — 30 each. Paper-2A/2B (Classes VI–VIII): CDP, "
-            "Language-I, Language-II, and [Math & Science] or [Social Studies] (60). "
-            "Pass: OC-EWS 60% · BC 50% · SC/ST/PwBD 40%. Study one chapter, then "
-            "practise only that chapter. A Full-Mock section holds exactly-timed "
-            "150-question Paper-1A and Paper-2A papers. Note: Child Development & "
-            "Pedagogy, Language-I, Language-II, Mathematics and EVS/Science chapters "
-            "are the same core syllabus as the AP DSC-SGT module — study them once, "
-            "they count for both exams. AP TET has NO General Knowledge/Current "
-            "Affairs section (that is SGT-only). For Mathematics and English SKILL "
-            "practice (number system, geometry, grammar, vocabulary, comprehension), "
-            "use the main app's Quantitative Aptitude / English / Vocabulary quiz "
-            "sections — they already cover these topics far more deeply. This "
-            "module's Mathematics/English chapters hold only the Methodology of "
-            "Teaching content, which is TET-exclusive."
+            "Chapter-by-chapter MCQ practice for AP TET (150 Q · 150 marks · "
+            "150 min, no negative marking). Study one chapter at a time — "
+            "Full-Mock has exactly-timed papers."
         ),
     },
 }
