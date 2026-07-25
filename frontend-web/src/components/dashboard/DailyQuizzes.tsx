@@ -70,6 +70,32 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     // without the value snapping mid-keystroke. Clamped on blur.
     const [quizCountStr, setQuizCountStr] = useState(() => String(Number(localStorage.getItem('quizCount')) || 10));
     const [quizMinutesStr, setQuizMinutesStr] = useState(() => String(Number(localStorage.getItem('quizMinutes')) || 5));
+
+    // Difficulty mode — 'auto' = balanced 30/30/40; 'custom' = exact per-difficulty counts the
+    // user picks (e.g. 4 medium + 6 hard). Persisted so it stays until the user changes it.
+    const [quizMode, setQuizMode] = useState<'auto' | 'custom'>(() => (localStorage.getItem('quizMode') === 'custom' ? 'custom' : 'auto'));
+    const [quizDiff, setQuizDiff] = useState<{ EASY: number; MEDIUM: number; HARD: number }>(() => {
+        try {
+            const d = JSON.parse(localStorage.getItem('quizDiff') || '{}');
+            return { EASY: Number(d.EASY) || 0, MEDIUM: Number(d.MEDIUM) || 0, HARD: Number(d.HARD) || 0 };
+        } catch { return { EASY: 0, MEDIUM: 0, HARD: 0 }; }
+    });
+    const [settingsOpen, setSettingsOpen] = useState(false);
+    const diffTotal = quizDiff.EASY + quizDiff.MEDIUM + quizDiff.HARD;
+    const useCustomDiff = quizMode === 'custom' && diffTotal > 0;
+    const persistDiff = (next: { EASY: number; MEDIUM: number; HARD: number }) => {
+        setQuizDiff(next); localStorage.setItem('quizDiff', JSON.stringify(next));
+    };
+    const setDiffMode = (mode: 'auto' | 'custom') => { setQuizMode(mode); localStorage.setItem('quizMode', mode); };
+    // Toggle a difficulty on/off. Turning on defaults its count to 5 (or its last count); off = 0.
+    const toggleDiff = (level: 'EASY' | 'MEDIUM' | 'HARD') => {
+        const cur = quizDiff[level];
+        persistDiff({ ...quizDiff, [level]: cur > 0 ? 0 : 5 });
+    };
+    const setDiffCount = (level: 'EASY' | 'MEDIUM' | 'HARD', n: number) => {
+        persistDiff({ ...quizDiff, [level]: Math.max(0, Math.min(100, isNaN(n) ? 0 : n)) });
+    };
+
     const [timeLeft, setTimeLeft] = useState<number | null>(null);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -118,7 +144,12 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     // Start a daily quiz for a category
     const startCategoryQuiz = async (subject: string) => {
         try {
-            const res = await QuizAPI.getDailyQuiz(subject, quizCount, Array.from(bookmarks));
+            const res = await QuizAPI.getDailyQuiz(
+                subject,
+                useCustomDiff ? undefined : quizCount,
+                Array.from(bookmarks),
+                useCustomDiff ? quizDiff : undefined,
+            );
             if (res.data.questions && res.data.questions.length > 0) {
                 setTimeLeft(quizMinutes * 60);
                 setActiveQuiz({
@@ -506,49 +537,111 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                 </div>
             )}
 
-            {/* Quiz settings — number of questions & time (applies to every quiz you start) */}
-            <div className="mb-8 bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
-                <div className="flex flex-wrap items-end gap-6">
-                    <div>
-                        <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Questions</label>
-                        <input
-                            type="number" min={1} max={100} value={quizCountStr}
-                            onChange={(e) => setQuizCountStr(e.target.value)}
-                            onBlur={(e) => {
-                                const n = parseInt(e.target.value, 10);
-                                const clamped = isNaN(n) ? 1 : Math.max(1, Math.min(100, n));
-                                setQuizCount(clamped);
-                                setQuizCountStr(String(clamped));
-                                localStorage.setItem('quizCount', String(clamped));
+            {/* Quiz Settings — dedicated, collapsible panel. Difficulty mix + counts + time.
+                Persisted in localStorage; stays until you change it; open it any time. */}
+            <div className="mb-8">
+                <button
+                    onClick={() => setSettingsOpen((o) => !o)}
+                    className="w-full flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-5 py-4 shadow-sm hover:border-orange-300 transition-colors">
+                    <span className="flex items-center gap-2 font-bold text-gray-800">⚙️ Quiz Settings</span>
+                    <span className="flex items-center gap-3 text-xs">
+                        <span className="text-gray-500 font-semibold">
+                            {useCustomDiff
+                                ? [quizDiff.EASY && `${quizDiff.EASY} Easy`, quizDiff.MEDIUM && `${quizDiff.MEDIUM} Medium`, quizDiff.HARD && `${quizDiff.HARD} Hard`].filter(Boolean).join(' · ')
+                                : `${quizCount} questions · balanced`}
+                            {` · ${quizMinutes} min`}
+                        </span>
+                        <span className="text-gray-400">{settingsOpen ? '▲' : '▼'}</span>
+                    </span>
+                </button>
+
+                {settingsOpen && (
+                    <div className="mt-2 bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
+                        {/* Mode toggle */}
+                        <div className="flex gap-2 mb-5">
+                            {(['auto', 'custom'] as const).map((m) => (
+                                <button key={m} onClick={() => setDiffMode(m)}
+                                    className={`px-4 py-2 rounded-lg text-sm font-bold border transition-colors ${quizMode === m ? 'bg-orange-500 text-white border-orange-500' : 'bg-white text-gray-600 border-gray-300 hover:border-orange-300'}`}>
+                                    {m === 'auto' ? 'Auto-balanced' : 'Choose difficulty'}
+                                </button>
+                            ))}
+                        </div>
+
+                        {quizMode === 'auto' ? (
+                            <div>
+                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Questions</label>
+                                <input
+                                    type="number" min={1} max={100} value={quizCountStr}
+                                    onChange={(e) => setQuizCountStr(e.target.value)}
+                                    onBlur={(e) => {
+                                        const n = parseInt(e.target.value, 10);
+                                        const clamped = isNaN(n) ? 1 : Math.max(1, Math.min(100, n));
+                                        setQuizCount(clamped); setQuizCountStr(String(clamped));
+                                        localStorage.setItem('quizCount', String(clamped));
+                                    }}
+                                    className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                />
+                                <p className="text-[11px] text-gray-400 mt-3">Auto-balanced to 30% easy · 30% medium · 40% hard, spread across more topics as you add questions.</p>
+                            </div>
+                        ) : (
+                            <div>
+                                <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Tick the difficulty levels you want and set how many of each</p>
+                                <div className="space-y-2.5">
+                                    {(['EASY', 'MEDIUM', 'HARD'] as const).map((level) => {
+                                        const on = quizDiff[level] > 0;
+                                        const label = level.charAt(0) + level.slice(1).toLowerCase();
+                                        return (
+                                            <div key={level} className="flex items-center gap-3">
+                                                <label className="flex items-center gap-2 w-32 cursor-pointer select-none">
+                                                    <input type="checkbox" checked={on} onChange={() => toggleDiff(level)} className="w-4 h-4 accent-orange-500" />
+                                                    <span className={`text-sm font-semibold ${on ? 'text-gray-800' : 'text-gray-400'}`}>{label}</span>
+                                                </label>
+                                                <input
+                                                    type="number" min={0} max={100} disabled={!on}
+                                                    value={on ? quizDiff[level] : ''} placeholder="0"
+                                                    onChange={(e) => setDiffCount(level, parseInt(e.target.value, 10))}
+                                                    className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold disabled:bg-gray-50 disabled:text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                                />
+                                                <span className="text-xs text-gray-400">questions</span>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <p className="text-sm font-bold text-gray-700 mt-3">
+                                    Total: {diffTotal} question{diffTotal === 1 ? '' : 's'}
+                                    {diffTotal === 0 && <span className="text-red-500 font-semibold"> — select at least one level to start a quiz</span>}
+                                </p>
+                            </div>
+                        )}
+
+                        {/* Time — applies in both modes */}
+                        <div className="mt-5 pt-4 border-t border-gray-100">
+                            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Time (minutes)</label>
+                            <input
+                                type="number" min={1} max={180} value={quizMinutesStr}
+                                onChange={(e) => setQuizMinutesStr(e.target.value)}
+                                onBlur={(e) => {
+                                    const n = parseInt(e.target.value, 10);
+                                    const clamped = isNaN(n) ? 1 : Math.max(1, Math.min(180, n));
+                                    setQuizMinutes(clamped); setQuizMinutesStr(String(clamped));
+                                    localStorage.setItem('quizMinutes', String(clamped));
+                                }}
+                                className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
+                            />
+                        </div>
+
+                        <button
+                            onClick={() => {
+                                setDiffMode('auto');
+                                setQuizCount(10); setQuizMinutes(5); setQuizCountStr('10'); setQuizMinutesStr('5');
+                                localStorage.setItem('quizCount', '10'); localStorage.setItem('quizMinutes', '5');
+                                persistDiff({ EASY: 0, MEDIUM: 0, HARD: 0 });
                             }}
-                            className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
-                        />
+                            className="mt-4 text-xs font-bold px-3 py-2 rounded-lg border bg-white text-gray-600 border-gray-300 hover:border-orange-300 transition-colors">
+                            Reset to default (10 · balanced · 5 min)
+                        </button>
                     </div>
-                    <div>
-                        <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Time (minutes)</label>
-                        <input
-                            type="number" min={1} max={180} value={quizMinutesStr}
-                            onChange={(e) => setQuizMinutesStr(e.target.value)}
-                            onBlur={(e) => {
-                                const n = parseInt(e.target.value, 10);
-                                const clamped = isNaN(n) ? 1 : Math.max(1, Math.min(180, n));
-                                setQuizMinutes(clamped);
-                                setQuizMinutesStr(String(clamped));
-                                localStorage.setItem('quizMinutes', String(clamped));
-                            }}
-                            className="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange-400"
-                        />
-                    </div>
-                    <button
-                        onClick={() => { setQuizCount(10); setQuizMinutes(5); setQuizCountStr('10'); setQuizMinutesStr('5'); localStorage.setItem('quizCount', '10'); localStorage.setItem('quizMinutes', '5'); }}
-                        className="text-xs font-bold px-3 py-2 rounded-lg border bg-white text-gray-600 border-gray-300 hover:border-orange-300 transition-colors">
-                        Reset to 10 / 5 min
-                    </button>
-                </div>
-                <p className="text-[11px] text-gray-400 mt-3">
-                    Set any number of questions and time you like (e.g. 9 questions in 4 minutes). Each quiz is
-                    auto-balanced to 30% easy · 30% medium · 40% hard and spreads across more topics as you add questions.
-                </p>
+                )}
             </div>
 
             {/* Recommended Weak Topics Quiz */}

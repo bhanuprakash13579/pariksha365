@@ -39,7 +39,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     const {
         subject, limit = 10, title = 'Daily Quiz',
         moduleSlug, moduleTopic, weakTopicMode = false, wrongPracticeMode = false,
-        durationSecs,
+        durationSecs, diffCounts,
     } = route.params || {};
 
     // Configurable from the launch screen; falls back to 5 minutes.
@@ -88,7 +88,12 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                 } else if (weakTopicMode) {
                     res = await QuizAPI.getWeakTopicQuiz(limit);
                 } else {
-                    res = await QuizAPI.getDailyQuiz(subject, limit, bmIds);
+                    res = await QuizAPI.getDailyQuiz(
+                        subject,
+                        diffCounts ? undefined : limit,
+                        bmIds,
+                        diffCounts || undefined,
+                    );
                 }
                 setQuestions(res.data?.questions || res.data || []);
             } catch (err) {

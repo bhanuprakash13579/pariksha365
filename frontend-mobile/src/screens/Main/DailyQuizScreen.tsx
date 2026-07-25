@@ -19,12 +19,30 @@ export default function DailyQuizScreen({ navigation }: any) {
     const [quizCountStr, setQuizCountStr] = useState('10');
     const [quizMinutesStr, setQuizMinutesStr] = useState('5');
 
+    // Difficulty mode — 'auto' = balanced 30/30/40; 'custom' = exact per-difficulty counts.
+    const [quizMode, setQuizMode] = useState<'auto' | 'custom'>('auto');
+    const [diff, setDiff] = useState<{ EASY: number; MEDIUM: number; HARD: number }>({ EASY: 0, MEDIUM: 0, HARD: 0 });
+    const [settingsOpen, setSettingsOpen] = useState(false);
+    const diffTotal = diff.EASY + diff.MEDIUM + diff.HARD;
+    const useCustomDiff = quizMode === 'custom' && diffTotal > 0;
+    const persistDiff = (next: { EASY: number; MEDIUM: number; HARD: number }) => {
+        setDiff(next); AsyncStorage.setItem('quizDiff', JSON.stringify(next)).catch(() => { });
+    };
+    const setMode = (m: 'auto' | 'custom') => { setQuizMode(m); AsyncStorage.setItem('quizMode', m).catch(() => { }); };
+    const toggleDiff = (level: 'EASY' | 'MEDIUM' | 'HARD') => persistDiff({ ...diff, [level]: diff[level] > 0 ? 0 : 5 });
+    const setDiffCount = (level: 'EASY' | 'MEDIUM' | 'HARD', t: string) => {
+        const n = parseInt(t, 10);
+        persistDiff({ ...diff, [level]: isNaN(n) ? 0 : Math.max(0, Math.min(100, n)) });
+    };
+
     useEffect(() => {
-        AsyncStorage.multiGet(['quizCount', 'quizMinutes']).then(([[, c], [, m]]) => {
+        AsyncStorage.multiGet(['quizCount', 'quizMinutes', 'quizMode', 'quizDiff']).then(([[, c], [, m], [, mode], [, d]]) => {
             const cn = parseInt(c || '', 10);
             const mn = parseInt(m || '', 10);
             if (!isNaN(cn) && cn > 0) { setQuizCount(cn); setQuizCountStr(String(cn)); }
             if (!isNaN(mn) && mn > 0) { setQuizMinutes(mn); setQuizMinutesStr(String(mn)); }
+            if (mode === 'custom') setQuizMode('custom');
+            if (d) { try { const p = JSON.parse(d); setDiff({ EASY: Number(p.EASY) || 0, MEDIUM: Number(p.MEDIUM) || 0, HARD: Number(p.HARD) || 0 }); } catch { } }
         }).catch(() => { });
     }, []);
 
@@ -218,38 +236,86 @@ export default function DailyQuizScreen({ navigation }: any) {
                 {/* ── PATHWAY 3: Cover More Ground ── */}
                 <Text style={[styles.sectionTitle, { marginBottom: 4 }]}>📚 Cover More Ground</Text>
                 <Text style={{ color: '#6b7280', fontSize: 13, marginBottom: 12 }}>
-                    Pick a subject — {quizCount} questions ({quizMinutes} min) spread across topics.
+                    Pick a subject — {useCustomDiff
+                        ? [diff.EASY && `${diff.EASY} Easy`, diff.MEDIUM && `${diff.MEDIUM} Medium`, diff.HARD && `${diff.HARD} Hard`].filter(Boolean).join(' · ')
+                        : `${quizCount} questions`} ({quizMinutes} min) spread across topics.
                 </Text>
 
-                {/* Quiz settings: questions & time */}
-                <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-end', gap: 12, backgroundColor: '#fff', borderRadius: 14, borderWidth: 1, borderColor: '#f3f4f6', padding: 14, marginBottom: 16 }}>
-                    <View>
-                        <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>QUESTIONS</Text>
-                        <TextInput
-                            keyboardType="number-pad"
-                            value={quizCountStr}
-                            onChangeText={setQuizCountStr}
-                            onEndEditing={(e) => commitCount(e.nativeEvent.text)}
-                            onBlur={() => commitCount(quizCountStr)}
-                            style={{ width: 70, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: '#1f2937' }}
-                        />
-                    </View>
-                    <View>
-                        <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>TIME (MIN)</Text>
-                        <TextInput
-                            keyboardType="number-pad"
-                            value={quizMinutesStr}
-                            onChangeText={setQuizMinutesStr}
-                            onEndEditing={(e) => commitMinutes(e.nativeEvent.text)}
-                            onBlur={() => commitMinutes(quizMinutesStr)}
-                            style={{ width: 70, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: '#1f2937' }}
-                        />
-                    </View>
+                {/* Quiz Settings — collapsible: difficulty mix + counts + time. Persisted. */}
+                <View style={{ marginBottom: 16 }}>
                     <TouchableOpacity
-                        onPress={() => { commitCount('10'); commitMinutes('5'); }}
-                        style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 10, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff' }}>
-                        <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280' }}>Reset 10 / 5</Text>
+                        onPress={() => setSettingsOpen((o) => !o)}
+                        activeOpacity={0.8}
+                        style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#fff', borderRadius: 14, borderWidth: 1, borderColor: '#f3f4f6', paddingHorizontal: 14, paddingVertical: 13 }}>
+                        <Text style={{ fontWeight: 'bold', color: '#1f2937', fontSize: 14 }}>⚙️  Quiz Settings</Text>
+                        <Text style={{ color: '#9ca3af', fontSize: 12, fontWeight: '600' }}>
+                            {useCustomDiff ? `${diffTotal} Q · custom` : `${quizCount} Q · balanced`} · {quizMinutes}m  {settingsOpen ? '▲' : '▼'}
+                        </Text>
                     </TouchableOpacity>
+
+                    {settingsOpen && (
+                        <View style={{ marginTop: 8, backgroundColor: '#fff', borderRadius: 14, borderWidth: 1, borderColor: '#f3f4f6', padding: 14 }}>
+                            {/* Mode toggle */}
+                            <View style={{ flexDirection: 'row', gap: 8, marginBottom: 14 }}>
+                                {(['auto', 'custom'] as const).map((m) => (
+                                    <TouchableOpacity key={m} onPress={() => setMode(m)}
+                                        style={{ paddingHorizontal: 14, paddingVertical: 8, borderRadius: 10, borderWidth: 1, borderColor: quizMode === m ? '#f97316' : '#e5e7eb', backgroundColor: quizMode === m ? '#f97316' : '#fff' }}>
+                                        <Text style={{ fontSize: 13, fontWeight: 'bold', color: quizMode === m ? '#fff' : '#6b7280' }}>{m === 'auto' ? 'Auto-balanced' : 'Choose difficulty'}</Text>
+                                    </TouchableOpacity>
+                                ))}
+                            </View>
+
+                            {quizMode === 'auto' ? (
+                                <View>
+                                    <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>QUESTIONS</Text>
+                                    <TextInput keyboardType="number-pad" value={quizCountStr}
+                                        onChangeText={setQuizCountStr} onEndEditing={(e) => commitCount(e.nativeEvent.text)} onBlur={() => commitCount(quizCountStr)}
+                                        style={{ width: 80, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: '#1f2937' }} />
+                                    <Text style={{ fontSize: 11, color: '#9ca3af', marginTop: 8 }}>Auto-balanced to 30% easy · 30% medium · 40% hard.</Text>
+                                </View>
+                            ) : (
+                                <View>
+                                    <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 8 }}>TICK THE LEVELS YOU WANT & SET HOW MANY OF EACH</Text>
+                                    {(['EASY', 'MEDIUM', 'HARD'] as const).map((level) => {
+                                        const on = diff[level] > 0;
+                                        const label = level.charAt(0) + level.slice(1).toLowerCase();
+                                        return (
+                                            <View key={level} style={{ flexDirection: 'row', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                                                <TouchableOpacity onPress={() => toggleDiff(level)} style={{ flexDirection: 'row', alignItems: 'center', gap: 8, width: 130 }}>
+                                                    <View style={{ width: 22, height: 22, borderRadius: 6, borderWidth: 2, borderColor: on ? '#f97316' : '#d1d5db', backgroundColor: on ? '#f97316' : '#fff', alignItems: 'center', justifyContent: 'center' }}>
+                                                        {on && <Ionicons name="checkmark" size={15} color="#fff" />}
+                                                    </View>
+                                                    <Text style={{ fontSize: 14, fontWeight: '600', color: on ? '#1f2937' : '#9ca3af' }}>{label}</Text>
+                                                </TouchableOpacity>
+                                                <TextInput keyboardType="number-pad" editable={on}
+                                                    value={on ? String(diff[level]) : ''} placeholder="0" placeholderTextColor="#d1d5db"
+                                                    onChangeText={(t) => setDiffCount(level, t)}
+                                                    style={{ width: 70, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: on ? '#1f2937' : '#d1d5db', backgroundColor: on ? '#fff' : '#f9fafb' }} />
+                                                <Text style={{ fontSize: 12, color: '#9ca3af' }}>questions</Text>
+                                            </View>
+                                        );
+                                    })}
+                                    <Text style={{ fontSize: 14, fontWeight: 'bold', color: diffTotal === 0 ? '#ef4444' : '#374151', marginTop: 4 }}>
+                                        {diffTotal === 0 ? 'Select at least one level to start' : `Total: ${diffTotal} question${diffTotal === 1 ? '' : 's'}`}
+                                    </Text>
+                                </View>
+                            )}
+
+                            {/* Time — both modes */}
+                            <View style={{ marginTop: 14, paddingTop: 12, borderTopWidth: 1, borderTopColor: '#f3f4f6' }}>
+                                <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>TIME (MIN)</Text>
+                                <TextInput keyboardType="number-pad" value={quizMinutesStr}
+                                    onChangeText={setQuizMinutesStr} onEndEditing={(e) => commitMinutes(e.nativeEvent.text)} onBlur={() => commitMinutes(quizMinutesStr)}
+                                    style={{ width: 80, borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, fontSize: 15, fontWeight: '600', color: '#1f2937' }} />
+                            </View>
+
+                            <TouchableOpacity
+                                onPress={() => { setMode('auto'); commitCount('10'); commitMinutes('5'); persistDiff({ EASY: 0, MEDIUM: 0, HARD: 0 }); }}
+                                style={{ marginTop: 14, alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 9, borderRadius: 10, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff' }}>
+                                <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280' }}>Reset to default</Text>
+                            </TouchableOpacity>
+                        </View>
+                    )}
                 </View>
 
                 <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 12 }}>
@@ -257,7 +323,7 @@ export default function DailyQuizScreen({ navigation }: any) {
                         <TouchableOpacity
                             key={idx}
                             disabled={!cat.has_questions}
-                            onPress={() => navigation.navigate('QuizSession', { subject: cat.key, title: cat.name, limit: quizCount, durationSecs: quizMinutes * 60 })}
+                            onPress={() => navigation.navigate('QuizSession', { subject: cat.key, title: cat.name, limit: quizCount, durationSecs: quizMinutes * 60, diffCounts: useCustomDiff ? diff : undefined })}
                             activeOpacity={0.75}
                             style={{
                                 width: '47%',

@@ -46,11 +46,23 @@ async def get_daily_quiz(
     db: AsyncSession = Depends(get_db),
     user: User = Depends(get_current_user),
     limit: int = Query(10, ge=1, le=100),
-    bookmarked_ids: Optional[str] = Query(None, description="Comma-separated question UUIDs that are bookmarked — bypass mastery exclusion so they always repeat")
+    bookmarked_ids: Optional[str] = Query(None, description="Comma-separated question UUIDs that are bookmarked — bypass mastery exclusion so they always repeat"),
+    n_easy: Optional[int] = Query(None, ge=0, le=100, description="Strict count of EASY questions (Quiz Settings difficulty mode)"),
+    n_medium: Optional[int] = Query(None, ge=0, le=100, description="Strict count of MEDIUM questions"),
+    n_hard: Optional[int] = Query(None, ge=0, le=100, description="Strict count of HARD questions"),
 ) -> Any:
-    """Get a daily quiz for a specific subject category."""
+    """Get a daily quiz for a specific subject category.
+
+    If any of n_easy/n_medium/n_hard is provided, the quiz uses exactly those per-difficulty
+    counts (total = their sum) and `limit` is ignored; otherwise it auto-balances 30/30/40.
+    """
     bids = [b.strip() for b in bookmarked_ids.split(",") if b.strip()] if bookmarked_ids else []
-    questions = await practice_service.get_daily_quiz(db, user.id, subject, limit, bids)
+    difficulty_counts = None
+    if n_easy is not None or n_medium is not None or n_hard is not None:
+        difficulty_counts = {"EASY": n_easy or 0, "MEDIUM": n_medium or 0, "HARD": n_hard or 0}
+        if sum(difficulty_counts.values()) == 0:
+            difficulty_counts = None
+    questions = await practice_service.get_daily_quiz(db, user.id, subject, limit, bids, difficulty_counts)
     return {
         "subject": subject,
         "questions": questions,
