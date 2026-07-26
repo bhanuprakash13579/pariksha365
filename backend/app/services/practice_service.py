@@ -9,7 +9,7 @@ from typing import List, Optional
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy.orm import selectinload
-from sqlalchemy import func, case
+from sqlalchemy import func, case, or_
 from app.models.quiz_pool import QuizQuestion, QuizAttempt, UserWeakTopic, UserStreak, UserTopicMastery
 from app.models.attempt import Attempt, AttemptStatus
 from app.models.user_answer import UserAnswer
@@ -79,7 +79,8 @@ async def get_quiz_categories_with_counts(db: AsyncSession) -> list:
 async def get_daily_quiz(
     db: AsyncSession, user_id: uuid.UUID, subject: str,
     limit: int = 10, bookmarked_ids: Optional[List[str]] = None,
-    difficulty_counts: Optional[dict] = None, formula_only: bool = False
+    difficulty_counts: Optional[dict] = None, formula_only: bool = False,
+    shorttrick_only: bool = False
 ) -> list:
     """
     Pattern-diversity quiz with per-question mastery gating + unattempted-first ordering.
@@ -100,11 +101,19 @@ async def get_daily_quiz(
     """
     canonical_subject = SUBJECT_KEY_MAP.get(subject.lower(), subject)
 
-    # --- formula-practice mode ---
-    # When the user picks "Formula-based only", restrict the entire candidate pool to the
-    # dedicated formula bank (topic_code prefix QA_FML_). Applied at every draw point below
-    # (discovery, primary, strict top-up, last-resort) so no non-formula question leaks in.
-    fml_filter = [QuizQuestion.topic_code.like("QA_FML_%")] if formula_only else []
+    # --- formula-practice / short-trick modes ---
+    # Restrict the entire candidate pool to the dedicated bank(s): formula-application
+    # (topic_code prefix QA_FML_) and/or must-learn time-saving short tricks (QA_ST_).
+    # If both are selected they combine (OR). Applied at every draw point below (discovery,
+    # primary, strict top-up, last-resort) so no off-mode question leaks in.
+    # NB: `_` is a single-char wildcard in SQL LIKE, so the literal underscores in the
+    # prefixes must be escaped — else "QA_ST_%" would also match QA_STATISTICS, QA_STOCKS…
+    _prefix_likes = []
+    if formula_only:
+        _prefix_likes.append(QuizQuestion.topic_code.like(r"QA\_FML\_%", escape="\\"))
+    if shorttrick_only:
+        _prefix_likes.append(QuizQuestion.topic_code.like(r"QA\_ST\_%", escape="\\"))
+    fml_filter = [or_(*_prefix_likes)] if _prefix_likes else []
 
     # --- strict per-difficulty selection (user-chosen Easy/Medium/Hard counts) ---
     # When the user picks specific difficulty counts in Quiz Settings, honour them exactly:

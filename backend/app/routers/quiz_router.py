@@ -51,12 +51,13 @@ async def get_daily_quiz(
     n_medium: Optional[int] = Query(None, ge=0, le=100, description="Strict count of MEDIUM questions"),
     n_hard: Optional[int] = Query(None, ge=0, le=100, description="Strict count of HARD questions"),
     formula: bool = Query(False, description="Formula-based practice mode — draw only from the formula bank (QA_FML_*)"),
+    shorttrick: bool = Query(False, description="Short-trick practice mode — draw only must-learn time-saving tricks (QA_ST_*)"),
 ) -> Any:
     """Get a daily quiz for a specific subject category.
 
     If any of n_easy/n_medium/n_hard is provided, the quiz uses exactly those per-difficulty
     counts (total = their sum) and `limit` is ignored; otherwise it auto-balances 30/30/40.
-    If `formula` is true, only formula-based questions are drawn (composes with the above).
+    If `formula` and/or `shorttrick` is true, only those bank(s) are drawn (composes with the above).
     """
     bids = [b.strip() for b in bookmarked_ids.split(",") if b.strip()] if bookmarked_ids else []
     difficulty_counts = None
@@ -64,7 +65,7 @@ async def get_daily_quiz(
         difficulty_counts = {"EASY": n_easy or 0, "MEDIUM": n_medium or 0, "HARD": n_hard or 0}
         if sum(difficulty_counts.values()) == 0:
             difficulty_counts = None
-    questions = await practice_service.get_daily_quiz(db, user.id, subject, limit, bids, difficulty_counts, formula)
+    questions = await practice_service.get_daily_quiz(db, user.id, subject, limit, bids, difficulty_counts, formula, shorttrick)
     return {
         "subject": subject,
         "questions": questions,
