@@ -80,6 +80,11 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
             return { EASY: Number(d.EASY) || 0, MEDIUM: Number(d.MEDIUM) || 0, HARD: Number(d.HARD) || 0 };
         } catch { return { EASY: 0, MEDIUM: 0, HARD: 0 }; }
     });
+    // Formula-practice mode: draw only formula-application questions (QA_FML_* bank). Persisted.
+    const [formulaMode, setFormulaMode] = useState(() => localStorage.getItem('quizFormula') === '1');
+    const toggleFormula = () => {
+        setFormulaMode((prev) => { const next = !prev; localStorage.setItem('quizFormula', next ? '1' : '0'); return next; });
+    };
     const [settingsOpen, setSettingsOpen] = useState(false);
     const diffTotal = quizDiff.EASY + quizDiff.MEDIUM + quizDiff.HARD;
     const useCustomDiff = quizMode === 'custom' && diffTotal > 0;
@@ -149,6 +154,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                 useCustomDiff ? undefined : quizCount,
                 Array.from(bookmarks),
                 useCustomDiff ? quizDiff : undefined,
+                formulaMode,
             );
             if (res.data.questions && res.data.questions.length > 0) {
                 setTimeLeft(quizMinutes * 60);
@@ -546,6 +552,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                     <span className="flex items-center gap-2 font-bold text-gray-800">⚙️ Quiz Settings</span>
                     <span className="flex items-center gap-3 text-xs">
                         <span className="text-gray-500 font-semibold">
+                            {formulaMode && <span className="text-orange-600">📐 Formula · </span>}
                             {useCustomDiff
                                 ? [quizDiff.EASY && `${quizDiff.EASY} Easy`, quizDiff.MEDIUM && `${quizDiff.MEDIUM} Medium`, quizDiff.HARD && `${quizDiff.HARD} Hard`].filter(Boolean).join(' · ')
                                 : `${quizCount} questions · balanced`}
@@ -614,6 +621,15 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                             </div>
                         )}
 
+                        {/* Formula-practice mode — applies in both modes; draws only formula-application questions */}
+                        <div className="mt-5 pt-4 border-t border-gray-100">
+                            <label className="flex items-center gap-2 cursor-pointer select-none">
+                                <input type="checkbox" checked={formulaMode} onChange={toggleFormula} className="w-4 h-4 accent-orange-500" />
+                                <span className="text-sm font-bold text-gray-800">📐 Formula-based questions only</span>
+                            </label>
+                            <p className="text-[11px] text-gray-400 mt-1.5">Practise direct formula-application questions (area, SI/CI, speed, identities…) so you never lose the easy marks. Available for Quantitative Aptitude.</p>
+                        </div>
+
                         {/* Time — applies in both modes */}
                         <div className="mt-5 pt-4 border-t border-gray-100">
                             <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Time (minutes)</label>
@@ -636,6 +652,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                                 setQuizCount(10); setQuizMinutes(5); setQuizCountStr('10'); setQuizMinutesStr('5');
                                 localStorage.setItem('quizCount', '10'); localStorage.setItem('quizMinutes', '5');
                                 persistDiff({ EASY: 0, MEDIUM: 0, HARD: 0 });
+                                setFormulaMode(false); localStorage.setItem('quizFormula', '0');
                             }}
                             className="mt-4 text-xs font-bold px-3 py-2 rounded-lg border bg-white text-gray-600 border-gray-300 hover:border-orange-300 transition-colors">
                             Reset to default (10 · balanced · 5 min)

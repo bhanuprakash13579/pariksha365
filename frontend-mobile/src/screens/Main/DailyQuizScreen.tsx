@@ -23,6 +23,9 @@ export default function DailyQuizScreen({ navigation }: any) {
     const [quizMode, setQuizMode] = useState<'auto' | 'custom'>('auto');
     const [diff, setDiff] = useState<{ EASY: number; MEDIUM: number; HARD: number }>({ EASY: 0, MEDIUM: 0, HARD: 0 });
     const [settingsOpen, setSettingsOpen] = useState(false);
+    // Formula-practice mode: draw only formula-application questions (QA_FML_* bank). Persisted.
+    const [formulaMode, setFormulaMode] = useState(false);
+    const toggleFormula = () => setFormulaMode((prev) => { const next = !prev; AsyncStorage.setItem('quizFormula', next ? '1' : '0').catch(() => { }); return next; });
     const diffTotal = diff.EASY + diff.MEDIUM + diff.HARD;
     const useCustomDiff = quizMode === 'custom' && diffTotal > 0;
     const persistDiff = (next: { EASY: number; MEDIUM: number; HARD: number }) => {
@@ -36,13 +39,14 @@ export default function DailyQuizScreen({ navigation }: any) {
     };
 
     useEffect(() => {
-        AsyncStorage.multiGet(['quizCount', 'quizMinutes', 'quizMode', 'quizDiff']).then(([[, c], [, m], [, mode], [, d]]) => {
+        AsyncStorage.multiGet(['quizCount', 'quizMinutes', 'quizMode', 'quizDiff', 'quizFormula']).then(([[, c], [, m], [, mode], [, d], [, f]]) => {
             const cn = parseInt(c || '', 10);
             const mn = parseInt(m || '', 10);
             if (!isNaN(cn) && cn > 0) { setQuizCount(cn); setQuizCountStr(String(cn)); }
             if (!isNaN(mn) && mn > 0) { setQuizMinutes(mn); setQuizMinutesStr(String(mn)); }
             if (mode === 'custom') setQuizMode('custom');
             if (d) { try { const p = JSON.parse(d); setDiff({ EASY: Number(p.EASY) || 0, MEDIUM: Number(p.MEDIUM) || 0, HARD: Number(p.HARD) || 0 }); } catch { } }
+            if (f === '1') setFormulaMode(true);
         }).catch(() => { });
     }, []);
 
@@ -249,7 +253,7 @@ export default function DailyQuizScreen({ navigation }: any) {
                         style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#fff', borderRadius: 14, borderWidth: 1, borderColor: '#f3f4f6', paddingHorizontal: 14, paddingVertical: 13 }}>
                         <Text style={{ fontWeight: 'bold', color: '#1f2937', fontSize: 14 }}>⚙️  Quiz Settings</Text>
                         <Text style={{ color: '#9ca3af', fontSize: 12, fontWeight: '600' }}>
-                            {useCustomDiff ? `${diffTotal} Q · custom` : `${quizCount} Q · balanced`} · {quizMinutes}m  {settingsOpen ? '▲' : '▼'}
+                            {formulaMode ? <Text style={{ color: '#ea580c' }}>📐 Formula · </Text> : ''}{useCustomDiff ? `${diffTotal} Q · custom` : `${quizCount} Q · balanced`} · {quizMinutes}m  {settingsOpen ? '▲' : '▼'}
                         </Text>
                     </TouchableOpacity>
 
@@ -301,6 +305,17 @@ export default function DailyQuizScreen({ navigation }: any) {
                                 </View>
                             )}
 
+                            {/* Formula-practice mode — both modes; draws only formula-application questions (Quant) */}
+                            <View style={{ marginTop: 14, paddingTop: 12, borderTopWidth: 1, borderTopColor: '#f3f4f6' }}>
+                                <TouchableOpacity onPress={toggleFormula} style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                                    <View style={{ width: 22, height: 22, borderRadius: 6, borderWidth: 2, borderColor: formulaMode ? '#f97316' : '#d1d5db', backgroundColor: formulaMode ? '#f97316' : '#fff', alignItems: 'center', justifyContent: 'center' }}>
+                                        {formulaMode && <Ionicons name="checkmark" size={15} color="#fff" />}
+                                    </View>
+                                    <Text style={{ fontSize: 14, fontWeight: 'bold', color: '#1f2937' }}>📐 Formula-based questions only</Text>
+                                </TouchableOpacity>
+                                <Text style={{ fontSize: 11, color: '#9ca3af', marginTop: 6 }}>Practise direct formula-application questions so you never lose the easy marks. Available for Quantitative Aptitude.</Text>
+                            </View>
+
                             {/* Time — both modes */}
                             <View style={{ marginTop: 14, paddingTop: 12, borderTopWidth: 1, borderTopColor: '#f3f4f6' }}>
                                 <Text style={{ fontSize: 11, fontWeight: 'bold', color: '#9ca3af', marginBottom: 4 }}>TIME (MIN)</Text>
@@ -310,7 +325,7 @@ export default function DailyQuizScreen({ navigation }: any) {
                             </View>
 
                             <TouchableOpacity
-                                onPress={() => { setMode('auto'); commitCount('10'); commitMinutes('5'); persistDiff({ EASY: 0, MEDIUM: 0, HARD: 0 }); }}
+                                onPress={() => { setMode('auto'); commitCount('10'); commitMinutes('5'); persistDiff({ EASY: 0, MEDIUM: 0, HARD: 0 }); setFormulaMode(false); AsyncStorage.setItem('quizFormula', '0').catch(() => { }); }}
                                 style={{ marginTop: 14, alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 9, borderRadius: 10, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff' }}>
                                 <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280' }}>Reset to default</Text>
                             </TouchableOpacity>
@@ -323,7 +338,7 @@ export default function DailyQuizScreen({ navigation }: any) {
                         <TouchableOpacity
                             key={idx}
                             disabled={!cat.has_questions}
-                            onPress={() => navigation.navigate('QuizSession', { subject: cat.key, title: cat.name, limit: quizCount, durationSecs: quizMinutes * 60, diffCounts: useCustomDiff ? diff : undefined })}
+                            onPress={() => navigation.navigate('QuizSession', { subject: cat.key, title: cat.name, limit: quizCount, durationSecs: quizMinutes * 60, diffCounts: useCustomDiff ? diff : undefined, formula: formulaMode })}
                             activeOpacity={0.75}
                             style={{
                                 width: '47%',

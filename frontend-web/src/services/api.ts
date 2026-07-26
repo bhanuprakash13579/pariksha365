@@ -136,6 +136,7 @@ export const QuizAPI = {
         limit?: number,
         bookmarkedIds?: string[],
         difficulty?: { EASY?: number; MEDIUM?: number; HARD?: number },
+        formula?: boolean,
     ) => {
         // Strict difficulty mode: send per-difficulty counts (total = their sum, `limit` ignored server-side)
         const diffParams =
@@ -151,6 +152,7 @@ export const QuizAPI = {
                 ...(limit ? { limit } : {}),
                 ...(bookmarkedIds && bookmarkedIds.length ? { bookmarked_ids: bookmarkedIds.join(',') } : {}),
                 ...diffParams,
+                ...(formula ? { formula: true } : {}),
             },
         });
     },
