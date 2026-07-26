@@ -79,7 +79,7 @@ async def get_quiz_categories_with_counts(db: AsyncSession) -> list:
 async def get_daily_quiz(
     db: AsyncSession, user_id: uuid.UUID, subject: str,
     limit: int = 10, bookmarked_ids: Optional[List[str]] = None,
-    difficulty_counts: Optional[dict] = None
+    difficulty_counts: Optional[dict] = None, formula_only: bool = False
 ) -> list:
     """
     Pattern-diversity quiz with per-question mastery gating + unattempted-first ordering.
@@ -99,6 +99,12 @@ async def get_daily_quiz(
     then by accuracy ascending.  Aims for ≥ min(limit, topic_count) different topics.
     """
     canonical_subject = SUBJECT_KEY_MAP.get(subject.lower(), subject)
+
+    # --- formula-practice mode ---
+    # When the user picks "Formula-based only", restrict the entire candidate pool to the
+    # dedicated formula bank (topic_code prefix QA_FML_). Applied at every draw point below
+    # (discovery, primary, strict top-up, last-resort) so no non-formula question leaks in.
+    fml_filter = [QuizQuestion.topic_code.like("QA_FML_%")] if formula_only else []
 
     # --- strict per-difficulty selection (user-chosen Easy/Medium/Hard counts) ---
     # When the user picks specific difficulty counts in Quiz Settings, honour them exactly:
@@ -147,7 +153,7 @@ async def get_daily_quiz(
     # Get all distinct topic_codes for this subject
     tc_rows = (await db.execute(
         select(QuizQuestion.topic_code, QuizQuestion.topic)
-        .where(_subj_match(canonical_subject))
+        .where(_subj_match(canonical_subject), *fml_filter)
         .distinct()
     )).all()
 
@@ -160,7 +166,7 @@ async def get_daily_quiz(
     if not pattern_map:
         raw = (await db.execute(
             select(QuizQuestion)
-            .where(_subj_match(canonical_subject))
+            .where(_subj_match(canonical_subject), *fml_filter)
             .order_by(func.random()).limit(limit)
         )).scalars().all()
         expanded = await _expand_passage_groups(db, list(raw))
@@ -313,6 +319,7 @@ async def get_daily_quiz(
                 cond = [
                     _subj_match(canonical_subject),
                     func.upper(func.coalesce(QuizQuestion.difficulty, "MEDIUM")) == diff,
+                    *fml_filter,
                 ]
                 if extra_exclude:
                     cond.append(QuizQuestion.id.not_in(extra_exclude))
@@ -342,7 +349,7 @@ async def get_daily_quiz(
             for extra_exclude in (already | all_attempted_ids, already):
                 if len(result_questions) >= limit:
                     break
-                any_cond = [_subj_match(canonical_subject)]
+                any_cond = [_subj_match(canonical_subject), *fml_filter]
                 if extra_exclude:
                     any_cond.append(QuizQuestion.id.not_in(extra_exclude))
                 fillers = (await db.execute(
