@@ -81,6 +81,7 @@ export const QuizAPI = {
         bookmarkedIds?: string[],
         difficulty?: { EASY?: number; MEDIUM?: number; HARD?: number },
         formula?: boolean,
+        shorttrick?: boolean,
     ) => {
         const diffParams =
             difficulty && (difficulty.EASY || difficulty.MEDIUM || difficulty.HARD)
@@ -96,6 +97,7 @@ export const QuizAPI = {
                 ...(bookmarkedIds && bookmarkedIds.length > 0 ? { bookmarked_ids: bookmarkedIds.join(',') } : {}),
                 ...diffParams,
                 ...(formula ? { formula: true } : {}),
+                ...(shorttrick ? { shorttrick: true } : {}),
             }
         });
     },

@@ -39,7 +39,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     const {
         subject, limit = 10, title = 'Daily Quiz',
         moduleSlug, moduleTopic, weakTopicMode = false, wrongPracticeMode = false,
-        durationSecs, diffCounts, formula = false,
+        durationSecs, diffCounts, formula = false, shorttrick = false,
     } = route.params || {};
 
     // Configurable from the launch screen; falls back to 5 minutes.
@@ -94,6 +94,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                         bmIds,
                         diffCounts || undefined,
                         formula,
+                        shorttrick,
                     );
                 }
                 setQuestions(res.data?.questions || res.data || []);

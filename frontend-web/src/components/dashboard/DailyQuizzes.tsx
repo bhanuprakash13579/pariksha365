@@ -85,6 +85,11 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     const toggleFormula = () => {
         setFormulaMode((prev) => { const next = !prev; localStorage.setItem('quizFormula', next ? '1' : '0'); return next; });
     };
+    // Short-trick mode: draw only must-learn time-saving tricks (QA_ST_* bank). Persisted.
+    const [shortTrickMode, setShortTrickMode] = useState(() => localStorage.getItem('quizShortTrick') === '1');
+    const toggleShortTrick = () => {
+        setShortTrickMode((prev) => { const next = !prev; localStorage.setItem('quizShortTrick', next ? '1' : '0'); return next; });
+    };
     const [settingsOpen, setSettingsOpen] = useState(false);
     const diffTotal = quizDiff.EASY + quizDiff.MEDIUM + quizDiff.HARD;
     const useCustomDiff = quizMode === 'custom' && diffTotal > 0;
@@ -155,6 +160,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                 Array.from(bookmarks),
                 useCustomDiff ? quizDiff : undefined,
                 formulaMode,
+                shortTrickMode,
             );
             if (res.data.questions && res.data.questions.length > 0) {
                 setTimeLeft(quizMinutes * 60);
@@ -553,6 +559,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                     <span className="flex items-center gap-3 text-xs">
                         <span className="text-gray-500 font-semibold">
                             {formulaMode && <span className="text-orange-600">📐 Formula · </span>}
+                            {shortTrickMode && <span className="text-orange-600">⚡ Short-trick · </span>}
                             {useCustomDiff
                                 ? [quizDiff.EASY && `${quizDiff.EASY} Easy`, quizDiff.MEDIUM && `${quizDiff.MEDIUM} Medium`, quizDiff.HARD && `${quizDiff.HARD} Hard`].filter(Boolean).join(' · ')
                                 : `${quizCount} questions · balanced`}
@@ -628,6 +635,11 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                                 <span className="text-sm font-bold text-gray-800">📐 Formula-based questions only</span>
                             </label>
                             <p className="text-[11px] text-gray-400 mt-1.5">Practise direct formula-application questions (area, SI/CI, speed, identities…) so you never lose the easy marks. Available for Quantitative Aptitude.</p>
+                            <label className="flex items-center gap-2 cursor-pointer select-none mt-3">
+                                <input type="checkbox" checked={shortTrickMode} onChange={toggleShortTrick} className="w-4 h-4 accent-orange-500" />
+                                <span className="text-sm font-bold text-gray-800">⚡ Short-trick questions only</span>
+                            </label>
+                            <p className="text-[11px] text-gray-400 mt-1.5">Must-learn time-saving tricks (%-as-fractions, ×5/×25/×11, successive-%, LCM work-method, unit-digit cyclicity, alligation…) that significantly cut solving time. Available for Quantitative Aptitude.</p>
                         </div>
 
                         {/* Time — applies in both modes */}
@@ -653,6 +665,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                                 localStorage.setItem('quizCount', '10'); localStorage.setItem('quizMinutes', '5');
                                 persistDiff({ EASY: 0, MEDIUM: 0, HARD: 0 });
                                 setFormulaMode(false); localStorage.setItem('quizFormula', '0');
+                                setShortTrickMode(false); localStorage.setItem('quizShortTrick', '0');
                             }}
                             className="mt-4 text-xs font-bold px-3 py-2 rounded-lg border bg-white text-gray-600 border-gray-300 hover:border-orange-300 transition-colors">
                             Reset to default (10 · balanced · 5 min)
