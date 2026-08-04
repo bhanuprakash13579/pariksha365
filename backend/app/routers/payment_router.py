@@ -94,23 +94,35 @@ def _local_notes_files() -> list[dict]:
     return files
 
 
-async def _all_notes_files(db: AsyncSession) -> list[dict]:
-    """Merge local manifest files with admin-uploaded DB files."""
-    files = _local_notes_files()
-    local_slugs = {f["id"] for f in files}
+def _manifest_book_titles() -> dict:
+    """slug -> title from the built-notes manifest (fallback titles for local books)."""
+    if not _NOTES_MANIFEST.exists():
+        return {}
+    try:
+        doc = json.loads(_NOTES_MANIFEST.read_text())
+    except Exception:
+        return {}
+    return {b.get("id", ""): b.get("title", "") for b in doc.get("books", []) if b.get("id")}
 
+
+async def _all_notes_files(db: AsyncSession) -> list[dict]:
+    """Every enabled note the student may read. Admin-gated: only notes with an enabled
+    DB row (is_visible=True) are listed — this covers both locally-built (manifest) books
+    and admin-uploaded R2 books. The admin enables each note before students can use it."""
+    titles = _manifest_book_titles()
     db_notes = (await db.execute(
         select(Note).where(Note.is_visible == True, Note.slug.isnot(None))
     )).scalars().all()
 
+    files = []
     for note in db_notes:
-        if note.slug not in local_slugs:
-            files.append({
-                "id": note.slug,
-                "title": note.title or note.slug,
-                "filename": f"{note.slug}.pdf",
-                "download_url": f"/api/v1/payments/notes/file/{note.slug}",
-            })
+        slug = note.slug
+        files.append({
+            "id": slug,
+            "title": note.title or titles.get(slug) or slug,
+            "filename": f"{slug}.pdf",
+            "download_url": f"/api/v1/payments/notes/file/{slug}",
+        })
     return files
 
 
@@ -356,17 +368,19 @@ async def download_notes_file(
 
     safe_id = book_id.replace("/", "").replace("\\", "").replace("..", "").strip()
 
-    # 1. Try local file (baked into deployment)
+    # Admin gate: the note must have an enabled DB row (covers local + R2 books alike).
+    note = (await db.execute(
+        select(Note).where(Note.slug == safe_id, Note.is_visible == True)
+    )).scalars().first()
+    if not note:
+        raise HTTPException(status_code=404, detail="Notes not available")
+
+    # 1. Serve the locally-built file if present (baked into deployment)
     local_path = _NOTES_OUT / f"{safe_id}.pdf"
     if local_path.exists():
         pdf_bytes = local_path.read_bytes()
     else:
-        # 2. Try admin-uploaded file from R2 via DB
-        note = (await db.execute(
-            select(Note).where(Note.slug == safe_id, Note.is_visible == True)
-        )).scalars().first()
-        if not note:
-            raise HTTPException(status_code=404, detail="File not found")
+        # 2. Otherwise fetch the admin-uploaded file from R2
         loop = asyncio.get_event_loop()
         pdf_bytes = await loop.run_in_executor(None, r2_storage.download_notes_pdf, safe_id)
         if not pdf_bytes:

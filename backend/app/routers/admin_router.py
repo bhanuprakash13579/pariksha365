@@ -366,3 +366,99 @@ async def upload_notes_pdf(
     await db.commit()
     return {"status": "ok", "slug": safe_slug, "r2_url": r2_url}
 
+
+# --- Notes enablement (admin controls which study-notes books students can use) ---
+import json as _json
+from pathlib import Path as _Path
+
+_NOTES_DIR = _Path(__file__).resolve().parent.parent.parent / "seeds" / "study_notes" / "_build"
+_NOTES_OUT_DIR = _NOTES_DIR / "out"
+_NOTES_MANIFEST_FILE = _NOTES_DIR / "manifest.json"
+
+
+def _manifest_books() -> list[dict]:
+    if not _NOTES_MANIFEST_FILE.exists():
+        return []
+    try:
+        return _json.loads(_NOTES_MANIFEST_FILE.read_text()).get("books", [])
+    except Exception:
+        return []
+
+
+class NoteVisibilityUpdate(BaseModel):
+    is_enabled: bool
+
+
+@router.get("/notes")
+async def admin_list_notes(
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """List every study-notes book with its enabled state so the admin can turn each
+    on/off. Locally-built (manifest) books are auto-registered as DB rows the first time
+    this is called, disabled by default — the admin must explicitly enable them."""
+    from sqlalchemy import select as _select
+
+    existing = {
+        n.slug: n for n in (await db.execute(
+            _select(Note).where(Note.slug.isnot(None))
+        )).scalars().all()
+    }
+
+    # Auto-register manifest books (disabled by default) so they are togglable.
+    created = 0
+    for book in _manifest_books():
+        slug = book.get("id")
+        if not slug or slug in existing:
+            continue
+        note = Note(
+            file_url=f"local:{slug}",
+            title=book.get("title", slug),
+            slug=slug,
+            is_visible=False,
+        )
+        db.add(note)
+        existing[slug] = note
+        created += 1
+    if created:
+        await db.commit()
+
+    out = []
+    for slug, note in existing.items():
+        is_local = (_NOTES_OUT_DIR / f"{slug}.pdf").exists()
+        out.append({
+            "slug": slug,
+            "title": note.title or slug,
+            "is_enabled": bool(note.is_visible),
+            "source": "local" if is_local else "uploaded",
+        })
+    out.sort(key=lambda x: x["title"].lower())
+    return {"notes": out, "count": len(out)}
+
+
+@router.put("/notes/{slug}/visibility")
+async def admin_set_note_visibility(
+    slug: str,
+    body: NoteVisibilityUpdate,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """Enable or disable a study-notes book for students (app + web)."""
+    from sqlalchemy import select as _select
+
+    safe_slug = slug.strip().lower()
+    note = (await db.execute(
+        _select(Note).where(Note.slug == safe_slug)
+    )).scalars().first()
+    if not note:
+        # Register from manifest on the fly if it is a known local book.
+        book = next((b for b in _manifest_books() if b.get("id") == safe_slug), None)
+        if not book:
+            raise HTTPException(status_code=404, detail="Note not found")
+        note = Note(file_url=f"local:{safe_slug}", title=book.get("title", safe_slug), slug=safe_slug)
+        db.add(note)
+
+    note.is_visible = body.is_enabled
+    await db.commit()
+    return {"slug": safe_slug, "is_enabled": bool(note.is_visible)}
+

@@ -39,6 +39,33 @@ export const Notes = () => {
     const [hasAccess, setHasAccess] = useState(false);
     const [noteFiles, setNoteFiles] = useState<NotesFileInfo[]>([]);
     const [buyingCashfree, setBuyingCashfree] = useState(false);
+    const [openingId, setOpeningId] = useState<string | null>(null);
+
+    // The notes file endpoint is Bearer-gated, so we fetch the PDF through the authenticated
+    // axios client and hand the browser a blob URL — for reading online (new tab) or downloading.
+    const openNote = async (f: NotesFileInfo, mode: 'read' | 'download') => {
+        setOpeningId(f.id + mode);
+        try {
+            const res = await PaymentAPI.fetchNoteBlob(f.id);
+            const blob = new Blob([res.data], { type: 'application/pdf' });
+            const url = URL.createObjectURL(blob);
+            if (mode === 'read') {
+                window.open(url, '_blank', 'noopener,noreferrer');
+            } else {
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = f.filename || `${f.id}.pdf`;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            }
+            setTimeout(() => URL.revokeObjectURL(url), 60000);
+        } catch {
+            alert('Could not open this book. Please try again.');
+        } finally {
+            setOpeningId(null);
+        }
+    };
 
     useEffect(() => {
         let active = true;
@@ -285,20 +312,31 @@ export const Notes = () => {
                             {noteFiles.length > 0 ? (
                                 <div className="grid sm:grid-cols-2 gap-3 mt-4">
                                     {noteFiles.map((f) => (
-                                        <a
+                                        <div
                                             key={f.id}
-                                            href={PaymentAPI.notesFileUrl(f.id)}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-3 bg-gray-50 hover:bg-orange-50 border border-gray-200 hover:border-orange-300 rounded-xl p-4 transition-colors group"
+                                            className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4"
                                         >
                                             <svg className="w-8 h-8 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
                                             <div className="flex-1 min-w-0">
                                                 <p className="font-bold text-gray-900 text-sm leading-tight truncate">{f.title}</p>
-                                                <p className="text-xs text-gray-500 mt-0.5">PDF · click to download</p>
+                                                <div className="flex gap-3 mt-1.5">
+                                                    <button
+                                                        onClick={() => openNote(f, 'read')}
+                                                        disabled={openingId === f.id + 'read'}
+                                                        className="text-xs font-bold text-orange-600 hover:text-orange-700 disabled:opacity-50"
+                                                    >
+                                                        {openingId === f.id + 'read' ? 'Opening…' : '📖 Read online'}
+                                                    </button>
+                                                    <button
+                                                        onClick={() => openNote(f, 'download')}
+                                                        disabled={openingId === f.id + 'download'}
+                                                        className="text-xs font-bold text-gray-600 hover:text-gray-800 disabled:opacity-50"
+                                                    >
+                                                        {openingId === f.id + 'download' ? 'Preparing…' : '⬇ Download PDF'}
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <svg className="w-4 h-4 text-gray-400 group-hover:text-orange-500 flex-shrink-0 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-                                        </a>
+                                        </div>
                                     ))}
                                 </div>
                             ) : (

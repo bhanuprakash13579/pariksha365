@@ -230,12 +230,27 @@ export const ConfigAPI = {
     notesSampleUrl: () => `${API_URL}/config/notes/sample`,
 };
 
+export interface AdminNoteRow {
+    slug: string;
+    title: string;
+    is_enabled: boolean;
+    source: 'local' | 'uploaded';
+}
+
+export const AdminNotesAPI = {
+    list: () => api.get<{ notes: AdminNoteRow[]; count: number }>('/admin/notes'),
+    setVisibility: (slug: string, is_enabled: boolean) =>
+        api.put<{ slug: string; is_enabled: boolean }>(`/admin/notes/${slug}/visibility`, { is_enabled }),
+};
+
 export const PaymentAPI = {
     createNotesOrder: () => api.post<{ checkout_url: string; cf_order_id: string }>('/payments/cashfree/notes/create-order'),
     createStageOrder: (stageId: string) => api.post<{ checkout_url: string; cf_order_id: string }>(`/payments/cashfree/stage/${stageId}/create-order`),
     verifyOrder: (cfOrderId: string) => api.get<{ status: string; payment_type?: string; amount_paid?: number; exam_stage_id?: string }>(`/payments/cashfree/verify/${cfOrderId}`),
     getNotesAccess: () => api.get<NotesAccessResponse>('/payments/notes/access'),
     notesFileUrl: (bookId: string) => `${API_URL}/payments/notes/file/${bookId}`,
+    // Authenticated fetch (the endpoint is Bearer-gated, so a plain href would 401).
+    fetchNoteBlob: (bookId: string) => api.get<Blob>(`/payments/notes/file/${bookId}`, { responseType: 'blob' }),
 };
 
 export interface CoverageRow {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers, Menu, X, Lock, ListChecks } from 'lucide-react';
+import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers, Menu, X, Lock, ListChecks, BookOpen } from 'lucide-react';
 import { api, UserAPI } from '../services/api';
 import { ScrapeReviewWorkspace } from './ScrapeReviewWorkspace';
 import { FileExplorerCourseManager } from './FileExplorerCourseManager';
@@ -9,6 +9,7 @@ import { AdminExamStructureManager } from '../components/dashboard/AdminExamStru
 import { AdminPrivateModuleManager } from '../components/dashboard/AdminPrivateModuleManager';
 import { AdminTestCoverage } from '../components/dashboard/AdminTestCoverage';
 import { AdminCurrentAffairs } from '../components/dashboard/AdminCurrentAffairs';
+import { AdminNotesManager } from '../components/dashboard/AdminNotesManager';
 import { useNavigate } from 'react-router-dom';
 
 export const AdminDashboard = () => {
@@ -96,6 +97,7 @@ export const AdminDashboard = () => {
         { id: 'test-coverage', label: 'Test Coverage', icon: <ListChecks className="w-5 h-5 mr-3" /> },
         { id: 'current-affairs', label: 'Current Affairs', icon: <FilePlus className="w-5 h-5 mr-3" /> },
         { id: 'private-modules', label: 'Private Modules', icon: <Lock className="w-5 h-5 mr-3" /> },
+        { id: 'study-notes', label: 'Study Notes', icon: <BookOpen className="w-5 h-5 mr-3" /> },
     ];
 
     const navLabel = NAV_BUTTONS.find(n => n.id === activeTab)?.label || 'Admin';
@@ -306,6 +308,8 @@ export const AdminDashboard = () => {
                 {activeTab === 'current-affairs' && <AdminCurrentAffairs />}
 
                 {activeTab === 'private-modules' && <AdminPrivateModuleManager />}
+
+                {activeTab === 'study-notes' && <AdminNotesManager />}
                 </main>
             </div>
         </div>
