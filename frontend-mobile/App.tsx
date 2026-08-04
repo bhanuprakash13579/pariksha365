@@ -108,6 +108,8 @@ import PostTestResultsScreen from './src/screens/Test/PostTestResultsScreen';
 import QuizSessionScreen from './src/screens/Main/QuizSessionScreen';
 import PrivateModuleScreen from './src/screens/Main/PrivateModuleScreen';
 import PrivateModuleTopicsScreen from './src/screens/Main/PrivateModuleTopicsScreen';
+import StudyNotesScreen from './src/screens/Notes/StudyNotesScreen';
+import NotesReaderScreen from './src/screens/Notes/NotesReaderScreen';
 
 // --- Testbook-Style Profile Screen ---
 const ProfileScreen = ({ navigation, route }: any) => {
@@ -674,6 +676,8 @@ export default function App() {
         <Stack.Screen name="QuizSession" component={QuizSessionScreen} options={{ headerShown: false }} />
         <Stack.Screen name="PrivateModule" component={PrivateModuleScreen} options={({ route }: any) => ({ title: route.params?.moduleName || 'Special Practice' })} />
         <Stack.Screen name="PrivateModuleTopics" component={PrivateModuleTopicsScreen} options={({ route }: any) => ({ title: route.params?.subject || 'Chapters' })} />
+        <Stack.Screen name="StudyNotes" component={StudyNotesScreen} options={{ title: 'Study Notes' }} />
+        <Stack.Screen name="NotesReader" component={NotesReaderScreen} options={{ title: 'Study Notes' }} />
         {/* Testbook Sub-Screens */}
         <Stack.Screen name="EditProfile" component={EditProfileScreen} options={{ title: 'Edit Profile' }} />
         <Stack.Screen name="SavedQuestions" component={SavedQuestionsScreen} options={{ title: 'Saved Questions' }} />

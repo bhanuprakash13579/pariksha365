@@ -340,17 +340,21 @@ def _success_payload(payment: Payment) -> dict:
 # Notes access + download
 # ---------------------------------------------------------------------------
 
+def _is_admin(user: User) -> bool:
+    return bool(getattr(user, "role", None) and (user.role.name or "").lower() == "admin")
+
+
 @router.get("/notes/access", response_model=NotesAccessResponse)
 async def get_notes_access(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_active_user),
 ) -> Any:
-    purchase = (await db.execute(
-        select(NotesPurchase).where(NotesPurchase.user_id == current_user.id)
-    )).scalars().first()
-
-    if not purchase:
-        return NotesAccessResponse(has_access=False, files=[])
+    if not _is_admin(current_user):
+        purchase = (await db.execute(
+            select(NotesPurchase).where(NotesPurchase.user_id == current_user.id)
+        )).scalars().first()
+        if not purchase:
+            return NotesAccessResponse(has_access=False, files=[])
     return NotesAccessResponse(has_access=True, files=await _all_notes_files(db))
 
 
@@ -360,11 +364,12 @@ async def download_notes_file(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_active_user),
 ):
-    purchase = (await db.execute(
-        select(NotesPurchase).where(NotesPurchase.user_id == current_user.id)
-    )).scalars().first()
-    if not purchase:
-        raise HTTPException(status_code=403, detail="Notes not purchased")
+    if not _is_admin(current_user):
+        purchase = (await db.execute(
+            select(NotesPurchase).where(NotesPurchase.user_id == current_user.id)
+        )).scalars().first()
+        if not purchase:
+            raise HTTPException(status_code=403, detail="Notes not purchased")
 
     safe_id = book_id.replace("/", "").replace("\\", "").replace("..", "").strip()
 

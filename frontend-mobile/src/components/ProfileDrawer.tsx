@@ -53,7 +53,7 @@ export default function ProfileDrawer({ visible, onClose, isGuest }: any) {
                             <Ionicons name="ticket" size={22} color={COLORS.iconColor} />
                             <Text style={styles.drawerMenuText}>Pass Pro MAX</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.drawerMenuItem} onPress={() => { onClose(); WebBrowser.openBrowserAsync('https://pariksha365.in/notes'); }}>
+                        <TouchableOpacity style={styles.drawerMenuItem} onPress={() => { onClose(); navigation.navigate('StudyNotes'); }}>
                             <Ionicons name="book" size={22} color={COLORS.iconColor} />
                             <Text style={styles.drawerMenuText}>Study Notes</Text>
                             <View style={{ backgroundColor: '#fdba74', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, marginLeft: 10 }}>

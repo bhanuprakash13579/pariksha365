@@ -61,6 +61,15 @@ export const ExamStructureAPI = {
     getStageAccess: (stageId: string) => api.get(`/exam-structure/exam-stages/${stageId}/access`),
 };
 
+export interface NoteFile { id: string; title: string; filename: string; download_url: string; }
+
+export const NotesAPI = {
+    // { has_access, files: NoteFile[] } — files are the admin-enabled study-notes books.
+    getAccess: () => api.get<{ has_access: boolean; files: NoteFile[] }>('/payments/notes/access'),
+    // Absolute URL of a book's PDF (Bearer-gated). Pass the token in headers when fetching.
+    fileUrl: (bookId: string) => `${API_BASE_URL}/payments/notes/file/${bookId}`,
+};
+
 export const AttemptAPI = {
     list: () => api.get('/attempts'),
     start: (test_series_id: string) => api.post('/attempts/start', { test_series_id }),
