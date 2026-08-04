@@ -94,15 +94,34 @@ def _local_notes_files() -> list[dict]:
     return files
 
 
+def _manifest_docs() -> list[dict]:
+    if not _NOTES_MANIFEST.exists():
+        return []
+    try:
+        return json.loads(_NOTES_MANIFEST.read_text()).get("books", [])
+    except Exception:
+        return []
+
+
 def _manifest_book_titles() -> dict:
     """slug -> title from the built-notes manifest (fallback titles for local books)."""
-    if not _NOTES_MANIFEST.exists():
-        return {}
-    try:
-        doc = json.loads(_NOTES_MANIFEST.read_text())
-    except Exception:
-        return {}
-    return {b.get("id", ""): b.get("title", "") for b in doc.get("books", []) if b.get("id")}
+    return {b.get("id", ""): b.get("title", "") for b in _manifest_docs() if b.get("id")}
+
+
+def _manifest_out_map() -> dict:
+    """slug -> actual on-disk PDF filename (the manifest 'out' field differs from the id)."""
+    return {b.get("id", ""): b.get("out", "") for b in _manifest_docs() if b.get("id") and b.get("out")}
+
+
+def _resolve_local_pdf(slug: str) -> "Path | None":
+    """Local path of a built book's PDF (the filename comes from the manifest 'out' field,
+    falling back to <slug>.pdf). Returns None if not present on disk."""
+    out_name = _manifest_out_map().get(slug)
+    for candidate in ([out_name] if out_name else []) + [f"{slug}.pdf"]:
+        p = _NOTES_OUT / candidate
+        if p.exists():
+            return p
+    return None
 
 
 async def _all_notes_files(db: AsyncSession) -> list[dict]:
@@ -381,8 +400,8 @@ async def download_notes_file(
         raise HTTPException(status_code=404, detail="Notes not available")
 
     # 1. Serve the locally-built file if present (baked into deployment)
-    local_path = _NOTES_OUT / f"{safe_id}.pdf"
-    if local_path.exists():
+    local_path = _resolve_local_pdf(safe_id)
+    if local_path is not None:
         pdf_bytes = local_path.read_bytes()
     else:
         # 2. Otherwise fetch the admin-uploaded file from R2

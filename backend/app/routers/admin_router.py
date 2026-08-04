@@ -423,9 +423,11 @@ async def admin_list_notes(
     if created:
         await db.commit()
 
+    out_map = {b.get("id"): b.get("out") for b in _manifest_books() if b.get("id") and b.get("out")}
     out = []
     for slug, note in existing.items():
-        is_local = (_NOTES_OUT_DIR / f"{slug}.pdf").exists()
+        _out = out_map.get(slug)
+        is_local = (_NOTES_OUT_DIR / _out).exists() if _out else (_NOTES_OUT_DIR / f"{slug}.pdf").exists()
         out.append({
             "slug": slug,
             "title": note.title or slug,
