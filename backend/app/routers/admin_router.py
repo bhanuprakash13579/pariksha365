@@ -464,3 +464,59 @@ async def admin_set_note_visibility(
     await db.commit()
     return {"slug": safe_slug, "is_enabled": bool(note.is_visible)}
 
+
+class NotesGrantRequest(BaseModel):
+    email: str
+    note: Optional[str] = None
+
+
+@router.post("/notes/grant")
+async def admin_grant_notes_access(
+    body: NotesGrantRequest,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """Give a specific user free access to all study notes (no payment). Such admin-granted
+    accounts receive the clean, un-watermarked PDFs (watermark is only for paid buyers)."""
+    from sqlalchemy import select as _select, func as _func
+    from app.models.notes_purchase import NotesPurchase
+
+    email = (body.email or "").strip().lower()
+    if not email:
+        raise HTTPException(status_code=400, detail="email is required")
+    user = (await db.execute(
+        _select(User).where(_func.lower(User.email) == email)
+    )).scalars().first()
+    if not user:
+        raise HTTPException(status_code=404, detail="No user with that email")
+
+    existing = (await db.execute(
+        _select(NotesPurchase).where(NotesPurchase.user_id == user.id)
+    )).scalars().first()
+    if existing:
+        return {"status": "already_has_access", "email": user.email}
+
+    db.add(NotesPurchase(user_id=user.id, amount_paid_inr=0, payment_id=None))
+    await db.commit()
+    return {"status": "granted", "email": user.email}
+
+
+@router.get("/notes/granted")
+async def admin_list_notes_granted(
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """List users who have notes access, flagging admin-granted (free) vs paid."""
+    from sqlalchemy import select as _select
+    from app.models.notes_purchase import NotesPurchase
+
+    rows = (await db.execute(
+        _select(NotesPurchase, User).join(User, User.id == NotesPurchase.user_id)
+    )).all()
+    out = [{
+        "email": u.email,
+        "name": u.name,
+        "type": "granted" if np.payment_id is None else "paid",
+    } for np, u in rows]
+    return {"users": out, "count": len(out)}
+

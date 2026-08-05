@@ -237,10 +237,15 @@ export interface AdminNoteRow {
     source: 'local' | 'uploaded';
 }
 
+export interface NotesGrantedUser { email: string; name: string; type: 'granted' | 'paid'; }
+
 export const AdminNotesAPI = {
     list: () => api.get<{ notes: AdminNoteRow[]; count: number }>('/admin/notes'),
     setVisibility: (slug: string, is_enabled: boolean) =>
         api.put<{ slug: string; is_enabled: boolean }>(`/admin/notes/${slug}/visibility`, { is_enabled }),
+    grantAccess: (email: string) =>
+        api.post<{ status: string; email: string }>('/admin/notes/grant', { email }),
+    listGranted: () => api.get<{ users: NotesGrantedUser[]; count: number }>('/admin/notes/granted'),
 };
 
 export const PaymentAPI = {

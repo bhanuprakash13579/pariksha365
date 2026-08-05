@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AdminNotesAPI, type AdminNoteRow } from '../../services/api';
+import { AdminNotesAPI, type AdminNoteRow, type NotesGrantedUser } from '../../services/api';
 
 /**
  * Admin control for the study-notes catalogue. Every built/uploaded book appears here;
@@ -10,6 +10,33 @@ export function AdminNotesManager() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [busy, setBusy] = useState<string | null>(null);
+    const [grantEmail, setGrantEmail] = useState('');
+    const [granting, setGranting] = useState(false);
+    const [grantMsg, setGrantMsg] = useState<string | null>(null);
+    const [granted, setGranted] = useState<NotesGrantedUser[]>([]);
+
+    const loadGranted = async () => {
+        try { setGranted((await AdminNotesAPI.listGranted()).data.users); } catch { /* ignore */ }
+    };
+
+    const grant = async () => {
+        const email = grantEmail.trim();
+        if (!email) return;
+        setGranting(true);
+        setGrantMsg(null);
+        try {
+            const res = await AdminNotesAPI.grantAccess(email);
+            setGrantMsg(res.data.status === 'already_has_access'
+                ? `${res.data.email} already has access.`
+                : `✓ Access granted to ${res.data.email} (no watermark).`);
+            setGrantEmail('');
+            loadGranted();
+        } catch (e: any) {
+            setGrantMsg(e?.response?.data?.detail || 'Could not grant access. Check the email.');
+        } finally {
+            setGranting(false);
+        }
+    };
 
     const load = async () => {
         setLoading(true);
@@ -24,7 +51,7 @@ export function AdminNotesManager() {
         }
     };
 
-    useEffect(() => { load(); }, []);
+    useEffect(() => { load(); loadGranted(); }, []);
 
     const toggle = async (n: AdminNoteRow) => {
         setBusy(n.slug);
@@ -58,6 +85,36 @@ export function AdminNotesManager() {
             </div>
 
             {error && <div className="mb-3 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 rounded-lg px-3 py-2">{error}</div>}
+
+            {/* Grant free access to a specific user (no payment → no watermark) */}
+            <div className="mb-6 bg-orange-50 dark:bg-gray-800 border border-orange-200 dark:border-gray-700 rounded-xl p-4">
+                <p className="font-bold text-gray-800 dark:text-gray-100 mb-1">Give a user free access</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">Grants lifetime access to all notes without payment. These accounts get clean, un-watermarked PDFs.</p>
+                <div className="flex flex-wrap gap-2">
+                    <input
+                        type="email"
+                        value={grantEmail}
+                        onChange={(e) => setGrantEmail(e.target.value)}
+                        onKeyDown={(e) => { if (e.key === 'Enter') grant(); }}
+                        placeholder="user@email.com"
+                        className="flex-1 min-w-[220px] border border-gray-300 dark:border-gray-600 dark:bg-gray-900 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                    />
+                    <button
+                        onClick={grant}
+                        disabled={granting || !grantEmail.trim()}
+                        className="px-4 py-2 rounded-lg text-sm font-bold bg-orange-500 text-white hover:bg-orange-600 disabled:opacity-50"
+                    >
+                        {granting ? 'Granting…' : 'Grant access'}
+                    </button>
+                </div>
+                {grantMsg && <p className="text-xs mt-2 font-semibold text-gray-700 dark:text-gray-300">{grantMsg}</p>}
+                {granted.length > 0 && (
+                    <div className="mt-3 text-xs text-gray-600 dark:text-gray-400">
+                        <span className="font-semibold">{granted.length}</span> user{granted.length === 1 ? '' : 's'} with access
+                        <span className="ml-1">({granted.filter(g => g.type === 'granted').length} free · {granted.filter(g => g.type === 'paid').length} paid)</span>
+                    </div>
+                )}
+            </div>
 
             <div className="mb-3 text-sm font-semibold text-gray-600 dark:text-gray-300">
                 {enabledCount} of {notes.length} enabled
