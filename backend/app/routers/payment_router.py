@@ -383,12 +383,15 @@ async def download_notes_file(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_active_user),
 ):
-    if not _is_admin(current_user):
-        purchase = (await db.execute(
-            select(NotesPurchase).where(NotesPurchase.user_id == current_user.id)
-        )).scalars().first()
-        if not purchase:
-            raise HTTPException(status_code=403, detail="Notes not purchased")
+    purchase = (await db.execute(
+        select(NotesPurchase).where(NotesPurchase.user_id == current_user.id)
+    )).scalars().first()
+    if not _is_admin(current_user) and not purchase:
+        raise HTTPException(status_code=403, detail="Notes not purchased")
+
+    # Watermark only for genuine paid purchases. Admins and admin-granted accounts
+    # (NotesPurchase with no linked payment) get the clean, un-watermarked PDF.
+    is_paid = bool(purchase and purchase.payment_id is not None)
 
     safe_id = book_id.replace("/", "").replace("\\", "").replace("..", "").strip()
 
@@ -410,22 +413,24 @@ async def download_notes_file(
         if not pdf_bytes:
             raise HTTPException(status_code=404, detail="File not available in storage")
 
-    # Watermark runs in a thread pool so it does not block the event loop
-    loop = asyncio.get_event_loop()
-    wm_bytes = await loop.run_in_executor(
-        None,
-        watermark_pdf,
-        pdf_bytes,
-        current_user.name,
-        current_user.email,
-        current_user.phone,
-    )
+    # Paid buyers get a personalized deterrence watermark; admin/admin-granted get the
+    # clean PDF. Watermarking runs in a thread pool so it does not block the event loop.
+    if is_paid:
+        loop = asyncio.get_event_loop()
+        pdf_bytes = await loop.run_in_executor(
+            None,
+            watermark_pdf,
+            pdf_bytes,
+            current_user.name,
+            current_user.email,
+            current_user.phone,
+        )
 
     return StreamingResponse(
-        io.BytesIO(wm_bytes),
+        io.BytesIO(pdf_bytes),
         media_type="application/pdf",
         headers={
             "Content-Disposition": f'attachment; filename="Pariksha365-{safe_id}.pdf"',
-            "Content-Length": str(len(wm_bytes)),
+            "Content-Length": str(len(pdf_bytes)),
         },
     )
