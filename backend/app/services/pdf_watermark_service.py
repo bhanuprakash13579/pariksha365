@@ -120,14 +120,23 @@ def watermark_pdf(
     # footer keeps the full identity on one line
     footer_line = f"Sold to: {user_name} | {user_email}{phone_part}  |  Pariksha365.com | {date_str}"
 
+    # Cache the watermark PNG per unique page size — every page of a book is normally the
+    # same size, so this renders the (expensive) image once instead of once per page. This
+    # is what keeps large books (80+ pages) from timing out the request into a 502.
+    wm_cache: dict[tuple[int, int], bytes] = {}
     for page in doc:
-        wm_png = _make_watermark_png(
-            page.rect.width, page.rect.height,
-            name_line, email_line, site_line, footer_line,
-        )
+        key = (round(page.rect.width), round(page.rect.height))
+        wm_png = wm_cache.get(key)
+        if wm_png is None:
+            wm_png = _make_watermark_png(
+                page.rect.width, page.rect.height,
+                name_line, email_line, site_line, footer_line,
+            )
+            wm_cache[key] = wm_png
         page.insert_image(page.rect, stream=wm_png, overlay=True)
 
     buf = io.BytesIO()
-    doc.save(buf, deflate=True, garbage=4, clean=True)
+    # deflate keeps it compact; drop the expensive garbage=4/clean full-doc rewrite.
+    doc.save(buf, deflate=True, garbage=1)
     doc.close()
     return buf.getvalue()
